@@ -1,27 +1,35 @@
 # verify-freiman-constant
 
+> <span dir="rtl">**כבדהו וחשדהו**</span>  
+> *Kabdehu ve-chashdehu*  
+> “Honor him and suspect him.”  
+> 
+> — Talmudic proverb
+
 This repository aims to verify that Freiman's constant is the initial point of Hall's ray. The project is a work in progress.
 
 ## Introduction
 
 For an irrational number $\alpha$, define
+
 $$
-\ell(\alpha)
-= \limsup_{q\to\infty}\frac{1}{q\|q\alpha\|},
+\ell(\alpha)= \limsup_{q\to\infty}\frac{1}{q\|q\alpha\|},
 $$
+
 where $\|x\|$ denotes the distance from $x$ to the nearest integer.
 
 The Lagrange spectrum is
+
 $$
 L = \{\ell(\alpha) < \infty: \alpha\in\mathbb{R}\setminus\mathbb{Q}\}.
 $$
 
 Hall [^hall] proved that $L$ contains a half-line extending to infinity, now called Hall's ray. Freiman [^freiman] later showed that the initial point of this ray is
+
 $$
-c_F = [4; 4, 3, 2, 2, \overline{3,1,3,1,2,1}] + [0; 3, 2, 1, 1, \overline{3,1,3,1,2,1}]
-= \frac{2221564096 + 283748\sqrt{462}}{491993569}
-= 4.52782956616087914088\ldots,
+c_F = [4;4,3,2,2,\overline{3,1,3,1,2,1}] + [0;3,2,1,1,\overline{3,1,3,1,2,1}] = \frac{2221564096 + 283748\sqrt{462}}{491993569} \approx 4.52782956616087914088\ldots,
 $$
+
 now known as Freiman's constant.
 
 However, Freiman's original proof relies on over one hundred pages of intricate computation. The source is also difficult to access, and the argument has not been available in a form that can be checked independently and computationally.
