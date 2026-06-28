@@ -1,8 +1,4 @@
-# verify-freiman-constant
-> <span dir="rtl">**כבדהו וחשדהו*</span>　(*Kabdehu ve-chashdehu*)*  
-> *Respect him and suspect him*
->
-> ―― from Derech Eretz Rabbah
+# Verify Freiman Constant
 
 This repository aims to verify that Freiman's constant is the initial point of Hall's ray. The project is a work in progress.
 
