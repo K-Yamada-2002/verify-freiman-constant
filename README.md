@@ -6,23 +6,23 @@ This repository aims to verify that Freiman's constant is the initial point of H
 
 For an irrational number $\alpha$, define
 
-$$
+```math
 \ell(\alpha)= \limsup_{q\to\infty}\frac{1}{q\|q\alpha\|},
-$$
+```
 
 where $\|x\|$ denotes the distance from $x$ to the nearest integer.
 
 The Lagrange spectrum is
 
-$$
+```math
 L = \{\ell(\alpha) < \infty: \alpha\in\mathbb{R}\setminus\mathbb{Q}\}.
-$$
+```
 
 Hall [^hall] proved that $L$ contains a half-line extending to infinity, now called Hall's ray. Freiman [^freiman] later showed that the initial point of this ray is
 
-$$
+```math
 c_F = [4;4,3,2,2,\overline{3,1,3,1,2,1}] + [0;3,2,1,1,\overline{3,1,3,1,2,1}] = \frac{2221564096 + 283748\sqrt{462}}{491993569} \approx 4.52782956616087914088\ldots,
-$$
+```
 
 now known as Freiman's constant.
 
@@ -59,7 +59,7 @@ Notebooks implementing and extending the method of Schecker [^schecker], who pro
 - **`schecker_proof_2.ipynb`** — Verification of Lemma 2 from Schecker's paper, which states that certain successor intervals are admissible and that their union is connected, using the auxiliary lemmas (*Hilfssätze*) established there.
   - verifying simplified version of Lemma 2, which is sufficient to prove Lemma 1.
   - Lemma 2 in Schecker's paper is correct, but seems not suitable to verify by using Hilfsätze. Schecker may have made some mistake.
-  - Also, Hilfssätze contain some mistakes in signs. Documentation for error correction will be added later.
+  - Also, Hilfssätze stated in the paper contain some mistakes in signs. Documentation for error correction will be added later.
   
 - **`schecker_proof_3.ipynb`** — Automated search and verification of proposition ike Lemma 2.
   - work in progress
