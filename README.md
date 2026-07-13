@@ -56,7 +56,13 @@ Notebooks implementing and extending the method of Schecker [^schecker], who pro
   - Exhaustively enumerates such pairs up to a chosen depth and merges overlapping intervals.
   - Includes precomputed runs for depths $7$–$12$; at depth $\ge 11$ the merged components stabilize at $[4.582\ldots,6.655\ldots]$ and $[6.655\ldots,6.656\ldots]$, consistent with $\sqrt{21}\approx 4.582\ldots$.
 
-- **`schecker_proof_2.ipynb`** — Automated verification of Lemma 2 from Schecker's paper, which states that certain successor intervals are admissible and that their union is connected, using the auxiliary lemmas (*Hilfssätze*) established there.
+- **`schecker_proof_2.ipynb`** — Verification of Lemma 2 from Schecker's paper, which states that certain successor intervals are admissible and that their union is connected, using the auxiliary lemmas (*Hilfssätze*) established there.
+  - verifying simplified version of Lemma 2, which is sufficient to prove Lemma 1.
+  - Lemma 2 in Schecker's paper is correct, but seems not suitable to verify by using Hilfsätze. Schecker may have made some mistake.
+  - Also, Hilfssätze contain some mistakes in signs. Documentation for error correction will be added later.
+  
+- **`schecker_proof_3.ipynb`** — Automated search and verification of proposition ike Lemma 2.
+  - work in progress
 
 ### `misc/`
 
