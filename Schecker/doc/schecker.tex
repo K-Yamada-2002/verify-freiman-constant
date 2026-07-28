@@ -1,0 +1,263 @@
+\documentclass[10pt,a4paper]{ujarticle}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{bm}
+\usepackage{url}
+\usepackage[top=30truemm,bottom=30truemm,left=25truemm,right=25truemm]{geometry}
+
+\newtheorem{theorem}{定理}
+\newtheorem{lemma}{補題}
+\newtheorem{definition}{定義}
+\newtheorem{remark}{注意}
+\renewcommand{\proofname}{証明}
+
+\usepackage{listings}
+
+\lstset{basicstyle=\small\ttfamily}
+
+\newcommand{\Npos}{\mathbb{N}_{\ge 1}}
+\newcommand{\Mink}{\mathbin{+_{\mathrm M}}}
+\newcommand{\length}[1]{\lvert #1\rvert}
+\let\lean\path
+
+\renewcommand{\labelenumi}{(\arabic{enumi})}
+
+\author{山田 航輝}
+\title{Scheckerの証明について}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+本稿では，Schecker\cite{schecker}による $[\sqrt{21}, \infty) \subset L$の証明を検証した
+\texttt{schecker\_proof\_1.ipynb}および\texttt{schecker\_proof\_2.ipynb}
+の内容および妥当性について解説する．
+\end{abstract}
+
+\section{準備}
+\begin{definition}
+  \label{def:lagrange-spectrum}
+  $A=(a_n)_{n\in\mathbb Z}\in\mathbb{N}^{\mathbb Z}$ と $i\in\mathbb Z$ に対して
+  \[
+    \lambda_i(A)
+    =[a_i;a_{i+1},a_{i+2},\ldots]
+     +[0;a_{i-1},a_{i-2},\ldots]
+  \]
+  とおく．そして
+  $$
+  l(A) = \limsup_{i\to \infty} \lambda_i(A), \quad m(A) = \sup_{i\in \mathbb{Z}} \lambda_i(A)
+  $$
+  とする．
+  
+  また，
+    $N\in\mathbb{N}$ に対して
+    \[
+      C(N)=
+      \left\{
+        [0;a_1,a_2,\ldots]:1\le a_i\le N\quad(i\ge1)
+      \right\}
+    \]
+    とおく．
+\end{definition}
+
+続いて，Schekcerの論文で定義されている概念を列挙する．
+\begin{definition}
+  $$
+  \theta_i = \begin{cases}
+    [0; \overline{1, 2}] \quad i : odd \\
+    [0; \overline{2, 1}] \quad i : even
+  \end{cases}, \quad 
+  \eta_i = \begin{cases}
+    [0; \overline{1, 3}] \quad i : odd \\
+    [0; \overline{3, 1}] \quad i : even
+  \end{cases},
+  $$
+  とおく．また，
+  $$
+  \mathcal{B}_{h,k} = \{ (a_i)_{-h \le i \le k} : a_i\in \mathbb{N}, 1\le a_i \le 4 \}
+  $$
+  とし，$A = (a_i) \in \mathcal{B}_{h,k}$について，$A$のT区間を以下のように定める:
+
+  左端が
+  \begin{align*}
+    \min \{[0; a_{-1},\cdots , a_{-h} + \eta_h] + [0; a_1,\cdots , a_{k} + \theta_k],\\
+    [0; a_{-1},\cdots , a_{-h} + \theta_h] + [0; a_1,\cdots , a_{k} + \eta_k] \}
+  \end{align*}
+
+  右端が
+  \begin{align*}
+    \max \{[0; a_{-1},\cdots , a_{-h} + \eta_{h + 1}] + [0; a_1,\cdots , a_{k + 1} + \theta_k],\\
+    [0; a_{-1},\cdots , a_{-h} + \theta_{h + 1}] + [0; a_1,\cdots , a_{k} + \eta_{k + 1}] \}
+  \end{align*}
+  となる閉区間．
+
+  これを$I(A)$とか，$I(a_{-1},\cdots, a_{-h} | a_1, \cdots a_k)$とかく．
+
+  $v(a)$を
+  $$
+  v(A) = \left| \frac{[0; a_1,\cdots, a_k + \eta_1] - [0; a_1,\cdots, a_k + \eta_2]}{[0; a_1,\cdots, a_{-h} + \eta_1] - [0; a_1,\cdots, a_{-h} + \eta_2]}\right|
+  $$
+  と定め，これをT比と呼ぶ．
+
+  $I(A)$が許容的であるとは，\begin{enumerate}
+    \item $h \ge 2$ または$a_{-1} \ge 2$
+    \item $h \ge 2$ または$a_1 \ge 2$
+    \item $\frac{5}{17} \le v(A) \le \frac{17}{5}$
+  \end{enumerate}
+  が成立することである．
+
+  $A = (b_i) \in \mathcal{B}_{h',k'}$が$A = (a_i) \in \mathcal{B}_{h,k}$の後続であるとは，
+  \begin{enumerate}
+    \item $k'\ge k, h' \ge h , k' + h' \ge k + h$
+    \item $b_i = a_i$ $(-h\le i \le k)$
+  \end{enumerate}
+  が成立すること．さらに$1 \le b_i \le m$ $(-h' \le i < -h,\ k < i \le k')$が成立するとき，$m$-後続であるという．
+\end{definition}
+
+\section{\texttt{schecker\_proof\_1.ipynb}と主結果の証明}
+次の補題はScheckerの結果全体を支える要石である．
+\begin{lemma}
+  \label{Lem1}
+  許容的T区間は，許容的$3-$後続によって被覆される
+\end{lemma}
+ここから，次の定理を導くことができる
+\begin{theorem}
+  \label{Satz1}
+  $A = (a_i)\in \mathcal{B}_{h,k}$とし，$I(A)$は許容的とする．このとき，$t\in I(A)$は許容的とする．$r, s\in C(3)$によって
+  $$
+  t = [0; a_{-1},\cdots, a_{-h} + r] + [0; a_{1},\cdots, a_{k} + s]
+  $$
+  と表せる．
+\end{theorem}
+\begin{proof}
+  補題$\ref{Lem1}$より，$I(A)$は許容的$3$後続たちに被覆され，それらの許容的$3$後続たちもまた許容的な$3$後続たちに被覆される．
+
+  ここから，単調非減少な添え字の列$(\nu_i), (\mu_i)$と，自然数列$(u_i), (w_i)$があって，$\nu_{i + 1} + \mu_{i + 1} > \nu_i + \mu_i$かつ，各$i$について
+  $I(\sim u_1,\cdots, u_{\nu_i} | \sim w_1,\cdots, w_{\mu_i})$が$t$を含む$I(A)$の許容的$3$後続になる．
+
+  一般性を失わず，$\nu_1 < \nu_2 < \cdots $としてよく，許容性から$\mu_i$も非有界である（負方向だけが極端に大きくなると，$v(A)$の定義の分母が小さくなり，
+  したがって$v(A)$が，許容的になるには大きくなりすぎてしまう）．
+
+  そして
+  $$
+  r = [0; u_1, u_2,\cdots], \quad s = [0; w_1,w_2,\cdots]
+  $$
+  とすれば，$r, s \in C(3)$で，
+  $$
+  t = [0; a_{-1},\cdots, a_{-h} + r] + [0; a_1,\cdots,a_k + s]
+  $$
+  となる．
+\end{proof}
+
+定理\ref{Satz1}により，$I(A)$が許容的となる$A\in \mathcal{B}_{h,k}$をもとに$L$に含まれる区間を次のように作れる（ことがある）．
+
+と表せるのだから，$a_0$を適当に定め，
+$$
+\{(b_i) \in \mathbb{N}^\mathbb{Z} : a_i = b_i (-h \le i \le k ), 1\le b_i\le 3\}
+$$に属する両側無限列の$i\neq 0$での$\lambda_i$の値の上限を$\Lambda$とすれば，$[\Lambda,\infty) \cap (a_0 + I(A))\subset M$となる．
+実際$t\in [\Lambda,\infty) \cap (a_0 + I(A))$とすると，
+$t\in (a_0 + I(A))$だから，定理\ref{Satz1}により，$r, s\in C(3)$によって
+$$
+t = a_0 + [0; a_{-1},\cdots, a_{-h} + r] + [0; a_{1},\cdots, a_{k} + s]
+$$
+と表せる．$r = [0; b_1, b_2, \cdots], s = [0; c_1, c_2, \cdots]$とおき，
+$$
+B = (\cdots, b_2, b_1, a_{-h}, \cdots a_{-1}, a_0, a_1, \cdots a_k, c_1, c_2, \cdots)
+$$とすることで，$\lambda_0(B) = t$となるが，
+$\Lambda \le t$だから，$i\neq 0$について$\lambda_i(B) \le \lambda_0(B) = t$が分かる．つまり
+$$
+m(B) = \lambda_0(B) = t
+$$ 
+となり$t\in M$が分かる．
+
+\subsection{$M$に含まれる区間の構成}
+
+\texttt{schecker\_proof\_1.ipynb}の函数\texttt{max\_value\_of\_lambda\_i}は，この$\Lambda$の算出を行っている．
+具体的には．与えられた$A\in \mathcal{B}_{h,k}$（\texttt{negative\_side}，\texttt{positive\_side}，\texttt{a\_0}，に分けて入力される）に対して，
+まず$-h \le i \le k$における$\lambda_i$の値としてありうる最大値を\texttt{max\_value\_of\_lambda}を使って算出し
+（これは偶奇に合わせて$1,3$または$3,1$の繰り返しで延長するだけ），上限の候補リスト\texttt{max\_values}に追加する．
+次に$i < -h$または$k < i$での$\lambda_i$の値の上限を算出しなくてはならないが，これは$\sqrt{21}$の可能性だけ考慮すれば十分である．実際，$A$を$1, 3$の繰り返しで延長したものを$B$とすると，
+$$
+\limsup_{i\to\infty}\lambda_i (B) = 3 + [0;\overline{1,3}] + [0;\overline{1,3}] = \sqrt{21}
+$$
+であるから，$\sqrt{21}$以上であることはすぐに分かる．
+
+反対側も同様であるから，$k < i$として，$A$を$1,2,3$で延長した$\tilde{A}$について，$\lambda_i$の値を考える．
+$$
+\lambda_i(\tilde{A}) = a_i + [0;a_{i-1},\cdots] +  [0;a_{i+1},\cdots]\le 3 + [0;a_{i-1},\cdots,] + [0;\overline{1,3}]
+$$
+となることが分かる．ここで，$ [0;\overline{1,3}] \le  [0;a_{i-1},\cdots] $ となりうるのは，
+$a_{i-1}, a_{i-2}, \cdots$が$1, 3 , \cdots 1,3, 1, 4, \cdots$ となっている場合に限る（最初の$1, 3$の繰り返しは$0$回であることもありうる）．
+このとき，この中の$4$に対応する添え字を$j$とすると，
+$$
+\lambda_j(\tilde{A}) = 4 + [0; 1, \cdots] + [0; \cdots] \ge 4 + [0; 1, \overline{1, 3}] + [0; \overline{4, 1}] = 4.765\dots > \sqrt{21}
+$$
+となる．そして
+$$
+\lambda_i(\tilde{A}) \le 3 + [0;a_{i-1},\cdots,] + [0;\overline{1,3}] \le 3 +[0;\overline{1,4}] +[0;\overline{1,3}] = 4.6197\dots \lambda_j(\tilde{A}) 
+$$
+である．$i < -h$または$k < i$での$\lambda_i$の値が仮に$\sqrt{21}$を超えたとしても，そのような場合においては$-h\le i \le k$における$\lambda_j$がそれよりも大きい値を達成する．
+したがって，上限を考える際には，$-h \le i \le k$における$\lambda_i$の値の最大値に，$\sqrt{21}$を候補\texttt{max\_values}に追加するだけでよい．
+\texttt{max\_value\_of\_lambda\_i}は，こうして得られた\texttt{max\_values}の最大値と，その最大値を実現する連分数の表現を返している．
+
+\subsection{$M$に含まれる区間の探索}
+前節では，特定の$A\in \mathcal{B}_{h,k}$から$M$に含まれる区間を構成できることを見た．そこで，そのような区間によって$[\sqrt{21},\infty)$を埋め尽くすことができないか考える．
+そのために，\texttt{search\_intervals}で$M$に含まれる区間を探索する．この函数は以下のように機能する．
+
+まず，\texttt{for\_all\_intervals}によって，$h + k$が\texttt{max\_depth}以下の
+$a_{-h},\cdots, a_{-1}$ (\texttt{negative\_side}), $a_0, a_{1},\cdots, a_{k}$ (\texttt{nonnegative\_side})
+を全て列挙する（$a_0$は\texttt{FIRST\_NONNEGATIVE\_DIGITS} ，それ以外は\texttt{EXTENSION\_DIGITS}の中の数から選ぶ）．
+そして，列挙した各々について\texttt{process\_interval}を実行し，その結果を\texttt{results} リストに追加する．
+
+\texttt{process\_interval}では，
+\texttt{is\_addmissible\_interval}により$I(a_{-1},\cdots, a_{-h} | a_{1},\cdots, a_{k} )$が許容的かを判定し，許容的でないなら$\texttt{None}$を返して終了する．
+
+次に前節で解説した\texttt{max\_value\_of\_lambda\_i}により$\Lambda$（プログラム上では\texttt{maximum\_lambda\_i}） を算出し，
+$\Lambda$が$a_0 + I(a_{-1},\cdots, a_{-h} | a_{1},\cdots, a_{k} )$の最大値より大きければ$\texttt{None}$を返して終了する．
+
+この段階で函数が終了していないということは，$[\Lambda,\infty)$と$a_0 + I(a_{-1},\cdots, a_{-h} | a_{1},\cdots, a_{k} )$の共通部分が存在するということだから，それを返す．
+この区間は$M$に含まれる．
+
+ここまでで得られた$M$ に含まれる区間の和集合を，幾つかの互いに素な区間の和として表すことを考える．その処理は\text{show\_merged\_intervals}で行われている．
+
+\text{max\_depth}を$11$にして上記の処理を実行すると，以下の結果を得る（見やすさのために改行を入れた）．
+\begin{lstlisting}[language=python]
+  merged component count: 2
+  component 1: [4.58257569495584, 6.65569840573613]
+    lower| a_0: 4 T-interval: (3 | 3) 
+    expression: (3, [], (1, 3), [], (1, 3))
+
+    upper| a_0: 5 T-interval: (4, 4, 1, 4, 1 | 1, 4, 1, 4, 4) 
+    expression: (5, [1, 4, 1, 4, 4], (2, 1), [1, 4, 1, 4, 4], (3, 1))
+  
+  component 2: [6.65571056577910, 6.65673689257337]
+    lower| a_0: 5 T-interval: (3, 4, 1, 4, 1 | 1, 4, 1, 4, 4) 
+    expression: (5, [1, 4, 1, 4, 3], (1, 3), [1, 4, 1, 4, 4], (1, 2))
+    
+    upper| a_0: 5 T-interval: (4, 1, 4, 1 | 1, 4, 1, 4) 
+    expression: (5, [1, 4, 1, 4], (1, 2), [1, 4, 1, 4], (1, 3))
+  \end{lstlisting}
+  
+
+
+\section{補題\ref{Lem1}の証明}
+補題\ref{Lem1}は，次の補題から証明される．
+\begin{lemma}
+  \label{Lem2}
+  $1\neq 0$
+\end{lemma}
+
+\section{\texttt{schecker\_proof\_2.ipynb}と補題\ref{Lem2}の検証}
+
+
+\begin{thebibliography}{99}
+\raggedright
+\bibitem{schecker} 
+H. Schecker, 
+{\it \"Uber die Menge der Zahlen, die als Minima quadratischer Formen auftreten}, 
+J. Number Theory {\bf 9} (1977), no.~1, 121--141;
+\end{thebibliography}
+
+\end{document}
