@@ -7,6 +7,8 @@
 \usepackage{url}
 \usepackage[top=30truemm,bottom=30truemm,left=25truemm,right=25truemm]{geometry}
 
+\theoremstyle{definition}
+
 \newtheorem{theorem}{定理}
 \newtheorem{lemma}{補題}
 \newtheorem{definition}{定義}
@@ -46,9 +48,9 @@
      +[0;a_{i-1},a_{i-2},\ldots]
   \]
   とおく．そして
-  $$
+  \[
   l(A) = \limsup_{i\to \infty} \lambda_i(A), \quad m(A) = \sup_{i\in \mathbb{Z}} \lambda_i(A)
-  $$
+  \]
   とする．
   
   また，
@@ -62,9 +64,9 @@
     とおく．
 \end{definition}
 
-続いて，Schekcerの論文で定義されている概念を列挙する．
+続いて，Scheckerの論文で定義されている概念を列挙する．
 \begin{definition}
-  $$
+  \[
   \theta_i = \begin{cases}
     [0; \overline{1, 2}] \quad i : odd \\
     [0; \overline{2, 1}] \quad i : even
@@ -73,11 +75,11 @@
     [0; \overline{1, 3}] \quad i : odd \\
     [0; \overline{3, 1}] \quad i : even
   \end{cases},
-  $$
+  \]
   とおく．また，
-  $$
+  \[
   \mathcal{B}_{h,k} = \{ (a_i)_{-h \le i \le k} : a_i\in \mathbb{N}, 1\le a_i \le 4 \}
-  $$
+  \]
   とし，$A = (a_i) \in \mathcal{B}_{h,k}$について，$A$のT区間を以下のように定める:
 
   左端が
@@ -88,29 +90,29 @@
 
   右端が
   \begin{align*}
-    \max \{[0; a_{-1},\cdots , a_{-h} + \eta_{h + 1}] + [0; a_1,\cdots , a_{k + 1} + \theta_k],\\
+    \max \{[0; a_{-1},\cdots , a_{-h} + \eta_{h + 1}] + [0; a_1,\cdots , a_k + \theta_{k + 1}],\\
     [0; a_{-1},\cdots , a_{-h} + \theta_{h + 1}] + [0; a_1,\cdots , a_{k} + \eta_{k + 1}] \}
   \end{align*}
   となる閉区間．
 
   これを$I(A)$とか，$I(a_{-1},\cdots, a_{-h} | a_1, \cdots a_k)$とかく．
 
-  $v(a)$を
-  $$
-  v(A) = \left| \frac{[0; a_1,\cdots, a_k + \eta_1] - [0; a_1,\cdots, a_k + \eta_2]}{[0; a_1,\cdots, a_{-h} + \eta_1] - [0; a_1,\cdots, a_{-h} + \eta_2]}\right|
-  $$
+  $v(A)$を
+  \[
+  v(A) = \left| \frac{[0; a_1,\cdots, a_k + \eta_1] - [0; a_1,\cdots, a_k + \eta_2]}{[0; a_{-1},\cdots, a_{-h} + \eta_1] - [0; a_{-1},\cdots, a_{-h} + \eta_2]}\right|
+  \]
   と定め，これをT比と呼ぶ．
 
   $I(A)$が許容的であるとは，\begin{enumerate}
     \item $h \ge 2$ または$a_{-1} \ge 2$
-    \item $h \ge 2$ または$a_1 \ge 2$
+    \item $k \ge 2$ または$a_1 \ge 2$
     \item $\frac{5}{17} \le v(A) \le \frac{17}{5}$
   \end{enumerate}
   が成立することである．
 
-  $A = (b_i) \in \mathcal{B}_{h',k'}$が$A = (a_i) \in \mathcal{B}_{h,k}$の後続であるとは，
+  $B = (b_i) \in \mathcal{B}_{h',k'}$が$A = (a_i) \in \mathcal{B}_{h,k}$の後続であるとは，
   \begin{enumerate}
-    \item $k'\ge k, h' \ge h , k' + h' \ge k + h$
+    \item $k'\ge k, h' \ge h , k' + h' > k + h$
     \item $b_i = a_i$ $(-h\le i \le k)$
   \end{enumerate}
   が成立すること．さらに$1 \le b_i \le m$ $(-h' \le i < -h,\ k < i \le k')$が成立するとき，$m$-後続であるという．
@@ -125,10 +127,10 @@
 ここから，次の定理を導くことができる
 \begin{theorem}
   \label{Satz1}
-  $A = (a_i)\in \mathcal{B}_{h,k}$とし，$I(A)$は許容的とする．このとき，$t\in I(A)$は許容的とする．$r, s\in C(3)$によって
-  $$
+  $A = (a_i)\in \mathcal{B}_{h,k}$とし，$I(A)$は許容的とする．このとき，$t\in I(A)$とする．$r, s\in C(3)$によって
+  \[
   t = [0; a_{-1},\cdots, a_{-h} + r] + [0; a_{1},\cdots, a_{k} + s]
-  $$
+  \]
   と表せる．
 \end{theorem}
 \begin{proof}
@@ -141,35 +143,35 @@
   したがって$v(A)$が，許容的になるには大きくなりすぎてしまう）．
 
   そして
-  $$
+  \[
   r = [0; u_1, u_2,\cdots], \quad s = [0; w_1,w_2,\cdots]
-  $$
+  \]
   とすれば，$r, s \in C(3)$で，
-  $$
+  \[
   t = [0; a_{-1},\cdots, a_{-h} + r] + [0; a_1,\cdots,a_k + s]
-  $$
+  \]
   となる．
 \end{proof}
 
 定理\ref{Satz1}により，$I(A)$が許容的となる$A\in \mathcal{B}_{h,k}$をもとに$L$に含まれる区間を次のように作れる（ことがある）．
 
 と表せるのだから，$a_0$を適当に定め，
-$$
-\{(b_i) \in \mathbb{N}^\mathbb{Z} : a_i = b_i (-h \le i \le k ), 1\le b_i\le 3\}
-$$に属する両側無限列の$i\neq 0$での$\lambda_i$の値の上限を$\Lambda$とすれば，$[\Lambda,\infty) \cap (a_0 + I(A))\subset M$となる．
+\[
+\{(b_i) \in \mathbb{N}^\mathbb{Z} : a_i = b_i (-h \le i \le k ), 1\le b_i\le 3 (i < -h, k< i )\}
+\]に属する両側無限列の$i\neq 0$での$\lambda_i$の値の上限を$\Lambda$とすれば，$[\Lambda,\infty) \cap (a_0 + I(A))\subset M$となる．
 実際$t\in [\Lambda,\infty) \cap (a_0 + I(A))$とすると，
 $t\in (a_0 + I(A))$だから，定理\ref{Satz1}により，$r, s\in C(3)$によって
-$$
+\[
 t = a_0 + [0; a_{-1},\cdots, a_{-h} + r] + [0; a_{1},\cdots, a_{k} + s]
-$$
+\]
 と表せる．$r = [0; b_1, b_2, \cdots], s = [0; c_1, c_2, \cdots]$とおき，
-$$
+\[
 B = (\cdots, b_2, b_1, a_{-h}, \cdots a_{-1}, a_0, a_1, \cdots a_k, c_1, c_2, \cdots)
-$$とすることで，$\lambda_0(B) = t$となるが，
+\]とすることで，$\lambda_0(B) = t$となるが，
 $\Lambda \le t$だから，$i\neq 0$について$\lambda_i(B) \le \lambda_0(B) = t$が分かる．つまり
-$$
+\[
 m(B) = \lambda_0(B) = t
-$$ 
+\] 
 となり$t\in M$が分かる．
 
 \subsection{$M$に含まれる区間の構成}
@@ -179,26 +181,26 @@ $$
 まず$-h \le i \le k$における$\lambda_i$の値としてありうる最大値を\texttt{max\_value\_of\_lambda}を使って算出し
 （これは偶奇に合わせて$1,3$または$3,1$の繰り返しで延長するだけ），上限の候補リスト\texttt{max\_values}に追加する．
 次に$i < -h$または$k < i$での$\lambda_i$の値の上限を算出しなくてはならないが，これは$\sqrt{21}$の可能性だけ考慮すれば十分である．実際，$A$を$1, 3$の繰り返しで延長したものを$B$とすると，
-$$
+\[
 \limsup_{i\to\infty}\lambda_i (B) = 3 + [0;\overline{1,3}] + [0;\overline{1,3}] = \sqrt{21}
-$$
+\]
 であるから，$\sqrt{21}$以上であることはすぐに分かる．
 
 反対側も同様であるから，$k < i$として，$A$を$1,2,3$で延長した$\tilde{A}$について，$\lambda_i$の値を考える．
-$$
+\[
 \lambda_i(\tilde{A}) = a_i + [0;a_{i-1},\cdots] +  [0;a_{i+1},\cdots]\le 3 + [0;a_{i-1},\cdots,] + [0;\overline{1,3}]
-$$
-となることが分かる．ここで，$ [0;\overline{1,3}] \le  [0;a_{i-1},\cdots] $ となりうるのは，
+\]
+となることが分かる．ここで，$ [0;\overline{1,3}] <  [0;a_{i-1},\cdots] $ となりうるのは，
 $a_{i-1}, a_{i-2}, \cdots$が$1, 3 , \cdots 1,3, 1, 4, \cdots$ となっている場合に限る（最初の$1, 3$の繰り返しは$0$回であることもありうる）．
 このとき，この中の$4$に対応する添え字を$j$とすると，
-$$
+\[
 \lambda_j(\tilde{A}) = 4 + [0; 1, \cdots] + [0; \cdots] \ge 4 + [0; 1, \overline{1, 3}] + [0; \overline{4, 1}] = 4.765\dots > \sqrt{21}
-$$
+\]
 となる．そして
-$$
-\lambda_i(\tilde{A}) \le 3 + [0;a_{i-1},\cdots,] + [0;\overline{1,3}] \le 3 +[0;\overline{1,4}] +[0;\overline{1,3}] = 4.6197\dots \lambda_j(\tilde{A}) 
-$$
-である．$i < -h$または$k < i$での$\lambda_i$の値が仮に$\sqrt{21}$を超えたとしても，そのような場合においては$-h\le i \le k$における$\lambda_j$がそれよりも大きい値を達成する．
+\[
+\lambda_i(\tilde{A}) \le 3 + [0;a_{i-1},\cdots,] + [0;\overline{1,3}] \le 3 +[0;\overline{1,4}] +[0;\overline{1,3}] = 4.6197\dots < \lambda_j(\tilde{A}) 
+\]
+である．$i < -h$または$k < i$での$\lambda_i$の値が仮に$\sqrt{21}$を超えたとしても，そのような場合においては$-h\le j \le k$における$\lambda_j$がそれよりも大きい値を達成する．
 したがって，上限を考える際には，$-h \le i \le k$における$\lambda_i$の値の最大値に，$\sqrt{21}$を候補\texttt{max\_values}に追加するだけでよい．
 \texttt{max\_value\_of\_lambda\_i}は，こうして得られた\texttt{max\_values}の最大値と，その最大値を実現する連分数の表現を返している．
 
@@ -252,14 +254,273 @@ $3 + [0; \overline{1,3}] +  [0; \overline{1,3}]$．つまり$\sqrt{21}$となる
 補題\ref{Lem1}は，次の補題から証明される．
 \begin{lemma}
   \label{Lem2}
-  $A\in \mathcal{B}_{h,k}$とし，$I(A)$は許容的で$1\le v(A) \le \frac{17}{5}$とする．このとき，以下の区間は$I(A)$の許容的後続で，それらの和集合は連結である
+  $A\in \mathcal{B}_{h,k}$とし，$I(A)$は許容的で$1\le v(A) \le \frac{17}{5}$とする．このとき，以下の区間は$I(A)$の許容的（$3$-）後続で，それらの和集合は連結である
   \begin{enumerate}
-    \item $1 = (-1)^{h + k}$かつ，$1\le v(A)\le 1.98$の場合
-    あ
-    \item 
+    \item $1 = (-1)^{h + k}$かつ，$1\le v(A)\le 1.97$の場合\\
+    $I(\sim 2, 1| \sim 3), I(\sim 3| \sim 2), I(\sim 2| \sim 2), I(\sim 1| \sim)$
+    \item $1 = (-1)^{h + k}$かつ，$1.95\le v(A)$の場合\\
+    $I(\sim 3| \sim 2), I(\sim 2, 1, 3| \sim 3, 1), I(\sim 2| \sim ), I(\sim 1| \sim)$
+    \item $-1 = (-1)^{h + k}$かつ，$1.95\le v(A)$の場合\\
+    $I(\sim 3| \sim 1, 2), I(\sim 2, 1, 3| \sim 1, 3, 1), I(\sim 2| \sim 1), I(\sim 1| \sim)$
+    \item $-1 = (-1)^{h + k}$かつ，$1.95\le v(A)$の場合\\
+    $I(\sim 3| \sim 1), I(\sim 2| \sim ), I(\sim 1| \sim )$
+    
   \end{enumerate}
 \end{lemma}
+\begin{remark}
+  これは\cite{schecker}のLemma2を元にしているが，大幅に変更・簡略化している．Lemma2の主張自体は正しいと思われるが，Scheckerの主張する方法で検証は難しいと思われるため，
+  Scheckerのミスではないかと考えられる．いづれにせよ，簡略化された補題\ref{Lem2}で主定理$[\sqrt{21}, \infty)$を証明するのに十分であるから，これを検証すればよい．
+\end{remark}
 
+\begin{proof}[補題\ref{Lem2}から補題\ref{Lem1}の証明]
+ $I(A)$が許容的なとき，必要なら逆順を考えることで，一般性を失わず$1\le v(A) \le \frac{17}{5}$を仮定してよい．
+
+ \begin{enumerate}
+  \item $1= (-1)^{h + k}$の場合 \\
+  補題\ref{Lem2}により，$I(\sim 1| \sim), I(\sim 3| \sim 2), I(\sim 2, 1| \sim 3)$（または$I(\sim 2| \sim)$）が$I(A)$の許容的$3$-後続になる．
+  $h,k$が偶数のときを考える．$h,k$が共に奇数の時は，左端と右端が入れかえて同様の議論を行えばよい．$I(A)$の左端は，
+  \begin{align*}
+    \min \{[0; a_{-1},\cdots , a_{-h}, \overline{3, 1}] + [0; a_1,\cdots , a_{k} + \overline{2, 1}],\\
+    [0; a_{-1},\cdots , a_{-h}, \overline{2, 1}] + [0; a_1,\cdots , a_{k}, \overline{3, 1}] \}
+  \end{align*}
+  であり，$[0; a_{-1},\cdots , a_{-h}, \overline{3, 1}] + [0; a_1,\cdots , a_{k} + \overline{2, 1}]$は$I(\sim 3| \sim 2)$に含まれ，
+  $[0; a_{-1},\cdots , a_{-h}, \overline{2, 1}] + [0; a_1,\cdots , a_{k}, \overline{3, 1}]$は$I(\sim 2, 1| \sim 3)$および$I(\sim 2| \sim)$に含まれるので，
+  $I(A)$の左端は\ref{Lem2}によって$3$-後続と分かるT区間たちの中に含まれる．
+  
+  同様に右端は$I(\sim 1| \sim)$に含まれる．
+
+  \item $-1= (-1)^{h + k}$の場合\\
+  補題\ref{Lem2}により，$I(\sim 3| \sim 1, 2)$（または$I(\sim 3| \sim 1)$）, $I(\sim 2| \sim 1)$（または$I(\sim 2| \sim)$），$I(\sim 1, | \sim)$
+  $I(A)$の許容的$3$-後続になる．
+  $h$が偶数，$k$が奇数の時，$I(A)$の左端は
+  \begin{align*}
+    \min \{[0; a_{-1},\cdots , a_{-h}, \overline{3, 1}] + [0; a_1,\cdots , a_{k} + \overline{1, 2}],\\
+    [0; a_{-1},\cdots , a_{-h}, \overline{2, 1}] + [0; a_1,\cdots , a_{k}, \overline{1, 3}] \}
+  \end{align*}
+  であり，$[0; a_{-1},\cdots , a_{-h}, \overline{3, 1}] + [0; a_1,\cdots , a_{k} + \overline{1, 2}]$は$I(\sim 3| \sim 1, 2)$および$I(\sim 3| \sim 1)$に，
+  $[0; a_{-1},\cdots , a_{-h}, \overline{2, 1}] + [0; a_1,\cdots , a_{k}, \overline{1, 3}]$は$I(\sim 2| \sim 1)$および$I(\sim 2| \sim)$に含まれるので，
+  $I(A)$の左端は\ref{Lem2}によって$3$-後続と分かるT区間たちの中に含まれる．
+  同様に右端は$I(\sim 1| \sim)$に含まれる．
+ \end{enumerate}
+  以上より，$I(A)$の両端は補題\ref{Lem2}によって$3$-後続と分かるT区間たちの中に含まれ，
+  しかも補題\ref{Lem2}ではそれらが連結であると主張しているのだから，$I(A)$はそれらに被覆されている．つまり$I(A)$は許容的$3$-後続によって被覆される．
+\end{proof}
+
+\section{補題\ref{Lem2}の証明のための補助定理}
+補題\ref{Lem2}の証明には，以下の補助定理（\cite{schecker}でのHilfsatz）を用いる
+\begin{lemma}
+  \label{Hilfsatz1}
+  $I_1,\cdots, I_n$を閉区間の列
+  $A(I_\nu)$を$I_\nu$の左端，$E(I_\nu)$を右端とする．
+  \begin{enumerate}
+    \item $A(I_1) \le E(I_n)$
+    \item $A(I_\nu) \le E(I_{\nu - 1}) \quad \nu = 2\cdots n$
+  \end{enumerate}
+  ならば，$\bigcup_{\nu = 1}^n I_\nu$は一つの区間である．
+\end{lemma}
+\begin{proof}
+  $\bigcup_{\nu = 1}^n I_\nu$が区間でないとすると，ある点$t$があって，その点を含むような$I_\nu$は存在しないのに，
+  $t$より大きい点でも小さい点にも，$\bigcup_{\nu = 1}^n I_\nu$に含まれるようなものが存在する．
+
+  ある$\nu = 2,\cdots n$について，$I_{\nu - 1}$がその点の左側に位置するとする．つまり$E(I_{\nu - 1})\le t$とする．
+  すると，$A(I_\nu) \le E(I_{\nu - 1})$だから，$t$が$I_\nu$に含まれないことから，$I_\nu$も$t$の左側になくてはならない．
+  よって一つでも$t$の左側にある区間$I_k$があれば，$k$以降の$I_\nu$はすべて$t$の左側に位置する．しかし，$A(I_1)\le E(I_n)$だから，
+  そのような$k$が一つでもあれば$I_1$が$t$の左側にあること，したがって全ての区間が$t$の左側にあることがわかる．
+  これは矛盾であるから，$\bigcup_{\nu = 1}^n I_\nu$は一つの区間でなくてはならない
+\end{proof}
+\begin{definition}
+  非負実数$r,s,t,v$と正数$x,y$について，
+  \[
+  G(r,s,t,v; x) = \frac{(1 + rx)(1 + sx)}{(1 + tx)(1 + vx)}, \quad 
+  H(r, s, t, v; x, y) = \frac{r - s}{t - v}G(t,v,\eta_1, \eta_2; x)G(\eta_1, \eta_2, r, s; y)\quad (t\neq v)
+  \]
+  とする．
+\end{definition}
+\begin{lemma}
+  \label{Hilfsatz2}
+  $r_1, r_2, s_1, s_2$を非負実数，$A = (a_i) \in \mathcal{B}_{h,k}$とし，
+  \[
+  c^+ = [0;a_k,\cdots, a_1], \quad c^- = [0; a_{-h},\cdots, a_{-1}]
+  \]
+  とする．$r_1\neq r_2$のとき，以下は同値である
+  \begin{enumerate}
+    \item \begin{align*}
+      (-1)^{h + k} ([0; a_1,\cdots , a_k + r_1] + [0; a_{-1}, \cdots, a_{-h} + s_1]) \\
+      \le (-1)^{h + k} ([0; a_1,\cdots , a_k + r_2] + [0; a_{-1}, \cdots, a_{-h} + s_2])
+    \end{align*}
+    
+    \item 
+    \[
+    (-1)^{h} v(A) (r_2 - r_1) \ge (-1)^k (r_2 - r_1) H(s_1, s_2, r_2, r_1; c^+ , c^-)
+    \]
+  \end{enumerate}
+\end{lemma}
+\begin{remark}
+  これは\cite{schecker}のHilfsatz2であるが，原論文には符号に間違いがある．
+\end{remark}
+\begin{proof}
+  (1)は
+  \begin{align*}
+    (-1)^{h + k} ([0; a_1,\cdots , a_k + r_1] - [0; a_1,\cdots , a_k + r_2]) \\
+    \le (-1)^{h + k} ([0; a_{-1}, \cdots, a_{-h} + s_2] - [0; a_{-1}, \cdots, a_{-h} + s_1])
+  \end{align*}
+  と同値である．そして，連分数の計算により
+  \[
+  \frac{q_{-(h -1)}}{q_{-h}} = c^- = [0; a_{-h},\cdots, a_{-1}], \quad \frac{q_{k-1}}{q_k} = c^+ = [0;a_k,\cdots, a_1]
+  \]
+  \begin{align*}
+    [0; a_1,\cdots , a_k + r_1] - [0; a_1,\cdots , a_k + r_2] = \frac{(-1)^k (r_1 - r_2)}{(q_k + r_1 q_{k - 1})(q_{k} + r_2 q_{k - 1})}, \\
+    [0; a_{-1},\cdots , a_{-h} + s_2] - [0; a_{-1},\cdots , a_{-h} + s_1] = \frac{(-1)^h (s_2 - s_1)}{(q_{-h} + s_2 q_{-(h - 1)})(q_{-h} + s_1 q_{-(h - 1)})}, \\
+  \end{align*}
+  だから（ただし$q_k q_{k-1}$は$[0; a_1,\cdots, a_k]$の$k$番目，$k-1$番目の近似分数の分母，
+  $q_{-h} q_{-(h-1)}$は$[0; a_{-1},\cdots, a_{-h}]$の$h$番目，$h-1$番目の近似分数の分母，をそれぞれ表す），
+  （1）は
+  \begin{align*}
+    (-1)^{h} \frac{(r_1 - r_2)}{(q_k + r_1 q_{k - 1})(q_{k} + r_2 q_{k - 1})}
+    \le (-1)^{k} \frac{(s_2 - s_1)}{(q_{-h} + s_2 q_{-(h - 1)})(q_{-h} + s_1 q_{-(h - 1)})}, \\
+    (-1)^{h} (r_1 - r_2)
+    \le (-1)^{k} (s_2 - s_1)\frac{(q_k + r_1 q_{k - 1})(q_{k} + r_2 q_{k - 1})}{(q_{-h} + s_2 q_{-(h - 1)})(q_{-h} + s_1 q_{-(h - 1)})}, \\
+    (-1)^{h} (r_1 - r_2)
+    \le (-1)^{k} (r_1 - r_2)\frac{s_1 - s_2}{r_2 - r_1}\frac{(q_k + r_1 q_{k - 1})(q_{k} + r_2 q_{k - 1})}{(q_{-h} + s_2 q_{-(h - 1)})(q_{-h} + s_1 q_{-(h - 1)})}, \\
+    (-1)^{h} (r_1 - r_2)
+    \le (-1)^{k} (r_1 - r_2)\frac{s_1 - s_2}{r_2 - r_1}\frac{(1 + r_1 c^+)(1 + r_2 c^+)}{(1 + s_2 c^-)(1 + s_1 c^-)}\frac{q_k^2}{q_{-h}^2}, \\
+  \end{align*}
+  と同値である．ここで，
+  \begin{align*}
+    H(s_1, s_2, r_2, r_1; c^+, c^-) &= \frac{s_1 - s_2}{r_2 - r_1}G(r_2, r_1, \eta_1, \eta_2; c^+)G(\eta_1, \eta_2, s_1, s_2; c^-) \\
+    &= \frac{s_1 - s_2}{r_2 - r_1} 
+    \frac{(1 + r_2 c^+)(1 + r_1 c^+)}{(1 + \eta_1 c^+)(1 + \eta_2 c^+)}
+    \frac{(1 + \eta_1 c^-)(1 + \eta_2 c^-)}{(1 + s_1 c^-)(1 + s_2 c^-)}\\
+    &= \frac{s_1 - s_2}{r_2 - r_1} 
+    \frac{(1 + r_2 c^+)(1 + r_1 c^+)}{(1 + s_1 c^-)(1 + s_2 c^-)}
+    \frac{(1 + \eta_1 c^-)(1 + \eta_2 c^-)}{(1 + \eta_1 c^+)(1 + \eta_2 c^+)}
+  \end{align*}
+  だから，（1）は
+  \begin{align*}
+    (-1)^{h} (r_1 - r_2)
+    \le (-1)^{k} (r_1 - r_2)H(s_1, s_2, r_2, r_1; c^+ , c^-)\frac{(1 + \eta_1 c^+)(1 + \eta_2 c^+)}{(1 + \eta_1 c^-)(1 + \eta_2 c^-)}\frac{q_k^2}{q_{-h}^2},
+  \end{align*}
+  と同値である．ここで，
+  \[
+  \frac{(1 + \eta_1 c^+)(1 + \eta_2 c^+)}{(1 + \eta_1 c^-)(1 + \eta_2 c^-)}\frac{q_k^2}{q_{-h}^2} 
+  = \frac{(q_k + \eta_1 q_{k-1} )(q_k + \eta_2 q_{k-1})}{(q_{-h} + \eta_1 q_{-(h- 1)})(q_{-h} + \eta_2 q_{-(h-1)})}
+  \]
+  だが，
+  \begin{align*}
+  |[0; a_{-1}, \cdots, a_{-h} + \eta_1] - [0; a_{-1}, \cdots, a_{-h} + \eta_2]| = 
+  \frac{|\eta_1 - \eta_2|}{(q_{-h} + \eta_1 q_{-(h- 1)})(q_{-h} + \eta_2 q_{-(h-1)})}, \\
+  |[0; a_{1}, \cdots, a_{k} + \eta_1] - [0; a_{1}, \cdots, a_{k} + \eta_2]| = 
+  \frac{|\eta_1 - \eta_2|}{(q_{k} + \eta_1 q_{k- 1})(q_{k} + \eta_2 q_{k-1})},\\
+  \frac{(q_k + \eta_1 q_{k-1} )(q_k + \eta_2 q_{k-1})}{(q_{-h} + \eta_1 q_{-(h- 1)})(q_{-h} + \eta_2 q_{-(h-1)})} = 
+  \frac{|[0; a_{-1}, \cdots, a_{-h} + \eta_1] - [0; a_{-1}, \cdots, a_{-h} + \eta_2]|}{|[0; a_{1}, \cdots, a_{k} + \eta_1] - [0; a_{1}, \cdots, a_{k} + \eta_2]|}
+  = \frac{1}{v(A)}
+  \end{align*}
+  となるので，（1）は
+  \begin{align*}
+    (-1)^{h} (r_1 - r_2)
+    \le (-1)^{k} (r_1 - r_2)H(s_1, s_2, r_2, r_1; c^+ , c^-)\frac{1}{v(A)}, \\
+    (-1)^{h} (r_1 - r_2)v(A) \le (-1)^{k} (r_1 - r_2)H(s_1, s_2, r_2, r_1; c^+ , c^-), \\
+    (-1)^{h} (r_2 - r_1)v(A) \ge (-1)^{k} (r_2 - r_1)H(s_1, s_2, r_2, r_1; c^+ , c^-)
+  \end{align*}
+  と同値である．すなわち，（2）と同値である．
+\end{proof}
+\begin{lemma}
+  \label{Hilfsatz4}
+  $A = (a_i) \in \mathcal{B}_{h,k}$とし，$u_1,\cdots, u_\nu, w_1,\cdots w_\mu \in \mathbb{N}$，$c^-, c^+$を補題\ref{Hilfsatz2}と同様に定める．
+  また，
+  \[
+  r_i = [0;u_1,\cdots, u_\nu + \eta_i], \quad s_i = [0;w_1,\cdots, w_\mu + \eta_i]
+  \]
+  とすると，$I(A)$の後続$I(\sim u_1,\cdots, u_\nu |\sim w_1,\cdots w_\mu)$に対して
+  \[
+  v(\sim u_1,\cdots, u_\nu |\sim w_1,\cdots, w_\mu)
+  = \frac{v(A)}{|H(r_1,r_2,s_1,s_2; c^+, c^-)|}
+  \]
+  となる．
+\end{lemma}
+\begin{remark}
+  この補題は\cite{schecker}のHilfsatz 4を元にしているが，原論文のものは間違っている．
+\end{remark}
+\begin{proof}
+  $[0;a_1,\ldots,a_k]$および$[0;a_{-1},\ldots,a_{-h}]$の近似分数の分母を，
+  それぞれ$q_k,q_{k-1}$および$q_{-h},q_{-(h-1)}$と書く．このとき
+  \[
+    c^+=\frac{q_{k-1}}{q_k},\qquad
+    c^-=\frac{q_{-(h-1)}}{q_{-h}}
+  \]
+  である．連分数の差の公式により，
+  \begin{align*}
+    &\left|[0;a_{-1},\ldots,a_{-h}+r_1]
+      -[0;a_{-1},\ldots,a_{-h}+r_2]\right|\\
+    &\qquad
+      =\frac{|r_1-r_2|}
+      {(q_{-h}+r_1q_{-(h-1)})(q_{-h}+r_2q_{-(h-1)})},\\
+    &\left|[0;a_1,\ldots,a_k+s_1]
+      -[0;a_1,\ldots,a_k+s_2]\right|\\
+    &\qquad
+      =\frac{|s_1-s_2|}
+      {(q_k+s_1q_{k-1})(q_k+s_2q_{k-1})}.
+  \end{align*}
+  したがって，$H$の定義を展開すると
+  \begin{align*}
+    &|H(r_1,r_2,s_1,s_2;c^+,c^-)|\\
+    &=
+    \left|\frac{r_1-r_2}{(1+r_1c^-)(1+r_2c^-)}\right|
+    \left|\frac{(1+s_1c^+)(1+s_2c^+)}{s_1-s_2}\right|
+    \frac{(1+\eta_1c^-)(1+\eta_2c^-)}
+         {(1+\eta_1c^+)(1+\eta_2c^+)}\\
+    &=
+    \frac{
+      \left|[0;a_{-1},\ldots,a_{-h}+r_1]
+      -[0;a_{-1},\ldots,a_{-h}+r_2]\right|}
+    {
+      \left|[0;a_1,\ldots,a_k+s_1]
+      -[0;a_1,\ldots,a_k+s_2]\right|}
+    v(A).
+  \end{align*}
+  \par\medskip\noindent
+  ここで$r_i=[0;u_1,\ldots,u_\nu+\eta_i]$および
+  $s_i=[0;w_1,\ldots,w_\mu+\eta_i]$だから，最後の式の分数は
+  \[
+    \frac{1}
+    {v(\sim u_1,\ldots,u_\nu\mid\sim w_1,\ldots,w_\mu)}
+  \]
+  に等しい．よって
+  \[
+    |H(r_1,r_2,s_1,s_2;c^+,c^-)|
+    =
+    \frac{v(A)}
+    {v(\sim u_1,\ldots,u_\nu\mid\sim w_1,\ldots,w_\mu)}.
+  \]
+  これを変形すれば主張を得る．
+\end{proof}
+\begin{lemma}
+  \label{Hilfsatz6}
+  $A \in \mathcal{B}_{h,k}$とし，$I(A)$を許容的とする．
+  $c^-, c^+$を補題\ref{Hilfsatz2}と同様に定めると，
+  $$
+  0.2 \le c^-, c^+ \le 0.9
+  $$
+  である．
+\end{lemma}
+\begin{proof}
+  $I(A)$は許容的だから，$k \ge 2$ または$a_1 \ge 2$である．$k\ge 2$とすると，
+  $$
+  c^+ = [0;a_k,\cdots, a_1] \le [0;1,4,1] = 0.833\dots < 0.9
+  $$であり，$k=1$かつ$a_1 \ge 2$とすると，
+  $$
+  c^+ \le [0;2] = 0.5 < 0.9
+  $$
+  であるから，$c_+ < 0.9$である．同様に$c_- < 0.9$．
+
+  さらに，$k\ge 2$のとき
+  $$
+  c^+ = [0;a_k,\cdots, a_1] \ge [0;4,1] = 0.2
+  $$であり，また$k=1$かつ$a_1 \ge 2$のとき
+  $$
+  c^+ = [0;a_1] \ge [0;4] = 0.25 > 0.2
+  $$だから，$c^+ \ge 0.2$である．$c^-$についても同様だから，結局$0.2 \le c^-, c^+ \le 0.9$が分かる．
+\end{proof}
 \section{\texttt{schecker\_proof\_2.ipynb}と補題\ref{Lem2}の検証}
 
 
