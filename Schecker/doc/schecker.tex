@@ -238,7 +238,13 @@ $\Lambda$が$a_0 + I(a_{-1},\cdots, a_{-h} | a_{1},\cdots, a_{k} )$の最大値�
     
     upper| a_0: 5 T-interval: (4, 1, 4, 1 | 1, 4, 1, 4) 
     expression: (5, [1, 4, 1, 4], (1, 2), [1, 4, 1, 4], (1, 3))
-  \end{lstlisting}
+\end{lstlisting}
+
+これは，\text{max\_depth}が$11$のとき，$M$に含まれている区間を探索すると，その和集合は二つの互いに素な区間
+$[4.58257569495584, 6.65569840573613]$と$[6.65571056577910, 6.65673689257337]$からなることを意味している．また，最初の方の区間の左端は連分数で表現すると
+$3 + [0; \overline{1,3}] +  [0; \overline{1,3}]$．つまり$\sqrt{21}$となることも意味している．
+
+ここで，Hallの結果\cite{hall}から$[6,\infty) \subset M$だから，今得られた結果と合わせて$[\sqrt{21},\infty) \subset M$が分かる．
   
 
 
@@ -246,7 +252,12 @@ $\Lambda$が$a_0 + I(a_{-1},\cdots, a_{-h} | a_{1},\cdots, a_{k} )$の最大値�
 補題\ref{Lem1}は，次の補題から証明される．
 \begin{lemma}
   \label{Lem2}
-  $1\neq 0$
+  $A\in \mathcal{B}_{h,k}$とし，$I(A)$は許容的で$1\le v(A) \le \frac{17}{5}$とする．このとき，以下の区間は$I(A)$の許容的後続で，それらの和集合は連結である
+  \begin{enumerate}
+    \item $1 = (-1)^{h + k}$かつ，$1\le v(A)\le 1.98$の場合
+    あ
+    \item 
+  \end{enumerate}
 \end{lemma}
 
 \section{\texttt{schecker\_proof\_2.ipynb}と補題\ref{Lem2}の検証}
@@ -258,6 +269,11 @@ $\Lambda$が$a_0 + I(a_{-1},\cdots, a_{-h} | a_{1},\cdots, a_{k} )$の最大値�
 H. Schecker, 
 {\it \"Uber die Menge der Zahlen, die als Minima quadratischer Formen auftreten}, 
 J. Number Theory {\bf 9} (1977), no.~1, 121--141;
+
+\bibitem{hall}
+M.~Hall, Jr.,
+\textit{On the sum and product of continued fractions},
+Annals of Mathematics \textbf{48} (1947), no.~4, 966--993.
 \end{thebibliography}
 
 \end{document}
