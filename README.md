@@ -38,7 +38,8 @@ All notebooks are written for [SageMath](https://www.sagemath.org/).
 .
 ├── Schecker/
 │   ├── schecker_proof_1.ipynb
-│   └── schecker_proof_2.ipynb
+│   ├── schecker_proof_2.ipynb
+│   └── schecker_proof_3.ipynb
 ├── misc/
 │   ├── hall_proof.ipynb
 │   └── freiman_judin_proof.ipynb
@@ -56,13 +57,15 @@ Notebooks implementing and extending the method of Schecker [^schecker], who pro
   - Exhaustively enumerates such pairs up to a chosen depth and merges overlapping intervals.
   - Includes precomputed runs for depths $7$–$12$; at depth $\ge 11$ the merged components stabilize at $[4.582\ldots,6.655\ldots]$ and $[6.655\ldots,6.656\ldots]$, consistent with $\sqrt{21}\approx 4.582\ldots$.
 
-- **`schecker_proof_2.ipynb`** — Verification of Lemma 2 from Schecker's paper, which states that certain successor intervals are admissible and that their union is connected, using the auxiliary lemmas (*Hilfssätze*) established there.
-  - verifying simplified version of Lemma 2, which is sufficient to prove Lemma 1.
-  - Lemma 2 in Schecker's paper is correct, but seems not suitable to verify by using Hilfsätze. Schecker may have made some mistake.
-  - Also, Hilfssätze stated in the paper contain some mistakes in signs. Documentation for error correction will be added later.
+- **`schecker_proof_2.ipynb`** — Investigation of Lemma 2 from Schecker's paper and of the auxiliary lemmas (*Hilfssätze*) used in its proof.
+  - Tests the proposed successor lists and their admissibility and connectivity ranges.
+  - Records problems in the stated successor lists and auxiliary formulae.
   
-- **`schecker_proof_3.ipynb`** — Automated search and verification of proposition ike Lemma 2.
-  - work in progress
+- **`schecker_proof_3.ipynb`** — Direct automated search for short admissible 3-successors covering a given T-interval.
+  - Computes T-intervals, T-ratios, and all admissibility conditions directly from the definitions, without relying on Lemma 2 or Hilfssatz 4.
+  - Enumerates successors in increasing total suffix length and finds a minimum-cardinality interval cover at the first successful depth.
+  - Supports exhaustive finite surveys of all admissible base intervals with bounded total depth, grouped by parity, observed T-ratio range, and successor-cover type.
+  - Uses high-precision numerical arithmetic for discovery; proof candidates still require exact or interval-arithmetic certification.
 
 ### `misc/`
 
