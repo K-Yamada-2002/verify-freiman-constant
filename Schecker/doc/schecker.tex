@@ -5,6 +5,7 @@
 \usepackage{amsthm}
 \usepackage{bm}
 \usepackage{url}
+\usepackage{comment}
 \usepackage[top=30truemm,bottom=30truemm,left=25truemm,right=25truemm]{geometry}
 
 \theoremstyle{definition}
@@ -425,6 +426,41 @@ $3 + [0; \overline{1,3}] +  [0; \overline{1,3}]$．つまり$\sqrt{21}$となる
   と同値である．すなわち，（2）と同値である．
 \end{proof}
 \begin{lemma}
+  \label{Hilfsatz3}
+  $\tilde{r}\neq\tilde{s}$で$\tilde{t}\neq\tilde{v}$のとき，
+  \[
+  H(r,s,\tilde{r},\tilde{s}; x, y) \ge H(t,v,\tilde{t},\tilde{v}; x, y)
+  \]
+  と
+  \[
+  \frac{r - s}{\tilde{r} - \tilde{s}}G(\tilde{r},\tilde{s},\tilde{t},\tilde{v}; x) \ge 
+  \frac{t - v}{\tilde{t} - \tilde{v}}G(r,s,t,v;y)
+  \]
+  は同値である．
+\end{lemma}
+\begin{proof}
+  \begin{align*}
+    H(r,s,\tilde{r},\tilde{s}; x, y) = 
+    \frac{r - s}{\tilde{r} - \tilde{s}}
+    G(\tilde{r}, \tilde{s}, \eta_1, \eta_2; x)G(\eta_1, \eta_2, r, s; y), \\
+    H(t,v,\tilde{t},\tilde{v}; x, y) = 
+    \frac{t - v}{\tilde{t} - \tilde{v}}
+    G(\tilde{t}, \tilde{v}, \eta_1, \eta_2; x)G(\eta_1, \eta_2, t, v; y), \\
+  \end{align*}
+だから，
+\[
+  H(r,s,\tilde{r},\tilde{s}; x, y) \ge H(t,v,\tilde{t},\tilde{v}; x, y)
+\]
+は，
+\begin{align*}
+  \frac{r - s}{\tilde{r} - \tilde{s}}
+  G(\tilde{r}, \tilde{s}, \eta_1, \eta_2; x)G(\eta_1, \eta_2, r, s; y),
+  \ge 
+  \frac{t - v}{\tilde{t} - \tilde{v}}
+  G(\tilde{t}, \tilde{v}, \eta_1, \eta_2; x)G(\eta_1, \eta_2, t, v; y), \\
+\end{align*}
+\end{proof}
+\begin{lemma}
   \label{Hilfsatz4}
   $A = (a_i) \in \mathcal{B}_{h,k}$とし，$u_1,\cdots, u_\nu, w_1,\cdots w_\mu \in \mathbb{N}$，$c^-, c^+$を補題\ref{Hilfsatz2}と同様に定める．
   また，
@@ -523,6 +559,230 @@ $3 + [0; \overline{1,3}] +  [0; \overline{1,3}]$．つまり$\sqrt{21}$となる
 \end{proof}
 \section{\texttt{schecker\_proof\_2.ipynb}と補題\ref{Lem2}の検証}
 
+検証は\texttt{verify\_case\_family\_v\_cover}函数によって行われている．
+
+この函数は，\texttt{case\_family}を受け取り，それに紐付く$v(A)$の範囲において，
+実際に補題\ref{Lem2}の主張が成り立つかどうかを検証している．
+
+\texttt{case\_family}の中身は以下のような形式である：
+\begin{lstlisting}
+  # Case 2.1
+    {
+        "hk": [(0, 0), (1, 1)],
+        "v_range": (1, 1.98),
+        "cases": [
+        {
+            "intervals": [
+                ([2], [2]),
+                ([3], [1, 1]),
+                ([2, 3], [2, 3]),
+                ([1, 1, 3], [3, 1]),
+                ([1], []),
+            ],
+        },
+        {
+            "intervals": [
+                ([2], [2]),
+                ([3], [1, 2]),
+                ([2], [1]),
+                ([1], []),
+            ],
+        },
+    ],
+    },
+\end{lstlisting}
+この入力を受け取ったとき，\texttt{verify\_case\_family\_v\_cover}函数は，
+$(-1)^{h + k} = 1$の場合，つまり$(h, k) = (0, 0)$または$(1, 1)$のとき，
+$1\le v(A) \le 1.98$なる$A \in \mathcal{B}_{h,k}$について，補題\ref{Lem2}の主張が成り立つか検証している．つまり，
+$I(\sim 2| \sim 2) , I(\sim 3| \sim 1, 1) , I(\sim 2, 3| \sim 2, 3), I(\sim 1, 1, 3| \sim 3, 1), I(\sim 1| ~)$
+が全て$A$の許容的後継であって，それらの和集合が連結である，または，
+$I(\sim 2| \sim 2) , I(\sim 3| \sim 1, 2) , I(\sim 2| \sim 1), I(\sim 1| \sim 1)$
+が全て$A$の許容的後継であって，それらの和集合が連結であることを検証している．
+
+具体的には，\texttt{cases}の要素の中の\texttt{intervals}の要素に含まれる
+それぞれの要素に対応する後継が許容的であるのに充分な$v(A)$の範囲，さらに
+となりあう二つの要素について，それらが繋がっているのに充分な$v(A)$の範囲を計算する．
+そして\texttt{case\_family}の\texttt{v\_range}で指定された$v(A)$の範囲において，
+どれかの\texttt{cases}においてそれらの条件がすべて成り立つかどうかを検証している．
+
+
+\subsection{許容的になる範囲の計算}
+補題\ref{Hilfsatz4}により，$I(\sim u_1,\cdots, u_\nu | \sim w_1,\cdots, w_\mu)$が許容的，
+つまり$\frac{5}{17} \le v(\sim u_1,\cdots, u_\nu | \sim w_1,\cdots, w_\mu)\le \frac{17}{5}$であるためには
+\[
+\frac{5}{17}\le \frac{v(A)}{|H(r_1,r_2,s_1,s_2; c^+, c^-)|}\le \frac{17}{5}
+\]
+であること，つまり
+\[
+\frac{5}{17}|H(r_1,r_2,s_1,s_2; c^+, c^-)|\le v(A) \le \frac{17}{5}|H(r_1,r_2,s_1,s_2; c^+, c^-)|
+\]
+であることが必要かつ充分な条件である（$r_1,r_2,s_1,s_2, c^+, c^-$は補題\ref{Hilfsatz4}の通りに定める）．
+
+よって，補題\ref{Hilfsatz6}によって
+\[
+  \frac{5}{17}\min_{c^-, c^+ \in [0.2,0.9]}|H(r_1,r_2,s_1,s_2; c^+, c^-)|
+  \le v(A)
+  \le \frac{17}{5} \max_{c^-, c^+ \in [0.2,0.9]} |H(r_1,r_2,s_1,s_2; c^+, c^-)|
+\]
+であれば，充分である．
+
+\texttt{compute\_H\_extrema}函数は与えられた$r_1,r_2,s_1,s_2$について，
+$c^-, c^+$を指定の範囲で動かしたときの$H$の最大値と最小値を計算する．
+この函数は$G$の最大値と最小値を計算する\texttt{\_g\_extrema\_on\_interval}函数を用いているが，
+$G' = 0$が解ける形なので，$G' = 0$の点と端点での$G$の値の最大値と最小値を計算するという通常の方法で求まる．
+
+\texttt{\_hilfsatz4\_successor\_v\_bounds} 函数が\texttt{compute\_H\_extrema}函数を用いて
+一つの後継が許容的であるための$v(A)$の範囲を求め，，
+\texttt{compute\_hilfsatz4\_common\_v\_bounds}函数がそれらの結果をまとめて，
+\texttt{cases}の中の一つの場合についてそれらが全て許容的であるための$v(A)$の範囲を求める．
+
+\subsection{連結になる範囲の計算}
+$I(\sim u_1,\cdots, u_\nu| \sim w_1,\cdots, w_\mu)$と$I(\sim u_1',\cdots, u_\nu'| \sim w_1',\cdots, w_\mu')$が
+この順番で繋がっている．つまり，$I(\sim u_1',\cdots, u_{\nu'}'| \sim w_1',\cdots, w_{\mu'}')$の右端が
+$I(\sim u_1',\cdots, u_{\nu'}'| \sim w_1',\cdots, w_{\mu'}')$の左端よりも大きいために充分な$v(A)$の範囲を計算することを考える．
+
+$I(\sim u_1,\cdots, u_\nu| \sim w_1,\cdots, w_\mu)$の
+右端は
+\begin{align*}
+  \max \{[0; a_{-1},\cdots , a_{-h}, u_1, \cdots, u_\nu + \eta_{h + \nu + 1}] + [0; a_1,\cdots , a_k, w_1, \cdots, w_\mu + \theta_{k + \nu + 1}],\\
+  [0; a_{-1},\cdots , a_{-h}, u_1, \cdots, u_\nu + \theta_{h + \nu + 1}] + [0; a_1,\cdots , a_{k}, w_1, \cdots, w_\mu + \eta_{k + \nu + 1}] \}
+\end{align*}
+である．そこで，
+$[0; a_{-1},\cdots , a_{-h}, u_1, \cdots, u_\nu + \eta_{h + \nu + 1}] + [0; a_1,\cdots , a_k, w_1, \cdots, w_\mu + \theta_{k + \mu + 1}]$
+の方が大きいとき，
+$s_2 = [0; u_1, \cdots, u_\nu + \eta_{h + \nu + 1}], r_2 = [0; w_1, \cdots, w_\mu + \theta_{k + \nu + 1}]$と定め，
+$[0; a_{-1},\cdots , a_{-h}, u_1, \cdots, u_\nu + \theta_{h + \nu + 1}] + [0; a_1,\cdots , a_{k}, w_1, \cdots, w_\mu + \theta_{k + \mu + 1}]$
+の方が大きいとき，
+$s_2 = [0; u_1, \cdots, u_\nu + \theta_{h + \nu + 1}], r_2 = [0; w_1, \cdots, w_\mu + \eta_{k + \nu + 1}]$と定めれば，
+$I(\sim u_1,\cdots, u_\nu| \sim w_1,\cdots, w_\mu)$の
+右端は
+\[
+  [0; a_{-1},\cdots , a_{-h} + s_2] + [0; a_1,\cdots , a_{k} + r_2]
+\]
+となる．
+
+同様に，$I(\sim u_1',\cdots, u_\nu'| \sim w_1',\cdots, w_\mu')$の左端は
+\begin{align*}
+  \min \{[0; a_{-1},\cdots , a_{-h}, u_1', \cdots, u_{\nu'}' + \eta_{h + \nu'}] + [0; a_1,\cdots , a_k, w_1', \cdots, w_{\mu'}' + \theta_{k + \mu'}],\\
+  [0; a_{-1},\cdots , a_{-h}, u_1', \cdots, u_{\nu'}' + \theta_{h + \nu'}] + [0; a_1,\cdots , a_k, w_1', \cdots, w_{\mu'}' + \eta_{k + \mu'}] \}
+\end{align*}
+だから，$[0; a_{-1},\cdots , a_{-h}, u_1', \cdots, u_{\nu'}' + \eta_{h + \nu'}] + [0; a_1,\cdots , a_k, w_1', \cdots, w_{\mu'}' + \theta_{k + \mu'}]$
+の方が小さいとき$s_1 = [0; u_1', \cdots, u_{\nu'}' + \eta_{h + \nu'}], r_1 = [0; w_{\mu'}' + \theta_{k + \mu'}]$と定め，
+$[0; a_{-1},\cdots , a_{-h}, u_1', \cdots, u_{\nu'}' + \theta_{h + \nu'}] + [0; a_1,\cdots , a_k, w_1', \cdots, w_{\mu'}' + \eta_{k + \mu'}]$
+の方が小さいとき
+$s_1 = [0; u_1', \cdots, u_{\nu'}' + \theta_{h + \nu'}], r_1 = [0; w_1', \cdots, w_{\mu'}' + \eta_{k + \mu'}]$と定めれば，
+$I(\sim u_1',\cdots, u_\nu'| \sim w_1',\cdots, w_\mu')$の左端は
+\[
+  [0; a_{-1},\cdots , a_{-h} + s_1] + [0; a_1,\cdots , a_{k} + r_1]
+\]
+となる．
+
+補題\ref{Hilfsatz2}から，$r_1 \neq r_2$のとき
+\begin{align*}
+  (-1)^{h + k}([0; a_1,\cdots , a_{k} + r_1] +  [0; a_{-1},\cdots , a_{-h} + s_1])
+  \le (-1)^{h + k}([0; a_1,\cdots , a_{k} + r_2] +  [0; a_{-1},\cdots , a_{-h} + s_2])
+\end{align*}
+は
+\[
+  (-1)^{h} v(A) (r_2 - r_1) \ge (-1)^k (r_2 - r_1) H(s_1, s_2, r_2, r_1; c^+ , c^-)
+\]
+と同値だから，$(-1)^{h + k} = 1$のとき，
+\begin{align*}
+  [0; a_1,\cdots , a_{k} + r_1] +  [0; a_{-1},\cdots , a_{-h} + s_1]
+  \le [0; a_1,\cdots , a_{k} + r_2] +  [0; a_{-1},\cdots , a_{-h} + s_2]
+\end{align*}
+は
+\[
+  (-1)^{h} (v(A) - (-1)^{k}H(s_1, s_2, r_2, r_1; c^+ , c^-)) (r_2 - r_1) \ge 0 
+\]
+と同値であり，$(-1)^{h + k} = -1$のとき，
+\begin{align*}
+  [0; a_1,\cdots , a_{k} + r_1] +  [0; a_{-1},\cdots , a_{-h} + s_1]
+  < [0; a_1,\cdots , a_{k} + r_2] +  [0; a_{-1},\cdots , a_{-h} + s_2]
+\end{align*}
+が
+\[
+  (-1)^{h} (v(A) - (-1)^{k}H(s_1, s_2, r_2, r_1; c^+ , c^-)) (r_2 - r_1) < 0 
+\]
+と同値である．
+
+これらの関係を用いることで，
+$I(\sim u_1,\cdots, u_\nu| \sim w_1,\cdots, w_\mu)$と$I(\sim u_1',\cdots, u_\nu'| \sim w_1',\cdots, w_\mu')$が
+この順番で繋がっている．つまり，$I(\sim u_1',\cdots, u_{\nu'}'| \sim w_1',\cdots, w_{\mu'}')$の右端が
+$I(\sim u_1',\cdots, u_{\nu'}'| \sim w_1',\cdots, w_{\mu'}')$の左端よりも大きいために充分な$v(A)$の
+範囲を計算することができる．例えば$(-1)^{h + k} = 1$で$(-1)^h(r_2 - r_1)> 0$の場合は，
+\[
+v(A) \ge H(s_1, s_2, r_2, r_1; c^+ , c^-)
+\]
+であれば，またそのときに限り
+$I(\sim u_1,\cdots, u_\nu| \sim w_1,\cdots, w_\mu)$と$I(\sim u_1',\cdots, u_\nu'| \sim w_1',\cdots, w_\mu')$
+が繋がっていることが分かる．
+
+$(-1)^{h + k} = 1$で$(-1)^h(r_2 - r_1) < 0$の場合は，
+同様に，$(-1)^{h + k} = 1$で$(-1)^h(r_2 - r_1) < 0$の場合は，
+\[
+v(A) \le (-1)^k H(s_1, s_2, r_2, r_1; c^+ , c^-)
+\]
+なることが必要かつ充分な条件であり，
+$(-1)^{h + k} = -1$で$(-1)^h(r_2 - r_1) > 0$の場合は，
+\[
+v(A) < (-1)^k H(s_1, s_2, r_2, r_1; c^+ , c^-)
+\]
+なることが必要かつ充分な条件であり，
+$(-1)^{h + k} = -1$で$(-1)^h(r_2 - r_1) < 0$の場合は，
+\[
+v(A) > (-1)^k H(s_1, s_2, r_2, r_1; c^+ , c^-)
+\]
+なることが必要かつ充分な条件であることが分かる．
+
+
+\begin{comment}
+よって
+\[
+v(A) \ge \max_{c^-, c^+ \in [0.2, 0.9]} (-1)^k H(s_1, s_2, r_2, r_1; c^+ , c^-)
+\]
+であれば，充分であることが分かる．
+
+同様に，$(-1)^{h + k} = 1$で$(-1)^h(r_2 - r_1) < 0$の場合は，
+\[
+v(A) \le \min_{c^-, c^+ \in [0.2, 0.9]} (-1)^k H(s_1, s_2, r_2, r_1; c^+ , c^-)
+\]
+であれば，充分であり，
+$(-1)^{h + k} = -1$で$(-1)^h(r_2 - r_1) > 0$の場合は，
+\[
+v(A) < \min_{c^-, c^+ \in [0.2, 0.9]} (-1)^k H(s_1, s_2, r_2, r_1; c^+ , c^-)
+\]
+であれば，充分であり，
+$(-1)^{h + k} = -1$で$(-1)^h(r_2 - r_1) < 0$の場合は，
+\[
+v(A) > \max_{c^-, c^+ \in [0.2, 0.9]} (-1)^k H(s_1, s_2, r_2, r_1; c^+ , c^-)
+\]
+であれば，充分であることが分かる．
+
+\texttt{\_condition\_iii\_v\_bounds\_from\_H\_extrema}では
+\texttt{compute\_H\_extrema}によって計算した$H$の最大値と最小値をもとに，上記の計算を行い，
+$v(A)$についての充分条件を求めている．
+\end{comment}
+
+\subsection{\texttt{verify\_case\_family\_v\_cover}による検証}
+上記の計算を用いて，\texttt{verify\_case\_family\_v\_cover}によって全体の検証を行っている．
+
+\texttt{case\_family}の\texttt{v\_range}で指定された範囲に$v(A)$が含まれる任意の$A \in \mathcal{B}_{h,k}$について，
+どれかの\texttt{cases}の中の要素がすべて許容的後継で，かつ連結であることを示したい．
+そのために，\texttt{cases}に含まれる一つの\texttt{case}について，次のような計算を行う：
+
+まず，前節で求めたように$s_1, r_1, s_2, r_2$を求めたいのだが，$A$が不定であるがゆえに，一つに定まるとは限らない．
+そのため，\texttt{select\_successor\_endpoint\_pairs}函数により，指定の$v(A)$の範囲でありうる組合せを全て列挙する．
+
+\texttt{select\_successor\_endpoint\_pairs}函数は，例えば$s_1$として\verb|test|
+
+\texttt{\_select\_pairings\_for\_v\_range}
+
+
+\texttt{compute\_hilfsatz4\_common\_v\_bounds}函数によって，
+含まれている区間が全て許容的であるための$v(A)$の範囲を求める．
+
+次に，
 
 \begin{thebibliography}{99}
 \raggedright
