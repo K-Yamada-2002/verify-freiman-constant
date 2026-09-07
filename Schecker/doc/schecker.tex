@@ -634,9 +634,9 @@ $c^-, c^+$を指定の範囲で動かしたときの$H$の最大値と最小値�
 この函数は$G$の最大値と最小値を計算する\verb|_g_extrema_on_interval|函数を用いているが，
 $G' = 0$が解ける形なので，$G' = 0$の点と端点での$G$の値の最大値と最小値を計算するという通常の方法で求まる．
 
-\verb|_hilfsatz4_successor_v_bounds| 函数が\verb|compute_H_extrema|函数を用いて
+\path|_successor_admissibility_v_bounds| 函数が\verb|compute_H_extrema|函数を用いて
 一つの後継が許容的であるための$v(A)$の範囲を求め，，
-\verb|compute_hilfsatz4_common_v_bounds|函数がそれらの結果をまとめて，
+\path|compute_common_admissibility_v_bounds|函数がそれらの結果をまとめて，
 \verb|cases|の中の一つの場合についてそれらが全て許容的であるための$v(A)$の範囲を求める．
 
 \subsection{連結になる範囲の計算}
@@ -762,7 +762,7 @@ v(A) > \max_{c^-, c^+ \in [0.2, 0.9]} (-1)^k H(s_1, s_2, r_2, r_1; c^+ , c^-)
 \]
 であれば，充分であることが分かる．
 
-\verb|_condition_iii_v_bounds_from_H_extrema|では
+\path|_endpoint_order_v_bounds_from_H_extrema|では
 \verb|compute_H_extrema|によって計算した$H$の最大値と最小値をもとに，上記の計算を行い，
 $v(A)$についての充分条件を求めている．
 \end{comment}
@@ -799,7 +799,7 @@ $v(A)$が\verb|v_range|により指定された範囲に入るとき
 $(s_2, r_2)$に関しては逆に小さい方の候補を除外する．
 
 \item $s, r$の組が求まったところで，
-\verb|compute_condition_iii_v_bounds| 函数により，
+\path|compute_successor_connectivity_v_bounds| 函数により，
 \verb|cases|の中のすべての隣り合う二つの後継が繋がっているために充分な$v(A)$の条件を求める．
 この函数は，$(s_1, r_1)$と$(s_2, r_2)$についてあり得る全ての組合せを考え，
 前節の計算により$v(A) \le (-1)^k H$や$v(A) \ge (-1)^k H$のがような不等式が，
@@ -809,15 +809,15 @@ $c^- , c^+ \in [0.2, 0.9]$のときの$H$の最大値と最小値を計算する
 
 \item また，これら$H$を使った不等式は，$A$によって，つまり$c^-, c^+$の値によって$H$が変化する
 （だから$H$の最大・最小値を計算して充分条件を計算している）が，
-\verb|check_condition_iii_bounds_compatible| 函数は，
+\path|check_connectivity_bounds_compatible| 函数は，
 は，それらの不等式を満たす$v(A)$の範囲が任意の$c^-, c^+ \in [0.2, 0.9]$について空にならないことを確かめる
 （ただし，空にならないからといって，\verb|case_family|の\verb|v_range|で指定された範囲のものが満たすかは分からない）．
 そのためには$H$の値を比較する必要があるが，それには補題\ref{Hilfsatz3}を用いる．
 
-\item 次に，\verb|compute_hilfsatz4_common_v_bounds|函数によって，
+\item 次に，\path|compute_common_admissibility_v_bounds|函数によって，
 \verb|case|に含まれている後継が全て許容的であるために充分な$v(A)$の範囲を求める．
 
-\item \verb|compute_condition_iii_v_bounds|と\verb|compute_hilfsatz4_common_v_bounds|
+\item \path|compute_successor_connectivity_v_bounds|と\path|compute_common_admissibility_v_bounds|
 の二つの函数によって得られた$v(A)$の範囲の共通部分を求める．
 \end{itemize}
 
@@ -829,7 +829,7 @@ $c^- , c^+ \in [0.2, 0.9]$のときの$H$の最大値と最小値を計算する
 
 さらに，上記の計算に加えて，次のような計算を行う：
 \begin{itemize}
-  \item \verb|check_condition_iii_transition|により，
+  \item \path|check_case_connectivity_transition|により，
   前の\verb|case|のある二つの後継が繋がっているための必要充分条件を与える不等式のうち，
   $v(A) \le (-1)^k H$ないし$v(A) < (-1)^k H$の形をしているものの右辺と，
   今の\verb|case|のある二つの後継が繋がっているための必要充分条件を与える不等式のうち，
@@ -870,44 +870,44 @@ $c^- , c^+ \in [0.2, 0.9]$のときの$H$の最大値と最小値を計算する
 
 \subsection{検証の妥当性}
 上記の計算結果を出力すると，以下のような結果を得る（見やすさのためにいくつか改行を入れた）．
-\begin{lstlisting}[language=python]
+\begin{lstlisting}[language=python,breaklines=true]
   case family 2.1: (h, k)=(0, 0), v(A) in (1, 1.98000000000000)
-  case 0: internal iii check on (1, 1.98000000000000); 
+  case 0: internal connectivity check on (1, 1.98000000000000);
   compared=12, passed=12, all=True
 
-    Hilfsatz 4=(0.910356373754828, 3.10088499093588); 
-    iii=(0.713963480223948, 1.26723050245227); 
+    admissibility=(0.910356373754828, 3.10088499093588);
+    connectivity=(0.713963480223948, 1.26723050245227);
     intersection=(0.910356373754828, 1.26723050245227); 
     checked intersection=(1, 1.26723050245227); 
     static nonempty=True
-    assigned=(1, 1.26723050245227); nonempty=True; H4 covers assigned=True
+    assigned=(1, 1.26723050245227); nonempty=True; admissibility covers assigned=True
   
   case 0 -> case 1: previous_upper=1.26723050245227, effective_upper=1.26723050245227, 
   checked=(1.25723050245227, 1.98000000000000); compared=6, passed=6, all=True
 
-  case 1: internal iii check on (1.25723050245227, 1.98000000000000); 
+  case 1: internal connectivity check on (1.25723050245227, 1.98000000000000);
   compared=6, passed=6, all=True
-    Hilfsatz 4=(0.808428126706645, 1.98750784542276); 
-    iii=(1.44759026701375, 1.99635347193077); 
+    admissibility=(0.808428126706645, 1.98750784542276);
+    connectivity=(1.44759026701375, 1.99635347193077);
     intersection=(1.44759026701375, 1.98750784542276); 
     checked intersection=(1.44759026701375, 1.98000000000000); 
     static nonempty=True
-    assigned=(1.25723050245227, 1.98000000000000); nonempty=True; H4 covers assigned=True
+    assigned=(1.25723050245227, 1.98000000000000); nonempty=True; admissibility covers assigned=True
 
-  endpoint coverage after Hilfsatz 4: 
+  endpoint coverage after admissibility:
   first_lower=0.910356373754828 <= 1: True; 
   last_upper=1.98750784542276 >= 1.98000000000000: True; 
   both=True
   
-  family summary: internal=True, assigned_nonempty=True, Hilfsatz4=True, connections=True, endpoints=True, all=True
+  family summary: internal=True, assigned_nonempty=True, admissibility=True, connections=True, endpoints=True, all=True
 \end{lstlisting}
 
 \begin{comment}
 ## `schecker_proof_2.ipynb`: 検証ログの読み方
 
 上から実行すると、末尾にケース群 2.1–2.6 の要約表を一度だけ表示します。
-`iii`（内部の上下界比較）、`assigned`（割当範囲が非空）、
-`H4`（割当範囲の許容性）、`connect`（隣接ケースの接続）、
+`connectivity`（内部の上下界比較）、`assigned`（割当範囲が非空）、
+`admissibility`（割当範囲の許容性）、`connect`（隣接ケースの接続）、
 `ends`（両端の被覆）、`all`（以上の全チェック）を確認できます。
 これは現行関数の数値的な判定であり、各群の `hk` の先頭の組について計算しています。
 
@@ -921,7 +921,7 @@ show_verification_details(1, case_index=0, raw=True)  # 端点と H の比較ま
 
 群番号は 1–6、群内のケース番号は 0 始まりです。通常の Run All では詳細を出力しません。
 `doc/schecker.tex` が参照する `verify_case_family_v_cover` と
-`print_case_family_verification` の計算・詳細出力は維持しています。
+`print_case_family_verification` の計算は維持し、詳細出力の名称を許容性・連結性に揃えています。
 
 [整理前の保存用ノート](archive/schecker_proof_2_before_log_cleanup.ipynb) には、
 整理直前のコード・実行番号・出力をそのまま保存しています。
