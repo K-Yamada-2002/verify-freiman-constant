@@ -834,7 +834,11 @@ $c^- , c^+ \in [0.2, 0.9]$のときの$H$の最大値と最小値を計算する
   $v(A) \le (-1)^k H$ないし$v(A) < (-1)^k H$の形をしているものの右辺と，
   今の\verb|case|のある二つの後継が繋がっているための必要充分条件を与える不等式のうち，
   $v(A) \ge (-1)^k H$ないし$v(A) > (-1)^k H$の形をしているものの右辺を全ての組合せに渡って比較し，
-  任意の$c^-, c^+ \in [0.2, 0.9]$について，前者が後者よりも小さいことを確かめる．このための$H$の値を比較にも，それには補題\ref{Hilfsatz3}を用いる．
+  任意の$c^-, c^+ \in [0.2, 0.9]$について，前者が後者よりも大きいことを確かめる．この$H$の値の比較には補題\ref{Hilfsatz3}を用いる．
+
+これは比較対象の全ての組合せについての条件なので，比較対象が0個の場合は真と判定する．
+例えば，ケース群2.6の最初の遷移では，次の\verb|case|の接続条件に下限がなく，比較すべき組合せが存在しない．
+この判定だけで被覆全体が成立するわけではなく，各\verb|case|内の条件の両立性，許容性，対象範囲の両端は別途検証する．
 \end{itemize}
 
 すべての\verb|case|について上記の計算を行った後，
@@ -869,66 +873,6 @@ $c^- , c^+ \in [0.2, 0.9]$のときの$H$の最大値と最小値を計算する
 （ただし，図では描かれていないが，(i)での許容性に関する上限が，(ii)についての計算で得られる下限を上回ることはありうる）
 
 \subsection{検証の妥当性}
-上記の計算結果を出力すると，以下のような結果を得る（見やすさのためにいくつか改行を入れた）．
-\begin{lstlisting}[language=python,breaklines=true]
-  case family 2.1: (h, k)=(0, 0), v(A) in (1, 1.98000000000000)
-  case 0: internal connectivity check on (1, 1.98000000000000);
-  compared=12, passed=12, all=True
-
-    admissibility=(0.910356373754828, 3.10088499093588);
-    connectivity=(0.713963480223948, 1.26723050245227);
-    intersection=(0.910356373754828, 1.26723050245227); 
-    checked intersection=(1, 1.26723050245227); 
-    static nonempty=True
-    assigned=(1, 1.26723050245227); nonempty=True; admissibility covers assigned=True
-  
-  case 0 -> case 1: previous_upper=1.26723050245227, effective_upper=1.26723050245227, 
-  checked=(1.25723050245227, 1.98000000000000); compared=6, passed=6, all=True
-
-  case 1: internal connectivity check on (1.25723050245227, 1.98000000000000);
-  compared=6, passed=6, all=True
-    admissibility=(0.808428126706645, 1.98750784542276);
-    connectivity=(1.44759026701375, 1.99635347193077);
-    intersection=(1.44759026701375, 1.98750784542276); 
-    checked intersection=(1.44759026701375, 1.98000000000000); 
-    static nonempty=True
-    assigned=(1.25723050245227, 1.98000000000000); nonempty=True; admissibility covers assigned=True
-
-  endpoint coverage after admissibility:
-  first_lower=0.910356373754828 <= 1: True; 
-  last_upper=1.98750784542276 >= 1.98000000000000: True; 
-  both=True
-  
-  family summary: internal=True, assigned_nonempty=True, admissibility=True, connections=True, endpoints=True, all=True
-\end{lstlisting}
-
-\begin{comment}
-## `schecker_proof_2.ipynb`: 検証ログの読み方
-
-上から実行すると、末尾にケース群 2.1–2.6 の要約表を一度だけ表示します。
-`connectivity`（内部の上下界比較）、`assigned`（割当範囲が非空）、
-`admissibility`（割当範囲の許容性）、`connect`（隣接ケースの接続）、
-`ends`（両端の被覆）、`all`（以上の全チェック）を確認できます。
-これは現行関数の数値的な判定であり、各群の `hk` の先頭の組について計算しています。
-
-詳細は再計算せず、保存された `case_family_verification_results` から表示できます。
-
-```python
-show_verification_details(1)                          # ケース群 2.1：解説 PDF のログ形式
-show_verification_details(1, case_index=0)            # 群内の case 0 の範囲と判定
-show_verification_details(1, case_index=0, raw=True)  # 端点と H の比較まで表示
-```
-
-群番号は 1–6、群内のケース番号は 0 始まりです。通常の Run All では詳細を出力しません。
-`doc/schecker.tex` が参照する `verify_case_family_v_cover` と
-`print_case_family_verification` の計算は維持し、詳細出力の名称を許容性・連結性に揃えています。
-
-[整理前の保存用ノート](archive/schecker_proof_2_before_log_cleanup.ipynb) には、
-整理直前のコード・実行番号・出力をそのまま保存しています。
-旧診断、固定範囲での接続実験、後続探索、具体的な T 区間の実験はそちらを参照してください。
-保存ログには入力や実行順が異なる結果が混在しているため、現行の検証結果として引用する際は
-メインノートを再実行してください。保存用ノートを実行する場合は別カーネルを使います。
-\end{comment}
 
 \begin{thebibliography}{99}
 \raggedright
