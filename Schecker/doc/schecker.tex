@@ -6,6 +6,9 @@
 \usepackage{bm}
 \usepackage{url}
 \usepackage{comment}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
 \usepackage[top=30truemm,bottom=30truemm,left=25truemm,right=25truemm]{geometry}
 
 \theoremstyle{definition}
@@ -667,7 +670,7 @@ $I(\sim u_1,\cdots, u_\nu| \sim w_1,\cdots, w_\mu)$の
   [0; a_{-1},\cdots , a_{-h}, u_1', \cdots, u_{\nu'}' + \theta_{h + \nu'}] + [0; a_1,\cdots , a_k, w_1', \cdots, w_{\mu'}' + \eta_{k + \mu'}] \}
 \end{align*}
 だから，$[0; a_{-1},\cdots , a_{-h}, u_1', \cdots, u_{\nu'}' + \eta_{h + \nu'}] + [0; a_1,\cdots , a_k, w_1', \cdots, w_{\mu'}' + \theta_{k + \mu'}]$
-の方が小さいとき$s_1 = [0; u_1', \cdots, u_{\nu'}' + \eta_{h + \nu'}], r_1 = [0; w_{\mu'}' + \theta_{k + \mu'}]$と定め，
+の方が小さいとき$s_1 = [0; u_1', \cdots, u_{\nu'}' + \eta_{h + \nu'}], r_1 = [0;a_1,\cdots , a_k, w_1', \cdots, w_{\mu'}' + \theta_{k + \mu'}]$と定め，
 $[0; a_{-1},\cdots , a_{-h}, u_1', \cdots, u_{\nu'}' + \theta_{h + \nu'}] + [0; a_1,\cdots , a_k, w_1', \cdots, w_{\mu'}' + \eta_{k + \mu'}]$
 の方が小さいとき
 $s_1 = [0; u_1', \cdots, u_{\nu'}' + \theta_{h + \nu'}], r_1 = [0; w_1', \cdots, w_{\mu'}' + \eta_{k + \mu'}]$と定めれば，
@@ -769,20 +772,163 @@ $v(A)$についての充分条件を求めている．
 
 \verb|case_family|の\verb|v_range|で指定された範囲に$v(A)$が含まれる任意の$A \in \mathcal{B}_{h,k}$について，
 どれかの\verb|cases|の中の要素がすべて許容的後継で，かつ連結であることを示したい．
-そのために，\verb|cases|に含まれる一つの\verb|case|について，次のような計算を行う：
+そのために，まず\verb|cases|に含まれる最初の\verb|case|について，次のような計算を行う：
 
-まず，前節で求めたように$s_1, r_1, s_2, r_2$を求めたいのだが，$A$が不定であるがゆえに，一つに定まるとは限らない．
+\begin{itemize}
+\item まず，\verb|case|に含まれるそれぞれの後継について，前節で求めたように$s_1, r_1, s_2, r_2$を求めたいのだが，
+$A$が不定であるがゆえに，一つに定まるとは限らない．
 そのため，\verb|select_successor_endpoint_pairs|函数により，指定の$v(A)$の範囲でありうる組合せを全て列挙する．
 
-\verb|select_successor_endpoint_pairs|函数は，例えば$s_1$として\verb|test|
+\verb|select_successor_endpoint_pairs|函数は，例えば$(s_1, r_1)$としては，
+\[
+(s_1, r_1) = ([0; u_1', \cdots, u_{\nu'}' + \eta_{h + \nu'}], [0; a_1,\cdots , a_k, w_1', \cdots,w_{\mu'}' + \theta_{k + \mu'}])
+\]
+と
+\[
+(s_1, r_1) = ([0; u_1', \cdots, u_{\nu'}' + \theta_{h + \nu'}], [0; a_1,\cdots , a_k, w_1', \cdots,w_{\mu'}' + \eta_{k + \mu'}])
+\]
+とを候補に追加し，\verb|_select_pairings_for_v_range|函数によって，指定された
+$v(A)$の範囲でありえない候補を取り除く．
 
-\verb|_select_pairings_for_v_range|
+\verb|_select_pairings_for_v_range|函数は，
+$[0; a_1,\cdots a_k + r_1] + [0; a_{-1},\cdots a_{-h} + s_1]$に
+二つある$(s_1, r_1)$の候補のそれぞれを代入した際，
+一方がもう一方よりも大きいための$v(A)$についての必要十分条件を，補題\ref{Hilfsatz2}を用いて計算し，
+$v(A)$が\verb|v_range|により指定された範囲に入るとき
+すべてその条件を満たしているようなことがあれば，大きい方の候補を除外する．
+$(s_2, r_2)$に関しては逆に小さい方の候補を除外する．
 
+\item $s, r$の組が求まったところで，
+\verb|compute_condition_iii_v_bounds| 函数により，
+\verb|cases|の中のすべての隣り合う二つの後継が繋がっているために充分な$v(A)$の条件を求める．
+この函数は，$(s_1, r_1)$と$(s_2, r_2)$についてあり得る全ての組合せを考え，
+前節の計算により$v(A) \le (-1)^k H$や$v(A) \ge (-1)^k H$のがような不等式が，
+特定の二つの後継の組合せが繋がっているための必要充分条件であることが分かるから，
+$c^- , c^+ \in [0.2, 0.9]$のときの$H$の最大値と最小値を計算する\verb|compute_H_extrema|
+を用いることで，充分条件を計算する．
 
-\verb|compute_hilfsatz4_common_v_bounds|函数によって，
-含まれている区間が全て許容的であるための$v(A)$の範囲を求める．
+\item また，これら$H$を使った不等式は，$A$によって，つまり$c^-, c^+$の値によって$H$が変化する
+（だから$H$の最大・最小値を計算して充分条件を計算している）が，
+\verb|check_condition_iii_bounds_compatible| 函数は，
+は，それらの不等式を満たす$v(A)$の範囲が任意の$c^-, c^+ \in [0.2, 0.9]$について空にならないことを確かめる
+（ただし，空にならないからといって，\verb|case_family|の\verb|v_range|で指定された範囲のものが満たすかは分からない）．
+そのためには$H$の値を比較する必要があるが，それには補題\ref{Hilfsatz3}を用いる．
 
-次に，
+\item 次に，\verb|compute_hilfsatz4_common_v_bounds|函数によって，
+\verb|case|に含まれている後継が全て許容的であるために充分な$v(A)$の範囲を求める．
+
+\item \verb|compute_condition_iii_v_bounds|と\verb|compute_hilfsatz4_common_v_bounds|
+の二つの函数によって得られた$v(A)$の範囲の共通部分を求める．
+\end{itemize}
+
+この計算により，最初の\verb|case|に含まれる後継が全て許容的で，さらにそれらが全て繋がっているのに充分な$v(A)$の範囲が分かる．
+
+次に，\verb|cases|に含まれる二番目以降の\verb|case|については，
+探索する$v(A)$の範囲を，前の\verb|case|で求めた範囲の上限（もしあれば）を下限とし，\verb|v_range|の上限を上限とする
+区間に狭めて計算を行う．
+
+さらに，上記の計算に加えて，次のような計算を行う：
+\begin{itemize}
+  \item \verb|check_condition_iii_transition|により，
+  前の\verb|case|のある二つの後継が繋がっているための必要充分条件を与える不等式のうち，
+  $v(A) \le (-1)^k H$ないし$v(A) < (-1)^k H$の形をしているものの右辺と，
+  今の\verb|case|のある二つの後継が繋がっているための必要充分条件を与える不等式のうち，
+  $v(A) \ge (-1)^k H$ないし$v(A) > (-1)^k H$の形をしているものの右辺を全ての組合せに渡って比較し，
+  任意の$c^-, c^+ \in [0.2, 0.9]$について，前者が後者よりも小さいことを確かめる．このための$H$の値を比較にも，それには補題\ref{Hilfsatz3}を用いる．
+\end{itemize}
+
+すべての\verb|case|について上記の計算を行った後，
+最初の\verb|case|において求めた範囲の下限（もしあれば）が，\verb|v_range|の下限以下であること，
+最後のの\verb|case|において求めた範囲の上限（もしあれば）が，\verb|v_range|の上限以上であることを確かめる．
+
+これらの計算・検証を行うと，以下の図のような状況になる．
+
+\begin{center}
+\input{figure-tikz.tex}
+\end{center}
+
+この図は，上記の計算を行った結果を，ある特定の$c^-, c_+$において図示したものである．
+
+上記の計算により，各\verb|case|について，$v(A)$の範囲を制限する不等式がいくつか得られるが，
+それらの不等式で許される$v(A)$の範囲を黒丸と半直線で表している．
+
+また，縦の点線は，$c^-, c_+$を動かしたときのそれらの下限や上限を表している．
+
+具体的には，一番左の点線は(i)について計算をしたとき得られる下限の上限，
+その次の点線は(i)について計算をしたとき得られる上限の下限，
+その次の点線は(ii)について計算をしたとき得られる上限の下限，
+最後の点線は(iii)について計算をしたとき得られる上限の下限
+を表している．
+
+したがって，特定の$c^-, c_+$において図示したこの図では，
+例えば(i)の計算で下限を定める黒丸（半直線が右に伸びているもの）は，すべて最初の点線より左にある．
+
+また，(i)で上限を定める黒丸よりも，(ii)で下限を定める黒丸の方が左に描かれている，そして
+また，(ii)で上限を定める黒丸よりも，(iii)で下限を定める黒丸の方が左に描かれているのは，
+2番目以降の\verb|case|の計算で追加された計算によって検証されたことを表している
+（ただし，図では描かれていないが，(i)での許容性に関する上限が，(ii)についての計算で得られる下限を上回ることはありうる）
+
+\subsection{検証の妥当性}
+上記の計算結果を出力すると，以下のような結果を得る（見やすさのためにいくつか改行を入れた）．
+\begin{lstlisting}[language=python]
+  case family 2.1: (h, k)=(0, 0), v(A) in (1, 1.98000000000000)
+  case 0: internal iii check on (1, 1.98000000000000); 
+  compared=12, passed=12, all=True
+
+    Hilfsatz 4=(0.910356373754828, 3.10088499093588); 
+    iii=(0.713963480223948, 1.26723050245227); 
+    intersection=(0.910356373754828, 1.26723050245227); 
+    checked intersection=(1, 1.26723050245227); 
+    static nonempty=True
+    assigned=(1, 1.26723050245227); nonempty=True; H4 covers assigned=True
+  
+  case 0 -> case 1: previous_upper=1.26723050245227, effective_upper=1.26723050245227, 
+  checked=(1.25723050245227, 1.98000000000000); compared=6, passed=6, all=True
+
+  case 1: internal iii check on (1.25723050245227, 1.98000000000000); 
+  compared=6, passed=6, all=True
+    Hilfsatz 4=(0.808428126706645, 1.98750784542276); 
+    iii=(1.44759026701375, 1.99635347193077); 
+    intersection=(1.44759026701375, 1.98750784542276); 
+    checked intersection=(1.44759026701375, 1.98000000000000); 
+    static nonempty=True
+    assigned=(1.25723050245227, 1.98000000000000); nonempty=True; H4 covers assigned=True
+
+  endpoint coverage after Hilfsatz 4: 
+  first_lower=0.910356373754828 <= 1: True; 
+  last_upper=1.98750784542276 >= 1.98000000000000: True; 
+  both=True
+  
+  family summary: internal=True, assigned_nonempty=True, Hilfsatz4=True, connections=True, endpoints=True, all=True
+\end{lstlisting}
+
+\begin{comment}
+## `schecker_proof_2.ipynb`: 検証ログの読み方
+
+上から実行すると、末尾にケース群 2.1–2.6 の要約表を一度だけ表示します。
+`iii`（内部の上下界比較）、`assigned`（割当範囲が非空）、
+`H4`（割当範囲の許容性）、`connect`（隣接ケースの接続）、
+`ends`（両端の被覆）、`all`（以上の全チェック）を確認できます。
+これは現行関数の数値的な判定であり、各群の `hk` の先頭の組について計算しています。
+
+詳細は再計算せず、保存された `case_family_verification_results` から表示できます。
+
+```python
+show_verification_details(1)                          # ケース群 2.1：解説 PDF のログ形式
+show_verification_details(1, case_index=0)            # 群内の case 0 の範囲と判定
+show_verification_details(1, case_index=0, raw=True)  # 端点と H の比較まで表示
+```
+
+群番号は 1–6、群内のケース番号は 0 始まりです。通常の Run All では詳細を出力しません。
+`doc/schecker.tex` が参照する `verify_case_family_v_cover` と
+`print_case_family_verification` の計算・詳細出力は維持しています。
+
+[整理前の保存用ノート](archive/schecker_proof_2_before_log_cleanup.ipynb) には、
+整理直前のコード・実行番号・出力をそのまま保存しています。
+旧診断、固定範囲での接続実験、後続探索、具体的な T 区間の実験はそちらを参照してください。
+保存ログには入力や実行順が異なる結果が混在しているため、現行の検証結果として引用する際は
+メインノートを再実行してください。保存用ノートを実行する場合は別カーネルを使います。
+\end{comment}
 
 \begin{thebibliography}{99}
 \raggedright
