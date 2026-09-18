@@ -1,0 +1,257 @@
+{
+  "status": "Finite outer checks only; no interval filling inferred",
+  "rows": [
+    {
+      "child": "A",
+      "prefixes": [
+        "1121",
+        "122"
+      ],
+      "depth_per_side": 1,
+      "assigned_range_closure": [
+        {
+          "a": "3049/2542",
+          "b": "65/2542",
+          "decimal": "1.2803100109799152858300"
+        },
+        {
+          "a": "88018/65601",
+          "b": "-1060/65601",
+          "decimal": "1.2906203515224084679819"
+        }
+      ],
+      "covered_by_outer_approximation_only": true
+    },
+    {
+      "child": "A",
+      "prefixes": [
+        "1121",
+        "122"
+      ],
+      "depth_per_side": 2,
+      "assigned_range_closure": [
+        {
+          "a": "3049/2542",
+          "b": "65/2542",
+          "decimal": "1.2803100109799152858300"
+        },
+        {
+          "a": "88018/65601",
+          "b": "-1060/65601",
+          "decimal": "1.2906203515224084679819"
+        }
+      ],
+      "covered_by_outer_approximation_only": true
+    },
+    {
+      "child": "A",
+      "prefixes": [
+        "1121",
+        "122"
+      ],
+      "depth_per_side": 3,
+      "assigned_range_closure": [
+        {
+          "a": "3049/2542",
+          "b": "65/2542",
+          "decimal": "1.2803100109799152858300"
+        },
+        {
+          "a": "88018/65601",
+          "b": "-1060/65601",
+          "decimal": "1.2906203515224084679819"
+        }
+      ],
+      "covered_by_outer_approximation_only": true
+    },
+    {
+      "child": "A",
+      "prefixes": [
+        "1121",
+        "122"
+      ],
+      "depth_per_side": 4,
+      "assigned_range_closure": [
+        {
+          "a": "3049/2542",
+          "b": "65/2542",
+          "decimal": "1.2803100109799152858300"
+        },
+        {
+          "a": "88018/65601",
+          "b": "-1060/65601",
+          "decimal": "1.2906203515224084679819"
+        }
+      ],
+      "covered_by_outer_approximation_only": true
+    },
+    {
+      "child": "B",
+      "prefixes": [
+        "112",
+        "1221"
+      ],
+      "depth_per_side": 1,
+      "assigned_range_closure": [
+        {
+          "a": "88018/65601",
+          "b": "-1060/65601",
+          "decimal": "1.2906203515224084679819"
+        },
+        {
+          "a": "30791/17329",
+          "b": "-2640/17329",
+          "decimal": "1.2950884053987811508756"
+        }
+      ],
+      "covered_by_outer_approximation_only": true
+    },
+    {
+      "child": "B",
+      "prefixes": [
+        "112",
+        "1221"
+      ],
+      "depth_per_side": 2,
+      "assigned_range_closure": [
+        {
+          "a": "88018/65601",
+          "b": "-1060/65601",
+          "decimal": "1.2906203515224084679819"
+        },
+        {
+          "a": "30791/17329",
+          "b": "-2640/17329",
+          "decimal": "1.2950884053987811508756"
+        }
+      ],
+      "covered_by_outer_approximation_only": true
+    },
+    {
+      "child": "B",
+      "prefixes": [
+        "112",
+        "1221"
+      ],
+      "depth_per_side": 3,
+      "assigned_range_closure": [
+        {
+          "a": "88018/65601",
+          "b": "-1060/65601",
+          "decimal": "1.2906203515224084679819"
+        },
+        {
+          "a": "30791/17329",
+          "b": "-2640/17329",
+          "decimal": "1.2950884053987811508756"
+        }
+      ],
+      "covered_by_outer_approximation_only": true
+    },
+    {
+      "child": "B",
+      "prefixes": [
+        "112",
+        "1221"
+      ],
+      "depth_per_side": 4,
+      "assigned_range_closure": [
+        {
+          "a": "88018/65601",
+          "b": "-1060/65601",
+          "decimal": "1.2906203515224084679819"
+        },
+        {
+          "a": "30791/17329",
+          "b": "-2640/17329",
+          "decimal": "1.2950884053987811508756"
+        }
+      ],
+      "covered_by_outer_approximation_only": true
+    },
+    {
+      "child": "C",
+      "prefixes": [
+        "1122",
+        "122"
+      ],
+      "depth_per_side": 1,
+      "assigned_range_closure": [
+        {
+          "a": "30791/17329",
+          "b": "-2640/17329",
+          "decimal": "1.2950884053987811508756"
+        },
+        {
+          "a": "1675555/1297809",
+          "b": "1780/1297809",
+          "decimal": "1.2954015993378838605765"
+        }
+      ],
+      "covered_by_outer_approximation_only": true
+    },
+    {
+      "child": "C",
+      "prefixes": [
+        "1122",
+        "122"
+      ],
+      "depth_per_side": 2,
+      "assigned_range_closure": [
+        {
+          "a": "30791/17329",
+          "b": "-2640/17329",
+          "decimal": "1.2950884053987811508756"
+        },
+        {
+          "a": "1675555/1297809",
+          "b": "1780/1297809",
+          "decimal": "1.2954015993378838605765"
+        }
+      ],
+      "covered_by_outer_approximation_only": true
+    },
+    {
+      "child": "C",
+      "prefixes": [
+        "1122",
+        "122"
+      ],
+      "depth_per_side": 3,
+      "assigned_range_closure": [
+        {
+          "a": "30791/17329",
+          "b": "-2640/17329",
+          "decimal": "1.2950884053987811508756"
+        },
+        {
+          "a": "1675555/1297809",
+          "b": "1780/1297809",
+          "decimal": "1.2954015993378838605765"
+        }
+      ],
+      "covered_by_outer_approximation_only": true
+    },
+    {
+      "child": "C",
+      "prefixes": [
+        "1122",
+        "122"
+      ],
+      "depth_per_side": 4,
+      "assigned_range_closure": [
+        {
+          "a": "30791/17329",
+          "b": "-2640/17329",
+          "decimal": "1.2950884053987811508756"
+        },
+        {
+          "a": "1675555/1297809",
+          "b": "1780/1297809",
+          "decimal": "1.2954015993378838605765"
+        }
+      ],
+      "covered_by_outer_approximation_only": true
+    }
+  ]
+}

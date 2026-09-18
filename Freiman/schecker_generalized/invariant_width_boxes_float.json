@@ -1,0 +1,86 @@
+{
+  "status": "floating-point box-invariant search; requires exact verification",
+  "max_step": 2,
+  "q_bins": 17,
+  "history": [
+    {
+      "round": 0,
+      "alive_before": 8574,
+      "removed": 2928
+    },
+    {
+      "round": 1,
+      "alive_before": 5646,
+      "removed": 1611
+    },
+    {
+      "round": 2,
+      "alive_before": 4035,
+      "removed": 543
+    },
+    {
+      "round": 3,
+      "alive_before": 3492,
+      "removed": 572
+    },
+    {
+      "round": 4,
+      "alive_before": 2920,
+      "removed": 832
+    },
+    {
+      "round": 5,
+      "alive_before": 2088,
+      "removed": 1016
+    },
+    {
+      "round": 6,
+      "alive_before": 1072,
+      "removed": 840
+    },
+    {
+      "round": 7,
+      "alive_before": 232,
+      "removed": 227
+    },
+    {
+      "round": 8,
+      "alive_before": 5,
+      "removed": 5
+    },
+    {
+      "round": 9,
+      "alive_before": 0,
+      "removed": 0
+    }
+  ],
+  "state_ranges": {
+    "1": [
+      "5/9",
+      "4/5"
+    ],
+    "2": [
+      "5/14",
+      "4/9"
+    ],
+    "3": [
+      "5/19",
+      "4/13"
+    ],
+    "31": [
+      "13/17",
+      "19/24"
+    ],
+    "313": [
+      "24/91",
+      "17/64"
+    ],
+    "3131": [
+      "64/81",
+      "91/115"
+    ]
+  },
+  "closed": true,
+  "survivors": [],
+  "ratio_parameter": "actual restricted right/left cylinder width ratio"
+}

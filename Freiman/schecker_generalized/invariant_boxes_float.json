@@ -1,0 +1,49 @@
+{
+  "status": "floating-point box-invariant search; requires exact verification",
+  "max_step": 2,
+  "q_bins": 17,
+  "history": [
+    {
+      "round": 0,
+      "alive_before": 8522,
+      "removed": 2616
+    },
+    {
+      "round": 1,
+      "alive_before": 5906,
+      "removed": 2076
+    },
+    {
+      "round": 2,
+      "alive_before": 3830,
+      "removed": 436
+    },
+    {
+      "round": 3,
+      "alive_before": 3394,
+      "removed": 925
+    },
+    {
+      "round": 4,
+      "alive_before": 2469,
+      "removed": 1502
+    },
+    {
+      "round": 5,
+      "alive_before": 967,
+      "removed": 880
+    },
+    {
+      "round": 6,
+      "alive_before": 87,
+      "removed": 87
+    },
+    {
+      "round": 7,
+      "alive_before": 0,
+      "removed": 0
+    }
+  ],
+  "closed": true,
+  "survivors": []
+}

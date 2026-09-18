@@ -1,0 +1,573 @@
+{
+  "status": "finite shape-bank test; NOT a filling certificate",
+  "shapes": [
+    [
+      [
+        "1",
+        false,
+        "3",
+        true
+      ],
+      [
+        "3",
+        true,
+        "2",
+        false
+      ]
+    ],
+    [
+      [
+        "1",
+        false,
+        "2",
+        false
+      ],
+      [
+        "3",
+        true,
+        "3",
+        true
+      ]
+    ],
+    [
+      [
+        "1",
+        false,
+        "2",
+        true
+      ],
+      [
+        "3",
+        true,
+        "1",
+        false
+      ]
+    ],
+    [
+      [
+        "1",
+        false,
+        "1",
+        false
+      ],
+      [
+        "2",
+        true,
+        "3",
+        true
+      ]
+    ],
+    [
+      [
+        "1",
+        false,
+        "3",
+        true
+      ],
+      [
+        "2",
+        true,
+        "2",
+        false
+      ]
+    ],
+    [
+      [
+        "1",
+        false,
+        "2",
+        false
+      ],
+      [
+        "2",
+        true,
+        "3",
+        true
+      ]
+    ],
+    [
+      [
+        "1",
+        false,
+        "1",
+        true
+      ],
+      [
+        "2",
+        true,
+        "3",
+        true
+      ]
+    ],
+    [
+      [
+        "1",
+        false,
+        "1",
+        false
+      ],
+      [
+        "1",
+        true,
+        "2",
+        true
+      ]
+    ]
+  ],
+  "ratio_bound": 20,
+  "calls": 363987,
+  "rows": [
+    {
+      "left": "32113",
+      "right": "4322",
+      "depth": 1,
+      "components": 1,
+      "width_fraction": 0.9999999999999994,
+      "intervals": [
+        {
+          "normalized": [
+            -0.4804308907111825,
+            0.17104759934062966
+          ],
+          "lower_type": [
+            "1",
+            false,
+            "3",
+            true
+          ],
+          "upper_type": [
+            "3",
+            true,
+            "1",
+            false
+          ]
+        }
+      ],
+      "admitted_shapes": [
+        "full",
+        "J1",
+        "J1R",
+        "J2",
+        "J2R",
+        "J3",
+        "J3R",
+        "J4",
+        "J4R",
+        "J5",
+        "J5R",
+        "J6",
+        "J6R",
+        "J7",
+        "J7R",
+        "J8",
+        "J8R"
+      ]
+    },
+    {
+      "left": "32113",
+      "right": "4322",
+      "depth": 2,
+      "components": 1,
+      "width_fraction": 0.9999999999999994,
+      "intervals": [
+        {
+          "normalized": [
+            -0.4804308907111825,
+            0.17104759934062966
+          ],
+          "lower_type": [
+            "1",
+            false,
+            "3",
+            true
+          ],
+          "upper_type": [
+            "3",
+            true,
+            "1",
+            false
+          ]
+        }
+      ],
+      "admitted_shapes": [
+        "full",
+        "J1",
+        "J1R",
+        "J2",
+        "J2R",
+        "J3",
+        "J3R",
+        "J4",
+        "J4R",
+        "J5",
+        "J5R",
+        "J6",
+        "J6R",
+        "J7",
+        "J7R",
+        "J8",
+        "J8R"
+      ]
+    },
+    {
+      "left": "32113",
+      "right": "4322",
+      "depth": 3,
+      "components": 1,
+      "width_fraction": 0.9999999999999994,
+      "intervals": [
+        {
+          "normalized": [
+            -0.4804308907111825,
+            0.17104759934062966
+          ],
+          "lower_type": [
+            "1",
+            false,
+            "3",
+            true
+          ],
+          "upper_type": [
+            "3",
+            true,
+            "1",
+            false
+          ]
+        }
+      ],
+      "admitted_shapes": [
+        "full",
+        "J1",
+        "J1R",
+        "J2",
+        "J2R",
+        "J3",
+        "J3R",
+        "J4",
+        "J4R",
+        "J5",
+        "J5R",
+        "J6",
+        "J6R",
+        "J7",
+        "J7R",
+        "J8",
+        "J8R"
+      ]
+    },
+    {
+      "left": "32113",
+      "right": "4322",
+      "depth": 4,
+      "components": 1,
+      "width_fraction": 0.9999999999999994,
+      "intervals": [
+        {
+          "normalized": [
+            -0.4804308907111825,
+            0.17104759934062966
+          ],
+          "lower_type": [
+            "1",
+            false,
+            "3",
+            true
+          ],
+          "upper_type": [
+            "3",
+            true,
+            "1",
+            false
+          ]
+        }
+      ],
+      "admitted_shapes": [
+        "full",
+        "J1",
+        "J1R",
+        "J2",
+        "J2R",
+        "J3",
+        "J3R",
+        "J4",
+        "J4R",
+        "J5",
+        "J5R",
+        "J6",
+        "J6R",
+        "J7",
+        "J7R",
+        "J8",
+        "J8R"
+      ]
+    },
+    {
+      "left": "32113",
+      "right": "4322",
+      "depth": 5,
+      "components": 1,
+      "width_fraction": 0.9999999999999994,
+      "intervals": [
+        {
+          "normalized": [
+            -0.4804308907111825,
+            0.17104759934062966
+          ],
+          "lower_type": [
+            "1",
+            false,
+            "3",
+            true
+          ],
+          "upper_type": [
+            "3",
+            true,
+            "1",
+            false
+          ]
+        }
+      ],
+      "admitted_shapes": [
+        "full",
+        "J1",
+        "J1R",
+        "J2",
+        "J2R",
+        "J3",
+        "J3R",
+        "J4",
+        "J4R",
+        "J5",
+        "J5R",
+        "J6",
+        "J6R",
+        "J7",
+        "J7R",
+        "J8",
+        "J8R"
+      ]
+    },
+    {
+      "left": "32113",
+      "right": "4322",
+      "depth": 6,
+      "components": 1,
+      "width_fraction": 0.9999999999999994,
+      "intervals": [
+        {
+          "normalized": [
+            -0.4804308907111825,
+            0.17104759934062966
+          ],
+          "lower_type": [
+            "1",
+            false,
+            "3",
+            true
+          ],
+          "upper_type": [
+            "3",
+            true,
+            "1",
+            false
+          ]
+        }
+      ],
+      "admitted_shapes": [
+        "full",
+        "J1",
+        "J1R",
+        "J2",
+        "J2R",
+        "J3",
+        "J3R",
+        "J4",
+        "J4R",
+        "J5",
+        "J5R",
+        "J6",
+        "J6R",
+        "J7",
+        "J7R",
+        "J8",
+        "J8R"
+      ]
+    },
+    {
+      "left": "32113",
+      "right": "4322",
+      "depth": 7,
+      "components": 1,
+      "width_fraction": 0.9999999999999994,
+      "intervals": [
+        {
+          "normalized": [
+            -0.4804308907111825,
+            0.17104759934062966
+          ],
+          "lower_type": [
+            "1",
+            false,
+            "3",
+            true
+          ],
+          "upper_type": [
+            "3",
+            true,
+            "1",
+            false
+          ]
+        }
+      ],
+      "admitted_shapes": [
+        "full",
+        "J1",
+        "J1R",
+        "J2",
+        "J2R",
+        "J3",
+        "J3R",
+        "J4",
+        "J4R",
+        "J5",
+        "J5R",
+        "J6",
+        "J6R",
+        "J7",
+        "J7R",
+        "J8",
+        "J8R"
+      ]
+    },
+    {
+      "left": "32113",
+      "right": "4322",
+      "depth": 8,
+      "components": 1,
+      "width_fraction": 0.9999999999999994,
+      "intervals": [
+        {
+          "normalized": [
+            -0.4804308907111825,
+            0.17104759934062966
+          ],
+          "lower_type": [
+            "1",
+            false,
+            "3",
+            true
+          ],
+          "upper_type": [
+            "3",
+            true,
+            "1",
+            false
+          ]
+        }
+      ],
+      "admitted_shapes": [
+        "full",
+        "J1",
+        "J1R",
+        "J2",
+        "J2R",
+        "J3",
+        "J3R",
+        "J4",
+        "J4R",
+        "J5",
+        "J5R",
+        "J6",
+        "J6R",
+        "J7",
+        "J7R",
+        "J8",
+        "J8R"
+      ]
+    },
+    {
+      "left": "32113",
+      "right": "4322",
+      "depth": 9,
+      "components": 1,
+      "width_fraction": 0.8773583513511752,
+      "intervals": [
+        {
+          "normalized": [
+            -0.4804308907111825,
+            0.09114920326142867
+          ],
+          "lower_type": [
+            "1",
+            false,
+            "3",
+            true
+          ],
+          "upper_type": [
+            "2",
+            true,
+            "1",
+            false
+          ]
+        }
+      ],
+      "admitted_shapes": [
+        "J1",
+        "J2",
+        "J2R",
+        "J3R",
+        "J4",
+        "J4R",
+        "J5",
+        "J6",
+        "J6R",
+        "J7",
+        "J7R",
+        "J8",
+        "J8R"
+      ]
+    },
+    {
+      "left": "32113",
+      "right": "4322",
+      "depth": 10,
+      "components": 1,
+      "width_fraction": 0.8773583513511752,
+      "intervals": [
+        {
+          "normalized": [
+            -0.4804308907111825,
+            0.09114920326142867
+          ],
+          "lower_type": [
+            "1",
+            false,
+            "3",
+            true
+          ],
+          "upper_type": [
+            "2",
+            true,
+            "1",
+            false
+          ]
+        }
+      ],
+      "admitted_shapes": [
+        "J1",
+        "J2",
+        "J2R",
+        "J3R",
+        "J4",
+        "J4R",
+        "J5",
+        "J6",
+        "J6R",
+        "J7",
+        "J7R",
+        "J8",
+        "J8R"
+      ]
+    }
+  ]
+}

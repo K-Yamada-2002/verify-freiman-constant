@@ -1,0 +1,521 @@
+{
+  "status": "floating-point finite-horizon discovery; NOT a filling certificate",
+  "menu_depth": 1,
+  "ratio_bound": 20.0,
+  "calls": 875714,
+  "rows": [
+    {
+      "left": "112",
+      "right": "122",
+      "depth": 1,
+      "components": 1,
+      "width_fraction": 1.0,
+      "intervals": [
+        {
+          "normalized": [
+            -0.8882951991671332,
+            -0.3609076953813023
+          ],
+          "lower_type": [
+            "1",
+            false,
+            "1",
+            false
+          ],
+          "upper_type": [
+            "3",
+            true,
+            "3",
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "left": "112",
+      "right": "122",
+      "depth": 2,
+      "components": 1,
+      "width_fraction": 1.0,
+      "intervals": [
+        {
+          "normalized": [
+            -0.8882951991671332,
+            -0.3609076953813023
+          ],
+          "lower_type": [
+            "1",
+            false,
+            "1",
+            false
+          ],
+          "upper_type": [
+            "3",
+            true,
+            "3",
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "left": "112",
+      "right": "122",
+      "depth": 3,
+      "components": 1,
+      "width_fraction": 1.0,
+      "intervals": [
+        {
+          "normalized": [
+            -0.8882951991671332,
+            -0.3609076953813023
+          ],
+          "lower_type": [
+            "1",
+            false,
+            "1",
+            false
+          ],
+          "upper_type": [
+            "3",
+            true,
+            "3",
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "left": "112",
+      "right": "122",
+      "depth": 4,
+      "components": 1,
+      "width_fraction": 0.8763188924979793,
+      "intervals": [
+        {
+          "normalized": [
+            -0.8230673286161755,
+            -0.3609076953813023
+          ],
+          "lower_type": [
+            "1",
+            false,
+            "1",
+            true
+          ],
+          "upper_type": [
+            "3",
+            true,
+            "3",
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "left": "112",
+      "right": "122",
+      "depth": 5,
+      "components": 1,
+      "width_fraction": 0.8763188924979793,
+      "intervals": [
+        {
+          "normalized": [
+            -0.8230673286161755,
+            -0.3609076953813023
+          ],
+          "lower_type": [
+            "1",
+            false,
+            "1",
+            true
+          ],
+          "upper_type": [
+            "3",
+            true,
+            "3",
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "left": "112",
+      "right": "122",
+      "depth": 6,
+      "components": 1,
+      "width_fraction": 0.8445432299023862,
+      "intervals": [
+        {
+          "normalized": [
+            -0.8230673286161755,
+            -0.37766578275873297
+          ],
+          "lower_type": [
+            "1",
+            false,
+            "1",
+            true
+          ],
+          "upper_type": [
+            "3",
+            true,
+            "3",
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "left": "112",
+      "right": "122",
+      "depth": 7,
+      "components": 1,
+      "width_fraction": 0.8445432299023862,
+      "intervals": [
+        {
+          "normalized": [
+            -0.8230673286161755,
+            -0.37766578275873297
+          ],
+          "lower_type": [
+            "1",
+            false,
+            "1",
+            true
+          ],
+          "upper_type": [
+            "3",
+            true,
+            "3",
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "left": "112",
+      "right": "122",
+      "depth": 8,
+      "components": 3,
+      "width_fraction": 0.7318500594750693,
+      "intervals": [
+        {
+          "normalized": [
+            -0.8230673286161755,
+            -0.7128949086433639
+          ],
+          "lower_type": [
+            "1",
+            false,
+            "1",
+            true
+          ],
+          "upper_type": [
+            "1",
+            false,
+            "3",
+            true
+          ]
+        },
+        {
+          "normalized": [
+            -0.6913521036437722,
+            -0.47424373275237686
+          ],
+          "lower_type": [
+            "1",
+            true,
+            "1",
+            true
+          ],
+          "upper_type": [
+            "2",
+            true,
+            "2",
+            true
+          ]
+        },
+        {
+          "normalized": [
+            -0.43635356790659474,
+            -0.37766578275873297
+          ],
+          "lower_type": [
+            "2",
+            true,
+            "3",
+            true
+          ],
+          "upper_type": [
+            "3",
+            true,
+            "3",
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "left": "112",
+      "right": "122",
+      "depth": 9,
+      "components": 4,
+      "width_fraction": 0.708724032503393,
+      "intervals": [
+        {
+          "normalized": [
+            -0.8230673286161755,
+            -0.7128949086433639
+          ],
+          "lower_type": [
+            "1",
+            false,
+            "1",
+            true
+          ],
+          "upper_type": [
+            "1",
+            false,
+            "3",
+            true
+          ]
+        },
+        {
+          "normalized": [
+            -0.6913521036437722,
+            -0.47424373275237686
+          ],
+          "lower_type": [
+            "1",
+            true,
+            "1",
+            true
+          ],
+          "upper_type": [
+            "2",
+            true,
+            "2",
+            true
+          ]
+        },
+        {
+          "normalized": [
+            -0.43635356790659474,
+            -0.4109942378641606
+          ],
+          "lower_type": [
+            "2",
+            true,
+            "3",
+            true
+          ],
+          "upper_type": [
+            "3",
+            false,
+            "3",
+            false
+          ]
+        },
+        {
+          "normalized": [
+            -0.3987978602270844,
+            -0.37766578275873297
+          ],
+          "lower_type": [
+            "3",
+            true,
+            "2",
+            true
+          ],
+          "upper_type": [
+            "3",
+            true,
+            "3",
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "left": "112",
+      "right": "122",
+      "depth": 10,
+      "components": 4,
+      "width_fraction": 0.5740051329242843,
+      "intervals": [
+        {
+          "normalized": [
+            -0.7565799741947299,
+            -0.7128949086433639
+          ],
+          "lower_type": [
+            "1",
+            true,
+            "1",
+            false
+          ],
+          "upper_type": [
+            "1",
+            false,
+            "3",
+            true
+          ]
+        },
+        {
+          "normalized": [
+            -0.6913521036437722,
+            -0.47424373275237686
+          ],
+          "lower_type": [
+            "1",
+            true,
+            "1",
+            true
+          ],
+          "upper_type": [
+            "2",
+            true,
+            "2",
+            true
+          ]
+        },
+        {
+          "normalized": [
+            -0.43635356790659474,
+            -0.4109942378641606
+          ],
+          "lower_type": [
+            "2",
+            true,
+            "3",
+            true
+          ],
+          "upper_type": [
+            "3",
+            false,
+            "3",
+            false
+          ]
+        },
+        {
+          "normalized": [
+            -0.3942361504867299,
+            -0.37766578275873297
+          ],
+          "lower_type": [
+            "3",
+            false,
+            "3",
+            true
+          ],
+          "upper_type": [
+            "3",
+            true,
+            "3",
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "left": "112",
+      "right": "122",
+      "depth": 11,
+      "components": 5,
+      "width_fraction": 0.44235966984650293,
+      "intervals": [
+        {
+          "normalized": [
+            -0.7565799741947299,
+            -0.7128949086433639
+          ],
+          "lower_type": [
+            "1",
+            true,
+            "1",
+            false
+          ],
+          "upper_type": [
+            "1",
+            false,
+            "3",
+            true
+          ]
+        },
+        {
+          "normalized": [
+            -0.6913521036437722,
+            -0.5979377710483913
+          ],
+          "lower_type": [
+            "1",
+            true,
+            "1",
+            true
+          ],
+          "upper_type": [
+            "1",
+            true,
+            "3",
+            false
+          ]
+        },
+        {
+          "normalized": [
+            -0.5811796836709605,
+            -0.564668762433371
+          ],
+          "lower_type": [
+            "1",
+            true,
+            "3",
+            true
+          ],
+          "upper_type": [
+            "2",
+            false,
+            "2",
+            false
+          ]
+        },
+        {
+          "normalized": [
+            -0.5465259878794064,
+            -0.47424373275237686
+          ],
+          "lower_type": [
+            "2",
+            true,
+            "1",
+            true
+          ],
+          "upper_type": [
+            "2",
+            true,
+            "2",
+            true
+          ]
+        },
+        {
+          "normalized": [
+            -0.43635356790659474,
+            -0.4289511803620892
+          ],
+          "lower_type": [
+            "2",
+            true,
+            "3",
+            true
+          ],
+          "upper_type": [
+            "3",
+            true,
+            "2",
+            false
+          ]
+        }
+      ]
+    }
+  ]
+}

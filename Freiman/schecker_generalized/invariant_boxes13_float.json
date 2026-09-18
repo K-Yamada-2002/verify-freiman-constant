@@ -1,0 +1,113 @@
+{
+  "status": "floating-point box-invariant search; requires exact verification",
+  "max_step": 2,
+  "q_bins": 17,
+  "history": [
+    {
+      "round": 0,
+      "alive_before": 45850,
+      "removed": 13536
+    },
+    {
+      "round": 1,
+      "alive_before": 32314,
+      "removed": 10385
+    },
+    {
+      "round": 2,
+      "alive_before": 21929,
+      "removed": 1797
+    },
+    {
+      "round": 3,
+      "alive_before": 20132,
+      "removed": 2293
+    },
+    {
+      "round": 4,
+      "alive_before": 17839,
+      "removed": 3960
+    },
+    {
+      "round": 5,
+      "alive_before": 13879,
+      "removed": 5434
+    },
+    {
+      "round": 6,
+      "alive_before": 8445,
+      "removed": 6379
+    },
+    {
+      "round": 7,
+      "alive_before": 2066,
+      "removed": 2007
+    },
+    {
+      "round": 8,
+      "alive_before": 59,
+      "removed": 59
+    },
+    {
+      "round": 9,
+      "alive_before": 0,
+      "removed": 0
+    }
+  ],
+  "state_ranges": {
+    "11": [
+      "5/9",
+      "9/14"
+    ],
+    "21": [
+      "9/13",
+      "14/19"
+    ],
+    "12": [
+      "5/14",
+      "9/23"
+    ],
+    "22": [
+      "9/22",
+      "14/33"
+    ],
+    "32": [
+      "13/30",
+      "19/43"
+    ],
+    "13": [
+      "5/19",
+      "9/32"
+    ],
+    "23": [
+      "9/31",
+      "14/47"
+    ],
+    "33": [
+      "13/43",
+      "19/62"
+    ],
+    "131": [
+      "32/41",
+      "19/24"
+    ],
+    "231": [
+      "47/61",
+      "31/40"
+    ],
+    "331": [
+      "62/81",
+      "43/56"
+    ],
+    "313": [
+      "24/91",
+      "17/64"
+    ],
+    "3131": [
+      "64/81",
+      "91/115"
+    ]
+  },
+  "closed": true,
+  "survivors": []
+}

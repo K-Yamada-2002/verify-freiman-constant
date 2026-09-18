@@ -1,0 +1,56 @@
+[
+  {
+    "n": 0,
+    "kind": "H1",
+    "left": "321131",
+    "right": "4322",
+    "depth": 6,
+    "numeric_gap_count": 0,
+    "certified_gaps": []
+  },
+  {
+    "n": 0,
+    "kind": "H2",
+    "left": "321132",
+    "right": "4322",
+    "depth": 6,
+    "numeric_gap_count": 0,
+    "certified_gaps": []
+  },
+  {
+    "n": 0,
+    "kind": "J",
+    "left": "32113",
+    "right": "43221",
+    "depth": 6,
+    "numeric_gap_count": 0,
+    "certified_gaps": []
+  },
+  {
+    "n": 1,
+    "kind": "H1",
+    "left": "321131312131",
+    "right": "4322313121",
+    "depth": 6,
+    "numeric_gap_count": 0,
+    "certified_gaps": []
+  },
+  {
+    "n": 1,
+    "kind": "H2",
+    "left": "321131312132",
+    "right": "4322313121",
+    "depth": 6,
+    "numeric_gap_count": 0,
+    "certified_gaps": []
+  },
+  {
+    "n": 1,
+    "kind": "J",
+    "left": "32113131213",
+    "right": "43223131211",
+    "depth": 6,
+    "numeric_gap_count": 0,
+    "certified_gaps": []
+  }
+]
