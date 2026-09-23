@@ -65,7 +65,9 @@ class Q:
             return (a > 0) - (a < 0)
         if not a or (a > 0) == (b > 0):
             return (b > 0) - (b < 0)
-        delta = a*a - 462*b*b
+        # Positive rational denominators can be cleared before squaring.
+        # This avoids repeated Fraction normalization in exact sign tests.
+        delta = (a.numerator*b.denominator)**2 - 462*(b.numerator*a.denominator)**2
         return ((a > 0) - (a < 0)) * ((delta > 0) - (delta < 0))
 
     def __lt__(self, other):

@@ -1,0 +1,255 @@
+{
+  "status": "not closed; local implications only",
+  "completed_date_jst": "2026-09-23",
+  "target": "Full hull of A_n=(3211(313121)^n3 | 4322(313121)^n), all n >= 0",
+  "endpoint_templates": 48,
+  "source_state": "piecewise_axes_graph.state.json",
+  "contraction": {
+    "before_nodes": 4771,
+    "after_nodes": 3905,
+    "history": [
+      {
+        "round": 0,
+        "contracted": 4185,
+        "removed_references": 0,
+        "clipped_pieces": 36,
+        "simplified_rules": 2
+      },
+      {
+        "round": 1,
+        "contracted": 3354,
+        "removed_references": 1744,
+        "clipped_pieces": 18,
+        "simplified_rules": 1
+      },
+      {
+        "round": 2,
+        "contracted": 3079,
+        "removed_references": 757,
+        "clipped_pieces": 12,
+        "simplified_rules": 0
+      },
+      {
+        "round": 3,
+        "contracted": 2556,
+        "removed_references": 456,
+        "clipped_pieces": 12,
+        "simplified_rules": 1
+      }
+    ],
+    "verified_local": 1433,
+    "open": 2472,
+    "failed": 0,
+    "proof_hash": "a5979f8cbaef7b522d17935db259912721553e0990796516e111920ac2e03bc1",
+    "grid_rounding_used": false,
+    "closed_supported_types": 0
+  },
+  "imported_initial_state": "piecewise_specialized_initial.state.json",
+  "searches": [
+    {
+      "graph": "piecewise_specialized_baseline.json",
+      "state": "piecewise_specialized_baseline.state.json",
+      "audit": "piecewise_specialized_baseline.audit.json",
+      "search": {
+        "registered": 6291,
+        "reachable": 4069,
+        "unresolved": 2920,
+        "rejected": 115,
+        "steps": 839,
+        "parent_repairs": 380,
+        "stop": "time limit",
+        "closed_candidate": false,
+        "closed_supported_types": 0
+      },
+      "verified_local": 1149,
+      "open": 2920,
+      "failed": 0,
+      "proof_hash": "cc8e8cdd4a3bf5d1a4563989eb352d1d21179daa8be9c0eaaa6834e96d893d84",
+      "engine_hash": "36226bd078bc75bf8032b78b11bd20f8013b02e03f3d6b9eebb5cfdf822d7fb0",
+      "configuration": {
+        "chart_memory": 1,
+        "states": 6,
+        "bins": 25,
+        "base": "22/25",
+        "max_step": 1,
+        "outer_depth": 4,
+        "outer_samples": 3,
+        "local_filter": false,
+        "balance": "9/10",
+        "reuse_pending": true,
+        "adaptive_shapes": true,
+        "max_shapes": 48,
+        "partition_depth": 2,
+        "min_cost_cover": true
+      },
+      "budgets": {
+        "seconds": 300,
+        "additional_steps": 1500,
+        "max_types": 6500
+      },
+      "incoming": null,
+      "partition": {
+        "attempts": 115,
+        "accepted": 7,
+        "pieces": 18,
+        "exact_rejected": 0,
+        "axis_trials": 1278
+      }
+    },
+    {
+      "graph": "piecewise_incoming_eager.json",
+      "state": "piecewise_incoming_eager.state.json",
+      "audit": "piecewise_incoming_eager.audit.json",
+      "search": {
+        "registered": 6500,
+        "reachable": 5749,
+        "unresolved": 4257,
+        "rejected": 45,
+        "steps": 463,
+        "parent_repairs": 195,
+        "stop": "type limit",
+        "closed_candidate": false,
+        "closed_supported_types": 0
+      },
+      "verified_local": 1492,
+      "open": 4257,
+      "failed": 0,
+      "proof_hash": "9fec85ff6edf1c246783261cc1ac718a8ab9c8b907a56131946315c644cc4024",
+      "engine_hash": "36338d81826d66c96e12e09028cbc4370ea9d7b39bf60c86d022ef7f32003132",
+      "configuration": {
+        "chart_memory": 1,
+        "states": 6,
+        "bins": 25,
+        "base": "22/25",
+        "max_step": 1,
+        "outer_depth": 4,
+        "outer_samples": 3,
+        "local_filter": false,
+        "balance": "9/10",
+        "reuse_pending": true,
+        "adaptive_shapes": true,
+        "max_shapes": 48,
+        "partition_depth": 2,
+        "min_cost_cover": true,
+        "reach_grid_bits": 2
+      },
+      "budgets": {
+        "seconds": 300,
+        "additional_steps": 1500,
+        "max_types": 6500
+      },
+      "incoming": {
+        "routes": 7108,
+        "tightened_destinations": 18176,
+        "removed_destinations": 0,
+        "new_domains": 10638
+      },
+      "partition": {
+        "attempts": 51,
+        "accepted": 8,
+        "pieces": 21,
+        "exact_rejected": 0,
+        "axis_trials": 514
+      }
+    },
+    {
+      "graph": "piecewise_incoming_selective.json",
+      "state": "piecewise_incoming_selective.state.json",
+      "audit": "piecewise_incoming_selective.audit.json",
+      "search": {
+        "registered": 6055,
+        "reachable": 4989,
+        "unresolved": 3512,
+        "rejected": 67,
+        "steps": 658,
+        "parent_repairs": 255,
+        "stop": "time limit",
+        "closed_candidate": false,
+        "closed_supported_types": 0
+      },
+      "verified_local": 1477,
+      "open": 3512,
+      "failed": 0,
+      "proof_hash": "bf16bd49e208e0d1c47a42311ef205ba62fa462989eb24e2166d68269f8c3b83",
+      "engine_hash": "c4a2ff7b34c8b7c2460293fbc0501515f145807b73254bb57d9d2bc56a00d141",
+      "configuration": {
+        "chart_memory": 1,
+        "states": 6,
+        "bins": 25,
+        "base": "22/25",
+        "max_step": 1,
+        "outer_depth": 4,
+        "outer_samples": 3,
+        "local_filter": false,
+        "balance": "9/10",
+        "reuse_pending": true,
+        "adaptive_shapes": true,
+        "max_shapes": 48,
+        "partition_depth": 2,
+        "min_cost_cover": true,
+        "reach_grid_bits": 2,
+        "reach_policy": "on_failure"
+      },
+      "budgets": {
+        "seconds": 300,
+        "additional_steps": 1500,
+        "max_types": 6500
+      },
+      "incoming": {
+        "routes": 780,
+        "tightened_destinations": 2224,
+        "removed_destinations": 0,
+        "new_domains": 1894,
+        "refinement_attempts": 92,
+        "refinement_recoveries": 30,
+        "reopened": 0
+      },
+      "partition": {
+        "attempts": 160,
+        "accepted": 5,
+        "pieces": 13,
+        "exact_rejected": 0,
+        "axis_trials": 1817
+      }
+    }
+  ],
+  "latest_state": "piecewise_incoming_selective.state.json",
+  "closure_rejection": "node 3919: unresolved type",
+  "roundtrip": {
+    "same_engine_hash": true,
+    "same_game_snapshot_up_to_set_order": true,
+    "set_fields_normalized": [
+      "permanent_rejections"
+    ],
+    "queue_order_preserved": true,
+    "same_refined_domains": true,
+    "proof_hash": "bf16bd49e208e0d1c47a42311ef205ba62fa462989eb24e2166d68269f8c3b83",
+    "refined_domains": 92,
+    "supported_types": 0,
+    "shape_templates": 48
+  },
+  "tests": {
+    "total_distinct_passed": 79,
+    "base_combined": 74,
+    "additional_guard_clipping": 1,
+    "incoming_routing": 4
+  },
+  "source_hashes": {
+    "contract_piecewise_charts.py": "a74e4023911cf30d844313f11e538b78108cb7941c329726ed77e9f0e43dad3f",
+    "specialize_piecewise_search.py": "99d51a184292ba64f1e6f14ccbaa0da52c8d49b308ad52a11d0d1c46ffee5bbc",
+    "search_reachable_charts.py": "e0da0f84e125c5c050211b87779ad551f6950df2323edc19f1b33bf54857ab9f",
+    "test_chart_contraction.py": "1a0acea1abcd2215a50981d8b8e6d6bf28e3aa1763bf51dbb493c3bcf3095f89",
+    "test_reachable_charts.py": "7ed5f59da69191e0cba217e132cdf73659baf94dcd5f2eec258b4a35f5db0ef7",
+    "contract_cyclic_domains.py": "27a3faaef18c454e4201c37cc0265212b55d7e93c0f9645f3f75981c2a49c735",
+    "search_piecewise_charts.py": "035e6fef8ad569ea9026249b4acadf77632d7d68c844eabcba4ac2d631ce37ed",
+    "verify_piecewise_charts.py": "cf643e3e5538b6b1ea16c3403e4ed17b2ec5b9c37c87e7bf37e8c858003f651d"
+  },
+  "limitations": [
+    "No infinite filling conclusion; every open dependency remains an obligation.",
+    "Contraction removes unnecessary obligations; it does not prove the removed cases filled.",
+    "Eager specialization increased case proliferation and is retained as a diagnostic branch.",
+    "On-failure routing retains shared routes; lower candidate-domain count is not a proof of global superiority.",
+    "Timed runs process different obligations; node counts are not a completion percentage.",
+    "Contraction and eager-search files predate later metadata/policy additions; saved engine hashes retain their provenance."
+  ]
+}

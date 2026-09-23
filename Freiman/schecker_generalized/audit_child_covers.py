@@ -17,9 +17,9 @@ def canonical(u, v, kind):
     return u, v, kind
 
 
-def audit(documents):
+def audit(documents, obstructions=()):
     rows = {}
-    for data in sorted(documents, key=lambda d: d['lookahead_used_only_for_discovery']):
+    for data in sorted(documents, key=lambda d: d.get('rule_priority', d['lookahead_used_only_for_discovery'])):
         for row in data['covers']:
             verify_row(row)
             # A rule only for n>=1 does not discharge an n>=0 obligation.
@@ -44,11 +44,21 @@ def audit(documents):
             target = canonical(u+a, v+b, child['kind'])
             edges.append((key, target))
             pending.append(target)
+    # A valid local cover may still ask a child to fill an impossible interval.
+    if obstructions:
+        from frontier_obstructions import verify_gap
+    refuted = []
+    for obstruction in obstructions:
+        verify_gap(obstruction)
+        key = (obstruction['left_suffix'], obstruction['right_suffix'], obstruction['kind'])
+        if key in seen:
+            refuted.append(key)
     return {'status': 'closure audit only; no filledness assertion',
             'verified_available_rules': len(rows),
             'reachable_rules': len(seen - missing),
             'unproved_frontier': sorted(missing),
             'closed_under_children': not missing,
+            'known_refuted_obligations': sorted(set(refuted)),
             'edges': edges}
 
 
@@ -56,8 +66,11 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('files', nargs='+', type=Path)
     parser.add_argument('--output', type=Path)
+    parser.add_argument('--obstructions', type=Path)
     args = parser.parse_args()
-    result = audit([json.loads(p.read_text()) for p in args.files])
+    obstructions = (json.loads(args.obstructions.read_text())['obstructions']
+                    if args.obstructions else ())
+    result = audit([json.loads(p.read_text()) for p in args.files], obstructions)
     if args.output:
         args.output.write_text(json.dumps(result, indent=2)+'\n')
     print(json.dumps({k:v for k,v in result.items() if k != 'edges'}, indent=2))

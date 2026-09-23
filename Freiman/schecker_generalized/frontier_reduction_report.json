@@ -1,0 +1,1406 @@
+{
+  "status": "not closed; local implications only",
+  "completed_date_jst": "2026-09-23",
+  "target": "Full hull of A_n=(3211(313121)^n3 | 4322(313121)^n), all n >= 0",
+  "endpoint_templates": 48,
+  "source_graph": "piecewise_incoming_selective.json",
+  "final_graph": "frontier_compacted.json",
+  "final_state": "frontier_compacted.state.json",
+  "total_open_reduction": 1728,
+  "open_reduction_percent": 49.20273348519362,
+  "matched_four_pass_control": {
+    "control_open": 2705,
+    "new_method_open": 2246,
+    "difference": 459
+  },
+  "stages": [
+    {
+      "stage": "baseline",
+      "graph": "piecewise_incoming_selective.json",
+      "audit": "piecewise_incoming_selective.audit.json",
+      "counts": {
+        "nodes": 4989,
+        "local": 1477,
+        "open": 3512,
+        "closed_supported_types": 0
+      },
+      "verified_local": 1477,
+      "failed": 0,
+      "proof_hash": "bf16bd49e208e0d1c47a42311ef205ba62fa462989eb24e2166d68269f8c3b83",
+      "active_endpoint_families": 48,
+      "root_goal_labels_unchanged": true
+    },
+    {
+      "stage": "four contractions control",
+      "graph": "frontier_contraction_control.json",
+      "audit": "frontier_contraction_control.audit.json",
+      "counts": {
+        "nodes": 3948,
+        "local": 1243,
+        "open": 2705,
+        "closed_supported_types": 0
+      },
+      "verified_local": 1243,
+      "failed": 0,
+      "proof_hash": "a1deda6fbf75ad99d1228f1e51afef49f8b3f19f6ebd3fdfdbcf5789436586b6",
+      "active_endpoint_families": 48,
+      "root_goal_labels_unchanged": true,
+      "contraction_history": [
+        {
+          "round": 0,
+          "grid_bits": null,
+          "contracted": 4085,
+          "removed_references": 205,
+          "clipped_pieces": 16,
+          "simplified_rules": 0
+        },
+        {
+          "round": 1,
+          "grid_bits": null,
+          "contracted": 3509,
+          "removed_references": 658,
+          "clipped_pieces": 18,
+          "simplified_rules": 2
+        },
+        {
+          "round": 2,
+          "grid_bits": null,
+          "contracted": 3262,
+          "removed_references": 408,
+          "clipped_pieces": 14,
+          "simplified_rules": 0
+        },
+        {
+          "round": 3,
+          "grid_bits": null,
+          "contracted": 3282,
+          "removed_references": 221,
+          "clipped_pieces": 12,
+          "simplified_rules": 0
+        }
+      ]
+    },
+    {
+      "stage": "four contractions and cover trimming",
+      "graph": "frontier_reduced_four.json",
+      "audit": "frontier_reduced_four.audit.json",
+      "counts": {
+        "nodes": 3268,
+        "local": 1022,
+        "open": 2246,
+        "closed_supported_types": 0
+      },
+      "verified_local": 1022,
+      "failed": 0,
+      "proof_hash": "5fa2a439b4dfd38fa99a0b63ebd07891a6ba969b23f61213ca85d73630a09f5a",
+      "active_endpoint_families": 47,
+      "root_goal_labels_unchanged": true,
+      "reduction_history": [
+        {
+          "round": 0,
+          "contraction": {
+            "contracted": 4085,
+            "removed_references": 205,
+            "clipped_pieces": 16,
+            "simplified_rules": 0
+          },
+          "trimming": {
+            "removed_cover_edges": 392,
+            "removed_destination_references": 696,
+            "shortened_rules": 456
+          },
+          "nodes": 4026,
+          "local": 1215,
+          "open": 2811,
+          "closed_supported_types": 0,
+          "proof_hash": "8715698c78ea160a6ba13aba0c1db18793170dda0d786c916323e23119b33509"
+        },
+        {
+          "round": 1,
+          "contraction": {
+            "contracted": 3183,
+            "removed_references": 0,
+            "clipped_pieces": 16,
+            "simplified_rules": 2
+          },
+          "trimming": {
+            "removed_cover_edges": 6,
+            "removed_destination_references": 482,
+            "shortened_rules": 168
+          },
+          "nodes": 3649,
+          "local": 1121,
+          "open": 2528,
+          "closed_supported_types": 0,
+          "proof_hash": "331a53a4e5fb73a69fcd79b823f9974ce10b2bcf506a64d027fb6fcd2264a375"
+        },
+        {
+          "round": 2,
+          "contraction": {
+            "contracted": 2942,
+            "removed_references": 0,
+            "clipped_pieces": 15,
+            "simplified_rules": 1
+          },
+          "trimming": {
+            "removed_cover_edges": 1,
+            "removed_destination_references": 337,
+            "shortened_rules": 115
+          },
+          "nodes": 3360,
+          "local": 1036,
+          "open": 2324,
+          "closed_supported_types": 0,
+          "proof_hash": "0816f8aa9da51c4d8f275900520df988e1fa70635c4ffe6066a48b0be2d4997f"
+        },
+        {
+          "round": 3,
+          "contraction": {
+            "contracted": 2784,
+            "removed_references": 0,
+            "clipped_pieces": 8,
+            "simplified_rules": 0
+          },
+          "trimming": {
+            "removed_cover_edges": 2,
+            "removed_destination_references": 193,
+            "shortened_rules": 70
+          },
+          "nodes": 3268,
+          "local": 1022,
+          "open": 2246,
+          "closed_supported_types": 0,
+          "proof_hash": "5fa2a439b4dfd38fa99a0b63ebd07891a6ba969b23f61213ca85d73630a09f5a"
+        }
+      ]
+    },
+    {
+      "stage": "four-pass recipe reuse branch",
+      "graph": "frontier_recipe_four.json",
+      "audit": "frontier_recipe_four.audit.json",
+      "counts": {
+        "nodes": 3268,
+        "local": 1187,
+        "open": 2081,
+        "closed_supported_types": 0
+      },
+      "verified_local": 1187,
+      "failed": 0,
+      "proof_hash": "728c0be108f46fe97a546ec788f6940c3b2b7e663320d3f4a8dcd66065738d7c",
+      "active_endpoint_families": 47,
+      "root_goal_labels_unchanged": true,
+      "reduction_history": [
+        {
+          "round": 0,
+          "contraction": {
+            "contracted": 4085,
+            "removed_references": 205,
+            "clipped_pieces": 16,
+            "simplified_rules": 0
+          },
+          "trimming": {
+            "removed_cover_edges": 392,
+            "removed_destination_references": 696,
+            "shortened_rules": 456
+          },
+          "nodes": 4026,
+          "local": 1215,
+          "open": 2811,
+          "closed_supported_types": 0,
+          "proof_hash": "8715698c78ea160a6ba13aba0c1db18793170dda0d786c916323e23119b33509"
+        },
+        {
+          "round": 1,
+          "contraction": {
+            "contracted": 3183,
+            "removed_references": 0,
+            "clipped_pieces": 16,
+            "simplified_rules": 2
+          },
+          "trimming": {
+            "removed_cover_edges": 6,
+            "removed_destination_references": 482,
+            "shortened_rules": 168
+          },
+          "nodes": 3649,
+          "local": 1121,
+          "open": 2528,
+          "closed_supported_types": 0,
+          "proof_hash": "331a53a4e5fb73a69fcd79b823f9974ce10b2bcf506a64d027fb6fcd2264a375"
+        },
+        {
+          "round": 2,
+          "contraction": {
+            "contracted": 2942,
+            "removed_references": 0,
+            "clipped_pieces": 15,
+            "simplified_rules": 1
+          },
+          "trimming": {
+            "removed_cover_edges": 1,
+            "removed_destination_references": 337,
+            "shortened_rules": 115
+          },
+          "nodes": 3360,
+          "local": 1036,
+          "open": 2324,
+          "closed_supported_types": 0,
+          "proof_hash": "0816f8aa9da51c4d8f275900520df988e1fa70635c4ffe6066a48b0be2d4997f"
+        },
+        {
+          "round": 3,
+          "contraction": {
+            "contracted": 2784,
+            "removed_references": 0,
+            "clipped_pieces": 8,
+            "simplified_rules": 0
+          },
+          "trimming": {
+            "removed_cover_edges": 2,
+            "removed_destination_references": 193,
+            "shortened_rules": 70
+          },
+          "nodes": 3268,
+          "local": 1022,
+          "open": 2246,
+          "closed_supported_types": 0,
+          "proof_hash": "5fa2a439b4dfd38fa99a0b63ebd07891a6ba969b23f61213ca85d73630a09f5a"
+        }
+      ],
+      "recipe_reuse_statistics": [
+        {
+          "initial_open": 2246,
+          "inspected": 2246,
+          "recipe_attempts": 11940,
+          "accepted": 165,
+          "contact_failures": 2686,
+          "exact_failures": 9089,
+          "recipes": 979,
+          "stop": "finished menu",
+          "elapsed_seconds": 97.90510866700001
+        }
+      ]
+    },
+    {
+      "stage": "eight contractions and cover trimming",
+      "graph": "frontier_reduced_eight.json",
+      "audit": "frontier_reduced_eight.audit.json",
+      "counts": {
+        "nodes": 2984,
+        "local": 968,
+        "open": 2016,
+        "closed_supported_types": 0
+      },
+      "verified_local": 968,
+      "failed": 0,
+      "proof_hash": "991acbf6fbf15d902afdd6ca1d08647e7657b957bed6b68af1b9f64a5d363a35",
+      "active_endpoint_families": 47,
+      "root_goal_labels_unchanged": true,
+      "reduction_history": [
+        {
+          "round": 0,
+          "contraction": {
+            "contracted": 4085,
+            "removed_references": 205,
+            "clipped_pieces": 16,
+            "simplified_rules": 0
+          },
+          "trimming": {
+            "removed_cover_edges": 392,
+            "removed_destination_references": 696,
+            "shortened_rules": 456
+          },
+          "nodes": 4026,
+          "local": 1215,
+          "open": 2811,
+          "closed_supported_types": 0,
+          "proof_hash": "8715698c78ea160a6ba13aba0c1db18793170dda0d786c916323e23119b33509"
+        },
+        {
+          "round": 1,
+          "contraction": {
+            "contracted": 3183,
+            "removed_references": 0,
+            "clipped_pieces": 16,
+            "simplified_rules": 2
+          },
+          "trimming": {
+            "removed_cover_edges": 6,
+            "removed_destination_references": 482,
+            "shortened_rules": 168
+          },
+          "nodes": 3649,
+          "local": 1121,
+          "open": 2528,
+          "closed_supported_types": 0,
+          "proof_hash": "331a53a4e5fb73a69fcd79b823f9974ce10b2bcf506a64d027fb6fcd2264a375"
+        },
+        {
+          "round": 2,
+          "contraction": {
+            "contracted": 2942,
+            "removed_references": 0,
+            "clipped_pieces": 15,
+            "simplified_rules": 1
+          },
+          "trimming": {
+            "removed_cover_edges": 1,
+            "removed_destination_references": 337,
+            "shortened_rules": 115
+          },
+          "nodes": 3360,
+          "local": 1036,
+          "open": 2324,
+          "closed_supported_types": 0,
+          "proof_hash": "0816f8aa9da51c4d8f275900520df988e1fa70635c4ffe6066a48b0be2d4997f"
+        },
+        {
+          "round": 3,
+          "contraction": {
+            "contracted": 2784,
+            "removed_references": 0,
+            "clipped_pieces": 8,
+            "simplified_rules": 0
+          },
+          "trimming": {
+            "removed_cover_edges": 2,
+            "removed_destination_references": 193,
+            "shortened_rules": 70
+          },
+          "nodes": 3268,
+          "local": 1022,
+          "open": 2246,
+          "closed_supported_types": 0,
+          "proof_hash": "5fa2a439b4dfd38fa99a0b63ebd07891a6ba969b23f61213ca85d73630a09f5a"
+        },
+        {
+          "round": 4,
+          "contraction": {
+            "contracted": 2654,
+            "removed_references": 0,
+            "clipped_pieces": 8,
+            "simplified_rules": 1
+          },
+          "trimming": {
+            "removed_cover_edges": 3,
+            "removed_destination_references": 196,
+            "shortened_rules": 72
+          },
+          "nodes": 3102,
+          "local": 992,
+          "open": 2110,
+          "closed_supported_types": 0,
+          "proof_hash": "f5687e48a85fbb260808355de6ecd3768fc09bf9a583769ca448b6005ccffc06"
+        },
+        {
+          "round": 5,
+          "contraction": {
+            "contracted": 2435,
+            "removed_references": 0,
+            "clipped_pieces": 5,
+            "simplified_rules": 0
+          },
+          "trimming": {
+            "removed_cover_edges": 0,
+            "removed_destination_references": 85,
+            "shortened_rules": 33
+          },
+          "nodes": 3036,
+          "local": 983,
+          "open": 2053,
+          "closed_supported_types": 0,
+          "proof_hash": "df904ffe79d5e6e163986c1ca4ac8d586cc2c9b481c27f4219ba1e14109347f0"
+        },
+        {
+          "round": 6,
+          "contraction": {
+            "contracted": 2396,
+            "removed_references": 0,
+            "clipped_pieces": 7,
+            "simplified_rules": 0
+          },
+          "trimming": {
+            "removed_cover_edges": 1,
+            "removed_destination_references": 17,
+            "shortened_rules": 8
+          },
+          "nodes": 3020,
+          "local": 979,
+          "open": 2041,
+          "closed_supported_types": 0,
+          "proof_hash": "627f4c8782452d28efe483335892e3b79c0a8d39cbfe6469bc847f92f623998a"
+        },
+        {
+          "round": 7,
+          "contraction": {
+            "contracted": 2438,
+            "removed_references": 0,
+            "clipped_pieces": 5,
+            "simplified_rules": 0
+          },
+          "trimming": {
+            "removed_cover_edges": 1,
+            "removed_destination_references": 24,
+            "shortened_rules": 9
+          },
+          "nodes": 2984,
+          "local": 968,
+          "open": 2016,
+          "closed_supported_types": 0,
+          "proof_hash": "991acbf6fbf15d902afdd6ca1d08647e7657b957bed6b68af1b9f64a5d363a35"
+        }
+      ]
+    },
+    {
+      "stage": "eight-pass recipe reuse",
+      "graph": "frontier_recipe_eight.json",
+      "audit": "frontier_recipe_eight.audit.json",
+      "counts": {
+        "nodes": 2984,
+        "local": 1106,
+        "open": 1878,
+        "closed_supported_types": 0
+      },
+      "verified_local": 1106,
+      "failed": 0,
+      "proof_hash": "32c86e6d4d12fc8427a01f15d54efcfac420c5edc370fbddcca2e6eee3facf5d",
+      "active_endpoint_families": 47,
+      "root_goal_labels_unchanged": true,
+      "reduction_history": [
+        {
+          "round": 0,
+          "contraction": {
+            "contracted": 4085,
+            "removed_references": 205,
+            "clipped_pieces": 16,
+            "simplified_rules": 0
+          },
+          "trimming": {
+            "removed_cover_edges": 392,
+            "removed_destination_references": 696,
+            "shortened_rules": 456
+          },
+          "nodes": 4026,
+          "local": 1215,
+          "open": 2811,
+          "closed_supported_types": 0,
+          "proof_hash": "8715698c78ea160a6ba13aba0c1db18793170dda0d786c916323e23119b33509"
+        },
+        {
+          "round": 1,
+          "contraction": {
+            "contracted": 3183,
+            "removed_references": 0,
+            "clipped_pieces": 16,
+            "simplified_rules": 2
+          },
+          "trimming": {
+            "removed_cover_edges": 6,
+            "removed_destination_references": 482,
+            "shortened_rules": 168
+          },
+          "nodes": 3649,
+          "local": 1121,
+          "open": 2528,
+          "closed_supported_types": 0,
+          "proof_hash": "331a53a4e5fb73a69fcd79b823f9974ce10b2bcf506a64d027fb6fcd2264a375"
+        },
+        {
+          "round": 2,
+          "contraction": {
+            "contracted": 2942,
+            "removed_references": 0,
+            "clipped_pieces": 15,
+            "simplified_rules": 1
+          },
+          "trimming": {
+            "removed_cover_edges": 1,
+            "removed_destination_references": 337,
+            "shortened_rules": 115
+          },
+          "nodes": 3360,
+          "local": 1036,
+          "open": 2324,
+          "closed_supported_types": 0,
+          "proof_hash": "0816f8aa9da51c4d8f275900520df988e1fa70635c4ffe6066a48b0be2d4997f"
+        },
+        {
+          "round": 3,
+          "contraction": {
+            "contracted": 2784,
+            "removed_references": 0,
+            "clipped_pieces": 8,
+            "simplified_rules": 0
+          },
+          "trimming": {
+            "removed_cover_edges": 2,
+            "removed_destination_references": 193,
+            "shortened_rules": 70
+          },
+          "nodes": 3268,
+          "local": 1022,
+          "open": 2246,
+          "closed_supported_types": 0,
+          "proof_hash": "5fa2a439b4dfd38fa99a0b63ebd07891a6ba969b23f61213ca85d73630a09f5a"
+        },
+        {
+          "round": 4,
+          "contraction": {
+            "contracted": 2654,
+            "removed_references": 0,
+            "clipped_pieces": 8,
+            "simplified_rules": 1
+          },
+          "trimming": {
+            "removed_cover_edges": 3,
+            "removed_destination_references": 196,
+            "shortened_rules": 72
+          },
+          "nodes": 3102,
+          "local": 992,
+          "open": 2110,
+          "closed_supported_types": 0,
+          "proof_hash": "f5687e48a85fbb260808355de6ecd3768fc09bf9a583769ca448b6005ccffc06"
+        },
+        {
+          "round": 5,
+          "contraction": {
+            "contracted": 2435,
+            "removed_references": 0,
+            "clipped_pieces": 5,
+            "simplified_rules": 0
+          },
+          "trimming": {
+            "removed_cover_edges": 0,
+            "removed_destination_references": 85,
+            "shortened_rules": 33
+          },
+          "nodes": 3036,
+          "local": 983,
+          "open": 2053,
+          "closed_supported_types": 0,
+          "proof_hash": "df904ffe79d5e6e163986c1ca4ac8d586cc2c9b481c27f4219ba1e14109347f0"
+        },
+        {
+          "round": 6,
+          "contraction": {
+            "contracted": 2396,
+            "removed_references": 0,
+            "clipped_pieces": 7,
+            "simplified_rules": 0
+          },
+          "trimming": {
+            "removed_cover_edges": 1,
+            "removed_destination_references": 17,
+            "shortened_rules": 8
+          },
+          "nodes": 3020,
+          "local": 979,
+          "open": 2041,
+          "closed_supported_types": 0,
+          "proof_hash": "627f4c8782452d28efe483335892e3b79c0a8d39cbfe6469bc847f92f623998a"
+        },
+        {
+          "round": 7,
+          "contraction": {
+            "contracted": 2438,
+            "removed_references": 0,
+            "clipped_pieces": 5,
+            "simplified_rules": 0
+          },
+          "trimming": {
+            "removed_cover_edges": 1,
+            "removed_destination_references": 24,
+            "shortened_rules": 9
+          },
+          "nodes": 2984,
+          "local": 968,
+          "open": 2016,
+          "closed_supported_types": 0,
+          "proof_hash": "991acbf6fbf15d902afdd6ca1d08647e7657b957bed6b68af1b9f64a5d363a35"
+        }
+      ],
+      "recipe_reuse_statistics": [
+        {
+          "initial_open": 2016,
+          "inspected": 2016,
+          "recipe_attempts": 10894,
+          "accepted": 138,
+          "contact_failures": 2309,
+          "exact_failures": 8447,
+          "recipes": 927,
+          "stop": "finished menu",
+          "elapsed_seconds": 73.21001662500001
+        }
+      ]
+    },
+    {
+      "stage": "eight-pass local replacement branch",
+      "graph": "frontier_policy_eight.json",
+      "audit": "frontier_policy_eight.audit.json",
+      "counts": {
+        "nodes": 2941,
+        "local": 1087,
+        "open": 1854,
+        "closed_supported_types": 0
+      },
+      "verified_local": 1087,
+      "failed": 0,
+      "proof_hash": "e3a586fa75eb1a63906ef76540d05742a579f84bc527210991fb7773177380d9",
+      "active_endpoint_families": 47,
+      "root_goal_labels_unchanged": true,
+      "reduction_history": [
+        {
+          "round": 0,
+          "contraction": {
+            "contracted": 4085,
+            "removed_references": 205,
+            "clipped_pieces": 16,
+            "simplified_rules": 0
+          },
+          "trimming": {
+            "removed_cover_edges": 392,
+            "removed_destination_references": 696,
+            "shortened_rules": 456
+          },
+          "nodes": 4026,
+          "local": 1215,
+          "open": 2811,
+          "closed_supported_types": 0,
+          "proof_hash": "8715698c78ea160a6ba13aba0c1db18793170dda0d786c916323e23119b33509"
+        },
+        {
+          "round": 1,
+          "contraction": {
+            "contracted": 3183,
+            "removed_references": 0,
+            "clipped_pieces": 16,
+            "simplified_rules": 2
+          },
+          "trimming": {
+            "removed_cover_edges": 6,
+            "removed_destination_references": 482,
+            "shortened_rules": 168
+          },
+          "nodes": 3649,
+          "local": 1121,
+          "open": 2528,
+          "closed_supported_types": 0,
+          "proof_hash": "331a53a4e5fb73a69fcd79b823f9974ce10b2bcf506a64d027fb6fcd2264a375"
+        },
+        {
+          "round": 2,
+          "contraction": {
+            "contracted": 2942,
+            "removed_references": 0,
+            "clipped_pieces": 15,
+            "simplified_rules": 1
+          },
+          "trimming": {
+            "removed_cover_edges": 1,
+            "removed_destination_references": 337,
+            "shortened_rules": 115
+          },
+          "nodes": 3360,
+          "local": 1036,
+          "open": 2324,
+          "closed_supported_types": 0,
+          "proof_hash": "0816f8aa9da51c4d8f275900520df988e1fa70635c4ffe6066a48b0be2d4997f"
+        },
+        {
+          "round": 3,
+          "contraction": {
+            "contracted": 2784,
+            "removed_references": 0,
+            "clipped_pieces": 8,
+            "simplified_rules": 0
+          },
+          "trimming": {
+            "removed_cover_edges": 2,
+            "removed_destination_references": 193,
+            "shortened_rules": 70
+          },
+          "nodes": 3268,
+          "local": 1022,
+          "open": 2246,
+          "closed_supported_types": 0,
+          "proof_hash": "5fa2a439b4dfd38fa99a0b63ebd07891a6ba969b23f61213ca85d73630a09f5a"
+        },
+        {
+          "round": 4,
+          "contraction": {
+            "contracted": 2654,
+            "removed_references": 0,
+            "clipped_pieces": 8,
+            "simplified_rules": 1
+          },
+          "trimming": {
+            "removed_cover_edges": 3,
+            "removed_destination_references": 196,
+            "shortened_rules": 72
+          },
+          "nodes": 3102,
+          "local": 992,
+          "open": 2110,
+          "closed_supported_types": 0,
+          "proof_hash": "f5687e48a85fbb260808355de6ecd3768fc09bf9a583769ca448b6005ccffc06"
+        },
+        {
+          "round": 5,
+          "contraction": {
+            "contracted": 2435,
+            "removed_references": 0,
+            "clipped_pieces": 5,
+            "simplified_rules": 0
+          },
+          "trimming": {
+            "removed_cover_edges": 0,
+            "removed_destination_references": 85,
+            "shortened_rules": 33
+          },
+          "nodes": 3036,
+          "local": 983,
+          "open": 2053,
+          "closed_supported_types": 0,
+          "proof_hash": "df904ffe79d5e6e163986c1ca4ac8d586cc2c9b481c27f4219ba1e14109347f0"
+        },
+        {
+          "round": 6,
+          "contraction": {
+            "contracted": 2396,
+            "removed_references": 0,
+            "clipped_pieces": 7,
+            "simplified_rules": 0
+          },
+          "trimming": {
+            "removed_cover_edges": 1,
+            "removed_destination_references": 17,
+            "shortened_rules": 8
+          },
+          "nodes": 3020,
+          "local": 979,
+          "open": 2041,
+          "closed_supported_types": 0,
+          "proof_hash": "627f4c8782452d28efe483335892e3b79c0a8d39cbfe6469bc847f92f623998a"
+        },
+        {
+          "round": 7,
+          "contraction": {
+            "contracted": 2438,
+            "removed_references": 0,
+            "clipped_pieces": 5,
+            "simplified_rules": 0
+          },
+          "trimming": {
+            "removed_cover_edges": 1,
+            "removed_destination_references": 24,
+            "shortened_rules": 9
+          },
+          "nodes": 2984,
+          "local": 968,
+          "open": 2016,
+          "closed_supported_types": 0,
+          "proof_hash": "991acbf6fbf15d902afdd6ca1d08647e7657b957bed6b68af1b9f64a5d363a35"
+        }
+      ],
+      "recipe_reuse_statistics": [
+        {
+          "initial_open": 2016,
+          "inspected": 2016,
+          "recipe_attempts": 10894,
+          "accepted": 138,
+          "contact_failures": 2309,
+          "exact_failures": 8447,
+          "recipes": 927,
+          "stop": "finished menu",
+          "elapsed_seconds": 73.21001662500001
+        },
+        {
+          "initial_open": 1878,
+          "inspected": 2984,
+          "recipe_attempts": 23814,
+          "accepted": 1,
+          "improved_local": 17,
+          "no_improvement": 6772,
+          "contact_failures": 4773,
+          "exact_failures": 12251,
+          "recipes": 948,
+          "stop": "finished menu",
+          "elapsed_seconds": 123.06801866600001
+        }
+      ]
+    },
+    {
+      "stage": "three more contractions and trimming",
+      "graph": "frontier_reduced_eleven.json",
+      "audit": "frontier_reduced_eleven.audit.json",
+      "counts": {
+        "nodes": 2890,
+        "local": 1082,
+        "open": 1808,
+        "closed_supported_types": 0
+      },
+      "verified_local": 1082,
+      "failed": 0,
+      "proof_hash": "3820ba837ccc09d2eca65ee91515aca1300aabcb0824bb1418df7c0ccb90b9f1",
+      "active_endpoint_families": 47,
+      "root_goal_labels_unchanged": true,
+      "reduction_history": [
+        {
+          "round": 0,
+          "contraction": {
+            "contracted": 4085,
+            "removed_references": 205,
+            "clipped_pieces": 16,
+            "simplified_rules": 0
+          },
+          "trimming": {
+            "removed_cover_edges": 392,
+            "removed_destination_references": 696,
+            "shortened_rules": 456
+          },
+          "nodes": 4026,
+          "local": 1215,
+          "open": 2811,
+          "closed_supported_types": 0,
+          "proof_hash": "8715698c78ea160a6ba13aba0c1db18793170dda0d786c916323e23119b33509"
+        },
+        {
+          "round": 1,
+          "contraction": {
+            "contracted": 3183,
+            "removed_references": 0,
+            "clipped_pieces": 16,
+            "simplified_rules": 2
+          },
+          "trimming": {
+            "removed_cover_edges": 6,
+            "removed_destination_references": 482,
+            "shortened_rules": 168
+          },
+          "nodes": 3649,
+          "local": 1121,
+          "open": 2528,
+          "closed_supported_types": 0,
+          "proof_hash": "331a53a4e5fb73a69fcd79b823f9974ce10b2bcf506a64d027fb6fcd2264a375"
+        },
+        {
+          "round": 2,
+          "contraction": {
+            "contracted": 2942,
+            "removed_references": 0,
+            "clipped_pieces": 15,
+            "simplified_rules": 1
+          },
+          "trimming": {
+            "removed_cover_edges": 1,
+            "removed_destination_references": 337,
+            "shortened_rules": 115
+          },
+          "nodes": 3360,
+          "local": 1036,
+          "open": 2324,
+          "closed_supported_types": 0,
+          "proof_hash": "0816f8aa9da51c4d8f275900520df988e1fa70635c4ffe6066a48b0be2d4997f"
+        },
+        {
+          "round": 3,
+          "contraction": {
+            "contracted": 2784,
+            "removed_references": 0,
+            "clipped_pieces": 8,
+            "simplified_rules": 0
+          },
+          "trimming": {
+            "removed_cover_edges": 2,
+            "removed_destination_references": 193,
+            "shortened_rules": 70
+          },
+          "nodes": 3268,
+          "local": 1022,
+          "open": 2246,
+          "closed_supported_types": 0,
+          "proof_hash": "5fa2a439b4dfd38fa99a0b63ebd07891a6ba969b23f61213ca85d73630a09f5a"
+        },
+        {
+          "round": 4,
+          "contraction": {
+            "contracted": 2654,
+            "removed_references": 0,
+            "clipped_pieces": 8,
+            "simplified_rules": 1
+          },
+          "trimming": {
+            "removed_cover_edges": 3,
+            "removed_destination_references": 196,
+            "shortened_rules": 72
+          },
+          "nodes": 3102,
+          "local": 992,
+          "open": 2110,
+          "closed_supported_types": 0,
+          "proof_hash": "f5687e48a85fbb260808355de6ecd3768fc09bf9a583769ca448b6005ccffc06"
+        },
+        {
+          "round": 5,
+          "contraction": {
+            "contracted": 2435,
+            "removed_references": 0,
+            "clipped_pieces": 5,
+            "simplified_rules": 0
+          },
+          "trimming": {
+            "removed_cover_edges": 0,
+            "removed_destination_references": 85,
+            "shortened_rules": 33
+          },
+          "nodes": 3036,
+          "local": 983,
+          "open": 2053,
+          "closed_supported_types": 0,
+          "proof_hash": "df904ffe79d5e6e163986c1ca4ac8d586cc2c9b481c27f4219ba1e14109347f0"
+        },
+        {
+          "round": 6,
+          "contraction": {
+            "contracted": 2396,
+            "removed_references": 0,
+            "clipped_pieces": 7,
+            "simplified_rules": 0
+          },
+          "trimming": {
+            "removed_cover_edges": 1,
+            "removed_destination_references": 17,
+            "shortened_rules": 8
+          },
+          "nodes": 3020,
+          "local": 979,
+          "open": 2041,
+          "closed_supported_types": 0,
+          "proof_hash": "627f4c8782452d28efe483335892e3b79c0a8d39cbfe6469bc847f92f623998a"
+        },
+        {
+          "round": 7,
+          "contraction": {
+            "contracted": 2438,
+            "removed_references": 0,
+            "clipped_pieces": 5,
+            "simplified_rules": 0
+          },
+          "trimming": {
+            "removed_cover_edges": 1,
+            "removed_destination_references": 24,
+            "shortened_rules": 9
+          },
+          "nodes": 2984,
+          "local": 968,
+          "open": 2016,
+          "closed_supported_types": 0,
+          "proof_hash": "991acbf6fbf15d902afdd6ca1d08647e7657b957bed6b68af1b9f64a5d363a35"
+        },
+        {
+          "round": 8,
+          "contraction": {
+            "contracted": 2329,
+            "removed_references": 189,
+            "clipped_pieces": 6,
+            "simplified_rules": 0
+          },
+          "trimming": {
+            "removed_cover_edges": 0,
+            "removed_destination_references": 24,
+            "shortened_rules": 9
+          },
+          "nodes": 2967,
+          "local": 1102,
+          "open": 1865,
+          "closed_supported_types": 0,
+          "proof_hash": "0ccc311460adca49331289889345959046f0b92573391a752dcafab95ca67a70"
+        },
+        {
+          "round": 9,
+          "contraction": {
+            "contracted": 2207,
+            "removed_references": 0,
+            "clipped_pieces": 6,
+            "simplified_rules": 0
+          },
+          "trimming": {
+            "removed_cover_edges": 1,
+            "removed_destination_references": 53,
+            "shortened_rules": 18
+          },
+          "nodes": 2906,
+          "local": 1087,
+          "open": 1819,
+          "closed_supported_types": 0,
+          "proof_hash": "e5dabd7e31f2b24a09f2b3179c8326d76a8869ec489d69965eff8d89a679f052"
+        },
+        {
+          "round": 10,
+          "contraction": {
+            "contracted": 2165,
+            "removed_references": 0,
+            "clipped_pieces": 7,
+            "simplified_rules": 0
+          },
+          "trimming": {
+            "removed_cover_edges": 0,
+            "removed_destination_references": 14,
+            "shortened_rules": 4
+          },
+          "nodes": 2890,
+          "local": 1082,
+          "open": 1808,
+          "closed_supported_types": 0,
+          "proof_hash": "3820ba837ccc09d2eca65ee91515aca1300aabcb0824bb1418df7c0ccb90b9f1"
+        }
+      ],
+      "recipe_reuse_statistics": [
+        {
+          "initial_open": 2016,
+          "inspected": 2016,
+          "recipe_attempts": 10894,
+          "accepted": 138,
+          "contact_failures": 2309,
+          "exact_failures": 8447,
+          "recipes": 927,
+          "stop": "finished menu",
+          "elapsed_seconds": 73.21001662500001
+        }
+      ]
+    },
+    {
+      "stage": "final rule reuse and replacement",
+      "graph": "frontier_final.json",
+      "audit": "frontier_final.audit.json",
+      "counts": {
+        "nodes": 2851,
+        "local": 1067,
+        "open": 1784,
+        "closed_supported_types": 0
+      },
+      "verified_local": 1067,
+      "failed": 0,
+      "proof_hash": "8f5a34aefce92c48ed49d591f42c5125b1805598f875d825bc26c1b73b7932a2",
+      "active_endpoint_families": 47,
+      "root_goal_labels_unchanged": true,
+      "reduction_history": [
+        {
+          "round": 0,
+          "contraction": {
+            "contracted": 4085,
+            "removed_references": 205,
+            "clipped_pieces": 16,
+            "simplified_rules": 0
+          },
+          "trimming": {
+            "removed_cover_edges": 392,
+            "removed_destination_references": 696,
+            "shortened_rules": 456
+          },
+          "nodes": 4026,
+          "local": 1215,
+          "open": 2811,
+          "closed_supported_types": 0,
+          "proof_hash": "8715698c78ea160a6ba13aba0c1db18793170dda0d786c916323e23119b33509"
+        },
+        {
+          "round": 1,
+          "contraction": {
+            "contracted": 3183,
+            "removed_references": 0,
+            "clipped_pieces": 16,
+            "simplified_rules": 2
+          },
+          "trimming": {
+            "removed_cover_edges": 6,
+            "removed_destination_references": 482,
+            "shortened_rules": 168
+          },
+          "nodes": 3649,
+          "local": 1121,
+          "open": 2528,
+          "closed_supported_types": 0,
+          "proof_hash": "331a53a4e5fb73a69fcd79b823f9974ce10b2bcf506a64d027fb6fcd2264a375"
+        },
+        {
+          "round": 2,
+          "contraction": {
+            "contracted": 2942,
+            "removed_references": 0,
+            "clipped_pieces": 15,
+            "simplified_rules": 1
+          },
+          "trimming": {
+            "removed_cover_edges": 1,
+            "removed_destination_references": 337,
+            "shortened_rules": 115
+          },
+          "nodes": 3360,
+          "local": 1036,
+          "open": 2324,
+          "closed_supported_types": 0,
+          "proof_hash": "0816f8aa9da51c4d8f275900520df988e1fa70635c4ffe6066a48b0be2d4997f"
+        },
+        {
+          "round": 3,
+          "contraction": {
+            "contracted": 2784,
+            "removed_references": 0,
+            "clipped_pieces": 8,
+            "simplified_rules": 0
+          },
+          "trimming": {
+            "removed_cover_edges": 2,
+            "removed_destination_references": 193,
+            "shortened_rules": 70
+          },
+          "nodes": 3268,
+          "local": 1022,
+          "open": 2246,
+          "closed_supported_types": 0,
+          "proof_hash": "5fa2a439b4dfd38fa99a0b63ebd07891a6ba969b23f61213ca85d73630a09f5a"
+        },
+        {
+          "round": 4,
+          "contraction": {
+            "contracted": 2654,
+            "removed_references": 0,
+            "clipped_pieces": 8,
+            "simplified_rules": 1
+          },
+          "trimming": {
+            "removed_cover_edges": 3,
+            "removed_destination_references": 196,
+            "shortened_rules": 72
+          },
+          "nodes": 3102,
+          "local": 992,
+          "open": 2110,
+          "closed_supported_types": 0,
+          "proof_hash": "f5687e48a85fbb260808355de6ecd3768fc09bf9a583769ca448b6005ccffc06"
+        },
+        {
+          "round": 5,
+          "contraction": {
+            "contracted": 2435,
+            "removed_references": 0,
+            "clipped_pieces": 5,
+            "simplified_rules": 0
+          },
+          "trimming": {
+            "removed_cover_edges": 0,
+            "removed_destination_references": 85,
+            "shortened_rules": 33
+          },
+          "nodes": 3036,
+          "local": 983,
+          "open": 2053,
+          "closed_supported_types": 0,
+          "proof_hash": "df904ffe79d5e6e163986c1ca4ac8d586cc2c9b481c27f4219ba1e14109347f0"
+        },
+        {
+          "round": 6,
+          "contraction": {
+            "contracted": 2396,
+            "removed_references": 0,
+            "clipped_pieces": 7,
+            "simplified_rules": 0
+          },
+          "trimming": {
+            "removed_cover_edges": 1,
+            "removed_destination_references": 17,
+            "shortened_rules": 8
+          },
+          "nodes": 3020,
+          "local": 979,
+          "open": 2041,
+          "closed_supported_types": 0,
+          "proof_hash": "627f4c8782452d28efe483335892e3b79c0a8d39cbfe6469bc847f92f623998a"
+        },
+        {
+          "round": 7,
+          "contraction": {
+            "contracted": 2438,
+            "removed_references": 0,
+            "clipped_pieces": 5,
+            "simplified_rules": 0
+          },
+          "trimming": {
+            "removed_cover_edges": 1,
+            "removed_destination_references": 24,
+            "shortened_rules": 9
+          },
+          "nodes": 2984,
+          "local": 968,
+          "open": 2016,
+          "closed_supported_types": 0,
+          "proof_hash": "991acbf6fbf15d902afdd6ca1d08647e7657b957bed6b68af1b9f64a5d363a35"
+        },
+        {
+          "round": 8,
+          "contraction": {
+            "contracted": 2329,
+            "removed_references": 189,
+            "clipped_pieces": 6,
+            "simplified_rules": 0
+          },
+          "trimming": {
+            "removed_cover_edges": 0,
+            "removed_destination_references": 24,
+            "shortened_rules": 9
+          },
+          "nodes": 2967,
+          "local": 1102,
+          "open": 1865,
+          "closed_supported_types": 0,
+          "proof_hash": "0ccc311460adca49331289889345959046f0b92573391a752dcafab95ca67a70"
+        },
+        {
+          "round": 9,
+          "contraction": {
+            "contracted": 2207,
+            "removed_references": 0,
+            "clipped_pieces": 6,
+            "simplified_rules": 0
+          },
+          "trimming": {
+            "removed_cover_edges": 1,
+            "removed_destination_references": 53,
+            "shortened_rules": 18
+          },
+          "nodes": 2906,
+          "local": 1087,
+          "open": 1819,
+          "closed_supported_types": 0,
+          "proof_hash": "e5dabd7e31f2b24a09f2b3179c8326d76a8869ec489d69965eff8d89a679f052"
+        },
+        {
+          "round": 10,
+          "contraction": {
+            "contracted": 2165,
+            "removed_references": 0,
+            "clipped_pieces": 7,
+            "simplified_rules": 0
+          },
+          "trimming": {
+            "removed_cover_edges": 0,
+            "removed_destination_references": 14,
+            "shortened_rules": 4
+          },
+          "nodes": 2890,
+          "local": 1082,
+          "open": 1808,
+          "closed_supported_types": 0,
+          "proof_hash": "3820ba837ccc09d2eca65ee91515aca1300aabcb0824bb1418df7c0ccb90b9f1"
+        }
+      ],
+      "recipe_reuse_statistics": [
+        {
+          "initial_open": 2016,
+          "inspected": 2016,
+          "recipe_attempts": 10894,
+          "accepted": 138,
+          "contact_failures": 2309,
+          "exact_failures": 8447,
+          "recipes": 927,
+          "stop": "finished menu",
+          "elapsed_seconds": 73.21001662500001
+        },
+        {
+          "initial_open": 1808,
+          "inspected": 2890,
+          "recipe_attempts": 23782,
+          "accepted": 3,
+          "improved_local": 13,
+          "no_improvement": 6743,
+          "contact_failures": 4686,
+          "exact_failures": 12337,
+          "recipes": 983,
+          "stop": "finished menu",
+          "elapsed_seconds": 117.44558487500001
+        }
+      ]
+    },
+    {
+      "stage": "semantic merge and resumable state",
+      "graph": "frontier_compacted.json",
+      "audit": "frontier_compacted.audit.json",
+      "counts": {
+        "nodes": 2848,
+        "local": 1064,
+        "open": 1784,
+        "closed_supported_types": 0
+      },
+      "verified_local": 1064,
+      "failed": 0,
+      "proof_hash": "27617115843acdc30f6c0f1e5d02d175c4d50fb5fb4ddc59298301b417089feb",
+      "active_endpoint_families": 47,
+      "root_goal_labels_unchanged": true
+    }
+  ],
+  "roundtrip": {
+    "status": "same-engine full state restored exactly",
+    "unordered_fields": [
+      "game.permanent_rejections"
+    ],
+    "source_graph": "frontier_final.json",
+    "certificate_proof_hash": "27617115843acdc30f6c0f1e5d02d175c4d50fb5fb4ddc59298301b417089feb",
+    "engine_hash": "36226bd078bc75bf8032b78b11bd20f8013b02e03f3d6b9eebb5cfdf822d7fb0",
+    "state_sha256": "e75392bd42481997e46c374df038827b2e313c47d5dfe9ec4d68fd3357fca915",
+    "configuration_equal": true,
+    "full_state_equal": true,
+    "queue_order_equal": true,
+    "certificate_equal": true,
+    "endpoint_templates": 48,
+    "counts": {
+      "nodes": 2848,
+      "local": 1064,
+      "open": 1784,
+      "closed_supported_types": 0
+    },
+    "search": {
+      "registered": 2848,
+      "reachable": 2848,
+      "unresolved": 1784,
+      "rejected": 0,
+      "steps": 0,
+      "parent_repairs": 0,
+      "stop": "not started",
+      "closed_candidate": false
+    },
+    "closed_supported_types": 0,
+    "verification": {
+      "closed": false,
+      "reason": "node 2255: unresolved type"
+    }
+  },
+  "constraints": {
+    "new_induction_cases_added": false,
+    "root_goals_preserved": true,
+    "proper_digit_extensions_required": true,
+    "grid_rounding_used": false,
+    "closed_supported_types": 0
+  },
+  "discovery": {
+    "cover_beam": 32,
+    "recipe_candidate_limit": 32,
+    "recipe_source": "ordinary local rules already reachable",
+    "candidate_ranking_uses_floats": true,
+    "acceptance_uses_exact_arithmetic": true,
+    "finite_menu_failure_is_not_impossibility": true
+  },
+  "tests": {
+    "command": "python3 -m unittest test_frontier_reduction test_rule_reuse test_chart_contraction test_piecewise_charts test_reachable_charts",
+    "passed": 28,
+    "failed": 0
+  },
+  "current_algorithm_sha256": {
+    "reduce_chart_frontier.py": "714709250b0f248463e7e9dc1b54f3b1be0d9d3e30cbc018a267f025e912c9c5",
+    "reuse_chart_rules.py": "01f8fb8abbf3a50f687290fb142a2a61e9ad6ed871015f2444edf94078ccd460",
+    "contract_piecewise_charts.py": "a74e4023911cf30d844313f11e538b78108cb7941c329726ed77e9f0e43dad3f",
+    "specialize_piecewise_search.py": "99d51a184292ba64f1e6f14ccbaa0da52c8d49b308ad52a11d0d1c46ffee5bbc",
+    "verify_piecewise_charts.py": "cf643e3e5538b6b1ea16c3403e4ed17b2ec5b9c37c87e7bf37e8c858003f651d"
+  }
+}

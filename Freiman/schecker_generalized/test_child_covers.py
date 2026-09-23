@@ -12,7 +12,8 @@ from audit_child_covers import audit, canonical
 
 HERE = Path(__file__).parent
 FILES = ('child_family_covers.json', 'child_family_covers_deep.json',
-         'child_J1_covers.json', 'child_J2R_covers.json', 'child_repair.json')
+         'child_J1_covers.json', 'child_J2R_covers.json', 'child_repair.json',
+         'child_H11_1_cover.json', 'child_frontier_covers.json')
 
 
 class ChildCoverChecks(unittest.TestCase):
@@ -50,11 +51,11 @@ class ChildCoverChecks(unittest.TestCase):
 
     def test_periodic_return_and_missing_obligations(self):
         self.assertEqual(canonical('1312132','3131211',4),('2','1',4))
-        documents=[json.loads((HERE/name).read_text()) for name in FILES[:4]]
+        documents=[json.loads((HERE/name).read_text()) for name in FILES[:4]+FILES[5:]]
         result=audit(documents)
         self.assertFalse(result['closed_under_children'])
-        self.assertGreater(result['reachable_rules'],9)
-        self.assertTrue(result['unproved_frontier'])
+        self.assertEqual(result['reachable_rules'],20)
+        self.assertEqual(len(result['unproved_frontier']),36)
 
 
 if __name__=='__main__':unittest.main()

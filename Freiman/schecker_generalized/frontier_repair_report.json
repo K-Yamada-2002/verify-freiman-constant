@@ -1,0 +1,164 @@
+{
+  "status": "full induction remains unproved; all saved supported cores are empty",
+  "target": "all A_n full hulls for every n >= 0; unchanged",
+  "graphs": [
+    {
+      "name": "contracted",
+      "graph": "frontier_contracted_graph.json",
+      "audit": "frontier_contracted_audit.json",
+      "proof_hash": "93353e5b660d13ff16c6197df525562bf0df0e11c11c9286cf673ec2500d6eb4",
+      "nodes": 741,
+      "local_rules": 489,
+      "open": 252,
+      "failed": 0,
+      "supported": 0,
+      "endpoint_shapes": 29,
+      "search": null,
+      "verification": {
+        "closed": false,
+        "reason": "node 596: unresolved type"
+      }
+    },
+    {
+      "name": "resume",
+      "graph": "frontier_resume_graph.json",
+      "audit": "frontier_resume_audit.json",
+      "proof_hash": "9e866b1e6ec6b46a9b498f81ef57a755e34de9f0847ceee2ac8514e81b871d98",
+      "nodes": 1986,
+      "local_rules": 1530,
+      "open": 456,
+      "failed": 0,
+      "supported": 0,
+      "endpoint_shapes": 61,
+      "search": {
+        "registered": 2691,
+        "reachable": 1986,
+        "unresolved": 456,
+        "rejected": 415,
+        "steps": 5141,
+        "parent_repairs": 3202,
+        "stop": "time limit",
+        "closed_candidate": false,
+        "closed_supported_types": 0
+      },
+      "verification": {
+        "closed": false,
+        "reason": "node 1813: unresolved type"
+      }
+    },
+    {
+      "name": "persistent",
+      "graph": "frontier_persistent_graph.json",
+      "audit": "frontier_persistent_audit.json",
+      "proof_hash": "aecc452d837d715f4f39f1de2c3a9cbe39cd54b3f37da995f1622bf3a6d1fbfa",
+      "nodes": 1716,
+      "local_rules": 1058,
+      "open": 658,
+      "failed": 0,
+      "supported": 0,
+      "endpoint_shapes": 61,
+      "search": {
+        "registered": 2111,
+        "reachable": 1716,
+        "unresolved": 658,
+        "rejected": 88,
+        "steps": 2276,
+        "parent_repairs": 1338,
+        "stop": "time limit",
+        "closed_candidate": false,
+        "closed_supported_types": 0,
+        "permanent_filter_rejections": 55
+      },
+      "verification": {
+        "closed": false,
+        "reason": "node 666: unresolved type"
+      }
+    },
+    {
+      "name": "learned",
+      "graph": "frontier_learned_graph.json",
+      "audit": "frontier_learned_audit.json",
+      "proof_hash": "8e0b44eb10cf9099a6fd8f0b6fdd0c9685994677eb7221ac55262bc730674452",
+      "nodes": 1343,
+      "local_rules": 631,
+      "open": 712,
+      "failed": 0,
+      "supported": 0,
+      "endpoint_shapes": 60,
+      "search": {
+        "registered": 2344,
+        "reachable": 1343,
+        "unresolved": 712,
+        "rejected": 625,
+        "steps": 1898,
+        "parent_repairs": 944,
+        "stop": "time limit",
+        "closed_candidate": false,
+        "closed_supported_types": 0,
+        "permanent_filter_rejections": 55
+      },
+      "verification": {
+        "closed": false,
+        "reason": "node 464: unresolved type"
+      }
+    }
+  ],
+  "gap_surveys": [
+    {
+      "source": "small_type_adaptive_graph.json",
+      "certificate": "frontier_box_gaps.json",
+      "source_proof_hash": "2ec5d4f7b280bebb932f615f0e4772cd1a220bd4508c33ff31056c43a81ad12f",
+      "surveyed": 268,
+      "exact_counterexamples": 70,
+      "depths": [
+        4
+      ]
+    },
+    {
+      "source": "small_type_refined_graph.json",
+      "certificate": "frontier_refined_box_gaps.json",
+      "source_proof_hash": "7f74a597380996b27d541900fa22371c85c7b178ed93a1834106da61b953f4e6",
+      "surveyed": 241,
+      "exact_counterexamples": 68,
+      "depths": [
+        4
+      ]
+    },
+    {
+      "source": "frontier_contracted_graph.json",
+      "certificate": "frontier_contracted_gaps.json",
+      "source_proof_hash": "93353e5b660d13ff16c6197df525562bf0df0e11c11c9286cf673ec2500d6eb4",
+      "surveyed": 252,
+      "exact_counterexamples": 34,
+      "depths": [
+        4
+      ]
+    }
+  ],
+  "learned_endpoints": {
+    "unique_labels": 29,
+    "labels_not_in_previous_input": 28
+  },
+  "library": "frontier_library_search.json",
+  "tests": {
+    "count": 43,
+    "modules": [
+      "test_cyclic_types",
+      "test_small_type_menu",
+      "test_frontier_repair"
+    ]
+  },
+  "comparison_note": "Different strategies and run lengths; case counts alone do not measure proof progress. Resume was run before persistent geometric rejection was implemented.",
+  "source_hashes": {
+    "cyclic_frontier_gaps.py": "13f286b940c95f4d80c1a00f9147eeef8ce8bcd9b20461c580e1d48aaa878678",
+    "contract_cyclic_domains.py": "27a3faaef18c454e4201c37cc0265212b55d7e93c0f9645f3f75981c2a49c735",
+    "resume_cyclic_search.py": "5800d4c46396223be41437a3faa6344e8c2e4fae18f737601e0242fea1410db4",
+    "solve_known_type_library.py": "3c3d0c9dffadacb862be304260b618c268126288ff9bd4aae9bff11f4d4832d7",
+    "search_cyclic_types.py": "391482f6e501a307b08ba0bdbb2881ba3f4baf643fc16b5f8654eb848463591e",
+    "finite_type_game.py": "d31b672caf1c1c725253a9ba500dab094f9e3c5f4667d1b31be728fa97279596",
+    "verify_cyclic_types.py": "d28545a64a9e11242cfe5649dcfe7ec37c51151c8d4cc9f96d79550bd46394f7",
+    "type_graph_geometry.py": "ad86f69bb10a8ee838175fe768567d3b0501de50adf315599e1a4f71b3e74ad8",
+    "cyclic_planner.cpp": "cf26e8b8189224d375f1ca0721b24f7514b61bb8ee393bcc199c033726b31943",
+    "test_frontier_repair.py": "03491b3bece1c0c0a24414e4c493fc7d3194c4f5a3cc82a7c2fc614fee29f5cb"
+  }
+}

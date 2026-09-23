@@ -1,0 +1,4978 @@
+{
+  "status": "exact finite uniform adaptive certificate; terminal filledness UNPROVED",
+  "horizon_unit": "total appended digits",
+  "depth": 4,
+  "regime": "all",
+  "max_step": 2,
+  "root": 78,
+  "nodes": [
+    {
+      "left_suffix": "32",
+      "right_suffix": "11",
+      "endpoints": [
+        [
+          "2",
+          true,
+          "2",
+          false
+        ],
+        [
+          "",
+          true,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        2,
+        true
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "31",
+      "right_suffix": "11",
+      "endpoints": [
+        [
+          "",
+          false,
+          "12",
+          true
+        ],
+        [
+          "",
+          true,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        6,
+        true
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "3",
+      "right_suffix": "11",
+      "endpoints": [
+        [
+          "2",
+          true,
+          "",
+          false
+        ],
+        [
+          "2",
+          false,
+          "",
+          true
+        ]
+      ],
+      "type": [
+        8,
+        true
+      ],
+      "regime": "all",
+      "remaining_depth": 1,
+      "children": [
+        {
+          "node": 0,
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "endpoints": [
+            [
+              "2",
+              true,
+              "2",
+              false
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            2,
+            true
+          ]
+        },
+        {
+          "node": 1,
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "12",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            6,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "left_suffix": "3",
+      "right_suffix": "112",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          true
+        ],
+        [
+          "2",
+          false,
+          "2",
+          true
+        ]
+      ],
+      "type": [
+        2,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "3",
+      "right_suffix": "11",
+      "endpoints": [
+        [
+          "",
+          false,
+          "2",
+          true
+        ],
+        [
+          "",
+          true,
+          "12",
+          true
+        ]
+      ],
+      "type": [
+        9,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 1,
+      "children": [
+        {
+          "node": 3,
+          "suffixes": [
+            "",
+            "2"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "2",
+              false,
+              "2",
+              true
+            ]
+          ],
+          "type": [
+            2,
+            false
+          ]
+        },
+        {
+          "node": 1,
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "12",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            6,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "left_suffix": "33",
+      "right_suffix": "12",
+      "endpoints": [
+        [
+          "",
+          false,
+          "22",
+          true
+        ],
+        [
+          "",
+          true,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        4,
+        true
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "32",
+      "right_suffix": "12",
+      "endpoints": [
+        [
+          "2",
+          true,
+          "",
+          true
+        ],
+        [
+          "",
+          true,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        7,
+        true
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "31",
+      "right_suffix": "12",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          true
+        ],
+        [
+          "",
+          true,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        10,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "3",
+      "right_suffix": "12",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          false
+        ],
+        [
+          "",
+          true,
+          "",
+          true
+        ]
+      ],
+      "type": [
+        11,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 1,
+      "children": [
+        {
+          "node": 5,
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "22",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            4,
+            true
+          ]
+        },
+        {
+          "node": 6,
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "endpoints": [
+            [
+              "2",
+              true,
+              "",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            7,
+            true
+          ]
+        },
+        {
+          "node": 7,
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            10,
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "left_suffix": "3",
+      "right_suffix": "1",
+      "endpoints": [
+        [
+          "2",
+          true,
+          "",
+          true
+        ],
+        [
+          "2",
+          false,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        5,
+        true
+      ],
+      "regime": "all",
+      "remaining_depth": 2,
+      "children": [
+        {
+          "node": 2,
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "endpoints": [
+            [
+              "2",
+              true,
+              "",
+              false
+            ],
+            [
+              "2",
+              false,
+              "",
+              true
+            ]
+          ],
+          "type": [
+            8,
+            true
+          ]
+        },
+        {
+          "node": 4,
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "2",
+              true
+            ],
+            [
+              "",
+              true,
+              "12",
+              true
+            ]
+          ],
+          "type": [
+            9,
+            false
+          ]
+        },
+        {
+          "node": 8,
+          "suffixes": [
+            "",
+            "2"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              false
+            ],
+            [
+              "",
+              true,
+              "",
+              true
+            ]
+          ],
+          "type": [
+            11,
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "left_suffix": "33",
+      "right_suffix": "13",
+      "endpoints": [
+        [
+          "2",
+          true,
+          "",
+          true
+        ],
+        [
+          "",
+          true,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        7,
+        true
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "32",
+      "right_suffix": "13",
+      "endpoints": [
+        [
+          "312",
+          true,
+          "",
+          true
+        ],
+        [
+          "",
+          true,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        12,
+        true
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "31",
+      "right_suffix": "13",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          true
+        ],
+        [
+          "",
+          true,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        10,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "3",
+      "right_suffix": "13",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          false
+        ],
+        [
+          "",
+          true,
+          "",
+          true
+        ]
+      ],
+      "type": [
+        11,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 1,
+      "children": [
+        {
+          "node": 10,
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "endpoints": [
+            [
+              "2",
+              true,
+              "",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            7,
+            true
+          ]
+        },
+        {
+          "node": 11,
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "endpoints": [
+            [
+              "312",
+              true,
+              "",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            12,
+            true
+          ]
+        },
+        {
+          "node": 12,
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            10,
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "left_suffix": "3",
+      "right_suffix": "1",
+      "endpoints": [
+        [
+          "",
+          false,
+          "12",
+          true
+        ],
+        [
+          "",
+          true,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        6,
+        true
+      ],
+      "regime": "all",
+      "remaining_depth": 2,
+      "children": [
+        {
+          "node": 4,
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "2",
+              true
+            ],
+            [
+              "",
+              true,
+              "12",
+              true
+            ]
+          ],
+          "type": [
+            9,
+            false
+          ]
+        },
+        {
+          "node": 8,
+          "suffixes": [
+            "",
+            "2"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              false
+            ],
+            [
+              "",
+              true,
+              "",
+              true
+            ]
+          ],
+          "type": [
+            11,
+            false
+          ]
+        },
+        {
+          "node": 13,
+          "suffixes": [
+            "",
+            "3"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              false
+            ],
+            [
+              "",
+              true,
+              "",
+              true
+            ]
+          ],
+          "type": [
+            11,
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "left_suffix": "3",
+      "right_suffix": "",
+      "endpoints": [
+        [
+          "2",
+          true,
+          "1",
+          true
+        ],
+        [
+          "",
+          true,
+          "",
+          true
+        ]
+      ],
+      "type": [
+        3,
+        true
+      ],
+      "regime": "all",
+      "remaining_depth": 3,
+      "children": [
+        {
+          "node": 9,
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "endpoints": [
+            [
+              "2",
+              true,
+              "",
+              true
+            ],
+            [
+              "2",
+              false,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            5,
+            true
+          ]
+        },
+        {
+          "node": 14,
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "12",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            6,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "left_suffix": "23",
+      "right_suffix": "31",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          true
+        ],
+        [
+          "",
+          true,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        10,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "22",
+      "right_suffix": "31",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          true
+        ],
+        [
+          "",
+          true,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        10,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "2",
+      "right_suffix": "31",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          false
+        ],
+        [
+          "2",
+          false,
+          "",
+          true
+        ]
+      ],
+      "type": [
+        1,
+        true
+      ],
+      "regime": "all",
+      "remaining_depth": 1,
+      "children": [
+        {
+          "node": 16,
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            10,
+            false
+          ]
+        },
+        {
+          "node": 17,
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            10,
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "left_suffix": "22",
+      "right_suffix": "33",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          true
+        ],
+        [
+          "22",
+          true,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        4,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "22",
+      "right_suffix": "32",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          true
+        ],
+        [
+          "",
+          true,
+          "312",
+          true
+        ]
+      ],
+      "type": [
+        12,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "22",
+      "right_suffix": "3",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          false
+        ],
+        [
+          "",
+          true,
+          "",
+          true
+        ]
+      ],
+      "type": [
+        11,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 1,
+      "children": [
+        {
+          "node": 19,
+          "suffixes": [
+            "",
+            "3"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "22",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            4,
+            false
+          ]
+        },
+        {
+          "node": 20,
+          "suffixes": [
+            "",
+            "2"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "",
+              true,
+              "312",
+              true
+            ]
+          ],
+          "type": [
+            12,
+            false
+          ]
+        },
+        {
+          "node": 17,
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            10,
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "left_suffix": "213",
+      "right_suffix": "3",
+      "endpoints": [
+        [
+          "",
+          false,
+          "2",
+          false
+        ],
+        [
+          "",
+          true,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        0,
+        true
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "21",
+      "right_suffix": "32",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          true
+        ],
+        [
+          "2",
+          false,
+          "2",
+          true
+        ]
+      ],
+      "type": [
+        2,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "21",
+      "right_suffix": "31",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          true
+        ],
+        [
+          "",
+          true,
+          "2",
+          true
+        ]
+      ],
+      "type": [
+        7,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "21",
+      "right_suffix": "3",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          false
+        ],
+        [
+          "",
+          true,
+          "12",
+          true
+        ]
+      ],
+      "type": [
+        13,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 1,
+      "children": [
+        {
+          "node": 22,
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "2",
+              false
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            0,
+            true
+          ]
+        },
+        {
+          "node": 23,
+          "suffixes": [
+            "",
+            "2"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "2",
+              false,
+              "2",
+              true
+            ]
+          ],
+          "type": [
+            2,
+            false
+          ]
+        },
+        {
+          "node": 24,
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "",
+              true,
+              "2",
+              true
+            ]
+          ],
+          "type": [
+            7,
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "left_suffix": "2",
+      "right_suffix": "3",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          true
+        ],
+        [
+          "",
+          true,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        10,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 2,
+      "children": [
+        {
+          "node": 18,
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              false
+            ],
+            [
+              "2",
+              false,
+              "",
+              true
+            ]
+          ],
+          "type": [
+            1,
+            true
+          ]
+        },
+        {
+          "node": 21,
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              false
+            ],
+            [
+              "",
+              true,
+              "",
+              true
+            ]
+          ],
+          "type": [
+            11,
+            false
+          ]
+        },
+        {
+          "node": 25,
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              false
+            ],
+            [
+              "",
+              true,
+              "12",
+              true
+            ]
+          ],
+          "type": [
+            13,
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "left_suffix": "23",
+      "right_suffix": "21",
+      "endpoints": [
+        [
+          "2",
+          true,
+          "",
+          true
+        ],
+        [
+          "",
+          true,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        7,
+        true
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "22",
+      "right_suffix": "21",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          true
+        ],
+        [
+          "",
+          true,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        10,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "21",
+      "right_suffix": "21",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          true
+        ],
+        [
+          "",
+          true,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        10,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "2",
+      "right_suffix": "21",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          false
+        ],
+        [
+          "",
+          true,
+          "",
+          true
+        ]
+      ],
+      "type": [
+        11,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 1,
+      "children": [
+        {
+          "node": 27,
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "endpoints": [
+            [
+              "2",
+              true,
+              "",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            7,
+            true
+          ]
+        },
+        {
+          "node": 28,
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            10,
+            false
+          ]
+        },
+        {
+          "node": 29,
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            10,
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "left_suffix": "21",
+      "right_suffix": "23",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          true
+        ],
+        [
+          "233",
+          false,
+          "332",
+          true
+        ]
+      ],
+      "type": [
+        14,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "21",
+      "right_suffix": "22",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          true
+        ],
+        [
+          "",
+          true,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        10,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "21",
+      "right_suffix": "2",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          false
+        ],
+        [
+          "",
+          true,
+          "",
+          true
+        ]
+      ],
+      "type": [
+        11,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 1,
+      "children": [
+        {
+          "node": 31,
+          "suffixes": [
+            "",
+            "3"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "233",
+              false,
+              "332",
+              true
+            ]
+          ],
+          "type": [
+            14,
+            false
+          ]
+        },
+        {
+          "node": 32,
+          "suffixes": [
+            "",
+            "2"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            10,
+            false
+          ]
+        },
+        {
+          "node": 29,
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            10,
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "left_suffix": "2",
+      "right_suffix": "2",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          true
+        ],
+        [
+          "",
+          true,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        10,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 2,
+      "children": [
+        {
+          "node": 30,
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              false
+            ],
+            [
+              "",
+              true,
+              "",
+              true
+            ]
+          ],
+          "type": [
+            11,
+            false
+          ]
+        },
+        {
+          "node": 33,
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              false
+            ],
+            [
+              "",
+              true,
+              "",
+              true
+            ]
+          ],
+          "type": [
+            11,
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "left_suffix": "23",
+      "right_suffix": "11",
+      "endpoints": [
+        [
+          "2",
+          true,
+          "2",
+          false
+        ],
+        [
+          "",
+          true,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        2,
+        true
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "22",
+      "right_suffix": "11",
+      "endpoints": [
+        [
+          "2",
+          true,
+          "",
+          true
+        ],
+        [
+          "",
+          true,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        7,
+        true
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "21",
+      "right_suffix": "11",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          true
+        ],
+        [
+          "",
+          true,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        10,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "2",
+      "right_suffix": "11",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          false
+        ],
+        [
+          "",
+          true,
+          "",
+          true
+        ]
+      ],
+      "type": [
+        11,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 1,
+      "children": [
+        {
+          "node": 35,
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "endpoints": [
+            [
+              "2",
+              true,
+              "2",
+              false
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            2,
+            true
+          ]
+        },
+        {
+          "node": 36,
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "endpoints": [
+            [
+              "2",
+              true,
+              "",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            7,
+            true
+          ]
+        },
+        {
+          "node": 37,
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            10,
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "left_suffix": "21",
+      "right_suffix": "13",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          true
+        ],
+        [
+          "",
+          true,
+          "2",
+          true
+        ]
+      ],
+      "type": [
+        7,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "21",
+      "right_suffix": "12",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          true
+        ],
+        [
+          "",
+          true,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        10,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "21",
+      "right_suffix": "1",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          false
+        ],
+        [
+          "",
+          true,
+          "",
+          true
+        ]
+      ],
+      "type": [
+        11,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 1,
+      "children": [
+        {
+          "node": 39,
+          "suffixes": [
+            "",
+            "3"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "",
+              true,
+              "2",
+              true
+            ]
+          ],
+          "type": [
+            7,
+            false
+          ]
+        },
+        {
+          "node": 40,
+          "suffixes": [
+            "",
+            "2"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            10,
+            false
+          ]
+        },
+        {
+          "node": 37,
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            10,
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "left_suffix": "2",
+      "right_suffix": "1",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          true
+        ],
+        [
+          "",
+          true,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        10,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 2,
+      "children": [
+        {
+          "node": 38,
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              false
+            ],
+            [
+              "",
+              true,
+              "",
+              true
+            ]
+          ],
+          "type": [
+            11,
+            false
+          ]
+        },
+        {
+          "node": 41,
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              false
+            ],
+            [
+              "",
+              true,
+              "",
+              true
+            ]
+          ],
+          "type": [
+            11,
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "left_suffix": "2",
+      "right_suffix": "",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          false
+        ],
+        [
+          "",
+          true,
+          "",
+          true
+        ]
+      ],
+      "type": [
+        11,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 3,
+      "children": [
+        {
+          "node": 26,
+          "suffixes": [
+            "",
+            "3"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            10,
+            false
+          ]
+        },
+        {
+          "node": 34,
+          "suffixes": [
+            "",
+            "2"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            10,
+            false
+          ]
+        },
+        {
+          "node": 42,
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            10,
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "left_suffix": "13",
+      "right_suffix": "33",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          true
+        ],
+        [
+          "2",
+          false,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        0,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "13",
+      "right_suffix": "32",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          true
+        ],
+        [
+          "",
+          true,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        10,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "13",
+      "right_suffix": "31",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          true
+        ],
+        [
+          "",
+          true,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        10,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "13",
+      "right_suffix": "3",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          false
+        ],
+        [
+          "",
+          true,
+          "",
+          true
+        ]
+      ],
+      "type": [
+        11,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 1,
+      "children": [
+        {
+          "node": 44,
+          "suffixes": [
+            "",
+            "3"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "2",
+              false,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            0,
+            false
+          ]
+        },
+        {
+          "node": 45,
+          "suffixes": [
+            "",
+            "2"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            10,
+            false
+          ]
+        },
+        {
+          "node": 46,
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            10,
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "left_suffix": "123",
+      "right_suffix": "3",
+      "endpoints": [
+        [
+          "",
+          false,
+          "2",
+          false
+        ],
+        [
+          "",
+          true,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        0,
+        true
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "12",
+      "right_suffix": "32",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          true
+        ],
+        [
+          "2",
+          false,
+          "312",
+          true
+        ]
+      ],
+      "type": [
+        16,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "12",
+      "right_suffix": "31",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          true
+        ],
+        [
+          "",
+          true,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        10,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "12",
+      "right_suffix": "3",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          false
+        ],
+        [
+          "",
+          true,
+          "",
+          true
+        ]
+      ],
+      "type": [
+        11,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 1,
+      "children": [
+        {
+          "node": 48,
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "2",
+              false
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            0,
+            true
+          ]
+        },
+        {
+          "node": 49,
+          "suffixes": [
+            "",
+            "2"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "2",
+              false,
+              "312",
+              true
+            ]
+          ],
+          "type": [
+            16,
+            false
+          ]
+        },
+        {
+          "node": 50,
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            10,
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "left_suffix": "1",
+      "right_suffix": "3",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          true
+        ],
+        [
+          "2",
+          false,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        0,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 2,
+      "children": [
+        {
+          "node": 47,
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              false
+            ],
+            [
+              "",
+              true,
+              "",
+              true
+            ]
+          ],
+          "type": [
+            11,
+            false
+          ]
+        },
+        {
+          "node": 51,
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              false
+            ],
+            [
+              "",
+              true,
+              "",
+              true
+            ]
+          ],
+          "type": [
+            11,
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "left_suffix": "13",
+      "right_suffix": "23",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          true
+        ],
+        [
+          "2312",
+          true,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        15,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "13",
+      "right_suffix": "22",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          true
+        ],
+        [
+          "",
+          true,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        10,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "13",
+      "right_suffix": "21",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          true
+        ],
+        [
+          "",
+          true,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        10,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "13",
+      "right_suffix": "2",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          false
+        ],
+        [
+          "",
+          true,
+          "",
+          true
+        ]
+      ],
+      "type": [
+        11,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 1,
+      "children": [
+        {
+          "node": 53,
+          "suffixes": [
+            "",
+            "3"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "2312",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            15,
+            false
+          ]
+        },
+        {
+          "node": 54,
+          "suffixes": [
+            "",
+            "2"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            10,
+            false
+          ]
+        },
+        {
+          "node": 55,
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            10,
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "left_suffix": "12",
+      "right_suffix": "23",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          true
+        ],
+        [
+          "2",
+          false,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        0,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "12",
+      "right_suffix": "22",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          true
+        ],
+        [
+          "",
+          true,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        10,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "12",
+      "right_suffix": "21",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          true
+        ],
+        [
+          "",
+          true,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        10,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "12",
+      "right_suffix": "2",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          false
+        ],
+        [
+          "",
+          true,
+          "",
+          true
+        ]
+      ],
+      "type": [
+        11,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 1,
+      "children": [
+        {
+          "node": 57,
+          "suffixes": [
+            "",
+            "3"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "2",
+              false,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            0,
+            false
+          ]
+        },
+        {
+          "node": 58,
+          "suffixes": [
+            "",
+            "2"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            10,
+            false
+          ]
+        },
+        {
+          "node": 59,
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            10,
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "left_suffix": "113",
+      "right_suffix": "2",
+      "endpoints": [
+        [
+          "2",
+          true,
+          "2",
+          false
+        ],
+        [
+          "",
+          true,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        2,
+        true
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "112",
+      "right_suffix": "2",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          true
+        ],
+        [
+          "",
+          true,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        10,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "11",
+      "right_suffix": "21",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          true
+        ],
+        [
+          "",
+          true,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        10,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "11",
+      "right_suffix": "2",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          false
+        ],
+        [
+          "",
+          true,
+          "",
+          true
+        ]
+      ],
+      "type": [
+        11,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 1,
+      "children": [
+        {
+          "node": 61,
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "endpoints": [
+            [
+              "2",
+              true,
+              "2",
+              false
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            2,
+            true
+          ]
+        },
+        {
+          "node": 62,
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            10,
+            false
+          ]
+        },
+        {
+          "node": 63,
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            10,
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "left_suffix": "1",
+      "right_suffix": "2",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          true
+        ],
+        [
+          "",
+          true,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        10,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 2,
+      "children": [
+        {
+          "node": 56,
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              false
+            ],
+            [
+              "",
+              true,
+              "",
+              true
+            ]
+          ],
+          "type": [
+            11,
+            false
+          ]
+        },
+        {
+          "node": 60,
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              false
+            ],
+            [
+              "",
+              true,
+              "",
+              true
+            ]
+          ],
+          "type": [
+            11,
+            false
+          ]
+        },
+        {
+          "node": 64,
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              false
+            ],
+            [
+              "",
+              true,
+              "",
+              true
+            ]
+          ],
+          "type": [
+            11,
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "left_suffix": "13",
+      "right_suffix": "11",
+      "endpoints": [
+        [
+          "",
+          false,
+          "12",
+          true
+        ],
+        [
+          "",
+          true,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        6,
+        true
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "12",
+      "right_suffix": "11",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          true
+        ],
+        [
+          "",
+          true,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        10,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "1",
+      "right_suffix": "11",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          false
+        ],
+        [
+          "2",
+          false,
+          "",
+          true
+        ]
+      ],
+      "type": [
+        1,
+        true
+      ],
+      "regime": "all",
+      "remaining_depth": 1,
+      "children": [
+        {
+          "node": 66,
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "12",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            6,
+            true
+          ]
+        },
+        {
+          "node": 67,
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            10,
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "left_suffix": "12",
+      "right_suffix": "13",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          true
+        ],
+        [
+          "",
+          true,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        10,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "12",
+      "right_suffix": "12",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          true
+        ],
+        [
+          "12",
+          true,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        6,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "12",
+      "right_suffix": "1",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          false
+        ],
+        [
+          "",
+          true,
+          "",
+          true
+        ]
+      ],
+      "type": [
+        11,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 1,
+      "children": [
+        {
+          "node": 69,
+          "suffixes": [
+            "",
+            "3"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            10,
+            false
+          ]
+        },
+        {
+          "node": 70,
+          "suffixes": [
+            "",
+            "2"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "12",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            6,
+            false
+          ]
+        },
+        {
+          "node": 67,
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            10,
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "left_suffix": "11",
+      "right_suffix": "13",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          true
+        ],
+        [
+          "2",
+          false,
+          "2",
+          true
+        ]
+      ],
+      "type": [
+        2,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "11",
+      "right_suffix": "12",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          true
+        ],
+        [
+          "",
+          true,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        10,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "11",
+      "right_suffix": "11",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          true
+        ],
+        [
+          "",
+          true,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        10,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 0,
+      "children": []
+    },
+    {
+      "left_suffix": "11",
+      "right_suffix": "1",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          false
+        ],
+        [
+          "",
+          true,
+          "",
+          true
+        ]
+      ],
+      "type": [
+        11,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 1,
+      "children": [
+        {
+          "node": 72,
+          "suffixes": [
+            "",
+            "3"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "2",
+              false,
+              "2",
+              true
+            ]
+          ],
+          "type": [
+            2,
+            false
+          ]
+        },
+        {
+          "node": 73,
+          "suffixes": [
+            "",
+            "2"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            10,
+            false
+          ]
+        },
+        {
+          "node": 74,
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            10,
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "left_suffix": "1",
+      "right_suffix": "1",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          true
+        ],
+        [
+          "",
+          true,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        10,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 2,
+      "children": [
+        {
+          "node": 68,
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              false
+            ],
+            [
+              "2",
+              false,
+              "",
+              true
+            ]
+          ],
+          "type": [
+            1,
+            true
+          ]
+        },
+        {
+          "node": 71,
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              false
+            ],
+            [
+              "",
+              true,
+              "",
+              true
+            ]
+          ],
+          "type": [
+            11,
+            false
+          ]
+        },
+        {
+          "node": 75,
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              false
+            ],
+            [
+              "",
+              true,
+              "",
+              true
+            ]
+          ],
+          "type": [
+            11,
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "left_suffix": "1",
+      "right_suffix": "",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          false
+        ],
+        [
+          "",
+          true,
+          "",
+          true
+        ]
+      ],
+      "type": [
+        11,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 3,
+      "children": [
+        {
+          "node": 52,
+          "suffixes": [
+            "",
+            "3"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "2",
+              false,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            0,
+            false
+          ]
+        },
+        {
+          "node": 65,
+          "suffixes": [
+            "",
+            "2"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            10,
+            false
+          ]
+        },
+        {
+          "node": 76,
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          "type": [
+            10,
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "left_suffix": "",
+      "right_suffix": "",
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          true
+        ],
+        [
+          "",
+          true,
+          "",
+          false
+        ]
+      ],
+      "type": [
+        10,
+        false
+      ],
+      "regime": "all",
+      "remaining_depth": 4,
+      "children": [
+        {
+          "node": 15,
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "endpoints": [
+            [
+              "2",
+              true,
+              "1",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              true
+            ]
+          ],
+          "type": [
+            3,
+            true
+          ]
+        },
+        {
+          "node": 43,
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              false
+            ],
+            [
+              "",
+              true,
+              "",
+              true
+            ]
+          ],
+          "type": [
+            11,
+            false
+          ]
+        },
+        {
+          "node": 77,
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "endpoints": [
+            [
+              "",
+              false,
+              "",
+              false
+            ],
+            [
+              "",
+              true,
+              "",
+              true
+            ]
+          ],
+          "type": [
+            11,
+            false
+          ]
+        }
+      ]
+    }
+  ],
+  "types": [
+    [
+      [
+        "",
+        false,
+        "",
+        true
+      ],
+      [
+        "2",
+        false,
+        "",
+        false
+      ]
+    ],
+    [
+      [
+        "",
+        false,
+        "",
+        false
+      ],
+      [
+        "",
+        true,
+        "2",
+        false
+      ]
+    ],
+    [
+      [
+        "",
+        false,
+        "",
+        true
+      ],
+      [
+        "2",
+        false,
+        "2",
+        true
+      ]
+    ],
+    [
+      [
+        "",
+        true,
+        "",
+        true
+      ],
+      [
+        "1",
+        true,
+        "2",
+        true
+      ]
+    ],
+    [
+      [
+        "",
+        false,
+        "",
+        true
+      ],
+      [
+        "22",
+        true,
+        "",
+        false
+      ]
+    ],
+    [
+      [
+        "",
+        false,
+        "2",
+        false
+      ],
+      [
+        "",
+        true,
+        "2",
+        true
+      ]
+    ],
+    [
+      [
+        "",
+        false,
+        "",
+        true
+      ],
+      [
+        "12",
+        true,
+        "",
+        false
+      ]
+    ],
+    [
+      [
+        "",
+        false,
+        "",
+        true
+      ],
+      [
+        "",
+        true,
+        "2",
+        true
+      ]
+    ],
+    [
+      [
+        "",
+        false,
+        "2",
+        true
+      ],
+      [
+        "",
+        true,
+        "2",
+        false
+      ]
+    ],
+    [
+      [
+        "",
+        false,
+        "2",
+        true
+      ],
+      [
+        "",
+        true,
+        "12",
+        true
+      ]
+    ],
+    [
+      [
+        "",
+        false,
+        "",
+        true
+      ],
+      [
+        "",
+        true,
+        "",
+        false
+      ]
+    ],
+    [
+      [
+        "",
+        false,
+        "",
+        false
+      ],
+      [
+        "",
+        true,
+        "",
+        true
+      ]
+    ],
+    [
+      [
+        "",
+        false,
+        "",
+        true
+      ],
+      [
+        "",
+        true,
+        "312",
+        true
+      ]
+    ],
+    [
+      [
+        "",
+        false,
+        "",
+        false
+      ],
+      [
+        "",
+        true,
+        "12",
+        true
+      ]
+    ],
+    [
+      [
+        "",
+        false,
+        "",
+        true
+      ],
+      [
+        "233",
+        false,
+        "332",
+        true
+      ]
+    ],
+    [
+      [
+        "",
+        false,
+        "",
+        true
+      ],
+      [
+        "2312",
+        true,
+        "",
+        false
+      ]
+    ],
+    [
+      [
+        "",
+        false,
+        "",
+        true
+      ],
+      [
+        "2",
+        false,
+        "312",
+        true
+      ]
+    ]
+  ],
+  "discovery": {
+    "gap_depth": 4,
+    "samples": [
+      0,
+      1
+    ],
+    "sampled_width_ratio_bound": 20,
+    "attempts": 86,
+    "families": 433,
+    "leaf_gap_checks": 52,
+    "generated_shapes": 55,
+    "backtracking_refinements_count": 0,
+    "backtracking_refinements_examples": [],
+    "gap_driven_type_additions_count": 33,
+    "gap_driven_type_additions_examples": [
+      {
+        "left_suffix": "3",
+        "right_suffix": "111",
+        "cuts": [
+          [
+            [
+              "",
+              true,
+              "21312",
+              true
+            ],
+            [
+              "131213",
+              false,
+              "21313",
+              false
+            ],
+            0
+          ],
+          [
+            [
+              "",
+              true,
+              "2",
+              true
+            ],
+            [
+              "13",
+              false,
+              "3",
+              false
+            ],
+            0
+          ],
+          [
+            [
+              "133",
+              false,
+              "332",
+              true
+            ],
+            [
+              "1333",
+              false,
+              "333",
+              false
+            ],
+            0
+          ],
+          [
+            [
+              "133",
+              false,
+              "33",
+              false
+            ],
+            [
+              "13",
+              false,
+              "32",
+              true
+            ],
+            0
+          ],
+          [
+            [
+              "",
+              true,
+              "2",
+              true
+            ],
+            [
+              "13",
+              false,
+              "3",
+              false
+            ],
+            1
+          ]
+        ],
+        "components": [
+          [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "",
+              true,
+              "21312",
+              true
+            ]
+          ],
+          [
+            [
+              "131213",
+              false,
+              "21313",
+              false
+            ],
+            [
+              "",
+              true,
+              "2",
+              true
+            ]
+          ],
+          [
+            [
+              "13",
+              false,
+              "3",
+              false
+            ],
+            [
+              "133",
+              false,
+              "332",
+              true
+            ]
+          ],
+          [
+            [
+              "1333",
+              false,
+              "333",
+              false
+            ],
+            [
+              "133",
+              false,
+              "33",
+              false
+            ]
+          ],
+          [
+            [
+              "13",
+              false,
+              "32",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "2",
+              false,
+              "",
+              false
+            ]
+          ],
+          [
+            [
+              "",
+              false,
+              "",
+              false
+            ],
+            [
+              "",
+              true,
+              "2",
+              false
+            ]
+          ],
+          [
+            [
+              "2",
+              true,
+              "",
+              false
+            ],
+            [
+              "",
+              true,
+              "",
+              true
+            ]
+          ],
+          [
+            [
+              "",
+              false,
+              "2",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              true
+            ]
+          ],
+          [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "2",
+              false,
+              "2",
+              true
+            ]
+          ],
+          [
+            [
+              "2",
+              true,
+              "",
+              false
+            ],
+            [
+              "",
+              true,
+              "2",
+              false
+            ]
+          ],
+          [
+            [
+              "",
+              false,
+              "2",
+              true
+            ],
+            [
+              "2",
+              false,
+              "",
+              true
+            ]
+          ],
+          [
+            [
+              "2",
+              true,
+              "",
+              false
+            ],
+            [
+              "",
+              true,
+              "1",
+              true
+            ]
+          ],
+          [
+            [
+              "",
+              false,
+              "2",
+              true
+            ],
+            [
+              "1",
+              true,
+              "",
+              true
+            ]
+          ],
+          [
+            [
+              "1",
+              true,
+              "2",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              true
+            ]
+          ],
+          [
+            [
+              "2",
+              true,
+              "1",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              true
+            ]
+          ]
+        ]
+      },
+      {
+        "left_suffix": "33",
+        "right_suffix": "12",
+        "cuts": [
+          [
+            [
+              "3",
+              false,
+              "23",
+              false
+            ],
+            [
+              "",
+              false,
+              "22",
+              true
+            ],
+            0
+          ],
+          [
+            [
+              "333",
+              false,
+              "2333",
+              false
+            ],
+            [
+              "33",
+              false,
+              "2332",
+              true
+            ],
+            0
+          ],
+          [
+            [
+              "3",
+              false,
+              "232",
+              true
+            ],
+            [
+              "33",
+              false,
+              "233",
+              false
+            ],
+            0
+          ],
+          [
+            [
+              "313",
+              false,
+              "2313",
+              false
+            ],
+            [
+              "",
+              false,
+              "2312",
+              true
+            ],
+            0
+          ],
+          [
+            [
+              "",
+              true,
+              "1",
+              true
+            ],
+            [
+              "",
+              false,
+              "2",
+              false
+            ],
+            0
+          ],
+          [
+            [
+              "313",
+              false,
+              "2313",
+              false
+            ],
+            [
+              "",
+              false,
+              "2312",
+              true
+            ],
+            1
+          ]
+        ],
+        "components": [
+          [
+            [
+              "",
+              false,
+              "",
+              true
+            ],
+            [
+              "",
+              true,
+              "1",
+              true
+            ]
+          ],
+          [
+            [
+              "",
+              false,
+              "2",
+              false
+            ],
+            [
+              "313",
+              false,
+              "2313",
+              false
+            ]
+          ],
+          [
+            [
+              "",
+              false,
+              "2312",
+              true
+            ],
+            [
+              "3",
+              false,
+              "232",
+              true
+            ]
+          ],
+          [
+            [
+              "33",
+              false,
+              "233",
+              false
+            ],
+            [
+              "333",
+              false,
+              "2333",
+              false
+            ]
+          ],
+          [
+            [
+              "33",
+              false,
+              "2332",
+              true
+            ],
+            [
+              "3",
+              false,
+              "23",
+              false
+            ]
+          ],
+          [
+            [
+              "",
+              false,
+              "22",
+              true
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          [
+            [
+              "",
+              true,
+              "2",
+              false
+            ],
+            [
+              "",
+              false,
+              "",
+              false
+            ]
+          ],
+          [
+            [
+              "2",
+              true,
+              "2",
+              false
+            ],
+            [
+              "",
+              true,
+              "",
+              false
+            ]
+          ],
+          [
+            [
+              "",
+              true,
+              "2",
+              false
+            ],
+            [
+              "2",
+              true,
+              "",
+              false
+            ]
+          ],
+          [
+            [
+              "",
+              true,
+              "",
+              true
+            ],
+            [
+              "2",
+              true,
+              "1",
+              true
+            ]
+          ]
+        ]
+      }
+    ]
+  },
+  "verification": {
+    "verified_nodes": 79,
+    "verified_edges": 85,
+    "unproved_terminal_intervals": 48,
+    "selected_types": 23,
+    "uniform_width_ratio_bound": 21,
+    "max_endpoint_word_length": 4
+  },
+  "known_obstruction_violations": [],
+  "uniform_width_ratio_bound": 21,
+  "type_summary": {
+    "shapes_up_to_reflection": 17,
+    "oriented_shapes": 23,
+    "state_parity_types": 48,
+    "nodes_using_endpoints_outside_the_old_eight_shapes": 15,
+    "new_shape_ids": [
+      4,
+      5,
+      6,
+      8,
+      9,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "example_new_nodes": [
+      1,
+      2,
+      4,
+      5,
+      9
+    ]
+  }
+}

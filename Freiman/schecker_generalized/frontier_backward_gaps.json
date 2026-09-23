@@ -1,0 +1,2554 @@
+{
+  "status": "exact parameter reachability audit of a selected strategy; no full filling claim",
+  "source_proof_hash": "93353e5b660d13ff16c6197df525562bf0df0e11c11c9286cf673ec2500d6eb4",
+  "depth": 6,
+  "counts": {
+    "excluded": 34
+  },
+  "traces": [
+    {
+      "node": 147,
+      "point": [
+        [
+          "723/1204",
+          "0"
+        ],
+        [
+          "2305/5762",
+          "0"
+        ],
+        [
+          "49691642766752178897366868644671854273664/2272736416235589424110949039459228515625",
+          "-455142042542754887914653142628293410816/454547283247117884822189807891845703125"
+        ]
+      ],
+      "status": "excluded",
+      "parents": [
+        {
+          "parent": 131,
+          "edge": 0,
+          "destination": 0,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 241,
+          "edge": 0,
+          "destination": 0,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 526,
+          "edge": 0,
+          "destination": 0,
+          "status": "outside_parent_domain"
+        }
+      ]
+    },
+    {
+      "node": 149,
+      "point": [
+        [
+          "19/71",
+          "0"
+        ],
+        [
+          "43/105",
+          "0"
+        ],
+        [
+          "484/625",
+          "0"
+        ]
+      ],
+      "status": "excluded",
+      "parents": [
+        {
+          "parent": 49,
+          "edge": 2,
+          "destination": 1,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 50,
+          "edge": 1,
+          "destination": 1,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 51,
+          "edge": 1,
+          "destination": 2,
+          "status": "excluded",
+          "trace": {
+            "node": 51,
+            "point": [
+              [
+                "19/43",
+                "0"
+              ],
+              [
+                "19/71",
+                "0"
+              ],
+              [
+                "337570955670994973750/77609441276411",
+                "-15705221572118707500/77609441276411"
+              ]
+            ],
+            "status": "excluded",
+            "parents": [
+              {
+                "parent": 13,
+                "edge": 2,
+                "destination": 2,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 14,
+                "edge": 2,
+                "destination": 1,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 18,
+                "edge": 2,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              }
+            ]
+          }
+        },
+        {
+          "parent": 51,
+          "edge": 2,
+          "destination": 2,
+          "status": "excluded",
+          "trace": {
+            "node": 51,
+            "point": [
+              [
+                "19/43",
+                "0"
+              ],
+              [
+                "19/71",
+                "0"
+              ],
+              [
+                "337570955670994973750/77609441276411",
+                "-15705221572118707500/77609441276411"
+              ]
+            ],
+            "status": "excluded",
+            "parents": [
+              {
+                "parent": 13,
+                "edge": 2,
+                "destination": 2,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 14,
+                "edge": 2,
+                "destination": 1,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 18,
+                "edge": 2,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "node": 162,
+      "point": [
+        [
+          "19/33",
+          "0"
+        ],
+        [
+          "19/62",
+          "0"
+        ],
+        [
+          "11195587783209110966282752/64551830291748046875",
+          "-104172596331133551828992/12910366058349609375"
+        ]
+      ],
+      "status": "excluded",
+      "parents": [
+        {
+          "parent": 56,
+          "edge": 3,
+          "destination": 1,
+          "status": "excluded",
+          "trace": {
+            "node": 56,
+            "point": [
+              [
+                "14/19",
+                "0"
+              ],
+              [
+                "19/62",
+                "0"
+              ],
+              [
+                "12855002631049216/59604644775390625",
+                "0"
+              ]
+            ],
+            "status": "excluded",
+            "parents": [
+              {
+                "parent": 17,
+                "edge": 0,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 43,
+                "edge": 0,
+                "destination": 1,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 44,
+                "edge": 0,
+                "destination": 0,
+                "status": "excluded",
+                "trace": {
+                  "node": 44,
+                  "point": [
+                    [
+                      "5/14",
+                      "0"
+                    ],
+                    [
+                      "19/62",
+                      "0"
+                    ],
+                    [
+                      "162294408216996352/178813934326171875",
+                      "-6427501315524608/178813934326171875"
+                    ]
+                  ],
+                  "status": "excluded",
+                  "parents": [
+                    {
+                      "parent": 12,
+                      "edge": 3,
+                      "destination": 1,
+                      "status": "outside_parent_domain"
+                    },
+                    {
+                      "parent": 13,
+                      "edge": 0,
+                      "destination": 0,
+                      "status": "outside_parent_domain"
+                    },
+                    {
+                      "parent": 19,
+                      "edge": 1,
+                      "destination": 0,
+                      "status": "outside_parent_domain"
+                    },
+                    {
+                      "parent": 20,
+                      "edge": 1,
+                      "destination": 1,
+                      "status": "outside_parent_domain"
+                    },
+                    {
+                      "parent": 110,
+                      "edge": 0,
+                      "destination": 0,
+                      "status": "outside_parent_domain"
+                    }
+                  ]
+                }
+              },
+              {
+                "parent": 134,
+                "edge": 0,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 308,
+                "edge": 1,
+                "destination": 1,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 309,
+                "edge": 0,
+                "destination": 2,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 326,
+                "edge": 1,
+                "destination": 1,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 327,
+                "edge": 0,
+                "destination": 1,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 329,
+                "edge": 0,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              }
+            ]
+          }
+        },
+        {
+          "parent": 512,
+          "edge": 3,
+          "destination": 1,
+          "status": "outside_parent_domain"
+        }
+      ]
+    },
+    {
+      "node": 274,
+      "point": [
+        [
+          "14/19",
+          "0"
+        ],
+        [
+          "19/71",
+          "0"
+        ],
+        [
+          "10257720947265625/3391219232777728",
+          "-110626220703125/847804808194432"
+        ]
+      ],
+      "status": "excluded",
+      "parents": [
+        {
+          "parent": 405,
+          "edge": 0,
+          "destination": 0,
+          "status": "excluded",
+          "trace": {
+            "node": 405,
+            "point": [
+              [
+                "14/19",
+                "0"
+              ],
+              [
+                "14/19",
+                "0"
+              ],
+              [
+                "1207269217792/3814697265625",
+                "0"
+              ]
+            ],
+            "status": "excluded",
+            "parents": [
+              {
+                "parent": 71,
+                "edge": 2,
+                "destination": 0,
+                "status": "excluded",
+                "trace": {
+                  "node": 71,
+                  "point": [
+                    [
+                      "5/14",
+                      "0"
+                    ],
+                    [
+                      "14/19",
+                      "0"
+                    ],
+                    [
+                      "13656183322906494140625/22256790558360743027456",
+                      "106761875152587890625/11128395279180371513728"
+                    ]
+                  ],
+                  "status": "excluded",
+                  "parents": [
+                    {
+                      "parent": 18,
+                      "edge": 4,
+                      "destination": 0,
+                      "status": "outside_parent_domain"
+                    },
+                    {
+                      "parent": 45,
+                      "edge": 3,
+                      "destination": 1,
+                      "status": "outside_parent_domain"
+                    },
+                    {
+                      "parent": 145,
+                      "edge": 2,
+                      "destination": 0,
+                      "status": "outside_parent_domain"
+                    },
+                    {
+                      "parent": 146,
+                      "edge": 2,
+                      "destination": 1,
+                      "status": "outside_parent_domain"
+                    },
+                    {
+                      "parent": 225,
+                      "edge": 3,
+                      "destination": 2,
+                      "status": "outside_parent_domain"
+                    },
+                    {
+                      "parent": 439,
+                      "edge": 2,
+                      "destination": 0,
+                      "status": "outside_parent_domain"
+                    }
+                  ]
+                }
+              },
+              {
+                "parent": 72,
+                "edge": 2,
+                "destination": 1,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 154,
+                "edge": 4,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 287,
+                "edge": 1,
+                "destination": 2,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 306,
+                "edge": 1,
+                "destination": 2,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 312,
+                "edge": 3,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 323,
+                "edge": 1,
+                "destination": 1,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 366,
+                "edge": 2,
+                "destination": 1,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 408,
+                "edge": 3,
+                "destination": 2,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 499,
+                "edge": 2,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 500,
+                "edge": 1,
+                "destination": 1,
+                "status": "outside_parent_domain"
+              }
+            ]
+          }
+        },
+        {
+          "parent": 464,
+          "edge": 0,
+          "destination": 0,
+          "status": "outside_parent_domain"
+        }
+      ]
+    },
+    {
+      "node": 291,
+      "point": [
+        [
+          "13/17",
+          "0"
+        ],
+        [
+          "19/33",
+          "0"
+        ],
+        [
+          "22/25",
+          "0"
+        ]
+      ],
+      "status": "excluded",
+      "parents": [
+        {
+          "parent": 107,
+          "edge": 3,
+          "destination": 0,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 118,
+          "edge": 3,
+          "destination": 0,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 159,
+          "edge": 3,
+          "destination": 1,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 451,
+          "edge": 3,
+          "destination": 0,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 452,
+          "edge": 2,
+          "destination": 0,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 456,
+          "edge": 2,
+          "destination": 1,
+          "status": "outside_parent_domain"
+        }
+      ]
+    },
+    {
+      "node": 292,
+      "point": [
+        [
+          "13/17",
+          "0"
+        ],
+        [
+          "19/33",
+          "0"
+        ],
+        [
+          "22/25",
+          "0"
+        ]
+      ],
+      "status": "excluded",
+      "parents": [
+        {
+          "parent": 107,
+          "edge": 3,
+          "destination": 1,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 108,
+          "edge": 2,
+          "destination": 0,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 451,
+          "edge": 3,
+          "destination": 1,
+          "status": "outside_parent_domain"
+        }
+      ]
+    },
+    {
+      "node": 299,
+      "point": [
+        [
+          "19/71",
+          "0"
+        ],
+        [
+          "43/105",
+          "0"
+        ],
+        [
+          "7705769699782555103302001953125/2796138206930765354612768",
+          "-16295672048771381378173828125/127097191224125697936944"
+        ]
+      ],
+      "status": "excluded",
+      "parents": [
+        {
+          "parent": 28,
+          "edge": 2,
+          "destination": 1,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 201,
+          "edge": 2,
+          "destination": 1,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 232,
+          "edge": 2,
+          "destination": 1,
+          "status": "outside_parent_domain"
+        }
+      ]
+    },
+    {
+      "node": 337,
+      "point": [
+        [
+          "2527/8804",
+          "0"
+        ],
+        [
+          "4093/13912",
+          "0"
+        ],
+        [
+          "5505016/9765625",
+          "0"
+        ]
+      ],
+      "status": "excluded",
+      "parents": [
+        {
+          "parent": 49,
+          "edge": 1,
+          "destination": 1,
+          "status": "excluded",
+          "trace": {
+            "node": 49,
+            "point": [
+              [
+                "1633/4093",
+                "0"
+              ],
+              [
+                "2527/8804",
+                "0"
+              ],
+              [
+                "133517997119275844044894664180300791015625/18506868175464712654674669253791278395392",
+                "-3047916506657835861345444693611005859375/9253434087732356327337334626895639197696"
+              ]
+            ],
+            "status": "excluded",
+            "parents": [
+              {
+                "parent": 13,
+                "edge": 2,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 19,
+                "edge": 3,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 110,
+                "edge": 2,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "node": 339,
+      "point": [
+        [
+          "2527/8804",
+          "0"
+        ],
+        [
+          "4093/13912",
+          "0"
+        ],
+        [
+          "1226320579651659355599314387153473474412/1334907749340898800390625",
+          "-146057207840328781795450680590760/3417363838312700929"
+        ]
+      ],
+      "status": "excluded",
+      "parents": [
+        {
+          "parent": 49,
+          "edge": 1,
+          "destination": 2,
+          "status": "outside_parent_domain"
+        }
+      ]
+    },
+    {
+      "node": 345,
+      "point": [
+        [
+          "671/2356",
+          "0"
+        ],
+        [
+          "2987/10650",
+          "0"
+        ],
+        [
+          "34251225659360526939848704/363797880709171295166015625",
+          "0"
+        ]
+      ],
+      "status": "excluded",
+      "parents": [
+        {
+          "parent": 152,
+          "edge": 2,
+          "destination": 0,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 473,
+          "edge": 2,
+          "destination": 0,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 483,
+          "edge": 2,
+          "destination": 1,
+          "status": "excluded",
+          "trace": {
+            "node": 483,
+            "point": [
+              [
+                "671/2356",
+                "0"
+              ],
+              [
+                "1689/2987",
+                "0"
+              ],
+              [
+                "30603924069254761568025070335216033907867648/30142372115039150594384409487247467041015625",
+                "-99923768578941600590346147583194036174848/6028474423007830118876881897449493408203125"
+              ]
+            ],
+            "status": "excluded",
+            "parents": [
+              {
+                "parent": 256,
+                "edge": 2,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 268,
+                "edge": 2,
+                "destination": 1,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 316,
+                "edge": 2,
+                "destination": 0,
+                "status": "excluded",
+                "trace": {
+                  "node": 316,
+                  "point": [
+                    [
+                      "1298/1689",
+                      "0"
+                    ],
+                    [
+                      "671/2356",
+                      "0"
+                    ],
+                    [
+                      "168945881204918881449395577112292448873631656169891357421875/4017676053674585175125913531493395498541652015264317833216",
+                      "-3886900926791426109240582576277301996015012264251708984375/2008838026837292587562956765746697749270826007632158916608"
+                    ]
+                  ],
+                  "status": "excluded",
+                  "parents": [
+                    {
+                      "parent": 125,
+                      "edge": 0,
+                      "destination": 1,
+                      "status": "outside_parent_domain"
+                    },
+                    {
+                      "parent": 126,
+                      "edge": 0,
+                      "destination": 0,
+                      "status": "outside_parent_domain"
+                    }
+                  ]
+                }
+              },
+              {
+                "parent": 317,
+                "edge": 2,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 317,
+                "edge": 3,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 384,
+                "edge": 3,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "node": 346,
+      "point": [
+        [
+          "5/19",
+          "0"
+        ],
+        [
+          "19/71",
+          "0"
+        ],
+        [
+          "1457498964228107529355264/14551915228366851806640625",
+          "0"
+        ]
+      ],
+      "status": "excluded",
+      "parents": [
+        {
+          "parent": 152,
+          "edge": 2,
+          "destination": 1,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 473,
+          "edge": 2,
+          "destination": 1,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 483,
+          "edge": 2,
+          "destination": 2,
+          "status": "excluded",
+          "trace": {
+            "node": 483,
+            "point": [
+              [
+                "5/19",
+                "0"
+              ],
+              [
+                "14/19",
+                "0"
+              ],
+              [
+                "307788209898375093849865839741763584/536547979005263186991214752197265625",
+                "1650760435206809559182433765556224/536547979005263186991214752197265625"
+              ]
+            ],
+            "status": "excluded",
+            "parents": [
+              {
+                "parent": 256,
+                "edge": 2,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 268,
+                "edge": 2,
+                "destination": 1,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 316,
+                "edge": 2,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 317,
+                "edge": 2,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 317,
+                "edge": 3,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 384,
+                "edge": 3,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "node": 353,
+      "point": [
+        [
+          "671/2356",
+          "0"
+        ],
+        [
+          "2980/10863",
+          "0"
+        ],
+        [
+          "1158368589817942402157133416521976974/15436777932700351811945438385009765625",
+          "1802454271332/3315022818828125"
+        ]
+      ],
+      "status": "excluded",
+      "parents": [
+        {
+          "parent": 483,
+          "edge": 2,
+          "destination": 0,
+          "status": "outside_parent_domain"
+        }
+      ]
+    },
+    {
+      "node": 357,
+      "point": [
+        [
+          "1887/6674",
+          "0"
+        ],
+        [
+          "321/770",
+          "0"
+        ],
+        [
+          "250228/390625",
+          "0"
+        ]
+      ],
+      "status": "excluded",
+      "parents": [
+        {
+          "parent": 51,
+          "edge": 2,
+          "destination": 0,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 66,
+          "edge": 2,
+          "destination": 1,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 67,
+          "edge": 2,
+          "destination": 1,
+          "status": "outside_parent_domain"
+        }
+      ]
+    },
+    {
+      "node": 361,
+      "point": [
+        [
+          "5/9",
+          "0"
+        ],
+        [
+          "19/71",
+          "0"
+        ],
+        [
+          "32064977213018365645815808/363797880709171295166015625",
+          "0"
+        ]
+      ],
+      "status": "excluded",
+      "parents": [
+        {
+          "parent": 52,
+          "edge": 1,
+          "destination": 0,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 154,
+          "edge": 1,
+          "destination": 0,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 302,
+          "edge": 1,
+          "destination": 0,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 367,
+          "edge": 0,
+          "destination": 0,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 408,
+          "edge": 0,
+          "destination": 2,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 408,
+          "edge": 1,
+          "destination": 2,
+          "status": "outside_parent_domain"
+        }
+      ]
+    },
+    {
+      "node": 368,
+      "point": [
+        [
+          "24/43",
+          "0"
+        ],
+        [
+          "43/62",
+          "0"
+        ],
+        [
+          "484/625",
+          "0"
+        ]
+      ],
+      "status": "excluded",
+      "parents": [
+        {
+          "parent": 462,
+          "edge": 2,
+          "destination": 0,
+          "status": "excluded",
+          "trace": {
+            "node": 462,
+            "point": [
+              [
+                "19/43",
+                "0"
+              ],
+              [
+                "24/43",
+                "0"
+              ],
+              [
+                "3040278707321106300625/6400422535933856329636",
+                "20074739649178268750/1600105633983464082409"
+              ]
+            ],
+            "status": "excluded",
+            "parents": [
+              {
+                "parent": 236,
+                "edge": 3,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 237,
+                "edge": 3,
+                "destination": 1,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 270,
+                "edge": 3,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 283,
+                "edge": 1,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 390,
+                "edge": 2,
+                "destination": 0,
+                "status": "excluded",
+                "trace": {
+                  "node": 390,
+                  "point": [
+                    [
+                      "19/24",
+                      "0"
+                    ],
+                    [
+                      "19/43",
+                      "0"
+                    ],
+                    [
+                      "31390949443112884229/1618946595668253750",
+                      "-698562753251362318/809473297834126875"
+                    ]
+                  ],
+                  "status": "excluded",
+                  "parents": [
+                    {
+                      "parent": 176,
+                      "edge": 2,
+                      "destination": 1,
+                      "status": "outside_parent_domain"
+                    },
+                    {
+                      "parent": 177,
+                      "edge": 2,
+                      "destination": 0,
+                      "status": "excluded",
+                      "trace": {
+                        "node": 177,
+                        "point": [
+                          [
+                            "5/19",
+                            "0"
+                          ],
+                          [
+                            "19/43",
+                            "0"
+                          ],
+                          [
+                            "50837505561593572921/238750882581416490000",
+                            "586966845752648339/59687720645354122500"
+                          ]
+                        ],
+                        "status": "excluded",
+                        "parents": [
+                          {
+                            "parent": 219,
+                            "edge": 1,
+                            "destination": 1,
+                            "status": "outside_parent_domain"
+                          },
+                          {
+                            "parent": 226,
+                            "edge": 2,
+                            "destination": 0,
+                            "status": "outside_parent_domain"
+                          },
+                          {
+                            "parent": 227,
+                            "edge": 2,
+                            "destination": 1,
+                            "status": "outside_parent_domain"
+                          },
+                          {
+                            "parent": 263,
+                            "edge": 2,
+                            "destination": 1,
+                            "status": "outside_parent_domain"
+                          },
+                          {
+                            "parent": 269,
+                            "edge": 1,
+                            "destination": 0,
+                            "status": "outside_parent_domain"
+                          },
+                          {
+                            "parent": 410,
+                            "edge": 1,
+                            "destination": 0,
+                            "status": "outside_parent_domain"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "parent": 391,
+                "edge": 2,
+                "destination": 0,
+                "status": "excluded",
+                "trace": {
+                  "node": 391,
+                  "point": [
+                    [
+                      "19/24",
+                      "0"
+                    ],
+                    [
+                      "19/43",
+                      "0"
+                    ],
+                    [
+                      "31390949443112884229/1618946595668253750",
+                      "-698562753251362318/809473297834126875"
+                    ]
+                  ],
+                  "status": "excluded",
+                  "parents": [
+                    {
+                      "parent": 176,
+                      "edge": 3,
+                      "destination": 1,
+                      "status": "outside_parent_domain"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "node": 398,
+      "point": [
+        [
+          "4093/13912",
+          "0"
+        ],
+        [
+          "321/770",
+          "0"
+        ],
+        [
+          "515231906425452446723893936512925507759112/1154963984197298571324871821544768331640625",
+          "309340817343691748508440859489702125568/46198559367891942852994872861790733265625"
+        ]
+      ],
+      "status": "excluded",
+      "parents": [
+        {
+          "parent": 66,
+          "edge": 2,
+          "destination": 0,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 67,
+          "edge": 2,
+          "destination": 0,
+          "status": "outside_parent_domain"
+        }
+      ]
+    },
+    {
+      "node": 404,
+      "point": [
+        [
+          "24/43",
+          "0"
+        ],
+        [
+          "43/148",
+          "0"
+        ],
+        [
+          "45576518225398686875/658521444477336",
+          "-1060202591745464375/329260722238668"
+        ]
+      ],
+      "status": "excluded",
+      "parents": [
+        {
+          "parent": 71,
+          "edge": 0,
+          "destination": 2,
+          "status": "outside_parent_domain"
+        }
+      ]
+    },
+    {
+      "node": 407,
+      "point": [
+        [
+          "5/9",
+          "0"
+        ],
+        [
+          "19/33",
+          "0"
+        ],
+        [
+          "3732483911250/25894037977423",
+          "173649900000/25894037977423"
+        ]
+      ],
+      "status": "excluded",
+      "parents": [
+        {
+          "parent": 154,
+          "edge": 5,
+          "destination": 0,
+          "status": "outside_parent_domain"
+        }
+      ]
+    },
+    {
+      "node": 543,
+      "point": [
+        [
+          "62/81",
+          "0"
+        ],
+        [
+          "33/113",
+          "0"
+        ],
+        [
+          "136880068015412051968/931322574615478515625",
+          "0"
+        ]
+      ],
+      "status": "excluded",
+      "parents": [
+        {
+          "parent": 537,
+          "edge": 1,
+          "destination": 0,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 538,
+          "edge": 2,
+          "destination": 1,
+          "status": "excluded",
+          "trace": {
+            "node": 538,
+            "point": [
+              [
+                "14/33",
+                "0"
+              ],
+              [
+                "62/81",
+                "0"
+              ],
+              [
+                "2504326403141021728515625/384496111055292453978112",
+                "-27008354663848876953125/96124027763823113494528"
+              ]
+            ],
+            "status": "excluded",
+            "parents": [
+              {
+                "parent": 152,
+                "edge": 1,
+                "destination": 1,
+                "status": "excluded",
+                "trace": {
+                  "node": 152,
+                  "point": [
+                    [
+                      "19/62",
+                      "0"
+                    ],
+                    [
+                      "14/33",
+                      "0"
+                    ],
+                    [
+                      "1267255469452048245578764137967229428432896/26350583277103117079474031925201416015625",
+                      "-58112746518309672675731535660595389136896/26350583277103117079474031925201416015625"
+                    ]
+                  ],
+                  "status": "excluded",
+                  "parents": [
+                    {
+                      "parent": 50,
+                      "edge": 1,
+                      "destination": 0,
+                      "status": "outside_parent_domain"
+                    },
+                    {
+                      "parent": 51,
+                      "edge": 1,
+                      "destination": 1,
+                      "status": "outside_parent_domain"
+                    },
+                    {
+                      "parent": 51,
+                      "edge": 2,
+                      "destination": 1,
+                      "status": "outside_parent_domain"
+                    },
+                    {
+                      "parent": 66,
+                      "edge": 1,
+                      "destination": 2,
+                      "status": "outside_parent_domain"
+                    },
+                    {
+                      "parent": 66,
+                      "edge": 2,
+                      "destination": 2,
+                      "status": "outside_parent_domain"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "node": 554,
+      "point": [
+        [
+          "5/9",
+          "0"
+        ],
+        [
+          "9/14",
+          "0"
+        ],
+        [
+          "82220790863037109375/187080900988024849432",
+          "1370220184326171875/93540450494012424716"
+        ]
+      ],
+      "status": "excluded",
+      "parents": [
+        {
+          "parent": 155,
+          "edge": 4,
+          "destination": 1,
+          "status": "outside_parent_domain"
+        }
+      ]
+    },
+    {
+      "node": 561,
+      "point": [
+        [
+          "1922/4515",
+          "0"
+        ],
+        [
+          "1009/1296",
+          "0"
+        ],
+        [
+          "47/50",
+          "0"
+        ]
+      ],
+      "status": "excluded",
+      "parents": [
+        {
+          "parent": 164,
+          "edge": 2,
+          "destination": 1,
+          "status": "excluded",
+          "trace": {
+            "node": 164,
+            "point": [
+              [
+                "287/1009",
+                "0"
+              ],
+              [
+                "1922/4515",
+                "0"
+              ],
+              [
+                "25432529692430961600/110131897712278411529",
+                "279094770189456000/110131897712278411529"
+              ]
+            ],
+            "status": "excluded",
+            "parents": [
+              {
+                "parent": 57,
+                "edge": 1,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 230,
+                "edge": 2,
+                "destination": 1,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 256,
+                "edge": 1,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 268,
+                "edge": 1,
+                "destination": 1,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 303,
+                "edge": 1,
+                "destination": 1,
+                "status": "outside_parent_domain"
+              }
+            ]
+          }
+        },
+        {
+          "parent": 443,
+          "edge": 2,
+          "destination": 1,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 454,
+          "edge": 2,
+          "destination": 1,
+          "status": "outside_parent_domain"
+        }
+      ]
+    },
+    {
+      "node": 609,
+      "point": [
+        [
+          "19/62",
+          "0"
+        ],
+        [
+          "24/67",
+          "0"
+        ],
+        [
+          "24474646450419313281265625/166319799351934100223051008",
+          "284665889049749943734375/41579949837983525055762752"
+        ]
+      ],
+      "status": "excluded",
+      "parents": [
+        {
+          "parent": 416,
+          "edge": 2,
+          "destination": 0,
+          "status": "outside_parent_domain"
+        }
+      ]
+    },
+    {
+      "node": 616,
+      "point": [
+        [
+          "1147/1454",
+          "0"
+        ],
+        [
+          "1153/3218",
+          "0"
+        ],
+        [
+          "1207269217792/3814697265625",
+          "0"
+        ]
+      ],
+      "status": "excluded",
+      "parents": [
+        {
+          "parent": 421,
+          "edge": 0,
+          "destination": 0,
+          "status": "excluded",
+          "trace": {
+            "node": 421,
+            "point": [
+              [
+                "13/17",
+                "0"
+              ],
+              [
+                "19/33",
+                "0"
+              ],
+              [
+                "1207269217792/3814697265625",
+                "0"
+              ]
+            ],
+            "status": "excluded",
+            "parents": [
+              {
+                "parent": 206,
+                "edge": 3,
+                "destination": 1,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 319,
+                "edge": 3,
+                "destination": 1,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 393,
+                "edge": 3,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 412,
+                "edge": 3,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "node": 631,
+      "point": [
+        [
+          "24/91",
+          "0"
+        ],
+        [
+          "19/43",
+          "0"
+        ],
+        [
+          "10648/15625",
+          "0"
+        ]
+      ],
+      "status": "excluded",
+      "parents": [
+        {
+          "parent": 430,
+          "edge": 1,
+          "destination": 1,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 467,
+          "edge": 1,
+          "destination": 0,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 469,
+          "edge": 1,
+          "destination": 1,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 513,
+          "edge": 1,
+          "destination": 2,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 514,
+          "edge": 0,
+          "destination": 2,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 518,
+          "edge": 1,
+          "destination": 1,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 523,
+          "edge": 3,
+          "destination": 1,
+          "status": "outside_parent_domain"
+        }
+      ]
+    },
+    {
+      "node": 633,
+      "point": [
+        [
+          "24/43",
+          "0"
+        ],
+        [
+          "24/91",
+          "0"
+        ],
+        [
+          "1",
+          "0"
+        ]
+      ],
+      "status": "excluded",
+      "parents": [
+        {
+          "parent": 430,
+          "edge": 2,
+          "destination": 1,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 431,
+          "edge": 2,
+          "destination": 0,
+          "status": "excluded",
+          "trace": {
+            "node": 431,
+            "point": [
+              [
+                "19/24",
+                "0"
+              ],
+              [
+                "24/91",
+                "0"
+              ],
+              [
+                "429693354243637713533/1738890909009158509464",
+                "832957775398581988/72453787875381604561"
+              ]
+            ],
+            "status": "excluded",
+            "parents": [
+              {
+                "parent": 213,
+                "edge": 0,
+                "destination": 1,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 214,
+                "edge": 0,
+                "destination": 0,
+                "status": "excluded",
+                "trace": {
+                  "node": 214,
+                  "point": [
+                    [
+                      "5/19",
+                      "0"
+                    ],
+                    [
+                      "24/91",
+                      "0"
+                    ],
+                    [
+                      "4852077455990358364/72453787875381604561",
+                      "225737912822451016/72453787875381604561"
+                    ]
+                  ],
+                  "status": "excluded",
+                  "parents": [
+                    {
+                      "parent": 80,
+                      "edge": 3,
+                      "destination": 1,
+                      "status": "outside_parent_domain"
+                    },
+                    {
+                      "parent": 81,
+                      "edge": 3,
+                      "destination": 0,
+                      "status": "outside_parent_domain"
+                    }
+                  ]
+                }
+              },
+              {
+                "parent": 214,
+                "edge": 1,
+                "destination": 0,
+                "status": "excluded",
+                "trace": {
+                  "node": 214,
+                  "point": [
+                    [
+                      "5/19",
+                      "0"
+                    ],
+                    [
+                      "24/91",
+                      "0"
+                    ],
+                    [
+                      "4852077455990358364/72453787875381604561",
+                      "225737912822451016/72453787875381604561"
+                    ]
+                  ],
+                  "status": "excluded",
+                  "parents": [
+                    {
+                      "parent": 80,
+                      "edge": 3,
+                      "destination": 1,
+                      "status": "outside_parent_domain"
+                    },
+                    {
+                      "parent": 81,
+                      "edge": 3,
+                      "destination": 0,
+                      "status": "outside_parent_domain"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "parent": 523,
+          "edge": 4,
+          "destination": 1,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 524,
+          "edge": 4,
+          "destination": 0,
+          "status": "outside_parent_domain"
+        }
+      ]
+    },
+    {
+      "node": 653,
+      "point": [
+        [
+          "671/2356",
+          "0"
+        ],
+        [
+          "529/817",
+          "0"
+        ],
+        [
+          "2664427744/6103515625",
+          "0"
+        ]
+      ],
+      "status": "excluded",
+      "parents": [
+        {
+          "parent": 219,
+          "edge": 3,
+          "destination": 0,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 220,
+          "edge": 3,
+          "destination": 1,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 263,
+          "edge": 4,
+          "destination": 0,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 264,
+          "edge": 4,
+          "destination": 1,
+          "status": "outside_parent_domain"
+        }
+      ]
+    },
+    {
+      "node": 654,
+      "point": [
+        [
+          "671/2356",
+          "0"
+        ],
+        [
+          "1685/2356",
+          "0"
+        ],
+        [
+          "121110352/244140625",
+          "0"
+        ]
+      ],
+      "status": "excluded",
+      "parents": [
+        {
+          "parent": 263,
+          "edge": 4,
+          "destination": 1,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 269,
+          "edge": 3,
+          "destination": 0,
+          "status": "excluded",
+          "trace": {
+            "node": 269,
+            "point": [
+              [
+                "671/1685",
+                "0"
+              ],
+              [
+                "671/2356",
+                "0"
+              ],
+              [
+                "30576765738382571777343750/83478032080776586380813983",
+                "572079463422530273437500/83478032080776586380813983"
+              ]
+            ],
+            "status": "excluded",
+            "parents": [
+              {
+                "parent": 101,
+                "edge": 0,
+                "destination": 1,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 104,
+                "edge": 0,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 117,
+                "edge": 0,
+                "destination": 1,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 158,
+                "edge": 0,
+                "destination": 2,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 187,
+                "edge": 1,
+                "destination": 1,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 189,
+                "edge": 1,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 282,
+                "edge": 0,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 400,
+                "edge": 0,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 436,
+                "edge": 0,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 437,
+                "edge": 0,
+                "destination": 1,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 448,
+                "edge": 0,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 450,
+                "edge": 0,
+                "destination": 2,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 453,
+                "edge": 0,
+                "destination": 1,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 461,
+                "edge": 0,
+                "destination": 2,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 481,
+                "edge": 0,
+                "destination": 1,
+                "status": "outside_parent_domain"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "node": 655,
+      "point": [
+        [
+          "19/62",
+          "0"
+        ],
+        [
+          "14/19",
+          "0"
+        ],
+        [
+          "2494357888/6103515625",
+          "0"
+        ]
+      ],
+      "status": "excluded",
+      "parents": [
+        {
+          "parent": 220,
+          "edge": 3,
+          "destination": 0,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 264,
+          "edge": 4,
+          "destination": 0,
+          "status": "outside_parent_domain"
+        }
+      ]
+    },
+    {
+      "node": 656,
+      "point": [
+        [
+          "481/1204",
+          "0"
+        ],
+        [
+          "3083/11648",
+          "0"
+        ],
+        [
+          "6184324108290995742282910661682443625183913/64868992520111408016085624694824218750000000",
+          "662517719934959395/464350335663911866176"
+        ]
+      ],
+      "status": "excluded",
+      "parents": [
+        {
+          "parent": 221,
+          "edge": 0,
+          "destination": 0,
+          "status": "outside_parent_domain"
+        }
+      ]
+    },
+    {
+      "node": 657,
+      "point": [
+        [
+          "481/1204",
+          "0"
+        ],
+        [
+          "3083/11648",
+          "0"
+        ],
+        [
+          "3793092537379966872683377964221436996282123514919418660027249/159191237220347855522764520508337020874023437500000000000",
+          "-3789656099404148447294872283935546875/3418605788355859926070032995462144"
+        ]
+      ],
+      "status": "excluded",
+      "parents": [
+        {
+          "parent": 221,
+          "edge": 0,
+          "destination": 1,
+          "status": "excluded",
+          "trace": {
+            "node": 221,
+            "point": [
+              [
+                "2399/3083",
+                "0"
+              ],
+              [
+                "481/1204",
+                "0"
+              ],
+              [
+                "38159011364274739376387024729909616922959726174157846563038853974522920233949985314356448433147542920614033937454223632812500000/83147927103931805729773371551165769026437583504585754211526157427897245368948839675434146369415228110868060125103151864073027661",
+                "1775317877781494942279616826661236569125594590343379370065054550370962077543897451944898412713014588660001754760742187500000000/83147927103931805729773371551165769026437583504585754211526157427897245368948839675434146369415228110868060125103151864073027661"
+              ]
+            ],
+            "status": "excluded",
+            "parents": [
+              {
+                "parent": 83,
+                "edge": 2,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "node": 667,
+      "point": [
+        [
+          "5/12",
+          "0"
+        ],
+        [
+          "2527/8804",
+          "0"
+        ],
+        [
+          "160467723314826947034445331721144908/311571138809085823595523834228515625",
+          "2127007144577002698873560990482432/311571138809085823595523834228515625"
+        ]
+      ],
+      "status": "excluded",
+      "parents": [
+        {
+          "parent": 449,
+          "edge": 0,
+          "destination": 0,
+          "status": "excluded",
+          "trace": {
+            "node": 449,
+            "point": [
+              [
+                "2/5",
+                "0"
+              ],
+              [
+                "2527/8804",
+                "0"
+              ],
+              [
+                "2265575921669743370324675607399134672963936/7793491154356952392845414578914642333984375",
+                "-15320933579637383368836605044133286614912/1558698230871390478569082915782928466796875"
+              ]
+            ],
+            "status": "excluded",
+            "parents": [
+              {
+                "parent": 228,
+                "edge": 0,
+                "destination": 1,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 231,
+                "edge": 0,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 231,
+                "edge": 1,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 236,
+                "edge": 0,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 236,
+                "edge": 1,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 237,
+                "edge": 0,
+                "destination": 1,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 237,
+                "edge": 1,
+                "destination": 1,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 240,
+                "edge": 0,
+                "destination": 2,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 240,
+                "edge": 1,
+                "destination": 2,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 270,
+                "edge": 0,
+                "destination": 1,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 270,
+                "edge": 1,
+                "destination": 1,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 271,
+                "edge": 0,
+                "destination": 2,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 272,
+                "edge": 0,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 272,
+                "edge": 1,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "node": 676,
+      "point": [
+        [
+          "1685/2356",
+          "0"
+        ],
+        [
+          "1887/6674",
+          "0"
+        ],
+        [
+          "14675187310265392380904595750377111528832/52639049773084779339842498302459716796875",
+          "242131823634631969651318535379424264192/52639049773084779339842498302459716796875"
+        ]
+      ],
+      "status": "excluded",
+      "parents": [
+        {
+          "parent": 475,
+          "edge": 0,
+          "destination": 1,
+          "status": "excluded",
+          "trace": {
+            "node": 475,
+            "point": [
+              [
+                "671/1685",
+                "0"
+              ],
+              [
+                "1887/6674",
+                "0"
+              ],
+              [
+                "4114798162729468948372205608933276914784657464433061902472845482367973504/2901053973607443648532527826011168496778804228850640356540679931640625",
+                "-191420340780756962294597357340590643584104388651835291631244045985972736/2901053973607443648532527826011168496778804228850640356540679931640625"
+              ]
+            ],
+            "status": "excluded",
+            "parents": [
+              {
+                "parent": 251,
+                "edge": 2,
+                "destination": 1,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 259,
+                "edge": 3,
+                "destination": 2,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 273,
+                "edge": 2,
+                "destination": 2,
+                "status": "outside_parent_domain"
+              }
+            ]
+          }
+        },
+        {
+          "parent": 476,
+          "edge": 0,
+          "destination": 0,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 479,
+          "edge": 0,
+          "destination": 1,
+          "status": "outside_parent_domain"
+        }
+      ]
+    },
+    {
+      "node": 692,
+      "point": [
+        [
+          "671/2356",
+          "0"
+        ],
+        [
+          "1685/2356",
+          "0"
+        ],
+        [
+          "5505016/9765625",
+          "0"
+        ]
+      ],
+      "status": "excluded",
+      "parents": [
+        {
+          "parent": 268,
+          "edge": 2,
+          "destination": 0,
+          "status": "excluded",
+          "trace": {
+            "node": 268,
+            "point": [
+              [
+                "671/1685",
+                "0"
+              ],
+              [
+                "671/2356",
+                "0"
+              ],
+              [
+                "2446141259070605742187500/7588912007343326034619453",
+                "45766357073802421875000/7588912007343326034619453"
+              ]
+            ],
+            "status": "excluded",
+            "parents": [
+              {
+                "parent": 101,
+                "edge": 0,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 117,
+                "edge": 0,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 121,
+                "edge": 0,
+                "destination": 1,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 158,
+                "edge": 0,
+                "destination": 1,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 167,
+                "edge": 0,
+                "destination": 2,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 187,
+                "edge": 1,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 365,
+                "edge": 0,
+                "destination": 1,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 403,
+                "edge": 0,
+                "destination": 2,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 437,
+                "edge": 0,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 450,
+                "edge": 0,
+                "destination": 1,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 453,
+                "edge": 0,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 461,
+                "edge": 0,
+                "destination": 1,
+                "status": "outside_parent_domain"
+              },
+              {
+                "parent": 481,
+                "edge": 0,
+                "destination": 0,
+                "status": "outside_parent_domain"
+              }
+            ]
+          }
+        },
+        {
+          "parent": 269,
+          "edge": 3,
+          "destination": 1,
+          "status": "outside_parent_domain"
+        }
+      ]
+    },
+    {
+      "node": 736,
+      "point": [
+        [
+          "24/43",
+          "0"
+        ],
+        [
+          "24/67",
+          "0"
+        ],
+        [
+          "54875873536/152587890625",
+          "0"
+        ]
+      ],
+      "status": "excluded",
+      "parents": [
+        {
+          "parent": 3,
+          "edge": 3,
+          "destination": 0,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 131,
+          "edge": 0,
+          "destination": 1,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 132,
+          "edge": 0,
+          "destination": 0,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 241,
+          "edge": 0,
+          "destination": 1,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 242,
+          "edge": 0,
+          "destination": 0,
+          "status": "outside_parent_domain"
+        },
+        {
+          "parent": 411,
+          "edge": 2,
+          "destination": 0,
+          "status": "outside_parent_domain"
+        }
+      ]
+    }
+  ]
+}

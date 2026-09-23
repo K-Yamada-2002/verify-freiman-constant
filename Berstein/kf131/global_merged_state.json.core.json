@@ -1,0 +1,39 @@
+{
+  "types": 627191,
+  "retained_rules": 394323,
+  "types_with_multiple_rules": 47124,
+  "maximum_rules_per_type": 317,
+  "supported_nodes": [],
+  "scope": "all retained rules; no floating-point negative filters applied",
+  "output_sha256": "7190251570a14cda081a23230188873b9cc86817cd9b6221f714c9d83c1af08a",
+  "sources": [
+    {
+      "path": "/tmp/kf131_global_return_runs/stage_02.json.catalog.json",
+      "sha256": "95b958321548f7a10fbdc17d6f63853a5520d072c4af14cc44c4dbc7ca98e09b"
+    },
+    {
+      "path": "/tmp/kf131_global_return_runs/stage_01.json.catalog.json",
+      "sha256": "bf2f355bc1635be3dbfc3c4494d2256cd9d03fdc085cc570871c3e66925375af"
+    },
+    {
+      "path": "/tmp/kf131_global_cycle/stage_01.json.catalog.json",
+      "sha256": "123f2e7e62d34b89963be7145479f2c06e798e9da583615d4662240e34cdd6e9"
+    },
+    {
+      "path": "/tmp/kf131_global_cycle/stage_02.json.catalog.json",
+      "sha256": "9f93bef597078a44fdf120cb51617c9728e09e2de17905df83943a44d69774f7"
+    },
+    {
+      "path": "/tmp/kf131_global_first/stage_02.json.catalog.json",
+      "sha256": "ebccd1d5f0e5b2396968b462afdd1f195cd889f75a7159d481969e015312dfdc"
+    },
+    {
+      "path": "/tmp/kf131_global_first/stage_03.json.catalog.json",
+      "sha256": "84f292e265d75f2d8a2204569c0495a5ca47402fbf92597cd886c2340e90454f"
+    },
+    {
+      "path": "/tmp/kf131_global_first/stage_01.json.catalog.json",
+      "sha256": "c16f36d41eb6b222651f386ecde8a793f7e66a7684a1f7e9a335b27d64841e6b"
+    }
+  ]
+}

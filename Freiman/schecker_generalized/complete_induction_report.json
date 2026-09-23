@@ -1,0 +1,199 @@
+{
+  "status": "not closed; complete finite menu excluded, universal semidecision remains open",
+  "completed_date_jst": "2026-09-23",
+  "python_version": "3.9.7",
+  "target": "All full hulls A_n=(3211(313121)^n3 | 4322(313121)^n), n>=0",
+  "guarantee": "If an equivalent finite certificate accepted by the current verifier exists, unbounded fair continuation with sufficient resources eventually finds one.",
+  "finite_library": {
+    "types": 5713,
+    "domains": 5443,
+    "offers": 5435,
+    "offer_domains": 2019,
+    "guard_layouts": 8,
+    "source_files": [
+      "frontier_reduced_eleven.json",
+      "frontier_final.json",
+      "frontier_recipe_eight.json",
+      "frontier_policy_eight.json"
+    ],
+    "sources": [
+      {
+        "proof_hash": "3820ba837ccc09d2eca65ee91515aca1300aabcb0824bb1418df7c0ccb90b9f1",
+        "nodes": 2890,
+        "verified_local": 1082,
+        "failed": 0
+      },
+      {
+        "proof_hash": "8f5a34aefce92c48ed49d591f42c5125b1805598f875d825bc26c1b73b7932a2",
+        "nodes": 2851,
+        "verified_local": 1067,
+        "failed": 0
+      },
+      {
+        "proof_hash": "32c86e6d4d12fc8427a01f15d54efcfac420c5edc370fbddcca2e6eee3facf5d",
+        "nodes": 2984,
+        "verified_local": 1106,
+        "failed": 0
+      },
+      {
+        "proof_hash": "e3a586fa75eb1a63906ef76540d05742a579f84bc527210991fb7773177380d9",
+        "nodes": 2941,
+        "verified_local": 1087,
+        "failed": 0
+      }
+    ],
+    "scope": "all chains of saved offers on the exact same domain; all saved destination subsets; all saved guard layouts",
+    "result": {
+      "finite_menu_exhausted": true,
+      "remaining_candidates": 0,
+      "eliminated": 5713,
+      "steps": 7626,
+      "pending": 0,
+      "surviving_root_options": {
+        "zero": [],
+        "positive": []
+      },
+      "closed_in_this_menu": false
+    },
+    "audit": {
+      "bank_hash": "01a080c98d870a37f130bbcb821040450b276f1df78e0f5cd39b3c501c226b12",
+      "eliminated_replayed": 5713,
+      "surviving_rules_replayed": 0,
+      "failed": 0,
+      "status": "exact greatest fixed point of this finite menu; no conclusion about larger menus"
+    }
+  },
+  "first_run": {
+    "status": "no proof found; exhaustive search remains open",
+    "stop": "epoch limit; search remains open",
+    "epochs": 8000,
+    "epochs_this_run": 8000,
+    "elapsed_search_seconds": 135.810539541,
+    "finite_library": {
+      "finite_menu_exhausted": true,
+      "remaining_candidates": 0,
+      "eliminated": 5713,
+      "steps": 7626,
+      "pending": 0,
+      "surviving_root_options": {
+        "zero": [],
+        "positive": []
+      },
+      "closed_in_this_menu": false
+    },
+    "finite_scope": "all chains of saved offers on the exact same domain; all saved destination subsets; all saved guard layouts",
+    "finite_audit": {
+      "bank_hash": "01a080c98d870a37f130bbcb821040450b276f1df78e0f5cd39b3c501c226b12",
+      "eliminated_replayed": 5713,
+      "surviving_rules_replayed": 0,
+      "failed": 0,
+      "status": "exact greatest fixed point of this finite menu; no conclusion about larger menus"
+    },
+    "exhaustive": {
+      "next_code": "2048000",
+      "counts": {
+        "malformed": 2046132,
+        "rejected": 1868,
+        "accepted": 0
+      }
+    },
+    "engine_hash": "d47d44baf94f2089ddb78dc0521596ddf469f23ce3f1847fc54f55decdbf47d4",
+    "bank_hash": "01a080c98d870a37f130bbcb821040450b276f1df78e0f5cd39b3c501c226b12",
+    "relative_completeness": "with unbounded continuation, every finite certificate in the grammar is eventually checked",
+    "verification": null
+  },
+  "resumed_run": {
+    "status": "no proof found; exhaustive search remains open",
+    "stop": "epoch limit; search remains open",
+    "epochs": 8032,
+    "epochs_this_run": 32,
+    "elapsed_search_seconds": 0.03469737499999859,
+    "finite_library": {
+      "finite_menu_exhausted": true,
+      "remaining_candidates": 0,
+      "eliminated": 5713,
+      "steps": 7626,
+      "pending": 0,
+      "surviving_root_options": {
+        "zero": [],
+        "positive": []
+      },
+      "closed_in_this_menu": false
+    },
+    "finite_scope": "all chains of saved offers on the exact same domain; all saved destination subsets; all saved guard layouts",
+    "finite_audit": {
+      "bank_hash": "01a080c98d870a37f130bbcb821040450b276f1df78e0f5cd39b3c501c226b12",
+      "eliminated_replayed": 5713,
+      "surviving_rules_replayed": 0,
+      "failed": 0,
+      "status": "exact greatest fixed point of this finite menu; no conclusion about larger menus"
+    },
+    "exhaustive": {
+      "next_code": "2056192",
+      "counts": {
+        "malformed": 2054324,
+        "rejected": 1868,
+        "accepted": 0
+      }
+    },
+    "engine_hash": "d47d44baf94f2089ddb78dc0521596ddf469f23ce3f1847fc54f55decdbf47d4",
+    "bank_hash": "01a080c98d870a37f130bbcb821040450b276f1df78e0f5cd39b3c501c226b12",
+    "relative_completeness": "with unbounded continuation, every finite certificate in the grammar is eventually checked",
+    "verification": null
+  },
+  "resume_verification": {
+    "status": "same-engine restoration and independent replay agree",
+    "finite_state_roundtrip": true,
+    "finite_state_unchanged": true,
+    "enumeration_state_roundtrip": true,
+    "enumeration_replay_equal": true,
+    "next_code_before": "2048000",
+    "next_code_after": "2056192",
+    "additional_candidates": 8192,
+    "additional_epochs": 32,
+    "counts_before": {
+      "malformed": 2046132,
+      "rejected": 1868,
+      "accepted": 0
+    },
+    "counts_after": {
+      "malformed": 2054324,
+      "rejected": 1868,
+      "accepted": 0
+    },
+    "engine_hash": "d47d44baf94f2089ddb78dc0521596ddf469f23ce3f1847fc54f55decdbf47d4",
+    "bank_hash": "01a080c98d870a37f130bbcb821040450b276f1df78e0f5cd39b3c501c226b12",
+    "final_state_sha256": "8e76e32c7002cd52025085572a08062e9d4245335e4e5009f6a739687ef1e6bf"
+  },
+  "exhaustive": {
+    "next_code": "2056192",
+    "counts": {
+      "malformed": 2054324,
+      "rejected": 1868,
+      "accepted": 0
+    },
+    "max_completed_description_bits": 20,
+    "note": "Most bit strings are malformed; this count is not a count of distinct mathematical proof strategies."
+  },
+  "codec_roundtrip": {
+    "source": "frontier_compacted.json",
+    "source_proof_hash": "27617115843acdc30f6c0f1e5d02d175c4d50fb5fb4ddc59298301b417089feb",
+    "restored_proof_hash": "27617115843acdc30f6c0f1e5d02d175c4d50fb5fb4ddc59298301b417089feb",
+    "proof_core_equal": true,
+    "encoding_stable": true,
+    "index_bijection_verified": true,
+    "encoded_bits": 3995962,
+    "encoding_sha256": "3d0db7ac5b1c099c8ce1a55c4eabeb015260b55506e23890953bcac6e29b19c2",
+    "nodes": 2848,
+    "status": "codec roundtrip only; source remains an open partial strategy"
+  },
+  "tests": {
+    "passed": 29,
+    "failed": 0,
+    "new_tests": 12,
+    "command": "python3 -m unittest test_complete_induction test_piecewise_charts test_frontier_reduction test_rule_reuse"
+  },
+  "engine_hash": "d47d44baf94f2089ddb78dc0521596ddf469f23ce3f1847fc54f55decdbf47d4",
+  "bank_hash": "01a080c98d870a37f130bbcb821040450b276f1df78e0f5cd39b3c501c226b12",
+  "saved_state": "complete_induction_run.state.json"
+}

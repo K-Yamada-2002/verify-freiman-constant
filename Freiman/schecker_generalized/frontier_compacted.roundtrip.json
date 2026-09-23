@@ -1,0 +1,36 @@
+{
+  "status": "same-engine full state restored exactly",
+  "unordered_fields": [
+    "game.permanent_rejections"
+  ],
+  "source_graph": "frontier_final.json",
+  "certificate_proof_hash": "27617115843acdc30f6c0f1e5d02d175c4d50fb5fb4ddc59298301b417089feb",
+  "engine_hash": "36226bd078bc75bf8032b78b11bd20f8013b02e03f3d6b9eebb5cfdf822d7fb0",
+  "state_sha256": "e75392bd42481997e46c374df038827b2e313c47d5dfe9ec4d68fd3357fca915",
+  "configuration_equal": true,
+  "full_state_equal": true,
+  "queue_order_equal": true,
+  "certificate_equal": true,
+  "endpoint_templates": 48,
+  "counts": {
+    "nodes": 2848,
+    "local": 1064,
+    "open": 1784,
+    "closed_supported_types": 0
+  },
+  "search": {
+    "registered": 2848,
+    "reachable": 2848,
+    "unresolved": 1784,
+    "rejected": 0,
+    "steps": 0,
+    "parent_repairs": 0,
+    "stop": "not started",
+    "closed_candidate": false
+  },
+  "closed_supported_types": 0,
+  "verification": {
+    "closed": false,
+    "reason": "node 2255: unresolved type"
+  }
+}

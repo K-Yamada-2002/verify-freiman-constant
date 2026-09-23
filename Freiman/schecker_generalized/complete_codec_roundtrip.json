@@ -1,0 +1,12 @@
+{
+  "source": "frontier_compacted.json",
+  "source_proof_hash": "27617115843acdc30f6c0f1e5d02d175c4d50fb5fb4ddc59298301b417089feb",
+  "restored_proof_hash": "27617115843acdc30f6c0f1e5d02d175c4d50fb5fb4ddc59298301b417089feb",
+  "proof_core_equal": true,
+  "encoding_stable": true,
+  "index_bijection_verified": true,
+  "encoded_bits": 3995962,
+  "encoding_sha256": "3d0db7ac5b1c099c8ce1a55c4eabeb015260b55506e23890953bcac6e29b19c2",
+  "nodes": 2848,
+  "status": "codec roundtrip only; source remains an open partial strategy"
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "menu": 2,
+    "memory": 2,
+    "bins": 72,
+    "base": "0.96",
+    "variants": 4,
+    "root_fraction": 0.25,
+    "rounds": 2,
+    "max_types": 30000
+  },
+  {
+    "menu": 3,
+    "memory": 2,
+    "bins": 24,
+    "base": "0.88",
+    "variants": 4,
+    "root_fraction": 0.25,
+    "rounds": 2,
+    "max_types": 12000
+  },
+  {
+    "menu": 2,
+    "memory": 3,
+    "bins": 36,
+    "base": "0.92",
+    "variants": 4,
+    "root_fraction": 0.25,
+    "rounds": 2,
+    "max_types": 30000
+  }
+]

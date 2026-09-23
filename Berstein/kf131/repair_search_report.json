@@ -1,0 +1,1188 @@
+{
+  "status": "no closed certificate obtained",
+  "stages": [
+    {
+      "settings": {
+        "max_step": 3,
+        "rounds": 2,
+        "pool": "extrema",
+        "grid_power": 4,
+        "max_types": 12000,
+        "menu": 3,
+        "memory": 2,
+        "bins": 24,
+        "base": "0.88",
+        "variants": 4,
+        "root_fraction": 0.25
+      },
+      "graph": "repair_type_graph_m3.json",
+      "stop": "stage time limit; no proof inferred",
+      "elapsed_seconds": 480.027,
+      "parameterized_types": 4064,
+      "endpoint_types": 1604,
+      "locally_covered_candidates": 1675,
+      "open_types": 2389,
+      "mixed_parity_types": 2284,
+      "worklist_completed": false,
+      "used_successors": [
+        {
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "rules": 701
+        },
+        {
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "rules": 462
+        },
+        {
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "rules": 399
+        },
+        {
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "rules": 325
+        },
+        {
+          "suffixes": [
+            "",
+            "2"
+          ],
+          "rules": 114
+        },
+        {
+          "suffixes": [
+            "",
+            "3"
+          ],
+          "rules": 92
+        },
+        {
+          "suffixes": [
+            "11",
+            ""
+          ],
+          "rules": 64
+        },
+        {
+          "suffixes": [
+            "31",
+            ""
+          ],
+          "rules": 46
+        },
+        {
+          "suffixes": [
+            "13",
+            ""
+          ],
+          "rules": 40
+        },
+        {
+          "suffixes": [
+            "13",
+            "3"
+          ],
+          "rules": 40
+        },
+        {
+          "suffixes": [
+            "1",
+            "1"
+          ],
+          "rules": 32
+        },
+        {
+          "suffixes": [
+            "2",
+            "13"
+          ],
+          "rules": 25
+        },
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "rules": 24
+        },
+        {
+          "suffixes": [
+            "21",
+            ""
+          ],
+          "rules": 24
+        },
+        {
+          "suffixes": [
+            "32",
+            ""
+          ],
+          "rules": 21
+        },
+        {
+          "suffixes": [
+            "3",
+            "3"
+          ],
+          "rules": 20
+        },
+        {
+          "suffixes": [
+            "2",
+            "1"
+          ],
+          "rules": 19
+        },
+        {
+          "suffixes": [
+            "33",
+            "1"
+          ],
+          "rules": 17
+        },
+        {
+          "suffixes": [
+            "3",
+            "1"
+          ],
+          "rules": 15
+        },
+        {
+          "suffixes": [
+            "23",
+            "1"
+          ],
+          "rules": 13
+        },
+        {
+          "suffixes": [
+            "211",
+            ""
+          ],
+          "rules": 13
+        },
+        {
+          "suffixes": [
+            "2",
+            "11"
+          ],
+          "rules": 12
+        },
+        {
+          "suffixes": [
+            "2",
+            "21"
+          ],
+          "rules": 12
+        },
+        {
+          "suffixes": [
+            "21",
+            "2"
+          ],
+          "rules": 12
+        },
+        {
+          "suffixes": [
+            "13",
+            "1"
+          ],
+          "rules": 11
+        },
+        {
+          "suffixes": [
+            "2",
+            "3"
+          ],
+          "rules": 11
+        },
+        {
+          "suffixes": [
+            "3",
+            "2"
+          ],
+          "rules": 11
+        },
+        {
+          "suffixes": [
+            "2",
+            "23"
+          ],
+          "rules": 11
+        },
+        {
+          "suffixes": [
+            "32",
+            "3"
+          ],
+          "rules": 9
+        },
+        {
+          "suffixes": [
+            "23",
+            "2"
+          ],
+          "rules": 8
+        },
+        {
+          "suffixes": [
+            "3",
+            "23"
+          ],
+          "rules": 8
+        },
+        {
+          "suffixes": [
+            "2",
+            "12"
+          ],
+          "rules": 8
+        },
+        {
+          "suffixes": [
+            "23",
+            "3"
+          ],
+          "rules": 7
+        },
+        {
+          "suffixes": [
+            "32",
+            "1"
+          ],
+          "rules": 7
+        },
+        {
+          "suffixes": [
+            "2",
+            "32"
+          ],
+          "rules": 6
+        },
+        {
+          "suffixes": [
+            "111",
+            ""
+          ],
+          "rules": 6
+        },
+        {
+          "suffixes": [
+            "21",
+            "1"
+          ],
+          "rules": 6
+        },
+        {
+          "suffixes": [
+            "3",
+            "33"
+          ],
+          "rules": 6
+        },
+        {
+          "suffixes": [
+            "",
+            "11"
+          ],
+          "rules": 5
+        },
+        {
+          "suffixes": [
+            "31",
+            "3"
+          ],
+          "rules": 5
+        },
+        {
+          "suffixes": [
+            "3",
+            "31"
+          ],
+          "rules": 5
+        },
+        {
+          "suffixes": [
+            "11",
+            "2"
+          ],
+          "rules": 5
+        },
+        {
+          "suffixes": [
+            "33",
+            "2"
+          ],
+          "rules": 5
+        },
+        {
+          "suffixes": [
+            "11",
+            "1"
+          ],
+          "rules": 5
+        },
+        {
+          "suffixes": [
+            "13",
+            "2"
+          ],
+          "rules": 4
+        },
+        {
+          "suffixes": [
+            "11",
+            "3"
+          ],
+          "rules": 4
+        },
+        {
+          "suffixes": [
+            "3",
+            "13"
+          ],
+          "rules": 4
+        },
+        {
+          "suffixes": [
+            "2",
+            "22"
+          ],
+          "rules": 4
+        },
+        {
+          "suffixes": [
+            "1",
+            "3"
+          ],
+          "rules": 4
+        },
+        {
+          "suffixes": [
+            "121",
+            ""
+          ],
+          "rules": 3
+        },
+        {
+          "suffixes": [
+            "33",
+            "3"
+          ],
+          "rules": 3
+        },
+        {
+          "suffixes": [
+            "2",
+            "31"
+          ],
+          "rules": 3
+        },
+        {
+          "suffixes": [
+            "132",
+            ""
+          ],
+          "rules": 3
+        },
+        {
+          "suffixes": [
+            "3",
+            "11"
+          ],
+          "rules": 3
+        },
+        {
+          "suffixes": [
+            "23",
+            ""
+          ],
+          "rules": 3
+        },
+        {
+          "suffixes": [
+            "31",
+            "2"
+          ],
+          "rules": 2
+        },
+        {
+          "suffixes": [
+            "12",
+            ""
+          ],
+          "rules": 2
+        },
+        {
+          "suffixes": [
+            "",
+            "21"
+          ],
+          "rules": 2
+        },
+        {
+          "suffixes": [
+            "321",
+            ""
+          ],
+          "rules": 2
+        },
+        {
+          "suffixes": [
+            "1",
+            "2"
+          ],
+          "rules": 2
+        },
+        {
+          "suffixes": [
+            "3",
+            "21"
+          ],
+          "rules": 2
+        },
+        {
+          "suffixes": [
+            "31",
+            "1"
+          ],
+          "rules": 2
+        },
+        {
+          "suffixes": [
+            "1",
+            "12"
+          ],
+          "rules": 1
+        },
+        {
+          "suffixes": [
+            "32",
+            "2"
+          ],
+          "rules": 1
+        },
+        {
+          "suffixes": [
+            "33",
+            ""
+          ],
+          "rules": 1
+        },
+        {
+          "suffixes": [
+            "21",
+            "3"
+          ],
+          "rules": 1
+        },
+        {
+          "suffixes": [
+            "22",
+            "3"
+          ],
+          "rules": 1
+        }
+      ],
+      "repair": {
+        "registered_types": 6110,
+        "rejected_types": 998,
+        "parent_replans": 988,
+        "processed_tasks": 4000,
+        "scheduled_tasks": 7636,
+        "cancelled_tasks": 1243,
+        "expanded_contacts": 76333,
+        "reachable_types": 4064,
+        "open_types": 2389,
+        "closed_candidate": false,
+        "limit_reached": false,
+        "finished": false,
+        "root_rejected": false,
+        "node_limit": 12000,
+        "variants": 4,
+        "root_fraction": 0.25
+      },
+      "verified_seed": [
+        {
+          "a": "289817483/224268603",
+          "b": "122789/897074412",
+          "decimal": "1.2927112950710430197064"
+        },
+        {
+          "a": "55187390573/42696428601",
+          "b": "4219220/42696428601",
+          "decimal": "1.2928653455773223684537"
+        }
+      ],
+      "verified_local_root": {
+        "node": 0,
+        "children": 2,
+        "dependencies": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "proof_hash": "0d65dbefd41c57ec4c73f1f5e2efba51d320a994a77861923b1359c280dfc65a",
+      "closed_core_types": 0
+    },
+    {
+      "settings": {
+        "max_step": 3,
+        "rounds": 2,
+        "pool": "extrema",
+        "grid_power": 4,
+        "max_types": 10000,
+        "menu": 2,
+        "memory": 3,
+        "bins": 36,
+        "base": "0.92",
+        "variants": 4,
+        "root_fraction": 0.25
+      },
+      "graph": "repair_type_graph_memory3.json",
+      "parameterized_types": 5248,
+      "endpoint_types": 1573,
+      "locally_covered_candidates": 1910,
+      "open_types": 3338,
+      "mixed_parity_types": 2992,
+      "worklist_completed": false,
+      "used_successors": [
+        {
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "rules": 989
+        },
+        {
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "rules": 780
+        },
+        {
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "rules": 651
+        },
+        {
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "rules": 480
+        },
+        {
+          "suffixes": [
+            "",
+            "2"
+          ],
+          "rules": 167
+        },
+        {
+          "suffixes": [
+            "",
+            "3"
+          ],
+          "rules": 125
+        },
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "rules": 51
+        },
+        {
+          "suffixes": [
+            "11",
+            ""
+          ],
+          "rules": 47
+        },
+        {
+          "suffixes": [
+            "3",
+            "2"
+          ],
+          "rules": 43
+        },
+        {
+          "suffixes": [
+            "1",
+            "1"
+          ],
+          "rules": 39
+        },
+        {
+          "suffixes": [
+            "3",
+            "3"
+          ],
+          "rules": 34
+        },
+        {
+          "suffixes": [
+            "2",
+            "13"
+          ],
+          "rules": 31
+        },
+        {
+          "suffixes": [
+            "21",
+            ""
+          ],
+          "rules": 23
+        },
+        {
+          "suffixes": [
+            "21",
+            "1"
+          ],
+          "rules": 22
+        },
+        {
+          "suffixes": [
+            "211",
+            ""
+          ],
+          "rules": 22
+        },
+        {
+          "suffixes": [
+            "2",
+            "1"
+          ],
+          "rules": 19
+        },
+        {
+          "suffixes": [
+            "1",
+            "2"
+          ],
+          "rules": 15
+        },
+        {
+          "suffixes": [
+            "31",
+            ""
+          ],
+          "rules": 15
+        },
+        {
+          "suffixes": [
+            "32",
+            ""
+          ],
+          "rules": 14
+        },
+        {
+          "suffixes": [
+            "111",
+            ""
+          ],
+          "rules": 13
+        },
+        {
+          "suffixes": [
+            "1",
+            "3"
+          ],
+          "rules": 13
+        },
+        {
+          "suffixes": [
+            "2",
+            "21"
+          ],
+          "rules": 13
+        },
+        {
+          "suffixes": [
+            "23",
+            "1"
+          ],
+          "rules": 13
+        },
+        {
+          "suffixes": [
+            "21",
+            "2"
+          ],
+          "rules": 12
+        },
+        {
+          "suffixes": [
+            "32",
+            "1"
+          ],
+          "rules": 11
+        },
+        {
+          "suffixes": [
+            "",
+            "11"
+          ],
+          "rules": 11
+        },
+        {
+          "suffixes": [
+            "3",
+            "13"
+          ],
+          "rules": 9
+        },
+        {
+          "suffixes": [
+            "3",
+            "1"
+          ],
+          "rules": 9
+        },
+        {
+          "suffixes": [
+            "2",
+            "3"
+          ],
+          "rules": 9
+        },
+        {
+          "suffixes": [
+            "1",
+            "11"
+          ],
+          "rules": 8
+        },
+        {
+          "suffixes": [
+            "23",
+            "2"
+          ],
+          "rules": 8
+        },
+        {
+          "suffixes": [
+            "12",
+            ""
+          ],
+          "rules": 6
+        },
+        {
+          "suffixes": [
+            "2",
+            "11"
+          ],
+          "rules": 6
+        },
+        {
+          "suffixes": [
+            "31",
+            "1"
+          ],
+          "rules": 6
+        },
+        {
+          "suffixes": [
+            "11",
+            "2"
+          ],
+          "rules": 6
+        },
+        {
+          "suffixes": [
+            "3",
+            "21"
+          ],
+          "rules": 6
+        },
+        {
+          "suffixes": [
+            "22",
+            "1"
+          ],
+          "rules": 6
+        },
+        {
+          "suffixes": [
+            "11",
+            "1"
+          ],
+          "rules": 5
+        },
+        {
+          "suffixes": [
+            "13",
+            ""
+          ],
+          "rules": 5
+        },
+        {
+          "suffixes": [
+            "33",
+            "3"
+          ],
+          "rules": 5
+        },
+        {
+          "suffixes": [
+            "11",
+            "3"
+          ],
+          "rules": 5
+        },
+        {
+          "suffixes": [
+            "23",
+            ""
+          ],
+          "rules": 5
+        },
+        {
+          "suffixes": [
+            "33",
+            ""
+          ],
+          "rules": 4
+        },
+        {
+          "suffixes": [
+            "32",
+            "3"
+          ],
+          "rules": 4
+        },
+        {
+          "suffixes": [
+            "22",
+            "3"
+          ],
+          "rules": 4
+        },
+        {
+          "suffixes": [
+            "2",
+            "22"
+          ],
+          "rules": 4
+        },
+        {
+          "suffixes": [
+            "31",
+            "3"
+          ],
+          "rules": 4
+        },
+        {
+          "suffixes": [
+            "32",
+            "2"
+          ],
+          "rules": 4
+        },
+        {
+          "suffixes": [
+            "1",
+            "13"
+          ],
+          "rules": 3
+        },
+        {
+          "suffixes": [
+            "1",
+            "21"
+          ],
+          "rules": 3
+        },
+        {
+          "suffixes": [
+            "33",
+            "1"
+          ],
+          "rules": 3
+        },
+        {
+          "suffixes": [
+            "21",
+            "3"
+          ],
+          "rules": 3
+        },
+        {
+          "suffixes": [
+            "3",
+            "31"
+          ],
+          "rules": 3
+        },
+        {
+          "suffixes": [
+            "313",
+            ""
+          ],
+          "rules": 3
+        },
+        {
+          "suffixes": [
+            "1",
+            "31"
+          ],
+          "rules": 2
+        },
+        {
+          "suffixes": [
+            "23",
+            "3"
+          ],
+          "rules": 2
+        },
+        {
+          "suffixes": [
+            "22",
+            ""
+          ],
+          "rules": 2
+        },
+        {
+          "suffixes": [
+            "2",
+            "32"
+          ],
+          "rules": 2
+        },
+        {
+          "suffixes": [
+            "1",
+            "12"
+          ],
+          "rules": 2
+        },
+        {
+          "suffixes": [
+            "33",
+            "2"
+          ],
+          "rules": 2
+        },
+        {
+          "suffixes": [
+            "132",
+            ""
+          ],
+          "rules": 2
+        },
+        {
+          "suffixes": [
+            "3",
+            "23"
+          ],
+          "rules": 2
+        },
+        {
+          "suffixes": [
+            "311",
+            ""
+          ],
+          "rules": 2
+        },
+        {
+          "suffixes": [
+            "3",
+            "11"
+          ],
+          "rules": 2
+        },
+        {
+          "suffixes": [
+            "213",
+            ""
+          ],
+          "rules": 1
+        },
+        {
+          "suffixes": [
+            "123",
+            ""
+          ],
+          "rules": 1
+        },
+        {
+          "suffixes": [
+            "12",
+            "2"
+          ],
+          "rules": 1
+        },
+        {
+          "suffixes": [
+            "12",
+            "3"
+          ],
+          "rules": 1
+        },
+        {
+          "suffixes": [
+            "3",
+            "32"
+          ],
+          "rules": 1
+        },
+        {
+          "suffixes": [
+            "12",
+            "1"
+          ],
+          "rules": 1
+        }
+      ],
+      "root_available": true,
+      "repair": {
+        "registered_types": 9999,
+        "rejected_types": 1861,
+        "parent_replans": 2087,
+        "processed_tasks": 7017,
+        "scheduled_tasks": 17017,
+        "cancelled_tasks": 6737,
+        "expanded_contacts": 217663,
+        "reachable_types": 5248,
+        "open_types": 3338,
+        "closed_candidate": false,
+        "limit_reached": true,
+        "finished": true,
+        "root_rejected": false,
+        "node_limit": 10000,
+        "variants": 4,
+        "root_fraction": 0.25
+      },
+      "elapsed_seconds": 125.297,
+      "verified_seed": [
+        {
+          "a": "10957122818/8474857599",
+          "b": "42427/169497151980",
+          "decimal": "1.2928983641672767177066"
+        },
+        {
+          "a": "3116196191/2410203066",
+          "b": "1369/803401022",
+          "decimal": "1.2929239126917409338048"
+        }
+      ],
+      "verified_local_root": {
+        "node": 0,
+        "children": 2,
+        "dependencies": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "proof_hash": "524c4338228b0b6f3b61b99d0f866ec7b754efaa4be353c41bfd04099a34f4ee",
+      "closed_core_types": 0
+    }
+  ],
+  "source_sha256": {
+    "repair_type_search.cpp": "ff7671a0a4ee024c75503ad040f5a740384e8249ef73969cea1d9eeee3d5e68d",
+    "finite_cover_game.hpp": "5d2a9c44ea21aacd5f67186b5e51c223b615ae2c2fd62ba6c00d28414370273d",
+    "adaptive_type_search.cpp": "9b413c4da81c74c29db54ce09c7139eff98c9498deb6c64585cd29b34a3db06b",
+    "verify_type_graph.py": "09e04133fe0e26cae30fd2e99109baee90cfdff48b1bb16f9b93d2dbcb558748",
+    "anchored_geometry.py": "3d38fbf10ad0d0fd09a3d10c6649f4f87a19c2909de45c9f2cdb14ee5a974d62",
+    "exact.py": "a0b75439d0e39a47f828dc2ee7ae8cdf7c7a9b5ff4f19e2786a7fb1560cbd4d7"
+  },
+  "initial_pilots": [
+    {
+      "name": "coarse_10k",
+      "settings": {
+        "menu": 2,
+        "memory": 2,
+        "bins": 24,
+        "base": "0.88",
+        "rounds": 3,
+        "root_fraction": 1
+      },
+      "repair": {
+        "registered_types": 9998,
+        "rejected_types": 1465,
+        "parent_replans": 1713,
+        "processed_tasks": 6788,
+        "expanded_contacts": 228649,
+        "reachable_types": 5614,
+        "open_types": 3271,
+        "closed_candidate": false,
+        "limit_reached": true,
+        "root_rejected": false,
+        "node_limit": 10000,
+        "variants": 4,
+        "root_fraction": 1
+      },
+      "note": "before inactive-branch pruning; discovery statistics only"
+    },
+    {
+      "name": "fine_10k",
+      "settings": {
+        "menu": 2,
+        "memory": 2,
+        "bins": 72,
+        "base": "0.96",
+        "rounds": 2,
+        "root_fraction": 0.25
+      },
+      "repair": {
+        "registered_types": 9996,
+        "rejected_types": 2018,
+        "parent_replans": 2477,
+        "processed_tasks": 7954,
+        "expanded_contacts": 318999,
+        "reachable_types": 26,
+        "open_types": 18,
+        "closed_candidate": false,
+        "limit_reached": true,
+        "root_rejected": false,
+        "node_limit": 10000,
+        "variants": 4,
+        "root_fraction": 0.25
+      },
+      "note": "before inactive-branch pruning; discovery statistics only"
+    }
+  ],
+  "fine_ratio_extended_pilot": {
+    "settings": {
+      "menu": 2,
+      "memory": 2,
+      "bins": 72,
+      "base": "0.96",
+      "rounds": 2,
+      "max_types": 30000
+    },
+    "stop": "600 second time limit",
+    "last_logged_counts": {
+      "processed_tasks": 18000,
+      "registered_types": 20575,
+      "rejected_types": 4997,
+      "parent_replans": 6883
+    },
+    "note": "before periodic checkpoints were added; no candidate proof saved"
+  },
+  "tests": {
+    "existing_python_tests_passed": 33,
+    "new_integration_tests_passed": 4,
+    "finite_game_scenarios": 5,
+    "independent_fixed_point_comparisons": 100
+  }
+}

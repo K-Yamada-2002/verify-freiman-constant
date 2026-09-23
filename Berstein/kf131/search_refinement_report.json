@@ -1,0 +1,2608 @@
+{
+  "date": "2026-09-22",
+  "status": "no closed certificate obtained",
+  "description": "Finite induction discovery; not a numerical check of the interior conjecture.",
+  "provenance": "Each phase preserves the source hashes recorded at its start and the executed binary hash. Source versions changed between phases; the final source snapshot is listed separately.",
+  "phases": [
+    {
+      "name": "dfs",
+      "original_report_sha256": "08fb274f94b0e0811f39706a3f9165a78fcccd6e740ae376c64872407704b30c",
+      "engine_sha256": "ea1868f9a5f955ac46d9d113e798f064f64e45079dc9b45f2d8b0b68b0aef2e2",
+      "status": "no closed certificate obtained",
+      "stages": [
+        {
+          "settings": {
+            "max_step": 3,
+            "rounds": 2,
+            "pool": "extrema",
+            "grid_power": 4,
+            "max_types": 30000,
+            "strategy": "dfs-reuse",
+            "menu": 2,
+            "memory": 2,
+            "bins": 24,
+            "base": "0.88",
+            "variants": 4,
+            "root_fraction": 0.25
+          },
+          "parameterized_types": 766,
+          "endpoint_types": 369,
+          "locally_covered_candidates": 240,
+          "open_types": 526,
+          "mixed_parity_types": 422,
+          "worklist_completed": false,
+          "used_successors": [
+            {
+              "suffixes": [
+                "1",
+                ""
+              ],
+              "rules": 106
+            },
+            {
+              "suffixes": [
+                "2",
+                "2"
+              ],
+              "rules": 70
+            },
+            {
+              "suffixes": [
+                "",
+                "1"
+              ],
+              "rules": 60
+            },
+            {
+              "suffixes": [
+                "2",
+                ""
+              ],
+              "rules": 58
+            },
+            {
+              "suffixes": [
+                "3",
+                ""
+              ],
+              "rules": 50
+            },
+            {
+              "suffixes": [
+                "",
+                "2"
+              ],
+              "rules": 28
+            },
+            {
+              "suffixes": [
+                "11",
+                ""
+              ],
+              "rules": 14
+            },
+            {
+              "suffixes": [
+                "",
+                "3"
+              ],
+              "rules": 13
+            },
+            {
+              "suffixes": [
+                "2",
+                "1"
+              ],
+              "rules": 8
+            },
+            {
+              "suffixes": [
+                "3",
+                "21"
+              ],
+              "rules": 6
+            },
+            {
+              "suffixes": [
+                "21",
+                ""
+              ],
+              "rules": 6
+            },
+            {
+              "suffixes": [
+                "12",
+                "2"
+              ],
+              "rules": 6
+            },
+            {
+              "suffixes": [
+                "32",
+                ""
+              ],
+              "rules": 5
+            },
+            {
+              "suffixes": [
+                "11",
+                "1"
+              ],
+              "rules": 5
+            },
+            {
+              "suffixes": [
+                "33",
+                "2"
+              ],
+              "rules": 4
+            },
+            {
+              "suffixes": [
+                "3",
+                "11"
+              ],
+              "rules": 4
+            },
+            {
+              "suffixes": [
+                "3",
+                "1"
+              ],
+              "rules": 4
+            },
+            {
+              "suffixes": [
+                "21",
+                "3"
+              ],
+              "rules": 4
+            },
+            {
+              "suffixes": [
+                "3",
+                "3"
+              ],
+              "rules": 4
+            },
+            {
+              "suffixes": [
+                "1",
+                "1"
+              ],
+              "rules": 4
+            },
+            {
+              "suffixes": [
+                "1",
+                "3"
+              ],
+              "rules": 3
+            },
+            {
+              "suffixes": [
+                "211",
+                ""
+              ],
+              "rules": 3
+            },
+            {
+              "suffixes": [
+                "1",
+                "2"
+              ],
+              "rules": 3
+            },
+            {
+              "suffixes": [
+                "13",
+                ""
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "",
+                "11"
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "31",
+                "1"
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "1",
+                "13"
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "2",
+                "12"
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "11",
+                "3"
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "1",
+                "21"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "23",
+                "1"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "132",
+                ""
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "22",
+                ""
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "111",
+                ""
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "13",
+                "1"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "2",
+                "3"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "31",
+                "2"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "31",
+                ""
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "11",
+                "2"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "13",
+                "3"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "3",
+                "2"
+              ],
+              "rules": 1
+            }
+          ],
+          "root_available": true,
+          "repair": {
+            "registered_types": 29999,
+            "rejected_types": 14840,
+            "parent_replans": 14840,
+            "processed_tasks": 29923,
+            "scheduled_tasks": 47440,
+            "cancelled_tasks": 16924,
+            "expanded_contacts": 112190,
+            "reachable_types": 766,
+            "open_types": 526,
+            "closed_candidate": false,
+            "limit_reached": true,
+            "finished": true,
+            "root_rejected": false,
+            "node_limit": 30000,
+            "variants": 4,
+            "strategy": "dfs-reuse",
+            "root_fraction": 0.25
+          },
+          "elapsed_seconds": 39.877,
+          "original_graph_path": "/private/tmp/kf131_dfs_runs/stage_01.json",
+          "graph_sha256": "9ace5fe571f6a4cb957553cb96e008e54ae4049720197ae52124442cf3d97187"
+        },
+        {
+          "settings": {
+            "max_step": 3,
+            "rounds": 2,
+            "pool": "extrema",
+            "grid_power": 4,
+            "max_types": 30000,
+            "strategy": "dfs-reuse",
+            "menu": 2,
+            "memory": 3,
+            "bins": 36,
+            "base": "0.92",
+            "variants": 4,
+            "root_fraction": 0.25
+          },
+          "parameterized_types": 1306,
+          "endpoint_types": 600,
+          "locally_covered_candidates": 406,
+          "open_types": 900,
+          "mixed_parity_types": 698,
+          "worklist_completed": false,
+          "used_successors": [
+            {
+              "suffixes": [
+                "1",
+                ""
+              ],
+              "rules": 156
+            },
+            {
+              "suffixes": [
+                "2",
+                ""
+              ],
+              "rules": 124
+            },
+            {
+              "suffixes": [
+                "2",
+                "2"
+              ],
+              "rules": 120
+            },
+            {
+              "suffixes": [
+                "",
+                "1"
+              ],
+              "rules": 107
+            },
+            {
+              "suffixes": [
+                "3",
+                ""
+              ],
+              "rules": 92
+            },
+            {
+              "suffixes": [
+                "",
+                "2"
+              ],
+              "rules": 26
+            },
+            {
+              "suffixes": [
+                "11",
+                ""
+              ],
+              "rules": 20
+            },
+            {
+              "suffixes": [
+                "",
+                "3"
+              ],
+              "rules": 17
+            },
+            {
+              "suffixes": [
+                "2",
+                "13"
+              ],
+              "rules": 15
+            },
+            {
+              "suffixes": [
+                "1",
+                "1"
+              ],
+              "rules": 11
+            },
+            {
+              "suffixes": [
+                "2",
+                "1"
+              ],
+              "rules": 7
+            },
+            {
+              "suffixes": [
+                "21",
+                ""
+              ],
+              "rules": 6
+            },
+            {
+              "suffixes": [
+                "1",
+                "11"
+              ],
+              "rules": 6
+            },
+            {
+              "suffixes": [
+                "3",
+                "3"
+              ],
+              "rules": 6
+            },
+            {
+              "suffixes": [
+                "23",
+                "3"
+              ],
+              "rules": 6
+            },
+            {
+              "suffixes": [
+                "12",
+                "2"
+              ],
+              "rules": 5
+            },
+            {
+              "suffixes": [
+                "2",
+                "3"
+              ],
+              "rules": 4
+            },
+            {
+              "suffixes": [
+                "11",
+                "1"
+              ],
+              "rules": 4
+            },
+            {
+              "suffixes": [
+                "32",
+                "3"
+              ],
+              "rules": 4
+            },
+            {
+              "suffixes": [
+                "21",
+                "3"
+              ],
+              "rules": 3
+            },
+            {
+              "suffixes": [
+                "32",
+                ""
+              ],
+              "rules": 3
+            },
+            {
+              "suffixes": [
+                "",
+                "11"
+              ],
+              "rules": 3
+            },
+            {
+              "suffixes": [
+                "11",
+                "3"
+              ],
+              "rules": 3
+            },
+            {
+              "suffixes": [
+                "3",
+                "11"
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "1",
+                "13"
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "13",
+                ""
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "3",
+                "1"
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "2",
+                "11"
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "3",
+                "23"
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "3",
+                "2"
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "13",
+                "3"
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "1",
+                "3"
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "23",
+                ""
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "121",
+                ""
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "21",
+                "1"
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "1",
+                "2"
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "31",
+                ""
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "2",
+                "32"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "31",
+                "3"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "32",
+                "1"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "2",
+                "12"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "12",
+                "1"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "1",
+                "21"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "1",
+                "22"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "31",
+                "2"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "",
+                "21"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "23",
+                "1"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "132",
+                ""
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "111",
+                ""
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "32",
+                "2"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "21",
+                "2"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "211",
+                ""
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "3",
+                "12"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "112",
+                ""
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "",
+                "111"
+              ],
+              "rules": 1
+            }
+          ],
+          "root_available": true,
+          "repair": {
+            "registered_types": 29999,
+            "rejected_types": 13918,
+            "parent_replans": 13918,
+            "processed_tasks": 28245,
+            "scheduled_tasks": 45572,
+            "cancelled_tasks": 16378,
+            "expanded_contacts": 130791,
+            "reachable_types": 1306,
+            "open_types": 900,
+            "closed_candidate": false,
+            "limit_reached": true,
+            "finished": true,
+            "root_rejected": false,
+            "node_limit": 30000,
+            "variants": 4,
+            "strategy": "dfs-reuse",
+            "root_fraction": 0.25
+          },
+          "elapsed_seconds": 73.022,
+          "original_graph_path": "/private/tmp/kf131_dfs_runs/stage_02.json",
+          "graph_sha256": "fa0fe162eec86ae58cdd62704b68bb1a984d7313adf711201095f60fc770aa66"
+        },
+        {
+          "settings": {
+            "max_step": 3,
+            "rounds": 2,
+            "pool": "extrema",
+            "grid_power": 4,
+            "max_types": 30000,
+            "strategy": "dfs",
+            "menu": 2,
+            "memory": 2,
+            "bins": 72,
+            "base": "0.96",
+            "variants": 4,
+            "root_fraction": 0.25
+          },
+          "parameterized_types": 1520,
+          "endpoint_types": 506,
+          "locally_covered_candidates": 527,
+          "open_types": 993,
+          "mixed_parity_types": 838,
+          "worklist_completed": false,
+          "used_successors": [
+            {
+              "suffixes": [
+                "2",
+                ""
+              ],
+              "rules": 217
+            },
+            {
+              "suffixes": [
+                "",
+                "1"
+              ],
+              "rules": 163
+            },
+            {
+              "suffixes": [
+                "3",
+                ""
+              ],
+              "rules": 160
+            },
+            {
+              "suffixes": [
+                "1",
+                ""
+              ],
+              "rules": 128
+            },
+            {
+              "suffixes": [
+                "",
+                "2"
+              ],
+              "rules": 48
+            },
+            {
+              "suffixes": [
+                "",
+                "3"
+              ],
+              "rules": 29
+            },
+            {
+              "suffixes": [
+                "1",
+                "1"
+              ],
+              "rules": 17
+            },
+            {
+              "suffixes": [
+                "2",
+                "1"
+              ],
+              "rules": 15
+            },
+            {
+              "suffixes": [
+                "11",
+                ""
+              ],
+              "rules": 9
+            },
+            {
+              "suffixes": [
+                "23",
+                "1"
+              ],
+              "rules": 9
+            },
+            {
+              "suffixes": [
+                "2",
+                "13"
+              ],
+              "rules": 8
+            },
+            {
+              "suffixes": [
+                "31",
+                "3"
+              ],
+              "rules": 4
+            },
+            {
+              "suffixes": [
+                "31",
+                "2"
+              ],
+              "rules": 4
+            },
+            {
+              "suffixes": [
+                "1",
+                "31"
+              ],
+              "rules": 3
+            },
+            {
+              "suffixes": [
+                "32",
+                "2"
+              ],
+              "rules": 3
+            },
+            {
+              "suffixes": [
+                "1",
+                "2"
+              ],
+              "rules": 3
+            },
+            {
+              "suffixes": [
+                "11",
+                "2"
+              ],
+              "rules": 3
+            },
+            {
+              "suffixes": [
+                "23",
+                "3"
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "31",
+                ""
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "11",
+                "3"
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "3",
+                "3"
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "32",
+                ""
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "23",
+                ""
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "111",
+                ""
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "21",
+                ""
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "12",
+                ""
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "211",
+                ""
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "21",
+                "3"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "231",
+                ""
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "2",
+                "3"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "13",
+                ""
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "2",
+                "2"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "32",
+                "3"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "1",
+                "3"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "3",
+                "11"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "13",
+                "1"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "",
+                "11"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "11",
+                "1"
+              ],
+              "rules": 1
+            }
+          ],
+          "root_available": true,
+          "repair": {
+            "registered_types": 30000,
+            "rejected_types": 13647,
+            "parent_replans": 13640,
+            "processed_tasks": 27828,
+            "scheduled_tasks": 45913,
+            "cancelled_tasks": 17055,
+            "expanded_contacts": 119559,
+            "reachable_types": 1520,
+            "open_types": 993,
+            "closed_candidate": false,
+            "limit_reached": true,
+            "finished": true,
+            "root_rejected": false,
+            "node_limit": 30000,
+            "variants": 4,
+            "strategy": "dfs",
+            "root_fraction": 0.25
+          },
+          "elapsed_seconds": 49.01,
+          "original_graph_path": "/private/tmp/kf131_dfs_runs/stage_03.json",
+          "graph_sha256": "02e32a0194cde38ced7e72567bb425f0a66fb889121154b42c39bd5854cc91d6"
+        }
+      ],
+      "source_sha256": {
+        "repair_type_search.cpp": "7f4006bc0b93b25895e53faffd66603971f4db65ac95f7880f7008a202cd9633",
+        "finite_cover_game.hpp": "c11605f0bd46bac1e9d42db06f65c9980a48f2c12cef01e57254d7ad31db495c",
+        "adaptive_type_search.cpp": "9b413c4da81c74c29db54ce09c7139eff98c9498deb6c64585cd29b34a3db06b",
+        "verify_type_graph.py": "09e04133fe0e26cae30fd2e99109baee90cfdff48b1bb16f9b93d2dbcb558748",
+        "anchored_geometry.py": "3d38fbf10ad0d0fd09a3d10c6649f4f87a19c2909de45c9f2cdb14ee5a974d62",
+        "exact.py": "a0b75439d0e39a47f828dc2ee7ae8cdf7c7a9b5ff4f19e2786a7fb1560cbd4d7"
+      }
+    },
+    {
+      "name": "filtered",
+      "original_report_sha256": "92469c068abc9ea462f6ca1abd0655ac5c7ba3cfab5f8d9eca93a310dbee3860",
+      "engine_sha256": "413feb78796cd8b9d81d654984db1c86eb1aff4720dfb3c0971033421a3d3cb8",
+      "status": "no closed certificate obtained",
+      "stages": [
+        {
+          "settings": {
+            "max_step": 3,
+            "rounds": 2,
+            "pool": "extrema",
+            "grid_power": 4,
+            "max_types": 100000,
+            "strategy": "dfs-reuse",
+            "outer_depth": 5,
+            "outer_samples": 3,
+            "menu": 2,
+            "memory": 2,
+            "bins": 24,
+            "base": "0.88",
+            "variants": 8,
+            "root_fraction": 0.25
+          },
+          "parameterized_types": 1,
+          "endpoint_types": 1,
+          "locally_covered_candidates": 0,
+          "open_types": 1,
+          "mixed_parity_types": 0,
+          "worklist_completed": true,
+          "used_successors": [],
+          "root_available": true,
+          "repair": {
+            "registered_types": 1,
+            "rejected_types": 1,
+            "parent_replans": 0,
+            "processed_tasks": 1,
+            "scheduled_tasks": 1,
+            "cancelled_tasks": 0,
+            "expanded_contacts": 12,
+            "outer_queries": 1671,
+            "outer_rejections": 980,
+            "outer_sample_unions": 26,
+            "reachable_types": 1,
+            "open_types": 1,
+            "closed_candidate": false,
+            "limit_reached": false,
+            "finished": true,
+            "root_rejected": true,
+            "node_limit": 100000,
+            "variants": 8,
+            "strategy": "dfs-reuse",
+            "outer_depth": 5,
+            "outer_samples": 3,
+            "root_fraction": 0.25
+          },
+          "elapsed_seconds": 1.786,
+          "original_graph_path": "/private/tmp/kf131_filtered_runs/stage_01.json",
+          "graph_sha256": "833b9bf94d3443f765d9834c3afa51031a6ad55982cfca946235d3908022ed75"
+        },
+        {
+          "settings": {
+            "max_step": 3,
+            "rounds": 2,
+            "pool": "extrema",
+            "grid_power": 4,
+            "max_types": 100000,
+            "strategy": "dfs-reuse",
+            "outer_depth": 5,
+            "outer_samples": 3,
+            "menu": 2,
+            "memory": 3,
+            "bins": 36,
+            "base": "0.92",
+            "variants": 8,
+            "root_fraction": 0.25
+          },
+          "parameterized_types": 208,
+          "endpoint_types": 106,
+          "locally_covered_candidates": 48,
+          "open_types": 160,
+          "mixed_parity_types": 111,
+          "worklist_completed": false,
+          "used_successors": [
+            {
+              "suffixes": [
+                "2",
+                "2"
+              ],
+              "rules": 15
+            },
+            {
+              "suffixes": [
+                "1",
+                ""
+              ],
+              "rules": 11
+            },
+            {
+              "suffixes": [
+                "",
+                "1"
+              ],
+              "rules": 9
+            },
+            {
+              "suffixes": [
+                "2",
+                ""
+              ],
+              "rules": 9
+            },
+            {
+              "suffixes": [
+                "3",
+                ""
+              ],
+              "rules": 7
+            },
+            {
+              "suffixes": [
+                "11",
+                ""
+              ],
+              "rules": 6
+            },
+            {
+              "suffixes": [
+                "3",
+                "2"
+              ],
+              "rules": 6
+            },
+            {
+              "suffixes": [
+                "2",
+                "1"
+              ],
+              "rules": 5
+            },
+            {
+              "suffixes": [
+                "12",
+                ""
+              ],
+              "rules": 4
+            },
+            {
+              "suffixes": [
+                "23",
+                "2"
+              ],
+              "rules": 3
+            },
+            {
+              "suffixes": [
+                "",
+                "2"
+              ],
+              "rules": 3
+            },
+            {
+              "suffixes": [
+                "1",
+                "12"
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "2",
+                "12"
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "2",
+                "11"
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "3",
+                "3"
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "21",
+                ""
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "",
+                "3"
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "3",
+                "1"
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "1",
+                "11"
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "11",
+                "2"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "21",
+                "2"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "22",
+                "2"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "1",
+                "13"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "313",
+                ""
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "23",
+                "1"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "111",
+                ""
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "31",
+                ""
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "113",
+                ""
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "11",
+                "3"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "2",
+                "31"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "",
+                "11"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "22",
+                "3"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "2",
+                "22"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "3",
+                "13"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "3",
+                "11"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "2",
+                "13"
+              ],
+              "rules": 1
+            }
+          ],
+          "root_available": true,
+          "repair": {
+            "registered_types": 100000,
+            "rejected_types": 51275,
+            "parent_replans": 51275,
+            "processed_tasks": 102599,
+            "scheduled_tasks": 155965,
+            "cancelled_tasks": 53167,
+            "expanded_contacts": 253948,
+            "outer_queries": 1318309,
+            "outer_rejections": 939874,
+            "outer_sample_unions": 5244,
+            "reachable_types": 208,
+            "open_types": 160,
+            "closed_candidate": false,
+            "limit_reached": true,
+            "finished": true,
+            "root_rejected": false,
+            "node_limit": 100000,
+            "variants": 8,
+            "strategy": "dfs-reuse",
+            "outer_depth": 5,
+            "outer_samples": 3,
+            "root_fraction": 0.25
+          },
+          "elapsed_seconds": 172.379,
+          "original_graph_path": "/private/tmp/kf131_filtered_runs/stage_02.json",
+          "graph_sha256": "9e570926ea5bfb14e6850e6dbb179a9219d65a1ce93f2636fd664c4d153fd9be"
+        },
+        {
+          "settings": {
+            "max_step": 3,
+            "rounds": 2,
+            "pool": "extrema",
+            "grid_power": 4,
+            "max_types": 100000,
+            "strategy": "dfs-reuse",
+            "outer_depth": 6,
+            "outer_samples": 3,
+            "menu": 2,
+            "memory": 2,
+            "bins": 72,
+            "base": "0.96",
+            "variants": 8,
+            "root_fraction": 0.25
+          },
+          "parameterized_types": 1,
+          "endpoint_types": 1,
+          "locally_covered_candidates": 0,
+          "open_types": 1,
+          "mixed_parity_types": 0,
+          "worklist_completed": true,
+          "used_successors": [],
+          "root_available": true,
+          "repair": {
+            "registered_types": 1,
+            "rejected_types": 1,
+            "parent_replans": 0,
+            "processed_tasks": 1,
+            "scheduled_tasks": 1,
+            "cancelled_tasks": 0,
+            "expanded_contacts": 27,
+            "outer_queries": 2694,
+            "outer_rejections": 1550,
+            "outer_sample_unions": 45,
+            "reachable_types": 1,
+            "open_types": 1,
+            "closed_candidate": false,
+            "limit_reached": false,
+            "finished": true,
+            "root_rejected": true,
+            "node_limit": 100000,
+            "variants": 8,
+            "strategy": "dfs-reuse",
+            "outer_depth": 6,
+            "outer_samples": 3,
+            "root_fraction": 0.25
+          },
+          "elapsed_seconds": 4.919,
+          "original_graph_path": "/private/tmp/kf131_filtered_runs/stage_03.json",
+          "graph_sha256": "303a33de2cb196d063949ddde8105914e120dcdf5b323de6f817f517531701d4"
+        }
+      ],
+      "source_sha256": {
+        "repair_type_search.cpp": "b1338b3b290686fd52a7fc3e8b58f465216c6401fd3ce6a21eb2f79a0c9ff623",
+        "finite_cover_game.hpp": "c11605f0bd46bac1e9d42db06f65c9980a48f2c12cef01e57254d7ad31db495c",
+        "outer_type_filter.hpp": "926b2f949d3f3040f5a37f3cee60cb7ac78b69f935fc1b49621181f4f7512747",
+        "adaptive_type_search.cpp": "9b413c4da81c74c29db54ce09c7139eff98c9498deb6c64585cd29b34a3db06b",
+        "verify_type_graph.py": "09e04133fe0e26cae30fd2e99109baee90cfdff48b1bb16f9b93d2dbcb558748",
+        "anchored_geometry.py": "3d38fbf10ad0d0fd09a3d10c6649f4f87a19c2909de45c9f2cdb14ee5a974d62",
+        "exact.py": "a0b75439d0e39a47f828dc2ee7ae8cdf7c7a9b5ff4f19e2786a7fb1560cbd4d7"
+      }
+    },
+    {
+      "name": "refined",
+      "original_report_sha256": "8ef83cfc0af8be93089dbc2070c6c10fd227d566fa20a37c4eb89516d0f5b211",
+      "engine_sha256": "0beded7134dc8d023d4141943681818191065589619873abacdd848853b27d4d",
+      "status": "no closed certificate obtained",
+      "stages": [
+        {
+          "settings": {
+            "max_step": 3,
+            "rounds": 2,
+            "pool": "extrema",
+            "grid_power": 4,
+            "max_types": 100000,
+            "strategy": "dfs-reuse",
+            "outer_depth": 5,
+            "outer_samples": 3,
+            "menu": 2,
+            "memory": 3,
+            "bins": 36,
+            "base": "0.92",
+            "variants": 8,
+            "root_fraction": 0.25,
+            "outer_max_depth": 7
+          },
+          "parameterized_types": 208,
+          "endpoint_types": 106,
+          "locally_covered_candidates": 48,
+          "open_types": 160,
+          "mixed_parity_types": 111,
+          "worklist_completed": false,
+          "used_successors": [
+            {
+              "suffixes": [
+                "2",
+                "2"
+              ],
+              "rules": 15
+            },
+            {
+              "suffixes": [
+                "1",
+                ""
+              ],
+              "rules": 11
+            },
+            {
+              "suffixes": [
+                "2",
+                ""
+              ],
+              "rules": 10
+            },
+            {
+              "suffixes": [
+                "",
+                "1"
+              ],
+              "rules": 8
+            },
+            {
+              "suffixes": [
+                "3",
+                ""
+              ],
+              "rules": 7
+            },
+            {
+              "suffixes": [
+                "11",
+                ""
+              ],
+              "rules": 6
+            },
+            {
+              "suffixes": [
+                "3",
+                "2"
+              ],
+              "rules": 6
+            },
+            {
+              "suffixes": [
+                "2",
+                "1"
+              ],
+              "rules": 5
+            },
+            {
+              "suffixes": [
+                "12",
+                ""
+              ],
+              "rules": 4
+            },
+            {
+              "suffixes": [
+                "23",
+                "2"
+              ],
+              "rules": 3
+            },
+            {
+              "suffixes": [
+                "2",
+                "12"
+              ],
+              "rules": 3
+            },
+            {
+              "suffixes": [
+                "",
+                "2"
+              ],
+              "rules": 3
+            },
+            {
+              "suffixes": [
+                "1",
+                "12"
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "2",
+                "11"
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "3",
+                "3"
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "21",
+                ""
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "",
+                "3"
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "3",
+                "1"
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "1",
+                "11"
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "11",
+                "2"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "21",
+                "2"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "22",
+                "2"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "1",
+                "13"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "313",
+                ""
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "23",
+                "1"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "111",
+                ""
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "31",
+                ""
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "113",
+                ""
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "11",
+                "3"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "2",
+                "31"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "",
+                "11"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "22",
+                "3"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "2",
+                "22"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "3",
+                "13"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "3",
+                "11"
+              ],
+              "rules": 1
+            }
+          ],
+          "root_available": true,
+          "repair": {
+            "registered_types": 99999,
+            "rejected_types": 51390,
+            "parent_replans": 51390,
+            "processed_tasks": 102829,
+            "scheduled_tasks": 156249,
+            "cancelled_tasks": 53238,
+            "expanded_contacts": 252760,
+            "outer_queries": 1309034,
+            "outer_rejections": 928977,
+            "outer_sample_unions": 5356,
+            "outer_refinements": 48,
+            "reachable_types": 208,
+            "open_types": 160,
+            "closed_candidate": false,
+            "limit_reached": true,
+            "finished": true,
+            "root_rejected": false,
+            "node_limit": 100000,
+            "variants": 8,
+            "strategy": "dfs-reuse",
+            "outer_depth": 5,
+            "outer_samples": 3,
+            "outer_max_depth": 7,
+            "root_fraction": 0.25
+          },
+          "elapsed_seconds": 183.328,
+          "original_graph_path": "/private/tmp/kf131_refined_runs/stage_01.json",
+          "graph_sha256": "dc65d403ae890890a66bd23f76d90f7a6e85257f82b3e4d7facc4cb30c54aea1",
+          "saved_graph": "repair_refined_type_graph.json"
+        },
+        {
+          "settings": {
+            "max_step": 3,
+            "rounds": 2,
+            "pool": "extrema",
+            "grid_power": 4,
+            "max_types": 100000,
+            "strategy": "dfs-reuse",
+            "outer_depth": 5,
+            "outer_samples": 3,
+            "menu": 3,
+            "memory": 2,
+            "bins": 72,
+            "base": "0.96",
+            "variants": 4,
+            "root_fraction": 0.1,
+            "outer_max_depth": 6
+          },
+          "parameterized_types": 1,
+          "endpoint_types": 1,
+          "locally_covered_candidates": 0,
+          "open_types": 1,
+          "mixed_parity_types": 0,
+          "worklist_completed": false,
+          "used_successors": [],
+          "root_available": true,
+          "repair": {
+            "registered_types": 482,
+            "rejected_types": 250,
+            "parent_replans": 249,
+            "processed_tasks": 499,
+            "scheduled_tasks": 738,
+            "cancelled_tasks": 183,
+            "expanded_contacts": 545,
+            "outer_queries": 6550,
+            "outer_rejections": 5704,
+            "outer_sample_unions": 117,
+            "outer_refinements": 0,
+            "reachable_types": 1,
+            "open_types": 1,
+            "closed_candidate": false,
+            "limit_reached": false,
+            "finished": true,
+            "root_rejected": true,
+            "node_limit": 100000,
+            "variants": 4,
+            "strategy": "dfs-reuse",
+            "outer_depth": 5,
+            "outer_samples": 3,
+            "outer_max_depth": 6,
+            "root_fraction": 0.1
+          },
+          "elapsed_seconds": 16.0,
+          "original_graph_path": "/private/tmp/kf131_refined_runs/stage_02.json",
+          "graph_sha256": "cb6faffe35d250b68a974d4d5a560ba6c01bd008e3df2b8f04b85e07cbd2a260"
+        }
+      ],
+      "source_sha256": {
+        "repair_type_search.cpp": "f363a9ca4bb5447a947e24ebec5033c79c89b8bd6f1a71a94c88fac178813af8",
+        "finite_cover_game.hpp": "9cd7daf3e51d5fbf96c16e476fc305c7d6fdaf166d67411dd31762aa0e55e6bb",
+        "outer_type_filter.hpp": "9fc6a8a39b6018c93319b2137fb851baaf3bb7cbbf9a5939f2b546c74e76c436",
+        "adaptive_type_search.cpp": "9b413c4da81c74c29db54ce09c7139eff98c9498deb6c64585cd29b34a3db06b",
+        "verify_type_graph.py": "09e04133fe0e26cae30fd2e99109baee90cfdff48b1bb16f9b93d2dbcb558748",
+        "anchored_geometry.py": "3d38fbf10ad0d0fd09a3d10c6649f4f87a19c2909de45c9f2cdb14ee5a974d62",
+        "exact.py": "a0b75439d0e39a47f828dc2ee7ae8cdf7c7a9b5ff4f19e2786a7fb1560cbd4d7"
+      }
+    },
+    {
+      "name": "shared",
+      "original_report_sha256": "7009e8c28656f6b14f2b3e9ac37c4231a7fdcf1151b93205950926b416870cf7",
+      "engine_sha256": "e1f742a469b2bcf30d29a8e5b7245847a99e7626016334ca17cdb1764e815dc8",
+      "status": "no closed certificate obtained",
+      "stages": [
+        {
+          "settings": {
+            "max_step": 3,
+            "rounds": 2,
+            "pool": "extrema",
+            "grid_power": 4,
+            "max_types": 100000,
+            "strategy": "dfs-reuse",
+            "outer_depth": 5,
+            "outer_samples": 3,
+            "menu": 3,
+            "memory": 3,
+            "bins": 72,
+            "base": "0.96",
+            "variants": 4,
+            "root_fraction": 0.05,
+            "outer_max_depth": 6
+          },
+          "parameterized_types": 1,
+          "endpoint_types": 1,
+          "locally_covered_candidates": 0,
+          "open_types": 1,
+          "mixed_parity_types": 0,
+          "worklist_completed": false,
+          "used_successors": [],
+          "root_available": true,
+          "repair": {
+            "registered_types": 678,
+            "rejected_types": 360,
+            "parent_replans": 359,
+            "processed_tasks": 719,
+            "scheduled_tasks": 1056,
+            "cancelled_tasks": 297,
+            "expanded_contacts": 727,
+            "outer_queries": 7060,
+            "outer_rejections": 6344,
+            "outer_sample_unions": 101,
+            "outer_refinements": 0,
+            "reachable_types": 1,
+            "open_types": 1,
+            "closed_candidate": false,
+            "limit_reached": false,
+            "finished": true,
+            "root_rejected": true,
+            "node_limit": 100000,
+            "variants": 4,
+            "strategy": "dfs-reuse",
+            "outer_depth": 5,
+            "outer_samples": 3,
+            "outer_max_depth": 6,
+            "root_fraction": 0.05
+          },
+          "elapsed_seconds": 110.439,
+          "original_graph_path": "/private/tmp/kf131_shared_runs/stage_01.json",
+          "graph_sha256": "0d75af1823b208ffd111b2ae82c15622128a30e61d4599a07092c2bb8057c7f1"
+        },
+        {
+          "settings": {
+            "max_step": 3,
+            "rounds": 2,
+            "pool": "extrema",
+            "grid_power": 4,
+            "max_types": 100000,
+            "strategy": "dfs-reuse",
+            "outer_depth": 5,
+            "outer_samples": 3,
+            "menu": 2,
+            "memory": 3,
+            "bins": 144,
+            "base": "0.98",
+            "variants": 8,
+            "root_fraction": 0.05,
+            "outer_max_depth": 7
+          },
+          "parameterized_types": 331,
+          "endpoint_types": 165,
+          "locally_covered_candidates": 76,
+          "open_types": 255,
+          "mixed_parity_types": 132,
+          "worklist_completed": false,
+          "used_successors": [
+            {
+              "suffixes": [
+                "1",
+                ""
+              ],
+              "rules": 27
+            },
+            {
+              "suffixes": [
+                "2",
+                ""
+              ],
+              "rules": 16
+            },
+            {
+              "suffixes": [
+                "2",
+                "2"
+              ],
+              "rules": 15
+            },
+            {
+              "suffixes": [
+                "3",
+                ""
+              ],
+              "rules": 13
+            },
+            {
+              "suffixes": [
+                "",
+                "1"
+              ],
+              "rules": 8
+            },
+            {
+              "suffixes": [
+                "2",
+                "1"
+              ],
+              "rules": 5
+            },
+            {
+              "suffixes": [
+                "1",
+                "3"
+              ],
+              "rules": 5
+            },
+            {
+              "suffixes": [
+                "11",
+                ""
+              ],
+              "rules": 5
+            },
+            {
+              "suffixes": [
+                "",
+                "11"
+              ],
+              "rules": 5
+            },
+            {
+              "suffixes": [
+                "1",
+                "2"
+              ],
+              "rules": 5
+            },
+            {
+              "suffixes": [
+                "",
+                "2"
+              ],
+              "rules": 4
+            },
+            {
+              "suffixes": [
+                "12",
+                ""
+              ],
+              "rules": 4
+            },
+            {
+              "suffixes": [
+                "3",
+                "2"
+              ],
+              "rules": 4
+            },
+            {
+              "suffixes": [
+                "2",
+                "3"
+              ],
+              "rules": 4
+            },
+            {
+              "suffixes": [
+                "111",
+                ""
+              ],
+              "rules": 4
+            },
+            {
+              "suffixes": [
+                "22",
+                ""
+              ],
+              "rules": 4
+            },
+            {
+              "suffixes": [
+                "",
+                "3"
+              ],
+              "rules": 3
+            },
+            {
+              "suffixes": [
+                "121",
+                ""
+              ],
+              "rules": 3
+            },
+            {
+              "suffixes": [
+                "3",
+                "32"
+              ],
+              "rules": 3
+            },
+            {
+              "suffixes": [
+                "321",
+                ""
+              ],
+              "rules": 3
+            },
+            {
+              "suffixes": [
+                "32",
+                ""
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "3",
+                "11"
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "21",
+                ""
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "11",
+                "1"
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "32",
+                "2"
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "21",
+                "1"
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "112",
+                ""
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "1",
+                "11"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "23",
+                "3"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "21",
+                "2"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "3",
+                "1"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "2",
+                "31"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "2",
+                "32"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "33",
+                "2"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "12",
+                "2"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "23",
+                ""
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "11",
+                "3"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "1",
+                "22"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "3",
+                "12"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "1",
+                "12"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "",
+                "21"
+              ],
+              "rules": 1
+            }
+          ],
+          "root_available": true,
+          "repair": {
+            "registered_types": 99999,
+            "rejected_types": 50090,
+            "parent_replans": 50060,
+            "processed_tasks": 100227,
+            "scheduled_tasks": 157322,
+            "cancelled_tasks": 56840,
+            "expanded_contacts": 230835,
+            "outer_queries": 1658125,
+            "outer_rejections": 1082608,
+            "outer_sample_unions": 8942,
+            "outer_refinements": 43,
+            "reachable_types": 331,
+            "open_types": 255,
+            "closed_candidate": false,
+            "limit_reached": true,
+            "finished": true,
+            "root_rejected": false,
+            "node_limit": 100000,
+            "variants": 8,
+            "strategy": "dfs-reuse",
+            "outer_depth": 5,
+            "outer_samples": 3,
+            "outer_max_depth": 7,
+            "root_fraction": 0.05
+          },
+          "elapsed_seconds": 224.88,
+          "original_graph_path": "/private/tmp/kf131_shared_runs/stage_02.json",
+          "graph_sha256": "a8354c7907e68f1a173393c9feb4cce6c71c51f171cb6bc775546e0f47d3941f",
+          "saved_graph": "repair_fine_type_graph.json"
+        }
+      ],
+      "source_sha256": {
+        "repair_type_search.cpp": "f363a9ca4bb5447a947e24ebec5033c79c89b8bd6f1a71a94c88fac178813af8",
+        "finite_cover_game.hpp": "9cd7daf3e51d5fbf96c16e476fc305c7d6fdaf166d67411dd31762aa0e55e6bb",
+        "outer_type_filter.hpp": "9fc6a8a39b6018c93319b2137fb851baaf3bb7cbbf9a5939f2b546c74e76c436",
+        "adaptive_type_search.cpp": "e9b790ec160070580f73d9527f13d547d21b3c6f762c8ba2f3fe5776168c5e67",
+        "verify_type_graph.py": "09e04133fe0e26cae30fd2e99109baee90cfdff48b1bb16f9b93d2dbcb558748",
+        "anchored_geometry.py": "3d38fbf10ad0d0fd09a3d10c6649f4f87a19c2909de45c9f2cdb14ee5a974d62",
+        "exact.py": "a0b75439d0e39a47f828dc2ee7ae8cdf7c7a9b5ff4f19e2786a7fb1560cbd4d7"
+      }
+    },
+    {
+      "name": "portfolio",
+      "original_report_sha256": "bf2d2cafd415043dfb39a3a8e575b9bf1f6d3aee6fcf8765894dc355421fb269",
+      "engine_sha256": "f4ce99bea89ee467190f66cc84b361a53dcf0c6f93b8976454db4f5524f9034d",
+      "status": "no closed certificate obtained",
+      "stages": [
+        {
+          "settings": {
+            "max_step": 3,
+            "rounds": 2,
+            "pool": "extrema",
+            "grid_power": 4,
+            "max_types": 100000,
+            "strategy": "dfs-reuse",
+            "outer_depth": 5,
+            "outer_samples": 3,
+            "menu": 3,
+            "memory": 3,
+            "bins": 72,
+            "base": "0.96",
+            "variants": 8,
+            "root_fraction": 0.05,
+            "outer_max_depth": 6,
+            "root_trials": 64,
+            "root_step_budget": 2500
+          },
+          "stop": "stage time limit; no proof inferred",
+          "parameterized_types": 11,
+          "endpoint_types": 7,
+          "locally_covered_candidates": 5,
+          "open_types": 6,
+          "mixed_parity_types": 4,
+          "worklist_completed": false,
+          "used_successors": [
+            {
+              "suffixes": [
+                "2",
+                "2"
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "",
+                "1"
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "",
+                "2"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "21",
+                ""
+              ],
+              "rules": 1
+            }
+          ],
+          "root_available": true,
+          "repair": {
+            "registered_types": 73526,
+            "rejected_types": 37958,
+            "parent_replans": 37974,
+            "processed_tasks": 76000,
+            "scheduled_tasks": 114764,
+            "cancelled_tasks": 38711,
+            "expanded_contacts": 94414,
+            "outer_queries": 1449984,
+            "outer_rejections": 1269511,
+            "outer_sample_unions": 1561,
+            "outer_refinements": 16,
+            "reachable_types": 11,
+            "open_types": 6,
+            "closed_candidate": false,
+            "limit_reached": false,
+            "node_limit_reached": false,
+            "finished": false,
+            "root_rejected": false,
+            "root_trials": 64,
+            "tried_roots": 31,
+            "root_step_budget": 2500,
+            "node_limit": 100000,
+            "variants": 8,
+            "strategy": "dfs-reuse",
+            "outer_depth": 5,
+            "outer_samples": 3,
+            "outer_max_depth": 6,
+            "root_fraction": 0.05
+          },
+          "elapsed_seconds": 480.126,
+          "original_graph_path": "/private/tmp/kf131_portfolio_runs/stage_01.json",
+          "graph_sha256": "6470c9c7b861e49d8e7ff916bc614256b239b5fb2c02295318729fa68b4a6bd0",
+          "saved_graph": "repair_portfolio_type_graph.json"
+        },
+        {
+          "settings": {
+            "max_step": 3,
+            "rounds": 2,
+            "pool": "extrema",
+            "grid_power": 4,
+            "max_types": 100000,
+            "strategy": "dfs-reuse",
+            "outer_depth": 5,
+            "outer_samples": 3,
+            "menu": 4,
+            "memory": 2,
+            "bins": 72,
+            "base": "0.96",
+            "variants": 8,
+            "root_fraction": 0.1,
+            "outer_max_depth": 6,
+            "root_trials": 64,
+            "root_step_budget": 2500
+          },
+          "stop": "stage time limit; no proof inferred",
+          "parameterized_types": 17,
+          "endpoint_types": 11,
+          "locally_covered_candidates": 7,
+          "open_types": 10,
+          "mixed_parity_types": 8,
+          "worklist_completed": false,
+          "used_successors": [
+            {
+              "suffixes": [
+                "",
+                "1"
+              ],
+              "rules": 2
+            },
+            {
+              "suffixes": [
+                "31",
+                ""
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "3",
+                ""
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "2",
+                "2"
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "11",
+                ""
+              ],
+              "rules": 1
+            },
+            {
+              "suffixes": [
+                "1",
+                ""
+              ],
+              "rules": 1
+            }
+          ],
+          "root_available": true,
+          "repair": {
+            "registered_types": 9758,
+            "rejected_types": 4489,
+            "parent_replans": 4489,
+            "processed_tasks": 9000,
+            "scheduled_tasks": 14403,
+            "cancelled_tasks": 5376,
+            "expanded_contacts": 8999,
+            "outer_queries": 396946,
+            "outer_rejections": 322717,
+            "outer_sample_unions": 560,
+            "outer_refinements": 2,
+            "reachable_types": 17,
+            "open_types": 10,
+            "closed_candidate": false,
+            "limit_reached": false,
+            "node_limit_reached": false,
+            "finished": false,
+            "root_rejected": false,
+            "root_trials": 64,
+            "tried_roots": 4,
+            "root_step_budget": 2500,
+            "node_limit": 100000,
+            "variants": 8,
+            "strategy": "dfs-reuse",
+            "outer_depth": 5,
+            "outer_samples": 3,
+            "outer_max_depth": 6,
+            "root_fraction": 0.1
+          },
+          "elapsed_seconds": 480.052,
+          "original_graph_path": "/private/tmp/kf131_portfolio_runs/stage_02.json",
+          "graph_sha256": "2f64f392cd096e3377cee9929888cde15db122bc465931a05d29360ffdaee2ab",
+          "saved_graph": "repair_portfolio_m4_type_graph.json"
+        }
+      ],
+      "source_sha256": {
+        "repair_type_search.cpp": "0b2f736479a72682401ca0589d8a30be73156b12bd190785e180a43b6737b79b",
+        "finite_cover_game.hpp": "a3437bcdf165639ca5b78d9bc268220c82509a243cb5cd70aae37775c33d898c",
+        "outer_type_filter.hpp": "9fc6a8a39b6018c93319b2137fb851baaf3bb7cbbf9a5939f2b546c74e76c436",
+        "adaptive_type_search.cpp": "e9b790ec160070580f73d9527f13d547d21b3c6f762c8ba2f3fe5776168c5e67",
+        "verify_type_graph.py": "09e04133fe0e26cae30fd2e99109baee90cfdff48b1bb16f9b93d2dbcb558748",
+        "anchored_geometry.py": "3d38fbf10ad0d0fd09a3d10c6649f4f87a19c2909de45c9f2cdb14ee5a974d62",
+        "exact.py": "a0b75439d0e39a47f828dc2ee7ae8cdf7c7a9b5ff4f19e2786a7fb1560cbd4d7"
+      }
+    }
+  ],
+  "saved_local_audits": [
+    {
+      "graph": "repair_refined_type_graph.json",
+      "graph_sha256": "dc65d403ae890890a66bd23f76d90f7a6e85257f82b3e4d7facc4cb30c54aea1",
+      "audit": "repair_refined_type_graph_audit.json",
+      "audit_sha256": "38c528d6e57b0a32b81cda15bf7632ab21f486342068defd54e23275b2c74012",
+      "verified_local_rules": 48,
+      "open_types": 160,
+      "failed_rules": 0,
+      "proof_hash": "8ed9105199b9784734a4497a432b4dcad86e9b91abc6297ea1c1765812320419"
+    },
+    {
+      "graph": "repair_fine_type_graph.json",
+      "graph_sha256": "a8354c7907e68f1a173393c9feb4cce6c71c51f171cb6bc775546e0f47d3941f",
+      "audit": "repair_fine_type_graph_audit.json",
+      "audit_sha256": "08d5556cab5e7e3a282457d0d26ee484f6581557986a64e36bf52f2e15d190f1",
+      "verified_local_rules": 76,
+      "open_types": 255,
+      "failed_rules": 0,
+      "proof_hash": "16732071c5866df922bdc132f147519dbd1b37708b88fdb11252488b447997ef"
+    },
+    {
+      "graph": "repair_portfolio_type_graph.json",
+      "graph_sha256": "6470c9c7b861e49d8e7ff916bc614256b239b5fb2c02295318729fa68b4a6bd0",
+      "audit": "repair_portfolio_type_graph_audit.json",
+      "audit_sha256": "790783959a94ff928ba2aebf1f2bad92e77d54d211de409d1194caa59578ee6f",
+      "verified_local_rules": 5,
+      "open_types": 6,
+      "failed_rules": 0,
+      "proof_hash": "66df7cdae231ffba2dd6fb89a5391a6a61bcd33dc8994d9149cfb9fa16e05ceb"
+    },
+    {
+      "graph": "repair_portfolio_m4_type_graph.json",
+      "graph_sha256": "2f64f392cd096e3377cee9929888cde15db122bc465931a05d29360ffdaee2ab",
+      "audit": "repair_portfolio_m4_type_graph_audit.json",
+      "audit_sha256": "63a34dd0f931215d891ccdba75a462e09bdfa673a3eead8cc28cf708ffcb835f",
+      "verified_local_rules": 7,
+      "open_types": 10,
+      "failed_rules": 0,
+      "proof_hash": "9897fa3a7a4bf8f31fa9f79dd9bfe03ee9b88a195be66a4e09654a171828e6b5"
+    }
+  ],
+  "scalar_histories": "scalar_search_history.json",
+  "final_source_sha256": {
+    "repair_type_search.cpp": "0b2f736479a72682401ca0589d8a30be73156b12bd190785e180a43b6737b79b",
+    "finite_cover_game.hpp": "a3437bcdf165639ca5b78d9bc268220c82509a243cb5cd70aae37775c33d898c",
+    "outer_type_filter.hpp": "9fc6a8a39b6018c93319b2137fb851baaf3bb7cbbf9a5939f2b546c74e76c436",
+    "adaptive_type_search.cpp": "e9b790ec160070580f73d9527f13d547d21b3c6f762c8ba2f3fe5776168c5e67",
+    "repair_type_search.py": "fc69953dc199c00cb53d548e5f1480859eeea04822948249ad907d16df606b02",
+    "scalar_type_search.cpp": "41ad8b61b34f0a346018366b00120d85d480948f2df21904505406c4d6c54104",
+    "scalar_type_search.py": "653f2dfdc598a2cce0e588a1a5c449bb6be81ff75df6bcdbd1b889791fdf43fd",
+    "scalar_geometry.py": "e81c220e89b21b6f5eda23a9397e76808dd99f79e204faf2bdcaa4dfc6d74808",
+    "verify_type_graph.py": "09e04133fe0e26cae30fd2e99109baee90cfdff48b1bb16f9b93d2dbcb558748",
+    "verify_scalar_graph.py": "038e532725df264fae73a9993e353211a2120202cb1eed8dcd211d092f9fb477",
+    "anchored_geometry.py": "3d38fbf10ad0d0fd09a3d10c6649f4f87a19c2909de45c9f2cdb14ee5a974d62",
+    "exact.py": "a0b75439d0e39a47f828dc2ee7ae8cdf7c7a9b5ff4f19e2786a7fb1560cbd4d7"
+  },
+  "verification": {
+    "python_tests_passed": 26,
+    "finite_game_scenarios": 7,
+    "independent_fixed_point_comparisons": 200,
+    "outer_filter_periodic_witnesses_retained": 1242,
+    "outer_filter_gaps_detected": 1379,
+    "command": "cd Berstein/kf131 && python3 -m unittest test_anchored_geometry test_type_graph test_repair_search test_scalar_geometry test_scalar_search -v"
+  }
+}

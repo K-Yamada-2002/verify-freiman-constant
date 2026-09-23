@@ -1,0 +1,34 @@
+[
+  {
+    "base": "0.88",
+    "bins": 24,
+    "grid": 2048,
+    "memory": 2,
+    "max_step": 3,
+    "rounds": 100
+  },
+  {
+    "base": "0.96",
+    "bins": 72,
+    "grid": 8192,
+    "memory": 2,
+    "max_step": 3,
+    "rounds": 100
+  },
+  {
+    "base": "0.99",
+    "bins": 288,
+    "grid": 32768,
+    "memory": 2,
+    "max_step": 3,
+    "rounds": 100
+  },
+  {
+    "base": "0.98",
+    "bins": 144,
+    "grid": 32768,
+    "memory": 3,
+    "max_step": 2,
+    "rounds": 100
+  }
+]

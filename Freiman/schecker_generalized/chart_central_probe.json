@@ -1,0 +1,96 @@
+{
+  "status": "central type probe only; not the A_n roots",
+  "configuration": {
+    "states": 6,
+    "bins": 25,
+    "base": "22/25",
+    "max_step": 2,
+    "outer_depth": 4,
+    "outer_samples": 9,
+    "balance": "9/10",
+    "min_cost_cover": true,
+    "adaptive_shapes": false
+  },
+  "target_domain": {
+    "states": [
+      "1",
+      "1"
+    ],
+    "parity": 1,
+    "high": true,
+    "r": [
+      [
+        "5/9",
+        "0"
+      ],
+      [
+        "4/5",
+        "0"
+      ]
+    ],
+    "s": [
+      [
+        "5/9",
+        "0"
+      ],
+      [
+        "4/5",
+        "0"
+      ]
+    ],
+    "ratio": [
+      [
+        "234256/390625",
+        "0"
+      ],
+      [
+        "10648/15625",
+        "0"
+      ]
+    ]
+  },
+  "target": {
+    "cell": 0,
+    "lower": [
+      "@1/3",
+      false,
+      "@1/3",
+      false
+    ],
+    "upper": [
+      "@2/3",
+      false,
+      "@2/3",
+      false
+    ],
+    "children": []
+  },
+  "shape_fractions": [
+    [
+      "1/3",
+      "2/3"
+    ],
+    [
+      "2/5",
+      "3/5"
+    ],
+    [
+      "1/4",
+      "3/4"
+    ]
+  ],
+  "shape_menu_note": "both parities of each central fraction pair, plus both full hulls",
+  "search": {
+    "registered": 1,
+    "reachable": 1,
+    "unresolved": 1,
+    "rejected": 1,
+    "steps": 1,
+    "parent_repairs": 0,
+    "stop": "root rejected in this candidate menu",
+    "closed_candidate": false
+  },
+  "local": 0,
+  "failed": [],
+  "supported": 0
+}

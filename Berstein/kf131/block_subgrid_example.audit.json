@@ -1,0 +1,60 @@
+{
+  "status": "exact local-rule audit; open nodes are remaining induction obligations",
+  "verified_rules": [
+    {
+      "node": 1,
+      "children": 2,
+      "dependencies": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    }
+  ],
+  "open_nodes": [
+    0,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "failed_rules": [],
+  "root_interval": [
+    {
+      "a": {
+        "a": "2",
+        "b": "0"
+      },
+      "b": {
+        "a": "-1/2",
+        "b": "0"
+      },
+      "decimal": "1.2928932188134524755992"
+    },
+    {
+      "a": {
+        "a": "3875/256",
+        "b": "0"
+      },
+      "b": {
+        "a": "-1253/128",
+        "b": "0"
+      },
+      "decimal": "1.2928937995821242488397"
+    }
+  ],
+  "proof_hash": "4709c7c2810a74eb7de3ccaf19223e9ec0cca3cfe62c06a3fbad833b95c5609b"
+}

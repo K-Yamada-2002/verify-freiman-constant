@@ -1,0 +1,361 @@
+{
+  "status": "partial correlated-domain searches; full induction NOT closed",
+  "target": "full hulls of A_n=(3211(313121)^n3 | 4322(313121)^n) for every n>=0",
+  "engine_hash": "eec430584279b2e79b366a18c21f36ff0bf63eb411d8487f5da807821affab08",
+  "backward": {
+    "certificate": "frontier_backward_gaps.json",
+    "counts": {
+      "excluded": 34
+    },
+    "exclusion_depths": {
+      "1": 18,
+      "2": 10,
+      "3": 5,
+      "4": 1
+    },
+    "scope": "saved witness points on paths in the currently recorded partial strategy only"
+  },
+  "contact_example": "chart_contact_example.json",
+  "central_probe": "chart_central_probe.json",
+  "results": [
+    {
+      "name": "chart_memory1",
+      "graph": "chart_memory1_graph.json",
+      "audit": "chart_memory1_audit.json",
+      "state": null,
+      "proof_hash": "baa7969933cd1968212f8b57c44261629b7e3cbff614801e373a10798c46da21",
+      "search": {
+        "registered": 2644,
+        "reachable": 2322,
+        "unresolved": 1587,
+        "rejected": 144,
+        "steps": 1630,
+        "parent_repairs": 534,
+        "stop": "time limit",
+        "closed_candidate": false,
+        "closed_supported_types": 0
+      },
+      "domains": 1951,
+      "endpoint_shapes": 35,
+      "local_rules": 735,
+      "open_types": 1587,
+      "failed_rules": 0,
+      "closure": {
+        "accepted": false,
+        "reason": "node 1036: unresolved type"
+      },
+      "settings": {
+        "chart_memory": 1,
+        "states": 6,
+        "bins": 25,
+        "base": "22/25",
+        "max_step": 1,
+        "outer_depth": 4,
+        "outer_samples": 3,
+        "max_shapes": 48,
+        "seconds": 240.0,
+        "max_types": 12000,
+        "max_steps": 20000,
+        "depth_first": false,
+        "native_executable": "/tmp/freiman-chart-planner",
+        "output": "/tmp/freiman-chart-memory1.json"
+      },
+      "state_upgrades": []
+    },
+    {
+      "name": "chart_memory2",
+      "graph": "chart_memory2_graph.json",
+      "audit": "chart_memory2_audit.json",
+      "state": null,
+      "proof_hash": "e0518a5c48a42275f76591cec5c273b13cbaf7699c14a9b13dff3fad54c24430",
+      "search": {
+        "registered": 4432,
+        "reachable": 4045,
+        "unresolved": 3195,
+        "rejected": 77,
+        "steps": 1574,
+        "parent_repairs": 354,
+        "stop": "time limit",
+        "closed_candidate": false,
+        "closed_supported_types": 0
+      },
+      "domains": 3658,
+      "endpoint_shapes": 33,
+      "local_rules": 850,
+      "open_types": 3195,
+      "failed_rules": 0,
+      "closure": {
+        "accepted": false,
+        "reason": "node 307: unresolved type"
+      },
+      "settings": {
+        "chart_memory": 2,
+        "states": 6,
+        "bins": 25,
+        "base": "22/25",
+        "max_step": 1,
+        "outer_depth": 3,
+        "outer_samples": 3,
+        "max_shapes": 48,
+        "seconds": 240.0,
+        "max_types": 12000,
+        "max_steps": 20000,
+        "depth_first": false,
+        "native_executable": "/tmp/freiman-chart-planner",
+        "output": "/tmp/freiman-chart-memory2.json"
+      },
+      "state_upgrades": []
+    },
+    {
+      "name": "chart_dfs",
+      "graph": "chart_dfs_graph.json",
+      "audit": "chart_dfs_audit.json",
+      "state": "chart_dfs_graph.state.json",
+      "proof_hash": "58ba0b7207b31574db85b2b323690f04fbebef6d7be141986a1be623daca7323",
+      "search": {
+        "registered": 2506,
+        "reachable": 1223,
+        "unresolved": 970,
+        "rejected": 682,
+        "steps": 2416,
+        "parent_repairs": 1044,
+        "stop": "time limit",
+        "closed_candidate": false,
+        "closed_supported_types": 0
+      },
+      "domains": 961,
+      "endpoint_shapes": 47,
+      "local_rules": 253,
+      "open_types": 970,
+      "failed_rules": 0,
+      "closure": {
+        "accepted": false,
+        "reason": "node 106: unresolved type"
+      },
+      "settings": {
+        "configuration": {
+          "chart_memory": 1,
+          "states": 6,
+          "bins": 25,
+          "base": "22/25",
+          "max_step": 1,
+          "outer_depth": 4,
+          "outer_samples": 3,
+          "local_filter": false,
+          "balance": "9/10",
+          "reuse_pending": true,
+          "adaptive_shapes": true,
+          "max_shapes": 48
+        },
+        "depth_first": true,
+        "engine_hash": "223e02022cfa9dd46c40bdf4f8f6aed73cd934c044b40a91a85cce31984e5673",
+        "resume_state": "/tmp/freiman-chart-dfs.state.json",
+        "budgets": {
+          "seconds": 240.0,
+          "max_types": 12000,
+          "additional_steps": 4000
+        },
+        "native_executable": "/tmp/freiman-chart-planner"
+      },
+      "state_upgrades": []
+    },
+    {
+      "name": "chart_paired",
+      "graph": "chart_paired_graph.json",
+      "audit": "chart_paired_audit.json",
+      "state": "chart_paired_graph.state.json",
+      "proof_hash": "459408bd8c6c6299c33141c78ff944edc40de92c2c5e0d7a59586901364b121e",
+      "search": {
+        "registered": 469,
+        "reachable": 384,
+        "unresolved": 305,
+        "rejected": 23,
+        "steps": 138,
+        "parent_repairs": 22,
+        "stop": "time limit",
+        "closed_candidate": false,
+        "closed_supported_types": 0
+      },
+      "domains": 366,
+      "endpoint_shapes": 16,
+      "local_rules": 79,
+      "open_types": 305,
+      "failed_rules": 0,
+      "closure": {
+        "accepted": false,
+        "reason": "node 166: unresolved type"
+      },
+      "settings": {
+        "configuration": {
+          "chart_memory": 1,
+          "states": 6,
+          "bins": 25,
+          "base": "22/25",
+          "balance": "9/10",
+          "max_step": 2,
+          "outer_depth": 4,
+          "outer_samples": 3,
+          "local_filter": false,
+          "reuse_pending": true,
+          "adaptive_shapes": true,
+          "max_shapes": 48,
+          "min_cost_cover": true
+        },
+        "depth_first": false,
+        "engine_hash": "223e02022cfa9dd46c40bdf4f8f6aed73cd934c044b40a91a85cce31984e5673",
+        "resume_state": "/tmp/freiman-chart-paired-initial.state.json",
+        "budgets": {
+          "seconds": 240.0,
+          "max_types": 12000,
+          "additional_steps": 2000
+        },
+        "native_executable": "/tmp/freiman-chart-planner"
+      },
+      "state_upgrades": []
+    },
+    {
+      "name": "chart_routes",
+      "graph": "chart_routes_graph.json",
+      "audit": "chart_routes_audit.json",
+      "state": "chart_routes_graph.state.json",
+      "proof_hash": "8974bcef362dec83bbb88895d9c715a13a98299c6534923f23fca1db19c9b375",
+      "search": {
+        "registered": 5345,
+        "reachable": 2414,
+        "unresolved": 1848,
+        "rejected": 1820,
+        "steps": 6416,
+        "parent_repairs": 2869,
+        "stop": "step limit",
+        "closed_candidate": false,
+        "closed_supported_types": 0
+      },
+      "domains": 1931,
+      "endpoint_shapes": 48,
+      "local_rules": 566,
+      "open_types": 1848,
+      "failed_rules": 0,
+      "closure": {
+        "accepted": false,
+        "reason": "node 106: unresolved type"
+      },
+      "settings": {
+        "configuration": {
+          "chart_memory": 1,
+          "states": 6,
+          "bins": 25,
+          "base": "22/25",
+          "max_step": 1,
+          "outer_depth": 4,
+          "outer_samples": 3,
+          "local_filter": false,
+          "balance": "9/10",
+          "reuse_pending": true,
+          "adaptive_shapes": true,
+          "max_shapes": 48
+        },
+        "depth_first": true,
+        "engine_hash": "eec430584279b2e79b366a18c21f36ff0bf63eb411d8487f5da807821affab08",
+        "resume_state": "Freiman/schecker_generalized/chart_dfs_graph.state.json",
+        "budgets": {
+          "seconds": 240.0,
+          "max_types": 12000,
+          "additional_steps": 4000
+        },
+        "native_executable": "/tmp/freiman-chart-planner"
+      },
+      "state_upgrades": [
+        {
+          "previous_hash": "223e02022cfa9dd46c40bdf4f8f6aed73cd934c044b40a91a85cce31984e5673",
+          "new_hash": "eec430584279b2e79b366a18c21f36ff0bf63eb411d8487f5da807821affab08",
+          "verified_local_rules": 324,
+          "source_proof_hash": "2499dd2bbb61394838f41a36b0c546320124e7cd06026918ecf92fec47853770",
+          "reopened": 682
+        }
+      ]
+    },
+    {
+      "name": "chart_routes_breadth",
+      "graph": "chart_routes_breadth_graph.json",
+      "audit": "chart_routes_breadth_audit.json",
+      "state": "chart_routes_breadth_graph.state.json",
+      "proof_hash": "670e869d7fe3ced6aa42c1ea6fc92348f820a92de8a18f3995349f66c8b8923c",
+      "search": {
+        "registered": 6863,
+        "reachable": 3754,
+        "unresolved": 2628,
+        "rejected": 2066,
+        "steps": 8049,
+        "parent_repairs": 3709,
+        "stop": "time limit",
+        "closed_candidate": false,
+        "closed_supported_types": 0
+      },
+      "domains": 2965,
+      "endpoint_shapes": 47,
+      "local_rules": 1126,
+      "open_types": 2628,
+      "failed_rules": 0,
+      "closure": {
+        "accepted": false,
+        "reason": "node 2486: unresolved type"
+      },
+      "settings": {
+        "configuration": {
+          "chart_memory": 1,
+          "states": 6,
+          "bins": 25,
+          "base": "22/25",
+          "max_step": 1,
+          "outer_depth": 4,
+          "outer_samples": 3,
+          "local_filter": false,
+          "balance": "9/10",
+          "reuse_pending": true,
+          "adaptive_shapes": true,
+          "max_shapes": 48
+        },
+        "depth_first": false,
+        "engine_hash": "eec430584279b2e79b366a18c21f36ff0bf63eb411d8487f5da807821affab08",
+        "resume_state": "/tmp/freiman-chart-routes-breadth-initial.state.json",
+        "budgets": {
+          "seconds": 180.0,
+          "max_types": 12000,
+          "additional_steps": 4000
+        },
+        "native_executable": "/tmp/freiman-chart-planner"
+      },
+      "state_upgrades": [
+        {
+          "previous_hash": "223e02022cfa9dd46c40bdf4f8f6aed73cd934c044b40a91a85cce31984e5673",
+          "new_hash": "eec430584279b2e79b366a18c21f36ff0bf63eb411d8487f5da807821affab08",
+          "verified_local_rules": 324,
+          "source_proof_hash": "2499dd2bbb61394838f41a36b0c546320124e7cd06026918ecf92fec47853770",
+          "reopened": 682
+        }
+      ]
+    }
+  ],
+  "tests": {
+    "passed": 55,
+    "chart_tests": 12,
+    "existing_related_tests": 43,
+    "commands": [
+      "python3 -m unittest test_chart_types",
+      "python3 -m unittest test_cyclic_types test_small_type_menu test_frontier_repair"
+    ]
+  },
+  "source_sha256": {
+    "backward_gap_audit.py": "6f1c4fba8be66b277f12b9e00558880176e267975b6c80ff25a5d41cb9dbe057",
+    "chart_geometry.py": "07e64e47c907edd415e31ba55c64d366a2f831cc610705ebe1ddd2669436d08d",
+    "verify_chart_types.py": "b20f667f46c6f3009356cff19eb4ed9bda84ef9eee5b83b36cb42c59c8d72a37",
+    "search_chart_types.py": "213c8df63720ce21ed6e8834fb3215c26dc3ce1ee431357bd480af89edac0ef2",
+    "search_cyclic_types.py": "d4e1179fb74121dc21702c7392e27a11461d8b77f21c103ac222fc6b413b4568",
+    "finite_type_game.py": "fb404f8cf415f4dab6851a2ae7665ba53e24b08f6f1b3369c6dd3ffa6476d46b",
+    "cyclic_planner.cpp": "30bb6da9c661027b06204949e1add848546ca2b29012ce859461de70433dde54",
+    "chart_contact_example.py": "9b891cf56d074c9c653c2a3a87f3c735685d267b3aa91fc6d61a2354fad1d80c",
+    "test_chart_types.py": "96eff591bc7db4b03541e62a8dc1b4535771455f83ae78c57e8e36253dac228f"
+  },
+  "historical_versions": "memory1/memory2 predate direct self-domain returns and snapshots; dfs/paired predate alternative routes. Their certificates remain replayable independently. Source hashes above identify the final engine, not all historical runs.",
+  "scheduling_change": "After chart_routes, retain every rule and rejection, set depth_first=false, and rebuild the queue from sorted currently reachable pending obligations; then continue from the saved state."
+}

@@ -100,8 +100,10 @@ def suffix_pairs(s,t,max_step):
 
 
 class BoxSearch:
-    def __init__(self,bins=17,max_step=2):
-        self.qboxes=tuple((F(5,6)**(i+1),F(5,6)**i) for i in range(bins))
+    def __init__(self,bins=17,max_step=2,base=F(5,6)):
+        base=F(base)
+        assert 0<base<1
+        self.qboxes=tuple((base**(i+1),base**i) for i in range(bins))
         self.max_step=max_step;self.cells=[];self.lookup={};self.nodes=[]
         self.proof={};self.offers=[]
         for si,s in enumerate(STATES):

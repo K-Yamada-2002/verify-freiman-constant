@@ -1,0 +1,9 @@
+{
+  "types": 657071,
+  "retained_rules": 402913,
+  "types_with_multiple_rules": 47187,
+  "maximum_rules_per_type": 317,
+  "supported_nodes": [],
+  "scope": "all retained rules; no floating-point negative filters applied",
+  "source_sha256": "a8b44cb7c9011b3fe420577cfb9c6824ce5b22c594a4a7f937b9f295a474d3c0"
+}

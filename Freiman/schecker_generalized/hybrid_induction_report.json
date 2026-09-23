@@ -1,0 +1,223 @@
+{
+  "format": "freiman-hybrid-report-v1",
+  "run": {
+    "status": "induction remains open",
+    "stop": "time budget; all remaining obligations retained",
+    "epochs": 161,
+    "epochs_this_run": 161,
+    "elapsed_search_seconds": 200.27993645799998,
+    "universal_candidates_this_run": 560949,
+    "exhaustive": {
+      "next_code": "2617141",
+      "counts": {
+        "malformed": 2615241,
+        "rejected": 1900,
+        "accepted": 0
+      }
+    },
+    "lane_seconds": {
+      "mosaic": 135.46750523300227,
+      "synthesis": 34.40744866899996
+    },
+    "scheduler_seconds_this_run": {
+      "exhaustive": 8.064971166000063,
+      "discovery": 170.03810479899985
+    },
+    "requested_fallback_share": 0.05,
+    "share_semantics": "time slices; one finite query may overrun; no worst-case speed bound",
+    "baseline": {
+      "mosaic": {
+        "nodes": 2848,
+        "local": 1064,
+        "open": 1784,
+        "closed_supported_types": 0
+      },
+      "synthesis": {
+        "registered": 2848,
+        "reachable": 2848,
+        "unresolved": 1784,
+        "rejected": 0,
+        "steps": 0,
+        "parent_repairs": 0,
+        "stop": "not started",
+        "closed_candidate": false
+      }
+    },
+    "mosaic": {
+      "counts": {
+        "nodes": 2848,
+        "local": 1070,
+        "open": 1778,
+        "closed_supported_types": 0
+      },
+      "statistics": {
+        "edge_trials": 109856,
+        "child_checks": 30630,
+        "child_failures": 30602,
+        "cache_hits": 973,
+        "accepted": 6,
+        "exhausted_targets": 693
+      },
+      "processed_targets": 699,
+      "total_targets": 1784,
+      "finished": false
+    },
+    "synthesis": {
+      "summary": {
+        "registered": 3025,
+        "reachable": 3025,
+        "unresolved": 1926,
+        "rejected": 0,
+        "steps": 42,
+        "parent_repairs": 0,
+        "stop": "not started",
+        "closed_candidate": false
+      },
+      "statistics": {
+        "attempts": 42,
+        "accepted": 35,
+        "no_rule": 7,
+        "exact_rejected": 0,
+        "sweeps": 0
+      },
+      "round": 0
+    },
+    "language_hash": "d47d44baf94f2089ddb78dc0521596ddf469f23ce3f1847fc54f55decdbf47d4",
+    "discovery_hash": "f6fefcceff5263fcad354f7cdff5c0fb98c81c5fd221ca5209a97b6ec03c6b47",
+    "relative_completeness": "every finite certificate accepted by the current verifier is eventually tested under unbounded continuation",
+    "verification": null
+  },
+  "audits": {
+    "mosaic": {
+      "proof_hash": "a807ddc87a71b324503beb246e8b6bca07984594f7df018e3f1caaeae7fc6249",
+      "verified_rules": 1070,
+      "open_nodes": 1778,
+      "failed_rules": 0
+    },
+    "synthesis": {
+      "proof_hash": "49ef64ffb691efc96a8438fac543c7e712d6a1f598e38258dd29351d2a89a488",
+      "verified_rules": 1099,
+      "open_nodes": 1926,
+      "failed_rules": 0
+    }
+  },
+  "tests": {
+    "command": "python3 -m unittest test_hybrid_induction test_complete_induction test_piecewise_charts test_frontier_reduction test_rule_reuse",
+    "passed": 36,
+    "failed": 0
+  },
+  "checks": {
+    "language_current": true,
+    "discovery_current": true,
+    "universal_cursor_accounted": true,
+    "no_success_file": true
+  },
+  "benchmark": {
+    "targets": 64,
+    "results": [
+      {
+        "seconds": 46.53799995800001,
+        "statistics": {
+          "edge_trials": 12054,
+          "child_checks": 12054,
+          "child_failures": 12052,
+          "cache_hits": 3699,
+          "accepted": 0,
+          "exhausted_targets": 64
+        },
+        "proof_hash": "27617115843acdc30f6c0f1e5d02d175c4d50fb5fb4ddc59298301b417089feb",
+        "mode": "eager"
+      },
+      {
+        "seconds": 16.549030416999997,
+        "statistics": {
+          "edge_trials": 12054,
+          "child_checks": 3699,
+          "child_failures": 3699,
+          "cache_hits": 0,
+          "accepted": 0,
+          "exhausted_targets": 64
+        },
+        "proof_hash": "27617115843acdc30f6c0f1e5d02d175c4d50fb5fb4ddc59298301b417089feb",
+        "mode": "lazy"
+      },
+      {
+        "seconds": 16.568411416999993,
+        "statistics": {
+          "edge_trials": 12054,
+          "child_checks": 3699,
+          "child_failures": 3699,
+          "cache_hits": 0,
+          "accepted": 0,
+          "exhausted_targets": 64
+        },
+        "proof_hash": "27617115843acdc30f6c0f1e5d02d175c4d50fb5fb4ddc59298301b417089feb",
+        "mode": "lazy"
+      },
+      {
+        "seconds": 44.431465167,
+        "statistics": {
+          "edge_trials": 12054,
+          "child_checks": 12054,
+          "child_failures": 12052,
+          "cache_hits": 3699,
+          "accepted": 0,
+          "exhausted_targets": 64
+        },
+        "proof_hash": "27617115843acdc30f6c0f1e5d02d175c4d50fb5fb4ddc59298301b417089feb",
+        "mode": "eager"
+      }
+    ],
+    "identical_graphs": true,
+    "scope": "matched kernel, setup/audit excluded; no universal worst-case speed claim",
+    "mean_seconds": {
+      "eager": 45.4847325625,
+      "lazy": 16.558720916999995
+    },
+    "speed_ratio": 2.746874761069446
+  },
+  "independent_closure_checks": {
+    "mosaic": {
+      "closed": false,
+      "reason": "node 2255: unresolved type",
+      "all_n_seeds": true,
+      "counts": {
+        "nodes": 2848,
+        "local": 1070,
+        "open": 1778,
+        "closed_supported_types": 0
+      }
+    },
+    "synthesis": {
+      "closed": false,
+      "reason": "node 2255: unresolved type",
+      "all_n_seeds": true,
+      "counts": {
+        "nodes": 3025,
+        "local": 1099,
+        "open": 1926,
+        "closed_supported_types": 0
+      }
+    }
+  },
+  "resume_verification": {
+    "universal_before": "2617141",
+    "universal_after": "2624462",
+    "additional_candidates": 7321,
+    "counts_accounted": true,
+    "epochs_before": 161,
+    "epochs_after": 163,
+    "same_target_order": true,
+    "same_edge_catalog": true,
+    "old_child_cache_retained": true,
+    "processed_targets_before": 699,
+    "processed_targets_after": 708,
+    "synthesis_unchanged": true,
+    "language_current": true,
+    "discovery_current": true,
+    "audit_failures": {
+      "mosaic": 0,
+      "synthesis": 0
+    }
+  }
+}

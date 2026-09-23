@@ -1,0 +1,216 @@
+{
+  "status": "partial induction; full A_n filling remains unproved",
+  "engine_hash": "36226bd078bc75bf8032b78b11bd20f8013b02e03f3d6b9eebb5cfdf822d7fb0",
+  "target": "all full hulls A_n=(3211(313121)^n3 | 4322(313121)^n), n>=0",
+  "menu_diagnosis": {
+    "probes": 40,
+    "counts": {
+      "no_rule_in_unrestricted_endpoint_bank": 34,
+      "existing_shapes_suffice_with_open_children": 6
+    },
+    "note": "Historical status no_rule_in_unrestricted_endpoint_bank means bounded discovery failed, not exhaustive impossibility. The temporary diagnostic state was not used as a continuation seed."
+  },
+  "extra_corner_filter": {
+    "passed": 26,
+    "total": 34,
+    "status": "floating necessary-condition diagnostic only"
+  },
+  "longer_word_probe": {
+    "probes": 12,
+    "exact_local_rules": 2,
+    "new_shapes_by_success": [
+      0,
+      10
+    ],
+    "introduced_into_main_search": false
+  },
+  "example": {
+    "status": "guarded local implication verified; every saved uniform choice has an exact obstruction",
+    "pieces": 2,
+    "unproved_dependencies": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "results": [
+    {
+      "name": "piecewise_first",
+      "graph": "piecewise_first_graph.json",
+      "audit": "piecewise_first_audit.json",
+      "proof_hash": "160364efd5c9e65eb144b4ed5787ba253cb389cb181f3fec973fc1e407db28d2",
+      "cases": 4296,
+      "verified_local_rules": 1442,
+      "open_types": 2854,
+      "failed_rules": 0,
+      "guarded_local_rules": 11,
+      "guard_sizes": {
+        "2": 9,
+        "3": 2
+      },
+      "search": {
+        "registered": 7438,
+        "reachable": 4296,
+        "unresolved": 2854,
+        "rejected": 79,
+        "steps": 8752,
+        "parent_repairs": 4001,
+        "stop": "time limit",
+        "closed_candidate": false,
+        "closed_supported_types": 0
+      },
+      "partition_statistics": {
+        "attempts": 93,
+        "accepted": 14,
+        "pieces": 30,
+        "exact_rejected": 0
+      },
+      "settings": {
+        "configuration": {
+          "chart_memory": 1,
+          "states": 6,
+          "bins": 25,
+          "base": "22/25",
+          "max_step": 1,
+          "outer_depth": 4,
+          "outer_samples": 3,
+          "local_filter": false,
+          "balance": "9/10",
+          "reuse_pending": true,
+          "adaptive_shapes": true,
+          "max_shapes": 48,
+          "partition_depth": 2
+        },
+        "source_state": "Freiman/schecker_generalized/chart_routes_breadth_graph.state.json",
+        "engine_hash": "410fd89752e4e6b994bfe925b8e4a0da87782ad8acfebd35c33be2e041a8de9f"
+      },
+      "state_upgrades": [
+        {
+          "previous_hash": "223e02022cfa9dd46c40bdf4f8f6aed73cd934c044b40a91a85cce31984e5673",
+          "new_hash": "eec430584279b2e79b366a18c21f36ff0bf63eb411d8487f5da807821affab08",
+          "verified_local_rules": 324,
+          "source_proof_hash": "2499dd2bbb61394838f41a36b0c546320124e7cd06026918ecf92fec47853770",
+          "reopened": 682
+        },
+        {
+          "previous_hash": "eec430584279b2e79b366a18c21f36ff0bf63eb411d8487f5da807821affab08",
+          "new_hash": "410fd89752e4e6b994bfe925b8e4a0da87782ad8acfebd35c33be2e041a8de9f",
+          "verified_local_rules": 1251,
+          "reopened": 2066
+        }
+      ],
+      "closure": {
+        "accepted": false,
+        "reason": "node 2524: unresolved type"
+      }
+    },
+    {
+      "name": "piecewise_axes",
+      "graph": "piecewise_axes_graph.json",
+      "audit": "piecewise_axes_audit.json",
+      "proof_hash": "793e18dce583c546d07652c9e86e3438da0b30e546757104fbdf78e95737c5e0",
+      "cases": 4771,
+      "verified_local_rules": 1650,
+      "open_types": 3121,
+      "failed_rules": 0,
+      "guarded_local_rules": 17,
+      "guard_sizes": {
+        "2": 10,
+        "3": 7
+      },
+      "search": {
+        "registered": 8025,
+        "reachable": 4771,
+        "unresolved": 3121,
+        "rejected": 49,
+        "steps": 9129,
+        "parent_repairs": 4098,
+        "stop": "time limit",
+        "closed_candidate": false,
+        "closed_supported_types": 0
+      },
+      "partition_statistics": {
+        "attempts": 150,
+        "accepted": 22,
+        "pieces": 52,
+        "exact_rejected": 0,
+        "axis_trials": 596
+      },
+      "settings": {
+        "configuration": {
+          "chart_memory": 1,
+          "states": 6,
+          "bins": 25,
+          "base": "22/25",
+          "max_step": 1,
+          "outer_depth": 4,
+          "outer_samples": 3,
+          "local_filter": false,
+          "balance": "9/10",
+          "reuse_pending": true,
+          "adaptive_shapes": true,
+          "max_shapes": 48,
+          "partition_depth": 2
+        },
+        "source_state": "/tmp/freiman-piecewise.state.json",
+        "engine_hash": "36226bd078bc75bf8032b78b11bd20f8013b02e03f3d6b9eebb5cfdf822d7fb0"
+      },
+      "state_upgrades": [
+        {
+          "previous_hash": "223e02022cfa9dd46c40bdf4f8f6aed73cd934c044b40a91a85cce31984e5673",
+          "new_hash": "eec430584279b2e79b366a18c21f36ff0bf63eb411d8487f5da807821affab08",
+          "verified_local_rules": 324,
+          "source_proof_hash": "2499dd2bbb61394838f41a36b0c546320124e7cd06026918ecf92fec47853770",
+          "reopened": 682
+        },
+        {
+          "previous_hash": "eec430584279b2e79b366a18c21f36ff0bf63eb411d8487f5da807821affab08",
+          "new_hash": "410fd89752e4e6b994bfe925b8e4a0da87782ad8acfebd35c33be2e041a8de9f",
+          "verified_local_rules": 1251,
+          "reopened": 2066
+        },
+        {
+          "previous_hash": "410fd89752e4e6b994bfe925b8e4a0da87782ad8acfebd35c33be2e041a8de9f",
+          "new_hash": "36226bd078bc75bf8032b78b11bd20f8013b02e03f3d6b9eebb5cfdf822d7fb0",
+          "verified_local_rules": 1586,
+          "reopened": 79
+        }
+      ],
+      "closure": {
+        "accepted": false,
+        "reason": "node 2488: unresolved type"
+      }
+    }
+  ],
+  "endpoint_menu_size": 48,
+  "latest_state": "piecewise_axes_graph.state.json",
+  "snapshot_roundtrip": {
+    "passed": true,
+    "graph_hash": "dynamically checked against latest graph"
+  },
+  "tests": {
+    "passed": 68,
+    "commands": [
+      "python3 -m unittest test_piecewise_charts test_chart_repair test_chart_types test_cyclic_types test_small_type_menu test_frontier_repair",
+      "python3 -m unittest test_piecewise_charts.PiecewiseTests.test_real_piecewise_example_and_uniform_counterexamples_without_floats"
+    ],
+    "note": "67 tests in the combined run; the subsequently added exact-example test passed separately."
+  },
+  "historical_source_note": "piecewise_first used the initial largest-width-axis heuristic; piecewise_axes used all eligible axes with local memoization. Both graph artifacts are replayed by the same exact verifier. Source hashes here identify final files.",
+  "source_sha256": {
+    "repair_chart_menu.py": "8f99d7598b0b34ef8c95addfdb40a5a5573e0dcd678868857393c6b710025dda",
+    "search_piecewise_charts.py": "035e6fef8ad569ea9026249b4acadf77632d7d68c844eabcba4ac2d631ce37ed",
+    "verify_piecewise_charts.py": "cf643e3e5538b6b1ea16c3403e4ed17b2ec5b9c37c87e7bf37e8c858003f651d",
+    "piecewise_chart_example.py": "ae4ec230041dc0d2c2982fda2155c7018e2fd9d116822627853a9fe0c225c616",
+    "test_chart_repair.py": "879e545d14f40db9256b88194475fed5a6af37659e1840bb387a101f171515a0",
+    "test_piecewise_charts.py": "808770c1835afe66225e6e6fd016fda054fa26ad72ece71fd42978803811e93e"
+  }
+}

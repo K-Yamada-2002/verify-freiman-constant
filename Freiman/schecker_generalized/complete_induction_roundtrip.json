@@ -1,0 +1,24 @@
+{
+  "status": "same-engine restoration and independent replay agree",
+  "finite_state_roundtrip": true,
+  "finite_state_unchanged": true,
+  "enumeration_state_roundtrip": true,
+  "enumeration_replay_equal": true,
+  "next_code_before": "2048000",
+  "next_code_after": "2056192",
+  "additional_candidates": 8192,
+  "additional_epochs": 32,
+  "counts_before": {
+    "malformed": 2046132,
+    "rejected": 1868,
+    "accepted": 0
+  },
+  "counts_after": {
+    "malformed": 2054324,
+    "rejected": 1868,
+    "accepted": 0
+  },
+  "engine_hash": "d47d44baf94f2089ddb78dc0521596ddf469f23ce3f1847fc54f55decdbf47d4",
+  "bank_hash": "01a080c98d870a37f130bbcb821040450b276f1df78e0f5cd39b3c501c226b12",
+  "final_state_sha256": "8e76e32c7002cd52025085572a08062e9d4245335e4e5009f6a739687ef1e6bf"
+}

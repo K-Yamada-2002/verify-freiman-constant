@@ -1,0 +1,1110 @@
+{
+  "status": "no closed induction graph accepted",
+  "trials": [
+    {
+      "name": "memory3",
+      "graph": "cyclic_refined_memory3_graph.json",
+      "audit": "cyclic_refined_memory3_audit.json",
+      "settings": {
+        "endpoints": "/Users/mirukuma/Documents/GitHub/verify-freiman-constant/Freiman/schecker_generalized/adaptive_depth8_certificate.json",
+        "states": 6,
+        "memory": 3,
+        "bins": 160,
+        "base": "49/50",
+        "max_step": 2,
+        "variants": 4,
+        "outer_depth": 3,
+        "outer_samples": 3,
+        "grid": 4,
+        "no_reuse": false,
+        "no_local_filter": true,
+        "prune_supersets": true,
+        "balance": "9/10",
+        "native_executable": "/tmp/freiman-cyclic-planner-v3",
+        "refinement_rounds": 3,
+        "split_count": 24,
+        "split_depth": 4,
+        "max_types": 30000,
+        "max_steps": 100000,
+        "seconds": 300.0,
+        "output": "/tmp/freiman-balanced-pruned.json"
+      },
+      "search": {
+        "registered": 1030,
+        "reachable": 1003,
+        "unresolved": 816,
+        "rejected": 10,
+        "steps": 207,
+        "parent_repairs": 10,
+        "stop": "time limit",
+        "closed_candidate": false,
+        "outer_filter_rejections": 0,
+        "reused_targets": 6564,
+        "local_filter_rejections": 0,
+        "superset_rejections": 15462
+      },
+      "refinement_history": [
+        {
+          "round": 0,
+          "search": {
+            "registered": 1103,
+            "reachable": 1070,
+            "unresolved": 866,
+            "rejected": 18,
+            "steps": 240,
+            "parent_repairs": 18,
+            "stop": "time limit",
+            "closed_candidate": false
+          },
+          "cells": 9772,
+          "splits": [
+            {
+              "cell": 1542,
+              "axis": "r",
+              "children": [
+                9772,
+                9773
+              ],
+              "blocked": 4
+            },
+            {
+              "cell": 698,
+              "axis": "r",
+              "children": [
+                9774,
+                9775
+              ],
+              "blocked": 2
+            },
+            {
+              "cell": 1272,
+              "axis": "s",
+              "children": [
+                9776,
+                9777
+              ],
+              "blocked": 2
+            },
+            {
+              "cell": 1317,
+              "axis": "s",
+              "children": [
+                9778,
+                9779
+              ],
+              "blocked": 2
+            },
+            {
+              "cell": 7641,
+              "axis": "s",
+              "children": [
+                9780,
+                9781
+              ],
+              "blocked": 2
+            },
+            {
+              "cell": 1240,
+              "axis": "r",
+              "children": [
+                9782,
+                9783
+              ],
+              "blocked": 1
+            },
+            {
+              "cell": 1336,
+              "axis": "r",
+              "children": [
+                9784,
+                9785
+              ],
+              "blocked": 1
+            },
+            {
+              "cell": 1478,
+              "axis": "r",
+              "children": [
+                9786,
+                9787
+              ],
+              "blocked": 1
+            },
+            {
+              "cell": 2897,
+              "axis": "r",
+              "children": [
+                9788,
+                9789
+              ],
+              "blocked": 1
+            },
+            {
+              "cell": 4005,
+              "axis": "ratio",
+              "children": [
+                9790,
+                9791
+              ],
+              "blocked": 1
+            },
+            {
+              "cell": 7091,
+              "axis": "ratio",
+              "children": [
+                9792,
+                9793
+              ],
+              "blocked": 1
+            }
+          ]
+        },
+        {
+          "round": 1,
+          "search": {
+            "registered": 960,
+            "reachable": 718,
+            "unresolved": 585,
+            "rejected": 82,
+            "steps": 297,
+            "parent_repairs": 82,
+            "stop": "time limit",
+            "closed_candidate": false
+          },
+          "cells": 12127,
+          "splits": [
+            {
+              "cell": 1526,
+              "axis": "r",
+              "children": [
+                12127,
+                12128
+              ],
+              "blocked": 78
+            },
+            {
+              "cell": 3130,
+              "axis": "ratio",
+              "children": [
+                12129,
+                12130
+              ],
+              "blocked": 2
+            },
+            {
+              "cell": 3059,
+              "axis": "ratio",
+              "children": [
+                12131,
+                12132
+              ],
+              "blocked": 1
+            },
+            {
+              "cell": 8221,
+              "axis": "s",
+              "children": [
+                12133,
+                12134
+              ],
+              "blocked": 1
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "search": {
+            "registered": 1030,
+            "reachable": 1003,
+            "unresolved": 816,
+            "rejected": 10,
+            "steps": 207,
+            "parent_repairs": 10,
+            "stop": "time limit",
+            "closed_candidate": false
+          },
+          "cells": 15386
+        }
+      ],
+      "verified_local_rules": 187,
+      "failed_rules": 0,
+      "open_types": 816,
+      "proof_hash": "f997768c97d2622d7babc46c8f4de68e77c68738fb36982b4582b5516d86b93f",
+      "closed_supported_types": 0,
+      "self_return_types": 10,
+      "parameter_cells": 843,
+      "cells_with_local_rules": 180,
+      "closure_rejection": "node 82: unresolved type"
+    },
+    {
+      "name": "breadth",
+      "graph": "cyclic_refined_breadth_graph.json",
+      "audit": "cyclic_refined_breadth_audit.json",
+      "settings": {
+        "endpoints": "/Users/mirukuma/Documents/GitHub/verify-freiman-constant/Freiman/schecker_generalized/adaptive_depth8_certificate.json",
+        "states": 13,
+        "memory": 0,
+        "bins": 72,
+        "base": "24/25",
+        "max_step": 1,
+        "variants": 4,
+        "outer_depth": 3,
+        "outer_samples": 3,
+        "grid": 4,
+        "no_reuse": false,
+        "breadth_first": true,
+        "no_local_filter": true,
+        "prune_supersets": true,
+        "balance": "9/10",
+        "native_executable": "/tmp/freiman-cyclic-planner-v3",
+        "refinement_rounds": 2,
+        "split_count": 24,
+        "split_depth": 4,
+        "max_types": 20000,
+        "max_steps": 100000,
+        "seconds": 240.0,
+        "output": "/tmp/freiman-breadth-balanced.json"
+      },
+      "search": {
+        "registered": 4348,
+        "reachable": 4022,
+        "unresolved": 2654,
+        "rejected": 164,
+        "steps": 1787,
+        "parent_repairs": 191,
+        "stop": "time limit",
+        "closed_candidate": false,
+        "outer_filter_rejections": 0,
+        "reused_targets": 27350,
+        "local_filter_rejections": 0,
+        "superset_rejections": 24681,
+        "closed_supported_types": 0
+      },
+      "refinement_history": [
+        {
+          "round": 0,
+          "search": {
+            "registered": 3452,
+            "reachable": 3162,
+            "unresolved": 2189,
+            "rejected": 126,
+            "steps": 1304,
+            "parent_repairs": 151,
+            "stop": "time limit",
+            "closed_candidate": false
+          },
+          "cells": 48674,
+          "splits": [
+            {
+              "cell": 22827,
+              "axis": "ratio",
+              "children": [
+                48674,
+                48675
+              ],
+              "blocked": 4
+            },
+            {
+              "cell": 23836,
+              "axis": "ratio",
+              "children": [
+                48676,
+                48677
+              ],
+              "blocked": 4
+            },
+            {
+              "cell": 31882,
+              "axis": "ratio",
+              "children": [
+                48678,
+                48679
+              ],
+              "blocked": 4
+            },
+            {
+              "cell": 1099,
+              "axis": "r",
+              "children": [
+                48680,
+                48681
+              ],
+              "blocked": 3
+            },
+            {
+              "cell": 8875,
+              "axis": "ratio",
+              "children": [
+                48682,
+                48683
+              ],
+              "blocked": 3
+            },
+            {
+              "cell": 9223,
+              "axis": "ratio",
+              "children": [
+                48684,
+                48685
+              ],
+              "blocked": 3
+            },
+            {
+              "cell": 9393,
+              "axis": "ratio",
+              "children": [
+                48686,
+                48687
+              ],
+              "blocked": 3
+            },
+            {
+              "cell": 13138,
+              "axis": "ratio",
+              "children": [
+                48688,
+                48689
+              ],
+              "blocked": 3
+            },
+            {
+              "cell": 16651,
+              "axis": "ratio",
+              "children": [
+                48690,
+                48691
+              ],
+              "blocked": 3
+            },
+            {
+              "cell": 2056,
+              "axis": "r",
+              "children": [
+                48692,
+                48693
+              ],
+              "blocked": 2
+            },
+            {
+              "cell": 5674,
+              "axis": "ratio",
+              "children": [
+                48694,
+                48695
+              ],
+              "blocked": 2
+            },
+            {
+              "cell": 7784,
+              "axis": "ratio",
+              "children": [
+                48696,
+                48697
+              ],
+              "blocked": 2
+            },
+            {
+              "cell": 8072,
+              "axis": "ratio",
+              "children": [
+                48698,
+                48699
+              ],
+              "blocked": 2
+            },
+            {
+              "cell": 8286,
+              "axis": "ratio",
+              "children": [
+                48700,
+                48701
+              ],
+              "blocked": 2
+            },
+            {
+              "cell": 8874,
+              "axis": "ratio",
+              "children": [
+                48702,
+                48703
+              ],
+              "blocked": 2
+            },
+            {
+              "cell": 9451,
+              "axis": "ratio",
+              "children": [
+                48704,
+                48705
+              ],
+              "blocked": 2
+            },
+            {
+              "cell": 11403,
+              "axis": "s",
+              "children": [
+                48706,
+                48707
+              ],
+              "blocked": 2
+            },
+            {
+              "cell": 12618,
+              "axis": "ratio",
+              "children": [
+                48708,
+                48709
+              ],
+              "blocked": 2
+            },
+            {
+              "cell": 12619,
+              "axis": "ratio",
+              "children": [
+                48710,
+                48711
+              ],
+              "blocked": 2
+            },
+            {
+              "cell": 20091,
+              "axis": "ratio",
+              "children": [
+                48712,
+                48713
+              ],
+              "blocked": 2
+            },
+            {
+              "cell": 20092,
+              "axis": "ratio",
+              "children": [
+                48714,
+                48715
+              ],
+              "blocked": 2
+            },
+            {
+              "cell": 20097,
+              "axis": "ratio",
+              "children": [
+                48716,
+                48717
+              ],
+              "blocked": 2
+            },
+            {
+              "cell": 21896,
+              "axis": "ratio",
+              "children": [
+                48718,
+                48719
+              ],
+              "blocked": 2
+            },
+            {
+              "cell": 22826,
+              "axis": "ratio",
+              "children": [
+                48720,
+                48721
+              ],
+              "blocked": 2
+            }
+          ]
+        },
+        {
+          "round": 1,
+          "search": {
+            "registered": 4348,
+            "reachable": 4022,
+            "unresolved": 2654,
+            "rejected": 164,
+            "steps": 1787,
+            "parent_repairs": 191,
+            "stop": "time limit",
+            "closed_candidate": false
+          },
+          "cells": 48722
+        }
+      ],
+      "verified_local_rules": 1368,
+      "failed_rules": 0,
+      "open_types": 2654,
+      "proof_hash": "164872065a0362c2c015b1a6aab0bff1aec6d1a69d3ee828c2f267f99c8528ab",
+      "closed_supported_types": 0,
+      "self_return_types": 59,
+      "parameter_cells": 2714,
+      "cells_with_local_rules": 1046,
+      "closure_rejection": "node 1551: unresolved type"
+    },
+    {
+      "name": "growing_endpoints",
+      "graph": "cyclic_refined_endpoints_graph.json",
+      "audit": "cyclic_refined_endpoints_audit.json",
+      "settings": {
+        "endpoints": "/Users/mirukuma/Documents/GitHub/verify-freiman-constant/Freiman/schecker_generalized/adaptive_depth8_certificate.json",
+        "states": 6,
+        "memory": 3,
+        "bins": 160,
+        "base": "49/50",
+        "max_step": 1,
+        "variants": 4,
+        "outer_depth": 3,
+        "outer_samples": 3,
+        "grid": 0,
+        "edge_grid": 16,
+        "grow_edge_grid": true,
+        "no_reuse": false,
+        "breadth_first": true,
+        "no_local_filter": true,
+        "prune_supersets": true,
+        "balance": "9/10",
+        "native_executable": "/tmp/freiman-cyclic-planner-v3",
+        "refinement_rounds": 2,
+        "split_count": 24,
+        "split_depth": 4,
+        "max_types": 30000,
+        "max_steps": 100000,
+        "seconds": 240.0,
+        "output": "/tmp/freiman-growing-endpoints.json"
+      },
+      "search": {
+        "registered": 2889,
+        "reachable": 2684,
+        "unresolved": 1946,
+        "rejected": 67,
+        "steps": 896,
+        "parent_repairs": 54,
+        "stop": "time limit",
+        "closed_candidate": false,
+        "outer_filter_rejections": 0,
+        "reused_targets": 3873,
+        "local_filter_rejections": 0,
+        "superset_rejections": 5371,
+        "closed_supported_types": 0
+      },
+      "refinement_history": [
+        {
+          "round": 0,
+          "search": {
+            "registered": 3861,
+            "reachable": 3378,
+            "unresolved": 2431,
+            "rejected": 92,
+            "steps": 1222,
+            "parent_repairs": 76,
+            "stop": "time limit",
+            "closed_candidate": false
+          },
+          "cells": 8850,
+          "splits": [
+            {
+              "cell": 103,
+              "axis": "ratio",
+              "children": [
+                8850,
+                8851
+              ],
+              "blocked": 5
+            },
+            {
+              "cell": 843,
+              "axis": "ratio",
+              "children": [
+                8852,
+                8853
+              ],
+              "blocked": 4
+            },
+            {
+              "cell": 853,
+              "axis": "ratio",
+              "children": [
+                8854,
+                8855
+              ],
+              "blocked": 4
+            },
+            {
+              "cell": 479,
+              "axis": "ratio",
+              "children": [
+                8856,
+                8857
+              ],
+              "blocked": 3
+            },
+            {
+              "cell": 1008,
+              "axis": "ratio",
+              "children": [
+                8858,
+                8859
+              ],
+              "blocked": 3
+            },
+            {
+              "cell": 50,
+              "axis": "ratio",
+              "children": [
+                8860,
+                8861
+              ],
+              "blocked": 2
+            },
+            {
+              "cell": 51,
+              "axis": "ratio",
+              "children": [
+                8862,
+                8863
+              ],
+              "blocked": 2
+            },
+            {
+              "cell": 52,
+              "axis": "ratio",
+              "children": [
+                8864,
+                8865
+              ],
+              "blocked": 2
+            },
+            {
+              "cell": 123,
+              "axis": "ratio",
+              "children": [
+                8866,
+                8867
+              ],
+              "blocked": 2
+            },
+            {
+              "cell": 779,
+              "axis": "ratio",
+              "children": [
+                8868,
+                8869
+              ],
+              "blocked": 2
+            },
+            {
+              "cell": 842,
+              "axis": "ratio",
+              "children": [
+                8870,
+                8871
+              ],
+              "blocked": 2
+            },
+            {
+              "cell": 845,
+              "axis": "ratio",
+              "children": [
+                8872,
+                8873
+              ],
+              "blocked": 2
+            },
+            {
+              "cell": 861,
+              "axis": "ratio",
+              "children": [
+                8874,
+                8875
+              ],
+              "blocked": 2
+            },
+            {
+              "cell": 1137,
+              "axis": "ratio",
+              "children": [
+                8876,
+                8877
+              ],
+              "blocked": 2
+            },
+            {
+              "cell": 1261,
+              "axis": "ratio",
+              "children": [
+                8878,
+                8879
+              ],
+              "blocked": 2
+            },
+            {
+              "cell": 1359,
+              "axis": "ratio",
+              "children": [
+                8880,
+                8881
+              ],
+              "blocked": 2
+            },
+            {
+              "cell": 1700,
+              "axis": "ratio",
+              "children": [
+                8882,
+                8883
+              ],
+              "blocked": 2
+            },
+            {
+              "cell": 1805,
+              "axis": "ratio",
+              "children": [
+                8884,
+                8885
+              ],
+              "blocked": 2
+            },
+            {
+              "cell": 1814,
+              "axis": "ratio",
+              "children": [
+                8886,
+                8887
+              ],
+              "blocked": 2
+            },
+            {
+              "cell": 49,
+              "axis": "ratio",
+              "children": [
+                8888,
+                8889
+              ],
+              "blocked": 1
+            },
+            {
+              "cell": 69,
+              "axis": "ratio",
+              "children": [
+                8890,
+                8891
+              ],
+              "blocked": 1
+            },
+            {
+              "cell": 70,
+              "axis": "ratio",
+              "children": [
+                8892,
+                8893
+              ],
+              "blocked": 1
+            },
+            {
+              "cell": 478,
+              "axis": "ratio",
+              "children": [
+                8894,
+                8895
+              ],
+              "blocked": 1
+            },
+            {
+              "cell": 480,
+              "axis": "ratio",
+              "children": [
+                8896,
+                8897
+              ],
+              "blocked": 1
+            }
+          ],
+          "endpoint_refinement": {
+            "denominator": 32,
+            "added_labels": 64
+          }
+        },
+        {
+          "round": 1,
+          "search": {
+            "registered": 2889,
+            "reachable": 2684,
+            "unresolved": 1946,
+            "rejected": 67,
+            "steps": 896,
+            "parent_repairs": 54,
+            "stop": "time limit",
+            "closed_candidate": false
+          },
+          "cells": 9407
+        }
+      ],
+      "verified_local_rules": 738,
+      "failed_rules": 0,
+      "open_types": 1946,
+      "proof_hash": "be8834859bcd4094509ec9c9195113ba250bb2170e0dd2bb7df73c5ba8cca2b8",
+      "closed_supported_types": 0,
+      "self_return_types": 40,
+      "parameter_cells": 2017,
+      "cells_with_local_rules": 615,
+      "closure_rejection": "node 1750: unresolved type"
+    },
+    {
+      "name": "direct_returns_states13",
+      "graph": "cyclic_direct_states13_graph.json",
+      "audit": "cyclic_direct_states13_audit.json",
+      "settings": {
+        "endpoints": "/Users/mirukuma/Documents/GitHub/verify-freiman-constant/Freiman/schecker_generalized/adaptive_depth8_certificate.json",
+        "states": 13,
+        "memory": 0,
+        "bins": 72,
+        "base": "24/25",
+        "max_step": 1,
+        "variants": 4,
+        "outer_depth": 3,
+        "outer_samples": 3,
+        "grid": 0,
+        "edge_grid": 16,
+        "grow_edge_grid": false,
+        "no_reuse": false,
+        "no_return_offers": false,
+        "breadth_first": true,
+        "no_local_filter": true,
+        "prune_supersets": false,
+        "balance": "9/10",
+        "native_executable": "/tmp/freiman-cyclic-planner-v4",
+        "refinement_rounds": 1,
+        "split_count": 12,
+        "split_depth": 4,
+        "max_types": 30000,
+        "max_steps": 100000,
+        "seconds": 600.0,
+        "output": "/tmp/freiman-direct-returns-states13.json"
+      },
+      "search": {
+        "registered": 10807,
+        "reachable": 9638,
+        "unresolved": 5620,
+        "rejected": 568,
+        "steps": 5646,
+        "parent_repairs": 824,
+        "stop": "time limit",
+        "closed_candidate": false,
+        "outer_filter_rejections": 0,
+        "reused_targets": 48724,
+        "local_filter_rejections": 0,
+        "superset_rejections": 0,
+        "closed_supported_types": 0
+      },
+      "refinement_history": [
+        {
+          "round": 0,
+          "search": {
+            "registered": 10807,
+            "reachable": 9638,
+            "unresolved": 5620,
+            "rejected": 568,
+            "steps": 5646,
+            "parent_repairs": 824,
+            "stop": "time limit",
+            "closed_candidate": false
+          },
+          "cells": 48674
+        }
+      ],
+      "verified_local_rules": 4018,
+      "failed_rules": 0,
+      "open_types": 5620,
+      "proof_hash": "1f83f2e47517fdf632bc76e00b887129224e67a6262de3bdb2fec68a38d4f99e",
+      "closed_supported_types": 0,
+      "self_return_types": 176,
+      "parameter_cells": 5769,
+      "cells_with_local_rules": 2801,
+      "closure_rejection": "node 9223: unresolved type"
+    },
+    {
+      "name": "direct_returns_memory3",
+      "graph": "cyclic_direct_memory3_graph.json",
+      "audit": "cyclic_direct_memory3_audit.json",
+      "settings": {
+        "endpoints": "/Users/mirukuma/Documents/GitHub/verify-freiman-constant/Freiman/schecker_generalized/adaptive_depth8_certificate.json",
+        "states": 6,
+        "memory": 3,
+        "bins": 160,
+        "base": "49/50",
+        "max_step": 1,
+        "variants": 4,
+        "outer_depth": 3,
+        "outer_samples": 3,
+        "grid": 0,
+        "edge_grid": 16,
+        "grow_edge_grid": false,
+        "no_reuse": false,
+        "no_return_offers": false,
+        "breadth_first": true,
+        "no_local_filter": true,
+        "prune_supersets": false,
+        "balance": "9/10",
+        "native_executable": "/tmp/freiman-cyclic-planner-v4",
+        "refinement_rounds": 1,
+        "split_count": 12,
+        "split_depth": 4,
+        "max_types": 30000,
+        "max_steps": 100000,
+        "seconds": 600.0,
+        "output": "/tmp/freiman-direct-returns-memory3.json"
+      },
+      "search": {
+        "registered": 13450,
+        "reachable": 12565,
+        "unresolved": 8435,
+        "rejected": 414,
+        "steps": 5157,
+        "parent_repairs": 471,
+        "stop": "time limit",
+        "closed_candidate": false,
+        "outer_filter_rejections": 0,
+        "reused_targets": 11975,
+        "local_filter_rejections": 0,
+        "superset_rejections": 0,
+        "closed_supported_types": 0
+      },
+      "refinement_history": [
+        {
+          "round": 0,
+          "search": {
+            "registered": 13450,
+            "reachable": 12565,
+            "unresolved": 8435,
+            "rejected": 414,
+            "steps": 5157,
+            "parent_repairs": 471,
+            "stop": "time limit",
+            "closed_candidate": false
+          },
+          "cells": 25186
+        }
+      ],
+      "verified_local_rules": 4130,
+      "failed_rules": 0,
+      "open_types": 8435,
+      "proof_hash": "24c1ac0374586865ea6ca6f6f76198b53c2d179df07270dbfc3f92ce68449654",
+      "closed_supported_types": 0,
+      "self_return_types": 214,
+      "parameter_cells": 9028,
+      "cells_with_local_rules": 3249,
+      "closure_rejection": "node 11492: unresolved type"
+    },
+    {
+      "name": "pending_returns_states13",
+      "graph": "cyclic_pending_states13_graph.json",
+      "audit": "cyclic_pending_states13_audit.json",
+      "settings": {
+        "endpoints": "/Users/mirukuma/Documents/GitHub/verify-freiman-constant/Freiman/schecker_generalized/adaptive_depth8_certificate.json",
+        "states": 13,
+        "memory": 0,
+        "bins": 72,
+        "base": "24/25",
+        "max_step": 1,
+        "variants": 4,
+        "outer_depth": 3,
+        "outer_samples": 3,
+        "grid": 0,
+        "edge_grid": 16,
+        "grow_edge_grid": false,
+        "no_reuse": false,
+        "no_return_offers": false,
+        "reuse_pending": true,
+        "breadth_first": true,
+        "no_local_filter": true,
+        "prune_supersets": false,
+        "balance": "9/10",
+        "native_executable": "/tmp/freiman-cyclic-planner-v5",
+        "refinement_rounds": 1,
+        "split_count": 12,
+        "split_depth": 4,
+        "max_types": 30000,
+        "max_steps": 100000,
+        "seconds": 480.0,
+        "output": "/tmp/freiman-pending-returns-states13.json"
+      },
+      "search": {
+        "registered": 6728,
+        "reachable": 6169,
+        "unresolved": 3396,
+        "rejected": 373,
+        "steps": 3951,
+        "parent_repairs": 722,
+        "stop": "time limit",
+        "closed_candidate": false,
+        "outer_filter_rejections": 0,
+        "reused_targets": 75859,
+        "local_filter_rejections": 0,
+        "superset_rejections": 0,
+        "closed_supported_types": 0
+      },
+      "refinement_history": [
+        {
+          "round": 0,
+          "search": {
+            "registered": 6728,
+            "reachable": 6169,
+            "unresolved": 3396,
+            "rejected": 373,
+            "steps": 3951,
+            "parent_repairs": 722,
+            "stop": "time limit",
+            "closed_candidate": false
+          },
+          "cells": 48674
+        }
+      ],
+      "verified_local_rules": 2773,
+      "failed_rules": 0,
+      "open_types": 3396,
+      "proof_hash": "cfafb77876fdba242fdd5802b66a4447b91c4f133d501eccbff355311791b20f",
+      "closed_supported_types": 0,
+      "self_return_types": 141,
+      "parameter_cells": 4933,
+      "cells_with_local_rules": 2381,
+      "closure_rejection": "node 3001: unresolved type"
+    }
+  ],
+  "source_hashes_at_archive": {
+    "adaptive_induction.py": "c98c4f1255ac9187115a45a12302c76fa6bd24c03461dc960c26a54dd7bccffe",
+    "adaptive_types.py": "b29360929e5e3774f5a0538ba8657c629867a32b2f4a99e4acd97879f5309eaa",
+    "audit_child_covers.py": "650aa149efde634ff02d1ad3ab5cb391f9cb04beff19f11c220256845e2a71da",
+    "child_family_covers.py": "fa889dd830354d20554337e84a155a2c308b1fab4a75caa4cc28be42331115d9",
+    "cyclic_planner.cpp": "a13427ffe22120618d51d2f32c72b2ec57e379610945885ec4ac411fffd9ecde",
+    "deeper_child_gaps.py": "51eb97042847a25bdc7fb51c036df39000ad1497bfe503cfccfd1064a6df80b4",
+    "exact_shape_search.py": "8ffacb931ad3b1bc5df9def73e233ba92ff04052843aa50a9166e8a5e5e72276",
+    "explore.py": "0a68dcb33ad716070131fbdeb573b4bb0ce7a39538119cce18e82eaa8977d643",
+    "finite_type_game.py": "adbbef8340e6fc5f375dcb5ec2b242125bb093a0a86dda24c4a222040b2f9b1a",
+    "frontier_obstructions.py": "72c868d15f4d2ba6c11f35e7616f23d384128cee33b8a95b6289e372e696d826",
+    "invariant_anchor_components.py": "0914c60408515b259807cd10224a790fcd7093cf7caefb9c48012b39ef4eba9a",
+    "invariant_boxes.py": "b7cc1619d848c7a3e36f4b7659f7f4ac20009313df0c82ca92db9c817cbc5382",
+    "invariant_endpoint_components.py": "df619cf92e1b3f630137afba773723ba42c3b5beb2528ad441633ca6dfd7411e",
+    "invariant_width_boxes.py": "3e546565ab204a4427a1352d9744c3f48f18f83806b9928d4d705a19ab0048cb",
+    "learned_components_native.cpp": "bad7728b55ea3cf167dabb7e3bcfb206b3b55282df79b89ef56b4be17918241c",
+    "periodic_anchor_invariant.py": "d063c1482ddadca43a85301ea3dc06356d5ecc3739ffa418c587cf0e01876ad3",
+    "repair_child_covers.py": "72c55d0714630b4e056ec17bd061b39a1296f248b71cd566eebd8ba28a20c9b6",
+    "run_cyclic_search.py": "571a8be25987feb1b4e0fca0fa01301a782b7ef14f31989eeca9d32a165b6c24",
+    "search_adaptive_type_boxes.py": "dd30f65d4fab1ed6f7106b46234876de838675edb7b47ba0bfdf757dc261d7fc",
+    "search_cyclic_types.py": "60924ca216eada49cd3331cbc84dad13e499c95cfa0b2581ee00974a00f2848b",
+    "search_learned_components.py": "5857408a708ac292c383ed53cb2f11a0fc66a07981c10209027db4a447117f92",
+    "search_shape_bank.py": "b375931f259466c587cfdcc5b32bdbbf63fabcfa136b33369be1d4f412043f7e",
+    "search_types.py": "dec54520aff5e60ae79315aaa8a63b3890da866d8ad31278e62d4de6e1087ca2",
+    "test_adaptive_types.py": "1aa2fde3ed0ee5baba1ae17e1b8a26e7d30bbbb1d0e85c315f2a269ae79bb46b",
+    "test_child_covers.py": "faae2cb4191cbf44ffc6baedfb94b7c2a7b5885252cf4482826b34379fb9d0a4",
+    "test_cyclic_types.py": "92c1a0c7e83f0379721eef53aa7a2b1faee63bc0e5573337494a0bbcdfdfacfb",
+    "test_explore.py": "7b0f846058d02129e9283fd1bfe69d5f208fcad69babd2d89c41653b07ba045d",
+    "test_induction_obstructions.py": "e547d7be44de9fb75feff5ca454ef03dfaf93ce21cef287e506c307bd345f99c",
+    "test_type_search.py": "5a4c0ba275ae1fa22829e2991bc7d123de4e22ab52d77e1b6f70523edbdcc4b2",
+    "type_certificates.py": "2ca6b425f2294232aca647a473db2c8397a5fd1df0be409e447b3feb8d04d69b",
+    "type_graph_geometry.py": "ad86f69bb10a8ee838175fe768567d3b0501de50adf315599e1a4f71b3e74ad8",
+    "uniform_initial_cover.py": "450a31402e787485eb2bbd0a68e5149cbe4349e0021560f312bcbd635b75fe4e",
+    "verify_cyclic_types.py": "d28545a64a9e11242cfe5649dcfe7ec37c51151c8d4cc9f96d79550bd46394f7"
+  },
+  "tests": {
+    "cyclic_tests": 25,
+    "status": "passed",
+    "command": "python3 -m unittest test_cyclic_types"
+  }
+}

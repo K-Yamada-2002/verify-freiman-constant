@@ -1,0 +1,9909 @@
+{
+  "schema": "kf131-scalar-atlas-v1",
+  "settings": {
+    "base": 0.996,
+    "bins": 512,
+    "memory": 7,
+    "grid": 1024,
+    "max_step": 4,
+    "block_span": 1
+  },
+  "root_prefixes": [
+    "11222222",
+    "12222222"
+  ],
+  "roots": [
+    0
+  ],
+  "closed_candidate": false,
+  "open_nodes": 413,
+  "nodes": [
+    {
+      "id": 0,
+      "states": [
+        "22222",
+        "22222"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "interval": [
+        0,
+        1
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 1,
+      "states": [
+        "22222",
+        "22223"
+      ],
+      "parity": -1,
+      "ratio_bin": 419,
+      "interval": [
+        -114,
+        -113
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -91,
+                -84
+              ],
+              "destinations": [
+                11,
+                12,
+                15,
+                13,
+                14,
+                4,
+                5,
+                7,
+                8,
+                3,
+                9,
+                2,
+                10,
+                6
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "interval": [
+        -87,
+        -86
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 3,
+      "states": [
+        "22223",
+        "222223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "interval": [
+        -89,
+        -88
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 4,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 170,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -86,
+        -85
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 5,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 170,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -85,
+        -84
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 6,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "interval": [
+        -85,
+        -84
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 7,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "interval": [
+        -91,
+        -90
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 8,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "interval": [
+        -90,
+        -89
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 9,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "interval": [
+        -88,
+        -87
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 10,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "interval": [
+        -86,
+        -85
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 11,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 170,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -91,
+        -90
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 12,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 170,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -90,
+        -89
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 13,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 170,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -88,
+        -87
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 14,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 170,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -87,
+        -86
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 15,
+      "states": [
+        "22223",
+        "222223"
+      ],
+      "parity": 1,
+      "ratio_bin": 170,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -89,
+        -88
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 16,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "interval": [
+        -186,
+        -185
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -116,
+                -112
+              ],
+              "destinations": [
+                72,
+                73,
+                75,
+                70,
+                76,
+                71,
+                63,
+                64,
+                68,
+                69,
+                74,
+                18,
+                66
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "interval": [
+        -185,
+        -184
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -114,
+                -110
+              ],
+              "destinations": [
+                72,
+                73,
+                77,
+                79,
+                64,
+                78,
+                67,
+                74,
+                65,
+                18,
+                19,
+                66
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "states": [
+        "22223",
+        "22233"
+      ],
+      "parity": -1,
+      "ratio_bin": 424,
+      "ratio_refinement": [
+        2,
+        1
+      ],
+      "interval": [
+        -113,
+        -112
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 19,
+      "states": [
+        "22223",
+        "22233"
+      ],
+      "parity": -1,
+      "ratio_bin": 424,
+      "ratio_refinement": [
+        2,
+        1
+      ],
+      "interval": [
+        -111,
+        -110
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 20,
+      "states": [
+        "22221",
+        "22231"
+      ],
+      "parity": 1,
+      "ratio_bin": 310,
+      "interval": [
+        -30,
+        -29
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 21,
+      "states": [
+        "22221",
+        "22231"
+      ],
+      "parity": 1,
+      "ratio_bin": 310,
+      "interval": [
+        -29,
+        -28
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 22,
+      "states": [
+        "22221",
+        "22231"
+      ],
+      "parity": 1,
+      "ratio_bin": 310,
+      "interval": [
+        -28,
+        -27
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 23,
+      "states": [
+        "22212",
+        "22312"
+      ],
+      "parity": 1,
+      "ratio_bin": 310,
+      "interval": [
+        94,
+        95
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 24,
+      "states": [
+        "22212",
+        "22312"
+      ],
+      "parity": 1,
+      "ratio_bin": 310,
+      "interval": [
+        95,
+        96
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 25,
+      "states": [
+        "22212",
+        "22312"
+      ],
+      "parity": 1,
+      "ratio_bin": 310,
+      "interval": [
+        96,
+        97
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 26,
+      "states": [
+        "22212",
+        "22312"
+      ],
+      "parity": 1,
+      "ratio_bin": 310,
+      "interval": [
+        98,
+        99
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 27,
+      "states": [
+        "22222",
+        "222221"
+      ],
+      "parity": 1,
+      "ratio_bin": 490,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -160,
+        -159
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "31",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -30,
+                -22
+              ],
+              "destinations": [
+                213,
+                20,
+                21,
+                22,
+                83,
+                84,
+                190,
+                85,
+                86
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "states": [
+        "22222",
+        "22221"
+      ],
+      "parity": 1,
+      "ratio_bin": 490,
+      "interval": [
+        -160,
+        -159
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "31",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -30,
+                -22
+              ],
+              "destinations": [
+                81,
+                82,
+                87,
+                88,
+                89,
+                90,
+                91,
+                92,
+                20,
+                21,
+                22,
+                83,
+                84,
+                475,
+                85,
+                86
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "states": [
+        "22311",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 359,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        96,
+        97
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 30,
+      "states": [
+        "22311",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 360,
+      "interval": [
+        96,
+        97
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 31,
+      "states": [
+        "22231",
+        "22213"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "interval": [
+        75,
+        76
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 32,
+      "states": [
+        "22231",
+        "22213"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "interval": [
+        76,
+        77
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 33,
+      "states": [
+        "22231",
+        "22213"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        75,
+        76
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 34,
+      "states": [
+        "22231",
+        "22213"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "interval": [
+        71,
+        72
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 35,
+      "states": [
+        "22231",
+        "22213"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "interval": [
+        73,
+        74
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 36,
+      "states": [
+        "22231",
+        "22213"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        70,
+        71
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 37,
+      "states": [
+        "22231",
+        "22213"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "interval": [
+        76,
+        77
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 38,
+      "states": [
+        "22231",
+        "22213"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        71,
+        72
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 39,
+      "states": [
+        "22231",
+        "22213"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        72,
+        73
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 40,
+      "states": [
+        "22231",
+        "22213"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        73,
+        74
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 41,
+      "states": [
+        "22231",
+        "22213"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "interval": [
+        70,
+        71
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 42,
+      "states": [
+        "22231",
+        "22213"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "interval": [
+        71,
+        72
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 43,
+      "states": [
+        "22231",
+        "22213"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "interval": [
+        73,
+        74
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 44,
+      "states": [
+        "22231",
+        "22213"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "interval": [
+        75,
+        76
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 45,
+      "states": [
+        "22213",
+        "22311"
+      ],
+      "parity": -1,
+      "ratio_bin": 78,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -76,
+        -75
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            "21"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -200,
+                -195
+              ],
+              "destinations": [
+                129,
+                127,
+                128,
+                95,
+                96
+              ]
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                102,
+                104
+              ],
+              "destinations": [
+                185,
+                97
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "states": [
+        "22222",
+        "22222"
+      ],
+      "parity": 1,
+      "ratio_bin": 170,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        199,
+        200
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 47,
+      "states": [
+        "22222",
+        "22222"
+      ],
+      "parity": 1,
+      "ratio_bin": 170,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        200,
+        201
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 48,
+      "states": [
+        "22222",
+        "22222"
+      ],
+      "parity": 1,
+      "ratio_bin": 170,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        201,
+        202
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 49,
+      "states": [
+        "22222",
+        "22222"
+      ],
+      "parity": 1,
+      "ratio_bin": 170,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        202,
+        203
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 50,
+      "states": [
+        "22222",
+        "22222"
+      ],
+      "parity": 1,
+      "ratio_bin": 170,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        198,
+        199
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 51,
+      "states": [
+        "22222",
+        "22221"
+      ],
+      "parity": -1,
+      "ratio_bin": 50,
+      "interval": [
+        202,
+        203
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                412,
+                415
+              ],
+              "destinations": [
+                271,
+                272,
+                100,
+                187,
+                102,
+                101,
+                188,
+                189
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "states": [
+        "22313",
+        "13211"
+      ],
+      "parity": 1,
+      "ratio_bin": 507,
+      "interval": [
+        63,
+        64
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 53,
+      "states": [
+        "22313",
+        "13211"
+      ],
+      "parity": 1,
+      "ratio_bin": 507,
+      "interval": [
+        64,
+        65
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 54,
+      "states": [
+        "22313",
+        "13211"
+      ],
+      "parity": 1,
+      "ratio_bin": 507,
+      "interval": [
+        65,
+        66
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 55,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "ratio_refinement": [
+        2,
+        3
+      ],
+      "interval": [
+        -12,
+        -11
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                55,
+                61
+              ],
+              "destinations": [
+                105,
+                191,
+                106,
+                103,
+                107,
+                104,
+                108,
+                109
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "states": [
+        "22231",
+        "22213"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "interval": [
+        -140,
+        -139
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -13,
+                -10
+              ],
+              "destinations": [
+                182,
+                183,
+                112,
+                111,
+                393,
+                113
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "states": [
+        "22231",
+        "22121"
+      ],
+      "parity": -1,
+      "ratio_bin": 250,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        31,
+        32
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                125,
+                127
+              ],
+              "destinations": [
+                114,
+                115
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "states": [
+        "22222",
+        "22222"
+      ],
+      "parity": -1,
+      "ratio_bin": 268,
+      "interval": [
+        166,
+        167
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                258,
+                260
+              ],
+              "destinations": [
+                116,
+                399,
+                117,
+                118
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "states": [
+        "22222",
+        "22222"
+      ],
+      "parity": -1,
+      "ratio_bin": 268,
+      "interval": [
+        167,
+        168
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                259,
+                261
+              ],
+              "destinations": [
+                399,
+                119,
+                118,
+                120
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "states": [
+        "22221",
+        "22231"
+      ],
+      "parity": -1,
+      "ratio_bin": 405,
+      "interval": [
+        -10,
+        -9
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                52,
+                59
+              ],
+              "destinations": [
+                121,
+                122,
+                123,
+                124,
+                125,
+                126,
+                348
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "states": [
+        "22223",
+        "22321"
+      ],
+      "parity": 1,
+      "ratio_bin": 492,
+      "interval": [
+        -67,
+        -66
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 62,
+      "states": [
+        "22223",
+        "22321"
+      ],
+      "parity": 1,
+      "ratio_bin": 492,
+      "interval": [
+        -65,
+        -64
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 63,
+      "states": [
+        "22223",
+        "22233"
+      ],
+      "parity": -1,
+      "ratio_bin": 424,
+      "interval": [
+        -115,
+        -114
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 64,
+      "states": [
+        "22223",
+        "22233"
+      ],
+      "parity": -1,
+      "ratio_bin": 424,
+      "interval": [
+        -114,
+        -113
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 65,
+      "states": [
+        "22223",
+        "22233"
+      ],
+      "parity": -1,
+      "ratio_bin": 424,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -112,
+        -111
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 66,
+      "states": [
+        "22223",
+        "222233"
+      ],
+      "parity": -1,
+      "ratio_bin": 424,
+      "interval": [
+        -113,
+        -112
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 67,
+      "states": [
+        "22223",
+        "22233"
+      ],
+      "parity": -1,
+      "ratio_bin": 424,
+      "interval": [
+        -111,
+        -110
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 68,
+      "states": [
+        "22223",
+        "22233"
+      ],
+      "parity": -1,
+      "ratio_bin": 424,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -116,
+        -115
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 69,
+      "states": [
+        "22223",
+        "22233"
+      ],
+      "parity": -1,
+      "ratio_bin": 424,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -115,
+        -114
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 70,
+      "states": [
+        "22223",
+        "222233"
+      ],
+      "parity": -1,
+      "ratio_bin": 423,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -115,
+        -114
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 71,
+      "states": [
+        "22223",
+        "22233"
+      ],
+      "parity": -1,
+      "ratio_bin": 424,
+      "interval": [
+        -116,
+        -115
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 72,
+      "states": [
+        "22223",
+        "22233"
+      ],
+      "parity": -1,
+      "ratio_bin": 423,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -114,
+        -113
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 73,
+      "states": [
+        "22223",
+        "22233"
+      ],
+      "parity": -1,
+      "ratio_bin": 423,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -113,
+        -112
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 74,
+      "states": [
+        "22223",
+        "22233"
+      ],
+      "parity": -1,
+      "ratio_bin": 424,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -114,
+        -113
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 75,
+      "states": [
+        "22223",
+        "22233"
+      ],
+      "parity": -1,
+      "ratio_bin": 423,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -116,
+        -115
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 76,
+      "states": [
+        "22223",
+        "22233"
+      ],
+      "parity": -1,
+      "ratio_bin": 423,
+      "ratio_refinement": [
+        3,
+        2
+      ],
+      "interval": [
+        -116,
+        -115
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 77,
+      "states": [
+        "22223",
+        "22233"
+      ],
+      "parity": -1,
+      "ratio_bin": 423,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -111,
+        -110
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 78,
+      "states": [
+        "22223",
+        "22233"
+      ],
+      "parity": -1,
+      "ratio_bin": 424,
+      "interval": [
+        -112,
+        -111
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 79,
+      "states": [
+        "22223",
+        "222233"
+      ],
+      "parity": -1,
+      "ratio_bin": 423,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -112,
+        -111
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 80,
+      "states": [
+        "222212",
+        "222312"
+      ],
+      "parity": 1,
+      "ratio_bin": 310,
+      "interval": [
+        93,
+        94
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 81,
+      "states": [
+        "22221",
+        "22231"
+      ],
+      "parity": 1,
+      "ratio_bin": 309,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -30,
+        -29
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 82,
+      "states": [
+        "22221",
+        "22231"
+      ],
+      "parity": 1,
+      "ratio_bin": 309,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -29,
+        -28
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 83,
+      "states": [
+        "22221",
+        "22231"
+      ],
+      "parity": 1,
+      "ratio_bin": 310,
+      "interval": [
+        -27,
+        -26
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 84,
+      "states": [
+        "22221",
+        "22231"
+      ],
+      "parity": 1,
+      "ratio_bin": 310,
+      "interval": [
+        -26,
+        -25
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 85,
+      "states": [
+        "22221",
+        "22231"
+      ],
+      "parity": 1,
+      "ratio_bin": 310,
+      "interval": [
+        -24,
+        -23
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 86,
+      "states": [
+        "22221",
+        "22231"
+      ],
+      "parity": 1,
+      "ratio_bin": 310,
+      "interval": [
+        -23,
+        -22
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 87,
+      "states": [
+        "22221",
+        "22231"
+      ],
+      "parity": 1,
+      "ratio_bin": 309,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -28,
+        -27
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 88,
+      "states": [
+        "22221",
+        "22231"
+      ],
+      "parity": 1,
+      "ratio_bin": 309,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -27,
+        -26
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 89,
+      "states": [
+        "22221",
+        "22231"
+      ],
+      "parity": 1,
+      "ratio_bin": 309,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -26,
+        -25
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 90,
+      "states": [
+        "22221",
+        "22231"
+      ],
+      "parity": 1,
+      "ratio_bin": 309,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -25,
+        -24
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 91,
+      "states": [
+        "22221",
+        "22231"
+      ],
+      "parity": 1,
+      "ratio_bin": 309,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -24,
+        -23
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 92,
+      "states": [
+        "22221",
+        "22231"
+      ],
+      "parity": 1,
+      "ratio_bin": 309,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -23,
+        -22
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 93,
+      "states": [
+        "22311",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 360,
+      "interval": [
+        94,
+        95
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 94,
+      "states": [
+        "22311",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 359,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        95,
+        96
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 95,
+      "states": [
+        "22133",
+        "31121"
+      ],
+      "parity": 1,
+      "ratio_bin": 140,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -197,
+        -196
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 96,
+      "states": [
+        "22133",
+        "31121"
+      ],
+      "parity": 1,
+      "ratio_bin": 140,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -196,
+        -195
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 97,
+      "states": [
+        "22311",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 360,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        102,
+        103
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 98,
+      "states": [
+        "22311",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 360,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        96,
+        97
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 99,
+      "states": [
+        "22311",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 360,
+      "interval": [
+        95,
+        96
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 100,
+      "states": [
+        "22222",
+        "22211"
+      ],
+      "parity": 1,
+      "ratio_bin": 297,
+      "interval": [
+        412,
+        413
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 101,
+      "states": [
+        "22222",
+        "22211"
+      ],
+      "parity": 1,
+      "ratio_bin": 298,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        412,
+        413
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 102,
+      "states": [
+        "22222",
+        "22211"
+      ],
+      "parity": 1,
+      "ratio_bin": 297,
+      "interval": [
+        414,
+        415
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 103,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 36,
+      "interval": [
+        59,
+        60
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 104,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 36,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        55,
+        56
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 105,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 36,
+      "interval": [
+        56,
+        57
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 106,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 36,
+      "interval": [
+        58,
+        59
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 107,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 36,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        56,
+        57
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 108,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 36,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        57,
+        58
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 109,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 36,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        60,
+        61
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 110,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 404,
+      "interval": [
+        -17,
+        -16
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                85,
+                87
+              ],
+              "destinations": [
+                309,
+                310,
+                296,
+                297,
+                311,
+                247
+              ]
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                93,
+                99
+              ],
+              "destinations": [
+                144,
+                145,
+                146,
+                147,
+                148,
+                194
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 111,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 404,
+      "interval": [
+        -13,
+        -12
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 112,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -11,
+        -10
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 113,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 404,
+      "interval": [
+        -11,
+        -10
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 114,
+      "states": [
+        "22231",
+        "221211"
+      ],
+      "parity": 1,
+      "ratio_bin": 499,
+      "interval": [
+        125,
+        126
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 115,
+      "states": [
+        "22231",
+        "21211"
+      ],
+      "parity": 1,
+      "ratio_bin": 499,
+      "interval": [
+        126,
+        127
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 116,
+      "states": [
+        "22222",
+        "22221"
+      ],
+      "parity": 1,
+      "ratio_bin": 490,
+      "interval": [
+        258,
+        259
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 117,
+      "states": [
+        "22222",
+        "22221"
+      ],
+      "parity": 1,
+      "ratio_bin": 491,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        258,
+        259
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 118,
+      "states": [
+        "22222",
+        "22221"
+      ],
+      "parity": 1,
+      "ratio_bin": 491,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        259,
+        260
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 119,
+      "states": [
+        "22222",
+        "22221"
+      ],
+      "parity": 1,
+      "ratio_bin": 490,
+      "interval": [
+        260,
+        261
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 120,
+      "states": [
+        "22222",
+        "22221"
+      ],
+      "parity": 1,
+      "ratio_bin": 491,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        260,
+        261
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 121,
+      "states": [
+        "22212",
+        "22312"
+      ],
+      "parity": -1,
+      "ratio_bin": 405,
+      "interval": [
+        52,
+        53
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 122,
+      "states": [
+        "22212",
+        "22312"
+      ],
+      "parity": -1,
+      "ratio_bin": 405,
+      "interval": [
+        53,
+        54
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 123,
+      "states": [
+        "22212",
+        "22312"
+      ],
+      "parity": -1,
+      "ratio_bin": 405,
+      "interval": [
+        54,
+        55
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 124,
+      "states": [
+        "22212",
+        "22312"
+      ],
+      "parity": -1,
+      "ratio_bin": 405,
+      "interval": [
+        55,
+        56
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 125,
+      "states": [
+        "22212",
+        "22312"
+      ],
+      "parity": -1,
+      "ratio_bin": 405,
+      "interval": [
+        56,
+        57
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 126,
+      "states": [
+        "22212",
+        "22312"
+      ],
+      "parity": -1,
+      "ratio_bin": 405,
+      "interval": [
+        57,
+        58
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 127,
+      "states": [
+        "22133",
+        "31121"
+      ],
+      "parity": 1,
+      "ratio_bin": 140,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -199,
+        -198
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 128,
+      "states": [
+        "22133",
+        "31121"
+      ],
+      "parity": 1,
+      "ratio_bin": 140,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -198,
+        -197
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 129,
+      "states": [
+        "22133",
+        "31121"
+      ],
+      "parity": 1,
+      "ratio_bin": 140,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -200,
+        -199
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 130,
+      "states": [
+        "21321",
+        "31321"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "interval": [
+        -70,
+        -69
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 131,
+      "states": [
+        "21321",
+        "31321"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "interval": [
+        -69,
+        -68
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 132,
+      "states": [
+        "21321",
+        "31321"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "interval": [
+        -68,
+        -67
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 133,
+      "states": [
+        "21321",
+        "31321"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "interval": [
+        -67,
+        -66
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 134,
+      "states": [
+        "21321",
+        "23132"
+      ],
+      "parity": 1,
+      "ratio_bin": 178,
+      "interval": [
+        449,
+        450
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 135,
+      "states": [
+        "21321",
+        "23132"
+      ],
+      "parity": 1,
+      "ratio_bin": 178,
+      "interval": [
+        451,
+        452
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 136,
+      "states": [
+        "21321",
+        "23132"
+      ],
+      "parity": 1,
+      "ratio_bin": 178,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        448,
+        449
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 137,
+      "states": [
+        "21321",
+        "23132"
+      ],
+      "parity": 1,
+      "ratio_bin": 178,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        450,
+        451
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 138,
+      "states": [
+        "21321",
+        "23132"
+      ],
+      "parity": 1,
+      "ratio_bin": 178,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        448,
+        449
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 139,
+      "states": [
+        "21321",
+        "23132"
+      ],
+      "parity": 1,
+      "ratio_bin": 178,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        450,
+        451
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 140,
+      "states": [
+        "23112",
+        "21212"
+      ],
+      "parity": 1,
+      "ratio_bin": 0,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        82,
+        83
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 141,
+      "states": [
+        "21212",
+        "31121"
+      ],
+      "parity": -1,
+      "ratio_bin": 220,
+      "interval": [
+        -216,
+        -215
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 142,
+      "states": [
+        "21212",
+        "31121"
+      ],
+      "parity": -1,
+      "ratio_bin": 220,
+      "interval": [
+        -215,
+        -214
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 143,
+      "states": [
+        "23112",
+        "21212"
+      ],
+      "parity": 1,
+      "ratio_bin": 0,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        81,
+        82
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 144,
+      "states": [
+        "22132",
+        "23132"
+      ],
+      "parity": -1,
+      "ratio_bin": 404,
+      "interval": [
+        93,
+        94
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 145,
+      "states": [
+        "22132",
+        "23132"
+      ],
+      "parity": -1,
+      "ratio_bin": 404,
+      "interval": [
+        94,
+        95
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 146,
+      "states": [
+        "22132",
+        "23132"
+      ],
+      "parity": -1,
+      "ratio_bin": 404,
+      "interval": [
+        95,
+        96
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 147,
+      "states": [
+        "22132",
+        "23132"
+      ],
+      "parity": -1,
+      "ratio_bin": 404,
+      "interval": [
+        96,
+        97
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 148,
+      "states": [
+        "22132",
+        "23132"
+      ],
+      "parity": -1,
+      "ratio_bin": 404,
+      "interval": [
+        97,
+        98
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 149,
+      "states": [
+        "21321",
+        "31321"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "interval": [
+        95,
+        96
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 150,
+      "states": [
+        "21321",
+        "31321"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "interval": [
+        96,
+        97
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 151,
+      "states": [
+        "21321",
+        "31321"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "interval": [
+        97,
+        98
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 152,
+      "states": [
+        "222212",
+        "222312"
+      ],
+      "parity": 1,
+      "ratio_bin": 310,
+      "interval": [
+        99,
+        100
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 153,
+      "states": [
+        "21212",
+        "31121"
+      ],
+      "parity": -1,
+      "ratio_bin": 220,
+      "interval": [
+        -218,
+        -217
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 154,
+      "states": [
+        "21212",
+        "31121"
+      ],
+      "parity": -1,
+      "ratio_bin": 220,
+      "interval": [
+        -217,
+        -216
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 155,
+      "states": [
+        "23112",
+        "21212"
+      ],
+      "parity": 1,
+      "ratio_bin": 0,
+      "interval": [
+        82,
+        83
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 156,
+      "states": [
+        "23112",
+        "21212"
+      ],
+      "parity": 1,
+      "ratio_bin": 0,
+      "interval": [
+        83,
+        84
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 157,
+      "states": [
+        "23112",
+        "21212"
+      ],
+      "parity": 1,
+      "ratio_bin": 0,
+      "interval": [
+        84,
+        85
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 158,
+      "states": [
+        "23112",
+        "21212"
+      ],
+      "parity": 1,
+      "ratio_bin": 0,
+      "interval": [
+        85,
+        86
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 159,
+      "states": [
+        "23112",
+        "21212"
+      ],
+      "parity": 1,
+      "ratio_bin": 0,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        87,
+        88
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 160,
+      "states": [
+        "23112",
+        "21212"
+      ],
+      "parity": 1,
+      "ratio_bin": 0,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        83,
+        84
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 161,
+      "states": [
+        "23112",
+        "21212"
+      ],
+      "parity": 1,
+      "ratio_bin": 0,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        84,
+        85
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 162,
+      "states": [
+        "23112",
+        "21212"
+      ],
+      "parity": 1,
+      "ratio_bin": 0,
+      "ratio_refinement": [
+        3,
+        5
+      ],
+      "interval": [
+        85,
+        86
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 163,
+      "states": [
+        "21321",
+        "23132"
+      ],
+      "parity": 1,
+      "ratio_bin": 177,
+      "interval": [
+        229,
+        230
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                95,
+                98
+              ],
+              "destinations": [
+                174,
+                175,
+                176,
+                172,
+                173,
+                476
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 164,
+      "states": [
+        "21321",
+        "23132"
+      ],
+      "parity": 1,
+      "ratio_bin": 178,
+      "interval": [
+        228,
+        229
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                95,
+                98
+              ],
+              "destinations": [
+                166,
+                199,
+                198,
+                149,
+                150,
+                151
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 165,
+      "states": [
+        "21212",
+        "31122"
+      ],
+      "parity": -1,
+      "ratio_bin": 440,
+      "interval": [
+        54,
+        55
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 166,
+      "states": [
+        "21321",
+        "31321"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        95,
+        96
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 167,
+      "states": [
+        "31121",
+        "12111"
+      ],
+      "parity": 1,
+      "ratio_bin": 483,
+      "interval": [
+        338,
+        339
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 168,
+      "states": [
+        "31121",
+        "12111"
+      ],
+      "parity": 1,
+      "ratio_bin": 483,
+      "interval": [
+        339,
+        340
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 169,
+      "states": [
+        "31121",
+        "12111"
+      ],
+      "parity": 1,
+      "ratio_bin": 483,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        334,
+        335
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 170,
+      "states": [
+        "31121",
+        "12111"
+      ],
+      "parity": 1,
+      "ratio_bin": 483,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        334,
+        335
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 171,
+      "states": [
+        "31121",
+        "12111"
+      ],
+      "parity": 1,
+      "ratio_bin": 483,
+      "interval": [
+        335,
+        336
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 172,
+      "states": [
+        "21321",
+        "31321"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "interval": [
+        95,
+        96
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 173,
+      "states": [
+        "21321",
+        "31321"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "interval": [
+        96,
+        97
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 174,
+      "states": [
+        "21321",
+        "31321"
+      ],
+      "parity": -1,
+      "ratio_bin": 401,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        95,
+        96
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 175,
+      "states": [
+        "21321",
+        "31321"
+      ],
+      "parity": -1,
+      "ratio_bin": 401,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        96,
+        97
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 176,
+      "states": [
+        "21321",
+        "31321"
+      ],
+      "parity": -1,
+      "ratio_bin": 401,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        97,
+        98
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 177,
+      "states": [
+        "22231",
+        "22213"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "interval": [
+        72,
+        73
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 178,
+      "states": [
+        "22231",
+        "22213"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "interval": [
+        74,
+        75
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 179,
+      "states": [
+        "22231",
+        "22213"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "interval": [
+        72,
+        73
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 180,
+      "states": [
+        "22231",
+        "22213"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "interval": [
+        74,
+        75
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 181,
+      "states": [
+        "22212",
+        "22312"
+      ],
+      "parity": 1,
+      "ratio_bin": 310,
+      "interval": [
+        97,
+        98
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 182,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -13,
+        -12
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 183,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -12,
+        -11
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 184,
+      "states": [
+        "22223",
+        "22321"
+      ],
+      "parity": 1,
+      "ratio_bin": 492,
+      "interval": [
+        -66,
+        -65
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 185,
+      "states": [
+        "22311",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 360,
+      "interval": [
+        103,
+        104
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 186,
+      "states": [
+        "22311",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 359,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        94,
+        95
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 187,
+      "states": [
+        "22222",
+        "22211"
+      ],
+      "parity": 1,
+      "ratio_bin": 297,
+      "interval": [
+        413,
+        414
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 188,
+      "states": [
+        "22222",
+        "22211"
+      ],
+      "parity": 1,
+      "ratio_bin": 298,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        413,
+        414
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 189,
+      "states": [
+        "22222",
+        "22211"
+      ],
+      "parity": 1,
+      "ratio_bin": 298,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        414,
+        415
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 190,
+      "states": [
+        "22221",
+        "22231"
+      ],
+      "parity": 1,
+      "ratio_bin": 310,
+      "interval": [
+        -25,
+        -24
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 191,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 36,
+      "interval": [
+        57,
+        58
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 192,
+      "states": [
+        "21321",
+        "23132"
+      ],
+      "parity": 1,
+      "ratio_bin": 178,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        449,
+        450
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 193,
+      "states": [
+        "21321",
+        "23132"
+      ],
+      "parity": 1,
+      "ratio_bin": 178,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        451,
+        452
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 194,
+      "states": [
+        "22132",
+        "23132"
+      ],
+      "parity": -1,
+      "ratio_bin": 404,
+      "interval": [
+        98,
+        99
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 195,
+      "states": [
+        "23112",
+        "21212"
+      ],
+      "parity": 1,
+      "ratio_bin": 0,
+      "interval": [
+        86,
+        87
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 196,
+      "states": [
+        "23112",
+        "21212"
+      ],
+      "parity": 1,
+      "ratio_bin": 0,
+      "ratio_refinement": [
+        2,
+        2
+      ],
+      "interval": [
+        86,
+        87
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 197,
+      "states": [
+        "31121",
+        "12111"
+      ],
+      "parity": 1,
+      "ratio_bin": 483,
+      "interval": [
+        337,
+        338
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 198,
+      "states": [
+        "21321",
+        "31321"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        97,
+        98
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 199,
+      "states": [
+        "21321",
+        "31321"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        96,
+        97
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 200,
+      "states": [
+        "22223",
+        "22212"
+      ],
+      "parity": -1,
+      "ratio_bin": 243,
+      "interval": [
+        41,
+        42
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                144,
+                146
+              ],
+              "destinations": [
+                382,
+                383,
+                380,
+                381
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 201,
+      "states": [
+        "22222",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 322,
+      "interval": [
+        -179,
+        -178
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 202,
+      "states": [
+        "22222",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 322,
+      "interval": [
+        -178,
+        -177
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 203,
+      "states": [
+        "22222",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 321,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -179,
+        -178
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 204,
+      "states": [
+        "22222",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 321,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -178,
+        -177
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 205,
+      "states": [
+        "22221",
+        "22221"
+      ],
+      "parity": -1,
+      "ratio_bin": 267,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        236,
+        237
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "11",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -223,
+                -219
+              ],
+              "destinations": [
+                209,
+                210,
+                277,
+                278
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 206,
+      "states": [
+        "22221",
+        "22221"
+      ],
+      "parity": -1,
+      "ratio_bin": 267,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        237,
+        238
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "111",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -117,
+                -113
+              ],
+              "destinations": [
+                279,
+                280,
+                281,
+                282
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 207,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "interval": [
+        39,
+        40
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -202,
+                -196
+              ],
+              "destinations": [
+                360,
+                361,
+                362,
+                363,
+                364,
+                354,
+                355,
+                356,
+                357,
+                358,
+                359,
+                353
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 208,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "interval": [
+        39,
+        40
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -202,
+                -195
+              ],
+              "destinations": [
+                366,
+                367,
+                368,
+                369,
+                370,
+                371,
+                372,
+                373,
+                374,
+                375,
+                376,
+                377,
+                378,
+                379
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 209,
+      "states": [
+        "22221",
+        "22111"
+      ],
+      "parity": -1,
+      "ratio_bin": 217,
+      "interval": [
+        -222,
+        -221
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 210,
+      "states": [
+        "22221",
+        "22111"
+      ],
+      "parity": -1,
+      "ratio_bin": 217,
+      "interval": [
+        -221,
+        -220
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 211,
+      "states": [
+        "22222",
+        "22221"
+      ],
+      "parity": 1,
+      "ratio_bin": 490,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -160,
+        -159
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "31",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -30,
+                -22
+              ],
+              "destinations": [
+                20,
+                21,
+                22,
+                83,
+                84,
+                85,
+                86,
+                475
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 212,
+      "states": [
+        "22222",
+        "22221"
+      ],
+      "parity": 1,
+      "ratio_bin": 490,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -60,
+        -59
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                343,
+                350
+              ],
+              "destinations": [
+                248,
+                249,
+                250,
+                251,
+                252,
+                253,
+                254
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 213,
+      "states": [
+        "22221",
+        "22231"
+      ],
+      "parity": 1,
+      "ratio_bin": 310,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -25,
+        -24
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 214,
+      "states": [
+        "22213",
+        "22311"
+      ],
+      "parity": -1,
+      "ratio_bin": 79,
+      "interval": [
+        -70,
+        -69
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                94,
+                97
+              ],
+              "destinations": [
+                186,
+                94,
+                29,
+                93,
+                99,
+                30,
+                98
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 215,
+      "states": [
+        "22121",
+        "23112"
+      ],
+      "parity": -1,
+      "ratio_bin": 440,
+      "interval": [
+        14,
+        15
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -88,
+                -81
+              ],
+              "destinations": [
+                328,
+                329,
+                330,
+                331,
+                332,
+                333,
+                327
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 216,
+      "states": [
+        "22121",
+        "23112"
+      ],
+      "parity": -1,
+      "ratio_bin": 439,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        -15,
+        -14
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                81,
+                88
+              ],
+              "destinations": [
+                155,
+                156,
+                157,
+                158,
+                195,
+                143,
+                140,
+                160,
+                161,
+                159,
+                238,
+                316,
+                196,
+                162,
+                314,
+                315,
+                319,
+                300,
+                301
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 217,
+      "states": [
+        "22133",
+        "31321"
+      ],
+      "parity": 1,
+      "ratio_bin": 469,
+      "interval": [
+        -143,
+        -142
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 218,
+      "states": [
+        "22133",
+        "31321"
+      ],
+      "parity": 1,
+      "ratio_bin": 469,
+      "interval": [
+        -141,
+        -140
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 219,
+      "states": [
+        "22133",
+        "31321"
+      ],
+      "parity": 1,
+      "ratio_bin": 469,
+      "interval": [
+        -140,
+        -139
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 220,
+      "states": [
+        "22133",
+        "31321"
+      ],
+      "parity": 1,
+      "ratio_bin": 469,
+      "interval": [
+        -139,
+        -138
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 221,
+      "states": [
+        "22133",
+        "31321"
+      ],
+      "parity": 1,
+      "ratio_bin": 469,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -142,
+        -141
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 222,
+      "states": [
+        "22133",
+        "23132"
+      ],
+      "parity": -1,
+      "ratio_bin": 244,
+      "interval": [
+        -244,
+        -243
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -143,
+                -141
+              ],
+              "destinations": [
+                230,
+                231,
+                217,
+                302,
+                221,
+                365
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 223,
+      "states": [
+        "22133",
+        "23132"
+      ],
+      "parity": -1,
+      "ratio_bin": 244,
+      "interval": [
+        -243,
+        -242
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -142,
+                -140
+              ],
+              "destinations": [
+                231,
+                232,
+                365,
+                218
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 224,
+      "states": [
+        "21332",
+        "31332"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "interval": [
+        355,
+        356
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 225,
+      "states": [
+        "22133",
+        "23132"
+      ],
+      "parity": -1,
+      "ratio_bin": 245,
+      "interval": [
+        -242,
+        -241
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -142,
+                -139
+              ],
+              "destinations": [
+                304,
+                303,
+                324,
+                325,
+                365,
+                245,
+                246,
+                265,
+                233,
+                226,
+                227,
+                305
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 226,
+      "states": [
+        "22133",
+        "31321"
+      ],
+      "parity": 1,
+      "ratio_bin": 470,
+      "interval": [
+        -141,
+        -140
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 227,
+      "states": [
+        "22133",
+        "31321"
+      ],
+      "parity": 1,
+      "ratio_bin": 470,
+      "interval": [
+        -140,
+        -139
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 228,
+      "states": [
+        "22133",
+        "23133"
+      ],
+      "parity": -1,
+      "ratio_bin": 404,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        -18,
+        -17
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                99,
+                105
+              ],
+              "destinations": [
+                384,
+                385,
+                386,
+                387,
+                388,
+                389
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 229,
+      "states": [
+        "22133",
+        "23133"
+      ],
+      "parity": -1,
+      "ratio_bin": 404,
+      "interval": [
+        -18,
+        -17
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                99,
+                105
+              ],
+              "destinations": [
+                384,
+                385,
+                386,
+                387,
+                388,
+                389
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230,
+      "states": [
+        "22133",
+        "31321"
+      ],
+      "parity": 1,
+      "ratio_bin": 468,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -143,
+        -142
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 231,
+      "states": [
+        "22133",
+        "31321"
+      ],
+      "parity": 1,
+      "ratio_bin": 468,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -142,
+        -141
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 232,
+      "states": [
+        "22133",
+        "31321"
+      ],
+      "parity": 1,
+      "ratio_bin": 468,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -141,
+        -140
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 233,
+      "states": [
+        "22133",
+        "31321"
+      ],
+      "parity": 1,
+      "ratio_bin": 470,
+      "interval": [
+        -142,
+        -141
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 234,
+      "states": [
+        "22222",
+        "22223"
+      ],
+      "parity": -1,
+      "ratio_bin": 418,
+      "interval": [
+        89,
+        90
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                442,
+                446
+              ],
+              "destinations": [
+                467,
+                468,
+                469,
+                470,
+                471,
+                472,
+                473,
+                474
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 235,
+      "states": [
+        "22222",
+        "22223"
+      ],
+      "parity": -1,
+      "ratio_bin": 419,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        317,
+        318
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "13",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -233,
+                -230
+              ],
+              "destinations": [
+                268,
+                269,
+                270
+              ]
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "12",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -248,
+                -243
+              ],
+              "destinations": [
+                390,
+                273,
+                274,
+                275,
+                276,
+                244
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 236,
+      "states": [
+        "21212",
+        "31122"
+      ],
+      "parity": -1,
+      "ratio_bin": 440,
+      "interval": [
+        53,
+        54
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 237,
+      "states": [
+        "21212",
+        "31122"
+      ],
+      "parity": -1,
+      "ratio_bin": 440,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        52,
+        53
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 238,
+      "states": [
+        "23112",
+        "21212"
+      ],
+      "parity": 1,
+      "ratio_bin": 0,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        81,
+        82
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 239,
+      "states": [
+        "22133",
+        "23133"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        -62,
+        -61
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            "1"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                36,
+                41
+              ],
+              "destinations": [
+                257,
+                258,
+                259,
+                260,
+                261
+              ]
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                355,
+                358
+              ],
+              "destinations": [
+                224,
+                263,
+                264
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 240,
+      "states": [
+        "31121",
+        "12111"
+      ],
+      "parity": 1,
+      "ratio_bin": 483,
+      "interval": [
+        336,
+        337
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 241,
+      "states": [
+        "22222",
+        "22222"
+      ],
+      "parity": 1,
+      "ratio_bin": 170,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -35,
+        -34
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -179,
+                -177
+              ],
+              "destinations": [
+                203,
+                204,
+                201,
+                202
+              ]
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                198,
+                203
+              ],
+              "destinations": [
+                50,
+                46,
+                47,
+                48,
+                49
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 242,
+      "states": [
+        "22222",
+        "22223"
+      ],
+      "parity": -1,
+      "ratio_bin": 418,
+      "interval": [
+        99,
+        100
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "11",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                350,
+                358
+              ],
+              "destinations": [
+                400,
+                401,
+                402,
+                403,
+                404,
+                405,
+                406,
+                407,
+                408,
+                409,
+                410,
+                411,
+                412,
+                413,
+                414,
+                415
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 243,
+      "states": [
+        "22222",
+        "22223"
+      ],
+      "parity": -1,
+      "ratio_bin": 418,
+      "interval": [
+        101,
+        102
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                413,
+                416
+              ],
+              "destinations": [
+                416,
+                417,
+                418,
+                419,
+                420,
+                421
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 244,
+      "states": [
+        "22223",
+        "22212"
+      ],
+      "parity": -1,
+      "ratio_bin": 242,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -244,
+        -243
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 245,
+      "states": [
+        "22133",
+        "31321"
+      ],
+      "parity": 1,
+      "ratio_bin": 470,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -142,
+        -141
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 246,
+      "states": [
+        "22133",
+        "31321"
+      ],
+      "parity": 1,
+      "ratio_bin": 470,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -141,
+        -140
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 247,
+      "states": [
+        "22313",
+        "222132"
+      ],
+      "parity": 1,
+      "ratio_bin": 35,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        85,
+        86
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 248,
+      "states": [
+        "22222",
+        "22221"
+      ],
+      "parity": -1,
+      "ratio_bin": 50,
+      "interval": [
+        343,
+        344
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 249,
+      "states": [
+        "22222",
+        "22221"
+      ],
+      "parity": -1,
+      "ratio_bin": 50,
+      "interval": [
+        344,
+        345
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 250,
+      "states": [
+        "22222",
+        "22221"
+      ],
+      "parity": -1,
+      "ratio_bin": 50,
+      "interval": [
+        345,
+        346
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 251,
+      "states": [
+        "22222",
+        "22221"
+      ],
+      "parity": -1,
+      "ratio_bin": 50,
+      "interval": [
+        346,
+        347
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 252,
+      "states": [
+        "22222",
+        "22221"
+      ],
+      "parity": -1,
+      "ratio_bin": 50,
+      "interval": [
+        347,
+        348
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 253,
+      "states": [
+        "22222",
+        "22221"
+      ],
+      "parity": -1,
+      "ratio_bin": 50,
+      "interval": [
+        348,
+        349
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 254,
+      "states": [
+        "22222",
+        "22221"
+      ],
+      "parity": -1,
+      "ratio_bin": 50,
+      "interval": [
+        349,
+        350
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 255,
+      "states": [
+        "22311",
+        "12111"
+      ],
+      "parity": 1,
+      "ratio_bin": 485,
+      "interval": [
+        -145,
+        -144
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 256,
+      "states": [
+        "22311",
+        "12111"
+      ],
+      "parity": 1,
+      "ratio_bin": 485,
+      "interval": [
+        -144,
+        -143
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 257,
+      "states": [
+        "21332",
+        "31331"
+      ],
+      "parity": -1,
+      "ratio_bin": 174,
+      "interval": [
+        36,
+        37
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 258,
+      "states": [
+        "21332",
+        "31331"
+      ],
+      "parity": -1,
+      "ratio_bin": 174,
+      "interval": [
+        37,
+        38
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 259,
+      "states": [
+        "21332",
+        "31331"
+      ],
+      "parity": -1,
+      "ratio_bin": 174,
+      "interval": [
+        38,
+        39
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 260,
+      "states": [
+        "21332",
+        "31331"
+      ],
+      "parity": -1,
+      "ratio_bin": 174,
+      "interval": [
+        39,
+        40
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 261,
+      "states": [
+        "21332",
+        "31331"
+      ],
+      "parity": -1,
+      "ratio_bin": 174,
+      "interval": [
+        40,
+        41
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 262,
+      "states": [
+        "22222",
+        "22223"
+      ],
+      "parity": -1,
+      "ratio_bin": 420,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        297,
+        298
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "1",
+            "1"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -190,
+                -187
+              ],
+              "destinations": [
+                394,
+                395,
+                396
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 263,
+      "states": [
+        "21332",
+        "31332"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "interval": [
+        356,
+        357
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 264,
+      "states": [
+        "21332",
+        "31332"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "interval": [
+        357,
+        358
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 265,
+      "states": [
+        "22133",
+        "31321"
+      ],
+      "parity": 1,
+      "ratio_bin": 470,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -140,
+        -139
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 266,
+      "states": [
+        "22221",
+        "22231"
+      ],
+      "parity": 1,
+      "ratio_bin": 310,
+      "interval": [
+        -17,
+        -16
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                93,
+                100
+              ],
+              "destinations": [
+                23,
+                24,
+                25,
+                181,
+                26,
+                80,
+                152
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 267,
+      "states": [
+        "22222",
+        "22221"
+      ],
+      "parity": -1,
+      "ratio_bin": 394,
+      "interval": [
+        -217,
+        -216
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                420,
+                425
+              ],
+              "destinations": [
+                463,
+                464,
+                465,
+                466,
+                462,
+                429,
+                430,
+                431,
+                391,
+                392
+              ]
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "3",
+            "1"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                351,
+                358
+              ],
+              "destinations": [
+                401,
+                402,
+                403,
+                404,
+                405,
+                406,
+                407,
+                409,
+                410,
+                411,
+                412,
+                413,
+                414,
+                415
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 268,
+      "states": [
+        "22213",
+        "22232"
+      ],
+      "parity": 1,
+      "ratio_bin": 58,
+      "interval": [
+        -233,
+        -232
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 269,
+      "states": [
+        "22213",
+        "22232"
+      ],
+      "parity": 1,
+      "ratio_bin": 58,
+      "interval": [
+        -232,
+        -231
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 270,
+      "states": [
+        "22213",
+        "22232"
+      ],
+      "parity": 1,
+      "ratio_bin": 58,
+      "interval": [
+        -231,
+        -230
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 271,
+      "states": [
+        "22222",
+        "22211"
+      ],
+      "parity": 1,
+      "ratio_bin": 297,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        412,
+        413
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 272,
+      "states": [
+        "22222",
+        "22211"
+      ],
+      "parity": 1,
+      "ratio_bin": 297,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        413,
+        414
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 273,
+      "states": [
+        "22223",
+        "22212"
+      ],
+      "parity": -1,
+      "ratio_bin": 242,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -247,
+        -246
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 274,
+      "states": [
+        "22223",
+        "22212"
+      ],
+      "parity": -1,
+      "ratio_bin": 242,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -246,
+        -245
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 275,
+      "states": [
+        "22223",
+        "22212"
+      ],
+      "parity": -1,
+      "ratio_bin": 242,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -245,
+        -244
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 276,
+      "states": [
+        "22223",
+        "22212"
+      ],
+      "parity": -1,
+      "ratio_bin": 242,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -244,
+        -243
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 277,
+      "states": [
+        "22221",
+        "222111"
+      ],
+      "parity": -1,
+      "ratio_bin": 217,
+      "interval": [
+        -223,
+        -222
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 278,
+      "states": [
+        "22221",
+        "222111"
+      ],
+      "parity": -1,
+      "ratio_bin": 217,
+      "interval": [
+        -220,
+        -219
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 279,
+      "states": [
+        "22221",
+        "21111"
+      ],
+      "parity": 1,
+      "ratio_bin": 458,
+      "interval": [
+        -117,
+        -116
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 280,
+      "states": [
+        "22221",
+        "21111"
+      ],
+      "parity": 1,
+      "ratio_bin": 458,
+      "interval": [
+        -116,
+        -115
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 281,
+      "states": [
+        "22221",
+        "21111"
+      ],
+      "parity": 1,
+      "ratio_bin": 458,
+      "interval": [
+        -115,
+        -114
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 282,
+      "states": [
+        "22221",
+        "21111"
+      ],
+      "parity": 1,
+      "ratio_bin": 458,
+      "interval": [
+        -114,
+        -113
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 283,
+      "states": [
+        "22221",
+        "22231"
+      ],
+      "parity": -1,
+      "ratio_bin": 405,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -92,
+        -91
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "211",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                317,
+                323
+              ],
+              "destinations": [
+                334,
+                335,
+                336,
+                337,
+                338,
+                339
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 284,
+      "states": [
+        "22221",
+        "22231"
+      ],
+      "parity": -1,
+      "ratio_bin": 405,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -91,
+        -90
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "211",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                312,
+                318
+              ],
+              "destinations": [
+                349,
+                350,
+                351,
+                352,
+                340,
+                334
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 285,
+      "states": [
+        "22221",
+        "22231"
+      ],
+      "parity": -1,
+      "ratio_bin": 405,
+      "interval": [
+        -92,
+        -91
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "211",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                316,
+                323
+              ],
+              "destinations": [
+                340,
+                334,
+                335,
+                336,
+                337,
+                338,
+                339,
+                341,
+                342,
+                343,
+                344,
+                345,
+                346,
+                347
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 286,
+      "states": [
+        "22231",
+        "22121"
+      ],
+      "parity": -1,
+      "ratio_bin": 251,
+      "interval": [
+        223,
+        224
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                316,
+                319
+              ],
+              "destinations": [
+                446,
+                447,
+                448,
+                340,
+                334,
+                335
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 287,
+      "states": [
+        "22231",
+        "22121"
+      ],
+      "parity": -1,
+      "ratio_bin": 251,
+      "interval": [
+        224,
+        225
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                317,
+                320
+              ],
+              "destinations": [
+                447,
+                448,
+                451,
+                334,
+                335,
+                336
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 288,
+      "states": [
+        "22231",
+        "22121"
+      ],
+      "parity": -1,
+      "ratio_bin": 251,
+      "interval": [
+        227,
+        228
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                320,
+                323
+              ],
+              "destinations": [
+                452,
+                453,
+                454,
+                337,
+                338,
+                339
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "states": [
+        "22231",
+        "22121"
+      ],
+      "parity": -1,
+      "ratio_bin": 251,
+      "interval": [
+        228,
+        229
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                321,
+                324
+              ],
+              "destinations": [
+                453,
+                454,
+                456,
+                338,
+                339,
+                455
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 290,
+      "states": [
+        "22231",
+        "22121"
+      ],
+      "parity": -1,
+      "ratio_bin": 251,
+      "interval": [
+        229,
+        230
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                322,
+                325
+              ],
+              "destinations": [
+                454,
+                456,
+                461,
+                339,
+                455,
+                460
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 291,
+      "states": [
+        "22231",
+        "22121"
+      ],
+      "parity": -1,
+      "ratio_bin": 250,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        223,
+        224
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                317,
+                319
+              ],
+              "destinations": [
+                449,
+                450
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 292,
+      "states": [
+        "22231",
+        "22121"
+      ],
+      "parity": -1,
+      "ratio_bin": 250,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        227,
+        228
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                321,
+                323
+              ],
+              "destinations": [
+                457,
+                458
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 293,
+      "states": [
+        "22231",
+        "22121"
+      ],
+      "parity": -1,
+      "ratio_bin": 250,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        228,
+        229
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                322,
+                324
+              ],
+              "destinations": [
+                458,
+                459
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 294,
+      "states": [
+        "22121",
+        "22311"
+      ],
+      "parity": 1,
+      "ratio_bin": 0,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        16,
+        17
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "11",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -145,
+                -143
+              ],
+              "destinations": [
+                255,
+                256
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 295,
+      "states": [
+        "22121",
+        "23112"
+      ],
+      "parity": -1,
+      "ratio_bin": 440,
+      "ratio_refinement": [
+        3,
+        5
+      ],
+      "interval": [
+        -10,
+        -9
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            "1"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -218,
+                -214
+              ],
+              "destinations": [
+                153,
+                154,
+                141,
+                142
+              ]
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                52,
+                55
+              ],
+              "destinations": [
+                236,
+                165,
+                237
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 296,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 35,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        86,
+        87
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 297,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 35,
+      "interval": [
+        85,
+        86
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                97,
+                100
+              ],
+              "destinations": [
+                397,
+                307,
+                308,
+                148,
+                194,
+                398
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 298,
+      "states": [
+        "22132",
+        "23132"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        87,
+        88
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                448,
+                452
+              ],
+              "destinations": [
+                134,
+                135,
+                136,
+                137,
+                138,
+                192,
+                139,
+                193
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 299,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "ratio_refinement": [
+        2,
+        2
+      ],
+      "interval": [
+        -42,
+        -41
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "21",
+            "21"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -70,
+                -66
+              ],
+              "destinations": [
+                130,
+                131,
+                132,
+                133
+              ]
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "211",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                63,
+                68
+              ],
+              "destinations": [
+                52,
+                53,
+                54,
+                321,
+                322
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 300,
+      "states": [
+        "23112",
+        "21212"
+      ],
+      "parity": 1,
+      "ratio_bin": 0,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        87,
+        88
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 301,
+      "states": [
+        "23112",
+        "21212"
+      ],
+      "parity": 1,
+      "ratio_bin": 0,
+      "ratio_refinement": [
+        2,
+        1
+      ],
+      "interval": [
+        87,
+        88
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 302,
+      "states": [
+        "22133",
+        "31321"
+      ],
+      "parity": 1,
+      "ratio_bin": 469,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -143,
+        -142
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 303,
+      "states": [
+        "22133",
+        "31321"
+      ],
+      "parity": 1,
+      "ratio_bin": 469,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -141,
+        -140
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 304,
+      "states": [
+        "22133",
+        "31321"
+      ],
+      "parity": 1,
+      "ratio_bin": 469,
+      "ratio_refinement": [
+        2,
+        1
+      ],
+      "interval": [
+        -141,
+        -140
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 305,
+      "states": [
+        "22133",
+        "31321"
+      ],
+      "parity": 1,
+      "ratio_bin": 470,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -141,
+        -140
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 306,
+      "states": [
+        "22133",
+        "31321"
+      ],
+      "parity": 1,
+      "ratio_bin": 469,
+      "ratio_refinement": [
+        2,
+        1
+      ],
+      "interval": [
+        -139,
+        -138
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 307,
+      "states": [
+        "22132",
+        "23132"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        98,
+        99
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 308,
+      "states": [
+        "22132",
+        "23132"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        99,
+        100
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 309,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 34,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        85,
+        86
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 310,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 34,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        86,
+        87
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 311,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 35,
+      "interval": [
+        86,
+        87
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 312,
+      "states": [
+        "23112",
+        "21211"
+      ],
+      "parity": 1,
+      "ratio_bin": 466,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        173,
+        174
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "1",
+            "1"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                337,
+                340
+              ],
+              "destinations": [
+                197,
+                167,
+                168
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 313,
+      "states": [
+        "23112",
+        "21211"
+      ],
+      "parity": 1,
+      "ratio_bin": 466,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        174,
+        175
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "1",
+            "1"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                334,
+                338
+              ],
+              "destinations": [
+                171,
+                240,
+                197,
+                169,
+                170
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 314,
+      "states": [
+        "23112",
+        "21212"
+      ],
+      "parity": 1,
+      "ratio_bin": 0,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        82,
+        83
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 315,
+      "states": [
+        "23112",
+        "21212"
+      ],
+      "parity": 1,
+      "ratio_bin": 0,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        83,
+        84
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 316,
+      "states": [
+        "23112",
+        "21212"
+      ],
+      "parity": 1,
+      "ratio_bin": 0,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        85,
+        86
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 317,
+      "states": [
+        "22221",
+        "22231"
+      ],
+      "parity": -1,
+      "ratio_bin": 406,
+      "ratio_refinement": [
+        2,
+        1
+      ],
+      "interval": [
+        -148,
+        -147
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                71,
+                77
+              ],
+              "destinations": [
+                42,
+                179,
+                43,
+                180,
+                44,
+                37
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 318,
+      "states": [
+        "22221",
+        "22231"
+      ],
+      "parity": -1,
+      "ratio_bin": 406,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        -148,
+        -147
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                70,
+                77
+              ],
+              "destinations": [
+                41,
+                42,
+                179,
+                43,
+                180,
+                44,
+                37,
+                34,
+                177,
+                35,
+                178,
+                31,
+                32,
+                36,
+                38,
+                39,
+                40,
+                33
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 319,
+      "states": [
+        "23112",
+        "21212"
+      ],
+      "parity": 1,
+      "ratio_bin": 0,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        84,
+        85
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 320,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -80,
+        -79
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "21",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -67,
+                -64
+              ],
+              "destinations": [
+                61,
+                184,
+                62
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 321,
+      "states": [
+        "22313",
+        "13211"
+      ],
+      "parity": 1,
+      "ratio_bin": 507,
+      "interval": [
+        66,
+        67
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 322,
+      "states": [
+        "22313",
+        "13211"
+      ],
+      "parity": 1,
+      "ratio_bin": 507,
+      "interval": [
+        67,
+        68
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 323,
+      "states": [
+        "22313",
+        "22133"
+      ],
+      "parity": 1,
+      "ratio_bin": 195,
+      "ratio_refinement": [
+        2,
+        3
+      ],
+      "interval": [
+        -111,
+        -110
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "21",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -142,
+                -138
+              ],
+              "destinations": [
+                218,
+                219,
+                220,
+                304,
+                306,
+                365
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 324,
+      "states": [
+        "22133",
+        "31321"
+      ],
+      "parity": 1,
+      "ratio_bin": 469,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -140,
+        -139
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 325,
+      "states": [
+        "22133",
+        "31321"
+      ],
+      "parity": 1,
+      "ratio_bin": 469,
+      "ratio_refinement": [
+        3,
+        2
+      ],
+      "interval": [
+        -140,
+        -139
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 326,
+      "states": [
+        "22221",
+        "22231"
+      ],
+      "parity": -1,
+      "ratio_bin": 407,
+      "interval": [
+        -91,
+        -90
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "21",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                219,
+                226
+              ],
+              "destinations": [
+                432,
+                433,
+                434,
+                435,
+                436,
+                437,
+                438,
+                439,
+                440,
+                441,
+                442,
+                443,
+                444,
+                445
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 327,
+      "states": [
+        "21212",
+        "31122"
+      ],
+      "parity": -1,
+      "ratio_bin": 440,
+      "interval": [
+        -82,
+        -81
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 328,
+      "states": [
+        "21212",
+        "31122"
+      ],
+      "parity": -1,
+      "ratio_bin": 440,
+      "interval": [
+        -88,
+        -87
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 329,
+      "states": [
+        "21212",
+        "31122"
+      ],
+      "parity": -1,
+      "ratio_bin": 440,
+      "interval": [
+        -87,
+        -86
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 330,
+      "states": [
+        "21212",
+        "31122"
+      ],
+      "parity": -1,
+      "ratio_bin": 440,
+      "interval": [
+        -86,
+        -85
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 331,
+      "states": [
+        "21212",
+        "31122"
+      ],
+      "parity": -1,
+      "ratio_bin": 440,
+      "interval": [
+        -85,
+        -84
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 332,
+      "states": [
+        "21212",
+        "31122"
+      ],
+      "parity": -1,
+      "ratio_bin": 440,
+      "interval": [
+        -84,
+        -83
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 333,
+      "states": [
+        "21212",
+        "31122"
+      ],
+      "parity": -1,
+      "ratio_bin": 440,
+      "interval": [
+        -83,
+        -82
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 334,
+      "states": [
+        "22231",
+        "21211"
+      ],
+      "parity": 1,
+      "ratio_bin": 500,
+      "interval": [
+        317,
+        318
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 335,
+      "states": [
+        "22231",
+        "21211"
+      ],
+      "parity": 1,
+      "ratio_bin": 500,
+      "interval": [
+        318,
+        319
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 336,
+      "states": [
+        "22231",
+        "21211"
+      ],
+      "parity": 1,
+      "ratio_bin": 500,
+      "interval": [
+        319,
+        320
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 337,
+      "states": [
+        "22231",
+        "21211"
+      ],
+      "parity": 1,
+      "ratio_bin": 500,
+      "interval": [
+        320,
+        321
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 338,
+      "states": [
+        "22231",
+        "21211"
+      ],
+      "parity": 1,
+      "ratio_bin": 500,
+      "interval": [
+        321,
+        322
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 339,
+      "states": [
+        "22231",
+        "21211"
+      ],
+      "parity": 1,
+      "ratio_bin": 500,
+      "interval": [
+        322,
+        323
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 340,
+      "states": [
+        "22231",
+        "21211"
+      ],
+      "parity": 1,
+      "ratio_bin": 500,
+      "interval": [
+        316,
+        317
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 341,
+      "states": [
+        "22231",
+        "21211"
+      ],
+      "parity": 1,
+      "ratio_bin": 501,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        316,
+        317
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 342,
+      "states": [
+        "22231",
+        "21211"
+      ],
+      "parity": 1,
+      "ratio_bin": 501,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        317,
+        318
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 343,
+      "states": [
+        "22231",
+        "21211"
+      ],
+      "parity": 1,
+      "ratio_bin": 501,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        318,
+        319
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 344,
+      "states": [
+        "22231",
+        "21211"
+      ],
+      "parity": 1,
+      "ratio_bin": 501,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        319,
+        320
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 345,
+      "states": [
+        "22231",
+        "21211"
+      ],
+      "parity": 1,
+      "ratio_bin": 501,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        320,
+        321
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 346,
+      "states": [
+        "22231",
+        "21211"
+      ],
+      "parity": 1,
+      "ratio_bin": 501,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        321,
+        322
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 347,
+      "states": [
+        "22231",
+        "21211"
+      ],
+      "parity": 1,
+      "ratio_bin": 501,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        322,
+        323
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 348,
+      "states": [
+        "22212",
+        "22312"
+      ],
+      "parity": -1,
+      "ratio_bin": 405,
+      "interval": [
+        58,
+        59
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 349,
+      "states": [
+        "22231",
+        "21211"
+      ],
+      "parity": 1,
+      "ratio_bin": 500,
+      "interval": [
+        312,
+        313
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 350,
+      "states": [
+        "22231",
+        "21211"
+      ],
+      "parity": 1,
+      "ratio_bin": 500,
+      "interval": [
+        313,
+        314
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 351,
+      "states": [
+        "22231",
+        "21211"
+      ],
+      "parity": 1,
+      "ratio_bin": 500,
+      "interval": [
+        314,
+        315
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 352,
+      "states": [
+        "22231",
+        "21211"
+      ],
+      "parity": 1,
+      "ratio_bin": 500,
+      "interval": [
+        315,
+        316
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 353,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 36,
+      "interval": [
+        -197,
+        -196
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 354,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 35,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -197,
+        -196
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 355,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 36,
+      "interval": [
+        -202,
+        -201
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 356,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 36,
+      "interval": [
+        -201,
+        -200
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 357,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 36,
+      "interval": [
+        -200,
+        -199
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 358,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 36,
+      "interval": [
+        -199,
+        -198
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 359,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 36,
+      "interval": [
+        -198,
+        -197
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 360,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 35,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -202,
+        -201
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 361,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 35,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -201,
+        -200
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 362,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 35,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -200,
+        -199
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 363,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 35,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -199,
+        -198
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 364,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 35,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -198,
+        -197
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 365,
+      "states": [
+        "22133",
+        "231321"
+      ],
+      "parity": 1,
+      "ratio_bin": 469,
+      "interval": [
+        -142,
+        -141
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 366,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 36,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -202,
+        -201
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 367,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 36,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -201,
+        -200
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 368,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 36,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -200,
+        -199
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 369,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 36,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -199,
+        -198
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 370,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 36,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -198,
+        -197
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 371,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 36,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -197,
+        -196
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 372,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 36,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -196,
+        -195
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 373,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 37,
+      "interval": [
+        -202,
+        -201
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 374,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 37,
+      "interval": [
+        -201,
+        -200
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 375,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 37,
+      "interval": [
+        -200,
+        -199
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 376,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 37,
+      "interval": [
+        -199,
+        -198
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 377,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 37,
+      "interval": [
+        -198,
+        -197
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 378,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 37,
+      "interval": [
+        -197,
+        -196
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 379,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 37,
+      "interval": [
+        -196,
+        -195
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 380,
+      "states": [
+        "22223",
+        "22121"
+      ],
+      "parity": 1,
+      "ratio_bin": 461,
+      "interval": [
+        144,
+        145
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 381,
+      "states": [
+        "22223",
+        "22121"
+      ],
+      "parity": 1,
+      "ratio_bin": 461,
+      "interval": [
+        145,
+        146
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 382,
+      "states": [
+        "22223",
+        "22121"
+      ],
+      "parity": 1,
+      "ratio_bin": 460,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        144,
+        145
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 383,
+      "states": [
+        "22223",
+        "22121"
+      ],
+      "parity": 1,
+      "ratio_bin": 460,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        145,
+        146
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 384,
+      "states": [
+        "21332",
+        "31332"
+      ],
+      "parity": -1,
+      "ratio_bin": 404,
+      "interval": [
+        99,
+        100
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 385,
+      "states": [
+        "21332",
+        "31332"
+      ],
+      "parity": -1,
+      "ratio_bin": 404,
+      "interval": [
+        100,
+        101
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 386,
+      "states": [
+        "21332",
+        "31332"
+      ],
+      "parity": -1,
+      "ratio_bin": 404,
+      "interval": [
+        101,
+        102
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 387,
+      "states": [
+        "21332",
+        "31332"
+      ],
+      "parity": -1,
+      "ratio_bin": 404,
+      "interval": [
+        102,
+        103
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 388,
+      "states": [
+        "21332",
+        "31332"
+      ],
+      "parity": -1,
+      "ratio_bin": 404,
+      "interval": [
+        103,
+        104
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 389,
+      "states": [
+        "21332",
+        "31332"
+      ],
+      "parity": -1,
+      "ratio_bin": 404,
+      "interval": [
+        104,
+        105
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 390,
+      "states": [
+        "22223",
+        "22212"
+      ],
+      "parity": -1,
+      "ratio_bin": 242,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -248,
+        -247
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 391,
+      "states": [
+        "22221",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 196,
+      "interval": [
+        423,
+        424
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 392,
+      "states": [
+        "22221",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 196,
+      "interval": [
+        424,
+        425
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 393,
+      "states": [
+        "22213",
+        "222313"
+      ],
+      "parity": -1,
+      "ratio_bin": 404,
+      "interval": [
+        -12,
+        -11
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 394,
+      "states": [
+        "22221",
+        "22231"
+      ],
+      "parity": -1,
+      "ratio_bin": 407,
+      "ratio_refinement": [
+        2,
+        1
+      ],
+      "interval": [
+        -190,
+        -189
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 395,
+      "states": [
+        "22221",
+        "22231"
+      ],
+      "parity": -1,
+      "ratio_bin": 407,
+      "ratio_refinement": [
+        2,
+        1
+      ],
+      "interval": [
+        -189,
+        -188
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 396,
+      "states": [
+        "22221",
+        "22231"
+      ],
+      "parity": -1,
+      "ratio_bin": 407,
+      "ratio_refinement": [
+        2,
+        1
+      ],
+      "interval": [
+        -188,
+        -187
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 397,
+      "states": [
+        "22132",
+        "23132"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        97,
+        98
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 398,
+      "states": [
+        "22132",
+        "223132"
+      ],
+      "parity": -1,
+      "ratio_bin": 404,
+      "interval": [
+        99,
+        100
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 399,
+      "states": [
+        "22222",
+        "22221"
+      ],
+      "parity": 1,
+      "ratio_bin": 490,
+      "interval": [
+        259,
+        260
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 400,
+      "states": [
+        "22223",
+        "22211"
+      ],
+      "parity": -1,
+      "ratio_bin": 50,
+      "interval": [
+        350,
+        351
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 401,
+      "states": [
+        "22223",
+        "22211"
+      ],
+      "parity": -1,
+      "ratio_bin": 50,
+      "interval": [
+        351,
+        352
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 402,
+      "states": [
+        "22223",
+        "22211"
+      ],
+      "parity": -1,
+      "ratio_bin": 50,
+      "interval": [
+        352,
+        353
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 403,
+      "states": [
+        "22223",
+        "22211"
+      ],
+      "parity": -1,
+      "ratio_bin": 50,
+      "interval": [
+        353,
+        354
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 404,
+      "states": [
+        "22223",
+        "22211"
+      ],
+      "parity": -1,
+      "ratio_bin": 50,
+      "interval": [
+        354,
+        355
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 405,
+      "states": [
+        "22223",
+        "22211"
+      ],
+      "parity": -1,
+      "ratio_bin": 50,
+      "interval": [
+        355,
+        356
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 406,
+      "states": [
+        "22223",
+        "22211"
+      ],
+      "parity": -1,
+      "ratio_bin": 50,
+      "interval": [
+        356,
+        357
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 407,
+      "states": [
+        "22223",
+        "22211"
+      ],
+      "parity": -1,
+      "ratio_bin": 50,
+      "interval": [
+        357,
+        358
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 408,
+      "states": [
+        "22223",
+        "22211"
+      ],
+      "parity": -1,
+      "ratio_bin": 51,
+      "ratio_refinement": [
+        2,
+        3
+      ],
+      "interval": [
+        350,
+        351
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 409,
+      "states": [
+        "22223",
+        "22211"
+      ],
+      "parity": -1,
+      "ratio_bin": 51,
+      "ratio_refinement": [
+        2,
+        3
+      ],
+      "interval": [
+        351,
+        352
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 410,
+      "states": [
+        "22223",
+        "22211"
+      ],
+      "parity": -1,
+      "ratio_bin": 51,
+      "ratio_refinement": [
+        2,
+        3
+      ],
+      "interval": [
+        352,
+        353
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 411,
+      "states": [
+        "22223",
+        "22211"
+      ],
+      "parity": -1,
+      "ratio_bin": 51,
+      "ratio_refinement": [
+        2,
+        3
+      ],
+      "interval": [
+        353,
+        354
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 412,
+      "states": [
+        "22223",
+        "22211"
+      ],
+      "parity": -1,
+      "ratio_bin": 51,
+      "ratio_refinement": [
+        2,
+        3
+      ],
+      "interval": [
+        354,
+        355
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 413,
+      "states": [
+        "22223",
+        "22211"
+      ],
+      "parity": -1,
+      "ratio_bin": 51,
+      "ratio_refinement": [
+        2,
+        3
+      ],
+      "interval": [
+        355,
+        356
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 414,
+      "states": [
+        "22223",
+        "22211"
+      ],
+      "parity": -1,
+      "ratio_bin": 51,
+      "ratio_refinement": [
+        2,
+        3
+      ],
+      "interval": [
+        356,
+        357
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 415,
+      "states": [
+        "22223",
+        "22211"
+      ],
+      "parity": -1,
+      "ratio_bin": 51,
+      "ratio_refinement": [
+        2,
+        3
+      ],
+      "interval": [
+        357,
+        358
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 416,
+      "states": [
+        "22221",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 195,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        413,
+        414
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 417,
+      "states": [
+        "22221",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 195,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        414,
+        415
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 418,
+      "states": [
+        "22221",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 195,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        415,
+        416
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 419,
+      "states": [
+        "22221",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 196,
+      "interval": [
+        413,
+        414
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 420,
+      "states": [
+        "22221",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 196,
+      "interval": [
+        414,
+        415
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 421,
+      "states": [
+        "22221",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 196,
+      "interval": [
+        415,
+        416
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 422,
+      "states": [
+        "22221",
+        "22231"
+      ],
+      "parity": -1,
+      "ratio_bin": 405,
+      "interval": [
+        -91,
+        -90
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "211",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                311,
+                318
+              ],
+              "destinations": [
+                423,
+                349,
+                350,
+                351,
+                352,
+                340,
+                334,
+                424,
+                425,
+                426,
+                427,
+                428,
+                341,
+                342
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 423,
+      "states": [
+        "22231",
+        "21211"
+      ],
+      "parity": 1,
+      "ratio_bin": 500,
+      "interval": [
+        311,
+        312
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 424,
+      "states": [
+        "22231",
+        "21211"
+      ],
+      "parity": 1,
+      "ratio_bin": 501,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        311,
+        312
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 425,
+      "states": [
+        "22231",
+        "21211"
+      ],
+      "parity": 1,
+      "ratio_bin": 501,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        312,
+        313
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 426,
+      "states": [
+        "22231",
+        "21211"
+      ],
+      "parity": 1,
+      "ratio_bin": 501,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        313,
+        314
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 427,
+      "states": [
+        "22231",
+        "21211"
+      ],
+      "parity": 1,
+      "ratio_bin": 501,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        314,
+        315
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 428,
+      "states": [
+        "22231",
+        "21211"
+      ],
+      "parity": 1,
+      "ratio_bin": 501,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        315,
+        316
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 429,
+      "states": [
+        "22221",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 196,
+      "interval": [
+        420,
+        421
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 430,
+      "states": [
+        "22221",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 196,
+      "interval": [
+        421,
+        422
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 431,
+      "states": [
+        "22221",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 196,
+      "interval": [
+        422,
+        423
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 432,
+      "states": [
+        "22231",
+        "22121"
+      ],
+      "parity": -1,
+      "ratio_bin": 249,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        219,
+        220
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 433,
+      "states": [
+        "22231",
+        "22121"
+      ],
+      "parity": -1,
+      "ratio_bin": 249,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        220,
+        221
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 434,
+      "states": [
+        "22231",
+        "22121"
+      ],
+      "parity": -1,
+      "ratio_bin": 249,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        221,
+        222
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 435,
+      "states": [
+        "22231",
+        "22121"
+      ],
+      "parity": -1,
+      "ratio_bin": 249,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        222,
+        223
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 436,
+      "states": [
+        "22231",
+        "22121"
+      ],
+      "parity": -1,
+      "ratio_bin": 249,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        223,
+        224
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 437,
+      "states": [
+        "22231",
+        "22121"
+      ],
+      "parity": -1,
+      "ratio_bin": 249,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        224,
+        225
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 438,
+      "states": [
+        "22231",
+        "22121"
+      ],
+      "parity": -1,
+      "ratio_bin": 249,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        225,
+        226
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 439,
+      "states": [
+        "22231",
+        "22121"
+      ],
+      "parity": -1,
+      "ratio_bin": 250,
+      "interval": [
+        219,
+        220
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 440,
+      "states": [
+        "22231",
+        "22121"
+      ],
+      "parity": -1,
+      "ratio_bin": 250,
+      "interval": [
+        220,
+        221
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 441,
+      "states": [
+        "22231",
+        "22121"
+      ],
+      "parity": -1,
+      "ratio_bin": 250,
+      "interval": [
+        221,
+        222
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 442,
+      "states": [
+        "22231",
+        "22121"
+      ],
+      "parity": -1,
+      "ratio_bin": 250,
+      "interval": [
+        222,
+        223
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 443,
+      "states": [
+        "22231",
+        "22121"
+      ],
+      "parity": -1,
+      "ratio_bin": 250,
+      "interval": [
+        223,
+        224
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 444,
+      "states": [
+        "22231",
+        "22121"
+      ],
+      "parity": -1,
+      "ratio_bin": 250,
+      "interval": [
+        224,
+        225
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 445,
+      "states": [
+        "22231",
+        "22121"
+      ],
+      "parity": -1,
+      "ratio_bin": 250,
+      "interval": [
+        225,
+        226
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 446,
+      "states": [
+        "22231",
+        "21211"
+      ],
+      "parity": 1,
+      "ratio_bin": 499,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        316,
+        317
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 447,
+      "states": [
+        "22231",
+        "21211"
+      ],
+      "parity": 1,
+      "ratio_bin": 499,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        317,
+        318
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 448,
+      "states": [
+        "22231",
+        "21211"
+      ],
+      "parity": 1,
+      "ratio_bin": 499,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        318,
+        319
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 449,
+      "states": [
+        "22231",
+        "21211"
+      ],
+      "parity": 1,
+      "ratio_bin": 499,
+      "interval": [
+        317,
+        318
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 450,
+      "states": [
+        "22231",
+        "21211"
+      ],
+      "parity": 1,
+      "ratio_bin": 499,
+      "interval": [
+        318,
+        319
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 451,
+      "states": [
+        "22231",
+        "21211"
+      ],
+      "parity": 1,
+      "ratio_bin": 499,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        319,
+        320
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 452,
+      "states": [
+        "22231",
+        "21211"
+      ],
+      "parity": 1,
+      "ratio_bin": 499,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        320,
+        321
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 453,
+      "states": [
+        "22231",
+        "21211"
+      ],
+      "parity": 1,
+      "ratio_bin": 499,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        321,
+        322
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 454,
+      "states": [
+        "22231",
+        "21211"
+      ],
+      "parity": 1,
+      "ratio_bin": 499,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        322,
+        323
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 455,
+      "states": [
+        "22231",
+        "21211"
+      ],
+      "parity": 1,
+      "ratio_bin": 500,
+      "interval": [
+        323,
+        324
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 456,
+      "states": [
+        "22231",
+        "21211"
+      ],
+      "parity": 1,
+      "ratio_bin": 499,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        323,
+        324
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 457,
+      "states": [
+        "22231",
+        "21211"
+      ],
+      "parity": 1,
+      "ratio_bin": 499,
+      "interval": [
+        321,
+        322
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 458,
+      "states": [
+        "22231",
+        "21211"
+      ],
+      "parity": 1,
+      "ratio_bin": 499,
+      "interval": [
+        322,
+        323
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 459,
+      "states": [
+        "22231",
+        "21211"
+      ],
+      "parity": 1,
+      "ratio_bin": 499,
+      "interval": [
+        323,
+        324
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 460,
+      "states": [
+        "22231",
+        "21211"
+      ],
+      "parity": 1,
+      "ratio_bin": 500,
+      "interval": [
+        324,
+        325
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 461,
+      "states": [
+        "22231",
+        "21211"
+      ],
+      "parity": 1,
+      "ratio_bin": 499,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        324,
+        325
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 462,
+      "states": [
+        "22221",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 195,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        424,
+        425
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 463,
+      "states": [
+        "22221",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 195,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        420,
+        421
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 464,
+      "states": [
+        "22221",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 195,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        421,
+        422
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 465,
+      "states": [
+        "22221",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 195,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        422,
+        423
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 466,
+      "states": [
+        "22221",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 195,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        423,
+        424
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 467,
+      "states": [
+        "22221",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 195,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        442,
+        443
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 468,
+      "states": [
+        "22221",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 195,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        443,
+        444
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 469,
+      "states": [
+        "22221",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 195,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        444,
+        445
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 470,
+      "states": [
+        "22221",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 195,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        445,
+        446
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 471,
+      "states": [
+        "22221",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 196,
+      "interval": [
+        442,
+        443
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 472,
+      "states": [
+        "22221",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 196,
+      "interval": [
+        443,
+        444
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 473,
+      "states": [
+        "22221",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 196,
+      "interval": [
+        444,
+        445
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 474,
+      "states": [
+        "22221",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 196,
+      "interval": [
+        445,
+        446
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 475,
+      "states": [
+        "22221",
+        "222231"
+      ],
+      "parity": 1,
+      "ratio_bin": 310,
+      "interval": [
+        -25,
+        -24
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 476,
+      "states": [
+        "21321",
+        "31321"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "interval": [
+        97,
+        98
+      ],
+      "covered": false,
+      "children": []
+    }
+  ],
+  "status": "sample of retained alternatives; all other obligations left open",
+  "sampled_alternative_ids": [
+    267102,
+    267113,
+    267115,
+    267271,
+    267341,
+    267347,
+    267354,
+    267429,
+    267647,
+    267658,
+    267682,
+    267704,
+    267760,
+    267892,
+    268046,
+    268059,
+    268183,
+    268229,
+    268348,
+    268363,
+    268378,
+    268588,
+    268685,
+    268758,
+    268918,
+    268981,
+    268983,
+    269089,
+    269236,
+    269353,
+    269454,
+    269479,
+    269531,
+    269604,
+    269644,
+    270044,
+    270045,
+    270057,
+    270058,
+    270120,
+    270130,
+    270133,
+    270375,
+    270590,
+    270591,
+    270662,
+    270729,
+    270769,
+    270786,
+    270787,
+    270789,
+    270790,
+    270849,
+    270994,
+    271151,
+    271184,
+    271378,
+    271939,
+    272003,
+    272013,
+    272291,
+    272359,
+    272515,
+    272639
+  ],
+  "sampled_discarded_rules": 64,
+  "source_catalog_sha256": "9f93bef597078a44fdf120cb51617c9728e09e2de17905df83943a44d69774f7"
+}

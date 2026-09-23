@@ -1,0 +1,13 @@
+{
+  "same_engine_hash": true,
+  "same_game_snapshot_up_to_set_order": true,
+  "set_fields_normalized": [
+    "permanent_rejections"
+  ],
+  "queue_order_preserved": true,
+  "same_refined_domains": true,
+  "proof_hash": "bf16bd49e208e0d1c47a42311ef205ba62fa462989eb24e2166d68269f8c3b83",
+  "refined_domains": 92,
+  "supported_types": 0,
+  "shape_templates": 48
+}

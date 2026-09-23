@@ -1,0 +1,23 @@
+{
+  "heuristic": "maximum count per canonical type; no impossibility facts",
+  "keys": 50066,
+  "sha256": "4ce8ee55916708bbedd6bd2a90170aa40275c45c9dae9d71557dbd9205badd21",
+  "sources": [
+    {
+      "path": "/tmp/kf131_global_cycle/stage_01.json.global.txt",
+      "sha256": "6925fb4347c0a997cd40ea09f6f5954414643c0bc1cd2342118e593713cc98e0"
+    },
+    {
+      "path": "/tmp/kf131_global_cycle/stage_02.json.global.txt",
+      "sha256": "78235c14fbccbe179a9126b3da3fd657fa195607cf81015ba93070e9e5341487"
+    },
+    {
+      "path": "/tmp/kf131_global_return_runs/stage_01.json.global.txt",
+      "sha256": "ea50bad599c93dde11fb7fb4e20106bfcef018ed674bfe6dfcf331aa2b8555ef"
+    },
+    {
+      "path": "/tmp/kf131_global_return_runs/stage_02.json.global.txt",
+      "sha256": "f285b42014e5b7da12bab67ea9170e15f8292fc1b0941f30623c71c43026aaca"
+    }
+  ]
+}

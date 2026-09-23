@@ -1,0 +1,29 @@
+[
+  {
+    "states": 13,
+    "bins": 72,
+    "base": "24/25",
+    "max_step": 1,
+    "outer_depth": 3,
+    "outer_samples": 3,
+    "edge_grid": 16,
+    "balance": "9/10",
+    "breadth_first": true,
+    "reuse_pending": true
+  },
+  {
+    "memory": 3,
+    "bins": 160,
+    "base": "49/50",
+    "max_step": 1,
+    "outer_depth": 3,
+    "outer_samples": 3,
+    "edge_grid": 16,
+    "grow_edge_grid": true,
+    "balance": "9/10",
+    "breadth_first": true,
+    "reuse_pending": true,
+    "refinement_rounds": 3,
+    "split_count": 24
+  }
+]

@@ -1,0 +1,1549 @@
+{
+  "probes": [
+    {
+      "key": [
+        191,
+        9,
+        53
+      ],
+      "found": false,
+      "piecewise": false
+    },
+    {
+      "key": [
+        1311,
+        33,
+        44
+      ],
+      "found": false,
+      "piecewise": false
+    },
+    {
+      "key": [
+        504,
+        1,
+        66
+      ],
+      "found": false,
+      "piecewise": false
+    },
+    {
+      "key": [
+        157,
+        74,
+        68
+      ],
+      "found": false,
+      "piecewise": false
+    },
+    {
+      "key": [
+        158,
+        74,
+        68
+      ],
+      "found": false,
+      "piecewise": false
+    },
+    {
+      "key": [
+        149,
+        1,
+        70
+      ],
+      "found": false,
+      "piecewise": false
+    },
+    {
+      "key": [
+        150,
+        1,
+        70
+      ],
+      "found": false,
+      "piecewise": false
+    },
+    {
+      "key": [
+        576,
+        2,
+        19
+      ],
+      "found": false,
+      "piecewise": false
+    },
+    {
+      "key": [
+        1677,
+        33,
+        44
+      ],
+      "found": false,
+      "piecewise": false
+    },
+    {
+      "key": [
+        1477,
+        2,
+        94
+      ],
+      "found": false,
+      "piecewise": false
+    },
+    {
+      "key": [
+        1477,
+        24,
+        0
+      ],
+      "found": false,
+      "piecewise": false
+    },
+    {
+      "key": [
+        1481,
+        5,
+        48
+      ],
+      "found": false,
+      "piecewise": false
+    },
+    {
+      "key": [
+        3069,
+        1,
+        91
+      ],
+      "found": false,
+      "piecewise": false
+    },
+    {
+      "key": [
+        3127,
+        1,
+        19
+      ],
+      "found": false,
+      "piecewise": false
+    },
+    {
+      "key": [
+        3128,
+        1,
+        19
+      ],
+      "found": false,
+      "piecewise": false
+    },
+    {
+      "key": [
+        916,
+        106,
+        24
+      ],
+      "found": true,
+      "piecewise": true,
+      "certificate": {
+        "format": "freiman-piecewise-chart-types-v1",
+        "cells": [
+          {
+            "base": {
+              "states": [
+                "1",
+                "1"
+              ],
+              "parity": -1,
+              "high": false,
+              "r": [
+                [
+                  "5/9",
+                  "0"
+                ],
+                [
+                  "4/5",
+                  "0"
+                ]
+              ],
+              "s": [
+                [
+                  "5/9",
+                  "0"
+                ],
+                [
+                  "4/5",
+                  "0"
+                ]
+              ],
+              "ratio": [
+                [
+                  "234256/390625",
+                  "0"
+                ],
+                [
+                  "10648/15625",
+                  "0"
+                ]
+              ]
+            },
+            "words": [
+              "1",
+              "1"
+            ],
+            "high": false
+          },
+          {
+            "base": {
+              "states": [
+                "1",
+                "1"
+              ],
+              "parity": -1,
+              "high": false,
+              "r": [
+                [
+                  "5/9",
+                  "0"
+                ],
+                [
+                  "4/5",
+                  "0"
+                ]
+              ],
+              "s": [
+                [
+                  "5/9",
+                  "0"
+                ],
+                [
+                  "4/5",
+                  "0"
+                ]
+              ],
+              "ratio": [
+                [
+                  "10648/15625",
+                  "0"
+                ],
+                [
+                  "484/625",
+                  "0"
+                ]
+              ]
+            },
+            "words": [
+              "1",
+              "1"
+            ],
+            "high": false
+          },
+          {
+            "base": {
+              "states": [
+                "1",
+                "1"
+              ],
+              "parity": -1,
+              "high": false,
+              "r": [
+                [
+                  "5/9",
+                  "0"
+                ],
+                [
+                  "4/5",
+                  "0"
+                ]
+              ],
+              "s": [
+                [
+                  "5/9",
+                  "0"
+                ],
+                [
+                  "4/5",
+                  "0"
+                ]
+              ],
+              "ratio": [
+                [
+                  "234256/390625",
+                  "0"
+                ],
+                [
+                  "10648/15625",
+                  "0"
+                ]
+              ]
+            },
+            "words": [
+              "2",
+              "1"
+            ],
+            "high": false
+          },
+          {
+            "base": {
+              "states": [
+                "1",
+                "1"
+              ],
+              "parity": -1,
+              "high": false,
+              "r": [
+                [
+                  "5/9",
+                  "0"
+                ],
+                [
+                  "4/5",
+                  "0"
+                ]
+              ],
+              "s": [
+                [
+                  "5/9",
+                  "0"
+                ],
+                [
+                  "4/5",
+                  "0"
+                ]
+              ],
+              "ratio": [
+                [
+                  "10648/15625",
+                  "0"
+                ],
+                [
+                  "484/625",
+                  "0"
+                ]
+              ]
+            },
+            "words": [
+              "2",
+              "1"
+            ],
+            "high": false
+          },
+          {
+            "base": {
+              "states": [
+                "1",
+                "1"
+              ],
+              "parity": -1,
+              "high": false,
+              "r": [
+                [
+                  "5/9",
+                  "0"
+                ],
+                [
+                  "4/5",
+                  "0"
+                ]
+              ],
+              "s": [
+                [
+                  "5/9",
+                  "0"
+                ],
+                [
+                  "4/5",
+                  "0"
+                ]
+              ],
+              "ratio": [
+                [
+                  "234256/390625",
+                  "0"
+                ],
+                [
+                  "10648/15625",
+                  "0"
+                ]
+              ]
+            },
+            "words": [
+              "3",
+              "1"
+            ],
+            "high": false
+          },
+          {
+            "base": {
+              "states": [
+                "1",
+                "1"
+              ],
+              "parity": -1,
+              "high": false,
+              "r": [
+                [
+                  "5/9",
+                  "0"
+                ],
+                [
+                  "4/5",
+                  "0"
+                ]
+              ],
+              "s": [
+                [
+                  "5/9",
+                  "0"
+                ],
+                [
+                  "4/5",
+                  "0"
+                ]
+              ],
+              "ratio": [
+                [
+                  "10648/15625",
+                  "0"
+                ],
+                [
+                  "484/625",
+                  "0"
+                ]
+              ]
+            },
+            "words": [
+              "3",
+              "1"
+            ],
+            "high": false
+          },
+          {
+            "base": {
+              "states": [
+                "2",
+                "1"
+              ],
+              "parity": 1,
+              "high": false,
+              "r": [
+                [
+                  "5/14",
+                  "0"
+                ],
+                [
+                  "4/9",
+                  "0"
+                ]
+              ],
+              "s": [
+                [
+                  "5/9",
+                  "0"
+                ],
+                [
+                  "4/5",
+                  "0"
+                ]
+              ],
+              "ratio": [
+                [
+                  "2494357888/6103515625",
+                  "0"
+                ],
+                [
+                  "113379904/244140625",
+                  "0"
+                ]
+              ]
+            },
+            "words": [
+              "1",
+              "1"
+            ],
+            "high": false
+          },
+          {
+            "base": {
+              "states": [
+                "1",
+                "1"
+              ],
+              "parity": -1,
+              "high": false,
+              "r": [
+                [
+                  "5/9",
+                  "0"
+                ],
+                [
+                  "4/5",
+                  "0"
+                ]
+              ],
+              "s": [
+                [
+                  "5/9",
+                  "0"
+                ],
+                [
+                  "4/5",
+                  "0"
+                ]
+              ],
+              "ratio": [
+                [
+                  "5153632/9765625",
+                  "0"
+                ],
+                [
+                  "234256/390625",
+                  "0"
+                ]
+              ]
+            },
+            "words": [
+              "1",
+              "1"
+            ],
+            "high": false
+          },
+          {
+            "base": {
+              "states": [
+                "1",
+                "1"
+              ],
+              "parity": -1,
+              "high": false,
+              "r": [
+                [
+                  "5/9",
+                  "0"
+                ],
+                [
+                  "4/5",
+                  "0"
+                ]
+              ],
+              "s": [
+                [
+                  "5/9",
+                  "0"
+                ],
+                [
+                  "4/5",
+                  "0"
+                ]
+              ],
+              "ratio": [
+                [
+                  "5153632/9765625",
+                  "0"
+                ],
+                [
+                  "234256/390625",
+                  "0"
+                ]
+              ]
+            },
+            "words": [
+              "2",
+              "1"
+            ],
+            "high": false
+          },
+          {
+            "base": {
+              "states": [
+                "1",
+                "1"
+              ],
+              "parity": -1,
+              "high": false,
+              "r": [
+                [
+                  "5/9",
+                  "0"
+                ],
+                [
+                  "4/5",
+                  "0"
+                ]
+              ],
+              "s": [
+                [
+                  "5/9",
+                  "0"
+                ],
+                [
+                  "4/5",
+                  "0"
+                ]
+              ],
+              "ratio": [
+                [
+                  "5153632/9765625",
+                  "0"
+                ],
+                [
+                  "234256/390625",
+                  "0"
+                ]
+              ]
+            },
+            "words": [
+              "3",
+              "1"
+            ],
+            "high": false
+          },
+          {
+            "base": {
+              "states": [
+                "1",
+                "1"
+              ],
+              "parity": -1,
+              "high": false,
+              "r": [
+                [
+                  "5/9",
+                  "0"
+                ],
+                [
+                  "4/5",
+                  "0"
+                ]
+              ],
+              "s": [
+                [
+                  "5/9",
+                  "0"
+                ],
+                [
+                  "4/5",
+                  "0"
+                ]
+              ],
+              "ratio": [
+                [
+                  "113379904/244140625",
+                  "0"
+                ],
+                [
+                  "5153632/9765625",
+                  "0"
+                ]
+              ]
+            },
+            "words": [
+              "1",
+              "1"
+            ],
+            "high": false
+          },
+          {
+            "base": {
+              "states": [
+                "1",
+                "1"
+              ],
+              "parity": -1,
+              "high": false,
+              "r": [
+                [
+                  "5/9",
+                  "0"
+                ],
+                [
+                  "4/5",
+                  "0"
+                ]
+              ],
+              "s": [
+                [
+                  "5/9",
+                  "0"
+                ],
+                [
+                  "4/5",
+                  "0"
+                ]
+              ],
+              "ratio": [
+                [
+                  "113379904/244140625",
+                  "0"
+                ],
+                [
+                  "5153632/9765625",
+                  "0"
+                ]
+              ]
+            },
+            "words": [
+              "2",
+              "1"
+            ],
+            "high": false
+          },
+          {
+            "base": {
+              "states": [
+                "1",
+                "1"
+              ],
+              "parity": -1,
+              "high": false,
+              "r": [
+                [
+                  "5/9",
+                  "0"
+                ],
+                [
+                  "4/5",
+                  "0"
+                ]
+              ],
+              "s": [
+                [
+                  "5/9",
+                  "0"
+                ],
+                [
+                  "4/5",
+                  "0"
+                ]
+              ],
+              "ratio": [
+                [
+                  "113379904/244140625",
+                  "0"
+                ],
+                [
+                  "5153632/9765625",
+                  "0"
+                ]
+              ]
+            },
+            "words": [
+              "3",
+              "1"
+            ],
+            "high": false
+          },
+          {
+            "base": {
+              "states": [
+                "2",
+                "1"
+              ],
+              "parity": 1,
+              "high": false,
+              "r": [
+                [
+                  "5/14",
+                  "0"
+                ],
+                [
+                  "4/9",
+                  "0"
+                ]
+              ],
+              "s": [
+                [
+                  "5/9",
+                  "0"
+                ],
+                [
+                  "61/90",
+                  "0"
+                ]
+              ],
+              "ratio": [
+                [
+                  "2494357888/6103515625",
+                  "0"
+                ],
+                [
+                  "113379904/244140625",
+                  "0"
+                ]
+              ]
+            },
+            "words": [
+              "1",
+              "1"
+            ],
+            "high": false
+          },
+          {
+            "base": {
+              "states": [
+                "2",
+                "1"
+              ],
+              "parity": 1,
+              "high": false,
+              "r": [
+                [
+                  "5/14",
+                  "0"
+                ],
+                [
+                  "4/9",
+                  "0"
+                ]
+              ],
+              "s": [
+                [
+                  "61/90",
+                  "0"
+                ],
+                [
+                  "4/5",
+                  "0"
+                ]
+              ],
+              "ratio": [
+                [
+                  "2494357888/6103515625",
+                  "0"
+                ],
+                [
+                  "113379904/244140625",
+                  "0"
+                ]
+              ]
+            },
+            "words": [
+              "1",
+              "1"
+            ],
+            "high": false
+          }
+        ],
+        "nodes": [
+          {
+            "cell": 6,
+            "lower": [
+              "312",
+              true,
+              "",
+              false
+            ],
+            "upper": [
+              "",
+              true,
+              "1311",
+              true
+            ],
+            "children": [],
+            "pieces": [
+              {
+                "cell": 13,
+                "children": [
+                  {
+                    "suffixes": [
+                      "3",
+                      ""
+                    ],
+                    "high": false,
+                    "lower": [
+                      "",
+                      true,
+                      "",
+                      false
+                    ],
+                    "upper": [
+                      "2",
+                      true,
+                      "2",
+                      false
+                    ],
+                    "destinations": [
+                      {
+                        "node": 1,
+                        "swap": false
+                      },
+                      {
+                        "node": 2,
+                        "swap": false
+                      },
+                      {
+                        "node": 3,
+                        "swap": false
+                      }
+                    ]
+                  },
+                  {
+                    "suffixes": [
+                      "3",
+                      ""
+                    ],
+                    "high": false,
+                    "lower": [
+                      "213",
+                      false,
+                      "312",
+                      false
+                    ],
+                    "upper": [
+                      "",
+                      false,
+                      "22",
+                      true
+                    ],
+                    "destinations": [
+                      {
+                        "node": 1,
+                        "swap": false
+                      },
+                      {
+                        "node": 4,
+                        "swap": false
+                      },
+                      {
+                        "node": 5,
+                        "swap": false
+                      }
+                    ]
+                  },
+                  {
+                    "suffixes": [
+                      "2",
+                      ""
+                    ],
+                    "high": false,
+                    "lower": [
+                      "",
+                      true,
+                      "",
+                      false
+                    ],
+                    "upper": [
+                      "2133",
+                      false,
+                      "13123",
+                      false
+                    ],
+                    "destinations": [
+                      {
+                        "node": 6,
+                        "swap": false
+                      },
+                      {
+                        "node": 7,
+                        "swap": false
+                      },
+                      {
+                        "node": 8,
+                        "swap": false
+                      }
+                    ]
+                  },
+                  {
+                    "suffixes": [
+                      "1",
+                      ""
+                    ],
+                    "high": false,
+                    "lower": [
+                      "",
+                      true,
+                      "",
+                      false
+                    ],
+                    "upper": [
+                      "",
+                      false,
+                      "",
+                      true
+                    ],
+                    "destinations": [
+                      {
+                        "node": 9,
+                        "swap": false
+                      },
+                      {
+                        "node": 10,
+                        "swap": false
+                      },
+                      {
+                        "node": 11,
+                        "swap": false
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "cell": 14,
+                "children": [
+                  {
+                    "suffixes": [
+                      "3",
+                      ""
+                    ],
+                    "high": false,
+                    "lower": [
+                      "",
+                      true,
+                      "",
+                      false
+                    ],
+                    "upper": [
+                      "2",
+                      true,
+                      "2",
+                      false
+                    ],
+                    "destinations": [
+                      {
+                        "node": 12,
+                        "swap": false
+                      },
+                      {
+                        "node": 1,
+                        "swap": false
+                      },
+                      {
+                        "node": 2,
+                        "swap": false
+                      }
+                    ]
+                  },
+                  {
+                    "suffixes": [
+                      "3",
+                      ""
+                    ],
+                    "high": false,
+                    "lower": [
+                      "",
+                      true,
+                      "",
+                      false
+                    ],
+                    "upper": [
+                      "2",
+                      true,
+                      "",
+                      true
+                    ],
+                    "destinations": [
+                      {
+                        "node": 12,
+                        "swap": false
+                      },
+                      {
+                        "node": 1,
+                        "swap": false
+                      },
+                      {
+                        "node": 13,
+                        "swap": false
+                      }
+                    ]
+                  },
+                  {
+                    "suffixes": [
+                      "2",
+                      ""
+                    ],
+                    "high": false,
+                    "lower": [
+                      "",
+                      true,
+                      "",
+                      false
+                    ],
+                    "upper": [
+                      "2133",
+                      false,
+                      "13123",
+                      false
+                    ],
+                    "destinations": [
+                      {
+                        "node": 14,
+                        "swap": false
+                      },
+                      {
+                        "node": 6,
+                        "swap": false
+                      },
+                      {
+                        "node": 7,
+                        "swap": false
+                      }
+                    ]
+                  },
+                  {
+                    "suffixes": [
+                      "1",
+                      ""
+                    ],
+                    "high": false,
+                    "lower": [
+                      "",
+                      true,
+                      "",
+                      false
+                    ],
+                    "upper": [
+                      "",
+                      false,
+                      "",
+                      true
+                    ],
+                    "destinations": [
+                      {
+                        "node": 15,
+                        "swap": false
+                      },
+                      {
+                        "node": 9,
+                        "swap": false
+                      },
+                      {
+                        "node": 10,
+                        "swap": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cell": 9,
+            "lower": [
+              "2",
+              true,
+              "",
+              true
+            ],
+            "upper": [
+              "",
+              true,
+              "",
+              false
+            ],
+            "children": []
+          },
+          {
+            "cell": 4,
+            "lower": [
+              "2",
+              true,
+              "2",
+              false
+            ],
+            "upper": [
+              "",
+              true,
+              "",
+              false
+            ],
+            "children": []
+          },
+          {
+            "cell": 5,
+            "lower": [
+              "2",
+              true,
+              "2",
+              false
+            ],
+            "upper": [
+              "",
+              true,
+              "",
+              false
+            ],
+            "children": []
+          },
+          {
+            "cell": 4,
+            "lower": [
+              "",
+              false,
+              "2",
+              false
+            ],
+            "upper": [
+              "",
+              true,
+              "",
+              false
+            ],
+            "children": []
+          },
+          {
+            "cell": 5,
+            "lower": [
+              "",
+              false,
+              "22",
+              true
+            ],
+            "upper": [
+              "213",
+              false,
+              "312",
+              false
+            ],
+            "children": []
+          },
+          {
+            "cell": 8,
+            "lower": [
+              "2133",
+              false,
+              "13123",
+              false
+            ],
+            "upper": [
+              "",
+              true,
+              "",
+              false
+            ],
+            "children": []
+          },
+          {
+            "cell": 2,
+            "lower": [
+              "2133",
+              false,
+              "13123",
+              false
+            ],
+            "upper": [
+              "",
+              true,
+              "",
+              false
+            ],
+            "children": []
+          },
+          {
+            "cell": 3,
+            "lower": [
+              "2",
+              true,
+              "",
+              true
+            ],
+            "upper": [
+              "",
+              true,
+              "",
+              false
+            ],
+            "children": []
+          },
+          {
+            "cell": 7,
+            "lower": [
+              "",
+              false,
+              "",
+              true
+            ],
+            "upper": [
+              "",
+              true,
+              "",
+              false
+            ],
+            "children": []
+          },
+          {
+            "cell": 0,
+            "lower": [
+              "",
+              false,
+              "",
+              true
+            ],
+            "upper": [
+              "",
+              true,
+              "",
+              false
+            ],
+            "children": []
+          },
+          {
+            "cell": 1,
+            "lower": [
+              "",
+              false,
+              "",
+              true
+            ],
+            "upper": [
+              "",
+              true,
+              "",
+              false
+            ],
+            "children": []
+          },
+          {
+            "cell": 12,
+            "lower": [
+              "2",
+              true,
+              "",
+              true
+            ],
+            "upper": [
+              "",
+              true,
+              "",
+              false
+            ],
+            "children": []
+          },
+          {
+            "cell": 4,
+            "lower": [
+              "2",
+              true,
+              "",
+              true
+            ],
+            "upper": [
+              "",
+              true,
+              "",
+              false
+            ],
+            "children": []
+          },
+          {
+            "cell": 11,
+            "lower": [
+              "2133",
+              false,
+              "13123",
+              false
+            ],
+            "upper": [
+              "",
+              true,
+              "",
+              false
+            ],
+            "children": []
+          },
+          {
+            "cell": 10,
+            "lower": [
+              "",
+              false,
+              "",
+              true
+            ],
+            "upper": [
+              "",
+              true,
+              "",
+              false
+            ],
+            "children": []
+          }
+        ],
+        "roots": {
+          "zero": 0
+        },
+        "search": {
+          "registered": 16,
+          "reachable": 16,
+          "unresolved": 15,
+          "rejected": 0,
+          "steps": 0,
+          "parent_repairs": 0,
+          "stop": "not started",
+          "closed_candidate": false
+        },
+        "partition_statistics": {
+          "attempts": 92,
+          "accepted": 11,
+          "pieces": 24,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "key": [
+        103,
+        1,
+        19
+      ],
+      "found": false,
+      "piecewise": false
+    },
+    {
+      "key": [
+        3663,
+        18,
+        52
+      ],
+      "found": false,
+      "piecewise": false
+    },
+    {
+      "key": [
+        630,
+        74,
+        65
+      ],
+      "found": false,
+      "piecewise": false
+    },
+    {
+      "key": [
+        150,
+        82,
+        74
+      ],
+      "found": false,
+      "piecewise": false
+    },
+    {
+      "key": [
+        4018,
+        1,
+        19
+      ],
+      "found": false,
+      "piecewise": false
+    },
+    {
+      "key": [
+        1828,
+        0,
+        52
+      ],
+      "found": false,
+      "piecewise": false
+    },
+    {
+      "key": [
+        1019,
+        0,
+        54
+      ],
+      "found": false,
+      "piecewise": false
+    },
+    {
+      "key": [
+        15,
+        1,
+        65
+      ],
+      "found": false,
+      "piecewise": false
+    },
+    {
+      "key": [
+        21,
+        18,
+        52
+      ],
+      "found": false,
+      "piecewise": false
+    },
+    {
+      "key": [
+        35,
+        1,
+        68
+      ],
+      "found": false,
+      "piecewise": false
+    },
+    {
+      "key": [
+        31,
+        2,
+        19
+      ],
+      "found": false,
+      "piecewise": false
+    },
+    {
+      "key": [
+        32,
+        2,
+        19
+      ],
+      "found": false,
+      "piecewise": false
+    },
+    {
+      "key": [
+        27,
+        105,
+        53
+      ],
+      "found": false,
+      "piecewise": false
+    },
+    {
+      "key": [
+        55,
+        33,
+        44
+      ],
+      "found": false,
+      "piecewise": false
+    },
+    {
+      "key": [
+        95,
+        74,
+        68
+      ],
+      "found": false,
+      "piecewise": false
+    },
+    {
+      "key": [
+        96,
+        74,
+        68
+      ],
+      "found": false,
+      "piecewise": false
+    },
+    {
+      "key": [
+        97,
+        74,
+        68
+      ],
+      "found": false,
+      "piecewise": false
+    },
+    {
+      "key": [
+        115,
+        0,
+        20
+      ],
+      "found": false,
+      "piecewise": false
+    }
+  ],
+  "statistics": {
+    "attempts": 92,
+    "accepted": 11,
+    "pieces": 24,
+    "exact_rejected": 0
+  }
+}

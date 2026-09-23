@@ -1,0 +1,2719 @@
+{
+  "format": "freiman-small-menu-v1",
+  "diagnostics": [
+    {
+      "nodes": 9638,
+      "parameter_cells": 5769,
+      "endpoint_shapes": 597,
+      "automaton_endpoint_types": 1781
+    },
+    {
+      "nodes": 12565,
+      "parameter_cells": 9028,
+      "endpoint_shapes": 461,
+      "automaton_endpoint_types": 1524
+    }
+  ],
+  "settings": {
+    "depth": 3,
+    "max_length": 6,
+    "per_state": 12,
+    "shape_count": 12
+  },
+  "shapes": [
+    {
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          false
+        ],
+        [
+          "",
+          true,
+          "",
+          true
+        ]
+      ],
+      "frequency": 1483
+    },
+    {
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          true
+        ],
+        [
+          "",
+          true,
+          "",
+          false
+        ]
+      ],
+      "frequency": 696
+    },
+    {
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          true
+        ],
+        [
+          "2",
+          false,
+          "2",
+          true
+        ]
+      ],
+      "frequency": 531
+    },
+    {
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          false
+        ],
+        [
+          "@1",
+          false,
+          "@5/16",
+          false
+        ]
+      ],
+      "frequency": 495
+    },
+    {
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          true
+        ],
+        [
+          "2",
+          false,
+          "",
+          false
+        ]
+      ],
+      "frequency": 441
+    },
+    {
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          false
+        ],
+        [
+          "",
+          true,
+          "1311",
+          true
+        ]
+      ],
+      "frequency": 437
+    },
+    {
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          false
+        ],
+        [
+          "",
+          true,
+          "2",
+          false
+        ]
+      ],
+      "frequency": 409
+    },
+    {
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          false
+        ],
+        [
+          "@1",
+          false,
+          "@15/16",
+          false
+        ]
+      ],
+      "frequency": 374
+    },
+    {
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          false
+        ],
+        [
+          "@1",
+          false,
+          "@3/8",
+          false
+        ]
+      ],
+      "frequency": 373
+    },
+    {
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          false
+        ],
+        [
+          "@1",
+          false,
+          "@7/8",
+          false
+        ]
+      ],
+      "frequency": 366
+    },
+    {
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          false
+        ],
+        [
+          "@1",
+          false,
+          "@13/16",
+          false
+        ]
+      ],
+      "frequency": 352
+    },
+    {
+      "endpoints": [
+        [
+          "",
+          false,
+          "",
+          false
+        ],
+        [
+          "@1",
+          false,
+          "@11/16",
+          false
+        ]
+      ],
+      "frequency": 340
+    }
+  ],
+  "macros": [
+    {
+      "states": [
+        "",
+        ""
+      ],
+      "parity": -1,
+      "successors": [
+        {
+          "suffixes": [
+            "2",
+            "1"
+          ],
+          "frequency": 580
+        },
+        {
+          "suffixes": [
+            "12",
+            "2"
+          ],
+          "frequency": 566
+        },
+        {
+          "suffixes": [
+            "13",
+            "2"
+          ],
+          "frequency": 555
+        },
+        {
+          "suffixes": [
+            "1",
+            "2"
+          ],
+          "frequency": 537
+        },
+        {
+          "suffixes": [
+            "13",
+            "3"
+          ],
+          "frequency": 523
+        },
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "frequency": 511
+        },
+        {
+          "suffixes": [
+            "12",
+            "3"
+          ],
+          "frequency": 482
+        },
+        {
+          "suffixes": [
+            "11",
+            "1"
+          ],
+          "frequency": 474
+        },
+        {
+          "suffixes": [
+            "11",
+            "2"
+          ],
+          "frequency": 468
+        },
+        {
+          "suffixes": [
+            "2",
+            "3"
+          ],
+          "frequency": 468
+        },
+        {
+          "suffixes": [
+            "1",
+            "1"
+          ],
+          "frequency": 455
+        },
+        {
+          "suffixes": [
+            "3",
+            "1"
+          ],
+          "frequency": 441
+        }
+      ]
+    },
+    {
+      "states": [
+        "",
+        ""
+      ],
+      "parity": 1,
+      "successors": [
+        {
+          "suffixes": [
+            "3",
+            "2"
+          ],
+          "frequency": 888
+        },
+        {
+          "suffixes": [
+            "3",
+            "3"
+          ],
+          "frequency": 796
+        },
+        {
+          "suffixes": [
+            "2",
+            "1"
+          ],
+          "frequency": 754
+        },
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "frequency": 752
+        },
+        {
+          "suffixes": [
+            "1",
+            "1"
+          ],
+          "frequency": 577
+        },
+        {
+          "suffixes": [
+            "31",
+            "3"
+          ],
+          "frequency": 509
+        },
+        {
+          "suffixes": [
+            "32",
+            "3"
+          ],
+          "frequency": 509
+        },
+        {
+          "suffixes": [
+            "33",
+            "3"
+          ],
+          "frequency": 509
+        },
+        {
+          "suffixes": [
+            "2",
+            "3"
+          ],
+          "frequency": 469
+        },
+        {
+          "suffixes": [
+            "12",
+            "1"
+          ],
+          "frequency": 439
+        },
+        {
+          "suffixes": [
+            "22",
+            "2"
+          ],
+          "frequency": 437
+        },
+        {
+          "suffixes": [
+            "23",
+            "2"
+          ],
+          "frequency": 436
+        }
+      ]
+    },
+    {
+      "states": [
+        "",
+        "3"
+      ],
+      "parity": -1,
+      "successors": [
+        {
+          "suffixes": [
+            "3",
+            "1"
+          ],
+          "frequency": 363
+        },
+        {
+          "suffixes": [
+            "3",
+            "2"
+          ],
+          "frequency": 356
+        },
+        {
+          "suffixes": [
+            "3",
+            "3"
+          ],
+          "frequency": 356
+        },
+        {
+          "suffixes": [
+            "22",
+            "2"
+          ],
+          "frequency": 273
+        },
+        {
+          "suffixes": [
+            "32",
+            "3"
+          ],
+          "frequency": 272
+        },
+        {
+          "suffixes": [
+            "33",
+            "3"
+          ],
+          "frequency": 272
+        },
+        {
+          "suffixes": [
+            "21",
+            "1"
+          ],
+          "frequency": 247
+        },
+        {
+          "suffixes": [
+            "31",
+            "2"
+          ],
+          "frequency": 245
+        },
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "frequency": 239
+        },
+        {
+          "suffixes": [
+            "21",
+            "2"
+          ],
+          "frequency": 238
+        },
+        {
+          "suffixes": [
+            "23",
+            "2"
+          ],
+          "frequency": 217
+        },
+        {
+          "suffixes": [
+            "23",
+            "3"
+          ],
+          "frequency": 213
+        }
+      ]
+    },
+    {
+      "states": [
+        "",
+        "3"
+      ],
+      "parity": 1,
+      "successors": [
+        {
+          "suffixes": [
+            "3",
+            "2"
+          ],
+          "frequency": 393
+        },
+        {
+          "suffixes": [
+            "3",
+            "3"
+          ],
+          "frequency": 341
+        },
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "frequency": 260
+        },
+        {
+          "suffixes": [
+            "11",
+            ""
+          ],
+          "frequency": 235
+        },
+        {
+          "suffixes": [
+            "12",
+            ""
+          ],
+          "frequency": 233
+        },
+        {
+          "suffixes": [
+            "13",
+            ""
+          ],
+          "frequency": 233
+        },
+        {
+          "suffixes": [
+            "2",
+            "1"
+          ],
+          "frequency": 226
+        },
+        {
+          "suffixes": [
+            "3",
+            "1"
+          ],
+          "frequency": 190
+        },
+        {
+          "suffixes": [
+            "1",
+            "1"
+          ],
+          "frequency": 180
+        },
+        {
+          "suffixes": [
+            "11",
+            "2"
+          ],
+          "frequency": 162
+        },
+        {
+          "suffixes": [
+            "12",
+            "2"
+          ],
+          "frequency": 154
+        },
+        {
+          "suffixes": [
+            "12",
+            "1"
+          ],
+          "frequency": 142
+        }
+      ]
+    },
+    {
+      "states": [
+        "",
+        "31"
+      ],
+      "parity": -1,
+      "successors": [
+        {
+          "suffixes": [
+            "1",
+            "2"
+          ],
+          "frequency": 33
+        },
+        {
+          "suffixes": [
+            "1",
+            "1"
+          ],
+          "frequency": 31
+        },
+        {
+          "suffixes": [
+            "2",
+            "1"
+          ],
+          "frequency": 27
+        },
+        {
+          "suffixes": [
+            "1",
+            "3"
+          ],
+          "frequency": 26
+        },
+        {
+          "suffixes": [
+            "2",
+            "11"
+          ],
+          "frequency": 26
+        },
+        {
+          "suffixes": [
+            "11",
+            "1"
+          ],
+          "frequency": 25
+        },
+        {
+          "suffixes": [
+            "12",
+            "1"
+          ],
+          "frequency": 24
+        },
+        {
+          "suffixes": [
+            "12",
+            "2"
+          ],
+          "frequency": 24
+        },
+        {
+          "suffixes": [
+            "13",
+            "1"
+          ],
+          "frequency": 24
+        },
+        {
+          "suffixes": [
+            "13",
+            "2"
+          ],
+          "frequency": 23
+        },
+        {
+          "suffixes": [
+            "12",
+            "3"
+          ],
+          "frequency": 22
+        },
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "frequency": 22
+        }
+      ]
+    },
+    {
+      "states": [
+        "",
+        "31"
+      ],
+      "parity": 1,
+      "successors": [
+        {
+          "suffixes": [
+            "3",
+            "2"
+          ],
+          "frequency": 73
+        },
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "frequency": 69
+        },
+        {
+          "suffixes": [
+            "2",
+            "1"
+          ],
+          "frequency": 67
+        },
+        {
+          "suffixes": [
+            "3",
+            "3"
+          ],
+          "frequency": 60
+        },
+        {
+          "suffixes": [
+            "1",
+            "1"
+          ],
+          "frequency": 58
+        },
+        {
+          "suffixes": [
+            "1",
+            "2"
+          ],
+          "frequency": 22
+        },
+        {
+          "suffixes": [
+            "2",
+            "11"
+          ],
+          "frequency": 21
+        },
+        {
+          "suffixes": [
+            "2",
+            "12"
+          ],
+          "frequency": 21
+        },
+        {
+          "suffixes": [
+            "2",
+            "13"
+          ],
+          "frequency": 21
+        },
+        {
+          "suffixes": [
+            "31",
+            "3"
+          ],
+          "frequency": 21
+        },
+        {
+          "suffixes": [
+            "32",
+            "3"
+          ],
+          "frequency": 21
+        },
+        {
+          "suffixes": [
+            "33",
+            "3"
+          ],
+          "frequency": 21
+        }
+      ]
+    },
+    {
+      "states": [
+        "",
+        "313"
+      ],
+      "parity": 1,
+      "successors": [
+        {
+          "suffixes": [
+            "2",
+            "1"
+          ],
+          "frequency": 3
+        },
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "frequency": 3
+        },
+        {
+          "suffixes": [
+            "21",
+            "1"
+          ],
+          "frequency": 3
+        },
+        {
+          "suffixes": [
+            "22",
+            "1"
+          ],
+          "frequency": 3
+        },
+        {
+          "suffixes": [
+            "23",
+            "1"
+          ],
+          "frequency": 3
+        },
+        {
+          "suffixes": [
+            "23",
+            "2"
+          ],
+          "frequency": 3
+        },
+        {
+          "suffixes": [
+            "3",
+            "1"
+          ],
+          "frequency": 3
+        },
+        {
+          "suffixes": [
+            "3",
+            "11"
+          ],
+          "frequency": 3
+        },
+        {
+          "suffixes": [
+            "3",
+            "12"
+          ],
+          "frequency": 3
+        },
+        {
+          "suffixes": [
+            "3",
+            "2"
+          ],
+          "frequency": 3
+        },
+        {
+          "suffixes": [
+            "3",
+            "3"
+          ],
+          "frequency": 3
+        },
+        {
+          "suffixes": [
+            "31",
+            "2"
+          ],
+          "frequency": 3
+        }
+      ]
+    },
+    {
+      "states": [
+        "",
+        "3131"
+      ],
+      "parity": 1,
+      "successors": [
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "frequency": 7
+        },
+        {
+          "suffixes": [
+            "3",
+            "1"
+          ],
+          "frequency": 7
+        },
+        {
+          "suffixes": [
+            "3",
+            "2"
+          ],
+          "frequency": 7
+        },
+        {
+          "suffixes": [
+            "1",
+            "1"
+          ],
+          "frequency": 4
+        },
+        {
+          "suffixes": [
+            "1",
+            "2"
+          ],
+          "frequency": 4
+        }
+      ]
+    },
+    {
+      "states": [
+        "3",
+        ""
+      ],
+      "parity": -1,
+      "successors": [
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "frequency": 195
+        },
+        {
+          "suffixes": [
+            "2",
+            "3"
+          ],
+          "frequency": 183
+        },
+        {
+          "suffixes": [
+            "2",
+            "1"
+          ],
+          "frequency": 177
+        },
+        {
+          "suffixes": [
+            "22",
+            "3"
+          ],
+          "frequency": 168
+        },
+        {
+          "suffixes": [
+            "23",
+            "3"
+          ],
+          "frequency": 148
+        },
+        {
+          "suffixes": [
+            "21",
+            "2"
+          ],
+          "frequency": 119
+        },
+        {
+          "suffixes": [
+            "21",
+            "3"
+          ],
+          "frequency": 104
+        },
+        {
+          "suffixes": [
+            "1",
+            "1"
+          ],
+          "frequency": 102
+        },
+        {
+          "suffixes": [
+            "21",
+            "1"
+          ],
+          "frequency": 101
+        },
+        {
+          "suffixes": [
+            "12",
+            "2"
+          ],
+          "frequency": 99
+        },
+        {
+          "suffixes": [
+            "22",
+            "2"
+          ],
+          "frequency": 99
+        },
+        {
+          "suffixes": [
+            "1",
+            "2"
+          ],
+          "frequency": 97
+        }
+      ]
+    },
+    {
+      "states": [
+        "3",
+        ""
+      ],
+      "parity": 1,
+      "successors": [
+        {
+          "suffixes": [
+            "3",
+            "2"
+          ],
+          "frequency": 339
+        },
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "frequency": 333
+        },
+        {
+          "suffixes": [
+            "2",
+            "1"
+          ],
+          "frequency": 314
+        },
+        {
+          "suffixes": [
+            "3",
+            "3"
+          ],
+          "frequency": 279
+        },
+        {
+          "suffixes": [
+            "2",
+            "3"
+          ],
+          "frequency": 233
+        },
+        {
+          "suffixes": [
+            "1",
+            "1"
+          ],
+          "frequency": 232
+        },
+        {
+          "suffixes": [
+            "1",
+            "2"
+          ],
+          "frequency": 123
+        },
+        {
+          "suffixes": [
+            "21",
+            "3"
+          ],
+          "frequency": 118
+        },
+        {
+          "suffixes": [
+            "22",
+            "2"
+          ],
+          "frequency": 115
+        },
+        {
+          "suffixes": [
+            "22",
+            "3"
+          ],
+          "frequency": 114
+        },
+        {
+          "suffixes": [
+            "23",
+            "3"
+          ],
+          "frequency": 114
+        },
+        {
+          "suffixes": [
+            "12",
+            "1"
+          ],
+          "frequency": 109
+        }
+      ]
+    },
+    {
+      "states": [
+        "3",
+        "3"
+      ],
+      "parity": -1,
+      "successors": [
+        {
+          "suffixes": [
+            "3",
+            "1"
+          ],
+          "frequency": 108
+        },
+        {
+          "suffixes": [
+            "3",
+            "2"
+          ],
+          "frequency": 107
+        },
+        {
+          "suffixes": [
+            "3",
+            "3"
+          ],
+          "frequency": 107
+        },
+        {
+          "suffixes": [
+            "32",
+            "3"
+          ],
+          "frequency": 103
+        },
+        {
+          "suffixes": [
+            "33",
+            "3"
+          ],
+          "frequency": 103
+        },
+        {
+          "suffixes": [
+            "22",
+            "2"
+          ],
+          "frequency": 100
+        },
+        {
+          "suffixes": [
+            "23",
+            "3"
+          ],
+          "frequency": 97
+        },
+        {
+          "suffixes": [
+            "23",
+            "2"
+          ],
+          "frequency": 93
+        },
+        {
+          "suffixes": [
+            "21",
+            "2"
+          ],
+          "frequency": 90
+        },
+        {
+          "suffixes": [
+            "21",
+            "1"
+          ],
+          "frequency": 82
+        },
+        {
+          "suffixes": [
+            "22",
+            "3"
+          ],
+          "frequency": 74
+        },
+        {
+          "suffixes": [
+            "32",
+            "2"
+          ],
+          "frequency": 67
+        }
+      ]
+    },
+    {
+      "states": [
+        "3",
+        "3"
+      ],
+      "parity": 1,
+      "successors": [
+        {
+          "suffixes": [
+            "3",
+            "2"
+          ],
+          "frequency": 222
+        },
+        {
+          "suffixes": [
+            "3",
+            "3"
+          ],
+          "frequency": 222
+        },
+        {
+          "suffixes": [
+            "2",
+            "1"
+          ],
+          "frequency": 168
+        },
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "frequency": 144
+        },
+        {
+          "suffixes": [
+            "1",
+            "1"
+          ],
+          "frequency": 124
+        },
+        {
+          "suffixes": [
+            "11",
+            ""
+          ],
+          "frequency": 107
+        },
+        {
+          "suffixes": [
+            "12",
+            ""
+          ],
+          "frequency": 100
+        },
+        {
+          "suffixes": [
+            "13",
+            ""
+          ],
+          "frequency": 100
+        },
+        {
+          "suffixes": [
+            "3",
+            "1"
+          ],
+          "frequency": 98
+        },
+        {
+          "suffixes": [
+            "31",
+            "3"
+          ],
+          "frequency": 91
+        },
+        {
+          "suffixes": [
+            "32",
+            "3"
+          ],
+          "frequency": 91
+        },
+        {
+          "suffixes": [
+            "33",
+            "3"
+          ],
+          "frequency": 91
+        }
+      ]
+    },
+    {
+      "states": [
+        "3",
+        "31"
+      ],
+      "parity": -1,
+      "successors": [
+        {
+          "suffixes": [
+            "2",
+            "1"
+          ],
+          "frequency": 38
+        },
+        {
+          "suffixes": [
+            "2",
+            "11"
+          ],
+          "frequency": 38
+        },
+        {
+          "suffixes": [
+            "2",
+            "12"
+          ],
+          "frequency": 38
+        },
+        {
+          "suffixes": [
+            "2",
+            "13"
+          ],
+          "frequency": 38
+        },
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "frequency": 25
+        },
+        {
+          "suffixes": [
+            "3",
+            "1"
+          ],
+          "frequency": 25
+        },
+        {
+          "suffixes": [
+            "3",
+            "12"
+          ],
+          "frequency": 25
+        },
+        {
+          "suffixes": [
+            "2",
+            "3"
+          ],
+          "frequency": 24
+        },
+        {
+          "suffixes": [
+            "21",
+            "2"
+          ],
+          "frequency": 22
+        },
+        {
+          "suffixes": [
+            "21",
+            "3"
+          ],
+          "frequency": 22
+        },
+        {
+          "suffixes": [
+            "22",
+            "2"
+          ],
+          "frequency": 22
+        },
+        {
+          "suffixes": [
+            "22",
+            "3"
+          ],
+          "frequency": 22
+        }
+      ]
+    },
+    {
+      "states": [
+        "3",
+        "31"
+      ],
+      "parity": 1,
+      "successors": [
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "frequency": 11
+        },
+        {
+          "suffixes": [
+            "2",
+            "3"
+          ],
+          "frequency": 11
+        },
+        {
+          "suffixes": [
+            "2",
+            "21"
+          ],
+          "frequency": 10
+        },
+        {
+          "suffixes": [
+            "2",
+            "22"
+          ],
+          "frequency": 10
+        },
+        {
+          "suffixes": [
+            "2",
+            "23"
+          ],
+          "frequency": 10
+        },
+        {
+          "suffixes": [
+            "1",
+            "1"
+          ],
+          "frequency": 9
+        },
+        {
+          "suffixes": [
+            "1",
+            "11"
+          ],
+          "frequency": 9
+        },
+        {
+          "suffixes": [
+            "12",
+            "1"
+          ],
+          "frequency": 9
+        },
+        {
+          "suffixes": [
+            "2",
+            "1"
+          ],
+          "frequency": 9
+        },
+        {
+          "suffixes": [
+            "2",
+            "12"
+          ],
+          "frequency": 9
+        },
+        {
+          "suffixes": [
+            "2",
+            "13"
+          ],
+          "frequency": 9
+        },
+        {
+          "suffixes": [
+            "3",
+            "1"
+          ],
+          "frequency": 9
+        }
+      ]
+    },
+    {
+      "states": [
+        "3",
+        "313"
+      ],
+      "parity": -1,
+      "successors": [
+        {
+          "suffixes": [
+            "3",
+            "1"
+          ],
+          "frequency": 6
+        },
+        {
+          "suffixes": [
+            "3",
+            "2"
+          ],
+          "frequency": 6
+        },
+        {
+          "suffixes": [
+            "3",
+            "3"
+          ],
+          "frequency": 6
+        },
+        {
+          "suffixes": [
+            "21",
+            ""
+          ],
+          "frequency": 4
+        },
+        {
+          "suffixes": [
+            "22",
+            ""
+          ],
+          "frequency": 4
+        },
+        {
+          "suffixes": [
+            "23",
+            ""
+          ],
+          "frequency": 4
+        },
+        {
+          "suffixes": [
+            "32",
+            "3"
+          ],
+          "frequency": 4
+        },
+        {
+          "suffixes": [
+            "33",
+            "3"
+          ],
+          "frequency": 4
+        },
+        {
+          "suffixes": [
+            "31",
+            "2"
+          ],
+          "frequency": 3
+        },
+        {
+          "suffixes": [
+            "32",
+            "2"
+          ],
+          "frequency": 3
+        }
+      ]
+    },
+    {
+      "states": [
+        "3",
+        "313"
+      ],
+      "parity": 1,
+      "successors": [
+        {
+          "suffixes": [
+            "11",
+            ""
+          ],
+          "frequency": 38
+        },
+        {
+          "suffixes": [
+            "12",
+            ""
+          ],
+          "frequency": 38
+        },
+        {
+          "suffixes": [
+            "13",
+            ""
+          ],
+          "frequency": 38
+        },
+        {
+          "suffixes": [
+            "1",
+            "1"
+          ],
+          "frequency": 11
+        },
+        {
+          "suffixes": [
+            "11",
+            "1"
+          ],
+          "frequency": 11
+        },
+        {
+          "suffixes": [
+            "12",
+            "1"
+          ],
+          "frequency": 11
+        },
+        {
+          "suffixes": [
+            "13",
+            "1"
+          ],
+          "frequency": 11
+        },
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "frequency": 11
+        },
+        {
+          "suffixes": [
+            "21",
+            "2"
+          ],
+          "frequency": 11
+        },
+        {
+          "suffixes": [
+            "22",
+            "2"
+          ],
+          "frequency": 11
+        },
+        {
+          "suffixes": [
+            "23",
+            "2"
+          ],
+          "frequency": 11
+        },
+        {
+          "suffixes": [
+            "3",
+            "2"
+          ],
+          "frequency": 11
+        }
+      ]
+    },
+    {
+      "states": [
+        "31",
+        ""
+      ],
+      "parity": -1,
+      "successors": [
+        {
+          "suffixes": [
+            "2",
+            "1"
+          ],
+          "frequency": 94
+        },
+        {
+          "suffixes": [
+            "12",
+            "2"
+          ],
+          "frequency": 77
+        },
+        {
+          "suffixes": [
+            "13",
+            "2"
+          ],
+          "frequency": 77
+        },
+        {
+          "suffixes": [
+            "1",
+            "2"
+          ],
+          "frequency": 74
+        },
+        {
+          "suffixes": [
+            "1",
+            "1"
+          ],
+          "frequency": 73
+        },
+        {
+          "suffixes": [
+            "2",
+            "11"
+          ],
+          "frequency": 72
+        },
+        {
+          "suffixes": [
+            "2",
+            "12"
+          ],
+          "frequency": 69
+        },
+        {
+          "suffixes": [
+            "2",
+            "13"
+          ],
+          "frequency": 69
+        },
+        {
+          "suffixes": [
+            "11",
+            "2"
+          ],
+          "frequency": 68
+        },
+        {
+          "suffixes": [
+            "3",
+            "1"
+          ],
+          "frequency": 53
+        },
+        {
+          "suffixes": [
+            "11",
+            "1"
+          ],
+          "frequency": 52
+        },
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "frequency": 49
+        }
+      ]
+    },
+    {
+      "states": [
+        "31",
+        ""
+      ],
+      "parity": 1,
+      "successors": [
+        {
+          "suffixes": [
+            "2",
+            "1"
+          ],
+          "frequency": 75
+        },
+        {
+          "suffixes": [
+            "3",
+            "2"
+          ],
+          "frequency": 73
+        },
+        {
+          "suffixes": [
+            "1",
+            "1"
+          ],
+          "frequency": 71
+        },
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "frequency": 70
+        },
+        {
+          "suffixes": [
+            "2",
+            "3"
+          ],
+          "frequency": 57
+        },
+        {
+          "suffixes": [
+            "3",
+            "3"
+          ],
+          "frequency": 56
+        },
+        {
+          "suffixes": [
+            "3",
+            "1"
+          ],
+          "frequency": 52
+        },
+        {
+          "suffixes": [
+            "11",
+            ""
+          ],
+          "frequency": 46
+        },
+        {
+          "suffixes": [
+            "1",
+            "3"
+          ],
+          "frequency": 44
+        },
+        {
+          "suffixes": [
+            "1",
+            "2"
+          ],
+          "frequency": 43
+        },
+        {
+          "suffixes": [
+            "11",
+            "1"
+          ],
+          "frequency": 36
+        },
+        {
+          "suffixes": [
+            "13",
+            "1"
+          ],
+          "frequency": 34
+        }
+      ]
+    },
+    {
+      "states": [
+        "31",
+        "3"
+      ],
+      "parity": -1,
+      "successors": [
+        {
+          "suffixes": [
+            "3",
+            "1"
+          ],
+          "frequency": 73
+        },
+        {
+          "suffixes": [
+            "1",
+            "2"
+          ],
+          "frequency": 64
+        },
+        {
+          "suffixes": [
+            "1",
+            "3"
+          ],
+          "frequency": 64
+        },
+        {
+          "suffixes": [
+            "12",
+            "3"
+          ],
+          "frequency": 63
+        },
+        {
+          "suffixes": [
+            "11",
+            "2"
+          ],
+          "frequency": 60
+        },
+        {
+          "suffixes": [
+            "12",
+            "2"
+          ],
+          "frequency": 60
+        },
+        {
+          "suffixes": [
+            "3",
+            "11"
+          ],
+          "frequency": 60
+        },
+        {
+          "suffixes": [
+            "3",
+            "12"
+          ],
+          "frequency": 60
+        },
+        {
+          "suffixes": [
+            "3",
+            "13"
+          ],
+          "frequency": 60
+        },
+        {
+          "suffixes": [
+            "2",
+            "1"
+          ],
+          "frequency": 58
+        },
+        {
+          "suffixes": [
+            "2",
+            "11"
+          ],
+          "frequency": 58
+        },
+        {
+          "suffixes": [
+            "2",
+            "12"
+          ],
+          "frequency": 58
+        }
+      ]
+    },
+    {
+      "states": [
+        "31",
+        "3"
+      ],
+      "parity": 1,
+      "successors": [
+        {
+          "suffixes": [
+            "1",
+            "1"
+          ],
+          "frequency": 44
+        },
+        {
+          "suffixes": [
+            "3",
+            "2"
+          ],
+          "frequency": 43
+        },
+        {
+          "suffixes": [
+            "3",
+            "3"
+          ],
+          "frequency": 40
+        },
+        {
+          "suffixes": [
+            "12",
+            "2"
+          ],
+          "frequency": 32
+        },
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "frequency": 32
+        },
+        {
+          "suffixes": [
+            "11",
+            "2"
+          ],
+          "frequency": 31
+        },
+        {
+          "suffixes": [
+            "11",
+            "1"
+          ],
+          "frequency": 29
+        },
+        {
+          "suffixes": [
+            "11",
+            "3"
+          ],
+          "frequency": 29
+        },
+        {
+          "suffixes": [
+            "12",
+            "1"
+          ],
+          "frequency": 29
+        },
+        {
+          "suffixes": [
+            "11",
+            ""
+          ],
+          "frequency": 28
+        },
+        {
+          "suffixes": [
+            "12",
+            ""
+          ],
+          "frequency": 28
+        },
+        {
+          "suffixes": [
+            "13",
+            ""
+          ],
+          "frequency": 28
+        }
+      ]
+    },
+    {
+      "states": [
+        "31",
+        "3131"
+      ],
+      "parity": 1,
+      "successors": [
+        {
+          "suffixes": [
+            "3",
+            "2"
+          ],
+          "frequency": 14
+        },
+        {
+          "suffixes": [
+            "2",
+            "1"
+          ],
+          "frequency": 12
+        },
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "frequency": 12
+        },
+        {
+          "suffixes": [
+            "1",
+            "1"
+          ],
+          "frequency": 11
+        },
+        {
+          "suffixes": [
+            "11",
+            "1"
+          ],
+          "frequency": 4
+        },
+        {
+          "suffixes": [
+            "12",
+            "1"
+          ],
+          "frequency": 4
+        },
+        {
+          "suffixes": [
+            "13",
+            "1"
+          ],
+          "frequency": 4
+        },
+        {
+          "suffixes": [
+            "2",
+            "11"
+          ],
+          "frequency": 4
+        },
+        {
+          "suffixes": [
+            "2",
+            "12"
+          ],
+          "frequency": 4
+        },
+        {
+          "suffixes": [
+            "2",
+            "13"
+          ],
+          "frequency": 4
+        },
+        {
+          "suffixes": [
+            "21",
+            "2"
+          ],
+          "frequency": 4
+        },
+        {
+          "suffixes": [
+            "22",
+            "2"
+          ],
+          "frequency": 4
+        }
+      ]
+    },
+    {
+      "states": [
+        "313",
+        ""
+      ],
+      "parity": -1,
+      "successors": [
+        {
+          "suffixes": [
+            "2",
+            "3"
+          ],
+          "frequency": 20
+        },
+        {
+          "suffixes": [
+            "22",
+            "3"
+          ],
+          "frequency": 20
+        },
+        {
+          "suffixes": [
+            "23",
+            "3"
+          ],
+          "frequency": 20
+        },
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "frequency": 18
+        },
+        {
+          "suffixes": [
+            "2",
+            "1"
+          ],
+          "frequency": 17
+        },
+        {
+          "suffixes": [
+            "12",
+            "2"
+          ],
+          "frequency": 12
+        },
+        {
+          "suffixes": [
+            "12",
+            "3"
+          ],
+          "frequency": 12
+        },
+        {
+          "suffixes": [
+            "21",
+            "1"
+          ],
+          "frequency": 12
+        },
+        {
+          "suffixes": [
+            "21",
+            "2"
+          ],
+          "frequency": 12
+        },
+        {
+          "suffixes": [
+            "11",
+            ""
+          ],
+          "frequency": 11
+        },
+        {
+          "suffixes": [
+            "11",
+            "1"
+          ],
+          "frequency": 11
+        },
+        {
+          "suffixes": [
+            "12",
+            ""
+          ],
+          "frequency": 11
+        }
+      ]
+    },
+    {
+      "states": [
+        "313",
+        "3"
+      ],
+      "parity": -1,
+      "successors": [
+        {
+          "suffixes": [
+            "3",
+            "1"
+          ],
+          "frequency": 16
+        },
+        {
+          "suffixes": [
+            "3",
+            "2"
+          ],
+          "frequency": 16
+        },
+        {
+          "suffixes": [
+            "3",
+            "3"
+          ],
+          "frequency": 16
+        },
+        {
+          "suffixes": [
+            "32",
+            "3"
+          ],
+          "frequency": 16
+        },
+        {
+          "suffixes": [
+            "33",
+            "3"
+          ],
+          "frequency": 16
+        },
+        {
+          "suffixes": [
+            "31",
+            "1"
+          ],
+          "frequency": 14
+        },
+        {
+          "suffixes": [
+            "31",
+            "2"
+          ],
+          "frequency": 13
+        },
+        {
+          "suffixes": [
+            "21",
+            ""
+          ],
+          "frequency": 11
+        },
+        {
+          "suffixes": [
+            "21",
+            "1"
+          ],
+          "frequency": 11
+        },
+        {
+          "suffixes": [
+            "22",
+            ""
+          ],
+          "frequency": 11
+        },
+        {
+          "suffixes": [
+            "22",
+            "2"
+          ],
+          "frequency": 11
+        },
+        {
+          "suffixes": [
+            "23",
+            ""
+          ],
+          "frequency": 11
+        }
+      ]
+    },
+    {
+      "states": [
+        "313",
+        "3"
+      ],
+      "parity": 1,
+      "successors": [
+        {
+          "suffixes": [
+            "3",
+            "2"
+          ],
+          "frequency": 2
+        },
+        {
+          "suffixes": [
+            "3",
+            "21"
+          ],
+          "frequency": 2
+        },
+        {
+          "suffixes": [
+            "3",
+            "22"
+          ],
+          "frequency": 2
+        },
+        {
+          "suffixes": [
+            "3",
+            "23"
+          ],
+          "frequency": 2
+        },
+        {
+          "suffixes": [
+            "3",
+            "3"
+          ],
+          "frequency": 2
+        },
+        {
+          "suffixes": [
+            "31",
+            "3"
+          ],
+          "frequency": 2
+        },
+        {
+          "suffixes": [
+            "32",
+            "3"
+          ],
+          "frequency": 2
+        },
+        {
+          "suffixes": [
+            "33",
+            "3"
+          ],
+          "frequency": 2
+        },
+        {
+          "suffixes": [
+            "2",
+            "1"
+          ],
+          "frequency": 1
+        },
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "frequency": 1
+        }
+      ]
+    },
+    {
+      "states": [
+        "313",
+        "31"
+      ],
+      "parity": -1,
+      "successors": [
+        {
+          "suffixes": [
+            "1",
+            "2"
+          ],
+          "frequency": 16
+        },
+        {
+          "suffixes": [
+            "1",
+            "3"
+          ],
+          "frequency": 16
+        },
+        {
+          "suffixes": [
+            "1",
+            "1"
+          ],
+          "frequency": 15
+        },
+        {
+          "suffixes": [
+            "12",
+            "3"
+          ],
+          "frequency": 12
+        },
+        {
+          "suffixes": [
+            "11",
+            "1"
+          ],
+          "frequency": 10
+        },
+        {
+          "suffixes": [
+            "11",
+            "2"
+          ],
+          "frequency": 10
+        },
+        {
+          "suffixes": [
+            "12",
+            "2"
+          ],
+          "frequency": 10
+        },
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "frequency": 9
+        },
+        {
+          "suffixes": [
+            "2",
+            "3"
+          ],
+          "frequency": 9
+        },
+        {
+          "suffixes": [
+            "3",
+            "1"
+          ],
+          "frequency": 7
+        },
+        {
+          "suffixes": [
+            "3",
+            "11"
+          ],
+          "frequency": 7
+        },
+        {
+          "suffixes": [
+            "3",
+            "12"
+          ],
+          "frequency": 7
+        }
+      ]
+    },
+    {
+      "states": [
+        "3131",
+        ""
+      ],
+      "parity": -1,
+      "successors": [
+        {
+          "suffixes": [
+            "1",
+            "1"
+          ],
+          "frequency": 2
+        },
+        {
+          "suffixes": [
+            "1",
+            "2"
+          ],
+          "frequency": 2
+        },
+        {
+          "suffixes": [
+            "1",
+            "3"
+          ],
+          "frequency": 2
+        },
+        {
+          "suffixes": [
+            "11",
+            ""
+          ],
+          "frequency": 2
+        },
+        {
+          "suffixes": [
+            "11",
+            "1"
+          ],
+          "frequency": 2
+        },
+        {
+          "suffixes": [
+            "11",
+            "3"
+          ],
+          "frequency": 2
+        },
+        {
+          "suffixes": [
+            "12",
+            ""
+          ],
+          "frequency": 2
+        },
+        {
+          "suffixes": [
+            "12",
+            "1"
+          ],
+          "frequency": 2
+        },
+        {
+          "suffixes": [
+            "12",
+            "2"
+          ],
+          "frequency": 2
+        },
+        {
+          "suffixes": [
+            "12",
+            "3"
+          ],
+          "frequency": 2
+        },
+        {
+          "suffixes": [
+            "13",
+            ""
+          ],
+          "frequency": 2
+        },
+        {
+          "suffixes": [
+            "13",
+            "2"
+          ],
+          "frequency": 2
+        }
+      ]
+    },
+    {
+      "states": [
+        "3131",
+        ""
+      ],
+      "parity": 1,
+      "successors": [
+        {
+          "suffixes": [
+            "1",
+            "1"
+          ],
+          "frequency": 12
+        },
+        {
+          "suffixes": [
+            "2",
+            "1"
+          ],
+          "frequency": 10
+        },
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "frequency": 10
+        },
+        {
+          "suffixes": [
+            "2",
+            "3"
+          ],
+          "frequency": 10
+        },
+        {
+          "suffixes": [
+            "1",
+            "2"
+          ],
+          "frequency": 6
+        },
+        {
+          "suffixes": [
+            "11",
+            "1"
+          ],
+          "frequency": 5
+        },
+        {
+          "suffixes": [
+            "12",
+            "1"
+          ],
+          "frequency": 5
+        },
+        {
+          "suffixes": [
+            "13",
+            "1"
+          ],
+          "frequency": 5
+        },
+        {
+          "suffixes": [
+            "1",
+            "3"
+          ],
+          "frequency": 3
+        },
+        {
+          "suffixes": [
+            "21",
+            "2"
+          ],
+          "frequency": 3
+        },
+        {
+          "suffixes": [
+            "22",
+            "2"
+          ],
+          "frequency": 3
+        },
+        {
+          "suffixes": [
+            "23",
+            "2"
+          ],
+          "frequency": 3
+        }
+      ]
+    },
+    {
+      "states": [
+        "3131",
+        "3"
+      ],
+      "parity": 1,
+      "successors": [
+        {
+          "suffixes": [
+            "2",
+            "1"
+          ],
+          "frequency": 9
+        },
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "frequency": 9
+        },
+        {
+          "suffixes": [
+            "2",
+            "3"
+          ],
+          "frequency": 9
+        },
+        {
+          "suffixes": [
+            "1",
+            "1"
+          ],
+          "frequency": 6
+        },
+        {
+          "suffixes": [
+            "1",
+            "2"
+          ],
+          "frequency": 6
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "path": "Freiman/schecker_generalized/cyclic_direct_states13_graph.json",
+      "sha256": "17ecb4cb5ac043107d3df02a4a85c33ad39ecf6f583ac07af18b90f4a031c25c"
+    },
+    {
+      "path": "Freiman/schecker_generalized/cyclic_direct_memory3_graph.json",
+      "sha256": "c478a91e2c96105eaf9db38e0bdbbe4b95cdb2e3b9a4e6451c1799b8d5d23d8d"
+    }
+  ]
+}

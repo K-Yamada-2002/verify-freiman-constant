@@ -1,0 +1,141 @@
+{
+  "status": "no closed certificate accepted",
+  "stages": [
+    {
+      "settings": {
+        "states": 6,
+        "bins": 25,
+        "base": "22/25",
+        "max_step": 1,
+        "outer_depth": 0,
+        "grid": 0
+      },
+      "graph": "cyclic_type_search_graph.json",
+      "accepted": false,
+      "returncode": 0,
+      "elapsed_seconds": 88.623,
+      "search": {
+        "registered": 10000,
+        "reachable": 327,
+        "unresolved": 222,
+        "rejected": 4155,
+        "steps": 8407,
+        "parent_repairs": 4146,
+        "stop": "type limit",
+        "closed_candidate": false,
+        "outer_filter_rejections": 0
+      },
+      "closure_rejection": "reachable unresolved types remain",
+      "audit": {
+        "path": "cyclic_type_search_graph.audit.json",
+        "verified": 105,
+        "failed": 0,
+        "unresolved": 222
+      },
+      "postprocessing": {
+        "unreachable_nodes_removed": 0
+      }
+    },
+    {
+      "settings": {
+        "states": 13,
+        "bins": 40,
+        "base": "23/25",
+        "max_step": 2,
+        "outer_depth": 3,
+        "grid": 4
+      },
+      "graph": "cyclic_type_search_refined_graph.json",
+      "accepted": false,
+      "returncode": 0,
+      "elapsed_seconds": 123.959,
+      "search": {
+        "registered": 136,
+        "reachable": 18,
+        "unresolved": 15,
+        "rejected": 57,
+        "steps": 117,
+        "parent_repairs": 57,
+        "stop": "time limit",
+        "closed_candidate": false,
+        "outer_filter_rejections": 0
+      },
+      "closure_rejection": "reachable unresolved types remain",
+      "audit": {
+        "path": "cyclic_type_search_refined_graph.audit.json",
+        "verified": 3,
+        "failed": 0,
+        "unresolved": 15
+      },
+      "postprocessing": {
+        "unreachable_nodes_removed": 6
+      }
+    }
+  ],
+  "source_hashes": {
+    "finite_type_game.py": "452d1bbdad9ae77efd14f132d0898ebb30b76b646e5a3eaaa47e021fe043d216",
+    "invariant_endpoint_components.py": "df619cf92e1b3f630137afba773723ba42c3b5beb2528ad441633ca6dfd7411e",
+    "search_types.py": "dec54520aff5e60ae79315aaa8a63b3890da866d8ad31278e62d4de6e1087ca2",
+    "search_learned_components.py": "5857408a708ac292c383ed53cb2f11a0fc66a07981c10209027db4a447117f92",
+    "uniform_initial_cover.py": "450a31402e787485eb2bbd0a68e5149cbe4349e0021560f312bcbd635b75fe4e",
+    "search_cyclic_types.py": "77ea6da0cd67ae2bb84409d54863a5e2cbb87a536ddeb24d6a30fc5354ec85ae",
+    "type_graph_geometry.py": "ad86f69bb10a8ee838175fe768567d3b0501de50adf315599e1a4f71b3e74ad8",
+    "invariant_boxes.py": "b7cc1619d848c7a3e36f4b7659f7f4ac20009313df0c82ca92db9c817cbc5382",
+    "search_shape_bank.py": "b375931f259466c587cfdcc5b32bdbbf63fabcfa136b33369be1d4f412043f7e",
+    "test_type_search.py": "5a4c0ba275ae1fa22829e2991bc7d123de4e22ab52d77e1b6f70523edbdcc4b2",
+    "invariant_width_boxes.py": "3e546565ab204a4427a1352d9744c3f48f18f83806b9928d4d705a19ab0048cb",
+    "test_cyclic_types.py": "c1676131bb5aa98c285192c4c9754a83db87f8222eac44016b3388ab4a704262",
+    "run_cyclic_search.py": "85e1363abb95ea0d0e2d9b13cb071ff93cd3520fec94d07798cd3aa9b2c39429",
+    "verify_cyclic_types.py": "c799ada23543392d3787f07556e622c725b0bed4af2ec1ca7041ca5977edc862",
+    "adaptive_types.py": "b29360929e5e3774f5a0538ba8657c629867a32b2f4a99e4acd97879f5309eaa",
+    "adaptive_induction.py": "c98c4f1255ac9187115a45a12302c76fa6bd24c03461dc960c26a54dd7bccffe",
+    "periodic_anchor_invariant.py": "d063c1482ddadca43a85301ea3dc06356d5ecc3739ffa418c587cf0e01876ad3",
+    "repair_child_covers.py": "72c55d0714630b4e056ec17bd061b39a1296f248b71cd566eebd8ba28a20c9b6",
+    "invariant_anchor_components.py": "0914c60408515b259807cd10224a790fcd7093cf7caefb9c48012b39ef4eba9a",
+    "exact_shape_search.py": "8ffacb931ad3b1bc5df9def73e233ba92ff04052843aa50a9166e8a5e5e72276",
+    "test_explore.py": "7b0f846058d02129e9283fd1bfe69d5f208fcad69babd2d89c41653b07ba045d",
+    "deeper_child_gaps.py": "51eb97042847a25bdc7fb51c036df39000ad1497bfe503cfccfd1064a6df80b4",
+    "type_certificates.py": "2ca6b425f2294232aca647a473db2c8397a5fd1df0be409e447b3feb8d04d69b",
+    "test_child_covers.py": "faae2cb4191cbf44ffc6baedfb94b7c2a7b5885252cf4482826b34379fb9d0a4",
+    "test_adaptive_types.py": "1aa2fde3ed0ee5baba1ae17e1b8a26e7d30bbbb1d0e85c315f2a269ae79bb46b",
+    "explore.py": "0a68dcb33ad716070131fbdeb573b4bb0ce7a39538119cce18e82eaa8977d643",
+    "frontier_obstructions.py": "72c868d15f4d2ba6c11f35e7616f23d384128cee33b8a95b6289e372e696d826",
+    "search_adaptive_type_boxes.py": "dd30f65d4fab1ed6f7106b46234876de838675edb7b47ba0bfdf757dc261d7fc",
+    "test_induction_obstructions.py": "e547d7be44de9fb75feff5ca454ef03dfaf93ce21cef287e506c307bd345f99c",
+    "audit_child_covers.py": "650aa149efde634ff02d1ad3ab5cb391f9cb04beff19f11c220256845e2a71da",
+    "child_family_covers.py": "fa889dd830354d20554337e84a155a2c308b1fab4a75caa4cc28be42331115d9"
+  },
+  "replay_source_hashes": {
+    "finite_type_game.py": "ba7c7bc3f10ef2f9229fa4231d1d656f196d58bd4996acd37aeba42d3893466f",
+    "invariant_endpoint_components.py": "df619cf92e1b3f630137afba773723ba42c3b5beb2528ad441633ca6dfd7411e",
+    "search_types.py": "dec54520aff5e60ae79315aaa8a63b3890da866d8ad31278e62d4de6e1087ca2",
+    "search_learned_components.py": "5857408a708ac292c383ed53cb2f11a0fc66a07981c10209027db4a447117f92",
+    "uniform_initial_cover.py": "450a31402e787485eb2bbd0a68e5149cbe4349e0021560f312bcbd635b75fe4e",
+    "search_cyclic_types.py": "77ea6da0cd67ae2bb84409d54863a5e2cbb87a536ddeb24d6a30fc5354ec85ae",
+    "type_graph_geometry.py": "ad86f69bb10a8ee838175fe768567d3b0501de50adf315599e1a4f71b3e74ad8",
+    "invariant_boxes.py": "b7cc1619d848c7a3e36f4b7659f7f4ac20009313df0c82ca92db9c817cbc5382",
+    "search_shape_bank.py": "b375931f259466c587cfdcc5b32bdbbf63fabcfa136b33369be1d4f412043f7e",
+    "test_type_search.py": "5a4c0ba275ae1fa22829e2991bc7d123de4e22ab52d77e1b6f70523edbdcc4b2",
+    "invariant_width_boxes.py": "3e546565ab204a4427a1352d9744c3f48f18f83806b9928d4d705a19ab0048cb",
+    "test_cyclic_types.py": "df8d121e0c5d1a3557fa968a2d4b01c3d01fc602e5815fdc0907dccb54968ca2",
+    "run_cyclic_search.py": "85e1363abb95ea0d0e2d9b13cb071ff93cd3520fec94d07798cd3aa9b2c39429",
+    "verify_cyclic_types.py": "c799ada23543392d3787f07556e622c725b0bed4af2ec1ca7041ca5977edc862",
+    "adaptive_types.py": "b29360929e5e3774f5a0538ba8657c629867a32b2f4a99e4acd97879f5309eaa",
+    "adaptive_induction.py": "c98c4f1255ac9187115a45a12302c76fa6bd24c03461dc960c26a54dd7bccffe",
+    "periodic_anchor_invariant.py": "d063c1482ddadca43a85301ea3dc06356d5ecc3739ffa418c587cf0e01876ad3",
+    "repair_child_covers.py": "72c55d0714630b4e056ec17bd061b39a1296f248b71cd566eebd8ba28a20c9b6",
+    "invariant_anchor_components.py": "0914c60408515b259807cd10224a790fcd7093cf7caefb9c48012b39ef4eba9a",
+    "exact_shape_search.py": "8ffacb931ad3b1bc5df9def73e233ba92ff04052843aa50a9166e8a5e5e72276",
+    "test_explore.py": "7b0f846058d02129e9283fd1bfe69d5f208fcad69babd2d89c41653b07ba045d",
+    "deeper_child_gaps.py": "51eb97042847a25bdc7fb51c036df39000ad1497bfe503cfccfd1064a6df80b4",
+    "type_certificates.py": "2ca6b425f2294232aca647a473db2c8397a5fd1df0be409e447b3feb8d04d69b",
+    "test_child_covers.py": "faae2cb4191cbf44ffc6baedfb94b7c2a7b5885252cf4482826b34379fb9d0a4",
+    "test_adaptive_types.py": "1aa2fde3ed0ee5baba1ae17e1b8a26e7d30bbbb1d0e85c315f2a269ae79bb46b",
+    "explore.py": "0a68dcb33ad716070131fbdeb573b4bb0ce7a39538119cce18e82eaa8977d643",
+    "frontier_obstructions.py": "72c868d15f4d2ba6c11f35e7616f23d384128cee33b8a95b6289e372e696d826",
+    "search_adaptive_type_boxes.py": "dd30f65d4fab1ed6f7106b46234876de838675edb7b47ba0bfdf757dc261d7fc",
+    "test_induction_obstructions.py": "e547d7be44de9fb75feff5ca454ef03dfaf93ce21cef287e506c307bd345f99c",
+    "audit_child_covers.py": "650aa149efde634ff02d1ad3ab5cb391f9cb04beff19f11c220256845e2a71da",
+    "child_family_covers.py": "fa889dd830354d20554337e84a155a2c308b1fab4a75caa4cc28be42331115d9"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "universal_before": "2617141",
+  "universal_after": "2624462",
+  "additional_candidates": 7321,
+  "counts_accounted": true,
+  "epochs_before": 161,
+  "epochs_after": 163,
+  "same_target_order": true,
+  "same_edge_catalog": true,
+  "old_child_cache_retained": true,
+  "processed_targets_before": 699,
+  "processed_targets_after": 708,
+  "synthesis_unchanged": true,
+  "language_current": true,
+  "discovery_current": true,
+  "audit_failures": {
+    "mosaic": 0,
+    "synthesis": 0
+  }
+}

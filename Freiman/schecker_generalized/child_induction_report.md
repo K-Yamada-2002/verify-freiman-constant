@@ -1,5 +1,28 @@
 # 子の一様被覆と、帰納法を閉じるための探索
 
+続き: [帰納法の障害と被覆規則の修正](induction_obstructions_report.md)。以下の局所被覆は正しいが、7族の充填義務に真の隙間が見つかったため、6規則を置き換えた。最新の監査は到達可能な規則18族・未証明の末端32族。
+
+## 追検証（2026-09-22）
+
+保存済みの15規則とテスト23件を再実行し、すべて通過した。未証明の末端から5族について、同じ4形状・総追加長2以下で、全 `n≥0` の厳密な局所被覆を追加した。`H_{u,v}` を全凸包とし、右辺の型の内部が実現されることは依然として未証明である。
+
+\[
+\begin{aligned}
+H_{11,1}&\subset J^{1R}_{11,13}\cup H_{11,12}\cup H_{111,1},\\
+H_{11,2}&\subset H_{113,23}\cup J^2_{113,2}\cup H_{112,2}\cup H_{111,2},\\
+H_{11,3}&\subset H_{113,3}\cup J^{4R}_{112,31}\cup H_{111,3},\\
+H_{12,2}&\subset J^{1R}_{12,23}\cup H_{12,22}\cup H_{121,2},\\
+H_{12,3}&\subset J^1_{123,3}\cup J^1_{122,3}\cup H_{121,3}.
+\end{aligned}
+\]
+
+順序は正規化座標での被覆順である。証明書は `child_H11_1_cover.json` と `child_frontier_covers.json` に保存した。既存15族と合わせて到達可能な厳密規則は20族になったが、新たな子を含む未証明の末端は36族となった。よって閉鎖はなお未達成。末端数が増えたのは、以前の5つの葉を展開して、その子を義務に加えたためである。
+
+```sh
+python3 Freiman/schecker_generalized/child_family_covers.py --verify Freiman/schecker_generalized/child_H11_1_cover.json
+python3 Freiman/schecker_generalized/child_family_covers.py --verify Freiman/schecker_generalized/child_frontier_covers.json
+```
+
 ## 今回わかったこと
 
 初期被覆の3つの子を調べ、**全指数 `n≥0` に対する15個の局所被覆規則**を厳密に検証した。

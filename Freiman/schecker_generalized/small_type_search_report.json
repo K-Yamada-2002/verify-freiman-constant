@@ -1,0 +1,1042 @@
+{
+  "status": "smaller endpoint menu; full induction remains open",
+  "trials": [
+    {
+      "name": "control",
+      "graph": "small_type_control_graph.json",
+      "audit": "small_type_control_audit.json",
+      "nodes": 794,
+      "parameter_cells": 596,
+      "endpoint_shapes": 159,
+      "automaton_endpoint_types": 305,
+      "local_rules": 491,
+      "open_nodes": 303,
+      "failed_rules": 0,
+      "supported_closed_types": 0,
+      "edges": 1396,
+      "references": 3236,
+      "proof_hash": "f3d11e94d4332cebd172106e6f11d412f69eb96fcb4ae178601260e475447d43",
+      "settings": {
+        "endpoints": "/Users/mirukuma/Documents/GitHub/verify-freiman-constant/Freiman/schecker_generalized/adaptive_depth8_certificate.json",
+        "macro_menu": null,
+        "shape_menu": null,
+        "adaptive_shapes": false,
+        "max_shapes": 64,
+        "states": 6,
+        "memory": 0,
+        "bins": 25,
+        "base": "22/25",
+        "max_step": 1,
+        "variants": 4,
+        "outer_depth": 3,
+        "outer_samples": 3,
+        "grid": 0,
+        "edge_grid": 0,
+        "grow_edge_grid": false,
+        "no_reuse": false,
+        "no_return_offers": false,
+        "reuse_pending": true,
+        "breadth_first": true,
+        "no_local_filter": true,
+        "prune_supersets": false,
+        "balance": "9/10",
+        "native_executable": "/tmp/freiman-cyclic-planner-v6",
+        "refinement_rounds": 1,
+        "split_count": 12,
+        "split_depth": 4,
+        "max_types": 6000,
+        "max_steps": 1000,
+        "seconds": 240.0,
+        "output": "/tmp/freiman-control-free6.json"
+      },
+      "search": {
+        "registered": 970,
+        "reachable": 794,
+        "unresolved": 303,
+        "rejected": 128,
+        "steps": 1000,
+        "parent_repairs": 364,
+        "stop": "step limit",
+        "closed_candidate": false,
+        "outer_filter_rejections": 0,
+        "reused_targets": 32370,
+        "local_filter_rejections": 0,
+        "superset_rejections": 0,
+        "closed_supported_types": 0
+      },
+      "compaction": null,
+      "refinement_history": [
+        {
+          "round": 0,
+          "search": {
+            "registered": 970,
+            "reachable": 794,
+            "unresolved": 303,
+            "rejected": 128,
+            "steps": 1000,
+            "parent_repairs": 364,
+            "stop": "step limit",
+            "closed_candidate": false
+          },
+          "cells": 3602
+        }
+      ],
+      "closure_rejection": "node 616: unresolved type",
+      "declared_templates": null
+    },
+    {
+      "name": "adaptive",
+      "graph": "small_type_adaptive_graph.json",
+      "audit": "small_type_adaptive_audit.json",
+      "nodes": 766,
+      "parameter_cells": 632,
+      "endpoint_shapes": 29,
+      "automaton_endpoint_types": 186,
+      "local_rules": 498,
+      "open_nodes": 268,
+      "failed_rules": 0,
+      "supported_closed_types": 0,
+      "edges": 1435,
+      "references": 3313,
+      "proof_hash": "2ec5d4f7b280bebb932f615f0e4772cd1a220bd4508c33ff31056c43a81ad12f",
+      "settings": {
+        "endpoints": "/Users/mirukuma/Documents/GitHub/verify-freiman-constant/Freiman/schecker_generalized/adaptive_depth8_certificate.json",
+        "macro_menu": null,
+        "shape_menu": null,
+        "adaptive_shapes": true,
+        "max_shapes": 32,
+        "states": 6,
+        "memory": 0,
+        "bins": 25,
+        "base": "22/25",
+        "max_step": 1,
+        "variants": 4,
+        "outer_depth": 3,
+        "outer_samples": 3,
+        "grid": 0,
+        "edge_grid": 0,
+        "grow_edge_grid": false,
+        "no_reuse": false,
+        "no_return_offers": false,
+        "reuse_pending": true,
+        "breadth_first": true,
+        "no_local_filter": true,
+        "prune_supersets": false,
+        "balance": "9/10",
+        "native_executable": "/tmp/freiman-cyclic-planner-v6",
+        "refinement_rounds": 1,
+        "split_count": 12,
+        "split_depth": 4,
+        "max_types": 4000,
+        "max_steps": 1000,
+        "seconds": 240.0,
+        "output": "/tmp/freiman-adaptive32-short6.json"
+      },
+      "search": {
+        "registered": 875,
+        "reachable": 766,
+        "unresolved": 268,
+        "rejected": 57,
+        "steps": 1000,
+        "parent_repairs": 336,
+        "stop": "step limit",
+        "closed_candidate": false,
+        "outer_filter_rejections": 0,
+        "reused_targets": 237759,
+        "local_filter_rejections": 0,
+        "superset_rejections": 0,
+        "closed_supported_types": 0
+      },
+      "compaction": null,
+      "refinement_history": [
+        {
+          "round": 0,
+          "search": {
+            "registered": 875,
+            "reachable": 766,
+            "unresolved": 268,
+            "rejected": 57,
+            "steps": 1000,
+            "parent_repairs": 336,
+            "stop": "step limit",
+            "closed_candidate": false
+          },
+          "cells": 3602
+        }
+      ],
+      "closure_rejection": "node 610: unresolved type",
+      "declared_templates": 30
+    },
+    {
+      "name": "macro",
+      "graph": "small_type_macro_graph.json",
+      "audit": "small_type_macro_audit.json",
+      "nodes": 712,
+      "parameter_cells": 609,
+      "endpoint_shapes": 31,
+      "automaton_endpoint_types": 190,
+      "local_rules": 459,
+      "open_nodes": 253,
+      "failed_rules": 0,
+      "supported_closed_types": 0,
+      "edges": 1745,
+      "references": 4070,
+      "proof_hash": "23261f43a80ac6c7932e0371c3378f55ae0dd42f1f6a4a05a0e4c020790ac9f8",
+      "settings": {
+        "endpoints": "/Users/mirukuma/Documents/GitHub/verify-freiman-constant/Freiman/schecker_generalized/adaptive_depth8_certificate.json",
+        "macro_menu": "Freiman/schecker_generalized/small_type_menu12.json",
+        "shape_menu": null,
+        "adaptive_shapes": true,
+        "max_shapes": 32,
+        "states": 6,
+        "memory": 0,
+        "bins": 25,
+        "base": "22/25",
+        "max_step": 1,
+        "variants": 4,
+        "outer_depth": 3,
+        "outer_samples": 3,
+        "grid": 0,
+        "edge_grid": 0,
+        "grow_edge_grid": false,
+        "no_reuse": false,
+        "no_return_offers": false,
+        "reuse_pending": true,
+        "breadth_first": true,
+        "no_local_filter": true,
+        "prune_supersets": false,
+        "balance": "9/10",
+        "native_executable": "/tmp/freiman-cyclic-planner-v6",
+        "refinement_rounds": 1,
+        "split_count": 12,
+        "split_depth": 4,
+        "max_types": 4000,
+        "max_steps": 1000,
+        "seconds": 240.0,
+        "output": "/tmp/freiman-adaptive32-macro6.json"
+      },
+      "search": {
+        "registered": 804,
+        "reachable": 712,
+        "unresolved": 253,
+        "rejected": 3,
+        "steps": 1000,
+        "parent_repairs": 397,
+        "stop": "step limit",
+        "closed_candidate": false,
+        "outer_filter_rejections": 0,
+        "reused_targets": 1276304,
+        "local_filter_rejections": 0,
+        "superset_rejections": 0,
+        "closed_supported_types": 0
+      },
+      "compaction": null,
+      "refinement_history": [
+        {
+          "round": 0,
+          "search": {
+            "registered": 804,
+            "reachable": 712,
+            "unresolved": 253,
+            "rejected": 3,
+            "steps": 1000,
+            "parent_repairs": 397,
+            "stop": "step limit",
+            "closed_candidate": false
+          },
+          "cells": 3602
+        }
+      ],
+      "closure_rejection": "node 706: unresolved type",
+      "declared_templates": 31
+    },
+    {
+      "name": "optimal",
+      "graph": "small_type_optimal_graph.json",
+      "audit": "small_type_optimal_audit.json",
+      "nodes": 781,
+      "parameter_cells": 644,
+      "endpoint_shapes": 32,
+      "automaton_endpoint_types": 229,
+      "local_rules": 500,
+      "open_nodes": 281,
+      "failed_rules": 0,
+      "supported_closed_types": 0,
+      "edges": 1248,
+      "references": 2892,
+      "proof_hash": "5857bb583aa80397f050c60877627b8e37681b673d496844339c5935ed435de2",
+      "settings": {
+        "endpoints": "/Users/mirukuma/Documents/GitHub/verify-freiman-constant/Freiman/schecker_generalized/adaptive_depth8_certificate.json",
+        "macro_menu": null,
+        "shape_menu": null,
+        "adaptive_shapes": true,
+        "max_shapes": 32,
+        "min_cost_cover": true,
+        "states": 6,
+        "memory": 0,
+        "bins": 25,
+        "base": "22/25",
+        "max_step": 1,
+        "variants": 4,
+        "outer_depth": 3,
+        "outer_samples": 3,
+        "grid": 0,
+        "edge_grid": 0,
+        "grow_edge_grid": false,
+        "no_reuse": false,
+        "no_return_offers": false,
+        "reuse_pending": true,
+        "breadth_first": true,
+        "no_local_filter": true,
+        "prune_supersets": false,
+        "balance": "9/10",
+        "native_executable": "/tmp/freiman-cyclic-planner-v7",
+        "refinement_rounds": 1,
+        "split_count": 12,
+        "split_depth": 4,
+        "max_types": 6000,
+        "max_steps": 1000,
+        "seconds": 240.0,
+        "output": "/tmp/freiman-small32-optimal6.json"
+      },
+      "search": {
+        "registered": 928,
+        "reachable": 781,
+        "unresolved": 281,
+        "rejected": 80,
+        "steps": 1000,
+        "parent_repairs": 327,
+        "stop": "step limit",
+        "closed_candidate": false,
+        "outer_filter_rejections": 0,
+        "reused_targets": 281785,
+        "local_filter_rejections": 0,
+        "superset_rejections": 0,
+        "closed_supported_types": 0
+      },
+      "compaction": null,
+      "refinement_history": [
+        {
+          "round": 0,
+          "search": {
+            "registered": 928,
+            "reachable": 781,
+            "unresolved": 281,
+            "rejected": 80,
+            "steps": 1000,
+            "parent_repairs": 327,
+            "stop": "step limit",
+            "closed_candidate": false
+          },
+          "cells": 3602
+        }
+      ],
+      "closure_rejection": "node 705: unresolved type",
+      "declared_templates": 32
+    },
+    {
+      "name": "optimal_macro",
+      "graph": "small_type_optimal_macro_graph.json",
+      "audit": "small_type_optimal_macro_audit.json",
+      "nodes": 778,
+      "parameter_cells": 628,
+      "endpoint_shapes": 32,
+      "automaton_endpoint_types": 227,
+      "local_rules": 515,
+      "open_nodes": 263,
+      "failed_rules": 0,
+      "supported_closed_types": 0,
+      "edges": 1595,
+      "references": 3690,
+      "proof_hash": "ced25ad1b74da0dacdc3727a816903c4683cd546c648d625f59c5d47629a9da1",
+      "settings": {
+        "endpoints": "/Users/mirukuma/Documents/GitHub/verify-freiman-constant/Freiman/schecker_generalized/adaptive_depth8_certificate.json",
+        "macro_menu": "Freiman/schecker_generalized/small_type_menu12.json",
+        "shape_menu": null,
+        "adaptive_shapes": true,
+        "max_shapes": 32,
+        "min_cost_cover": true,
+        "states": 6,
+        "memory": 0,
+        "bins": 25,
+        "base": "22/25",
+        "max_step": 1,
+        "variants": 4,
+        "outer_depth": 3,
+        "outer_samples": 3,
+        "grid": 0,
+        "edge_grid": 0,
+        "grow_edge_grid": false,
+        "no_reuse": false,
+        "no_return_offers": false,
+        "reuse_pending": true,
+        "breadth_first": true,
+        "no_local_filter": true,
+        "prune_supersets": false,
+        "balance": "9/10",
+        "native_executable": "/tmp/freiman-cyclic-planner-v7",
+        "refinement_rounds": 1,
+        "split_count": 12,
+        "split_depth": 4,
+        "max_types": 6000,
+        "max_steps": 1000,
+        "seconds": 240.0,
+        "output": "/tmp/freiman-small32-optimal-macro6.json"
+      },
+      "search": {
+        "registered": 888,
+        "reachable": 778,
+        "unresolved": 263,
+        "rejected": 2,
+        "steps": 1000,
+        "parent_repairs": 339,
+        "stop": "step limit",
+        "closed_candidate": false,
+        "outer_filter_rejections": 0,
+        "reused_targets": 926720,
+        "local_filter_rejections": 0,
+        "superset_rejections": 0,
+        "closed_supported_types": 0
+      },
+      "compaction": null,
+      "refinement_history": [
+        {
+          "round": 0,
+          "search": {
+            "registered": 888,
+            "reachable": 778,
+            "unresolved": 263,
+            "rejected": 2,
+            "steps": 1000,
+            "parent_repairs": 339,
+            "stop": "step limit",
+            "closed_candidate": false
+          },
+          "cells": 3602
+        }
+      ],
+      "closure_rejection": "node 20: unresolved type",
+      "declared_templates": 32
+    },
+    {
+      "name": "long",
+      "graph": "small_type_long_graph.json",
+      "audit": "small_type_long_audit.json",
+      "nodes": 1206,
+      "parameter_cells": 952,
+      "endpoint_shapes": 32,
+      "automaton_endpoint_types": 400,
+      "local_rules": 918,
+      "open_nodes": 288,
+      "failed_rules": 0,
+      "supported_closed_types": 0,
+      "edges": 2694,
+      "references": 6153,
+      "proof_hash": "7346d12a1eea40b49cf2ce027365d7800c27e2343ec9f123321455d7ff7be79d",
+      "settings": {
+        "endpoints": "/Users/mirukuma/Documents/GitHub/verify-freiman-constant/Freiman/schecker_generalized/adaptive_depth8_certificate.json",
+        "macro_menu": null,
+        "shape_menu": null,
+        "adaptive_shapes": true,
+        "max_shapes": 32,
+        "states": 6,
+        "memory": 0,
+        "bins": 25,
+        "base": "22/25",
+        "max_step": 1,
+        "variants": 4,
+        "outer_depth": 3,
+        "outer_samples": 3,
+        "grid": 0,
+        "edge_grid": 0,
+        "grow_edge_grid": false,
+        "no_reuse": false,
+        "no_return_offers": false,
+        "reuse_pending": true,
+        "breadth_first": true,
+        "no_local_filter": true,
+        "prune_supersets": false,
+        "balance": "9/10",
+        "native_executable": "/tmp/freiman-cyclic-planner-v6",
+        "refinement_rounds": 1,
+        "split_count": 12,
+        "split_depth": 4,
+        "max_types": 6000,
+        "max_steps": 20000,
+        "seconds": 300.0,
+        "output": "/tmp/freiman-small32-long6.json"
+      },
+      "search": {
+        "registered": 2800,
+        "reachable": 1206,
+        "unresolved": 288,
+        "rejected": 1326,
+        "steps": 7541,
+        "parent_repairs": 5007,
+        "stop": "time limit",
+        "closed_candidate": false,
+        "outer_filter_rejections": 0,
+        "reused_targets": 3043649,
+        "local_filter_rejections": 0,
+        "superset_rejections": 0,
+        "closed_supported_types": 0
+      },
+      "compaction": null,
+      "refinement_history": [
+        {
+          "round": 0,
+          "search": {
+            "registered": 2800,
+            "reachable": 1206,
+            "unresolved": 288,
+            "rejected": 1326,
+            "steps": 7541,
+            "parent_repairs": 5007,
+            "stop": "time limit",
+            "closed_candidate": false
+          },
+          "cells": 3602
+        }
+      ],
+      "closure_rejection": "node 1111: unresolved type",
+      "declared_templates": 32
+    },
+    {
+      "name": "refined",
+      "graph": "small_type_refined_graph.json",
+      "audit": "small_type_refined_audit.json",
+      "nodes": 1282,
+      "parameter_cells": 931,
+      "endpoint_shapes": 55,
+      "automaton_endpoint_types": 422,
+      "local_rules": 1041,
+      "open_nodes": 241,
+      "failed_rules": 0,
+      "supported_closed_types": 0,
+      "edges": 2453,
+      "references": 5754,
+      "proof_hash": "7f74a597380996b27d541900fa22371c85c7b178ed93a1834106da61b953f4e6",
+      "settings": {
+        "endpoints": "/Users/mirukuma/Documents/GitHub/verify-freiman-constant/Freiman/schecker_generalized/adaptive_depth8_certificate.json",
+        "macro_menu": null,
+        "shape_menu": null,
+        "adaptive_shapes": true,
+        "max_shapes": 64,
+        "min_cost_cover": true,
+        "states": 6,
+        "memory": 0,
+        "bins": 25,
+        "base": "22/25",
+        "max_step": 1,
+        "variants": 4,
+        "outer_depth": 3,
+        "outer_samples": 3,
+        "grid": 0,
+        "edge_grid": 0,
+        "grow_edge_grid": false,
+        "no_reuse": false,
+        "no_return_offers": false,
+        "reuse_pending": true,
+        "breadth_first": true,
+        "no_local_filter": true,
+        "prune_supersets": false,
+        "balance": "9/10",
+        "native_executable": "/tmp/freiman-cyclic-planner-v7",
+        "refinement_rounds": 3,
+        "split_count": 12,
+        "split_depth": 4,
+        "max_types": 6000,
+        "max_steps": 20000,
+        "seconds": 300.0,
+        "output": "/tmp/freiman-small64-refined-optimal6.json"
+      },
+      "search": {
+        "registered": 1567,
+        "reachable": 1282,
+        "unresolved": 241,
+        "rejected": 72,
+        "steps": 2255,
+        "parent_repairs": 820,
+        "stop": "time limit",
+        "closed_candidate": false,
+        "outer_filter_rejections": 0,
+        "reused_targets": 3235470,
+        "local_filter_rejections": 0,
+        "superset_rejections": 0,
+        "closed_supported_types": 0
+      },
+      "compaction": null,
+      "refinement_history": [
+        {
+          "round": 0,
+          "search": {
+            "registered": 1349,
+            "reachable": 1149,
+            "unresolved": 325,
+            "rejected": 48,
+            "steps": 1962,
+            "parent_repairs": 758,
+            "stop": "time limit",
+            "closed_candidate": false
+          },
+          "cells": 3602,
+          "splits": [
+            {
+              "cell": 904,
+              "axis": "ratio",
+              "children": [
+                3602,
+                3603
+              ],
+              "blocked": 20
+            },
+            {
+              "cell": 265,
+              "axis": "r",
+              "children": [
+                3604,
+                3605
+              ],
+              "blocked": 18
+            },
+            {
+              "cell": 778,
+              "axis": "ratio",
+              "children": [
+                3606,
+                3607
+              ],
+              "blocked": 18
+            },
+            {
+              "cell": 159,
+              "axis": "r",
+              "children": [
+                3608,
+                3609
+              ],
+              "blocked": 16
+            },
+            {
+              "cell": 165,
+              "axis": "r",
+              "children": [
+                3610,
+                3611
+              ],
+              "blocked": 16
+            },
+            {
+              "cell": 1470,
+              "axis": "ratio",
+              "children": [
+                3612,
+                3613
+              ],
+              "blocked": 16
+            },
+            {
+              "cell": 329,
+              "axis": "r",
+              "children": [
+                3614,
+                3615
+              ],
+              "blocked": 12
+            },
+            {
+              "cell": 813,
+              "axis": "ratio",
+              "children": [
+                3616,
+                3617
+              ],
+              "blocked": 12
+            },
+            {
+              "cell": 870,
+              "axis": "ratio",
+              "children": [
+                3618,
+                3619
+              ],
+              "blocked": 12
+            },
+            {
+              "cell": 1404,
+              "axis": "ratio",
+              "children": [
+                3620,
+                3621
+              ],
+              "blocked": 12
+            },
+            {
+              "cell": 137,
+              "axis": "r",
+              "children": [
+                3622,
+                3623
+              ],
+              "blocked": 10
+            },
+            {
+              "cell": 166,
+              "axis": "r",
+              "children": [
+                3624,
+                3625
+              ],
+              "blocked": 10
+            }
+          ]
+        },
+        {
+          "round": 1,
+          "search": {
+            "registered": 1547,
+            "reachable": 1290,
+            "unresolved": 269,
+            "rejected": 5,
+            "steps": 2023,
+            "parent_repairs": 677,
+            "stop": "time limit",
+            "closed_candidate": false
+          },
+          "cells": 3626,
+          "splits": [
+            {
+              "cell": 890,
+              "axis": "ratio",
+              "children": [
+                3626,
+                3627
+              ],
+              "blocked": 18
+            },
+            {
+              "cell": 2070,
+              "axis": "ratio",
+              "children": [
+                3628,
+                3629
+              ],
+              "blocked": 18
+            },
+            {
+              "cell": 184,
+              "axis": "r",
+              "children": [
+                3630,
+                3631
+              ],
+              "blocked": 16
+            },
+            {
+              "cell": 133,
+              "axis": "r",
+              "children": [
+                3632,
+                3633
+              ],
+              "blocked": 14
+            },
+            {
+              "cell": 3615,
+              "axis": "ratio",
+              "children": [
+                3634,
+                3635
+              ],
+              "blocked": 14
+            },
+            {
+              "cell": 29,
+              "axis": "r",
+              "children": [
+                3636,
+                3637
+              ],
+              "blocked": 12
+            },
+            {
+              "cell": 270,
+              "axis": "r",
+              "children": [
+                3638,
+                3639
+              ],
+              "blocked": 12
+            },
+            {
+              "cell": 891,
+              "axis": "ratio",
+              "children": [
+                3640,
+                3641
+              ],
+              "blocked": 12
+            },
+            {
+              "cell": 3605,
+              "axis": "ratio",
+              "children": [
+                3642,
+                3643
+              ],
+              "blocked": 12
+            },
+            {
+              "cell": 630,
+              "axis": "s",
+              "children": [
+                3644,
+                3645
+              ],
+              "blocked": 10
+            },
+            {
+              "cell": 1429,
+              "axis": "ratio",
+              "children": [
+                3646,
+                3647
+              ],
+              "blocked": 10
+            },
+            {
+              "cell": 1978,
+              "axis": "ratio",
+              "children": [
+                3648,
+                3649
+              ],
+              "blocked": 10
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "search": {
+            "registered": 1567,
+            "reachable": 1282,
+            "unresolved": 241,
+            "rejected": 72,
+            "steps": 2255,
+            "parent_repairs": 820,
+            "stop": "time limit",
+            "closed_candidate": false
+          },
+          "cells": 3650
+        }
+      ],
+      "closure_rejection": "node 1179: unresolved type",
+      "declared_templates": 60
+    },
+    {
+      "name": "compacted",
+      "graph": "small_type_compacted_graph.json",
+      "audit": "small_type_compacted_audit.json",
+      "nodes": 753,
+      "parameter_cells": 716,
+      "endpoint_shapes": 28,
+      "automaton_endpoint_types": 184,
+      "local_rules": 489,
+      "open_nodes": 264,
+      "failed_rules": 0,
+      "supported_closed_types": 0,
+      "edges": 1415,
+      "references": 3070,
+      "proof_hash": "222d8a06d1c57ca2098c1b77ee55281dabeb347ab230c01f52b48c92b1c345b0",
+      "settings": {
+        "endpoints": "/Users/mirukuma/Documents/GitHub/verify-freiman-constant/Freiman/schecker_generalized/adaptive_depth8_certificate.json",
+        "macro_menu": null,
+        "shape_menu": null,
+        "adaptive_shapes": true,
+        "max_shapes": 32,
+        "states": 6,
+        "memory": 0,
+        "bins": 25,
+        "base": "22/25",
+        "max_step": 1,
+        "variants": 4,
+        "outer_depth": 3,
+        "outer_samples": 3,
+        "grid": 0,
+        "edge_grid": 0,
+        "grow_edge_grid": false,
+        "no_reuse": false,
+        "no_return_offers": false,
+        "reuse_pending": true,
+        "breadth_first": true,
+        "no_local_filter": true,
+        "prune_supersets": false,
+        "balance": "9/10",
+        "native_executable": "/tmp/freiman-cyclic-planner-v6",
+        "refinement_rounds": 1,
+        "split_count": 12,
+        "split_depth": 4,
+        "max_types": 4000,
+        "max_steps": 1000,
+        "seconds": 240.0,
+        "output": "/tmp/freiman-adaptive32-short6.json"
+      },
+      "search": null,
+      "compaction": [
+        {
+          "round": 0,
+          "widened": 472,
+          "changed_edges": 118,
+          "removed_references": 137,
+          "nodes": 758,
+          "open": 264,
+          "verified": 494
+        },
+        {
+          "round": 1,
+          "widened": 386,
+          "changed_edges": 53,
+          "removed_references": 66,
+          "nodes": 753,
+          "open": 264,
+          "verified": 489
+        }
+      ],
+      "refinement_history": [
+        {
+          "round": 0,
+          "search": {
+            "registered": 875,
+            "reachable": 766,
+            "unresolved": 268,
+            "rejected": 57,
+            "steps": 1000,
+            "parent_repairs": 336,
+            "stop": "step limit",
+            "closed_candidate": false
+          },
+          "cells": 3602
+        }
+      ],
+      "closure_rejection": "node 598: unresolved type",
+      "declared_templates": 30
+    }
+  ],
+  "tests": {
+    "count": 35,
+    "status": "related suites passed; includes ten small-menu tests",
+    "commands": [
+      "python3 -m unittest test_cyclic_types",
+      "python3 -m unittest test_small_type_menu"
+    ]
+  },
+  "diagnostics": [
+    {
+      "nodes": 9638,
+      "parameter_cells": 5769,
+      "endpoint_shapes": 597,
+      "automaton_endpoint_types": 1781
+    },
+    {
+      "nodes": 12565,
+      "parameter_cells": 9028,
+      "endpoint_shapes": 461,
+      "automaton_endpoint_types": 1524
+    }
+  ],
+  "fixed_menu_failures": [
+    {
+      "name": "small12-short6",
+      "search": {
+        "registered": 2,
+        "reachable": 2,
+        "unresolved": 2,
+        "rejected": 1,
+        "steps": 1,
+        "parent_repairs": 0,
+        "stop": "root rejected in this candidate menu",
+        "closed_candidate": false,
+        "outer_filter_rejections": 0,
+        "reused_targets": 0,
+        "local_filter_rejections": 0,
+        "superset_rejections": 0,
+        "closed_supported_types": 0
+      }
+    },
+    {
+      "name": "small12-macro6",
+      "search": {
+        "registered": 2,
+        "reachable": 2,
+        "unresolved": 2,
+        "rejected": 1,
+        "steps": 1,
+        "parent_repairs": 0,
+        "stop": "root rejected in this candidate menu",
+        "closed_candidate": false,
+        "outer_filter_rejections": 0,
+        "reused_targets": 0,
+        "local_filter_rejections": 0,
+        "superset_rejections": 0,
+        "closed_supported_types": 0
+      }
+    },
+    {
+      "name": "small12-macro13",
+      "search": {
+        "registered": 2,
+        "reachable": 2,
+        "unresolved": 2,
+        "rejected": 1,
+        "steps": 1,
+        "parent_repairs": 0,
+        "stop": "root rejected in this candidate menu",
+        "closed_candidate": false,
+        "outer_filter_rejections": 0,
+        "reused_targets": 0,
+        "local_filter_rejections": 0,
+        "superset_rejections": 0,
+        "closed_supported_types": 0
+      }
+    }
+  ],
+  "source_hashes": {
+    "adaptive_induction.py": "c98c4f1255ac9187115a45a12302c76fa6bd24c03461dc960c26a54dd7bccffe",
+    "adaptive_types.py": "b29360929e5e3774f5a0538ba8657c629867a32b2f4a99e4acd97879f5309eaa",
+    "audit_child_covers.py": "650aa149efde634ff02d1ad3ab5cb391f9cb04beff19f11c220256845e2a71da",
+    "child_family_covers.py": "fa889dd830354d20554337e84a155a2c308b1fab4a75caa4cc28be42331115d9",
+    "compact_cyclic_graph.py": "0e3cf10216e1dacbe0467ce690a8a9f4608972c5e4e691de0d2cf26c313ab309",
+    "cover_optimization.py": "c90d260037075c869d74081bfbbb7862959e76651198d783bb088aaea7695a74",
+    "cyclic_planner.cpp": "cf26e8b8189224d375f1ca0721b24f7514b61bb8ee393bcc199c033726b31943",
+    "deeper_child_gaps.py": "51eb97042847a25bdc7fb51c036df39000ad1497bfe503cfccfd1064a6df80b4",
+    "exact_shape_search.py": "8ffacb931ad3b1bc5df9def73e233ba92ff04052843aa50a9166e8a5e5e72276",
+    "explore.py": "0a68dcb33ad716070131fbdeb573b4bb0ce7a39538119cce18e82eaa8977d643",
+    "finite_type_game.py": "fcc164ff55da31f10ac2787d0bee042022d74731f12710d228edeadca8f4ba0f",
+    "frontier_obstructions.py": "72c868d15f4d2ba6c11f35e7616f23d384128cee33b8a95b6289e372e696d826",
+    "invariant_anchor_components.py": "0914c60408515b259807cd10224a790fcd7093cf7caefb9c48012b39ef4eba9a",
+    "invariant_boxes.py": "b7cc1619d848c7a3e36f4b7659f7f4ac20009313df0c82ca92db9c817cbc5382",
+    "invariant_endpoint_components.py": "df619cf92e1b3f630137afba773723ba42c3b5beb2528ad441633ca6dfd7411e",
+    "invariant_width_boxes.py": "3e546565ab204a4427a1352d9744c3f48f18f83806b9928d4d705a19ab0048cb",
+    "learn_small_type_menu.py": "5dcb379bbc9fc7d223b0db06ee4d2023cc86c133e178490bdf8b4cfade0cba9c",
+    "learned_components_native.cpp": "bad7728b55ea3cf167dabb7e3bcfb206b3b55282df79b89ef56b4be17918241c",
+    "periodic_anchor_invariant.py": "d063c1482ddadca43a85301ea3dc06356d5ecc3739ffa418c587cf0e01876ad3",
+    "repair_child_covers.py": "72c55d0714630b4e056ec17bd061b39a1296f248b71cd566eebd8ba28a20c9b6",
+    "run_cyclic_search.py": "5e41b4707410e089b268f2c1aa240b13930d38f1dfd0b7e9f0d528ff4cf6aca1",
+    "search_adaptive_type_boxes.py": "dd30f65d4fab1ed6f7106b46234876de838675edb7b47ba0bfdf757dc261d7fc",
+    "search_cyclic_types.py": "9d67adbee93c302a0a9d3baf1369fbbd85ec123a99c4ff6f5d01d3743cbc8dbc",
+    "search_learned_components.py": "5857408a708ac292c383ed53cb2f11a0fc66a07981c10209027db4a447117f92",
+    "search_shape_bank.py": "b375931f259466c587cfdcc5b32bdbbf63fabcfa136b33369be1d4f412043f7e",
+    "search_types.py": "dec54520aff5e60ae79315aaa8a63b3890da866d8ad31278e62d4de6e1087ca2",
+    "test_adaptive_types.py": "1aa2fde3ed0ee5baba1ae17e1b8a26e7d30bbbb1d0e85c315f2a269ae79bb46b",
+    "test_child_covers.py": "faae2cb4191cbf44ffc6baedfb94b7c2a7b5885252cf4482826b34379fb9d0a4",
+    "test_cyclic_types.py": "92c1a0c7e83f0379721eef53aa7a2b1faee63bc0e5573337494a0bbcdfdfacfb",
+    "test_explore.py": "7b0f846058d02129e9283fd1bfe69d5f208fcad69babd2d89c41653b07ba045d",
+    "test_induction_obstructions.py": "e547d7be44de9fb75feff5ca454ef03dfaf93ce21cef287e506c307bd345f99c",
+    "test_small_type_menu.py": "d8488a6e1b7fd81a3010eea86616c7ccc6967d821b65f5227fa3e334e09ce393",
+    "test_type_search.py": "5a4c0ba275ae1fa22829e2991bc7d123de4e22ab52d77e1b6f70523edbdcc4b2",
+    "type_certificates.py": "2ca6b425f2294232aca647a473db2c8397a5fd1df0be409e447b3feb8d04d69b",
+    "type_graph_geometry.py": "ad86f69bb10a8ee838175fe768567d3b0501de50adf315599e1a4f71b3e74ad8",
+    "uniform_initial_cover.py": "450a31402e787485eb2bbd0a68e5149cbe4349e0021560f312bcbd635b75fe4e",
+    "verify_cyclic_types.py": "d28545a64a9e11242cfe5649dcfe7ec37c51151c8d4cc9f96d79550bd46394f7"
+  }
+}

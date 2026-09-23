@@ -1,0 +1,45 @@
+{
+  "status": "exact periodic parameter invariant; not a filling certificate",
+  "eigenvalue": {
+    "a": "43",
+    "b": "2",
+    "decimal": "85.9883705204093540784880"
+  },
+  "periodic_phases": [
+    {
+      "state": "",
+      "high": false,
+      "period": "313121"
+    },
+    {
+      "state": "",
+      "high": true,
+      "period": "131312"
+    },
+    {
+      "state": "3",
+      "high": true,
+      "period": "131213"
+    },
+    {
+      "state": "31",
+      "high": false,
+      "period": "312131"
+    },
+    {
+      "state": "313",
+      "high": true,
+      "period": "121313"
+    },
+    {
+      "state": "3131",
+      "high": false,
+      "period": "213131"
+    }
+  ],
+  "initial_family_anchor_ratio": {
+    "a": "2941188465121/6906504888529",
+    "b": "134881150564/6906504888529",
+    "decimal": "0.8456301700666860081461"
+  }
+}

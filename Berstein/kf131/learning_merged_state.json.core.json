@@ -1,0 +1,31 @@
+{
+  "types": 212861,
+  "retained_rules": 263338,
+  "types_with_multiple_rules": 31272,
+  "maximum_rules_per_type": 316,
+  "supported_nodes": [],
+  "scope": "all retained rules; no floating-point negative filters applied",
+  "output_sha256": "b051bba47a80bd19b44a0b0d8ab6b97e69373c0b24e9991abea7eb9194855edd",
+  "sources": [
+    {
+      "path": "/tmp/kf131_learning_memory7/stage_01.json.catalog.json",
+      "sha256": "881e2bdbfca66a40d9f4444ad46200bf7298e22137dd299df8074edefb26682d"
+    },
+    {
+      "path": "/tmp/kf131_learning_memory/stage_01.json.catalog.json",
+      "sha256": "2d88a0a7b367c5b2b38be33966b21e71281b1bdbba920ac6b3883f56eb414976"
+    },
+    {
+      "path": "/tmp/kf131_learning_reuse/stage_01.json.catalog.json",
+      "sha256": "7bdf1ed7b1260c696e9d4437836d00948419fd0f042995b3de76d493de08f9c8"
+    },
+    {
+      "path": "/tmp/kf131_alternative_first/stage_03.json.catalog.json",
+      "sha256": "0ff54fb962f2b53fd2b655438b631e1eece3695b0a14f1e6dd0de5652e875098"
+    },
+    {
+      "path": "/tmp/kf131_alternative_first/stage_04.json.catalog.json",
+      "sha256": "38c57f940edc76518be02bda4dfc548953f3f3b6ef0b99901c7adf29114cecc4"
+    }
+  ]
+}

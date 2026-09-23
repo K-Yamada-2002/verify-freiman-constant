@@ -1,0 +1,99 @@
+{
+  "status": "floating discovery only; requires exact verification",
+  "nonempty_fixed_point": false,
+  "history": [
+    {
+      "round": 0,
+      "nonempty_cells": 1800,
+      "components": 2786,
+      "changed": 540
+    },
+    {
+      "round": 1,
+      "nonempty_cells": 1800,
+      "components": 3615,
+      "changed": 703
+    },
+    {
+      "round": 2,
+      "nonempty_cells": 1800,
+      "components": 4205,
+      "changed": 585
+    },
+    {
+      "round": 3,
+      "nonempty_cells": 1800,
+      "components": 4842,
+      "changed": 650
+    },
+    {
+      "round": 4,
+      "nonempty_cells": 1800,
+      "components": 5310,
+      "changed": 644
+    },
+    {
+      "round": 5,
+      "nonempty_cells": 1800,
+      "components": 6022,
+      "changed": 781
+    },
+    {
+      "round": 6,
+      "nonempty_cells": 1800,
+      "components": 6857,
+      "changed": 1304
+    },
+    {
+      "round": 7,
+      "nonempty_cells": 1800,
+      "components": 8280,
+      "changed": 1722
+    },
+    {
+      "round": 8,
+      "nonempty_cells": 1799,
+      "components": 9950,
+      "changed": 1792
+    },
+    {
+      "round": 9,
+      "nonempty_cells": 1733,
+      "components": 6654,
+      "changed": 1797
+    },
+    {
+      "round": 10,
+      "nonempty_cells": 647,
+      "components": 940,
+      "changed": 1727
+    },
+    {
+      "round": 11,
+      "nonempty_cells": 36,
+      "components": 40,
+      "changed": 639
+    },
+    {
+      "round": 12,
+      "nonempty_cells": 0,
+      "components": 0,
+      "changed": 36
+    },
+    {
+      "round": 13,
+      "nonempty_cells": 0,
+      "components": 0,
+      "changed": 0
+    }
+  ],
+  "survivors": [],
+  "settings": {
+    "bins": 25,
+    "base": 0.88,
+    "max_step": 2,
+    "rounds": 40,
+    "states": 6,
+    "output": null
+  }
+}

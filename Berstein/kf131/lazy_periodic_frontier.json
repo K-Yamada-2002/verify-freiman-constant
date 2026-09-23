@@ -1,0 +1,11070 @@
+{
+  "root_prefixes": [
+    "112222222",
+    "122222222"
+  ],
+  "status": "extracted local rules; discarded continuations remain explicit open obligations",
+  "settings": {
+    "menu_depth": 2,
+    "pool": "periodic",
+    "grid_power": 9,
+    "memory": 6,
+    "bins": 1024,
+    "base": 0.998,
+    "max_step": 3
+  },
+  "closed_candidate": false,
+  "open_nodes": 214,
+  "processed_tasks": 166044,
+  "queued_tasks": 450934,
+  "history": [],
+  "roots": [
+    0
+  ],
+  "nodes": [
+    {
+      "id": 0,
+      "states": [
+        "222222",
+        "222222"
+      ],
+      "parity": 1,
+      "ratio_bin": 346,
+      "lower": [
+        "23",
+        false,
+        "21",
+        false
+      ],
+      "upper": [
+        "31",
+        true,
+        "12~2",
+        false
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            "21"
+          ],
+          "lower": [
+            "33",
+            true,
+            "32",
+            false
+          ],
+          "upper": [
+            "33~2",
+            false,
+            "32",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 1,
+              "swap": false
+            },
+            {
+              "node": 2,
+              "swap": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "states": [
+        "222222",
+        "222221"
+      ],
+      "parity": -1,
+      "ratio_bin": 790,
+      "lower": [
+        "33",
+        false,
+        "22",
+        true
+      ],
+      "upper": [
+        "22",
+        false,
+        "12",
+        false
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            "2"
+          ],
+          "lower": [
+            "33",
+            true,
+            "21",
+            false
+          ],
+          "upper": [
+            "33",
+            false,
+            "11~2",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 3,
+              "swap": false
+            },
+            {
+              "node": 4,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "2",
+            "1"
+          ],
+          "lower": [
+            "12",
+            true,
+            "33",
+            false
+          ],
+          "upper": [
+            "23",
+            true,
+            "23",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 5,
+              "swap": false
+            },
+            {
+              "node": 6,
+              "swap": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "states": [
+        "222222",
+        "222221"
+      ],
+      "parity": -1,
+      "ratio_bin": 791,
+      "lower": [
+        "32",
+        false,
+        "21",
+        false
+      ],
+      "upper": [
+        "22",
+        true,
+        "12",
+        true
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            "2"
+          ],
+          "lower": [
+            "23",
+            true,
+            "13",
+            true
+          ],
+          "upper": [
+            "33",
+            false,
+            "11~2",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 7,
+              "swap": false
+            },
+            {
+              "node": 8,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "2",
+            "1"
+          ],
+          "lower": [
+            "12",
+            true,
+            "32",
+            true
+          ],
+          "upper": [
+            "21",
+            false,
+            "21",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 6,
+              "swap": false
+            },
+            {
+              "node": 9,
+              "swap": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "states": [
+        "222223",
+        "222212"
+      ],
+      "parity": -1,
+      "ratio_bin": 487,
+      "lower": [
+        "33",
+        false,
+        "11~2",
+        false
+      ],
+      "upper": [
+        "33",
+        true,
+        "21",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 4,
+      "states": [
+        "222223",
+        "222212"
+      ],
+      "parity": -1,
+      "ratio_bin": 488,
+      "lower": [
+        "33",
+        false,
+        "11~2",
+        false
+      ],
+      "upper": [
+        "33",
+        true,
+        "21",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 5,
+      "states": [
+        "222222",
+        "222211"
+      ],
+      "parity": -1,
+      "ratio_bin": 404,
+      "lower": [
+        "23",
+        true,
+        "23",
+        true
+      ],
+      "upper": [
+        "12",
+        true,
+        "33",
+        false
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "lower": [
+            "31",
+            false,
+            "31",
+            false
+          ],
+          "upper": [
+            "31",
+            false,
+            "12",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 10,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "lower": [
+            "11",
+            true,
+            "13",
+            false
+          ],
+          "upper": [
+            "32",
+            false,
+            "21~2",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 11,
+              "swap": true
+            },
+            {
+              "node": 12,
+              "swap": true
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "lower": [
+            "32",
+            false,
+            "21~2",
+            false
+          ],
+          "upper": [
+            "21",
+            false,
+            "33",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 13,
+              "swap": true
+            },
+            {
+              "node": 14,
+              "swap": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "states": [
+        "222222",
+        "222211"
+      ],
+      "parity": -1,
+      "ratio_bin": 405,
+      "lower": [
+        "21",
+        false,
+        "21",
+        false
+      ],
+      "upper": [
+        "12",
+        true,
+        "32",
+        true
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "lower": [
+            "13",
+            true,
+            "13",
+            true
+          ],
+          "upper": [
+            "31",
+            false,
+            "12",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 15,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "lower": [
+            "12~2",
+            false,
+            "12~2",
+            false
+          ],
+          "upper": [
+            "21~2",
+            false,
+            "32",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 16,
+              "swap": true
+            },
+            {
+              "node": 17,
+              "swap": true
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "lower": [
+            "21~2",
+            false,
+            "32",
+            false
+          ],
+          "upper": [
+            "21",
+            false,
+            "32",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 16,
+              "swap": true
+            },
+            {
+              "node": 18,
+              "swap": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "states": [
+        "222223",
+        "222212"
+      ],
+      "parity": -1,
+      "ratio_bin": 488,
+      "lower": [
+        "33",
+        false,
+        "11~2",
+        false
+      ],
+      "upper": [
+        "23",
+        true,
+        "13",
+        true
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "lower": [
+            "33",
+            true,
+            "11~2",
+            false
+          ],
+          "upper": [
+            "12",
+            false,
+            "23",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 19,
+              "swap": true
+            },
+            {
+              "node": 20,
+              "swap": true
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "2",
+            "1"
+          ],
+          "lower": [
+            "11",
+            true,
+            "32~2",
+            false
+          ],
+          "upper": [
+            "31",
+            false,
+            "32",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 21,
+              "swap": false
+            },
+            {
+              "node": 22,
+              "swap": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "states": [
+        "222223",
+        "222212"
+      ],
+      "parity": -1,
+      "ratio_bin": 489,
+      "lower": [
+        "33",
+        false,
+        "11~2",
+        false
+      ],
+      "upper": [
+        "23",
+        true,
+        "13",
+        true
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "lower": [
+            "33",
+            true,
+            "11~2",
+            false
+          ],
+          "upper": [
+            "12",
+            false,
+            "23",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 23,
+              "swap": true
+            },
+            {
+              "node": 19,
+              "swap": true
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "2",
+            "1"
+          ],
+          "lower": [
+            "11",
+            true,
+            "32~2",
+            false
+          ],
+          "upper": [
+            "31",
+            false,
+            "32",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 22,
+              "swap": false
+            },
+            {
+              "node": 24,
+              "swap": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "states": [
+        "222222",
+        "222211"
+      ],
+      "parity": -1,
+      "ratio_bin": 406,
+      "lower": [
+        "21",
+        false,
+        "21",
+        false
+      ],
+      "upper": [
+        "12",
+        true,
+        "32",
+        true
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "lower": [
+            "13",
+            true,
+            "13",
+            true
+          ],
+          "upper": [
+            "31",
+            false,
+            "12",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 25,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "lower": [
+            "12~2",
+            false,
+            "12~2",
+            false
+          ],
+          "upper": [
+            "21",
+            false,
+            "32",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 26,
+              "swap": true
+            },
+            {
+              "node": 16,
+              "swap": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "states": [
+        "222222",
+        "222112"
+      ],
+      "parity": -1,
+      "ratio_bin": 404,
+      "lower": [
+        "31",
+        false,
+        "12",
+        true
+      ],
+      "upper": [
+        "31",
+        false,
+        "31",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 11,
+      "states": [
+        "222211",
+        "222221"
+      ],
+      "parity": 1,
+      "ratio_bin": 39,
+      "lower": [
+        "21~2",
+        false,
+        "32",
+        false
+      ],
+      "upper": [
+        "13",
+        false,
+        "11",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 12,
+      "states": [
+        "222211",
+        "222221"
+      ],
+      "parity": 1,
+      "ratio_bin": 40,
+      "lower": [
+        "21~2",
+        false,
+        "32",
+        false
+      ],
+      "upper": [
+        "13",
+        false,
+        "11",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 13,
+      "states": [
+        "222211",
+        "222221"
+      ],
+      "parity": 1,
+      "ratio_bin": 39,
+      "lower": [
+        "33",
+        false,
+        "21",
+        false
+      ],
+      "upper": [
+        "21~2",
+        false,
+        "32",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 14,
+      "states": [
+        "222211",
+        "222221"
+      ],
+      "parity": 1,
+      "ratio_bin": 40,
+      "lower": [
+        "33",
+        false,
+        "21",
+        false
+      ],
+      "upper": [
+        "21~2",
+        false,
+        "32",
+        false
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            "21"
+          ],
+          "lower": [
+            "33",
+            true,
+            "32",
+            false
+          ],
+          "upper": [
+            "33~2",
+            false,
+            "33",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 27,
+              "swap": false
+            },
+            {
+              "node": 28,
+              "swap": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "states": [
+        "222222",
+        "222112"
+      ],
+      "parity": -1,
+      "ratio_bin": 405,
+      "lower": [
+        "31",
+        false,
+        "12",
+        true
+      ],
+      "upper": [
+        "13",
+        true,
+        "13",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 16,
+      "states": [
+        "222211",
+        "222221"
+      ],
+      "parity": 1,
+      "ratio_bin": 38,
+      "lower": [
+        "32",
+        true,
+        "21",
+        false
+      ],
+      "upper": [
+        "12~2",
+        false,
+        "12~2",
+        false
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            "2"
+          ],
+          "lower": [
+            "21",
+            false,
+            "13",
+            true
+          ],
+          "upper": [
+            "31",
+            true,
+            "11",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 29,
+              "swap": true
+            },
+            {
+              "node": 30,
+              "swap": true
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "21",
+            "3"
+          ],
+          "lower": [
+            "11",
+            true,
+            "31~2",
+            false
+          ],
+          "upper": [
+            "12",
+            true,
+            "31~2",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 31,
+              "swap": true
+            },
+            {
+              "node": 32,
+              "swap": true
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "",
+            "2"
+          ],
+          "lower": [
+            "32",
+            false,
+            "23",
+            false
+          ],
+          "upper": [
+            "22",
+            true,
+            "31",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 33,
+              "swap": false
+            },
+            {
+              "node": 34,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "3",
+            "11"
+          ],
+          "lower": [
+            "22",
+            true,
+            "11",
+            false
+          ],
+          "upper": [
+            "21",
+            false,
+            "12",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 35,
+              "swap": true
+            },
+            {
+              "node": 36,
+              "swap": true
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "1",
+            "3"
+          ],
+          "lower": [
+            "11",
+            true,
+            "22",
+            true
+          ],
+          "upper": [
+            "11",
+            false,
+            "22",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 37,
+              "swap": false
+            },
+            {
+              "node": 38,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "2",
+            "11"
+          ],
+          "lower": [
+            "12~2",
+            false,
+            "32",
+            true
+          ],
+          "upper": [
+            "13~2",
+            false,
+            "21",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 39,
+              "swap": false
+            },
+            {
+              "node": 40,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "lower": [
+            "11~2",
+            false,
+            "33",
+            false
+          ],
+          "upper": [
+            "22~2",
+            false,
+            "12~2",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 41,
+              "swap": true
+            },
+            {
+              "node": 42,
+              "swap": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "states": [
+        "222211",
+        "222221"
+      ],
+      "parity": 1,
+      "ratio_bin": 39,
+      "lower": [
+        "32",
+        false,
+        "21~2",
+        false
+      ],
+      "upper": [
+        "12~2",
+        false,
+        "12~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 18,
+      "states": [
+        "222211",
+        "222221"
+      ],
+      "parity": 1,
+      "ratio_bin": 39,
+      "lower": [
+        "32",
+        true,
+        "21",
+        false
+      ],
+      "upper": [
+        "32",
+        false,
+        "21~2",
+        false
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            "2"
+          ],
+          "lower": [
+            "21",
+            false,
+            "13",
+            true
+          ],
+          "upper": [
+            "23",
+            true,
+            "12~2",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 43,
+              "swap": true
+            },
+            {
+              "node": 44,
+              "swap": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "states": [
+        "222212",
+        "222233"
+      ],
+      "parity": 1,
+      "ratio_bin": 705,
+      "lower": [
+        "23",
+        false,
+        "12",
+        false
+      ],
+      "upper": [
+        "11~2",
+        false,
+        "33",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 20,
+      "states": [
+        "222212",
+        "222233"
+      ],
+      "parity": 1,
+      "ratio_bin": 706,
+      "lower": [
+        "23",
+        false,
+        "12",
+        false
+      ],
+      "upper": [
+        "11~2",
+        false,
+        "33",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 21,
+      "states": [
+        "222232",
+        "222121"
+      ],
+      "parity": -1,
+      "ratio_bin": 43,
+      "lower": [
+        "31",
+        false,
+        "32",
+        false
+      ],
+      "upper": [
+        "11",
+        true,
+        "32~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 22,
+      "states": [
+        "222232",
+        "222121"
+      ],
+      "parity": -1,
+      "ratio_bin": 44,
+      "lower": [
+        "31",
+        false,
+        "32",
+        false
+      ],
+      "upper": [
+        "11",
+        true,
+        "32~2",
+        false
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "lower": [
+            "12",
+            false,
+            "23",
+            true
+          ],
+          "upper": [
+            "32",
+            false,
+            "13",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 45,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "lower": [
+            "23~2",
+            false,
+            "11",
+            true
+          ],
+          "upper": [
+            "11",
+            false,
+            "32~2",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 46,
+              "swap": true
+            },
+            {
+              "node": 47,
+              "swap": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "states": [
+        "222212",
+        "222233"
+      ],
+      "parity": 1,
+      "ratio_bin": 704,
+      "lower": [
+        "23",
+        false,
+        "12",
+        false
+      ],
+      "upper": [
+        "11~2",
+        false,
+        "33",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 24,
+      "states": [
+        "222232",
+        "222121"
+      ],
+      "parity": -1,
+      "ratio_bin": 45,
+      "lower": [
+        "31",
+        false,
+        "32",
+        false
+      ],
+      "upper": [
+        "11",
+        true,
+        "32~2",
+        false
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "lower": [
+            "12",
+            false,
+            "23",
+            true
+          ],
+          "upper": [
+            "32",
+            false,
+            "13",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 48,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "lower": [
+            "23",
+            true,
+            "11",
+            true
+          ],
+          "upper": [
+            "11",
+            false,
+            "32~2",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 49,
+              "swap": true
+            },
+            {
+              "node": 50,
+              "swap": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "states": [
+        "222222",
+        "222112"
+      ],
+      "parity": -1,
+      "ratio_bin": 406,
+      "lower": [
+        "31",
+        false,
+        "12",
+        true
+      ],
+      "upper": [
+        "13",
+        true,
+        "13",
+        true
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "lower": [
+            "31",
+            false,
+            "21",
+            false
+          ],
+          "upper": [
+            "23",
+            true,
+            "12",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 51,
+              "swap": false
+            },
+            {
+              "node": 52,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "lower": [
+            "13",
+            false,
+            "11~2",
+            false
+          ],
+          "upper": [
+            "31",
+            false,
+            "12",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 53,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "lower": [
+            "11~2",
+            false,
+            "23",
+            true
+          ],
+          "upper": [
+            "13",
+            true,
+            "32",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 54,
+              "swap": false
+            },
+            {
+              "node": 55,
+              "swap": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "states": [
+        "222211",
+        "222221"
+      ],
+      "parity": 1,
+      "ratio_bin": 37,
+      "lower": [
+        "32",
+        true,
+        "21",
+        false
+      ],
+      "upper": [
+        "12~2",
+        false,
+        "12~2",
+        false
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            "2"
+          ],
+          "lower": [
+            "21",
+            false,
+            "13",
+            true
+          ],
+          "upper": [
+            "31",
+            true,
+            "11",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 30,
+              "swap": true
+            },
+            {
+              "node": 56,
+              "swap": true
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "21",
+            "3"
+          ],
+          "lower": [
+            "12",
+            false,
+            "32",
+            true
+          ],
+          "upper": [
+            "12",
+            true,
+            "31~2",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 32,
+              "swap": true
+            },
+            {
+              "node": 57,
+              "swap": true
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "",
+            "2"
+          ],
+          "lower": [
+            "32",
+            false,
+            "23",
+            false
+          ],
+          "upper": [
+            "22",
+            true,
+            "31",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 58,
+              "swap": false
+            },
+            {
+              "node": 33,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "lower": [
+            "21",
+            false,
+            "31",
+            false
+          ],
+          "upper": [
+            "31~2",
+            false,
+            "21",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 59,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "3",
+            "11"
+          ],
+          "lower": [
+            "22",
+            true,
+            "11",
+            false
+          ],
+          "upper": [
+            "21",
+            false,
+            "12",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 36,
+              "swap": true
+            },
+            {
+              "node": 60,
+              "swap": true
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "1",
+            "3"
+          ],
+          "lower": [
+            "11",
+            true,
+            "22",
+            true
+          ],
+          "upper": [
+            "11",
+            false,
+            "22",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 61,
+              "swap": false
+            },
+            {
+              "node": 37,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "2",
+            "11"
+          ],
+          "lower": [
+            "12~2",
+            false,
+            "32",
+            true
+          ],
+          "upper": [
+            "13~2",
+            false,
+            "21",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 62,
+              "swap": false
+            },
+            {
+              "node": 39,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "lower": [
+            "11~2",
+            false,
+            "33",
+            false
+          ],
+          "upper": [
+            "22~2",
+            false,
+            "12~2",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 42,
+              "swap": true
+            },
+            {
+              "node": 63,
+              "swap": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "states": [
+        "222113",
+        "222121"
+      ],
+      "parity": -1,
+      "ratio_bin": 188,
+      "lower": [
+        "33~2",
+        false,
+        "33",
+        false
+      ],
+      "upper": [
+        "33",
+        true,
+        "32",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 28,
+      "states": [
+        "222113",
+        "222121"
+      ],
+      "parity": -1,
+      "ratio_bin": 189,
+      "lower": [
+        "33~2",
+        false,
+        "33",
+        false
+      ],
+      "upper": [
+        "33",
+        true,
+        "32",
+        false
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "lower": [
+            "12",
+            true,
+            "11",
+            false
+          ],
+          "upper": [
+            "23",
+            true,
+            "32",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 64,
+              "swap": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "states": [
+        "222212",
+        "222113"
+      ],
+      "parity": 1,
+      "ratio_bin": 248,
+      "lower": [
+        "11",
+        false,
+        "31",
+        true
+      ],
+      "upper": [
+        "13",
+        true,
+        "21",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 30,
+      "states": [
+        "222212",
+        "222113"
+      ],
+      "parity": 1,
+      "ratio_bin": 249,
+      "lower": [
+        "11",
+        false,
+        "31",
+        true
+      ],
+      "upper": [
+        "13",
+        true,
+        "21",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 31,
+      "states": [
+        "222213",
+        "221121"
+      ],
+      "parity": -1,
+      "ratio_bin": 122,
+      "lower": [
+        "31~2",
+        false,
+        "12",
+        true
+      ],
+      "upper": [
+        "31~2",
+        false,
+        "11",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 32,
+      "states": [
+        "222213",
+        "221121"
+      ],
+      "parity": -1,
+      "ratio_bin": 123,
+      "lower": [
+        "31~2",
+        false,
+        "12",
+        true
+      ],
+      "upper": [
+        "31~2",
+        false,
+        "11",
+        true
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "lower": [
+            "31~2",
+            false,
+            "21",
+            false
+          ],
+          "upper": [
+            "31~2",
+            false,
+            "11",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 65,
+              "swap": false
+            },
+            {
+              "node": 66,
+              "swap": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "states": [
+        "222211",
+        "222212"
+      ],
+      "parity": -1,
+      "ratio_bin": 918,
+      "lower": [
+        "32",
+        false,
+        "23",
+        false
+      ],
+      "upper": [
+        "22",
+        true,
+        "31",
+        false
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "lower": [
+            "23",
+            true,
+            "23",
+            false
+          ],
+          "upper": [
+            "31",
+            false,
+            "31~2",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 67,
+              "swap": true
+            },
+            {
+              "node": 68,
+              "swap": true
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "lower": [
+            "12",
+            false,
+            "12",
+            true
+          ],
+          "upper": [
+            "21",
+            false,
+            "31",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 69,
+              "swap": false
+            },
+            {
+              "node": 70,
+              "swap": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "states": [
+        "222211",
+        "222212"
+      ],
+      "parity": -1,
+      "ratio_bin": 919,
+      "lower": [
+        "32",
+        false,
+        "23",
+        false
+      ],
+      "upper": [
+        "22",
+        true,
+        "31",
+        false
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "lower": [
+            "23",
+            true,
+            "23",
+            false
+          ],
+          "upper": [
+            "31",
+            false,
+            "31~2",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 71,
+              "swap": true
+            },
+            {
+              "node": 67,
+              "swap": true
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "lower": [
+            "12",
+            false,
+            "12",
+            true
+          ],
+          "upper": [
+            "21",
+            false,
+            "31",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 70,
+              "swap": false
+            },
+            {
+              "node": 72,
+              "swap": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "states": [
+        "222111",
+        "222113"
+      ],
+      "parity": -1,
+      "ratio_bin": 158,
+      "lower": [
+        "11",
+        false,
+        "22",
+        true
+      ],
+      "upper": [
+        "12",
+        true,
+        "21",
+        false
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "lower": [
+            "13",
+            true,
+            "22",
+            true
+          ],
+          "upper": [
+            "11",
+            false,
+            "31",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 73,
+              "swap": true
+            },
+            {
+              "node": 74,
+              "swap": true
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "lower": [
+            "11",
+            false,
+            "31",
+            false
+          ],
+          "upper": [
+            "21",
+            false,
+            "21",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 75,
+              "swap": true
+            },
+            {
+              "node": 76,
+              "swap": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "states": [
+        "222111",
+        "222113"
+      ],
+      "parity": -1,
+      "ratio_bin": 159,
+      "lower": [
+        "11",
+        false,
+        "22",
+        true
+      ],
+      "upper": [
+        "12",
+        true,
+        "21",
+        false
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "lower": [
+            "13",
+            true,
+            "22",
+            true
+          ],
+          "upper": [
+            "21",
+            false,
+            "21",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 77,
+              "swap": true
+            },
+            {
+              "node": 78,
+              "swap": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "states": [
+        "222111",
+        "222213"
+      ],
+      "parity": 1,
+      "ratio_bin": 720,
+      "lower": [
+        "11",
+        false,
+        "22",
+        false
+      ],
+      "upper": [
+        "11",
+        true,
+        "22",
+        true
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "11",
+            ""
+          ],
+          "lower": [
+            "32",
+            false,
+            "22",
+            false
+          ],
+          "upper": [
+            "13",
+            true,
+            "22",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 79,
+              "swap": true
+            },
+            {
+              "node": 80,
+              "swap": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "states": [
+        "222111",
+        "222213"
+      ],
+      "parity": 1,
+      "ratio_bin": 721,
+      "lower": [
+        "11",
+        false,
+        "22",
+        false
+      ],
+      "upper": [
+        "11",
+        true,
+        "22",
+        true
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "11",
+            ""
+          ],
+          "lower": [
+            "32",
+            false,
+            "22",
+            false
+          ],
+          "upper": [
+            "13",
+            true,
+            "22",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 81,
+              "swap": true
+            },
+            {
+              "node": 79,
+              "swap": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "states": [
+        "222112",
+        "222111"
+      ],
+      "parity": -1,
+      "ratio_bin": 127,
+      "lower": [
+        "13~2",
+        false,
+        "21",
+        true
+      ],
+      "upper": [
+        "12~2",
+        false,
+        "32",
+        true
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "lower": [
+            "32~2",
+            false,
+            "21",
+            true
+          ],
+          "upper": [
+            "22~2",
+            false,
+            "32",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 82,
+              "swap": true
+            },
+            {
+              "node": 83,
+              "swap": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "states": [
+        "222112",
+        "222111"
+      ],
+      "parity": -1,
+      "ratio_bin": 128,
+      "lower": [
+        "13~2",
+        false,
+        "21",
+        true
+      ],
+      "upper": [
+        "12~2",
+        false,
+        "32",
+        true
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "lower": [
+            "32~2",
+            false,
+            "21",
+            true
+          ],
+          "upper": [
+            "22~2",
+            false,
+            "32",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 84,
+              "swap": true
+            },
+            {
+              "node": 82,
+              "swap": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "states": [
+        "222221",
+        "222111"
+      ],
+      "parity": -1,
+      "ratio_bin": 436,
+      "lower": [
+        "33",
+        false,
+        "11~2",
+        false
+      ],
+      "upper": [
+        "12~2",
+        false,
+        "22~2",
+        false
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "lower": [
+            "33",
+            false,
+            "12~2",
+            false
+          ],
+          "upper": [
+            "21~2",
+            false,
+            "33",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 85,
+              "swap": false
+            },
+            {
+              "node": 86,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "21",
+            ""
+          ],
+          "lower": [
+            "22~2",
+            false,
+            "13",
+            false
+          ],
+          "upper": [
+            "22",
+            true,
+            "13",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 87,
+              "swap": true
+            },
+            {
+              "node": 88,
+              "swap": true
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "2",
+            "12"
+          ],
+          "lower": [
+            "13",
+            true,
+            "12",
+            true
+          ],
+          "upper": [
+            "13",
+            false,
+            "12",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 89,
+              "swap": false
+            },
+            {
+              "node": 90,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "lower": [
+            "12",
+            false,
+            "13",
+            false
+          ],
+          "upper": [
+            "21",
+            false,
+            "32~2",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 91,
+              "swap": true
+            },
+            {
+              "node": 92,
+              "swap": true
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "lower": [
+            "11",
+            true,
+            "12",
+            true
+          ],
+          "upper": [
+            "22~2",
+            false,
+            "22~2",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 93,
+              "swap": true
+            },
+            {
+              "node": 94,
+              "swap": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "states": [
+        "222221",
+        "222111"
+      ],
+      "parity": -1,
+      "ratio_bin": 437,
+      "lower": [
+        "33",
+        false,
+        "11~2",
+        false
+      ],
+      "upper": [
+        "12~2",
+        false,
+        "22~2",
+        false
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "lower": [
+            "33",
+            false,
+            "12~2",
+            false
+          ],
+          "upper": [
+            "23~2",
+            false,
+            "13",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 95,
+              "swap": false
+            },
+            {
+              "node": 96,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "lower": [
+            "13",
+            true,
+            "12~2",
+            false
+          ],
+          "upper": [
+            "31",
+            false,
+            "12",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 97,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "lower": [
+            "12",
+            true,
+            "12",
+            false
+          ],
+          "upper": [
+            "22~2",
+            false,
+            "22~2",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 98,
+              "swap": true
+            },
+            {
+              "node": 93,
+              "swap": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "states": [
+        "222212",
+        "222113"
+      ],
+      "parity": 1,
+      "ratio_bin": 247,
+      "lower": [
+        "12~2",
+        false,
+        "23",
+        true
+      ],
+      "upper": [
+        "13",
+        true,
+        "21",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 44,
+      "states": [
+        "222212",
+        "222113"
+      ],
+      "parity": 1,
+      "ratio_bin": 248,
+      "lower": [
+        "12~2",
+        false,
+        "23",
+        true
+      ],
+      "upper": [
+        "13",
+        true,
+        "21",
+        false
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "lower": [
+            "22~2",
+            false,
+            "23",
+            true
+          ],
+          "upper": [
+            "32",
+            false,
+            "21",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 99,
+              "swap": true
+            },
+            {
+              "node": 100,
+              "swap": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "states": [
+        "222322",
+        "221212"
+      ],
+      "parity": -1,
+      "ratio_bin": 44,
+      "lower": [
+        "32",
+        false,
+        "13",
+        true
+      ],
+      "upper": [
+        "12",
+        false,
+        "23",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 46,
+      "states": [
+        "222121",
+        "222321"
+      ],
+      "parity": 1,
+      "ratio_bin": 403,
+      "lower": [
+        "32~2",
+        false,
+        "11",
+        false
+      ],
+      "upper": [
+        "11",
+        true,
+        "23~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 47,
+      "states": [
+        "222121",
+        "222321"
+      ],
+      "parity": 1,
+      "ratio_bin": 404,
+      "lower": [
+        "32~2",
+        false,
+        "11",
+        false
+      ],
+      "upper": [
+        "11",
+        true,
+        "23~2",
+        false
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "lower": [
+            "12",
+            true,
+            "12",
+            false
+          ],
+          "upper": [
+            "31",
+            false,
+            "31~2",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 101,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "lower": [
+            "31~2",
+            false,
+            "23",
+            true
+          ],
+          "upper": [
+            "31~2",
+            false,
+            "12",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 102,
+              "swap": true
+            },
+            {
+              "node": 103,
+              "swap": true
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "11",
+            ""
+          ],
+          "lower": [
+            "32",
+            true,
+            "23",
+            false
+          ],
+          "upper": [
+            "13",
+            true,
+            "23~2",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 104,
+              "swap": true
+            },
+            {
+              "node": 105,
+              "swap": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "states": [
+        "222322",
+        "221212"
+      ],
+      "parity": -1,
+      "ratio_bin": 45,
+      "lower": [
+        "32",
+        false,
+        "13",
+        true
+      ],
+      "upper": [
+        "12",
+        false,
+        "23",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 49,
+      "states": [
+        "222121",
+        "222321"
+      ],
+      "parity": 1,
+      "ratio_bin": 402,
+      "lower": [
+        "32~2",
+        false,
+        "11",
+        false
+      ],
+      "upper": [
+        "11",
+        true,
+        "23",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 50,
+      "states": [
+        "222121",
+        "222321"
+      ],
+      "parity": 1,
+      "ratio_bin": 403,
+      "lower": [
+        "32~2",
+        false,
+        "11",
+        false
+      ],
+      "upper": [
+        "11",
+        true,
+        "23",
+        true
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "lower": [
+            "12",
+            false,
+            "13",
+            true
+          ],
+          "upper": [
+            "31",
+            false,
+            "31~2",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 106,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "lower": [
+            "31~2",
+            false,
+            "23",
+            true
+          ],
+          "upper": [
+            "31~2",
+            false,
+            "12",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 103,
+              "swap": true
+            },
+            {
+              "node": 107,
+              "swap": true
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "11",
+            "2"
+          ],
+          "lower": [
+            "32",
+            false,
+            "32",
+            false
+          ],
+          "upper": [
+            "13",
+            false,
+            "31",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 108,
+              "swap": false
+            },
+            {
+              "node": 109,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "11",
+            ""
+          ],
+          "lower": [
+            "13",
+            true,
+            "23~2",
+            false
+          ],
+          "upper": [
+            "13",
+            true,
+            "23",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 110,
+              "swap": true
+            },
+            {
+              "node": 111,
+              "swap": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "states": [
+        "222222",
+        "221121"
+      ],
+      "parity": 1,
+      "ratio_bin": 845,
+      "lower": [
+        "31",
+        false,
+        "21",
+        false
+      ],
+      "upper": [
+        "23",
+        true,
+        "12",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 52,
+      "states": [
+        "222222",
+        "221121"
+      ],
+      "parity": 1,
+      "ratio_bin": 846,
+      "lower": [
+        "31",
+        false,
+        "21",
+        false
+      ],
+      "upper": [
+        "23",
+        true,
+        "12",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 53,
+      "states": [
+        "222222",
+        "221122"
+      ],
+      "parity": -1,
+      "ratio_bin": 406,
+      "lower": [
+        "31",
+        false,
+        "12",
+        true
+      ],
+      "upper": [
+        "13",
+        false,
+        "11~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 54,
+      "states": [
+        "222222",
+        "221121"
+      ],
+      "parity": 1,
+      "ratio_bin": 845,
+      "lower": [
+        "11~2",
+        false,
+        "23",
+        true
+      ],
+      "upper": [
+        "13",
+        true,
+        "32",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 55,
+      "states": [
+        "222222",
+        "221121"
+      ],
+      "parity": 1,
+      "ratio_bin": 846,
+      "lower": [
+        "11~2",
+        false,
+        "23",
+        true
+      ],
+      "upper": [
+        "13",
+        true,
+        "32",
+        false
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "lower": [
+            "12~2",
+            false,
+            "23",
+            true
+          ],
+          "upper": [
+            "13",
+            false,
+            "11~2",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 112,
+              "swap": false
+            },
+            {
+              "node": 113,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "1",
+            "1"
+          ],
+          "lower": [
+            "13",
+            false,
+            "12~2",
+            false
+          ],
+          "upper": [
+            "13",
+            false,
+            "12",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 114,
+              "swap": false
+            },
+            {
+              "node": 115,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "11",
+            "2"
+          ],
+          "lower": [
+            "11",
+            false,
+            "12",
+            true
+          ],
+          "upper": [
+            "11",
+            false,
+            "12",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 116,
+              "swap": false
+            },
+            {
+              "node": 117,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "lower": [
+            "11",
+            true,
+            "21~2",
+            false
+          ],
+          "upper": [
+            "32",
+            false,
+            "32",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 118,
+              "swap": false
+            },
+            {
+              "node": 119,
+              "swap": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "states": [
+        "222212",
+        "222113"
+      ],
+      "parity": 1,
+      "ratio_bin": 250,
+      "lower": [
+        "11",
+        false,
+        "31",
+        true
+      ],
+      "upper": [
+        "13",
+        true,
+        "21",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 57,
+      "states": [
+        "222213",
+        "221121"
+      ],
+      "parity": -1,
+      "ratio_bin": 124,
+      "lower": [
+        "31~2",
+        false,
+        "12",
+        true
+      ],
+      "upper": [
+        "32",
+        true,
+        "12",
+        false
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "lower": [
+            "31~2",
+            false,
+            "21",
+            false
+          ],
+          "upper": [
+            "32",
+            true,
+            "23",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 66,
+              "swap": false
+            },
+            {
+              "node": 120,
+              "swap": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "states": [
+        "222211",
+        "222212"
+      ],
+      "parity": -1,
+      "ratio_bin": 917,
+      "lower": [
+        "32",
+        false,
+        "23",
+        false
+      ],
+      "upper": [
+        "22",
+        true,
+        "31",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 59,
+      "states": [
+        "222112",
+        "222212"
+      ],
+      "parity": 1,
+      "ratio_bin": 37,
+      "lower": [
+        "31~2",
+        false,
+        "21",
+        false
+      ],
+      "upper": [
+        "21",
+        false,
+        "31",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 60,
+      "states": [
+        "222111",
+        "222113"
+      ],
+      "parity": -1,
+      "ratio_bin": 160,
+      "lower": [
+        "11",
+        false,
+        "22",
+        true
+      ],
+      "upper": [
+        "12",
+        true,
+        "21",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 61,
+      "states": [
+        "222111",
+        "222213"
+      ],
+      "parity": 1,
+      "ratio_bin": 719,
+      "lower": [
+        "11",
+        false,
+        "22",
+        false
+      ],
+      "upper": [
+        "11",
+        true,
+        "22",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 62,
+      "states": [
+        "222112",
+        "222111"
+      ],
+      "parity": -1,
+      "ratio_bin": 126,
+      "lower": [
+        "13~2",
+        false,
+        "21",
+        true
+      ],
+      "upper": [
+        "12~2",
+        false,
+        "32",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 63,
+      "states": [
+        "222221",
+        "222111"
+      ],
+      "parity": -1,
+      "ratio_bin": 438,
+      "lower": [
+        "33",
+        false,
+        "11~2",
+        false
+      ],
+      "upper": [
+        "12~2",
+        false,
+        "22~2",
+        false
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "lower": [
+            "33",
+            false,
+            "12~2",
+            false
+          ],
+          "upper": [
+            "23~2",
+            false,
+            "13",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 96,
+              "swap": false
+            },
+            {
+              "node": 121,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "lower": [
+            "11~2",
+            false,
+            "33",
+            false
+          ],
+          "upper": [
+            "31",
+            false,
+            "12",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 122,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "lower": [
+            "12",
+            true,
+            "12",
+            false
+          ],
+          "upper": [
+            "22~2",
+            false,
+            "22~2",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 123,
+              "swap": true
+            },
+            {
+              "node": 98,
+              "swap": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "states": [
+        "221132",
+        "221212"
+      ],
+      "parity": -1,
+      "ratio_bin": 189,
+      "lower": [
+        "23",
+        true,
+        "32",
+        false
+      ],
+      "upper": [
+        "12",
+        true,
+        "11",
+        false
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "lower": [
+            "12",
+            false,
+            "11~2",
+            false
+          ],
+          "upper": [
+            "12",
+            true,
+            "13",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 124,
+              "swap": false
+            },
+            {
+              "node": 125,
+              "swap": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "states": [
+        "222213",
+        "211211"
+      ],
+      "parity": 1,
+      "ratio_bin": 619,
+      "lower": [
+        "31~2",
+        false,
+        "21",
+        false
+      ],
+      "upper": [
+        "31~2",
+        false,
+        "11",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 66,
+      "states": [
+        "222213",
+        "211211"
+      ],
+      "parity": 1,
+      "ratio_bin": 620,
+      "lower": [
+        "31~2",
+        false,
+        "21",
+        false
+      ],
+      "upper": [
+        "31~2",
+        false,
+        "11",
+        false
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "lower": [
+            "12~2",
+            false,
+            "21",
+            false
+          ],
+          "upper": [
+            "12~2",
+            false,
+            "11",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 126,
+              "swap": true
+            },
+            {
+              "node": 127,
+              "swap": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "states": [
+        "222212",
+        "222113"
+      ],
+      "parity": 1,
+      "ratio_bin": 248,
+      "lower": [
+        "31~2",
+        false,
+        "31",
+        false
+      ],
+      "upper": [
+        "23",
+        false,
+        "23",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 68,
+      "states": [
+        "222212",
+        "222113"
+      ],
+      "parity": 1,
+      "ratio_bin": 249,
+      "lower": [
+        "31~2",
+        false,
+        "31",
+        false
+      ],
+      "upper": [
+        "23",
+        false,
+        "23",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 69,
+      "states": [
+        "222112",
+        "222212"
+      ],
+      "parity": 1,
+      "ratio_bin": 37,
+      "lower": [
+        "21",
+        false,
+        "31",
+        false
+      ],
+      "upper": [
+        "12",
+        false,
+        "12",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 70,
+      "states": [
+        "222112",
+        "222212"
+      ],
+      "parity": 1,
+      "ratio_bin": 38,
+      "lower": [
+        "21",
+        false,
+        "31",
+        false
+      ],
+      "upper": [
+        "12",
+        false,
+        "12",
+        true
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            "31"
+          ],
+          "lower": [
+            "13",
+            true,
+            "32",
+            false
+          ],
+          "upper": [
+            "13",
+            false,
+            "33",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 128,
+              "swap": false
+            },
+            {
+              "node": 129,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "",
+            "2"
+          ],
+          "lower": [
+            "31",
+            false,
+            "12~2",
+            false
+          ],
+          "upper": [
+            "22",
+            true,
+            "31",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 130,
+              "swap": false
+            },
+            {
+              "node": 131,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "lower": [
+            "21",
+            false,
+            "31",
+            false
+          ],
+          "upper": [
+            "31~2",
+            false,
+            "21",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 132,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "lower": [
+            "12",
+            true,
+            "32",
+            false
+          ],
+          "upper": [
+            "11",
+            false,
+            "33",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 133,
+              "swap": true
+            },
+            {
+              "node": 134,
+              "swap": true
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "",
+            "2"
+          ],
+          "lower": [
+            "11",
+            false,
+            "12",
+            false
+          ],
+          "upper": [
+            "13~2",
+            false,
+            "21",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 135,
+              "swap": false
+            },
+            {
+              "node": 136,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "lower": [
+            "32~2",
+            false,
+            "22",
+            true
+          ],
+          "upper": [
+            "23",
+            true,
+            "12",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 137,
+              "swap": true
+            },
+            {
+              "node": 138,
+              "swap": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "states": [
+        "222212",
+        "222113"
+      ],
+      "parity": 1,
+      "ratio_bin": 247,
+      "lower": [
+        "31~2",
+        false,
+        "31",
+        false
+      ],
+      "upper": [
+        "23",
+        false,
+        "23",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 72,
+      "states": [
+        "222112",
+        "222212"
+      ],
+      "parity": 1,
+      "ratio_bin": 39,
+      "lower": [
+        "21",
+        false,
+        "31",
+        false
+      ],
+      "upper": [
+        "12",
+        false,
+        "12",
+        true
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            "31"
+          ],
+          "lower": [
+            "13",
+            true,
+            "32",
+            false
+          ],
+          "upper": [
+            "13",
+            false,
+            "33",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 129,
+              "swap": false
+            },
+            {
+              "node": 139,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "",
+            "2"
+          ],
+          "lower": [
+            "31",
+            false,
+            "12~2",
+            false
+          ],
+          "upper": [
+            "22",
+            true,
+            "31",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 131,
+              "swap": false
+            },
+            {
+              "node": 140,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "lower": [
+            "12~2",
+            false,
+            "31",
+            true
+          ],
+          "upper": [
+            "23",
+            true,
+            "12",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 141,
+              "swap": true
+            },
+            {
+              "node": 142,
+              "swap": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "states": [
+        "222113",
+        "221111"
+      ],
+      "parity": 1,
+      "ratio_bin": 323,
+      "lower": [
+        "31",
+        false,
+        "11",
+        false
+      ],
+      "upper": [
+        "22",
+        true,
+        "13",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 74,
+      "states": [
+        "222113",
+        "221111"
+      ],
+      "parity": 1,
+      "ratio_bin": 324,
+      "lower": [
+        "31",
+        false,
+        "11",
+        false
+      ],
+      "upper": [
+        "22",
+        true,
+        "13",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 75,
+      "states": [
+        "222113",
+        "221111"
+      ],
+      "parity": 1,
+      "ratio_bin": 323,
+      "lower": [
+        "21",
+        false,
+        "21",
+        false
+      ],
+      "upper": [
+        "31",
+        false,
+        "11",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 76,
+      "states": [
+        "222113",
+        "221111"
+      ],
+      "parity": 1,
+      "ratio_bin": 324,
+      "lower": [
+        "21",
+        false,
+        "21",
+        false
+      ],
+      "upper": [
+        "31",
+        false,
+        "11",
+        false
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "lower": [
+            "13",
+            true,
+            "21",
+            false
+          ],
+          "upper": [
+            "13",
+            false,
+            "21",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 143,
+              "swap": true
+            },
+            {
+              "node": 144,
+              "swap": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "states": [
+        "222113",
+        "221111"
+      ],
+      "parity": 1,
+      "ratio_bin": 322,
+      "lower": [
+        "21",
+        false,
+        "21",
+        false
+      ],
+      "upper": [
+        "22",
+        true,
+        "13",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 78,
+      "states": [
+        "222113",
+        "221111"
+      ],
+      "parity": 1,
+      "ratio_bin": 323,
+      "lower": [
+        "21",
+        false,
+        "21",
+        false
+      ],
+      "upper": [
+        "22",
+        true,
+        "13",
+        true
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "lower": [
+            "13",
+            true,
+            "13",
+            true
+          ],
+          "upper": [
+            "13",
+            false,
+            "13",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 145,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "31",
+            "1"
+          ],
+          "lower": [
+            "33~2",
+            false,
+            "13",
+            true
+          ],
+          "upper": [
+            "33",
+            true,
+            "13",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 146,
+              "swap": true
+            },
+            {
+              "node": 147,
+              "swap": true
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "lower": [
+            "13~2",
+            false,
+            "12",
+            true
+          ],
+          "upper": [
+            "13",
+            false,
+            "12",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 148,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "lower": [
+            "31",
+            false,
+            "12",
+            true
+          ],
+          "upper": [
+            "22",
+            true,
+            "32~2",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 149,
+              "swap": false
+            },
+            {
+              "node": 150,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "lower": [
+            "22",
+            true,
+            "32~2",
+            false
+          ],
+          "upper": [
+            "22",
+            true,
+            "32",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 151,
+              "swap": false
+            },
+            {
+              "node": 152,
+              "swap": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "states": [
+        "222213",
+        "211111"
+      ],
+      "parity": 1,
+      "ratio_bin": 241,
+      "lower": [
+        "22",
+        false,
+        "32",
+        false
+      ],
+      "upper": [
+        "22",
+        true,
+        "13",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 80,
+      "states": [
+        "222213",
+        "211111"
+      ],
+      "parity": 1,
+      "ratio_bin": 242,
+      "lower": [
+        "22",
+        false,
+        "32",
+        false
+      ],
+      "upper": [
+        "22",
+        true,
+        "13",
+        true
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "lower": [
+            "23",
+            true,
+            "32",
+            false
+          ],
+          "upper": [
+            "31",
+            false,
+            "12",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 153,
+              "swap": true
+            },
+            {
+              "node": 154,
+              "swap": true
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "lower": [
+            "31",
+            false,
+            "12",
+            true
+          ],
+          "upper": [
+            "21",
+            false,
+            "13",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 155,
+              "swap": true
+            },
+            {
+              "node": 156,
+              "swap": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 81,
+      "states": [
+        "222213",
+        "211111"
+      ],
+      "parity": 1,
+      "ratio_bin": 240,
+      "lower": [
+        "22",
+        false,
+        "32",
+        false
+      ],
+      "upper": [
+        "22",
+        true,
+        "13",
+        true
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "lower": [
+            "23",
+            true,
+            "32",
+            false
+          ],
+          "upper": [
+            "31",
+            false,
+            "12",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 157,
+              "swap": true
+            },
+            {
+              "node": 158,
+              "swap": true
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "2",
+            "1"
+          ],
+          "lower": [
+            "31",
+            false,
+            "21",
+            false
+          ],
+          "upper": [
+            "21",
+            false,
+            "32",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 159,
+              "swap": true
+            },
+            {
+              "node": 160,
+              "swap": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "states": [
+        "222111",
+        "221121"
+      ],
+      "parity": 1,
+      "ratio_bin": 311,
+      "lower": [
+        "32",
+        true,
+        "22~2",
+        false
+      ],
+      "upper": [
+        "21",
+        true,
+        "32~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 83,
+      "states": [
+        "222111",
+        "221121"
+      ],
+      "parity": 1,
+      "ratio_bin": 312,
+      "lower": [
+        "32",
+        true,
+        "22~2",
+        false
+      ],
+      "upper": [
+        "21",
+        true,
+        "32~2",
+        false
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            "2"
+          ],
+          "lower": [
+            "21",
+            false,
+            "22~2",
+            false
+          ],
+          "upper": [
+            "21",
+            false,
+            "31",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 161,
+              "swap": false
+            },
+            {
+              "node": 162,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "lower": [
+            "12~2",
+            false,
+            "33",
+            false
+          ],
+          "upper": [
+            "11",
+            false,
+            "32~2",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 163,
+              "swap": true
+            },
+            {
+              "node": 164,
+              "swap": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 84,
+      "states": [
+        "222111",
+        "221121"
+      ],
+      "parity": 1,
+      "ratio_bin": 310,
+      "lower": [
+        "32",
+        true,
+        "22~2",
+        false
+      ],
+      "upper": [
+        "21",
+        true,
+        "32~2",
+        false
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            "2"
+          ],
+          "lower": [
+            "21",
+            false,
+            "22~2",
+            false
+          ],
+          "upper": [
+            "21",
+            false,
+            "31",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 165,
+              "swap": false
+            },
+            {
+              "node": 166,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "21",
+            "3"
+          ],
+          "lower": [
+            "21",
+            true,
+            "31~2",
+            false
+          ],
+          "upper": [
+            "13",
+            true,
+            "22~2",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 167,
+              "swap": false
+            },
+            {
+              "node": 168,
+              "swap": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 85,
+      "states": [
+        "222221",
+        "221111"
+      ],
+      "parity": 1,
+      "ratio_bin": 918,
+      "lower": [
+        "33",
+        false,
+        "12~2",
+        false
+      ],
+      "upper": [
+        "21~2",
+        false,
+        "33",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 86,
+      "states": [
+        "222221",
+        "221111"
+      ],
+      "parity": 1,
+      "ratio_bin": 919,
+      "lower": [
+        "33",
+        false,
+        "12~2",
+        false
+      ],
+      "upper": [
+        "21~2",
+        false,
+        "33",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 87,
+      "states": [
+        "222111",
+        "222121"
+      ],
+      "parity": -1,
+      "ratio_bin": 879,
+      "lower": [
+        "13",
+        false,
+        "22",
+        true
+      ],
+      "upper": [
+        "13",
+        false,
+        "22~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 88,
+      "states": [
+        "222111",
+        "222121"
+      ],
+      "parity": -1,
+      "ratio_bin": 880,
+      "lower": [
+        "13",
+        false,
+        "22",
+        true
+      ],
+      "upper": [
+        "13",
+        false,
+        "22~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 89,
+      "states": [
+        "222212",
+        "211112"
+      ],
+      "parity": 1,
+      "ratio_bin": 918,
+      "lower": [
+        "13",
+        false,
+        "12",
+        false
+      ],
+      "upper": [
+        "13",
+        true,
+        "12",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 90,
+      "states": [
+        "222212",
+        "211112"
+      ],
+      "parity": 1,
+      "ratio_bin": 919,
+      "lower": [
+        "13",
+        false,
+        "12",
+        false
+      ],
+      "upper": [
+        "13",
+        true,
+        "12",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 91,
+      "states": [
+        "222111",
+        "222212"
+      ],
+      "parity": 1,
+      "ratio_bin": 443,
+      "lower": [
+        "32~2",
+        false,
+        "21",
+        false
+      ],
+      "upper": [
+        "13",
+        false,
+        "12",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 92,
+      "states": [
+        "222111",
+        "222212"
+      ],
+      "parity": 1,
+      "ratio_bin": 444,
+      "lower": [
+        "32~2",
+        false,
+        "21",
+        false
+      ],
+      "upper": [
+        "13",
+        false,
+        "12",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 93,
+      "states": [
+        "222111",
+        "222211"
+      ],
+      "parity": 1,
+      "ratio_bin": 57,
+      "lower": [
+        "22~2",
+        false,
+        "22~2",
+        false
+      ],
+      "upper": [
+        "12",
+        false,
+        "12",
+        true
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "lower": [
+            "22~2",
+            false,
+            "22~2",
+            false
+          ],
+          "upper": [
+            "31",
+            false,
+            "21~2",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 169,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "3",
+            "1"
+          ],
+          "lower": [
+            "21",
+            true,
+            "11",
+            true
+          ],
+          "upper": [
+            "32~2",
+            false,
+            "11",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 170,
+              "swap": true
+            },
+            {
+              "node": 171,
+              "swap": true
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "11",
+            "3"
+          ],
+          "lower": [
+            "11",
+            false,
+            "22",
+            false
+          ],
+          "upper": [
+            "12",
+            true,
+            "21",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 172,
+              "swap": false
+            },
+            {
+              "node": 173,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "lower": [
+            "13",
+            false,
+            "11~2",
+            false
+          ],
+          "upper": [
+            "21~2",
+            false,
+            "13",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 174,
+              "swap": true
+            },
+            {
+              "node": 175,
+              "swap": true
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "lower": [
+            "12~2",
+            false,
+            "11",
+            false
+          ],
+          "upper": [
+            "23",
+            true,
+            "12",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 176,
+              "swap": true
+            },
+            {
+              "node": 177,
+              "swap": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 94,
+      "states": [
+        "222111",
+        "222211"
+      ],
+      "parity": 1,
+      "ratio_bin": 58,
+      "lower": [
+        "22~2",
+        false,
+        "22~2",
+        false
+      ],
+      "upper": [
+        "12",
+        true,
+        "11",
+        true
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "lower": [
+            "22~2",
+            false,
+            "22~2",
+            false
+          ],
+          "upper": [
+            "31",
+            false,
+            "21~2",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 178,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "3",
+            "1"
+          ],
+          "lower": [
+            "21",
+            true,
+            "11",
+            true
+          ],
+          "upper": [
+            "32~2",
+            false,
+            "11",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 179,
+              "swap": true
+            },
+            {
+              "node": 170,
+              "swap": true
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "11",
+            "3"
+          ],
+          "lower": [
+            "11",
+            false,
+            "22~2",
+            false
+          ],
+          "upper": [
+            "12",
+            true,
+            "21",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 180,
+              "swap": false
+            },
+            {
+              "node": 181,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "lower": [
+            "11",
+            true,
+            "11",
+            false
+          ],
+          "upper": [
+            "21~2",
+            false,
+            "13",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 182,
+              "swap": true
+            },
+            {
+              "node": 183,
+              "swap": true
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "lower": [
+            "21~2",
+            false,
+            "22",
+            true
+          ],
+          "upper": [
+            "21",
+            false,
+            "11",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 184,
+              "swap": true
+            },
+            {
+              "node": 185,
+              "swap": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 95,
+      "states": [
+        "222221",
+        "221111"
+      ],
+      "parity": 1,
+      "ratio_bin": 919,
+      "lower": [
+        "33",
+        false,
+        "12~2",
+        false
+      ],
+      "upper": [
+        "23~2",
+        false,
+        "13",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 96,
+      "states": [
+        "222221",
+        "221111"
+      ],
+      "parity": 1,
+      "ratio_bin": 920,
+      "lower": [
+        "33",
+        false,
+        "12~2",
+        false
+      ],
+      "upper": [
+        "23~2",
+        false,
+        "13",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 97,
+      "states": [
+        "222212",
+        "221112"
+      ],
+      "parity": -1,
+      "ratio_bin": 437,
+      "lower": [
+        "31",
+        false,
+        "12",
+        true
+      ],
+      "upper": [
+        "13",
+        true,
+        "12~2",
+        false
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "lower": [
+            "31",
+            false,
+            "21",
+            false
+          ],
+          "upper": [
+            "23",
+            true,
+            "12",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 186,
+              "swap": false
+            },
+            {
+              "node": 187,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "lower": [
+            "11",
+            true,
+            "21",
+            true
+          ],
+          "upper": [
+            "31",
+            false,
+            "12",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 188,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "lower": [
+            "12",
+            true,
+            "12",
+            false
+          ],
+          "upper": [
+            "32",
+            false,
+            "12~2",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 189,
+              "swap": false
+            },
+            {
+              "node": 190,
+              "swap": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 98,
+      "states": [
+        "222111",
+        "222211"
+      ],
+      "parity": 1,
+      "ratio_bin": 56,
+      "lower": [
+        "22~2",
+        false,
+        "22~2",
+        false
+      ],
+      "upper": [
+        "12",
+        false,
+        "12",
+        true
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "lower": [
+            "22~2",
+            false,
+            "22~2",
+            false
+          ],
+          "upper": [
+            "31",
+            false,
+            "21~2",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 191,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "3",
+            "1"
+          ],
+          "lower": [
+            "21",
+            true,
+            "11",
+            true
+          ],
+          "upper": [
+            "32",
+            true,
+            "11",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 192,
+              "swap": true
+            },
+            {
+              "node": 193,
+              "swap": true
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "11",
+            "3"
+          ],
+          "lower": [
+            "11",
+            false,
+            "22",
+            false
+          ],
+          "upper": [
+            "12",
+            true,
+            "21",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 194,
+              "swap": false
+            },
+            {
+              "node": 172,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "lower": [
+            "13",
+            false,
+            "11~2",
+            false
+          ],
+          "upper": [
+            "21~2",
+            false,
+            "13",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 175,
+              "swap": true
+            },
+            {
+              "node": 195,
+              "swap": true
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "12",
+            "2"
+          ],
+          "lower": [
+            "11",
+            false,
+            "33",
+            true
+          ],
+          "upper": [
+            "12",
+            true,
+            "31",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 196,
+              "swap": true
+            },
+            {
+              "node": 197,
+              "swap": true
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "11",
+            ""
+          ],
+          "lower": [
+            "22",
+            true,
+            "11",
+            false
+          ],
+          "upper": [
+            "12~2",
+            false,
+            "12",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 198,
+              "swap": true
+            },
+            {
+              "node": 199,
+              "swap": true
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "lower": [
+            "13",
+            false,
+            "12",
+            true
+          ],
+          "upper": [
+            "12~2",
+            false,
+            "21",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 200,
+              "swap": false
+            },
+            {
+              "node": 201,
+              "swap": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 99,
+      "states": [
+        "222113",
+        "222121"
+      ],
+      "parity": -1,
+      "ratio_bin": 186,
+      "lower": [
+        "23",
+        true,
+        "22~2",
+        false
+      ],
+      "upper": [
+        "21",
+        false,
+        "32",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 100,
+      "states": [
+        "222113",
+        "222121"
+      ],
+      "parity": -1,
+      "ratio_bin": 187,
+      "lower": [
+        "23",
+        true,
+        "22~2",
+        false
+      ],
+      "upper": [
+        "21",
+        false,
+        "32",
+        false
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "lower": [
+            "31",
+            false,
+            "22~2",
+            false
+          ],
+          "upper": [
+            "22",
+            false,
+            "12",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 202,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "lower": [
+            "13~2",
+            false,
+            "32~2",
+            false
+          ],
+          "upper": [
+            "13",
+            true,
+            "32",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 203,
+              "swap": true
+            },
+            {
+              "node": 204,
+              "swap": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 101,
+      "states": [
+        "221212",
+        "223212"
+      ],
+      "parity": 1,
+      "ratio_bin": 404,
+      "lower": [
+        "31",
+        false,
+        "31~2",
+        false
+      ],
+      "upper": [
+        "12",
+        true,
+        "12",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 102,
+      "states": [
+        "222321",
+        "221212"
+      ],
+      "parity": -1,
+      "ratio_bin": 475,
+      "lower": [
+        "23",
+        true,
+        "31~2",
+        false
+      ],
+      "upper": [
+        "12",
+        true,
+        "31~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 103,
+      "states": [
+        "222321",
+        "221212"
+      ],
+      "parity": -1,
+      "ratio_bin": 476,
+      "lower": [
+        "23",
+        true,
+        "31~2",
+        false
+      ],
+      "upper": [
+        "12",
+        true,
+        "31~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 104,
+      "states": [
+        "222321",
+        "212111"
+      ],
+      "parity": 1,
+      "ratio_bin": 567,
+      "lower": [
+        "23",
+        false,
+        "32",
+        true
+      ],
+      "upper": [
+        "23~2",
+        false,
+        "13",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 105,
+      "states": [
+        "222321",
+        "212111"
+      ],
+      "parity": 1,
+      "ratio_bin": 568,
+      "lower": [
+        "23",
+        false,
+        "32",
+        true
+      ],
+      "upper": [
+        "23~2",
+        false,
+        "13",
+        true
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "lower": [
+            "23",
+            true,
+            "12",
+            true
+          ],
+          "upper": [
+            "31~2",
+            false,
+            "31",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 205,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "2",
+            "1"
+          ],
+          "lower": [
+            "12",
+            false,
+            "23",
+            true
+          ],
+          "upper": [
+            "33",
+            false,
+            "23",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 206,
+              "swap": false
+            },
+            {
+              "node": 207,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "lower": [
+            "13",
+            false,
+            "32~2",
+            false
+          ],
+          "upper": [
+            "13",
+            false,
+            "33",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 208,
+              "swap": false
+            },
+            {
+              "node": 209,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "23",
+            "1"
+          ],
+          "lower": [
+            "23",
+            true,
+            "22~2",
+            false
+          ],
+          "upper": [
+            "12",
+            true,
+            "21",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 210,
+              "swap": true
+            },
+            {
+              "node": 211,
+              "swap": true
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "lower": [
+            "12~2",
+            false,
+            "32",
+            false
+          ],
+          "upper": [
+            "12~2",
+            false,
+            "33~2",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 212,
+              "swap": false
+            },
+            {
+              "node": 213,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "11",
+            "3"
+          ],
+          "lower": [
+            "22~2",
+            false,
+            "32~2",
+            false
+          ],
+          "upper": [
+            "22",
+            false,
+            "31",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 214,
+              "swap": false
+            },
+            {
+              "node": 215,
+              "swap": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 106,
+      "states": [
+        "221212",
+        "223212"
+      ],
+      "parity": 1,
+      "ratio_bin": 403,
+      "lower": [
+        "31",
+        false,
+        "31~2",
+        false
+      ],
+      "upper": [
+        "12",
+        false,
+        "13",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 107,
+      "states": [
+        "222321",
+        "221212"
+      ],
+      "parity": -1,
+      "ratio_bin": 477,
+      "lower": [
+        "23",
+        true,
+        "31~2",
+        false
+      ],
+      "upper": [
+        "12",
+        true,
+        "31~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 108,
+      "states": [
+        "212111",
+        "223212"
+      ],
+      "parity": -1,
+      "ratio_bin": 311,
+      "lower": [
+        "32",
+        false,
+        "32",
+        false
+      ],
+      "upper": [
+        "13",
+        false,
+        "31",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 109,
+      "states": [
+        "212111",
+        "223212"
+      ],
+      "parity": -1,
+      "ratio_bin": 312,
+      "lower": [
+        "32",
+        false,
+        "32",
+        false
+      ],
+      "upper": [
+        "13",
+        false,
+        "31",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 110,
+      "states": [
+        "222321",
+        "212111"
+      ],
+      "parity": 1,
+      "ratio_bin": 568,
+      "lower": [
+        "23~2",
+        false,
+        "13",
+        true
+      ],
+      "upper": [
+        "23",
+        true,
+        "13",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 111,
+      "states": [
+        "222321",
+        "212111"
+      ],
+      "parity": 1,
+      "ratio_bin": 569,
+      "lower": [
+        "23~2",
+        false,
+        "13",
+        true
+      ],
+      "upper": [
+        "23",
+        true,
+        "13",
+        true
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "lower": [
+            "12~2",
+            false,
+            "32",
+            false
+          ],
+          "upper": [
+            "12~2",
+            false,
+            "33~2",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 213,
+              "swap": false
+            },
+            {
+              "node": 216,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "23",
+            "1"
+          ],
+          "lower": [
+            "11",
+            false,
+            "33",
+            true
+          ],
+          "upper": [
+            "12",
+            true,
+            "32",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 217,
+              "swap": true
+            },
+            {
+              "node": 218,
+              "swap": true
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "11",
+            ""
+          ],
+          "lower": [
+            "32~2",
+            false,
+            "21~2",
+            false
+          ],
+          "upper": [
+            "32",
+            true,
+            "21~2",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 219,
+              "swap": true
+            },
+            {
+              "node": 220,
+              "swap": true
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "11",
+            "2"
+          ],
+          "lower": [
+            "32",
+            true,
+            "12~2",
+            false
+          ],
+          "upper": [
+            "33",
+            true,
+            "12",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 221,
+              "swap": false
+            },
+            {
+              "node": 222,
+              "swap": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 112,
+      "states": [
+        "222221",
+        "221121"
+      ],
+      "parity": -1,
+      "ratio_bin": 401,
+      "lower": [
+        "13",
+        false,
+        "11~2",
+        false
+      ],
+      "upper": [
+        "12~2",
+        false,
+        "23",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 113,
+      "states": [
+        "222221",
+        "221121"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "lower": [
+        "13",
+        false,
+        "11~2",
+        false
+      ],
+      "upper": [
+        "12~2",
+        false,
+        "23",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 114,
+      "states": [
+        "222221",
+        "211211"
+      ],
+      "parity": 1,
+      "ratio_bin": 898,
+      "lower": [
+        "13",
+        false,
+        "12",
+        false
+      ],
+      "upper": [
+        "13",
+        false,
+        "12~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 115,
+      "states": [
+        "222221",
+        "211211"
+      ],
+      "parity": 1,
+      "ratio_bin": 899,
+      "lower": [
+        "13",
+        false,
+        "12",
+        false
+      ],
+      "upper": [
+        "13",
+        false,
+        "12~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 116,
+      "states": [
+        "222211",
+        "211212"
+      ],
+      "parity": -1,
+      "ratio_bin": 787,
+      "lower": [
+        "11",
+        false,
+        "12",
+        true
+      ],
+      "upper": [
+        "11",
+        false,
+        "12",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 117,
+      "states": [
+        "222211",
+        "211212"
+      ],
+      "parity": -1,
+      "ratio_bin": 788,
+      "lower": [
+        "11",
+        false,
+        "12",
+        true
+      ],
+      "upper": [
+        "11",
+        false,
+        "12",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 118,
+      "states": [
+        "222221",
+        "221121"
+      ],
+      "parity": -1,
+      "ratio_bin": 401,
+      "lower": [
+        "32",
+        false,
+        "32",
+        false
+      ],
+      "upper": [
+        "11",
+        true,
+        "21~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 119,
+      "states": [
+        "222221",
+        "221121"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "lower": [
+        "32",
+        false,
+        "32",
+        false
+      ],
+      "upper": [
+        "11",
+        true,
+        "21~2",
+        false
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "lower": [
+            "23~2",
+            false,
+            "11~2",
+            false
+          ],
+          "upper": [
+            "21",
+            false,
+            "32~2",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 223,
+              "swap": true
+            },
+            {
+              "node": 224,
+              "swap": true
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "lower": [
+            "11~2",
+            false,
+            "11",
+            false
+          ],
+          "upper": [
+            "13~2",
+            false,
+            "11",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 225,
+              "swap": false
+            },
+            {
+              "node": 226,
+              "swap": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 120,
+      "states": [
+        "222213",
+        "211211"
+      ],
+      "parity": 1,
+      "ratio_bin": 621,
+      "lower": [
+        "31~2",
+        false,
+        "21",
+        false
+      ],
+      "upper": [
+        "32",
+        true,
+        "23",
+        true
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            "2"
+          ],
+          "lower": [
+            "12~2",
+            false,
+            "13",
+            true
+          ],
+          "upper": [
+            "21",
+            false,
+            "31",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 227,
+              "swap": false
+            },
+            {
+              "node": 228,
+              "swap": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 121,
+      "states": [
+        "222221",
+        "221111"
+      ],
+      "parity": 1,
+      "ratio_bin": 921,
+      "lower": [
+        "33",
+        false,
+        "12~2",
+        false
+      ],
+      "upper": [
+        "23~2",
+        false,
+        "13",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 122,
+      "states": [
+        "222212",
+        "221112"
+      ],
+      "parity": -1,
+      "ratio_bin": 438,
+      "lower": [
+        "31",
+        false,
+        "12",
+        true
+      ],
+      "upper": [
+        "11~2",
+        false,
+        "33",
+        false
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "lower": [
+            "31",
+            false,
+            "21",
+            false
+          ],
+          "upper": [
+            "23",
+            true,
+            "12",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 187,
+              "swap": false
+            },
+            {
+              "node": 229,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "lower": [
+            "11",
+            true,
+            "21",
+            true
+          ],
+          "upper": [
+            "31",
+            false,
+            "12",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 230,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "lower": [
+            "11~2",
+            false,
+            "21",
+            true
+          ],
+          "upper": [
+            "13~2",
+            false,
+            "22~2",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 231,
+              "swap": false
+            },
+            {
+              "node": 232,
+              "swap": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 123,
+      "states": [
+        "222111",
+        "222211"
+      ],
+      "parity": 1,
+      "ratio_bin": 55,
+      "lower": [
+        "22~2",
+        false,
+        "22~2",
+        false
+      ],
+      "upper": [
+        "12",
+        false,
+        "12",
+        true
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "lower": [
+            "22~2",
+            false,
+            "22~2",
+            false
+          ],
+          "upper": [
+            "31",
+            false,
+            "21~2",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 233,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "1",
+            "3"
+          ],
+          "lower": [
+            "13~2",
+            false,
+            "33",
+            true
+          ],
+          "upper": [
+            "12",
+            false,
+            "31",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 234,
+              "swap": false
+            },
+            {
+              "node": 235,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "3",
+            "1"
+          ],
+          "lower": [
+            "32",
+            false,
+            "11~2",
+            false
+          ],
+          "upper": [
+            "32",
+            false,
+            "11",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 236,
+              "swap": true
+            },
+            {
+              "node": 237,
+              "swap": true
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "11",
+            "3"
+          ],
+          "lower": [
+            "11",
+            false,
+            "21",
+            true
+          ],
+          "upper": [
+            "12",
+            true,
+            "21",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 238,
+              "swap": false
+            },
+            {
+              "node": 239,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "2",
+            "1"
+          ],
+          "lower": [
+            "13~2",
+            false,
+            "12~2",
+            false
+          ],
+          "upper": [
+            "31",
+            false,
+            "22",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 240,
+              "swap": true
+            },
+            {
+              "node": 241,
+              "swap": true
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "lower": [
+            "21",
+            false,
+            "21",
+            true
+          ],
+          "upper": [
+            "23~2",
+            false,
+            "12",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 242,
+              "swap": true
+            },
+            {
+              "node": 243,
+              "swap": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124,
+      "states": [
+        "221132",
+        "212121"
+      ],
+      "parity": 1,
+      "ratio_bin": 624,
+      "lower": [
+        "12",
+        false,
+        "11~2",
+        false
+      ],
+      "upper": [
+        "12",
+        true,
+        "13",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 125,
+      "states": [
+        "221132",
+        "212121"
+      ],
+      "parity": 1,
+      "ratio_bin": 625,
+      "lower": [
+        "12",
+        false,
+        "11~2",
+        false
+      ],
+      "upper": [
+        "12",
+        true,
+        "13",
+        true
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "lower": [
+            "23",
+            true,
+            "11~2",
+            false
+          ],
+          "upper": [
+            "21",
+            false,
+            "13",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 244,
+              "swap": false
+            },
+            {
+              "node": 245,
+              "swap": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 126,
+      "states": [
+        "211211",
+        "222133"
+      ],
+      "parity": -1,
+      "ratio_bin": 575,
+      "lower": [
+        "21",
+        false,
+        "12~2",
+        false
+      ],
+      "upper": [
+        "11",
+        false,
+        "12~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 127,
+      "states": [
+        "211211",
+        "222133"
+      ],
+      "parity": -1,
+      "ratio_bin": 576,
+      "lower": [
+        "21",
+        false,
+        "12~2",
+        false
+      ],
+      "upper": [
+        "11",
+        false,
+        "12~2",
+        false
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "lower": [
+            "13",
+            true,
+            "12~2",
+            false
+          ],
+          "upper": [
+            "33",
+            true,
+            "33",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 246,
+              "swap": true
+            },
+            {
+              "node": 227,
+              "swap": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 128,
+      "states": [
+        "221122",
+        "221231"
+      ],
+      "parity": -1,
+      "ratio_bin": 765,
+      "lower": [
+        "13",
+        false,
+        "33",
+        true
+      ],
+      "upper": [
+        "13",
+        true,
+        "32",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 129,
+      "states": [
+        "221122",
+        "221231"
+      ],
+      "parity": -1,
+      "ratio_bin": 766,
+      "lower": [
+        "13",
+        false,
+        "33",
+        true
+      ],
+      "upper": [
+        "13",
+        true,
+        "32",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 130,
+      "states": [
+        "222112",
+        "222122"
+      ],
+      "parity": -1,
+      "ratio_bin": 918,
+      "lower": [
+        "31",
+        false,
+        "12~2",
+        false
+      ],
+      "upper": [
+        "22",
+        true,
+        "31",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 131,
+      "states": [
+        "222112",
+        "222122"
+      ],
+      "parity": -1,
+      "ratio_bin": 919,
+      "lower": [
+        "31",
+        false,
+        "12~2",
+        false
+      ],
+      "upper": [
+        "22",
+        true,
+        "31",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 132,
+      "states": [
+        "221122",
+        "222122"
+      ],
+      "parity": 1,
+      "ratio_bin": 38,
+      "lower": [
+        "31~2",
+        false,
+        "21",
+        false
+      ],
+      "upper": [
+        "21",
+        false,
+        "31",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 133,
+      "states": [
+        "222212",
+        "221121"
+      ],
+      "parity": -1,
+      "ratio_bin": 400,
+      "lower": [
+        "32",
+        false,
+        "12",
+        true
+      ],
+      "upper": [
+        "33",
+        true,
+        "11",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 134,
+      "states": [
+        "222212",
+        "221121"
+      ],
+      "parity": -1,
+      "ratio_bin": 401,
+      "lower": [
+        "32",
+        false,
+        "12",
+        true
+      ],
+      "upper": [
+        "33",
+        true,
+        "11",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 135,
+      "states": [
+        "222112",
+        "222122"
+      ],
+      "parity": -1,
+      "ratio_bin": 918,
+      "lower": [
+        "11",
+        false,
+        "12",
+        false
+      ],
+      "upper": [
+        "13~2",
+        false,
+        "21",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 136,
+      "states": [
+        "222112",
+        "222122"
+      ],
+      "parity": -1,
+      "ratio_bin": 919,
+      "lower": [
+        "11",
+        false,
+        "12",
+        false
+      ],
+      "upper": [
+        "13~2",
+        false,
+        "21",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 137,
+      "states": [
+        "222212",
+        "221121"
+      ],
+      "parity": -1,
+      "ratio_bin": 400,
+      "lower": [
+        "22",
+        true,
+        "32~2",
+        false
+      ],
+      "upper": [
+        "12",
+        true,
+        "23",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 138,
+      "states": [
+        "222212",
+        "221121"
+      ],
+      "parity": -1,
+      "ratio_bin": 401,
+      "lower": [
+        "22",
+        true,
+        "32~2",
+        false
+      ],
+      "upper": [
+        "12",
+        true,
+        "23",
+        true
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "lower": [
+            "12",
+            true,
+            "11",
+            true
+          ],
+          "upper": [
+            "21",
+            false,
+            "23",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 247,
+              "swap": true
+            },
+            {
+              "node": 248,
+              "swap": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 139,
+      "states": [
+        "221122",
+        "221231"
+      ],
+      "parity": -1,
+      "ratio_bin": 767,
+      "lower": [
+        "13",
+        false,
+        "33",
+        true
+      ],
+      "upper": [
+        "13",
+        true,
+        "32",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 140,
+      "states": [
+        "222112",
+        "222122"
+      ],
+      "parity": -1,
+      "ratio_bin": 920,
+      "lower": [
+        "31",
+        false,
+        "12~2",
+        false
+      ],
+      "upper": [
+        "22",
+        true,
+        "31",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 141,
+      "states": [
+        "222212",
+        "221121"
+      ],
+      "parity": -1,
+      "ratio_bin": 399,
+      "lower": [
+        "31",
+        true,
+        "12~2",
+        false
+      ],
+      "upper": [
+        "12",
+        true,
+        "23",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 142,
+      "states": [
+        "222212",
+        "221121"
+      ],
+      "parity": -1,
+      "ratio_bin": 400,
+      "lower": [
+        "31",
+        true,
+        "12~2",
+        false
+      ],
+      "upper": [
+        "12",
+        true,
+        "23",
+        true
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "lower": [
+            "11",
+            false,
+            "12~2",
+            false
+          ],
+          "upper": [
+            "31",
+            false,
+            "11",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 249,
+              "swap": true
+            },
+            {
+              "node": 250,
+              "swap": true
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "lower": [
+            "33",
+            true,
+            "13",
+            true
+          ],
+          "upper": [
+            "23",
+            true,
+            "12",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 251,
+              "swap": false
+            },
+            {
+              "node": 252,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "lower": [
+            "11~2",
+            false,
+            "31",
+            false
+          ],
+          "upper": [
+            "31",
+            false,
+            "12",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 253,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "lower": [
+            "12",
+            true,
+            "12",
+            false
+          ],
+          "upper": [
+            "21",
+            false,
+            "23",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 254,
+              "swap": true
+            },
+            {
+              "node": 255,
+              "swap": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 143,
+      "states": [
+        "221111",
+        "221132"
+      ],
+      "parity": -1,
+      "ratio_bin": 555,
+      "lower": [
+        "21",
+        false,
+        "13",
+        true
+      ],
+      "upper": [
+        "21",
+        false,
+        "13",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 144,
+      "states": [
+        "221111",
+        "221132"
+      ],
+      "parity": -1,
+      "ratio_bin": 556,
+      "lower": [
+        "21",
+        false,
+        "13",
+        true
+      ],
+      "upper": [
+        "21",
+        false,
+        "13",
+        false
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "21",
+            ""
+          ],
+          "lower": [
+            "32",
+            false,
+            "13",
+            true
+          ],
+          "upper": [
+            "33",
+            true,
+            "13~2",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 256,
+              "swap": true
+            },
+            {
+              "node": 257,
+              "swap": true
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "2",
+            "1"
+          ],
+          "lower": [
+            "13",
+            false,
+            "32~2",
+            false
+          ],
+          "upper": [
+            "13",
+            false,
+            "32",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 258,
+              "swap": false
+            },
+            {
+              "node": 259,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "2",
+            "1"
+          ],
+          "lower": [
+            "13",
+            false,
+            "32",
+            true
+          ],
+          "upper": [
+            "13",
+            true,
+            "33",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 260,
+              "swap": false
+            },
+            {
+              "node": 261,
+              "swap": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 145,
+      "states": [
+        "221132",
+        "211112"
+      ],
+      "parity": 1,
+      "ratio_bin": 323,
+      "lower": [
+        "13",
+        false,
+        "13",
+        false
+      ],
+      "upper": [
+        "13",
+        true,
+        "13",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 146,
+      "states": [
+        "211111",
+        "211331"
+      ],
+      "parity": -1,
+      "ratio_bin": 814,
+      "lower": [
+        "13",
+        false,
+        "33",
+        true
+      ],
+      "upper": [
+        "13",
+        true,
+        "33~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 147,
+      "states": [
+        "211111",
+        "211331"
+      ],
+      "parity": -1,
+      "ratio_bin": 815,
+      "lower": [
+        "13",
+        false,
+        "33",
+        true
+      ],
+      "upper": [
+        "13",
+        true,
+        "33~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 148,
+      "states": [
+        "221132",
+        "211112"
+      ],
+      "parity": 1,
+      "ratio_bin": 323,
+      "lower": [
+        "13",
+        false,
+        "12",
+        false
+      ],
+      "upper": [
+        "13~2",
+        false,
+        "12",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 149,
+      "states": [
+        "222113",
+        "211111"
+      ],
+      "parity": -1,
+      "ratio_bin": 802,
+      "lower": [
+        "31",
+        false,
+        "12",
+        true
+      ],
+      "upper": [
+        "22",
+        true,
+        "32~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 150,
+      "states": [
+        "222113",
+        "211111"
+      ],
+      "parity": -1,
+      "ratio_bin": 803,
+      "lower": [
+        "31",
+        false,
+        "12",
+        true
+      ],
+      "upper": [
+        "22",
+        true,
+        "32~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 151,
+      "states": [
+        "222113",
+        "211111"
+      ],
+      "parity": -1,
+      "ratio_bin": 802,
+      "lower": [
+        "22",
+        true,
+        "32~2",
+        false
+      ],
+      "upper": [
+        "22",
+        true,
+        "32",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 152,
+      "states": [
+        "222113",
+        "211111"
+      ],
+      "parity": -1,
+      "ratio_bin": 803,
+      "lower": [
+        "22",
+        true,
+        "32~2",
+        false
+      ],
+      "upper": [
+        "22",
+        true,
+        "32",
+        false
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "lower": [
+            "31",
+            true,
+            "13",
+            true
+          ],
+          "upper": [
+            "31",
+            false,
+            "12",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 262,
+              "swap": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 153,
+      "states": [
+        "211111",
+        "222132"
+      ],
+      "parity": -1,
+      "ratio_bin": 637,
+      "lower": [
+        "32",
+        false,
+        "23",
+        true
+      ],
+      "upper": [
+        "12",
+        true,
+        "31",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 154,
+      "states": [
+        "211111",
+        "222132"
+      ],
+      "parity": -1,
+      "ratio_bin": 638,
+      "lower": [
+        "32",
+        false,
+        "23",
+        true
+      ],
+      "upper": [
+        "12",
+        true,
+        "31",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 155,
+      "states": [
+        "211111",
+        "222132"
+      ],
+      "parity": -1,
+      "ratio_bin": 637,
+      "lower": [
+        "12",
+        true,
+        "31",
+        false
+      ],
+      "upper": [
+        "13",
+        true,
+        "21",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 156,
+      "states": [
+        "211111",
+        "222132"
+      ],
+      "parity": -1,
+      "ratio_bin": 638,
+      "lower": [
+        "12",
+        true,
+        "31",
+        false
+      ],
+      "upper": [
+        "13",
+        true,
+        "21",
+        false
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "13",
+            "2"
+          ],
+          "lower": [
+            "23~2",
+            false,
+            "13",
+            false
+          ],
+          "upper": [
+            "23",
+            true,
+            "13~2",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 263,
+              "swap": true
+            },
+            {
+              "node": 264,
+              "swap": true
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "lower": [
+            "21",
+            false,
+            "31",
+            false
+          ],
+          "upper": [
+            "32",
+            false,
+            "21",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 265,
+              "swap": false
+            },
+            {
+              "node": 266,
+              "swap": false
+            },
+            {
+              "node": 159,
+              "swap": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 157,
+      "states": [
+        "211111",
+        "222132"
+      ],
+      "parity": -1,
+      "ratio_bin": 639,
+      "lower": [
+        "32",
+        false,
+        "23",
+        true
+      ],
+      "upper": [
+        "12",
+        true,
+        "31",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 158,
+      "states": [
+        "211111",
+        "222132"
+      ],
+      "parity": -1,
+      "ratio_bin": 640,
+      "lower": [
+        "32",
+        false,
+        "23",
+        true
+      ],
+      "upper": [
+        "12",
+        true,
+        "31",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 159,
+      "states": [
+        "111111",
+        "222132"
+      ],
+      "parity": 1,
+      "ratio_bin": 158,
+      "lower": [
+        "32",
+        false,
+        "21",
+        false
+      ],
+      "upper": [
+        "21",
+        false,
+        "31",
+        false
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "lower": [
+            "23",
+            true,
+            "21",
+            false
+          ],
+          "upper": [
+            "23",
+            false,
+            "21",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 267,
+              "swap": true
+            },
+            {
+              "node": 268,
+              "swap": true
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "3",
+            "2"
+          ],
+          "lower": [
+            "23",
+            true,
+            "13~2",
+            false
+          ],
+          "upper": [
+            "23~2",
+            false,
+            "13",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 269,
+              "swap": true
+            },
+            {
+              "node": 263,
+              "swap": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 160,
+      "states": [
+        "111111",
+        "222132"
+      ],
+      "parity": 1,
+      "ratio_bin": 159,
+      "lower": [
+        "32",
+        false,
+        "21",
+        false
+      ],
+      "upper": [
+        "21",
+        false,
+        "31",
+        false
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "lower": [
+            "23",
+            true,
+            "21",
+            false
+          ],
+          "upper": [
+            "23",
+            false,
+            "21",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 270,
+              "swap": true
+            },
+            {
+              "node": 267,
+              "swap": true
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "32",
+            "2"
+          ],
+          "lower": [
+            "33",
+            true,
+            "13",
+            true
+          ],
+          "upper": [
+            "32",
+            false,
+            "13",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 271,
+              "swap": true
+            },
+            {
+              "node": 272,
+              "swap": true
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "32",
+            "2"
+          ],
+          "lower": [
+            "32",
+            false,
+            "13",
+            false
+          ],
+          "upper": [
+            "32~2",
+            false,
+            "13",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 273,
+              "swap": true
+            },
+            {
+              "node": 272,
+              "swap": true
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "32",
+            "2"
+          ],
+          "lower": [
+            "32~2",
+            false,
+            "13",
+            false
+          ],
+          "upper": [
+            "32",
+            true,
+            "13",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 274,
+              "swap": true
+            },
+            {
+              "node": 275,
+              "swap": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 161,
+      "states": [
+        "221113",
+        "211212"
+      ],
+      "parity": 1,
+      "ratio_bin": 28,
+      "lower": [
+        "21",
+        false,
+        "31",
+        false
+      ],
+      "upper": [
+        "21",
+        false,
+        "22~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 162,
+      "states": [
+        "221113",
+        "211212"
+      ],
+      "parity": 1,
+      "ratio_bin": 29,
+      "lower": [
+        "21",
+        false,
+        "31",
+        false
+      ],
+      "upper": [
+        "21",
+        false,
+        "22~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 163,
+      "states": [
+        "221121",
+        "221112"
+      ],
+      "parity": -1,
+      "ratio_bin": 567,
+      "lower": [
+        "33",
+        false,
+        "12~2",
+        false
+      ],
+      "upper": [
+        "32~2",
+        false,
+        "11",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 164,
+      "states": [
+        "221121",
+        "221112"
+      ],
+      "parity": -1,
+      "ratio_bin": 568,
+      "lower": [
+        "33",
+        false,
+        "12~2",
+        false
+      ],
+      "upper": [
+        "32~2",
+        false,
+        "11",
+        false
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "lower": [
+            "33",
+            true,
+            "12~2",
+            false
+          ],
+          "upper": [
+            "22~2",
+            false,
+            "11",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 276,
+              "swap": true
+            },
+            {
+              "node": 277,
+              "swap": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 165,
+      "states": [
+        "221113",
+        "211212"
+      ],
+      "parity": 1,
+      "ratio_bin": 26,
+      "lower": [
+        "21",
+        false,
+        "31",
+        false
+      ],
+      "upper": [
+        "21",
+        false,
+        "22~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 166,
+      "states": [
+        "221113",
+        "211212"
+      ],
+      "parity": 1,
+      "ratio_bin": 27,
+      "lower": [
+        "21",
+        false,
+        "31",
+        false
+      ],
+      "upper": [
+        "21",
+        false,
+        "22~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 167,
+      "states": [
+        "211121",
+        "211213"
+      ],
+      "parity": -1,
+      "ratio_bin": 148,
+      "lower": [
+        "21",
+        true,
+        "31~2",
+        false
+      ],
+      "upper": [
+        "13",
+        true,
+        "22~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 168,
+      "states": [
+        "211121",
+        "211213"
+      ],
+      "parity": -1,
+      "ratio_bin": 149,
+      "lower": [
+        "21",
+        true,
+        "31~2",
+        false
+      ],
+      "upper": [
+        "13",
+        true,
+        "22~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 169,
+      "states": [
+        "221112",
+        "222112"
+      ],
+      "parity": 1,
+      "ratio_bin": 57,
+      "lower": [
+        "31",
+        false,
+        "21~2",
+        false
+      ],
+      "upper": [
+        "22~2",
+        false,
+        "22~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 170,
+      "states": [
+        "222111",
+        "221113"
+      ],
+      "parity": 1,
+      "ratio_bin": 630,
+      "lower": [
+        "11",
+        false,
+        "32~2",
+        false
+      ],
+      "upper": [
+        "11",
+        true,
+        "21",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 171,
+      "states": [
+        "222111",
+        "221113"
+      ],
+      "parity": 1,
+      "ratio_bin": 631,
+      "lower": [
+        "11",
+        false,
+        "32~2",
+        false
+      ],
+      "upper": [
+        "11",
+        true,
+        "21",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 172,
+      "states": [
+        "211111",
+        "222113"
+      ],
+      "parity": -1,
+      "ratio_bin": 262,
+      "lower": [
+        "11",
+        false,
+        "22",
+        false
+      ],
+      "upper": [
+        "12",
+        true,
+        "21",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 173,
+      "states": [
+        "211111",
+        "222113"
+      ],
+      "parity": -1,
+      "ratio_bin": 263,
+      "lower": [
+        "11",
+        false,
+        "22",
+        false
+      ],
+      "upper": [
+        "12",
+        true,
+        "21",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 174,
+      "states": [
+        "222211",
+        "221112"
+      ],
+      "parity": -1,
+      "ratio_bin": 822,
+      "lower": [
+        "11~2",
+        false,
+        "13",
+        false
+      ],
+      "upper": [
+        "13",
+        true,
+        "21~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 175,
+      "states": [
+        "222211",
+        "221112"
+      ],
+      "parity": -1,
+      "ratio_bin": 823,
+      "lower": [
+        "11~2",
+        false,
+        "13",
+        false
+      ],
+      "upper": [
+        "13",
+        true,
+        "21~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 176,
+      "states": [
+        "222211",
+        "221111"
+      ],
+      "parity": -1,
+      "ratio_bin": 424,
+      "lower": [
+        "11",
+        false,
+        "12~2",
+        false
+      ],
+      "upper": [
+        "12",
+        true,
+        "23",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 177,
+      "states": [
+        "222211",
+        "221111"
+      ],
+      "parity": -1,
+      "ratio_bin": 425,
+      "lower": [
+        "11",
+        false,
+        "12~2",
+        false
+      ],
+      "upper": [
+        "12",
+        true,
+        "23",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 178,
+      "states": [
+        "221112",
+        "222112"
+      ],
+      "parity": 1,
+      "ratio_bin": 58,
+      "lower": [
+        "31",
+        false,
+        "21~2",
+        false
+      ],
+      "upper": [
+        "22~2",
+        false,
+        "22~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 179,
+      "states": [
+        "222111",
+        "221113"
+      ],
+      "parity": 1,
+      "ratio_bin": 629,
+      "lower": [
+        "11",
+        false,
+        "32~2",
+        false
+      ],
+      "upper": [
+        "11",
+        true,
+        "21",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 180,
+      "states": [
+        "211111",
+        "222113"
+      ],
+      "parity": -1,
+      "ratio_bin": 263,
+      "lower": [
+        "11",
+        false,
+        "22~2",
+        false
+      ],
+      "upper": [
+        "12",
+        true,
+        "21",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 181,
+      "states": [
+        "211111",
+        "222113"
+      ],
+      "parity": -1,
+      "ratio_bin": 264,
+      "lower": [
+        "11",
+        false,
+        "22~2",
+        false
+      ],
+      "upper": [
+        "12",
+        true,
+        "21",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 182,
+      "states": [
+        "222211",
+        "221112"
+      ],
+      "parity": -1,
+      "ratio_bin": 821,
+      "lower": [
+        "11",
+        false,
+        "11",
+        true
+      ],
+      "upper": [
+        "13",
+        true,
+        "21~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 183,
+      "states": [
+        "222211",
+        "221112"
+      ],
+      "parity": -1,
+      "ratio_bin": 822,
+      "lower": [
+        "11",
+        false,
+        "11",
+        true
+      ],
+      "upper": [
+        "13",
+        true,
+        "21~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 184,
+      "states": [
+        "222211",
+        "221111"
+      ],
+      "parity": -1,
+      "ratio_bin": 423,
+      "lower": [
+        "22",
+        true,
+        "21~2",
+        false
+      ],
+      "upper": [
+        "11",
+        true,
+        "21",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 185,
+      "states": [
+        "222211",
+        "221111"
+      ],
+      "parity": -1,
+      "ratio_bin": 424,
+      "lower": [
+        "22",
+        true,
+        "21~2",
+        false
+      ],
+      "upper": [
+        "11",
+        true,
+        "21",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 186,
+      "states": [
+        "222212",
+        "211121"
+      ],
+      "parity": 1,
+      "ratio_bin": 874,
+      "lower": [
+        "31",
+        false,
+        "21",
+        false
+      ],
+      "upper": [
+        "23",
+        true,
+        "12",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 187,
+      "states": [
+        "222212",
+        "211121"
+      ],
+      "parity": 1,
+      "ratio_bin": 875,
+      "lower": [
+        "31",
+        false,
+        "21",
+        false
+      ],
+      "upper": [
+        "23",
+        true,
+        "12",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 188,
+      "states": [
+        "222122",
+        "211122"
+      ],
+      "parity": -1,
+      "ratio_bin": 437,
+      "lower": [
+        "31",
+        false,
+        "12",
+        true
+      ],
+      "upper": [
+        "11",
+        true,
+        "21",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 189,
+      "states": [
+        "222121",
+        "221112"
+      ],
+      "parity": 1,
+      "ratio_bin": 1,
+      "lower": [
+        "32",
+        false,
+        "12~2",
+        false
+      ],
+      "upper": [
+        "12",
+        true,
+        "12",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 190,
+      "states": [
+        "222121",
+        "221112"
+      ],
+      "parity": 1,
+      "ratio_bin": 2,
+      "lower": [
+        "32",
+        false,
+        "12~2",
+        false
+      ],
+      "upper": [
+        "12",
+        true,
+        "12",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 191,
+      "states": [
+        "221112",
+        "222112"
+      ],
+      "parity": 1,
+      "ratio_bin": 56,
+      "lower": [
+        "31",
+        false,
+        "21~2",
+        false
+      ],
+      "upper": [
+        "22~2",
+        false,
+        "22~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 192,
+      "states": [
+        "222111",
+        "221113"
+      ],
+      "parity": 1,
+      "ratio_bin": 631,
+      "lower": [
+        "11",
+        false,
+        "32",
+        true
+      ],
+      "upper": [
+        "11",
+        true,
+        "21",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 193,
+      "states": [
+        "222111",
+        "221113"
+      ],
+      "parity": 1,
+      "ratio_bin": 632,
+      "lower": [
+        "11",
+        false,
+        "32",
+        true
+      ],
+      "upper": [
+        "11",
+        true,
+        "21",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 194,
+      "states": [
+        "211111",
+        "222113"
+      ],
+      "parity": -1,
+      "ratio_bin": 261,
+      "lower": [
+        "11",
+        false,
+        "22",
+        false
+      ],
+      "upper": [
+        "12",
+        true,
+        "21",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 195,
+      "states": [
+        "222211",
+        "221112"
+      ],
+      "parity": -1,
+      "ratio_bin": 824,
+      "lower": [
+        "11~2",
+        false,
+        "13",
+        false
+      ],
+      "upper": [
+        "13",
+        true,
+        "21~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 196,
+      "states": [
+        "222112",
+        "211112"
+      ],
+      "parity": -1,
+      "ratio_bin": 425,
+      "lower": [
+        "31",
+        false,
+        "12",
+        true
+      ],
+      "upper": [
+        "33",
+        true,
+        "11",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 197,
+      "states": [
+        "222112",
+        "211112"
+      ],
+      "parity": -1,
+      "ratio_bin": 426,
+      "lower": [
+        "31",
+        false,
+        "12",
+        true
+      ],
+      "upper": [
+        "33",
+        true,
+        "11",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 198,
+      "states": [
+        "222211",
+        "211111"
+      ],
+      "parity": 1,
+      "ratio_bin": 905,
+      "lower": [
+        "11",
+        false,
+        "22",
+        true
+      ],
+      "upper": [
+        "12",
+        true,
+        "12~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 199,
+      "states": [
+        "222211",
+        "211111"
+      ],
+      "parity": 1,
+      "ratio_bin": 906,
+      "lower": [
+        "11",
+        false,
+        "22",
+        true
+      ],
+      "upper": [
+        "12",
+        true,
+        "12~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 200,
+      "states": [
+        "222111",
+        "222111"
+      ],
+      "parity": -1,
+      "ratio_bin": 531,
+      "lower": [
+        "13",
+        false,
+        "12",
+        true
+      ],
+      "upper": [
+        "12~2",
+        false,
+        "21",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 201,
+      "states": [
+        "222111",
+        "222111"
+      ],
+      "parity": -1,
+      "ratio_bin": 532,
+      "lower": [
+        "13",
+        false,
+        "12",
+        true
+      ],
+      "upper": [
+        "12~2",
+        false,
+        "21",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 202,
+      "states": [
+        "221132",
+        "221212"
+      ],
+      "parity": -1,
+      "ratio_bin": 187,
+      "lower": [
+        "22",
+        false,
+        "12",
+        true
+      ],
+      "upper": [
+        "31",
+        false,
+        "22~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 203,
+      "states": [
+        "222121",
+        "221132"
+      ],
+      "parity": 1,
+      "ratio_bin": 692,
+      "lower": [
+        "32",
+        false,
+        "13",
+        true
+      ],
+      "upper": [
+        "32~2",
+        false,
+        "13~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 204,
+      "states": [
+        "222121",
+        "221132"
+      ],
+      "parity": 1,
+      "ratio_bin": 693,
+      "lower": [
+        "32",
+        false,
+        "13",
+        true
+      ],
+      "upper": [
+        "32~2",
+        false,
+        "13~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 205,
+      "states": [
+        "223212",
+        "121112"
+      ],
+      "parity": 1,
+      "ratio_bin": 568,
+      "lower": [
+        "31~2",
+        false,
+        "31",
+        false
+      ],
+      "upper": [
+        "23",
+        true,
+        "12",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 206,
+      "states": [
+        "223212",
+        "121111"
+      ],
+      "parity": 1,
+      "ratio_bin": 170,
+      "lower": [
+        "33",
+        false,
+        "23",
+        false
+      ],
+      "upper": [
+        "12",
+        false,
+        "23",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 207,
+      "states": [
+        "223212",
+        "121111"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "lower": [
+        "33",
+        false,
+        "23",
+        false
+      ],
+      "upper": [
+        "12",
+        false,
+        "23",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 208,
+      "states": [
+        "223211",
+        "212111"
+      ],
+      "parity": -1,
+      "ratio_bin": 74,
+      "lower": [
+        "13",
+        false,
+        "33",
+        true
+      ],
+      "upper": [
+        "13",
+        false,
+        "32~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 209,
+      "states": [
+        "223211",
+        "212111"
+      ],
+      "parity": -1,
+      "ratio_bin": 75,
+      "lower": [
+        "13",
+        false,
+        "33",
+        true
+      ],
+      "upper": [
+        "13",
+        false,
+        "32~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 210,
+      "states": [
+        "121111",
+        "232123"
+      ],
+      "parity": -1,
+      "ratio_bin": 1015,
+      "lower": [
+        "21",
+        false,
+        "12",
+        true
+      ],
+      "upper": [
+        "22~2",
+        false,
+        "23",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 211,
+      "states": [
+        "121111",
+        "232123"
+      ],
+      "parity": -1,
+      "ratio_bin": 1016,
+      "lower": [
+        "21",
+        false,
+        "12",
+        true
+      ],
+      "upper": [
+        "22~2",
+        false,
+        "23",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 212,
+      "states": [
+        "223211",
+        "212111"
+      ],
+      "parity": -1,
+      "ratio_bin": 74,
+      "lower": [
+        "12~2",
+        false,
+        "33~2",
+        false
+      ],
+      "upper": [
+        "12~2",
+        false,
+        "32",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 213,
+      "states": [
+        "223211",
+        "212111"
+      ],
+      "parity": -1,
+      "ratio_bin": 75,
+      "lower": [
+        "12~2",
+        false,
+        "33~2",
+        false
+      ],
+      "upper": [
+        "12~2",
+        false,
+        "32",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 214,
+      "states": [
+        "232111",
+        "121113"
+      ],
+      "parity": -1,
+      "ratio_bin": 762,
+      "lower": [
+        "22~2",
+        false,
+        "32~2",
+        false
+      ],
+      "upper": [
+        "22",
+        false,
+        "31",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 215,
+      "states": [
+        "232111",
+        "121113"
+      ],
+      "parity": -1,
+      "ratio_bin": 763,
+      "lower": [
+        "22~2",
+        false,
+        "32~2",
+        false
+      ],
+      "upper": [
+        "22",
+        false,
+        "31",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 216,
+      "states": [
+        "223211",
+        "212111"
+      ],
+      "parity": -1,
+      "ratio_bin": 76,
+      "lower": [
+        "12~2",
+        false,
+        "33~2",
+        false
+      ],
+      "upper": [
+        "12~2",
+        false,
+        "32",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 217,
+      "states": [
+        "121111",
+        "232123"
+      ],
+      "parity": -1,
+      "ratio_bin": 1014,
+      "lower": [
+        "32",
+        false,
+        "12",
+        true
+      ],
+      "upper": [
+        "33",
+        true,
+        "11",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 218,
+      "states": [
+        "121111",
+        "232123"
+      ],
+      "parity": -1,
+      "ratio_bin": 1015,
+      "lower": [
+        "32",
+        false,
+        "12",
+        true
+      ],
+      "upper": [
+        "33",
+        true,
+        "11",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 219,
+      "states": [
+        "212111",
+        "232111"
+      ],
+      "parity": 1,
+      "ratio_bin": 399,
+      "lower": [
+        "21~2",
+        false,
+        "32~2",
+        false
+      ],
+      "upper": [
+        "21~2",
+        false,
+        "32",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 220,
+      "states": [
+        "212111",
+        "232111"
+      ],
+      "parity": 1,
+      "ratio_bin": 400,
+      "lower": [
+        "21~2",
+        false,
+        "32~2",
+        false
+      ],
+      "upper": [
+        "21~2",
+        false,
+        "32",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 221,
+      "states": [
+        "232111",
+        "121112"
+      ],
+      "parity": -1,
+      "ratio_bin": 480,
+      "lower": [
+        "32",
+        true,
+        "12~2",
+        false
+      ],
+      "upper": [
+        "33",
+        true,
+        "12",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 222,
+      "states": [
+        "232111",
+        "121112"
+      ],
+      "parity": -1,
+      "ratio_bin": 481,
+      "lower": [
+        "32",
+        true,
+        "12~2",
+        false
+      ],
+      "upper": [
+        "33",
+        true,
+        "12",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 223,
+      "states": [
+        "221121",
+        "222212"
+      ],
+      "parity": 1,
+      "ratio_bin": 477,
+      "lower": [
+        "32~2",
+        false,
+        "21",
+        false
+      ],
+      "upper": [
+        "11~2",
+        false,
+        "23~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 224,
+      "states": [
+        "221121",
+        "222212"
+      ],
+      "parity": 1,
+      "ratio_bin": 478,
+      "lower": [
+        "32~2",
+        false,
+        "21",
+        false
+      ],
+      "upper": [
+        "11~2",
+        false,
+        "23~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 225,
+      "states": [
+        "222221",
+        "211211"
+      ],
+      "parity": 1,
+      "ratio_bin": 898,
+      "lower": [
+        "11~2",
+        false,
+        "11",
+        false
+      ],
+      "upper": [
+        "13~2",
+        false,
+        "11",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 226,
+      "states": [
+        "222221",
+        "211211"
+      ],
+      "parity": 1,
+      "ratio_bin": 899,
+      "lower": [
+        "11~2",
+        false,
+        "11",
+        false
+      ],
+      "upper": [
+        "13~2",
+        false,
+        "11",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 227,
+      "states": [
+        "222133",
+        "112112"
+      ],
+      "parity": 1,
+      "ratio_bin": 304,
+      "lower": [
+        "33",
+        true,
+        "33",
+        true
+      ],
+      "upper": [
+        "12~2",
+        false,
+        "13",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 228,
+      "states": [
+        "222133",
+        "112112"
+      ],
+      "parity": 1,
+      "ratio_bin": 305,
+      "lower": [
+        "21",
+        false,
+        "31",
+        false
+      ],
+      "upper": [
+        "12~2",
+        false,
+        "13",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 229,
+      "states": [
+        "222212",
+        "211121"
+      ],
+      "parity": 1,
+      "ratio_bin": 876,
+      "lower": [
+        "31",
+        false,
+        "21",
+        false
+      ],
+      "upper": [
+        "23",
+        true,
+        "12",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 230,
+      "states": [
+        "222122",
+        "211122"
+      ],
+      "parity": -1,
+      "ratio_bin": 438,
+      "lower": [
+        "31",
+        false,
+        "12",
+        true
+      ],
+      "upper": [
+        "11",
+        true,
+        "21",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 231,
+      "states": [
+        "222212",
+        "211121"
+      ],
+      "parity": 1,
+      "ratio_bin": 875,
+      "lower": [
+        "11~2",
+        false,
+        "21",
+        true
+      ],
+      "upper": [
+        "13~2",
+        false,
+        "22~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 232,
+      "states": [
+        "222212",
+        "211121"
+      ],
+      "parity": 1,
+      "ratio_bin": 876,
+      "lower": [
+        "11~2",
+        false,
+        "21",
+        true
+      ],
+      "upper": [
+        "13~2",
+        false,
+        "22~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 233,
+      "states": [
+        "221112",
+        "222112"
+      ],
+      "parity": 1,
+      "ratio_bin": 55,
+      "lower": [
+        "31",
+        false,
+        "21~2",
+        false
+      ],
+      "upper": [
+        "22~2",
+        false,
+        "22~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 234,
+      "states": [
+        "221111",
+        "222113"
+      ],
+      "parity": 1,
+      "ratio_bin": 740,
+      "lower": [
+        "12",
+        false,
+        "31",
+        false
+      ],
+      "upper": [
+        "13~2",
+        false,
+        "33",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 235,
+      "states": [
+        "221111",
+        "222113"
+      ],
+      "parity": 1,
+      "ratio_bin": 741,
+      "lower": [
+        "12",
+        false,
+        "31",
+        false
+      ],
+      "upper": [
+        "13~2",
+        false,
+        "33",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 236,
+      "states": [
+        "222111",
+        "221113"
+      ],
+      "parity": 1,
+      "ratio_bin": 632,
+      "lower": [
+        "11",
+        false,
+        "32",
+        false
+      ],
+      "upper": [
+        "11~2",
+        false,
+        "32",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 237,
+      "states": [
+        "222111",
+        "221113"
+      ],
+      "parity": 1,
+      "ratio_bin": 633,
+      "lower": [
+        "11",
+        false,
+        "32",
+        false
+      ],
+      "upper": [
+        "11~2",
+        false,
+        "32",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 238,
+      "states": [
+        "211111",
+        "222113"
+      ],
+      "parity": -1,
+      "ratio_bin": 260,
+      "lower": [
+        "11",
+        false,
+        "21",
+        true
+      ],
+      "upper": [
+        "12",
+        true,
+        "21",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 239,
+      "states": [
+        "211111",
+        "222113"
+      ],
+      "parity": -1,
+      "ratio_bin": 261,
+      "lower": [
+        "11",
+        false,
+        "21",
+        true
+      ],
+      "upper": [
+        "12",
+        true,
+        "21",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 240,
+      "states": [
+        "222111",
+        "221112"
+      ],
+      "parity": 1,
+      "ratio_bin": 349,
+      "lower": [
+        "22",
+        false,
+        "31",
+        false
+      ],
+      "upper": [
+        "12~2",
+        false,
+        "13~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 241,
+      "states": [
+        "222111",
+        "221112"
+      ],
+      "parity": 1,
+      "ratio_bin": 350,
+      "lower": [
+        "22",
+        false,
+        "31",
+        false
+      ],
+      "upper": [
+        "12~2",
+        false,
+        "13~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 242,
+      "states": [
+        "222211",
+        "221111"
+      ],
+      "parity": -1,
+      "ratio_bin": 426,
+      "lower": [
+        "21",
+        true,
+        "21",
+        false
+      ],
+      "upper": [
+        "12",
+        true,
+        "23~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 243,
+      "states": [
+        "222211",
+        "221111"
+      ],
+      "parity": -1,
+      "ratio_bin": 427,
+      "lower": [
+        "21",
+        true,
+        "21",
+        false
+      ],
+      "upper": [
+        "12",
+        true,
+        "23~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 244,
+      "states": [
+        "211321",
+        "212121"
+      ],
+      "parity": -1,
+      "ratio_bin": 175,
+      "lower": [
+        "21",
+        false,
+        "13",
+        true
+      ],
+      "upper": [
+        "23",
+        true,
+        "11~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 245,
+      "states": [
+        "211321",
+        "212121"
+      ],
+      "parity": -1,
+      "ratio_bin": 176,
+      "lower": [
+        "21",
+        false,
+        "13",
+        true
+      ],
+      "upper": [
+        "23",
+        true,
+        "11~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 246,
+      "states": [
+        "222133",
+        "112112"
+      ],
+      "parity": 1,
+      "ratio_bin": 303,
+      "lower": [
+        "33",
+        true,
+        "33",
+        true
+      ],
+      "upper": [
+        "12~2",
+        false,
+        "13",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 247,
+      "states": [
+        "221121",
+        "222121"
+      ],
+      "parity": 1,
+      "ratio_bin": 33,
+      "lower": [
+        "23",
+        true,
+        "21",
+        false
+      ],
+      "upper": [
+        "11",
+        true,
+        "12",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 248,
+      "states": [
+        "221121",
+        "222121"
+      ],
+      "parity": 1,
+      "ratio_bin": 34,
+      "lower": [
+        "23",
+        true,
+        "21",
+        false
+      ],
+      "upper": [
+        "11",
+        true,
+        "12",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 249,
+      "states": [
+        "221121",
+        "222123"
+      ],
+      "parity": 1,
+      "ratio_bin": 786,
+      "lower": [
+        "11",
+        false,
+        "31",
+        false
+      ],
+      "upper": [
+        "12~2",
+        false,
+        "11",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 250,
+      "states": [
+        "221121",
+        "222123"
+      ],
+      "parity": 1,
+      "ratio_bin": 787,
+      "lower": [
+        "11",
+        false,
+        "31",
+        false
+      ],
+      "upper": [
+        "12~2",
+        false,
+        "11",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 251,
+      "states": [
+        "222212",
+        "211211"
+      ],
+      "parity": 1,
+      "ratio_bin": 896,
+      "lower": [
+        "33",
+        true,
+        "13",
+        true
+      ],
+      "upper": [
+        "23",
+        true,
+        "12",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 252,
+      "states": [
+        "222212",
+        "211211"
+      ],
+      "parity": 1,
+      "ratio_bin": 897,
+      "lower": [
+        "33",
+        true,
+        "13",
+        true
+      ],
+      "upper": [
+        "23",
+        true,
+        "12",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 253,
+      "states": [
+        "222122",
+        "211212"
+      ],
+      "parity": -1,
+      "ratio_bin": 400,
+      "lower": [
+        "31",
+        false,
+        "12",
+        true
+      ],
+      "upper": [
+        "11~2",
+        false,
+        "31",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 254,
+      "states": [
+        "221121",
+        "222121"
+      ],
+      "parity": 1,
+      "ratio_bin": 34,
+      "lower": [
+        "23",
+        true,
+        "21",
+        false
+      ],
+      "upper": [
+        "12",
+        false,
+        "12",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 255,
+      "states": [
+        "221121",
+        "222121"
+      ],
+      "parity": 1,
+      "ratio_bin": 35,
+      "lower": [
+        "23",
+        true,
+        "21",
+        false
+      ],
+      "upper": [
+        "12",
+        false,
+        "12",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 256,
+      "states": [
+        "221132",
+        "111121"
+      ],
+      "parity": -1,
+      "ratio_bin": 761,
+      "lower": [
+        "13~2",
+        false,
+        "33",
+        true
+      ],
+      "upper": [
+        "13",
+        true,
+        "32",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 257,
+      "states": [
+        "221132",
+        "111121"
+      ],
+      "parity": -1,
+      "ratio_bin": 762,
+      "lower": [
+        "13~2",
+        false,
+        "33",
+        true
+      ],
+      "upper": [
+        "13",
+        true,
+        "32",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 258,
+      "states": [
+        "211112",
+        "211321"
+      ],
+      "parity": -1,
+      "ratio_bin": 124,
+      "lower": [
+        "13",
+        false,
+        "32",
+        true
+      ],
+      "upper": [
+        "13",
+        false,
+        "32~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 259,
+      "states": [
+        "211112",
+        "211321"
+      ],
+      "parity": -1,
+      "ratio_bin": 125,
+      "lower": [
+        "13",
+        false,
+        "32",
+        true
+      ],
+      "upper": [
+        "13",
+        false,
+        "32~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 260,
+      "states": [
+        "211112",
+        "211321"
+      ],
+      "parity": -1,
+      "ratio_bin": 124,
+      "lower": [
+        "13",
+        true,
+        "33",
+        true
+      ],
+      "upper": [
+        "13",
+        false,
+        "32",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 261,
+      "states": [
+        "211112",
+        "211321"
+      ],
+      "parity": -1,
+      "ratio_bin": 125,
+      "lower": [
+        "13",
+        true,
+        "33",
+        true
+      ],
+      "upper": [
+        "13",
+        false,
+        "32",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 262,
+      "states": [
+        "221132",
+        "111112"
+      ],
+      "parity": -1,
+      "ratio_bin": 803,
+      "lower": [
+        "31",
+        false,
+        "12",
+        false
+      ],
+      "upper": [
+        "31",
+        true,
+        "13",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 263,
+      "states": [
+        "221322",
+        "111113"
+      ],
+      "parity": 1,
+      "ratio_bin": 126,
+      "lower": [
+        "13",
+        false,
+        "23~2",
+        false
+      ],
+      "upper": [
+        "13~2",
+        false,
+        "23",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 264,
+      "states": [
+        "221322",
+        "111113"
+      ],
+      "parity": 1,
+      "ratio_bin": 127,
+      "lower": [
+        "13",
+        false,
+        "23~2",
+        false
+      ],
+      "upper": [
+        "13~2",
+        false,
+        "23",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 265,
+      "states": [
+        "111111",
+        "222132"
+      ],
+      "parity": 1,
+      "ratio_bin": 156,
+      "lower": [
+        "32",
+        false,
+        "21",
+        false
+      ],
+      "upper": [
+        "21",
+        false,
+        "31",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 266,
+      "states": [
+        "111111",
+        "222132"
+      ],
+      "parity": 1,
+      "ratio_bin": 157,
+      "lower": [
+        "32",
+        false,
+        "21",
+        false
+      ],
+      "upper": [
+        "21",
+        false,
+        "31",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 267,
+      "states": [
+        "222132",
+        "111113"
+      ],
+      "parity": -1,
+      "ratio_bin": 1006,
+      "lower": [
+        "21",
+        false,
+        "23",
+        true
+      ],
+      "upper": [
+        "21",
+        false,
+        "23",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 268,
+      "states": [
+        "222132",
+        "111113"
+      ],
+      "parity": -1,
+      "ratio_bin": 1007,
+      "lower": [
+        "21",
+        false,
+        "23",
+        true
+      ],
+      "upper": [
+        "21",
+        false,
+        "23",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 269,
+      "states": [
+        "221322",
+        "111113"
+      ],
+      "parity": 1,
+      "ratio_bin": 125,
+      "lower": [
+        "13",
+        false,
+        "23~2",
+        false
+      ],
+      "upper": [
+        "13~2",
+        false,
+        "23",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 270,
+      "states": [
+        "222132",
+        "111113"
+      ],
+      "parity": -1,
+      "ratio_bin": 1005,
+      "lower": [
+        "21",
+        false,
+        "23",
+        true
+      ],
+      "upper": [
+        "21",
+        false,
+        "23",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 271,
+      "states": [
+        "221322",
+        "111132"
+      ],
+      "parity": -1,
+      "ratio_bin": 1005,
+      "lower": [
+        "13",
+        false,
+        "32",
+        false
+      ],
+      "upper": [
+        "13",
+        true,
+        "33",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 272,
+      "states": [
+        "221322",
+        "111132"
+      ],
+      "parity": -1,
+      "ratio_bin": 1006,
+      "lower": [
+        "13",
+        false,
+        "32~2",
+        false
+      ],
+      "upper": [
+        "13~2",
+        false,
+        "31",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 273,
+      "states": [
+        "221322",
+        "111132"
+      ],
+      "parity": -1,
+      "ratio_bin": 1005,
+      "lower": [
+        "13",
+        false,
+        "32~2",
+        false
+      ],
+      "upper": [
+        "13",
+        false,
+        "32",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 274,
+      "states": [
+        "221322",
+        "111132"
+      ],
+      "parity": -1,
+      "ratio_bin": 1005,
+      "lower": [
+        "13",
+        false,
+        "32",
+        true
+      ],
+      "upper": [
+        "13",
+        false,
+        "32~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 275,
+      "states": [
+        "221322",
+        "111132"
+      ],
+      "parity": -1,
+      "ratio_bin": 1006,
+      "lower": [
+        "13",
+        false,
+        "32",
+        true
+      ],
+      "upper": [
+        "13",
+        false,
+        "32~2",
+        false
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 276,
+      "states": [
+        "221112",
+        "211213"
+      ],
+      "parity": 1,
+      "ratio_bin": 588,
+      "lower": [
+        "11",
+        false,
+        "22~2",
+        false
+      ],
+      "upper": [
+        "12~2",
+        false,
+        "33",
+        true
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 277,
+      "states": [
+        "221112",
+        "211213"
+      ],
+      "parity": 1,
+      "ratio_bin": 589,
+      "lower": [
+        "11",
+        false,
+        "22~2",
+        false
+      ],
+      "upper": [
+        "12~2",
+        false,
+        "33",
+        true
+      ],
+      "covered": false,
+      "children": []
+    }
+  ],
+  "extraction": {
+    "source_sha256": "0b4e2d443b010e21694913c167b6289cae75bbb6dda83de2efdcb3c66a0334b8",
+    "source_nodes": 8833,
+    "source_open_nodes": 6554,
+    "local_rule_budget": 64
+  }
+}

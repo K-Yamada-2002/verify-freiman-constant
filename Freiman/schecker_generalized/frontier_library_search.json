@@ -1,0 +1,14 @@
+{
+  "sources": [
+    "2ec5d4f7b280bebb932f615f0e4772cd1a220bd4508c33ff31056c43a81ad12f",
+    "93353e5b660d13ff16c6197df525562bf0df0e11c11c9286cf673ec2500d6eb4"
+  ],
+  "settings": {
+    "max_step": 1,
+    "simultaneous_extremal_return": 6
+  },
+  "nodes": 1503,
+  "supported": [],
+  "steps": 2475,
+  "generated_offers": 12506
+}

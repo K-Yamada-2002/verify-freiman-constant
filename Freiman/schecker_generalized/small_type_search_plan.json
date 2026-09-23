@@ -1,0 +1,54 @@
+[
+  {
+    "states": 6,
+    "bins": 25,
+    "base": "22/25",
+    "max_step": 1,
+    "outer_depth": 3,
+    "outer_samples": 3,
+    "balance": "9/10",
+    "reuse_pending": true,
+    "breadth_first": true
+  },
+  {
+    "states": 6,
+    "bins": 25,
+    "base": "22/25",
+    "max_step": 1,
+    "outer_depth": 3,
+    "outer_samples": 3,
+    "balance": "9/10",
+    "reuse_pending": true,
+    "breadth_first": true,
+    "adaptive_shapes": true,
+    "max_shapes": 32
+  },
+  {
+    "states": 6,
+    "bins": 25,
+    "base": "22/25",
+    "max_step": 1,
+    "outer_depth": 3,
+    "outer_samples": 3,
+    "balance": "9/10",
+    "reuse_pending": true,
+    "breadth_first": true,
+    "adaptive_shapes": true,
+    "max_shapes": 32,
+    "macro_menu": "Freiman/schecker_generalized/small_type_menu12.json"
+  },
+  {
+    "states": 6,
+    "bins": 25,
+    "base": "22/25",
+    "max_step": 1,
+    "outer_depth": 3,
+    "outer_samples": 3,
+    "balance": "9/10",
+    "reuse_pending": true,
+    "breadth_first": true,
+    "adaptive_shapes": true,
+    "max_shapes": 32,
+    "min_cost_cover": true
+  }
+]

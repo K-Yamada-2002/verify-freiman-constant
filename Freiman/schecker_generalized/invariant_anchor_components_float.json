@@ -1,0 +1,160 @@
+{
+  "status": "floating discovery only; requires exact verification",
+  "nonempty_fixed_point": false,
+  "history": [
+    {
+      "round": 0,
+      "nonempty_cells": 3600,
+      "components": 5156,
+      "changed": 848
+    },
+    {
+      "round": 1,
+      "nonempty_cells": 3600,
+      "components": 6711,
+      "changed": 1179
+    },
+    {
+      "round": 2,
+      "nonempty_cells": 3600,
+      "components": 8013,
+      "changed": 1157
+    },
+    {
+      "round": 3,
+      "nonempty_cells": 3600,
+      "components": 9055,
+      "changed": 1038
+    },
+    {
+      "round": 4,
+      "nonempty_cells": 3600,
+      "components": 9647,
+      "changed": 987
+    },
+    {
+      "round": 5,
+      "nonempty_cells": 3600,
+      "components": 9926,
+      "changed": 860
+    },
+    {
+      "round": 6,
+      "nonempty_cells": 3600,
+      "components": 9435,
+      "changed": 1142
+    },
+    {
+      "round": 7,
+      "nonempty_cells": 3600,
+      "components": 8900,
+      "changed": 1078
+    },
+    {
+      "round": 8,
+      "nonempty_cells": 3600,
+      "components": 9123,
+      "changed": 1087
+    },
+    {
+      "round": 9,
+      "nonempty_cells": 3600,
+      "components": 9396,
+      "changed": 1217
+    },
+    {
+      "round": 10,
+      "nonempty_cells": 3600,
+      "components": 9522,
+      "changed": 1370
+    },
+    {
+      "round": 11,
+      "nonempty_cells": 3600,
+      "components": 9581,
+      "changed": 1557
+    },
+    {
+      "round": 12,
+      "nonempty_cells": 3600,
+      "components": 9921,
+      "changed": 1355
+    },
+    {
+      "round": 13,
+      "nonempty_cells": 3600,
+      "components": 10572,
+      "changed": 1421
+    },
+    {
+      "round": 14,
+      "nonempty_cells": 3600,
+      "components": 11552,
+      "changed": 1642
+    },
+    {
+      "round": 15,
+      "nonempty_cells": 3600,
+      "components": 12582,
+      "changed": 2153
+    },
+    {
+      "round": 16,
+      "nonempty_cells": 3600,
+      "components": 13764,
+      "changed": 2686
+    },
+    {
+      "round": 17,
+      "nonempty_cells": 3597,
+      "components": 15167,
+      "changed": 3352
+    },
+    {
+      "round": 18,
+      "nonempty_cells": 3503,
+      "components": 13158,
+      "changed": 3537
+    },
+    {
+      "round": 19,
+      "nonempty_cells": 2425,
+      "components": 5001,
+      "changed": 3485
+    },
+    {
+      "round": 20,
+      "nonempty_cells": 275,
+      "components": 314,
+      "changed": 2403
+    },
+    {
+      "round": 21,
+      "nonempty_cells": 2,
+      "components": 2,
+      "changed": 273
+    },
+    {
+      "round": 22,
+      "nonempty_cells": 0,
+      "components": 0,
+      "changed": 2
+    },
+    {
+      "round": 23,
+      "nonempty_cells": 0,
+      "components": 0,
+      "changed": 0
+    }
+  ],
+  "survivors": [],
+  "ratio_parameter": "derivative ratio at the chosen extremal tail anchors",
+  "settings": {
+    "bins": 25,
+    "base": 0.88,
+    "rounds": 50,
+    "states": 6,
+    "max_step": 2,
+    "simultaneous_extremal_return": 6
+  }
+}

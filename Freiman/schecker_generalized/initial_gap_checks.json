@@ -1,0 +1,45 @@
+{
+  "status": "finite floating gap searches only; absence of detected gaps is not filledness",
+  "checks": [
+    {
+      "name": "H1_depth7",
+      "status": "exact counterexamples; no-gap searches do not prove filledness",
+      "surveyed": 1,
+      "depth": 7,
+      "n": 0,
+      "obstructions": []
+    },
+    {
+      "name": "H2_depth7",
+      "status": "exact counterexamples; no-gap searches do not prove filledness",
+      "surveyed": 1,
+      "depth": 7,
+      "n": 0,
+      "obstructions": []
+    },
+    {
+      "name": "J2R_depth7",
+      "status": "exact counterexamples; no-gap searches do not prove filledness",
+      "surveyed": 1,
+      "depth": 7,
+      "n": 0,
+      "obstructions": []
+    },
+    {
+      "name": "A0_depth8",
+      "status": "exact counterexamples; no-gap searches do not prove filledness",
+      "surveyed": 1,
+      "depth": 8,
+      "n": 0,
+      "obstructions": []
+    },
+    {
+      "name": "A1_depth8",
+      "status": "exact counterexamples; no-gap searches do not prove filledness",
+      "surveyed": 1,
+      "depth": 8,
+      "n": 1,
+      "obstructions": []
+    }
+  ]
+}
