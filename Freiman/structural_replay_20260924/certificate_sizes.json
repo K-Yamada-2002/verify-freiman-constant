@@ -1,0 +1,377 @@
+{
+  "section14": {
+    "files": [
+      {
+        "file": "geometry_1_1.json",
+        "records": 6228,
+        "proofs": 911,
+        "tree_nodes": {
+          "pair": 911
+        },
+        "max_split_depth": 0,
+        "input_rational_max_bits": 32,
+        "open_obligations": 0
+      },
+      {
+        "file": "geometry_1_2.json",
+        "records": 4949,
+        "proofs": 784,
+        "tree_nodes": {
+          "pair": 784
+        },
+        "max_split_depth": 0,
+        "input_rational_max_bits": 32,
+        "open_obligations": 0
+      },
+      {
+        "file": "geometry_1_3.json",
+        "records": 2754,
+        "proofs": 916,
+        "tree_nodes": {
+          "pair": 916
+        },
+        "max_split_depth": 0,
+        "input_rational_max_bits": 34,
+        "open_obligations": 0
+      },
+      {
+        "file": "geometry_1_31.json",
+        "records": 2318,
+        "proofs": 816,
+        "tree_nodes": {
+          "pair": 816
+        },
+        "max_split_depth": 0,
+        "input_rational_max_bits": 32,
+        "open_obligations": 0
+      },
+      {
+        "file": "geometry_2_1.json",
+        "records": 6987,
+        "proofs": 1182,
+        "tree_nodes": {
+          "pair": 1182
+        },
+        "max_split_depth": 0,
+        "input_rational_max_bits": 34,
+        "open_obligations": 0
+      },
+      {
+        "file": "geometry_2_2.json",
+        "records": 6170,
+        "proofs": 1005,
+        "tree_nodes": {
+          "pair": 1005
+        },
+        "max_split_depth": 0,
+        "input_rational_max_bits": 32,
+        "open_obligations": 0
+      },
+      {
+        "file": "geometry_2_3.json",
+        "records": 2743,
+        "proofs": 983,
+        "tree_nodes": {
+          "pair": 983
+        },
+        "max_split_depth": 0,
+        "input_rational_max_bits": 34,
+        "open_obligations": 0
+      },
+      {
+        "file": "geometry_2_31.json",
+        "records": 2667,
+        "proofs": 985,
+        "tree_nodes": {
+          "pair": 985
+        },
+        "max_split_depth": 0,
+        "input_rational_max_bits": 34,
+        "open_obligations": 0
+      },
+      {
+        "file": "geometry_31_1.json",
+        "records": 5032,
+        "proofs": 727,
+        "tree_nodes": {
+          "pair": 727
+        },
+        "max_split_depth": 0,
+        "input_rational_max_bits": 32,
+        "open_obligations": 0
+      },
+      {
+        "file": "geometry_31_2.json",
+        "records": 4110,
+        "proofs": 633,
+        "tree_nodes": {
+          "pair": 633
+        },
+        "max_split_depth": 0,
+        "input_rational_max_bits": 32,
+        "open_obligations": 0
+      },
+      {
+        "file": "geometry_31_3.json",
+        "records": 1755,
+        "proofs": 688,
+        "tree_nodes": {
+          "pair": 688
+        },
+        "max_split_depth": 0,
+        "input_rational_max_bits": 34,
+        "open_obligations": 0
+      },
+      {
+        "file": "geometry_31_31.json",
+        "records": 1909,
+        "proofs": 706,
+        "tree_nodes": {
+          "pair": 706
+        },
+        "max_split_depth": 0,
+        "input_rational_max_bits": 32,
+        "open_obligations": 0
+      },
+      {
+        "file": "geometry_3_1.json",
+        "records": 3625,
+        "proofs": 1056,
+        "tree_nodes": {
+          "pair": 1056
+        },
+        "max_split_depth": 0,
+        "input_rational_max_bits": 34,
+        "open_obligations": 0
+      },
+      {
+        "file": "geometry_3_2.json",
+        "records": 3179,
+        "proofs": 783,
+        "tree_nodes": {
+          "pair": 783
+        },
+        "max_split_depth": 0,
+        "input_rational_max_bits": 32,
+        "open_obligations": 0
+      },
+      {
+        "file": "geometry_3_3.json",
+        "records": 1376,
+        "proofs": 691,
+        "tree_nodes": {
+          "pair": 691
+        },
+        "max_split_depth": 0,
+        "input_rational_max_bits": 34,
+        "open_obligations": 0
+      },
+      {
+        "file": "geometry_3_31.json",
+        "records": 2667,
+        "proofs": 977,
+        "tree_nodes": {
+          "pair": 977
+        },
+        "max_split_depth": 0,
+        "input_rational_max_bits": 34,
+        "open_obligations": 0
+      }
+    ],
+    "records": 58469,
+    "proofs": 13843,
+    "max_split_depth": 0,
+    "input_rational_max_bits": 34
+  },
+  "section15_early": {
+    "files": [
+      {
+        "file": "geometry_1_1.json",
+        "records": 8419,
+        "proofs": 812,
+        "tree_nodes": {
+          "pair": 811,
+          "diagonal": 1
+        },
+        "max_split_depth": 0,
+        "input_rational_max_bits": 32,
+        "open_obligations": 0
+      },
+      {
+        "file": "geometry_1_2.json",
+        "records": 7790,
+        "proofs": 857,
+        "tree_nodes": {
+          "pair": 857
+        },
+        "max_split_depth": 0,
+        "input_rational_max_bits": 32,
+        "open_obligations": 0
+      },
+      {
+        "file": "geometry_1_3.json",
+        "records": 1924,
+        "proofs": 519,
+        "tree_nodes": {
+          "pair": 519
+        },
+        "max_split_depth": 0,
+        "input_rational_max_bits": 32,
+        "open_obligations": 0
+      },
+      {
+        "file": "geometry_1_31.json",
+        "records": 2608,
+        "proofs": 569,
+        "tree_nodes": {
+          "pair": 569,
+          "diagonal": 1,
+          "split": 1
+        },
+        "max_split_depth": 1,
+        "input_rational_max_bits": 27,
+        "open_obligations": 0
+      },
+      {
+        "file": "geometry_2_1.json",
+        "records": 6920,
+        "proofs": 746,
+        "tree_nodes": {
+          "pair": 746
+        },
+        "max_split_depth": 0,
+        "input_rational_max_bits": 32,
+        "open_obligations": 0
+      },
+      {
+        "file": "geometry_2_2.json",
+        "records": 7651,
+        "proofs": 850,
+        "tree_nodes": {
+          "pair": 849,
+          "diagonal": 1
+        },
+        "max_split_depth": 0,
+        "input_rational_max_bits": 32,
+        "open_obligations": 0
+      },
+      {
+        "file": "geometry_2_3.json",
+        "records": 1857,
+        "proofs": 525,
+        "tree_nodes": {
+          "pair": 525
+        },
+        "max_split_depth": 0,
+        "input_rational_max_bits": 32,
+        "open_obligations": 0
+      },
+      {
+        "file": "geometry_2_31.json",
+        "records": 2097,
+        "proofs": 555,
+        "tree_nodes": {
+          "pair": 555
+        },
+        "max_split_depth": 0,
+        "input_rational_max_bits": 27,
+        "open_obligations": 0
+      },
+      {
+        "file": "geometry_31_1.json",
+        "records": 3171,
+        "proofs": 290,
+        "tree_nodes": {
+          "pair": 289,
+          "diagonal": 1
+        },
+        "max_split_depth": 0,
+        "input_rational_max_bits": 25,
+        "open_obligations": 0
+      },
+      {
+        "file": "geometry_31_2.json",
+        "records": 2963,
+        "proofs": 274,
+        "tree_nodes": {
+          "pair": 274
+        },
+        "max_split_depth": 0,
+        "input_rational_max_bits": 25,
+        "open_obligations": 0
+      },
+      {
+        "file": "geometry_31_3.json",
+        "records": 613,
+        "proofs": 153,
+        "tree_nodes": {
+          "pair": 153
+        },
+        "max_split_depth": 0,
+        "input_rational_max_bits": 25,
+        "open_obligations": 0
+      },
+      {
+        "file": "geometry_31_31.json",
+        "records": 1237,
+        "proofs": 238,
+        "tree_nodes": {
+          "pair": 237,
+          "diagonal": 1
+        },
+        "max_split_depth": 0,
+        "input_rational_max_bits": 25,
+        "open_obligations": 0
+      },
+      {
+        "file": "geometry_3_1.json",
+        "records": 3924,
+        "proofs": 653,
+        "tree_nodes": {
+          "pair": 653
+        },
+        "max_split_depth": 0,
+        "input_rational_max_bits": 32,
+        "open_obligations": 0
+      },
+      {
+        "file": "geometry_3_2.json",
+        "records": 3966,
+        "proofs": 660,
+        "tree_nodes": {
+          "pair": 660
+        },
+        "max_split_depth": 0,
+        "input_rational_max_bits": 32,
+        "open_obligations": 0
+      },
+      {
+        "file": "geometry_3_3.json",
+        "records": 1785,
+        "proofs": 509,
+        "tree_nodes": {
+          "pair": 509
+        },
+        "max_split_depth": 0,
+        "input_rational_max_bits": 32,
+        "open_obligations": 0
+      },
+      {
+        "file": "geometry_3_31.json",
+        "records": 1305,
+        "proofs": 440,
+        "tree_nodes": {
+          "pair": 440
+        },
+        "max_split_depth": 0,
+        "input_rational_max_bits": 27,
+        "open_obligations": 0
+      }
+    ],
+    "records": 58230,
+    "proofs": 8650,
+    "max_split_depth": 1,
+    "input_rational_max_bits": 32
+  },
+  "scope": "Two local geometry families only. Input coefficient sizes do not bound intermediate arithmetic or total verification cost."
+}

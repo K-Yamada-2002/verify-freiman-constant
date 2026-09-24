@@ -1,0 +1,123 @@
+{
+  "contraction": {
+    "changes": [
+      {
+        "node": 6,
+        "before": [
+          61430688,
+          87867787
+        ],
+        "after": [
+          61434831,
+          87867787
+        ],
+        "iteration": 0
+      },
+      {
+        "node": 2,
+        "before": [
+          -158805179,
+          -149519675
+        ],
+        "after": [
+          -158805179,
+          -149521024
+        ],
+        "iteration": 0
+      },
+      {
+        "node": 0,
+        "before": [
+          339523997,
+          339921464
+        ],
+        "after": [
+          339523997,
+          339921406
+        ],
+        "iteration": 0
+      },
+      {
+        "node": 1,
+        "before": [
+          -158805179,
+          -149519675
+        ],
+        "after": [
+          -158805179,
+          -149521024
+        ],
+        "iteration": 1,
+        "reason": "incoming scalar demands"
+      },
+      {
+        "node": 5,
+        "before": [
+          61430688,
+          87867787
+        ],
+        "after": [
+          61434831,
+          87867787
+        ],
+        "iteration": 1,
+        "reason": "incoming scalar demands"
+      },
+      {
+        "node": 7,
+        "before": [
+          217066217,
+          339287905
+        ],
+        "after": [
+          237191461,
+          339287905
+        ],
+        "iteration": 1,
+        "reason": "incoming scalar demands"
+      }
+    ],
+    "passes": 3,
+    "closed": false,
+    "open_nodes": 14,
+    "physical_interval": [
+      {
+        "a": {
+          "a": "7586808277433294773642817121/9002448733953151449088000000",
+          "b": "0"
+        },
+        "b": {
+          "a": "195632906369801625377/900244873395315144908800000",
+          "b": "0"
+        },
+        "decimal": "0.8427497082528646502647"
+      },
+      {
+        "a": {
+          "a": "3793404140647671873190799979/4501224366976575724544000000",
+          "b": "0"
+        },
+        "b": {
+          "a": "97697355434173297323/450122436697657572454400000",
+          "b": "0"
+        },
+        "decimal": "0.8427497083076781683177"
+      }
+    ]
+  },
+  "coalescing": {
+    "merges": [],
+    "before": 30,
+    "after": 30,
+    "status": "equivalent open obligations; no filling asserted"
+  },
+  "status": {
+    "nodes": 30,
+    "local_rules": 16,
+    "open_nodes": 14,
+    "supported_nodes": [],
+    "root_ranks": [
+      4
+    ]
+  }
+}

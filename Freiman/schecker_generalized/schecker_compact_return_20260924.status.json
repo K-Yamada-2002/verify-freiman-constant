@@ -1,0 +1,32 @@
+{
+  "status": "Schecker induction remains open",
+  "ranks": {
+    "scope": "chosen strategy only; finite rank does not refute filledness",
+    "proof_hash": "5f7c7ba30643d5a6ae6adcd7453788c899cfa8ad53fe67db0f5e4b99f94796b8",
+    "nodes": 3176,
+    "root_ranks": {
+      "zero": 5,
+      "positive": 4
+    },
+    "histogram": {
+      "0": 1993,
+      "1": 792,
+      "2": 349,
+      "3": 37,
+      "4": 4,
+      "5": 1
+    },
+    "structurally_closed": 0
+  },
+  "verified_rules": 1183,
+  "open_nodes": 1993,
+  "gap_filters": 17,
+  "known_obstruction_hits": 0,
+  "obstruction_screen_source": "1e720ef9f816d6e48ebf1a2ea893f06eb52e4a8a3a969840810fc24f8ffde5e5",
+  "identical_type_geometry_verified": true,
+  "closure": {
+    "closed": false,
+    "reason": "node 2874: unresolved type"
+  },
+  "uses_existing_Freiman_filling_lemmas": false
+}

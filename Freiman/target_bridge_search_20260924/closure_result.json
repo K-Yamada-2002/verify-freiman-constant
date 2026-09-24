@@ -1,0 +1,39 @@
+{
+  "status": "PREFIX_HULL_CLOSURE_WITH_EXISTING_FREIMAN_LEMMAS",
+  "theorem": "For every n>=0, 4+K(3211(313121)^n3)+K(4322(313121)^n) equals its entire convex hull [c_F,b_n].",
+  "proof_kind": "Written mathematical proof plus independently checked finite certificates; not formal proof-assistant verification.",
+  "proof": {
+    "path": "PREFIX_ROOT_CLOSURE.md",
+    "sha256": "144db1d3249380980752c1a55571522d40d1bca2f947eedb81842b52f5d46794"
+  },
+  "new_records": 1095,
+  "bernstein_coefficients": 3903,
+  "coefficient_max_bits": 123,
+  "coordinate_degree_max": 2,
+  "independent_normal": "PASS_INDEPENDENT_UNIFORM_ARITHMETIC",
+  "independent_optimized": "PASS_INDEPENDENT_UNIFORM_ARITHMETIC",
+  "negative_controls": 6,
+  "existing_dependency_groups": [
+    "foundations_upper",
+    "global_selection",
+    "initial",
+    "j_family",
+    "late",
+    "middle",
+    "section14",
+    "section15",
+    "suffix_histories",
+    "targets_bridges",
+    "terminal",
+    "translation"
+  ],
+  "original_inputs_unchanged": true,
+  "missing_delivered_pdf": [
+    "report/Freiman_Hall_ray_report.pdf"
+  ],
+  "scope_limits": [
+    "Uses existing Freiman local selection, history and initial-contact lemmas.",
+    "Does not declare all types in the old exploratory graph filled.",
+    "Does not establish a proof independent of those Freiman lemmas or a historical-machine runtime."
+  ]
+}

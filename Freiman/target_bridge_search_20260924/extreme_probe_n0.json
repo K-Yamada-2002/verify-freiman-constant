@@ -1,0 +1,202 @@
+{
+  "status": "BOUNDED_EXACT_PROBE",
+  "rows": [
+    {
+      "root": [
+        "32113",
+        "4322"
+      ],
+      "cycles": 0,
+      "depth": 3,
+      "high": false,
+      "extensions": [
+        "",
+        ""
+      ],
+      "pair": [
+        "32113",
+        "4322"
+      ],
+      "outside_bound": null,
+      "local_gaps": 0,
+      "root_gaps": [],
+      "scope": "Root gaps exclude all outside completions by first-divergence bounds; local gaps alone are not root gaps"
+    },
+    {
+      "root": [
+        "32113",
+        "4322"
+      ],
+      "cycles": 1,
+      "depth": 3,
+      "high": false,
+      "extensions": [
+        "131213",
+        "313121"
+      ],
+      "pair": [
+        "32113131213",
+        "4322313121"
+      ],
+      "outside_bound": {
+        "a": "781760043491/1515790885762",
+        "b": "2556861953/4547372657286",
+        "decimal": "0.5278295789393430141605"
+      },
+      "local_gaps": 0,
+      "root_gaps": [],
+      "scope": "Root gaps exclude all outside completions by first-divergence bounds; local gaps alone are not root gaps"
+    },
+    {
+      "root": [
+        "32113",
+        "4322"
+      ],
+      "cycles": 2,
+      "depth": 3,
+      "high": false,
+      "extensions": [
+        "131213131213",
+        "313121313121"
+      ],
+      "pair": [
+        "32113131213131213",
+        "4322313121313121"
+      ],
+      "outside_bound": {
+        "a": "4954507432821899/9606524679663559",
+        "b": "37810330486532/67245672757644913",
+        "decimal": "0.5278295661626073260941"
+      },
+      "local_gaps": 0,
+      "root_gaps": [],
+      "scope": "Root gaps exclude all outside completions by first-divergence bounds; local gaps alone are not root gaps"
+    },
+    {
+      "root": [
+        "32113",
+        "4322"
+      ],
+      "cycles": 3,
+      "depth": 3,
+      "high": false,
+      "extensions": [
+        "131213131213131213",
+        "313121313121313121"
+      ],
+      "pair": [
+        "32113131213131213131213",
+        "4322313121313121313121"
+      ],
+      "outside_bound": {
+        "a": "2914038529176900532/5650164709119142963",
+        "b": "139784788980179149/248607247201242290372",
+        "decimal": "0.5278295661608793746108"
+      },
+      "local_gaps": 0,
+      "root_gaps": [],
+      "scope": "Root gaps exclude all outside completions by first-divergence bounds; local gaps alone are not root gaps"
+    },
+    {
+      "root": [
+        "32113",
+        "4322"
+      ],
+      "cycles": 0,
+      "depth": 3,
+      "high": true,
+      "extensions": [
+        "3",
+        ""
+      ],
+      "pair": [
+        "321133",
+        "4322"
+      ],
+      "outside_bound": {
+        "a": "309337935/583641154",
+        "b": "-165425/1750923462",
+        "decimal": "0.5279831754309604661068"
+      },
+      "local_gaps": 2,
+      "root_gaps": [],
+      "scope": "Root gaps exclude all outside completions by first-divergence bounds; local gaps alone are not root gaps"
+    },
+    {
+      "root": [
+        "32113",
+        "4322"
+      ],
+      "cycles": 1,
+      "depth": 3,
+      "high": true,
+      "extensions": [
+        "3131213",
+        "131312"
+      ],
+      "pair": [
+        "321133131213",
+        "4322131312"
+      ],
+      "outside_bound": {
+        "a": "227861588005/430146787234",
+        "b": "-103574945/1290440361702",
+        "decimal": "0.5280046449106649022113"
+      },
+      "local_gaps": 2,
+      "root_gaps": [],
+      "scope": "Root gaps exclude all outside completions by first-divergence bounds; local gaps alone are not root gaps"
+    },
+    {
+      "root": [
+        "32113",
+        "4322"
+      ],
+      "cycles": 2,
+      "depth": 3,
+      "high": true,
+      "extensions": [
+        "3131213131213",
+        "131312131312"
+      ],
+      "pair": [
+        "321133131213131213",
+        "4322131312131312"
+      ],
+      "outside_bound": {
+        "a": "560893737971785/1058830622808758",
+        "b": "-254894236235/3176491868426274",
+        "decimal": "0.5280046477219210311869"
+      },
+      "local_gaps": 2,
+      "root_gaps": [],
+      "scope": "Root gaps exclude all outside completions by first-divergence bounds; local gaps alone are not root gaps"
+    },
+    {
+      "root": [
+        "32113",
+        "4322"
+      ],
+      "cycles": 3,
+      "depth": 3,
+      "high": true,
+      "extensions": [
+        "3131213131213131213",
+        "131312131312131312"
+      ],
+      "pair": [
+        "321133131213131213131213",
+        "4322131312131312131312"
+      ],
+      "outside_bound": {
+        "a": "1777391791538584455/3355282347443477422",
+        "b": "-5654062694320625/70460929296313025862",
+        "decimal": "0.5280046477223012373113"
+      },
+      "local_gaps": 2,
+      "root_gaps": [],
+      "scope": "Root gaps exclude all outside completions by first-divergence bounds; local gaps alone are not root gaps"
+    }
+  ],
+  "seconds": 0.49191245809197426
+}

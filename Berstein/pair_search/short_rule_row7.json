@@ -1,0 +1,49 @@
+{
+  "claims": [
+    {
+      "claim": 7,
+      "tried": 44,
+      "coarse_candidates": [
+        {
+          "forbidden": [
+            "1113111",
+            "1113112",
+            "1312",
+            "2113111",
+            "2131",
+            "313"
+          ],
+          "left": [
+            "11"
+          ],
+          "right": [
+            "11"
+          ],
+          "scan": {
+            "exponent": 7,
+            "scale": 1000000000000000,
+            "visited": 1282508,
+            "leaves": 446982,
+            "max_width_units": 99999522,
+            "max_depth": 17,
+            "complete": true,
+            "covers_target": true,
+            "seconds": 0.125287,
+            "covered": [
+              [
+                1219532000000000,
+                1235001000000000
+              ]
+            ]
+          },
+          "dominance_bound": "10747/2548",
+          "target": [
+            4.219532,
+            4.235001
+          ],
+          "subset_of_original": true
+        }
+      ]
+    }
+  ]
+}

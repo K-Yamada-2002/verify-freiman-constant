@@ -1,0 +1,799 @@
+{
+  "format": "freiman-piecewise-chart-types-v1",
+  "cells": [
+    {
+      "base": {
+        "states": [
+          "3",
+          ""
+        ],
+        "parity": -1,
+        "high": true,
+        "r": [
+          [
+            "17/61",
+            "0"
+          ],
+          [
+            "17/61",
+            "0"
+          ]
+        ],
+        "s": [
+          [
+            "30/73",
+            "0"
+          ],
+          [
+            "30/73",
+            "0"
+          ]
+        ],
+        "ratio": [
+          [
+            "2941188465121/6906504888529",
+            "134881150564/6906504888529"
+          ],
+          [
+            "2941188465121/6906504888529",
+            "134881150564/6906504888529"
+          ]
+        ]
+      },
+      "words": [
+        "",
+        ""
+      ],
+      "high": true
+    },
+    {
+      "base": {
+        "states": [
+          "3",
+          ""
+        ],
+        "parity": -1,
+        "high": true,
+        "r": [
+          [
+            "-1/2",
+            "1/28"
+          ],
+          [
+            "1414/5283",
+            "0"
+          ]
+        ],
+        "s": [
+          [
+            "4289/5826",
+            "0"
+          ],
+          [
+            "-29/19",
+            "2/19"
+          ]
+        ],
+        "ratio": [
+          [
+            "2941188465121/6906504888529",
+            "134881150564/6906504888529"
+          ],
+          [
+            "2941188465121/6906504888529",
+            "134881150564/6906504888529"
+          ]
+        ]
+      },
+      "words": [
+        "",
+        ""
+      ],
+      "high": true
+    },
+    {
+      "base": {
+        "states": [
+          "3",
+          ""
+        ],
+        "parity": -1,
+        "high": true,
+        "r": [
+          [
+            "17/61",
+            "0"
+          ],
+          [
+            "17/61",
+            "0"
+          ]
+        ],
+        "s": [
+          [
+            "30/73",
+            "0"
+          ],
+          [
+            "30/73",
+            "0"
+          ]
+        ],
+        "ratio": [
+          [
+            "2941188465121/6906504888529",
+            "134881150564/6906504888529"
+          ],
+          [
+            "2941188465121/6906504888529",
+            "134881150564/6906504888529"
+          ]
+        ]
+      },
+      "words": [
+        "3",
+        ""
+      ],
+      "high": true
+    },
+    {
+      "base": {
+        "states": [
+          "3",
+          ""
+        ],
+        "parity": -1,
+        "high": true,
+        "r": [
+          [
+            "17/61",
+            "0"
+          ],
+          [
+            "17/61",
+            "0"
+          ]
+        ],
+        "s": [
+          [
+            "30/73",
+            "0"
+          ],
+          [
+            "30/73",
+            "0"
+          ]
+        ],
+        "ratio": [
+          [
+            "2941188465121/6906504888529",
+            "134881150564/6906504888529"
+          ],
+          [
+            "2941188465121/6906504888529",
+            "134881150564/6906504888529"
+          ]
+        ]
+      },
+      "words": [
+        "2",
+        ""
+      ],
+      "high": true
+    },
+    {
+      "base": {
+        "states": [
+          "3",
+          ""
+        ],
+        "parity": -1,
+        "high": true,
+        "r": [
+          [
+            "17/61",
+            "0"
+          ],
+          [
+            "17/61",
+            "0"
+          ]
+        ],
+        "s": [
+          [
+            "30/73",
+            "0"
+          ],
+          [
+            "30/73",
+            "0"
+          ]
+        ],
+        "ratio": [
+          [
+            "2941188465121/6906504888529",
+            "134881150564/6906504888529"
+          ],
+          [
+            "2941188465121/6906504888529",
+            "134881150564/6906504888529"
+          ]
+        ]
+      },
+      "words": [
+        "1",
+        ""
+      ],
+      "high": true
+    },
+    {
+      "base": {
+        "states": [
+          "3",
+          ""
+        ],
+        "parity": -1,
+        "high": true,
+        "r": [
+          [
+            "-1/2",
+            "1/28"
+          ],
+          [
+            "1414/5283",
+            "0"
+          ]
+        ],
+        "s": [
+          [
+            "4289/5826",
+            "0"
+          ],
+          [
+            "-29/19",
+            "2/19"
+          ]
+        ],
+        "ratio": [
+          [
+            "2941188465121/6906504888529",
+            "134881150564/6906504888529"
+          ],
+          [
+            "2941188465121/6906504888529",
+            "134881150564/6906504888529"
+          ]
+        ]
+      },
+      "words": [
+        "3",
+        ""
+      ],
+      "high": true
+    },
+    {
+      "base": {
+        "states": [
+          "3",
+          ""
+        ],
+        "parity": -1,
+        "high": true,
+        "r": [
+          [
+            "-1/2",
+            "1/28"
+          ],
+          [
+            "1414/5283",
+            "0"
+          ]
+        ],
+        "s": [
+          [
+            "4289/5826",
+            "0"
+          ],
+          [
+            "-29/19",
+            "2/19"
+          ]
+        ],
+        "ratio": [
+          [
+            "2941188465121/6906504888529",
+            "134881150564/6906504888529"
+          ],
+          [
+            "2941188465121/6906504888529",
+            "134881150564/6906504888529"
+          ]
+        ]
+      },
+      "words": [
+        "2",
+        ""
+      ],
+      "high": true
+    },
+    {
+      "base": {
+        "states": [
+          "3",
+          ""
+        ],
+        "parity": -1,
+        "high": true,
+        "r": [
+          [
+            "-1/2",
+            "1/28"
+          ],
+          [
+            "1414/5283",
+            "0"
+          ]
+        ],
+        "s": [
+          [
+            "4289/5826",
+            "0"
+          ],
+          [
+            "-29/19",
+            "2/19"
+          ]
+        ],
+        "ratio": [
+          [
+            "2941188465121/6906504888529",
+            "134881150564/6906504888529"
+          ],
+          [
+            "2941188465121/6906504888529",
+            "134881150564/6906504888529"
+          ]
+        ]
+      },
+      "words": [
+        "1",
+        ""
+      ],
+      "high": true
+    }
+  ],
+  "nodes": [
+    {
+      "cell": 0,
+      "lower": [
+        "",
+        false,
+        "",
+        true
+      ],
+      "upper": [
+        "",
+        true,
+        "",
+        false
+      ],
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "high": true,
+          "lower": [
+            "",
+            true,
+            "",
+            true
+          ],
+          "upper": [
+            "2",
+            true,
+            "1",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 2,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "high": true,
+          "lower": [
+            "",
+            true,
+            "",
+            true
+          ],
+          "upper": [
+            "",
+            false,
+            "",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 3,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "high": true,
+          "lower": [
+            "",
+            true,
+            "",
+            true
+          ],
+          "upper": [
+            "",
+            false,
+            "",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 4,
+              "swap": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cell": 1,
+      "lower": [
+        "",
+        false,
+        "",
+        true
+      ],
+      "upper": [
+        "",
+        true,
+        "",
+        false
+      ],
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "high": true,
+          "lower": [
+            "",
+            true,
+            "",
+            true
+          ],
+          "upper": [
+            "",
+            false,
+            "112",
+            true
+          ],
+          "destinations": [
+            {
+              "node": 5,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "high": true,
+          "lower": [
+            "",
+            true,
+            "1212",
+            true
+          ],
+          "upper": [
+            "",
+            false,
+            "",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 6,
+              "swap": false
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "high": true,
+          "lower": [
+            "",
+            true,
+            "2",
+            false
+          ],
+          "upper": [
+            "",
+            false,
+            "",
+            false
+          ],
+          "destinations": [
+            {
+              "node": 7,
+              "swap": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cell": 2,
+      "lower": [
+        "2",
+        true,
+        "1",
+        true
+      ],
+      "upper": [
+        "",
+        true,
+        "",
+        true
+      ],
+      "children": [],
+      "incoming_lineage": 803
+    },
+    {
+      "cell": 3,
+      "lower": [
+        "",
+        false,
+        "",
+        false
+      ],
+      "upper": [
+        "",
+        true,
+        "",
+        true
+      ],
+      "children": [],
+      "incoming_lineage": 804
+    },
+    {
+      "cell": 4,
+      "lower": [
+        "",
+        false,
+        "",
+        false
+      ],
+      "upper": [
+        "",
+        true,
+        "",
+        true
+      ],
+      "children": [],
+      "incoming_lineage": 805
+    },
+    {
+      "cell": 5,
+      "lower": [
+        "",
+        false,
+        "112",
+        true
+      ],
+      "upper": [
+        "",
+        true,
+        "",
+        true
+      ],
+      "children": [],
+      "incoming_lineage": 2
+    },
+    {
+      "cell": 6,
+      "lower": [
+        "",
+        false,
+        "",
+        false
+      ],
+      "upper": [
+        "",
+        true,
+        "1212",
+        true
+      ],
+      "children": [],
+      "incoming_lineage": 3
+    },
+    {
+      "cell": 7,
+      "lower": [
+        "",
+        false,
+        "",
+        false
+      ],
+      "upper": [
+        "",
+        true,
+        "2",
+        false
+      ],
+      "children": [],
+      "incoming_lineage": 4
+    }
+  ],
+  "roots": {
+    "zero": 0,
+    "positive": 1
+  },
+  "partition_statistics": {
+    "attempts": 0,
+    "accepted": 0,
+    "pieces": 0,
+    "exact_rejected": 0,
+    "axis_trials": 0
+  },
+  "settings": {
+    "source_graph": "frontier_final.json",
+    "source_configuration_state": "piecewise_specialized_initial.state.json",
+    "configuration": {
+      "chart_memory": 1,
+      "states": 6,
+      "bins": 25,
+      "base": "22/25",
+      "max_step": 1,
+      "outer_depth": 4,
+      "outer_samples": 3,
+      "local_filter": false,
+      "balance": "9/10",
+      "reuse_pending": true,
+      "adaptive_shapes": true,
+      "max_shapes": 48,
+      "partition_depth": 2,
+      "min_cost_cover": true
+    },
+    "engine_hash": "36226bd078bc75bf8032b78b11bd20f8013b02e03f3d6b9eebb5cfdf822d7fb0"
+  },
+  "state_upgrades": [
+    {
+      "operation": "import specialized partial strategy",
+      "source_proof_hash": "8f5a34aefce92c48ed49d591f42c5125b1805598f875d825bc26c1b73b7932a2",
+      "source_engine_hash": "36226bd078bc75bf8032b78b11bd20f8013b02e03f3d6b9eebb5cfdf822d7fb0",
+      "source_steps": 0,
+      "source_nodes": 2851,
+      "imported_registered": 2848,
+      "inherited_negative_decisions": 0,
+      "contraction_history": []
+    }
+  ],
+  "frontier_reduction_sources": [
+    {
+      "path": "continued_mosaic_seed.json",
+      "proof_hash": "500aff5d4118db7089482640a27f0472fb221082357e8c66964378d718c562e7",
+      "source_counts": {
+        "nodes": 2848,
+        "local": 1071,
+        "open": 1777,
+        "closed_supported_types": 0
+      },
+      "algorithm_hash": "714709250b0f248463e7e9dc1b54f3b1be0d9d3e30cbc018a267f025e912c9c5"
+    }
+  ],
+  "frontier_reduction_history": [
+    {
+      "round": 0,
+      "contraction": {
+        "contracted": 2112,
+        "removed_references": 38,
+        "clipped_pieces": 7,
+        "simplified_rules": 0
+      },
+      "trimming": {
+        "removed_cover_edges": 1,
+        "removed_destination_references": 26,
+        "shortened_rules": 9
+      },
+      "nodes": 2832,
+      "local": 1066,
+      "open": 1766,
+      "closed_supported_types": 0,
+      "proof_hash": "d37294f2257facbe7198bdf7eb5e9a6e822dbda14745a3b0ec29afd33028bbfd"
+    },
+    {
+      "round": 1,
+      "contraction": {
+        "contracted": 2167,
+        "removed_references": 0,
+        "clipped_pieces": 8,
+        "simplified_rules": 0
+      },
+      "trimming": {
+        "removed_cover_edges": 0,
+        "removed_destination_references": 9,
+        "shortened_rules": 3
+      },
+      "nodes": 2824,
+      "local": 1065,
+      "open": 1759,
+      "closed_supported_types": 0,
+      "proof_hash": "d4699558483108d6cf2e93a3f269ed0ddb63bc73e2702e7c1e822e8e2b69d5f5"
+    },
+    {
+      "round": 2,
+      "contraction": {
+        "contracted": 2034,
+        "removed_references": 0,
+        "clipped_pieces": 6,
+        "simplified_rules": 0
+      },
+      "trimming": {
+        "removed_cover_edges": 0,
+        "removed_destination_references": 1,
+        "shortened_rules": 1
+      },
+      "nodes": 2821,
+      "local": 1063,
+      "open": 1758,
+      "closed_supported_types": 0,
+      "proof_hash": "40e43e516965d92dd6ac0d728b4c48e1aab40036897d7369e496c638a920af01"
+    },
+    {
+      "round": 3,
+      "contraction": {
+        "contracted": 2042,
+        "removed_references": 0,
+        "clipped_pieces": 6,
+        "simplified_rules": 0
+      },
+      "trimming": {
+        "removed_cover_edges": 0,
+        "removed_destination_references": 0,
+        "shortened_rules": 0
+      },
+      "nodes": 2821,
+      "local": 1063,
+      "open": 1758,
+      "closed_supported_types": 0,
+      "proof_hash": "13b4b13becd3e244958ffe08b5b89257eb957bde106bcc3ea94bf735653e23f7"
+    }
+  ],
+  "incoming_rechart": {
+    "source_proof_hash": "13b4b13becd3e244958ffe08b5b89257eb957bde106bcc3ea94bf735653e23f7",
+    "accepted_edges": 6,
+    "rejected_proposals": 0,
+    "counts": {
+      "nodes": 8,
+      "local": 2,
+      "open": 6,
+      "closed_supported_types": 0
+    }
+  }
+}

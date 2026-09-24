@@ -1,0 +1,1991 @@
+{
+  "settings": {
+    "base": "0.996",
+    "bins": 512,
+    "grid": 65536
+  },
+  "types": 18867,
+  "rules": 8543,
+  "supported": 0,
+  "root_ranks": {
+    "0": 4
+  },
+  "deletion_rank_histogram": {
+    "0": 14966,
+    "1": 2864,
+    "2": 801,
+    "3": 224,
+    "4": 12
+  },
+  "dependency_count_histogram": {
+    "2": 5,
+    "3": 109,
+    "4": 130,
+    "5": 86,
+    "6": 1354,
+    "7": 3850,
+    "8": 901,
+    "9": 299,
+    "10": 347,
+    "11": 232,
+    "12": 247,
+    "13": 174,
+    "14": 139,
+    "15": 65,
+    "16": 69,
+    "17": 36,
+    "18": 16,
+    "19": 17,
+    "20": 14,
+    "21": 12,
+    "22": 10,
+    "23": 16,
+    "24": 52,
+    "25": 7,
+    "26": 21,
+    "28": 45,
+    "29": 33,
+    "30": 15,
+    "31": 12,
+    "32": 11,
+    "33": 17,
+    "34": 19,
+    "35": 125,
+    "36": 9,
+    "37": 6,
+    "38": 10,
+    "39": 2,
+    "40": 9,
+    "41": 2,
+    "42": 10,
+    "43": 3,
+    "44": 3,
+    "45": 1,
+    "46": 2,
+    "47": 1
+  },
+  "deepest": [
+    {
+      "node": 0,
+      "rank": 4,
+      "type": {
+        "states": [
+          "2222222",
+          "2222222"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "interval": [
+          0,
+          1
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 942,
+      "rank": 4,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "interval": [
+          0,
+          1
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 4174,
+      "rank": 4,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "ratio_refinement": [
+          1,
+          1
+        ],
+        "interval": [
+          0,
+          1
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 4175,
+      "rank": 4,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "ratio_refinement": [
+          1,
+          1
+        ],
+        "interval": [
+          1,
+          2
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 4176,
+      "rank": 4,
+      "type": {
+        "states": [
+          "22222",
+          "222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "ratio_refinement": [
+          3,
+          0
+        ],
+        "interval": [
+          0,
+          1
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 4184,
+      "rank": 4,
+      "type": {
+        "states": [
+          "222222",
+          "222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "ratio_refinement": [
+          3,
+          0
+        ],
+        "interval": [
+          1,
+          2
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 4186,
+      "rank": 4,
+      "type": {
+        "states": [
+          "222222",
+          "222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "ratio_refinement": [
+          1,
+          1
+        ],
+        "interval": [
+          1,
+          2
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 4338,
+      "rank": 4,
+      "type": {
+        "states": [
+          "222222",
+          "222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "ratio_refinement": [
+          3,
+          0
+        ],
+        "interval": [
+          0,
+          1
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 17883,
+      "rank": 4,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "ratio_refinement": [
+          3,
+          0
+        ],
+        "interval": [
+          0,
+          1
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 17884,
+      "rank": 4,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "ratio_refinement": [
+          3,
+          0
+        ],
+        "interval": [
+          1,
+          2
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 18044,
+      "rank": 4,
+      "type": {
+        "states": [
+          "222222",
+          "222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "ratio_refinement": [
+          1,
+          1
+        ],
+        "interval": [
+          0,
+          1
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 18147,
+      "rank": 4,
+      "type": {
+        "states": [
+          "2222222",
+          "2222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "ratio_refinement": [
+          1,
+          1
+        ],
+        "interval": [
+          1,
+          2
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 1,
+      "rank": 3,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "ratio_refinement": [
+          2,
+          0
+        ],
+        "interval": [
+          0,
+          1
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 2,
+      "rank": 3,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "ratio_refinement": [
+          2,
+          0
+        ],
+        "interval": [
+          1,
+          2
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 4,
+      "rank": 3,
+      "type": {
+        "states": [
+          "222222",
+          "222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "interval": [
+          0,
+          1
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 5,
+      "rank": 3,
+      "type": {
+        "states": [
+          "222222",
+          "222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "interval": [
+          1,
+          2
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 11,
+      "rank": 3,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "interval": [
+          -2,
+          -1
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 13,
+      "rank": 3,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "ratio_refinement": [
+          2,
+          0
+        ],
+        "interval": [
+          -7,
+          -6
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 14,
+      "rank": 3,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "ratio_refinement": [
+          2,
+          0
+        ],
+        "interval": [
+          -6,
+          -5
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 16,
+      "rank": 3,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "ratio_refinement": [
+          2,
+          0
+        ],
+        "interval": [
+          -9,
+          -8
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 18,
+      "rank": 3,
+      "type": {
+        "states": [
+          "222222",
+          "222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "ratio_refinement": [
+          2,
+          0
+        ],
+        "interval": [
+          -11,
+          -10
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 20,
+      "rank": 3,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "ratio_refinement": [
+          2,
+          0
+        ],
+        "interval": [
+          -6,
+          -5
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 26,
+      "rank": 3,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 173,
+        "ratio_refinement": [
+          1,
+          1
+        ],
+        "interval": [
+          -7,
+          -6
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 27,
+      "rank": 3,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 173,
+        "ratio_refinement": [
+          1,
+          1
+        ],
+        "interval": [
+          -6,
+          -5
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 28,
+      "rank": 3,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "ratio_refinement": [
+          1,
+          0
+        ],
+        "interval": [
+          -1,
+          0
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 29,
+      "rank": 3,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "ratio_refinement": [
+          1,
+          1
+        ],
+        "interval": [
+          -1,
+          0
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 30,
+      "rank": 3,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "ratio_refinement": [
+          2,
+          0
+        ],
+        "interval": [
+          -3,
+          -2
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 31,
+      "rank": 3,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "ratio_refinement": [
+          2,
+          0
+        ],
+        "interval": [
+          -2,
+          -1
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 35,
+      "rank": 3,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "ratio_refinement": [
+          2,
+          1
+        ],
+        "interval": [
+          -3,
+          -2
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 36,
+      "rank": 3,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "ratio_refinement": [
+          2,
+          1
+        ],
+        "interval": [
+          -2,
+          -1
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 37,
+      "rank": 3,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "ratio_refinement": [
+          2,
+          2
+        ],
+        "interval": [
+          -3,
+          -2
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 39,
+      "rank": 3,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "ratio_refinement": [
+          2,
+          3
+        ],
+        "interval": [
+          -3,
+          -2
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    }
+  ],
+  "most_shared_unexpanded": [
+    {
+      "node": 11040,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "interval": [
+          23,
+          24
+        ]
+      },
+      "direct_references": 89,
+      "rules_with_this_only_unexpanded_child": 76
+    },
+    {
+      "node": 17819,
+      "rank": 0,
+      "type": {
+        "states": [
+          "222222",
+          "222222"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "ratio_refinement": [
+          1,
+          1
+        ],
+        "interval": [
+          -4,
+          -3
+        ]
+      },
+      "direct_references": 67,
+      "rules_with_this_only_unexpanded_child": 5
+    },
+    {
+      "node": 17818,
+      "rank": 0,
+      "type": {
+        "states": [
+          "222222",
+          "222222"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "ratio_refinement": [
+          1,
+          1
+        ],
+        "interval": [
+          -5,
+          -4
+        ]
+      },
+      "direct_references": 65,
+      "rules_with_this_only_unexpanded_child": 3
+    },
+    {
+      "node": 17888,
+      "rank": 0,
+      "type": {
+        "states": [
+          "222222",
+          "222222"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "ratio_refinement": [
+          1,
+          0
+        ],
+        "interval": [
+          -5,
+          -4
+        ]
+      },
+      "direct_references": 54,
+      "rules_with_this_only_unexpanded_child": 28
+    },
+    {
+      "node": 18059,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "interval": [
+          -4,
+          -3
+        ]
+      },
+      "direct_references": 41,
+      "rules_with_this_only_unexpanded_child": 39
+    },
+    {
+      "node": 18202,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 171,
+        "interval": [
+          29,
+          30
+        ]
+      },
+      "direct_references": 37,
+      "rules_with_this_only_unexpanded_child": 34
+    },
+    {
+      "node": 16890,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 173,
+        "interval": [
+          29,
+          30
+        ]
+      },
+      "direct_references": 32,
+      "rules_with_this_only_unexpanded_child": 17
+    },
+    {
+      "node": 1484,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "interval": [
+          57,
+          58
+        ]
+      },
+      "direct_references": 30,
+      "rules_with_this_only_unexpanded_child": 16
+    },
+    {
+      "node": 488,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 173,
+        "interval": [
+          -37,
+          -36
+        ]
+      },
+      "direct_references": 30,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 489,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 173,
+        "interval": [
+          -36,
+          -35
+        ]
+      },
+      "direct_references": 30,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 16908,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "ratio_refinement": [
+          1,
+          0
+        ],
+        "interval": [
+          23,
+          24
+        ]
+      },
+      "direct_references": 26,
+      "rules_with_this_only_unexpanded_child": 25
+    },
+    {
+      "node": 4268,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 173,
+        "interval": [
+          -35,
+          -34
+        ]
+      },
+      "direct_references": 26,
+      "rules_with_this_only_unexpanded_child": 8
+    },
+    {
+      "node": 259,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "ratio_refinement": [
+          1,
+          0
+        ],
+        "interval": [
+          45,
+          46
+        ]
+      },
+      "direct_references": 24,
+      "rules_with_this_only_unexpanded_child": 24
+    },
+    {
+      "node": 10532,
+      "rank": 0,
+      "type": {
+        "states": [
+          "222222",
+          "222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "interval": [
+          431,
+          432
+        ]
+      },
+      "direct_references": 24,
+      "rules_with_this_only_unexpanded_child": 5
+    },
+    {
+      "node": 18267,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "ratio_refinement": [
+          1,
+          1
+        ],
+        "interval": [
+          -3,
+          -2
+        ]
+      },
+      "direct_references": 23,
+      "rules_with_this_only_unexpanded_child": 10
+    },
+    {
+      "node": 952,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 171,
+        "interval": [
+          2,
+          3
+        ]
+      },
+      "direct_references": 22,
+      "rules_with_this_only_unexpanded_child": 12
+    },
+    {
+      "node": 17981,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "interval": [
+          19,
+          20
+        ]
+      },
+      "direct_references": 21,
+      "rules_with_this_only_unexpanded_child": 12
+    },
+    {
+      "node": 21,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 173,
+        "interval": [
+          -9,
+          -8
+        ]
+      },
+      "direct_references": 21,
+      "rules_with_this_only_unexpanded_child": 18
+    },
+    {
+      "node": 483,
+      "rank": 0,
+      "type": {
+        "states": [
+          "222222",
+          "222222"
+        ],
+        "parity": 1,
+        "ratio_bin": 173,
+        "interval": [
+          -35,
+          -34
+        ]
+      },
+      "direct_references": 20,
+      "rules_with_this_only_unexpanded_child": 4
+    },
+    {
+      "node": 2053,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "interval": [
+          -69,
+          -68
+        ]
+      },
+      "direct_references": 19,
+      "rules_with_this_only_unexpanded_child": 2
+    },
+    {
+      "node": 18225,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "ratio_refinement": [
+          2,
+          0
+        ],
+        "interval": [
+          -5,
+          -4
+        ]
+      },
+      "direct_references": 19,
+      "rules_with_this_only_unexpanded_child": 4
+    },
+    {
+      "node": 673,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "interval": [
+          -121,
+          -120
+        ]
+      },
+      "direct_references": 19,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 674,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "interval": [
+          -120,
+          -119
+        ]
+      },
+      "direct_references": 19,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 14124,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "ratio_refinement": [
+          1,
+          0
+        ],
+        "interval": [
+          57,
+          58
+        ]
+      },
+      "direct_references": 18,
+      "rules_with_this_only_unexpanded_child": 8
+    },
+    {
+      "node": 671,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "interval": [
+          -123,
+          -122
+        ]
+      },
+      "direct_references": 18,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 4739,
+      "rank": 0,
+      "type": {
+        "states": [
+          "222222",
+          "222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "interval": [
+          -298,
+          -297
+        ]
+      },
+      "direct_references": 18,
+      "rules_with_this_only_unexpanded_child": 1
+    },
+    {
+      "node": 1958,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "interval": [
+          -104,
+          -103
+        ]
+      },
+      "direct_references": 17,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 17964,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "interval": [
+          402,
+          403
+        ]
+      },
+      "direct_references": 17,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 1916,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "interval": [
+          396,
+          397
+        ]
+      },
+      "direct_references": 17,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 1964,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "ratio_refinement": [
+          2,
+          0
+        ],
+        "interval": [
+          -100,
+          -99
+        ]
+      },
+      "direct_references": 17,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 4635,
+      "rank": 0,
+      "type": {
+        "states": [
+          "222222",
+          "222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "interval": [
+          -83,
+          -82
+        ]
+      },
+      "direct_references": 17,
+      "rules_with_this_only_unexpanded_child": 6
+    },
+    {
+      "node": 779,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "interval": [
+          -315,
+          -314
+        ]
+      },
+      "direct_references": 17,
+      "rules_with_this_only_unexpanded_child": 10
+    }
+  ],
+  "one_missing": [
+    {
+      "node": 11040,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "interval": [
+          23,
+          24
+        ]
+      },
+      "direct_references": 89,
+      "rules_with_this_only_unexpanded_child": 76
+    },
+    {
+      "node": 18059,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "interval": [
+          -4,
+          -3
+        ]
+      },
+      "direct_references": 41,
+      "rules_with_this_only_unexpanded_child": 39
+    },
+    {
+      "node": 18202,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 171,
+        "interval": [
+          29,
+          30
+        ]
+      },
+      "direct_references": 37,
+      "rules_with_this_only_unexpanded_child": 34
+    },
+    {
+      "node": 17888,
+      "rank": 0,
+      "type": {
+        "states": [
+          "222222",
+          "222222"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "ratio_refinement": [
+          1,
+          0
+        ],
+        "interval": [
+          -5,
+          -4
+        ]
+      },
+      "direct_references": 54,
+      "rules_with_this_only_unexpanded_child": 28
+    },
+    {
+      "node": 16908,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "ratio_refinement": [
+          1,
+          0
+        ],
+        "interval": [
+          23,
+          24
+        ]
+      },
+      "direct_references": 26,
+      "rules_with_this_only_unexpanded_child": 25
+    },
+    {
+      "node": 259,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "ratio_refinement": [
+          1,
+          0
+        ],
+        "interval": [
+          45,
+          46
+        ]
+      },
+      "direct_references": 24,
+      "rules_with_this_only_unexpanded_child": 24
+    },
+    {
+      "node": 21,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 173,
+        "interval": [
+          -9,
+          -8
+        ]
+      },
+      "direct_references": 21,
+      "rules_with_this_only_unexpanded_child": 18
+    },
+    {
+      "node": 16890,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 173,
+        "interval": [
+          29,
+          30
+        ]
+      },
+      "direct_references": 32,
+      "rules_with_this_only_unexpanded_child": 17
+    },
+    {
+      "node": 1484,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "interval": [
+          57,
+          58
+        ]
+      },
+      "direct_references": 30,
+      "rules_with_this_only_unexpanded_child": 16
+    },
+    {
+      "node": 14570,
+      "rank": 0,
+      "type": {
+        "states": [
+          "222222",
+          "222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "interval": [
+          57,
+          58
+        ]
+      },
+      "direct_references": 16,
+      "rules_with_this_only_unexpanded_child": 16
+    },
+    {
+      "node": 4172,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "ratio_refinement": [
+          3,
+          1
+        ],
+        "interval": [
+          0,
+          1
+        ]
+      },
+      "direct_references": 15,
+      "rules_with_this_only_unexpanded_child": 14
+    },
+    {
+      "node": 17994,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "interval": [
+          99,
+          100
+        ]
+      },
+      "direct_references": 14,
+      "rules_with_this_only_unexpanded_child": 14
+    },
+    {
+      "node": 1198,
+      "rank": 0,
+      "type": {
+        "states": [
+          "222222",
+          "222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "interval": [
+          -234,
+          -233
+        ]
+      },
+      "direct_references": 14,
+      "rules_with_this_only_unexpanded_child": 14
+    },
+    {
+      "node": 903,
+      "rank": 0,
+      "type": {
+        "states": [
+          "222222",
+          "222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "interval": [
+          99,
+          100
+        ]
+      },
+      "direct_references": 12,
+      "rules_with_this_only_unexpanded_child": 12
+    },
+    {
+      "node": 3020,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "interval": [
+          -234,
+          -233
+        ]
+      },
+      "direct_references": 12,
+      "rules_with_this_only_unexpanded_child": 12
+    },
+    {
+      "node": 952,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 171,
+        "interval": [
+          2,
+          3
+        ]
+      },
+      "direct_references": 22,
+      "rules_with_this_only_unexpanded_child": 12
+    },
+    {
+      "node": 14578,
+      "rank": 0,
+      "type": {
+        "states": [
+          "222222",
+          "222222"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "ratio_refinement": [
+          1,
+          0
+        ],
+        "interval": [
+          17,
+          18
+        ]
+      },
+      "direct_references": 12,
+      "rules_with_this_only_unexpanded_child": 12
+    },
+    {
+      "node": 17981,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "interval": [
+          19,
+          20
+        ]
+      },
+      "direct_references": 21,
+      "rules_with_this_only_unexpanded_child": 12
+    },
+    {
+      "node": 18149,
+      "rank": 0,
+      "type": {
+        "states": [
+          "2222222",
+          "2222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "ratio_refinement": [
+          1,
+          0
+        ],
+        "interval": [
+          2,
+          3
+        ]
+      },
+      "direct_references": 14,
+      "rules_with_this_only_unexpanded_child": 11
+    },
+    {
+      "node": 18151,
+      "rank": 0,
+      "type": {
+        "states": [
+          "222222",
+          "222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "interval": [
+          32,
+          33
+        ]
+      },
+      "direct_references": 11,
+      "rules_with_this_only_unexpanded_child": 11
+    },
+    {
+      "node": 1053,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "ratio_refinement": [
+          1,
+          0
+        ],
+        "interval": [
+          18,
+          19
+        ]
+      },
+      "direct_references": 17,
+      "rules_with_this_only_unexpanded_child": 11
+    },
+    {
+      "node": 779,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "interval": [
+          -315,
+          -314
+        ]
+      },
+      "direct_references": 17,
+      "rules_with_this_only_unexpanded_child": 10
+    },
+    {
+      "node": 18267,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "ratio_refinement": [
+          1,
+          1
+        ],
+        "interval": [
+          -3,
+          -2
+        ]
+      },
+      "direct_references": 23,
+      "rules_with_this_only_unexpanded_child": 10
+    },
+    {
+      "node": 17909,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "interval": [
+          -53,
+          -52
+        ]
+      },
+      "direct_references": 9,
+      "rules_with_this_only_unexpanded_child": 9
+    },
+    {
+      "node": 18043,
+      "rank": 0,
+      "type": {
+        "states": [
+          "222222",
+          "222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "ratio_refinement": [
+          1,
+          0
+        ],
+        "interval": [
+          2,
+          3
+        ]
+      },
+      "direct_references": 9,
+      "rules_with_this_only_unexpanded_child": 9
+    },
+    {
+      "node": 18185,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "interval": [
+          -12,
+          -11
+        ]
+      },
+      "direct_references": 9,
+      "rules_with_this_only_unexpanded_child": 9
+    },
+    {
+      "node": 18669,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "interval": [
+          65,
+          66
+        ]
+      },
+      "direct_references": 11,
+      "rules_with_this_only_unexpanded_child": 9
+    },
+    {
+      "node": 18029,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "interval": [
+          431,
+          432
+        ]
+      },
+      "direct_references": 8,
+      "rules_with_this_only_unexpanded_child": 8
+    },
+    {
+      "node": 5838,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "interval": [
+          -309,
+          -308
+        ]
+      },
+      "direct_references": 15,
+      "rules_with_this_only_unexpanded_child": 8
+    },
+    {
+      "node": 14124,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "ratio_refinement": [
+          1,
+          0
+        ],
+        "interval": [
+          57,
+          58
+        ]
+      },
+      "direct_references": 18,
+      "rules_with_this_only_unexpanded_child": 8
+    },
+    {
+      "node": 408,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "ratio_refinement": [
+          1,
+          0
+        ],
+        "interval": [
+          -83,
+          -82
+        ]
+      },
+      "direct_references": 12,
+      "rules_with_this_only_unexpanded_child": 8
+    },
+    {
+      "node": 432,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 173,
+        "interval": [
+          -85,
+          -84
+        ]
+      },
+      "direct_references": 10,
+      "rules_with_this_only_unexpanded_child": 8
+    }
+  ],
+  "scope": "all retained rules, no geometric rejection; finite ranks do not disprove interval inclusion",
+  "source_sha256": "352cd617aab7c3e2c4a85b6b987b7655a3033be58bfdb617640e1049f352c718"
+}

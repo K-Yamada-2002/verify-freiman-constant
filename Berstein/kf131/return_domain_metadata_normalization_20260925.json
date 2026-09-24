@@ -1,0 +1,98 @@
+[
+  {
+    "file": "return_domain_exploration_20260925/memory4_ref0_radius0.json",
+    "old_sha256": "bef0480b381723d5604079d96e8ae9749a6cb8d114d6d93c291193166b79e7f1",
+    "new_sha256": "8f2d7d0b2db3b0a8257b2137f06691f5b051149e7e53f71af586475ad13f1a42",
+    "old_open_nodes": 35,
+    "new_open_nodes": 67,
+    "mathematical_fields_unchanged": true
+  },
+  {
+    "file": "return_domain_exploration_20260925/memory3_ref0_radius0.json",
+    "old_sha256": "e2d0fd3ac811a32c388a9675e3e75b922fb4b4c41986e7c4fa697602bb9bcc07",
+    "new_sha256": "358731194f1333d452a47815d7406e897de7f6a859716de3c88a171fcdc61d69",
+    "old_open_nodes": 35,
+    "new_open_nodes": 67,
+    "mathematical_fields_unchanged": true
+  },
+  {
+    "file": "return_domain_exploration_20260925/memory2_ref0_radius0.json",
+    "old_sha256": "4d869b0c096ba86945c1ac6a998944c287c61aa2234880b9c3bbb23095ab2db9",
+    "new_sha256": "ef04a1daf5091e613d708ef6ed998f31053ca11fcd654435da47490d183013c7",
+    "old_open_nodes": 35,
+    "new_open_nodes": 67,
+    "mathematical_fields_unchanged": true
+  },
+  {
+    "file": "return_domain_exploration_20260925/memory2_ref2_radius0.json",
+    "old_sha256": "9dce40c7832822afb782e2e07ef6e573e99703af153f0c79789c546ea350669e",
+    "new_sha256": "f4b1a2ad9c8ab9f33b27fba1a44904996eb88d6db68f3099edff2304c240777a",
+    "old_open_nodes": 35,
+    "new_open_nodes": 70,
+    "mathematical_fields_unchanged": true
+  },
+  {
+    "file": "return_domain_exploration_20260925/memory3_ref2_radius0.json",
+    "old_sha256": "bbedf9ada97c579756077e9b96906a49e63b44a0fa0eb86e860d673624efc6e5",
+    "new_sha256": "811d08c76f45504b09c1d37155a65c9af1b2b2928dd21fcf9f4f399e49da14d0",
+    "old_open_nodes": 35,
+    "new_open_nodes": 70,
+    "mathematical_fields_unchanged": true
+  },
+  {
+    "file": "return_domain_exploration_20260925/memory4_ref2_radius0.json",
+    "old_sha256": "022340dd42f88ee9a1d2166bb3e5e88a08015ac3d9243a7b21bf2e4a27e222d6",
+    "new_sha256": "d6227cf11c07ba6ca0947612d4ec9d282f7c1151411df186e248b53d5a8e8bcb",
+    "old_open_nodes": 35,
+    "new_open_nodes": 70,
+    "mathematical_fields_unchanged": true
+  },
+  {
+    "file": "return_domain_replacement_20260925/memory4_ref0_radius0.json",
+    "old_sha256": "846d9a791bbd74a2ba39d9b9ccd9eee75b85510de6e84f2abc342c7fbdf6d7d2",
+    "new_sha256": "658a60f89464dfcd871e41a78a9b6cf49c37eb789278b5490318557d365985d4",
+    "old_open_nodes": 35,
+    "new_open_nodes": 10,
+    "mathematical_fields_unchanged": true
+  },
+  {
+    "file": "return_domain_replacement_20260925/memory3_ref0_radius0.json",
+    "old_sha256": "18d6908cd78eb055d5084a5e4477f8ccedc519df3a5900efeabc9d63f5d04f3f",
+    "new_sha256": "8f791eea20c8855fda758ef357eedb03973c97872d26eb4a230a61bae566184d",
+    "old_open_nodes": 35,
+    "new_open_nodes": 10,
+    "mathematical_fields_unchanged": true
+  },
+  {
+    "file": "return_domain_replacement_20260925/memory2_ref0_radius0.json",
+    "old_sha256": "99c32a6fd98460371dd4a683dd7e8d039e31ef2ad7effc0db26ae046aa62385d",
+    "new_sha256": "71c357bca1769603663dd109596c08edd7d241fbf0c5e70049a1fd4bad8d6d7d",
+    "old_open_nodes": 35,
+    "new_open_nodes": 10,
+    "mathematical_fields_unchanged": true
+  },
+  {
+    "file": "return_domain_coarse096_20260925/memory2_ref0_radius2.json",
+    "old_sha256": "ff9d05844ece5ea7a1a67e21f06e602464f8c990d9d92f61d70aba30c09fa620",
+    "new_sha256": "3cdb8c0155c739dd4344ab6c492e9bfd51790e58b1797a1d3cb9105f3807b725",
+    "old_open_nodes": 35,
+    "new_open_nodes": 41,
+    "mathematical_fields_unchanged": true
+  },
+  {
+    "file": "return_domain_successors_20260925.json",
+    "old_sha256": "8c3306c2e100db7dd4dc0f67bdf0d711d3d4d95a9cb57179cd5bc431cc5c12a5",
+    "new_sha256": "5c9e5fb98fd6959f8302d4997154007cde30cb658c3ca2fddd7fc02cb4acb6de",
+    "old_open_nodes": 35,
+    "new_open_nodes": 175,
+    "mathematical_fields_unchanged": true
+  },
+  {
+    "file": "return_domain_successors2_20260925.json",
+    "old_sha256": "5823aa33853e36101905d1e5071077b9da0fcb1ead7822d4beec17645e3bd90a",
+    "new_sha256": "b81a4778bf2936ef308b78247e27a3059b883bd3fc3e9bfeebce48fd379056b3",
+    "old_open_nodes": 35,
+    "new_open_nodes": 613,
+    "mathematical_fields_unchanged": true
+  }
+]

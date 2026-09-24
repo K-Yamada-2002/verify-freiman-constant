@@ -1,0 +1,29 @@
+{
+  "status": "local repair verified; interior existence remains unproved",
+  "parent_obligations_unchanged": 14,
+  "nodes": 130,
+  "verified_local_rules": 20,
+  "open_nodes": 110,
+  "deep_audit_exclusions": 0,
+  "deep_audit_unresolved": 110,
+  "closed_graph_rejection": "node 129 is an open obligation",
+  "root_ranks": {
+    "390931": 1,
+    "390933": 1,
+    "400521": 1,
+    "221344": 1,
+    "1119": 1,
+    "400520": 1,
+    "221339": 1,
+    "1118": 1,
+    "399351": 1,
+    "444": 1,
+    "166": 1,
+    "80": 1,
+    "398520": 1,
+    "390934": 1
+  },
+  "supported_nodes": 0,
+  "certificate_sha256": "984051699dad20c79840bfdcdae85e79ed908a05d958301e6b852d126747e233",
+  "tests_passed": 8
+}

@@ -1,0 +1,37 @@
+{
+  "merges": [
+    {
+      "kept": 16,
+      "removed": 11,
+      "kind": "scalar union"
+    },
+    {
+      "kept": 14,
+      "removed": 17,
+      "kind": "scalar union"
+    },
+    {
+      "kept": 14,
+      "removed": 12,
+      "kind": "scalar union"
+    },
+    {
+      "kept": 14,
+      "removed": 18,
+      "kind": "scalar union"
+    },
+    {
+      "kept": 15,
+      "removed": 20,
+      "kind": "scalar union"
+    },
+    {
+      "kept": 15,
+      "removed": 19,
+      "kind": "scalar union"
+    }
+  ],
+  "before": 22,
+  "after": 16,
+  "status": "equivalent open obligations; no filling asserted"
+}

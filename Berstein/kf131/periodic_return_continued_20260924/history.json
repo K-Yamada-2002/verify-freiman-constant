@@ -1,0 +1,36 @@
+{
+  "source_sha256": "a4b196cd42f250235fa4bb343f24b74588d99ab6a7860599e6a76a09fbb5c9ff",
+  "initial_obligations": 2,
+  "batches": [
+    {
+      "batch": 1,
+      "targets": 1,
+      "repaired": 0,
+      "failed": 1,
+      "reused_requests": 4,
+      "new_obstructions": 98,
+      "before": {
+        "nodes": 2,
+        "local_rules": 1,
+        "open_nodes": 1,
+        "supported_nodes": [],
+        "root_ranks": [
+          1
+        ]
+      },
+      "after": {
+        "nodes": 2,
+        "local_rules": 1,
+        "open_nodes": 1,
+        "supported_nodes": [],
+        "root_ranks": [
+          1
+        ]
+      }
+    }
+  ],
+  "attempted_keys": [
+    "[[[\"22222222\",\"22222222\"],1,108,[5,18]],[-193244909,193244909]]"
+  ],
+  "initial_unattempted": 0
+}

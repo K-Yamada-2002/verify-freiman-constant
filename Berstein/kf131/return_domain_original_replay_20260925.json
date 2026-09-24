@@ -1,0 +1,10 @@
+{
+  "source": "periodic_memory4_partition_current_20260924.json",
+  "source_sha256": "fc4d2a09a27264a1525880002415dd8e0e99662dc6ab970fa983f71a2f2e6c2f",
+  "same_local_rules": true,
+  "local_rules": 23,
+  "same_seed": true,
+  "all_hulls": true,
+  "closed": false,
+  "closure_error": "node 45 is an open obligation"
+}

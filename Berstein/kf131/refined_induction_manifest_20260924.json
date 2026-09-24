@@ -1,0 +1,19 @@
+{
+  "status": "incomplete induction; no interval containment proved",
+  "canonical_graph": "refined_induction_current_20260924.json",
+  "files": {
+    "refined_induction_current_20260924.json": "115a300f7126a102cff75855c51b6b8c9708589822924a277800b42964028a46",
+    "refined_induction_verification_20260924.json": "da17cd53e1c061ce599d045b30498220bf889ccf2a313031ca7fb91f2b4d4398",
+    "refined_induction_obstructions_20260924.json": "091028537ecfa56432d508439c65b87bc5721646cdca0d6696505b6ba0791422",
+    "refined_gap_trimmed_audit_20260924.json": "e3c22e656a7a0aee8d46fef574976a5c08bb317497c68bd64ec83fc666fb0478",
+    "refined_current_adaptive_audit_20260924.json": "f6eac2d0f894363bb7317ae277ebf845b84d524018a12b3b4213310fc993cfe8",
+    "refined_partial_patch_20260924.json": "1ea7cf856cdd117d8c64d3169a62640751b5c4bb01abe90a65a41956271624a8",
+    "refined_partial_report_20260924.json": "88933b4a59c9b22eebccbf196e4fee750d53d53db048b4ec9158d6ac533fcc9f",
+    "periodic_return_seed_20260924.json": "56d2b9e2e3d0fe426bbfd3eefb8f04d7fe8e398d19c560ac2facd043bf13980b",
+    "periodic_return_patch_20260924.json": "2511e60249dc1ea56483f4d5bcb06755cdeec5c6614de9d70e7c9660d5e00894",
+    "periodic_return_patch_20260924.report.json": "2aad7d2ba2cb4838e2017e05287eb824e4c4a76d8d05cdd1cb33217a90e93a72",
+    "periodic_return_continued_20260924/current.json": "048d7951e1eae26afd63bff865e0c3fe7f9f6b96f0ddb4571f37f43f8d1a7687",
+    "periodic_return_continued_20260924/history.json": "e84710f2eeb3e05d58c44634d69375c81277ae73bb60c812aed5244127e9b768",
+    "RESTRICTED_BOX_INDUCTION.md": "2b167e9a254a04f50e01fae804f5f2e5835ac770beebed85672b039c96c60b39"
+  }
+}

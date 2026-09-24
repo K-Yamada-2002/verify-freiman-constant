@@ -1,0 +1,98 @@
+{
+  "group": "foundations_upper",
+  "status": "PASS",
+  "records": [
+    {
+      "label": "run_foundations_checks_normal",
+      "command": [
+        "run_foundations_checks.py"
+      ],
+      "cwd": "work/report_parts/foundations",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 9.193,
+      "log": "replay_logs/foundations_upper__run_foundations_checks_normal.log",
+      "stdout": "PASS verify_foundations.py.normal\nPASS verify_foundations.py.optimized\nPASS validate_foundations_independent.py.normal\nPASS validate_foundations_independent.py.optimized\nPASS regenerate.optimized\nREJECTED negative.greedy_cycle.verify_foundations.py\nREJECTED negative.greedy_cycle.validate_foundations_independent.py\nREJECTED negative.period_matrix.verify_foundations.py\nREJECTED negative.period_matrix.validate_foundations_independent.py\nREJECTED negative.background_constant.verify_foundations.py\nREJECTED negative.background_constant.validate_foundations_independent.py\nREJECTED negative.square_witness.verify_foundations.py\nREJECTED negative.square_witness.validate_foundations_independent.py\nREJECTED negative.secondary_bound.verify_foundations.py\nREJECTED negative.secondary_bound.validate_foundations_independent.py\nREJECTED negative.endpoint_tail.verify_foundations.py\nREJECTED negative.endpoint_tail.validate_foundations_independent.py\nPASS_FOUNDATIONS_REPLAY",
+      "stderr": ""
+    },
+    {
+      "label": "generate_exact_normal",
+      "command": [
+        "generate_exact.py",
+        "--check",
+        "exact_certificate.json"
+      ],
+      "cwd": "work/report_parts/m2a",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 0.586,
+      "log": "replay_logs/foundations_upper__generate_exact_normal.log",
+      "stdout": "PASS_M2A_EXACT_RECONSTRUCTION\nendpoints=8 recurrences=8 ordering=7 deletion_maxima=10 radical_enclosures=2 strict_inequalities=9 periodic_identity=1\nall decisions exact; decimal approximations and assert statements are not used",
+      "stderr": ""
+    },
+    {
+      "label": "generate_exact_O",
+      "command": [
+        "-O",
+        "generate_exact.py",
+        "--check",
+        "exact_certificate.json"
+      ],
+      "cwd": "work/report_parts/m2a",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 1.53,
+      "log": "replay_logs/foundations_upper__generate_exact_O.log",
+      "stdout": "PASS_M2A_EXACT_RECONSTRUCTION\nendpoints=8 recurrences=8 ordering=7 deletion_maxima=10 radical_enclosures=2 strict_inequalities=9 periodic_identity=1\nall decisions exact; decimal approximations and assert statements are not used",
+      "stderr": ""
+    },
+    {
+      "label": "validate_independent_normal",
+      "command": [
+        "validate_independent.py",
+        "exact_certificate.json"
+      ],
+      "cwd": "work/report_parts/m2a",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 0.024,
+      "log": "replay_logs/foundations_upper__validate_independent_normal.log",
+      "stdout": "PASS_M2A_INDEPENDENT_RATIONAL_PAIR_CHECK\nendpoints=8 recurrences=8 ordering=7 deletion_maxima=10 radical_enclosures=2 strict_inequalities=9 periodic_identity=1\nfinite arithmetic only; no Decimal, SymPy, generator import, or assert statement",
+      "stderr": ""
+    },
+    {
+      "label": "validate_independent_O",
+      "command": [
+        "-O",
+        "validate_independent.py",
+        "exact_certificate.json"
+      ],
+      "cwd": "work/report_parts/m2a",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 0.024,
+      "log": "replay_logs/foundations_upper__validate_independent_O.log",
+      "stdout": "PASS_M2A_INDEPENDENT_RATIONAL_PAIR_CHECK\nendpoints=8 recurrences=8 ordering=7 deletion_maxima=10 radical_enclosures=2 strict_inequalities=9 periodic_identity=1\nfinite arithmetic only; no Decimal, SymPy, generator import, or assert statement",
+      "stderr": ""
+    },
+    {
+      "label": "negative_controls_normal",
+      "command": [
+        "negative_controls.py"
+      ],
+      "cwd": "work/report_parts/m2a",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 4.837,
+      "log": "replay_logs/foundations_upper__negative_controls_normal.log",
+      "stdout": "REJECTED missing_deletion generator exit 1\nREJECTED missing_deletion independent exit 1\nREJECTED wrong_endpoint generator exit 1\nREJECTED wrong_endpoint independent exit 1\nREJECTED false_peak_margin generator exit 1\nREJECTED false_peak_margin independent exit 1\nPASS_M2A_SIX_NEGATIVE_CONTROLS",
+      "stderr": ""
+    }
+  ]
+}

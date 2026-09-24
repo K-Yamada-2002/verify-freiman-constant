@@ -1,0 +1,879 @@
+{
+  "status": "uniform chart counterexamples only; no gap claim for A_n",
+  "source_proof_hash": "13b4b13becd3e244958ffe08b5b89257eb957bde106bcc3ea94bf735653e23f7",
+  "depths": [
+    4,
+    5
+  ],
+  "backward_depth": 6,
+  "surveyed": [
+    1928,
+    2094,
+    1668,
+    1669,
+    1672,
+    1676,
+    1677,
+    1908,
+    1924,
+    1927,
+    1678,
+    1920,
+    1923,
+    1937,
+    1940,
+    1251,
+    1614,
+    1670,
+    1848,
+    1849,
+    1929,
+    1934,
+    1968,
+    1974,
+    2099,
+    2108,
+    774,
+    1682,
+    1844,
+    1851,
+    1854,
+    1938
+  ],
+  "witnesses": [
+    {
+      "node": 1928,
+      "base_parameters": [
+        [
+          "762019/1177297",
+          "0"
+        ],
+        [
+          "17574503/26872064",
+          "0"
+        ],
+        [
+          "58617410368/152587890625",
+          "0"
+        ]
+      ],
+      "witness": {
+        "node": 0,
+        "depth": 5,
+        "sample": 0,
+        "parameters": [
+          [
+            "1177297/3116613",
+            "0"
+          ],
+          [
+            "26872064/44446567",
+            "0"
+          ],
+          [
+            "27437124812107342295884003393185566410010126469038967647534372665984/7705881748944507931289424258175731372618900974358824598236083984375",
+            "-958217091606299456338842386574350035133067880354763750542743522816/7705881748944507931289424258175731372618900974358824598236083984375"
+          ]
+        ],
+        "gap": [
+          [
+            "1284018692390727/2000000000000000",
+            "0"
+          ],
+          [
+            "6420095731820261/10000000000000000",
+            "0"
+          ]
+        ],
+        "verification": {
+          "left_cylinders": 242,
+          "right_cylinders": 242,
+          "comparisons": 322
+        }
+      },
+      "exact_replay": {
+        "left_cylinders": 242,
+        "right_cylinders": 242,
+        "comparisons": 322
+      },
+      "backward_trace": {
+        "node": 1928,
+        "status": "excluded",
+        "parents": [
+          {
+            "node": 17,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 202,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 264,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 406,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 413,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 1095,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 1096,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 1932,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 2297,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 2298,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 2306,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 2307,
+            "status": "outside_parent_guard"
+          }
+        ]
+      }
+    },
+    {
+      "node": 2094,
+      "base_parameters": [
+        [
+          "3654209/5581916",
+          "0"
+        ],
+        [
+          "3018023/7658823",
+          "0"
+        ],
+        [
+          "517/625",
+          "0"
+        ]
+      ],
+      "witness": {
+        "node": 0,
+        "depth": 5,
+        "sample": 0,
+        "parameters": [
+          [
+            "5581916/9236125",
+            "0"
+          ],
+          [
+            "7658823/18335669",
+            "0"
+          ],
+          [
+            "264267659766116282274069200383907845632/1737592039330315179117877733625684630625",
+            "107710517806628512921341575598759936/347518407866063035823575546725136926125"
+          ]
+        ],
+        "gap": [
+          [
+            "870123789402899/6250000000000000",
+            "0"
+          ],
+          [
+            "278441889869413/2000000000000000",
+            "0"
+          ]
+        ],
+        "verification": {
+          "left_cylinders": 242,
+          "right_cylinders": 242,
+          "comparisons": 243
+        }
+      },
+      "exact_replay": {
+        "left_cylinders": 242,
+        "right_cylinders": 242,
+        "comparisons": 243
+      },
+      "backward_trace": {
+        "node": 2094,
+        "status": "excluded",
+        "parents": [
+          {
+            "node": 272,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 273,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 592,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 593,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 713,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 1926,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 1945,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 1946,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 1964,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 2738,
+            "status": "outside_parent_guard"
+          }
+        ]
+      }
+    },
+    {
+      "node": 1927,
+      "base_parameters": [
+        [
+          "1203/1634",
+          "0"
+        ],
+        [
+          "1634/2837",
+          "0"
+        ],
+        [
+          "54875873536/152587890625",
+          "0"
+        ]
+      ],
+      "witness": {
+        "node": 0,
+        "depth": 5,
+        "sample": 0,
+        "parameters": [
+          [
+            "1634/4471",
+            "0"
+          ],
+          [
+            "2837/4471",
+            "0"
+          ],
+          [
+            "2714874644262666068285555301028277468505024/100497564383252801666259765625",
+            "-126307399484874656323183150388140851474816/100497564383252801666259765625"
+          ]
+        ],
+        "gap": [
+          [
+            "3218081292616839/5000000000000000",
+            "0"
+          ],
+          [
+            "1609041011793203/2500000000000000",
+            "0"
+          ]
+        ],
+        "verification": {
+          "left_cylinders": 242,
+          "right_cylinders": 242,
+          "comparisons": 322
+        }
+      },
+      "exact_replay": {
+        "left_cylinders": 242,
+        "right_cylinders": 242,
+        "comparisons": 322
+      },
+      "backward_trace": {
+        "node": 1927,
+        "status": "excluded",
+        "parents": [
+          {
+            "node": 202,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 264,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 642,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 1095,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 1096,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 1932,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 2297,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 2305,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 2306,
+            "status": "outside_parent_guard"
+          }
+        ]
+      }
+    },
+    {
+      "node": 1251,
+      "base_parameters": [
+        [
+          "1609/2882",
+          "0"
+        ],
+        [
+          "1634/2837",
+          "0"
+        ],
+        [
+          "65064604/29296875",
+          "-2576816/29296875"
+        ]
+      ],
+      "witness": {
+        "node": 0,
+        "depth": 4,
+        "sample": 0,
+        "parameters": [
+          [
+            "2882/4491",
+            "0"
+          ],
+          [
+            "2837/10145",
+            "0"
+          ],
+          [
+            "145922030001751076751323711836720178273/2857498089713813595156313061481035156250",
+            "318165994519939702468609677195284863/285749808971381359515631306148103515625"
+          ]
+        ],
+        "gap": [
+          [
+            "6774929911493391/10000000000000000",
+            "0"
+          ],
+          [
+            "6775414179699787/10000000000000000",
+            "0"
+          ]
+        ],
+        "verification": {
+          "left_cylinders": 81,
+          "right_cylinders": 80,
+          "comparisons": 143
+        }
+      },
+      "exact_replay": {
+        "left_cylinders": 81,
+        "right_cylinders": 80,
+        "comparisons": 143
+      },
+      "backward_trace": {
+        "node": 1251,
+        "status": "excluded",
+        "parents": [
+          {
+            "node": 203,
+            "status": "excluded",
+            "parents": [
+              {
+                "node": 60,
+                "status": "outside_parent_guard"
+              },
+              {
+                "node": 122,
+                "status": "outside_parent_guard"
+              },
+              {
+                "node": 507,
+                "status": "outside_parent_guard"
+              },
+              {
+                "node": 665,
+                "status": "outside_parent_guard"
+              },
+              {
+                "node": 666,
+                "status": "outside_parent_guard"
+              },
+              {
+                "node": 1686,
+                "status": "outside_parent_guard"
+              },
+              {
+                "node": 2007,
+                "status": "outside_parent_guard"
+              },
+              {
+                "node": 2010,
+                "status": "outside_parent_guard"
+              }
+            ]
+          },
+          {
+            "node": 501,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 2072,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 2140,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 2300,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 2309,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 2734,
+            "status": "outside_parent_guard"
+          }
+        ]
+      }
+    },
+    {
+      "node": 1614,
+      "base_parameters": [
+        [
+          "1609/2882",
+          "0"
+        ],
+        [
+          "1254/2243",
+          "0"
+        ],
+        [
+          "10648/15625",
+          "0"
+        ]
+      ],
+      "witness": {
+        "node": 0,
+        "depth": 4,
+        "sample": 0,
+        "parameters": [
+          [
+            "2882/4491",
+            "0"
+          ],
+          [
+            "2243/5740",
+            "0"
+          ],
+          [
+            "445755748896368089710367656182781792/293244215860546984182299456932609375",
+            "-2341704302311179794533050429299904/41892030837220997740328493847515625"
+          ]
+        ],
+        "gap": [
+          [
+            "292769387992353/500000000000000",
+            "0"
+          ],
+          [
+            "5855539121728931/10000000000000000",
+            "0"
+          ]
+        ],
+        "verification": {
+          "left_cylinders": 81,
+          "right_cylinders": 81,
+          "comparisons": 84
+        }
+      },
+      "exact_replay": {
+        "left_cylinders": 81,
+        "right_cylinders": 81,
+        "comparisons": 84
+      },
+      "backward_trace": {
+        "node": 1614,
+        "status": "excluded",
+        "parents": [
+          {
+            "node": 59,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 59,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 504,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 504,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 1246,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 1445,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 1445,
+            "status": "outside_parent_guard"
+          }
+        ]
+      }
+    },
+    {
+      "node": 1929,
+      "base_parameters": [
+        [
+          "762019/1177297",
+          "0"
+        ],
+        [
+          "17574503/26872064",
+          "0"
+        ],
+        [
+          "2664427744/6103515625",
+          "0"
+        ]
+      ],
+      "witness": {
+        "node": 0,
+        "depth": 5,
+        "sample": 0,
+        "parameters": [
+          [
+            "1177297/3116613",
+            "0"
+          ],
+          [
+            "26872064/44446567",
+            "0"
+          ],
+          [
+            "1247142036913970104358363790599343927727733021319953074887926030272/308235269957780317251576970327029254904756038974352983929443359375",
+            "-43555322345740884379038290298834092506048540016125625024670160128/308235269957780317251576970327029254904756038974352983929443359375"
+          ]
+        ],
+        "gap": [
+          [
+            "6899650069782949/10000000000000000",
+            "0"
+          ],
+          [
+            "689971336756647/1000000000000000",
+            "0"
+          ]
+        ],
+        "verification": {
+          "left_cylinders": 242,
+          "right_cylinders": 242,
+          "comparisons": 322
+        }
+      },
+      "exact_replay": {
+        "left_cylinders": 242,
+        "right_cylinders": 242,
+        "comparisons": 322
+      },
+      "backward_trace": {
+        "node": 1929,
+        "status": "excluded",
+        "parents": [
+          {
+            "node": 17,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 264,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 406,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 413,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 1095,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 1096,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 2298,
+            "status": "outside_parent_guard"
+          }
+        ]
+      }
+    },
+    {
+      "node": 2108,
+      "base_parameters": [
+        [
+          "1835007/2805793",
+          "0"
+        ],
+        [
+          "3018023/7658823",
+          "0"
+        ],
+        [
+          "11374/15625",
+          "0"
+        ]
+      ],
+      "witness": {
+        "node": 0,
+        "depth": 5,
+        "sample": 0,
+        "parameters": [
+          [
+            "2805793/4640800",
+            "0"
+          ],
+          [
+            "7658823/18335669",
+            "0"
+          ],
+          [
+            "5813888514854558210029522408445972603904/43439800983257879477946943340642115765625",
+            "2369631391745827284269514663172718592/8687960196651575895589388668128423153125"
+          ]
+        ],
+        "gap": [
+          [
+            "318552458583053/2000000000000000",
+            "0"
+          ],
+          [
+            "398209693619467/2500000000000000",
+            "0"
+          ]
+        ],
+        "verification": {
+          "left_cylinders": 242,
+          "right_cylinders": 242,
+          "comparisons": 243
+        }
+      },
+      "exact_replay": {
+        "left_cylinders": 242,
+        "right_cylinders": 242,
+        "comparisons": 243
+      },
+      "backward_trace": {
+        "node": 2108,
+        "status": "excluded",
+        "parents": [
+          {
+            "node": 272,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 328,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 592,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 593,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 1945,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 1946,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 2738,
+            "status": "outside_parent_guard"
+          }
+        ]
+      }
+    },
+    {
+      "node": 774,
+      "base_parameters": [
+        [
+          "11850499/19567748",
+          "0"
+        ],
+        [
+          "376087/479028",
+          "0"
+        ],
+        [
+          "13731480083166208/59604644775390625",
+          "0"
+        ]
+      ],
+      "witness": {
+        "node": 0,
+        "depth": 5,
+        "sample": 0,
+        "parameters": [
+          [
+            "19567748/70553743",
+            "0"
+          ],
+          [
+            "479028/855115",
+            "0"
+          ],
+          [
+            "273728770342011243407433547072934299730430953518504093433494723487559003136/670297479368270370041283625733225760479937987223863340537607669830322265625",
+            "2474881749369979568277174120485946810615161598282570342327643255065049088/134059495873654074008256725146645152095987597444772668107521533966064453125"
+          ]
+        ],
+        "gap": [
+          [
+            "8660591526533267/10000000000000000",
+            "0"
+          ],
+          [
+            "2165165698321249/2500000000000000",
+            "0"
+          ]
+        ],
+        "verification": {
+          "left_cylinders": 239,
+          "right_cylinders": 242,
+          "comparisons": 322
+        }
+      },
+      "exact_replay": {
+        "left_cylinders": 239,
+        "right_cylinders": 242,
+        "comparisons": 322
+      },
+      "backward_trace": {
+        "node": 774,
+        "status": "excluded",
+        "parents": [
+          {
+            "node": 87,
+            "status": "excluded",
+            "parents": [
+              {
+                "node": 86,
+                "status": "outside_parent_guard"
+              },
+              {
+                "node": 86,
+                "status": "outside_parent_guard"
+              },
+              {
+                "node": 551,
+                "status": "outside_parent_guard"
+              },
+              {
+                "node": 552,
+                "status": "outside_parent_guard"
+              }
+            ]
+          },
+          {
+            "node": 773,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 2634,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 2635,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 2637,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 2638,
+            "status": "outside_parent_guard"
+          }
+        ]
+      }
+    }
+  ],
+  "not_detected": [
+    1668,
+    1669,
+    1672,
+    1676,
+    1677,
+    1908,
+    1924,
+    1678,
+    1920,
+    1923,
+    1937,
+    1940,
+    1670,
+    1848,
+    1849,
+    1934,
+    1968,
+    1974,
+    2099,
+    1682,
+    1844,
+    1851,
+    1854,
+    1938
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "status": "induction remains open",
+  "date": "2026-09-24",
+  "graphs": {
+    "hybrid_induction_20260924_finish.mosaic": {
+      "counts": {
+        "nodes": 2848,
+        "local": 1080,
+        "open": 1768,
+        "closed_supported_types": 0
+      },
+      "verified_rules": 1080,
+      "failed_rules": 0,
+      "proof_hash": "009e24a3b85d1168ddd7f284ea72e597b556b20b1273063562fb2b7d4ef51287"
+    },
+    "hybrid_induction_20260924_finish.synthesis": {
+      "counts": {
+        "nodes": 3329,
+        "local": 1167,
+        "open": 2162,
+        "closed_supported_types": 0
+      },
+      "verified_rules": 1167,
+      "failed_rules": 0,
+      "proof_hash": "2c3c693e6a7d808ab879dd874e8a4076b73ec99b4c4d0e4ef8088c69d3d4a9c6"
+    },
+    "continued_reduced": {
+      "counts": {
+        "nodes": 2821,
+        "local": 1063,
+        "open": 1758,
+        "closed_supported_types": 0
+      },
+      "verified_rules": 1063,
+      "failed_rules": 0,
+      "proof_hash": "13b4b13becd3e244958ffe08b5b89257eb957bde106bcc3ea94bf735653e23f7"
+    },
+    "continued_incoming_split": {
+      "counts": {
+        "nodes": 2894,
+        "local": 1071,
+        "open": 1823,
+        "closed_supported_types": 0
+      },
+      "verified_rules": 1071,
+      "failed_rules": 0,
+      "proof_hash": "3b7f48d42f374713b4f8db107268c0213fe97ad95c29b84edb9669873caafef8"
+    }
+  },
+  "tests": {
+    "existing_passed": 147,
+    "added_passed": 5
+  },
+  "gap_checks": {
+    "continued_chart_gaps": {
+      "surveyed": 32,
+      "exact_witnesses": 8,
+      "backward_statuses": {
+        "excluded": 8
+      }
+    },
+    "continued_reduced_gaps": {
+      "surveyed": 32,
+      "exact_witnesses": 8,
+      "backward_statuses": {
+        "excluded": 8
+      }
+    }
+  },
+  "split_witness_membership": {
+    "removed": 6,
+    "retained": 2
+  }
+}

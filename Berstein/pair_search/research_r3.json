@@ -1,0 +1,297 @@
+{
+  "claims": [
+    {
+      "claim": 3,
+      "definition": {
+        "label": "R3",
+        "model": {
+          "digits": 4,
+          "radius": 3,
+          "threshold": "4172069/1000000",
+          "core_states": 621,
+          "core_edges": 1771,
+          "reset": "222222"
+        },
+        "graph": "fc741876424234dbaae69de6c1a2c73d0e209c8fd89824f10aadd88a084ad392",
+        "alphabet": "123",
+        "forbidden": [
+          "1312",
+          "1313",
+          "2131",
+          "3131",
+          "11131",
+          "13111",
+          "22313",
+          "31322",
+          "31323",
+          "32313",
+          "121323",
+          "323121",
+          "2113112"
+        ]
+      },
+      "proposition": {
+        "product": 232,
+        "model": {
+          "digits": 4,
+          "radius": 3,
+          "threshold": "4172069/1000000",
+          "core_states": 621,
+          "core_edges": 1771,
+          "reset": "222222"
+        },
+        "graph": "fc741876424234dbaae69de6c1a2c73d0e209c8fd89824f10aadd88a084ad392",
+        "left": [
+          "11",
+          "12",
+          "133"
+        ],
+        "right": [
+          "11",
+          "12",
+          "133"
+        ],
+        "target": [
+          4.17207,
+          4.178463
+        ],
+        "dominance_bound": "817/196",
+        "status": "completed_float",
+        "visited": 52988,
+        "leaves": 20287,
+        "covered": [
+          [
+            4.17207,
+            4.178463
+          ]
+        ],
+        "gaps": [],
+        "rational_leaf_check": {
+          "covered": [
+            [
+              "417207/100000",
+              "4178463/1000000"
+            ]
+          ],
+          "maximum_width": "1260293209222238476020995/1260426607257624956971165890036"
+        }
+      },
+      "scan": {
+        "exponent": 8,
+        "scale": 1000000000000000,
+        "visited": 5314704,
+        "leaves": 1855236,
+        "max_width_units": 9999994,
+        "max_depth": 19,
+        "complete": true,
+        "covers_target": true,
+        "seconds": 0.75175,
+        "covered": [
+          [
+            1172070000000000,
+            1178463000000000
+          ]
+        ]
+      },
+      "language_state_pairs": 956
+    },
+    {
+      "claim": 7,
+      "definition": {
+        "label": "R7",
+        "model": {
+          "digits": 4,
+          "radius": 3,
+          "threshold": "1089619/250000",
+          "core_states": 699,
+          "core_edges": 2054,
+          "reset": "222222"
+        },
+        "graph": "d08dccd661a619a04f7990a9da3360c54229cd5bacd8e299bc5bb442df007a22",
+        "alphabet": "123",
+        "forbidden": [
+          "13131",
+          "21312",
+          "21313",
+          "31312",
+          "31313",
+          "111313",
+          "211313",
+          "313111",
+          "313112",
+          "1113121",
+          "1213111"
+        ]
+      },
+      "proposition": {
+        "product": 291,
+        "model": {
+          "digits": 4,
+          "radius": 3,
+          "threshold": "1089619/250000",
+          "core_states": 699,
+          "core_edges": 2054,
+          "reset": "222222"
+        },
+        "graph": "d08dccd661a619a04f7990a9da3360c54229cd5bacd8e299bc5bb442df007a22",
+        "left": [
+          "11"
+        ],
+        "right": [
+          "11",
+          "12",
+          "13113"
+        ],
+        "target": [
+          4.358477,
+          4.370965
+        ],
+        "dominance_bound": "2815/646",
+        "status": "completed_float",
+        "visited": 98477,
+        "leaves": 38481,
+        "covered": [
+          [
+            4.358477,
+            4.370965
+          ]
+        ],
+        "gaps": [],
+        "rational_leaf_check": {
+          "covered": [
+            [
+              "4358477/1000000",
+              "874193/200000"
+            ]
+          ],
+          "maximum_width": "115918926614160492575737/115920862074622439114109488100"
+        }
+      },
+      "scan": {
+        "exponent": 8,
+        "scale": 1000000000000000,
+        "visited": 10038682,
+        "leaves": 3497647,
+        "max_width_units": 9999999,
+        "max_depth": 19,
+        "complete": true,
+        "covers_target": true,
+        "seconds": 1.29499,
+        "covered": [
+          [
+            1358477000000000,
+            1370965000000000
+          ]
+        ]
+      },
+      "language_state_pairs": 1058
+    },
+    {
+      "claim": 9,
+      "definition": {
+        "label": "R9",
+        "model": {
+          "digits": 4,
+          "radius": 3,
+          "threshold": "4378061/1000000",
+          "core_states": 703,
+          "core_edges": 2067,
+          "reset": "222222"
+        },
+        "graph": "8b79f5c5822043f2f1c4894b475816d4b06789271cc089c7c89ded865fa1c094",
+        "alphabet": "123",
+        "forbidden": [
+          "21312",
+          "21313",
+          "31312",
+          "31313",
+          "111313",
+          "313111",
+          "1113121",
+          "1213111",
+          "1313112",
+          "2113131"
+        ]
+      },
+      "proposition": {
+        "product": 311,
+        "model": {
+          "digits": 4,
+          "radius": 3,
+          "threshold": "4378061/1000000",
+          "core_states": 703,
+          "core_edges": 2067,
+          "reset": "222222"
+        },
+        "graph": "8b79f5c5822043f2f1c4894b475816d4b06789271cc089c7c89ded865fa1c094",
+        "left": [
+          "11",
+          "12",
+          "13113"
+        ],
+        "right": [
+          "12",
+          "132",
+          "133"
+        ],
+        "target": [
+          4.378062,
+          4.448557
+        ],
+        "dominance_bound": "5779/1323",
+        "status": "completed_float",
+        "visited": 562881,
+        "leaves": 218928,
+        "covered": [
+          [
+            4.378062,
+            4.448557
+          ]
+        ],
+        "gaps": [],
+        "rational_leaf_check": {
+          "covered": [
+            [
+              "2189031/500000",
+              "4448557/1000000"
+            ]
+          ],
+          "maximum_width": "586924126540093712919293765/586925687956464762491524448164116"
+        }
+      },
+      "scan": {
+        "exponent": 8,
+        "scale": 1000000000000000,
+        "visited": 57010369,
+        "leaves": 19760876,
+        "max_width_units": 9999999,
+        "max_depth": 20,
+        "complete": true,
+        "covers_target": true,
+        "seconds": 7.92722,
+        "covered": [
+          [
+            1378062000000000,
+            1448557000000000
+          ]
+        ]
+      },
+      "language_state_pairs": 1063
+    }
+  ],
+  "rejections": [
+    {
+      "claim": 1,
+      "reason": "dominance",
+      "bound": "456879070253/110085198405",
+      "model": {
+        "digits": 4,
+        "radius": 3,
+        "threshold": "4099999/1000000",
+        "core_states": 560,
+        "core_edges": 1551,
+        "reset": "222222"
+      }
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "schema": "kf131-scalar-atlas-v1",
+  "settings": {
+    "base": 0.996,
+    "bins": 512,
+    "memory": 7,
+    "grid": 1024,
+    "max_step": 4,
+    "block_span": 1
+  },
+  "nodes": [
+    {
+      "id": 0,
+      "states": [
+        "22222",
+        "22222"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "interval": [
+        -187,
+        -186
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 390931
+    },
+    {
+      "id": 1,
+      "states": [
+        "22222",
+        "22222"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "interval": [
+        -187,
+        -186
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 398520
+    },
+    {
+      "id": 2,
+      "states": [
+        "22222",
+        "22222"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -187,
+        -186
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 390934
+    },
+    {
+      "id": 3,
+      "states": [
+        "22231",
+        "22213"
+      ],
+      "parity": 1,
+      "ratio_bin": 173,
+      "ratio_refinement": [
+        2,
+        3
+      ],
+      "interval": [
+        -142,
+        -141
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 400521
+    },
+    {
+      "id": 4,
+      "states": [
+        "22231",
+        "22213"
+      ],
+      "parity": 1,
+      "ratio_bin": 173,
+      "ratio_refinement": [
+        2,
+        2
+      ],
+      "interval": [
+        -142,
+        -141
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 400520
+    },
+    {
+      "id": 5,
+      "states": [
+        "22231",
+        "22213"
+      ],
+      "parity": 1,
+      "ratio_bin": 173,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        -142,
+        -141
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 1118
+    }
+  ],
+  "roots": [],
+  "closed_candidate": false
+}

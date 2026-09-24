@@ -1,0 +1,24 @@
+{
+  "status": "all five old frontier types have conditional covers; 36 new open obligations; no interior proof",
+  "files": {
+    "split_scalar_obligations.py": "12679e52c5b00d82de7cf35b1911c140a3ce0ffea943a02226a30b5a1cea104e",
+    "test_split_scalar_obligations.py": "ec7ebdd5874f12c67cf6d94b3d1ce60176907f626af74e98ba2f6186c6d36108",
+    "repair_gap_intervals.py": "94512f58bedb22f9a093b66bd3ad6e24b6852075d157f485a970694d94ddcaf7",
+    "RESTRICTED_BOX_INDUCTION.md": "54d5a0e56562419c139bf211539a547d12ba564a141b1fa65038dd8561b2e138",
+    "periodic_outer_atom_current_20260924.json": "77d37eb098c1768edb097d6a636737d58bada77e517c47ec9a586edb91a3c2d9",
+    "periodic_outer_atom_length4_20260924/history.json": "4718ab37b107ba37909a54ef17c70831e4ba007ea2a51eac11d2f645f20108d3",
+    "periodic_outer_split_seed_20260924.json": "bfe7188806801d3ddbd08fb5c8caca0de4038ae96e9d66e9ede019fd36437346",
+    "periodic_outer_split_run_20260924/history.json": "5c669bcc42daf59205e4c6687e34f9dea6ae2e8c9f9c06caa14624a4bfdea46f",
+    "periodic_outer_targeted_gap_corner_audit_20260924.json": "a4c2635fd57271bd819a72131acf2ef5b7f96dba853221aa85626d7c0a488ade",
+    "periodic_outer_bridge_seed_20260924.json": "0626bbc0ef125e3d48c36a7ca157ddb179fbbf1f06581495f702345eec736baf",
+    "periodic_outer_flanks_patch_20260924.json": "87ecdda15388ed26f06dac2b0a97bab165dbee9a4fa2179bd7a3d24acdfb41f5",
+    "periodic_outer_bridge_patch_20260924.json": "dc2c5eb86992e4a0080700942ead74834ba9eec1fbb4de6327a8aa423906bf6c",
+    "periodic_outer_three_branch_cover_20260924.json": "3cdee0de0d8c07c4ec7e0924bcaed09e43d23fe71dcc5e709c248cc436161365",
+    "periodic_outer_second_bridge_patch_20260924.json": "45ba4443a3020249a122ed1cb829b1ac4327924d22d8ccf07cc4c33ca2c6ed92",
+    "periodic_outer_all_offers_20260924.json": "f0c602d765bedbf459b3c292783af630d325aff3f7804df99fc9efe88c938cc9",
+    "periodic_outer_all_five_current_20260924.json": "096d77562d14a86403b3ae3b0a202a117a56cd2fc7c5dbcf1a4963fb8ec970ae",
+    "periodic_outer_all_five_coalesced_20260924.json": "4a0e56b142f9855178e458532fa269cd4357698b2d3a363b6b3d9884f25388a1",
+    "periodic_outer_all_five_final_verification_20260924.json": "3a031d5023aea5f5eae07701e3cb269286fbebaa65614ef9b67353bd80ba6677",
+    "periodic_outer_all_bank_20260924.json": "e1c245202458ffba4906db77a1c80e1b56e20abdbff5edd9f827cb989745c7b1"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "status": "membership of old counterexample points after splitting; not filledness",
+  "source_proof_hash": "500aff5d4118db7089482640a27f0472fb221082357e8c66964378d718c562e7",
+  "split_proof_hash": "5ee38f1770f2623fd227ca9caa7966113147ca5e26ee0a19cf922f7a25381427",
+  "rows": [
+    {
+      "source_node": 1950,
+      "replacement_nodes": [
+        2849,
+        2853,
+        2855,
+        2861,
+        2863,
+        2881,
+        2887,
+        2888,
+        2893,
+        2894
+      ],
+      "witness_retained_in": []
+    },
+    {
+      "source_node": 1949,
+      "replacement_nodes": [
+        2852,
+        2854,
+        2871,
+        2874,
+        2876,
+        2880,
+        2886,
+        2891,
+        2892
+      ],
+      "witness_retained_in": []
+    },
+    {
+      "source_node": 2117,
+      "replacement_nodes": [
+        2858,
+        2859,
+        2868,
+        2870,
+        2872,
+        2879,
+        2882,
+        2900
+      ],
+      "witness_retained_in": []
+    },
+    {
+      "source_node": 1951,
+      "replacement_nodes": [
+        2850,
+        2856,
+        2862,
+        2864,
+        2875,
+        2889
+      ],
+      "witness_retained_in": []
+    },
+    {
+      "source_node": 1263,
+      "replacement_nodes": [
+        2865,
+        2884,
+        2885,
+        2890,
+        2895,
+        2898,
+        2902,
+        2903,
+        2905,
+        2906,
+        2907
+      ],
+      "witness_retained_in": []
+    },
+    {
+      "source_node": 1628,
+      "replacement_nodes": [
+        2851,
+        2866,
+        2877,
+        2878
+      ],
+      "witness_retained_in": []
+    },
+    {
+      "source_node": 2131,
+      "replacement_nodes": [
+        2857,
+        2860,
+        2867,
+        2869,
+        2883,
+        2899
+      ],
+      "witness_retained_in": []
+    },
+    {
+      "source_node": 786,
+      "replacement_nodes": [
+        2873,
+        2896,
+        2897,
+        2901,
+        2904
+      ],
+      "witness_retained_in": [
+        2901
+      ]
+    }
+  ]
+}

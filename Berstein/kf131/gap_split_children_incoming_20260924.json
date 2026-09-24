@@ -1,0 +1,164 @@
+{
+  "settings": {
+    "base": 0.996,
+    "bins": 512,
+    "memory": 7,
+    "grid": 1024000000,
+    "max_step": 4,
+    "block_span": 1
+  },
+  "parents": {
+    "23": [],
+    "44": [],
+    "52": [],
+    "53": [],
+    "89": [],
+    "99": [],
+    "110": []
+  },
+  "nodes": {
+    "23": {
+      "id": 23,
+      "states": [
+        "22222",
+        "22223"
+      ],
+      "parity": -1,
+      "ratio_bin": 418,
+      "ratio_refinement": [
+        3,
+        1
+      ],
+      "interval": [
+        -113971908,
+        -113276859
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 398501
+    },
+    "44": {
+      "id": 44,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        3,
+        2
+      ],
+      "interval": [
+        -16549522,
+        -14814525
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 384898
+    },
+    "52": {
+      "id": 52,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        3,
+        2
+      ],
+      "interval": [
+        -16566105,
+        -14814525
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 384898
+    },
+    "53": {
+      "id": 53,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        2,
+        1
+      ],
+      "interval": [
+        -16566105,
+        -14814525
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 384897
+    },
+    "89": {
+      "id": 89,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        3,
+        2
+      ],
+      "interval": [
+        -11203064,
+        -6898435
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 384898
+    },
+    "99": {
+      "id": 99,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        3,
+        2
+      ],
+      "interval": [
+        -14651923,
+        -11361810
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 384898
+    },
+    "110": {
+      "id": 110,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        3,
+        2
+      ],
+      "interval": [
+        -11203064,
+        -4480670
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 384898
+    }
+  },
+  "rules": [],
+  "source_graph": "gap_repaired_round3_20260924.json",
+  "source_sha256": "5412e352b831848572e828d85a5e752d106b8824ad83a1da462c1411cdee1d95"
+}

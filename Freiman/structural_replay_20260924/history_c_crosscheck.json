@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "check": "Exact labeled graph and rank equality, C89 vs Python",
+  "states": 28,
+  "edges": 74,
+  "initial_states": 31,
+  "initial_edges": 86,
+  "static_storage_bytes": 812,
+  "scope": "structural history only; excludes numeric coverage and runtime/stack memory"
+}

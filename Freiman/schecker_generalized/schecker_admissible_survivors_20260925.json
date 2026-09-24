@@ -1,0 +1,120 @@
+{
+  "scope": "Exact finite-depth search only. It does not establish coverage at all depths or a finite induction closure.",
+  "arithmetic": "Exact Q(sqrt(462)) endpoints and exact Q(sqrt(21)) ratio tests",
+  "roots": [
+    {
+      "n": 0,
+      "U_n": "32113",
+      "V_n": "4322",
+      "normalized_old_v_display": "1.60548738475742613713076749150366511525597307224195682785413",
+      "root_hull_without_central_4": [
+        {
+          "a": "253589820/491993569",
+          "b": "283748/491993569",
+          "decimal": "0.5278295661608791408827"
+        },
+        {
+          "a": "18106940/34160419",
+          "b": "-39125/409925028",
+          "decimal": "0.5280046477223012887392"
+        }
+      ],
+      "edge_menu": "every legal extension pair adding 1 or 2 digits total",
+      "edge_condition": "exact old v in [5/17,17/5]",
+      "levels": [
+        {
+          "depth": 1,
+          "surviving_prefix_pairs": 8,
+          "hull_union_component_count": 1,
+          "covers_entire_root_hull": true,
+          "uncovered_root_parts": []
+        },
+        {
+          "depth": 2,
+          "surviving_prefix_pairs": 68,
+          "hull_union_component_count": 1,
+          "covers_entire_root_hull": true,
+          "uncovered_root_parts": []
+        },
+        {
+          "depth": 3,
+          "surviving_prefix_pairs": 556,
+          "hull_union_component_count": 1,
+          "covers_entire_root_hull": true,
+          "uncovered_root_parts": []
+        },
+        {
+          "depth": 4,
+          "surviving_prefix_pairs": 4444,
+          "hull_union_component_count": 1,
+          "covers_entire_root_hull": true,
+          "uncovered_root_parts": []
+        },
+        {
+          "depth": 5,
+          "surviving_prefix_pairs": 35081,
+          "hull_union_component_count": 1,
+          "covers_entire_root_hull": true,
+          "uncovered_root_parts": []
+        }
+      ]
+    },
+    {
+      "n": 1,
+      "U_n": "32113131213",
+      "V_n": "4322313121",
+      "normalized_old_v_display": "1.77152985943123987714263504095363309493598442495513907612418",
+      "root_hull_without_central_4": [
+        {
+          "a": "253589820/491993569",
+          "b": "283748/491993569",
+          "decimal": "0.5278295661608791408827"
+        },
+        {
+          "a": "723445857550096304/1370604776617070017",
+          "b": "-4735470116/1370604776617070017",
+          "decimal": "0.5278295888845761056555"
+        }
+      ],
+      "edge_menu": "every legal extension pair adding 1 or 2 digits total",
+      "edge_condition": "exact old v in [5/17,17/5]",
+      "levels": [
+        {
+          "depth": 1,
+          "surviving_prefix_pairs": 9,
+          "hull_union_component_count": 1,
+          "covers_entire_root_hull": true,
+          "uncovered_root_parts": []
+        },
+        {
+          "depth": 2,
+          "surviving_prefix_pairs": 71,
+          "hull_union_component_count": 1,
+          "covers_entire_root_hull": true,
+          "uncovered_root_parts": []
+        },
+        {
+          "depth": 3,
+          "surviving_prefix_pairs": 573,
+          "hull_union_component_count": 1,
+          "covers_entire_root_hull": true,
+          "uncovered_root_parts": []
+        },
+        {
+          "depth": 4,
+          "surviving_prefix_pairs": 4518,
+          "hull_union_component_count": 1,
+          "covers_entire_root_hull": true,
+          "uncovered_root_parts": []
+        },
+        {
+          "depth": 5,
+          "surviving_prefix_pairs": 35305,
+          "hull_union_component_count": 1,
+          "covers_entire_root_hull": true,
+          "uncovered_root_parts": []
+        }
+      ]
+    }
+  ]
+}

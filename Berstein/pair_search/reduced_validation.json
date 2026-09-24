@@ -1,0 +1,403 @@
+{
+  "status": "Numerical candidates only; NOT interval inclusion",
+  "epsilon": 1e-06,
+  "claims": [
+    {
+      "product": 0,
+      "model": {
+        "digits": 4,
+        "radius": 2,
+        "threshold": "409999/100000",
+        "core_states": 71,
+        "core_edges": 196,
+        "reset": "2222"
+      },
+      "graph": "50de991b19a9a6feb8b3e70e0b0a7a438101a2735fd31ffb9cd4f47814a3bcb6",
+      "left": [
+        "11",
+        "12",
+        "2"
+      ],
+      "right": [
+        "11",
+        "12",
+        "2"
+      ],
+      "target": [
+        4.1,
+        4.171799
+      ],
+      "dominance_bound": "8917/2175",
+      "status": "completed_float",
+      "visited": 617953,
+      "leaves": 233564,
+      "covered": [
+        [
+          4.1,
+          4.171799
+        ]
+      ],
+      "gaps": [],
+      "rational_leaf_check": null
+    },
+    {
+      "product": 274,
+      "model": {
+        "digits": 4,
+        "radius": 2,
+        "threshold": "416999/100000",
+        "core_states": 73,
+        "core_edges": 206,
+        "reset": "2222"
+      },
+      "graph": "6bcb26ab7628c10d7d459dc44549e19150052fd829a4393b249bc1869c8ab31b",
+      "left": [
+        "12"
+      ],
+      "right": [
+        "23122",
+        "23123"
+      ],
+      "target": [
+        4.171797,
+        4.172072
+      ],
+      "dominance_bound": "3831/920",
+      "status": "completed_float",
+      "visited": 2177,
+      "leaves": 837,
+      "covered": [
+        [
+          4.171797,
+          4.172072
+        ]
+      ],
+      "gaps": [],
+      "rational_leaf_check": null
+    },
+    {
+      "product": 232,
+      "model": {
+        "digits": 4,
+        "radius": 2,
+        "threshold": "416999/100000",
+        "core_states": 73,
+        "core_edges": 206,
+        "reset": "2222"
+      },
+      "graph": "6bcb26ab7628c10d7d459dc44549e19150052fd829a4393b249bc1869c8ab31b",
+      "left": [
+        "11",
+        "12",
+        "133"
+      ],
+      "right": [
+        "11",
+        "12",
+        "133"
+      ],
+      "target": [
+        4.17207,
+        4.178463
+      ],
+      "dominance_bound": "3831/920",
+      "status": "completed_float",
+      "visited": 52988,
+      "leaves": 20287,
+      "covered": [
+        [
+          4.17207,
+          4.178463
+        ]
+      ],
+      "gaps": [],
+      "rational_leaf_check": null
+    },
+    {
+      "product": 233,
+      "model": {
+        "digits": 4,
+        "radius": 2,
+        "threshold": "416999/100000",
+        "core_states": 73,
+        "core_edges": 206,
+        "reset": "2222"
+      },
+      "graph": "6bcb26ab7628c10d7d459dc44549e19150052fd829a4393b249bc1869c8ab31b",
+      "left": [
+        "11",
+        "12",
+        "133"
+      ],
+      "right": [
+        "11",
+        "12",
+        "2"
+      ],
+      "target": [
+        4.178461,
+        4.219534
+      ],
+      "dominance_bound": "33792711338668/8091259082701",
+      "status": "completed_float",
+      "visited": 338088,
+      "leaves": 129419,
+      "covered": [
+        [
+          4.178461,
+          4.219534
+        ]
+      ],
+      "gaps": [],
+      "rational_leaf_check": null
+    },
+    {
+      "product": 389,
+      "model": {
+        "digits": 4,
+        "radius": 3,
+        "threshold": "422702523763143/100000000000000",
+        "core_states": 651,
+        "core_edges": 1888,
+        "reset": "222222"
+      },
+      "graph": "ffac17552891268b878c8da6917f187f08e55048b23171aa3a5a30a27e53834a",
+      "left": [
+        "11"
+      ],
+      "right": [
+        "11"
+      ],
+      "target": [
+        4.219532,
+        4.240714
+      ],
+      "dominance_bound": "10747/2548",
+      "status": "completed_float",
+      "visited": 171828,
+      "leaves": 65754,
+      "covered": [
+        [
+          4.219532,
+          4.2368918921190915
+        ],
+        [
+          4.23689190548645,
+          4.236892769242986
+        ],
+        [
+          4.236892769700095,
+          4.240714
+        ]
+      ],
+      "gaps": [
+        [
+          4.2368918921190915,
+          4.23689190548645
+        ],
+        [
+          4.236892769242986,
+          4.236892769700095
+        ]
+      ],
+      "rational_leaf_check": null
+    },
+    {
+      "product": 390,
+      "model": {
+        "digits": 4,
+        "radius": 3,
+        "threshold": "212088505392447/50000000000000",
+        "core_states": 651,
+        "core_edges": 1890,
+        "reset": "222222"
+      },
+      "graph": "ac265fc24b58e8c73bfa10844635be1484a595f56d885b51fe06d5612422eaa6",
+      "left": [
+        "11",
+        "12"
+      ],
+      "right": [
+        "11",
+        "12"
+      ],
+      "target": [
+        4.240712,
+        4.358479
+      ],
+      "dominance_bound": "1946/459",
+      "status": "completed_float",
+      "visited": 946255,
+      "leaves": 366691,
+      "covered": [
+        [
+          4.240712,
+          4.358479
+        ]
+      ],
+      "gaps": [],
+      "rational_leaf_check": null
+    },
+    {
+      "product": 291,
+      "model": {
+        "digits": 4,
+        "radius": 2,
+        "threshold": "429999/100000",
+        "core_states": 77,
+        "core_edges": 224,
+        "reset": "2222"
+      },
+      "graph": "e9a29a2ca28d130c48e7207ab49c6028e46cc3bf255d1f0e110b00a691ee779e",
+      "left": [
+        "11"
+      ],
+      "right": [
+        "11",
+        "12",
+        "13113"
+      ],
+      "target": [
+        4.358477,
+        4.370965
+      ],
+      "dominance_bound": "1490123220874/342484165193",
+      "status": "completed_float",
+      "visited": 98477,
+      "leaves": 38481,
+      "covered": [
+        [
+          4.358477,
+          4.370965
+        ]
+      ],
+      "gaps": [],
+      "rational_leaf_check": null
+    },
+    {
+      "product": 392,
+      "model": {
+        "digits": 4,
+        "radius": 3,
+        "threshold": "437382009316339/100000000000000",
+        "core_states": 703,
+        "core_edges": 2067,
+        "reset": "222222"
+      },
+      "graph": "8b79f5c5822043f2f1c4894b475816d4b06789271cc089c7c89ded865fa1c094",
+      "left": [
+        "11",
+        "12",
+        "133"
+      ],
+      "right": [
+        "11",
+        "12",
+        "133"
+      ],
+      "target": [
+        4.370963,
+        4.378064
+      ],
+      "dominance_bound": "5779/1323",
+      "status": "completed_float",
+      "visited": 56000,
+      "leaves": 21936,
+      "covered": [
+        [
+          4.370963,
+          4.378064
+        ]
+      ],
+      "gaps": [],
+      "rational_leaf_check": null
+    },
+    {
+      "product": 311,
+      "model": {
+        "digits": 4,
+        "radius": 2,
+        "threshold": "429999/100000",
+        "core_states": 77,
+        "core_edges": 224,
+        "reset": "2222"
+      },
+      "graph": "e9a29a2ca28d130c48e7207ab49c6028e46cc3bf255d1f0e110b00a691ee779e",
+      "left": [
+        "11",
+        "12",
+        "13113"
+      ],
+      "right": [
+        "12",
+        "132",
+        "133"
+      ],
+      "target": [
+        4.378062,
+        4.448557
+      ],
+      "dominance_bound": "112142363652833/25738600676958",
+      "status": "completed_float",
+      "visited": 562881,
+      "leaves": 218928,
+      "covered": [
+        [
+          4.378062,
+          4.448557
+        ]
+      ],
+      "gaps": [],
+      "rational_leaf_check": null
+    },
+    {
+      "product": 369,
+      "model": {
+        "digits": 4,
+        "radius": 2,
+        "threshold": "444999/100000",
+        "core_states": 81,
+        "core_edges": 239,
+        "reset": "2222"
+      },
+      "graph": "3f1788f5cbd14f017a242f5fa975fa814c65a5abc0f9d9a0fdf764a4afeda643",
+      "left": [
+        "12",
+        "1311",
+        "132"
+      ],
+      "right": [
+        "12",
+        "1311",
+        "133"
+      ],
+      "target": [
+        4.448555,
+        4.52
+      ],
+      "dominance_bound": "2189/493",
+      "status": "completed_float",
+      "visited": 552673,
+      "leaves": 220037,
+      "covered": [
+        [
+          4.448555,
+          4.52
+        ]
+      ],
+      "gaps": [],
+      "rational_leaf_check": null
+    }
+  ],
+  "gaps": [
+    [
+      4.2368918921190915,
+      4.23689190548645
+    ],
+    [
+      4.236892769242986,
+      4.236892769700095
+    ]
+  ],
+  "elapsed_seconds": 7.998174708802253
+}

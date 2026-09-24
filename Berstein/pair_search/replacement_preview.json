@@ -1,0 +1,849 @@
+{
+  "status": "Unproved inclusion candidates; exact finite-distance checks only",
+  "exponent": 8,
+  "cpp_sha256": "2345c68843489e78b37b733a092325cbf239a968519e6c1eb62de9876a2a5c95",
+  "definitions": [
+    {
+      "label": "A",
+      "graph": "50de991b19a9a6feb8b3e70e0b0a7a438101a2735fd31ffb9cd4f47814a3bcb6",
+      "model": {
+        "digits": 4,
+        "radius": 2,
+        "threshold": "20499/5000",
+        "core_states": 71,
+        "core_edges": 196,
+        "reset": "2222"
+      },
+      "alphabet": "123",
+      "forbidden": [
+        "131",
+        "2132",
+        "2312",
+        "2313",
+        "3132"
+      ]
+    },
+    {
+      "label": "R1",
+      "model": {
+        "digits": 4,
+        "radius": 3,
+        "threshold": "4124767/1000000",
+        "core_states": 578,
+        "core_edges": 1616,
+        "reset": "222222"
+      },
+      "graph": "88ff09b92d1f09aefed294ac9c5ef7cb3b2d2642d207047a6696f213c5aec239",
+      "alphabet": "123",
+      "forbidden": [
+        "131",
+        "2313",
+        "3132",
+        "21323",
+        "32312",
+        "121322",
+        "223121",
+        "1123121",
+        "1213211",
+        "1223122",
+        "2213221",
+        "2213222",
+        "2223122"
+      ]
+    },
+    {
+      "label": "B",
+      "graph": "6bcb26ab7628c10d7d459dc44549e19150052fd829a4393b249bc1869c8ab31b",
+      "model": {
+        "digits": 4,
+        "radius": 2,
+        "threshold": "833/200",
+        "core_states": 73,
+        "core_edges": 206,
+        "reset": "2222"
+      },
+      "alphabet": "123",
+      "forbidden": [
+        "131",
+        "2313",
+        "3132",
+        "21323",
+        "32312"
+      ]
+    },
+    {
+      "label": "R3",
+      "model": {
+        "digits": 4,
+        "radius": 3,
+        "threshold": "4172069/1000000",
+        "core_states": 621,
+        "core_edges": 1771,
+        "reset": "222222"
+      },
+      "graph": "fc741876424234dbaae69de6c1a2c73d0e209c8fd89824f10aadd88a084ad392",
+      "alphabet": "123",
+      "forbidden": [
+        "1312",
+        "1313",
+        "2131",
+        "3131",
+        "11131",
+        "13111",
+        "22313",
+        "31322",
+        "31323",
+        "32313",
+        "121323",
+        "323121",
+        "2113112"
+      ]
+    },
+    {
+      "label": "C",
+      "graph": "ffac17552891268b878c8da6917f187f08e55048b23171aa3a5a30a27e53834a",
+      "model": {
+        "digits": 4,
+        "radius": 3,
+        "threshold": "211/50",
+        "core_states": 651,
+        "core_edges": 1888,
+        "reset": "222222"
+      },
+      "alphabet": "123",
+      "forbidden": [
+        "1312",
+        "1313",
+        "2131",
+        "3131",
+        "1113111",
+        "1113112",
+        "2113111"
+      ]
+    },
+    {
+      "label": "D",
+      "graph": "29a827bd58cd0a4f6084979f8e5f4972c9ee4c8366ab89c224b6117c6a1ed078",
+      "model": {
+        "digits": 4,
+        "radius": 4,
+        "threshold": "4233/1000",
+        "core_states": 5489,
+        "core_edges": 15941,
+        "reset": "22222222"
+      },
+      "alphabet": "123",
+      "forbidden": [
+        "1312",
+        "1313",
+        "2131",
+        "3131",
+        "1113111"
+      ]
+    },
+    {
+      "label": "R7",
+      "model": {
+        "digits": 4,
+        "radius": 3,
+        "threshold": "1089619/250000",
+        "core_states": 699,
+        "core_edges": 2054,
+        "reset": "222222"
+      },
+      "graph": "d08dccd661a619a04f7990a9da3360c54229cd5bacd8e299bc5bb442df007a22",
+      "alphabet": "123",
+      "forbidden": [
+        "13131",
+        "21312",
+        "21313",
+        "31312",
+        "31313",
+        "111313",
+        "211313",
+        "313111",
+        "313112",
+        "1113121",
+        "1213111"
+      ]
+    },
+    {
+      "label": "R9",
+      "model": {
+        "digits": 4,
+        "radius": 3,
+        "threshold": "4378061/1000000",
+        "core_states": 703,
+        "core_edges": 2067,
+        "reset": "222222"
+      },
+      "graph": "8b79f5c5822043f2f1c4894b475816d4b06789271cc089c7c89ded865fa1c094",
+      "alphabet": "123",
+      "forbidden": [
+        "21312",
+        "21313",
+        "31312",
+        "31313",
+        "111313",
+        "313111",
+        "1113121",
+        "1213111",
+        "1313112",
+        "2113131"
+      ]
+    },
+    {
+      "label": "G",
+      "graph": "3f1788f5cbd14f017a242f5fa975fa814c65a5abc0f9d9a0fdf764a4afeda643",
+      "model": {
+        "digits": 4,
+        "radius": 2,
+        "threshold": "4441/1000",
+        "core_states": 81,
+        "core_edges": 239,
+        "reset": "2222"
+      },
+      "alphabet": "123",
+      "forbidden": [
+        "21312",
+        "21313",
+        "31312",
+        "31313"
+      ]
+    },
+    {
+      "label": "R1",
+      "model": {
+        "digits": 4,
+        "radius": 3,
+        "threshold": "4161579/1000000",
+        "core_states": 621,
+        "core_edges": 1767,
+        "reset": "222222"
+      },
+      "graph": "0abc99824bcb0b7ae277895a57c74fdd7c915597424da6b3700e6f7dcb65dcca",
+      "alphabet": "123",
+      "forbidden": [
+        "1312",
+        "1313",
+        "2131",
+        "3131",
+        "11131",
+        "13111",
+        "22313",
+        "31322",
+        "31323",
+        "32313",
+        "121323",
+        "323121",
+        "1123132",
+        "1213221",
+        "1223121",
+        "2113112",
+        "2313211"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "left": [
+        "11",
+        "12",
+        "2"
+      ],
+      "right": [
+        "11",
+        "12",
+        "2"
+      ],
+      "target": [
+        4.1,
+        4.124769
+      ],
+      "model": {
+        "digits": 4,
+        "radius": 2,
+        "threshold": "20499/5000",
+        "core_states": 71,
+        "core_edges": 196,
+        "reset": "2222"
+      },
+      "graph": "50de991b19a9a6feb8b3e70e0b0a7a438101a2735fd31ffb9cd4f47814a3bcb6",
+      "dominance_bound": "8917/2175",
+      "origin": 1,
+      "scan": {
+        "exponent": 8,
+        "scale": 1000000000000000,
+        "visited": 21183480,
+        "leaves": 7346605,
+        "max_width_units": 9999998,
+        "max_depth": 19,
+        "complete": true,
+        "covers_target": true,
+        "seconds": 3.07116,
+        "covered": [
+          [
+            1100000000000000,
+            1124769000000000
+          ]
+        ]
+      },
+      "rational_leaf_check": {
+        "covered": [
+          [
+            "41/10",
+            "4124769/1000000"
+          ]
+        ],
+        "maximum_width": "4999999/500000000000000"
+      }
+    },
+    {
+      "left": [
+        "11",
+        "12",
+        "21",
+        "22",
+        "2311",
+        "232",
+        "233"
+      ],
+      "right": [
+        "11",
+        "12",
+        "21",
+        "22",
+        "2311",
+        "232",
+        "233"
+      ],
+      "target": [
+        4.124768,
+        4.1615813
+      ],
+      "model": {
+        "digits": 4,
+        "radius": 3,
+        "threshold": "4124767/1000000",
+        "core_states": 578,
+        "core_edges": 1616,
+        "reset": "222222"
+      },
+      "graph": "88ff09b92d1f09aefed294ac9c5ef7cb3b2d2642d207047a6696f213c5aec239",
+      "dominance_bound": "8741/2120",
+      "origin": "1b",
+      "scan": {
+        "exponent": 8,
+        "scale": 1000000000000000,
+        "visited": 39481588,
+        "leaves": 13731748,
+        "max_width_units": 10000000,
+        "max_depth": 19,
+        "complete": true,
+        "covers_target": true,
+        "seconds": 6.37585,
+        "covered": [
+          [
+            1124768000000000,
+            1171799000000000
+          ]
+        ]
+      },
+      "rational_leaf_check": {
+        "covered": [
+          [
+            "128899/31250",
+            "41615813/10000000"
+          ]
+        ],
+        "maximum_width": "1/100000000"
+      }
+    },
+    {
+      "left": [
+        "11",
+        "12"
+      ],
+      "right": [
+        "11",
+        "12",
+        "21",
+        "22",
+        "2311",
+        "232",
+        "233"
+      ],
+      "target": [
+        4.16158,
+        4.171799
+      ],
+      "model": {
+        "digits": 4,
+        "radius": 3,
+        "threshold": "4161579/1000000",
+        "core_states": 621,
+        "core_edges": 1767,
+        "reset": "222222"
+      },
+      "graph": "0abc99824bcb0b7ae277895a57c74fdd7c915597424da6b3700e6f7dcb65dcca",
+      "dominance_bound": "8039/1932",
+      "scan": {
+        "exponent": 9,
+        "scale": 1000000000000000,
+        "visited": 84736555,
+        "leaves": 29636470,
+        "max_width_units": 1000000,
+        "max_depth": 21,
+        "complete": true,
+        "covers_target": true,
+        "seconds": 20.4313,
+        "covered": [
+          [
+            1161580000000000,
+            1171799000000000
+          ]
+        ]
+      },
+      "rational_leaf_check": {
+        "covered": [
+          [
+            "208079/50000",
+            "4171799/1000000"
+          ]
+        ],
+        "maximum_width": "1/1000000000"
+      }
+    },
+    {
+      "left": [
+        "12"
+      ],
+      "right": [
+        "23122",
+        "23123"
+      ],
+      "target": [
+        4.171797,
+        4.172072
+      ],
+      "model": {
+        "digits": 4,
+        "radius": 2,
+        "threshold": "833/200",
+        "core_states": 73,
+        "core_edges": 206,
+        "reset": "2222"
+      },
+      "graph": "6bcb26ab7628c10d7d459dc44549e19150052fd829a4393b249bc1869c8ab31b",
+      "dominance_bound": "3831/920",
+      "origin": 2,
+      "scan": {
+        "exponent": 8,
+        "scale": 1000000000000000,
+        "visited": 226492,
+        "leaves": 79382,
+        "max_width_units": 9999862,
+        "max_depth": 18,
+        "complete": true,
+        "covers_target": true,
+        "seconds": 0.0304683,
+        "covered": [
+          [
+            1171797000000000,
+            1172072000000000
+          ]
+        ],
+        "claim": 2,
+        "left": [
+          "12"
+        ],
+        "right": [
+          "23122",
+          "23123"
+        ],
+        "language_state_pairs": 112,
+        "target_sum": [
+          "1171797/1000000",
+          "146509/125000"
+        ],
+        "input_sha256": "be9600c2aef917812bb5ce028933cb3512c9fe75ee7906408050f53b1d786b6a"
+      },
+      "rational_leaf_check": {
+        "covered": [
+          [
+            "4171797/1000000",
+            "521509/125000"
+          ]
+        ],
+        "maximum_width": "4999931/500000000000000"
+      }
+    },
+    {
+      "left": [
+        "11",
+        "12",
+        "133"
+      ],
+      "right": [
+        "11",
+        "12",
+        "133"
+      ],
+      "target": [
+        4.17207,
+        4.178463
+      ],
+      "model": {
+        "digits": 4,
+        "radius": 3,
+        "threshold": "4172069/1000000",
+        "core_states": 621,
+        "core_edges": 1771,
+        "reset": "222222"
+      },
+      "graph": "fc741876424234dbaae69de6c1a2c73d0e209c8fd89824f10aadd88a084ad392",
+      "dominance_bound": "817/196",
+      "origin": 3,
+      "scan": {
+        "exponent": 8,
+        "scale": 1000000000000000,
+        "visited": 5314704,
+        "leaves": 1855236,
+        "max_width_units": 9999994,
+        "max_depth": 19,
+        "complete": true,
+        "covers_target": true,
+        "seconds": 0.75175,
+        "covered": [
+          [
+            1172070000000000,
+            1178463000000000
+          ]
+        ]
+      },
+      "rational_leaf_check": {
+        "covered": [
+          [
+            "417207/100000",
+            "4178463/1000000"
+          ]
+        ],
+        "maximum_width": "4999997/500000000000000"
+      }
+    },
+    {
+      "left": [
+        "11",
+        "12",
+        "133"
+      ],
+      "right": [
+        "11",
+        "12",
+        "2"
+      ],
+      "target": [
+        4.178461,
+        4.219534
+      ],
+      "model": {
+        "digits": 4,
+        "radius": 2,
+        "threshold": "833/200",
+        "core_states": 73,
+        "core_edges": 206,
+        "reset": "2222"
+      },
+      "graph": "6bcb26ab7628c10d7d459dc44549e19150052fd829a4393b249bc1869c8ab31b",
+      "dominance_bound": "33792711338668/8091259082701",
+      "origin": 4,
+      "scan": {
+        "exponent": 8,
+        "scale": 1000000000000000,
+        "visited": 33931206,
+        "leaves": 11872726,
+        "max_width_units": 9999998,
+        "max_depth": 20,
+        "complete": true,
+        "covers_target": true,
+        "seconds": 5.26417,
+        "covered": [
+          [
+            1178461000000000,
+            1219534000000000
+          ]
+        ]
+      },
+      "rational_leaf_check": {
+        "covered": [
+          [
+            "4178461/1000000",
+            "2109767/500000"
+          ]
+        ],
+        "maximum_width": "4999999/500000000000000"
+      }
+    },
+    {
+      "left": [
+        "11"
+      ],
+      "right": [
+        "11"
+      ],
+      "target": [
+        4.219532,
+        4.235001
+      ],
+      "model": {
+        "digits": 4,
+        "radius": 3,
+        "threshold": "211/50",
+        "core_states": 651,
+        "core_edges": 1888,
+        "reset": "222222"
+      },
+      "graph": "ffac17552891268b878c8da6917f187f08e55048b23171aa3a5a30a27e53834a",
+      "dominance_bound": "10747/2548",
+      "origin": 5,
+      "scan": {
+        "exponent": 8,
+        "scale": 1000000000000000,
+        "visited": 12815528,
+        "leaves": 4460151,
+        "max_width_units": 9999999,
+        "max_depth": 20,
+        "complete": true,
+        "covers_target": true,
+        "seconds": 1.8792,
+        "covered": [
+          [
+            1219532000000000,
+            1235001000000000
+          ]
+        ]
+      },
+      "rational_leaf_check": {
+        "covered": [
+          [
+            "1054883/250000",
+            "4235001/1000000"
+          ]
+        ],
+        "maximum_width": "9999999/1000000000000000"
+      }
+    },
+    {
+      "left": [
+        "11",
+        "12"
+      ],
+      "right": [
+        "11",
+        "12"
+      ],
+      "target": [
+        4.234999,
+        4.358479
+      ],
+      "model": {
+        "digits": 4,
+        "radius": 4,
+        "threshold": "4233/1000",
+        "core_states": 5489,
+        "core_edges": 15941,
+        "reset": "22222222"
+      },
+      "graph": "29a827bd58cd0a4f6084979f8e5f4972c9ee4c8366ab89c224b6117c6a1ed078",
+      "dominance_bound": "43540/10287",
+      "origin": 6,
+      "scan": {
+        "exponent": 8,
+        "scale": 1000000000000000,
+        "visited": 100537229,
+        "leaves": 35220037,
+        "max_width_units": 10000000,
+        "max_depth": 20,
+        "complete": true,
+        "covers_target": true,
+        "seconds": 14.2773,
+        "covered": [
+          [
+            1234999000000000,
+            1358479000000000
+          ]
+        ]
+      },
+      "rational_leaf_check": {
+        "covered": [
+          [
+            "4234999/1000000",
+            "4358479/1000000"
+          ]
+        ],
+        "maximum_width": "1/100000000"
+      }
+    },
+    {
+      "left": [
+        "11"
+      ],
+      "right": [
+        "11",
+        "12",
+        "13113"
+      ],
+      "target": [
+        4.358477,
+        4.370965
+      ],
+      "model": {
+        "digits": 4,
+        "radius": 3,
+        "threshold": "1089619/250000",
+        "core_states": 699,
+        "core_edges": 2054,
+        "reset": "222222"
+      },
+      "graph": "d08dccd661a619a04f7990a9da3360c54229cd5bacd8e299bc5bb442df007a22",
+      "dominance_bound": "2815/646",
+      "origin": 7,
+      "scan": {
+        "exponent": 8,
+        "scale": 1000000000000000,
+        "visited": 10038682,
+        "leaves": 3497647,
+        "max_width_units": 9999999,
+        "max_depth": 19,
+        "complete": true,
+        "covers_target": true,
+        "seconds": 1.82304,
+        "covered": [
+          [
+            1358477000000000,
+            1370965000000000
+          ]
+        ]
+      },
+      "rational_leaf_check": {
+        "covered": [
+          [
+            "4358477/1000000",
+            "874193/200000"
+          ]
+        ],
+        "maximum_width": "9999999/1000000000000000"
+      }
+    },
+    {
+      "left": [
+        "11",
+        "12",
+        "13113",
+        "133"
+      ],
+      "right": [
+        "11",
+        "12",
+        "132",
+        "133"
+      ],
+      "model": {
+        "digits": 4,
+        "radius": 3,
+        "threshold": "437/100",
+        "core_states": 703,
+        "core_edges": 2067,
+        "reset": "222222"
+      },
+      "graph": "8b79f5c5822043f2f1c4894b475816d4b06789271cc089c7c89ded865fa1c094",
+      "target": [
+        4.370963,
+        4.448557
+      ],
+      "dominance_bound": "5779/1323",
+      "origin": "old 8 and repaired old 9; full Cartesian product",
+      "rational_leaf_check": {
+        "covered": [
+          [
+            "4370963/1000000",
+            "4448557/1000000"
+          ]
+        ],
+        "maximum_width": "9999999/1000000000000000"
+      },
+      "scan": {
+        "complete": true,
+        "covers_target": true,
+        "exponent": 8,
+        "evidence": "Union of certified subproduct covers; every leaf belongs to this full product. New cross pairs independently dominance-checked."
+      },
+      "source_rows": [
+        9,
+        10
+      ]
+    },
+    {
+      "left": [
+        "12",
+        "1311",
+        "132"
+      ],
+      "right": [
+        "12",
+        "1311",
+        "133"
+      ],
+      "target": [
+        4.448555,
+        4.52
+      ],
+      "model": {
+        "digits": 4,
+        "radius": 2,
+        "threshold": "4441/1000",
+        "core_states": 81,
+        "core_edges": 239,
+        "reset": "2222"
+      },
+      "graph": "3f1788f5cbd14f017a242f5fa975fa814c65a5abc0f9d9a0fdf764a4afeda643",
+      "dominance_bound": "2189/493",
+      "origin": 10,
+      "scan": {
+        "exponent": 8,
+        "scale": 1000000000000000,
+        "visited": 57717957,
+        "leaves": 19926565,
+        "max_width_units": 10000000,
+        "max_depth": 19,
+        "complete": true,
+        "covers_target": true,
+        "seconds": 7.85551,
+        "covered": [
+          [
+            1448555000000000,
+            1520000000000000
+          ]
+        ]
+      },
+      "rational_leaf_check": {
+        "covered": [
+          [
+            "889711/200000",
+            "113/25"
+          ]
+        ],
+        "maximum_width": "1/100000000"
+      }
+    }
+  ],
+  "source": "Berstein/pair_search/rebuilt_1e8.json",
+  "merge_audit_replacement": {
+    "source_rows": [
+      9,
+      10
+    ],
+    "new_dominance_bound": "5779/1323",
+    "margin": "3784049/1323000000"
+  }
+}

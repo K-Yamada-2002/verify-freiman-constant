@@ -1,0 +1,27 @@
+{
+  "source_proof_hash": "689efe9e6eade22d91a3b8a8b047c21c509c6c2049ef8b31b0050d40cff462da",
+  "node": 3007,
+  "rows": [
+    {
+      "depth": 9,
+      "seconds": 258.155750666,
+      "base_parameters": [
+        [
+          "17/61",
+          "0"
+        ],
+        [
+          "30/73",
+          "0"
+        ],
+        [
+          "2941188465121/6906504888529",
+          "134881150564/6906504888529"
+        ]
+      ],
+      "candidates": []
+    }
+  ],
+  "witnesses": [],
+  "status": "finite gap discovery only; no positive filling assertion"
+}

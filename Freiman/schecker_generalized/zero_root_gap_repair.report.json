@@ -1,0 +1,1 @@
+{"repaired": true, "matched_cells": [9], "stats": {"attempts": 1, "accepted": 1, "no_rule": 0, "exact_rejected": 0, "sweeps": 0}, "discovery_filter": "exact-replayed singleton gap; midpoint float signature used only to prune candidates"}

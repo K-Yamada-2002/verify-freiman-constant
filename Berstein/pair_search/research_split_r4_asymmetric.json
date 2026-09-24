@@ -1,0 +1,18 @@
+{
+  "claims": [],
+  "rejections": [
+    {
+      "claim": 1,
+      "reason": "dominance",
+      "bound": "14084670733375/3413503719269",
+      "model": {
+        "digits": 4,
+        "radius": 4,
+        "threshold": "4124767/1000000",
+        "core_states": 4537,
+        "core_edges": 12711,
+        "reset": "22222222"
+      }
+    }
+  ]
+}

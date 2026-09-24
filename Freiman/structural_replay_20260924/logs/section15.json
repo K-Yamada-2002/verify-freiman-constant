@@ -1,0 +1,78 @@
+{
+  "group": "section15",
+  "status": "PASS",
+  "records": [
+    {
+      "label": "run_checks_normal",
+      "command": [
+        "run_checks.py"
+      ],
+      "cwd": "work/report_parts/lower_120_132/width_oriented_mixed",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 287.886,
+      "log": "replay_logs/section15__run_checks_normal.log",
+      "stdout": "PASS trunk.verify_trunk.py.normal\nPASS trunk.verify_trunk.py.optimized\nPASS trunk.independent_trunk.py.normal\nPASS trunk.independent_trunk.py.optimized\nPASS residual.verify_residual.py.normal\nPASS residual.verify_residual.py.optimized\nPASS residual.independent_residual.py.normal\nPASS residual.independent_residual.py.optimized\nPASS extension1.verify_extensions.py.normal\nPASS extension1.verify_extensions.py.optimized\nPASS extension1.independent_extensions.py.normal\nPASS extension1.independent_extensions.py.optimized\nPASS extension2.verify_extensions.py.normal\nPASS extension2.verify_extensions.py.optimized\nPASS extension2.independent_extensions.py.normal\nPASS extension2.independent_extensions.py.optimized\nREJECTED negative.trunk_missing_record.verify_trunk.py\nREJECTED negative.trunk_missing_record.independent_trunk.py\nREJECTED negative.trunk_false_bound.verify_trunk.py\nREJECTED negative.trunk_false_bound.independent_trunk.py\nREJECTED negative.residual_missing_record.verify_residual.py\nREJECTED negative.residual_missing_record.independent_residual.py\nREJECTED negative.residual_flip_witness.verify_residual.py\nREJECTED negative.residual_flip_witness.independent_residual.py\nREJECTED negative.extension_missing_hypothesis.verify_extensions.py\nREJECTED negative.extension_missing_hypothesis.independent_extensions.py\nREJECTED negative.extension_state.verify_extensions.py\nREJECTED negative.extension_state.independent_extensions.py\nPASS_ALL_FINITE_GEOMETRY_CHECKS",
+      "stderr": ""
+    },
+    {
+      "label": "check_readable_normal",
+      "command": [
+        "check_readable.py"
+      ],
+      "cwd": "work/report_parts/lower_120_132/width_oriented_mixed",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 26.965,
+      "log": "replay_logs/section15__check_readable_normal.log",
+      "stdout": "VERIFIED_PRINTED_APPENDIX 239 values 10410 exact witnesses 61531 proof entries 97261 total entries",
+      "stderr": ""
+    },
+    {
+      "label": "check_readable_O",
+      "command": [
+        "-O",
+        "check_readable.py"
+      ],
+      "cwd": "work/report_parts/lower_120_132/width_oriented_mixed",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 26.786,
+      "log": "replay_logs/section15__check_readable_O.log",
+      "stdout": "VERIFIED_PRINTED_APPENDIX 239 values 10410 exact witnesses 61531 proof entries 97261 total entries",
+      "stderr": ""
+    },
+    {
+      "label": "verify_compressed_tex_normal",
+      "command": [
+        "verify_compressed_tex.py"
+      ],
+      "cwd": "work/report_parts/lower_120_132/width_oriented_mixed",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 0.221,
+      "log": "replay_logs/section15__verify_compressed_tex_normal.log",
+      "stdout": "VISIBLE SECTION15 LEDGER VERIFIED: 4402 shared rows expand to 33693 complete original groups.",
+      "stderr": ""
+    },
+    {
+      "label": "verify_compressed_tex_O",
+      "command": [
+        "-O",
+        "verify_compressed_tex.py"
+      ],
+      "cwd": "work/report_parts/lower_120_132/width_oriented_mixed",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 0.213,
+      "log": "replay_logs/section15__verify_compressed_tex_O.log",
+      "stdout": "VISIBLE SECTION15 LEDGER VERIFIED: 4402 shared rows expand to 33693 complete original groups.",
+      "stderr": ""
+    }
+  ]
+}

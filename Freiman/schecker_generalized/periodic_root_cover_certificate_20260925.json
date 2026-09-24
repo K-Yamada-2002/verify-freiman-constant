@@ -1,0 +1,792 @@
+{
+  "scope": "Uniform initial convex-hull cover only for n>=1. This does not prove that any child hull is filled or close the recursive induction.",
+  "parameter": "x=u_(n-1)/u_n in [0, 43-2*sqrt(462)], with M(P)^n=u_n(M(P)-xI); the endpoint is the smaller eigenvalue and x_n increases to it from below. The recurrence x_(n+1)=1/(86-x_n) keeps [0,q] invariant.",
+  "parameter_endpoint_q": {
+    "a": "43",
+    "b": "-2",
+    "decimal": "0.0116294795906459215120"
+  },
+  "q_positive_exact": true,
+  "q_below_1_over_85_exact": true,
+  "period_matrix_determinant_nonnegative_on_parameter_domain": {
+    "proved": true,
+    "leaves": 1,
+    "max_depth": 0,
+    "identically_zero": false
+  },
+  "selected_successors_in_(V_n,U_n)_orientation": [
+    {
+      "left_suffix": "",
+      "right_suffix": "1"
+    },
+    {
+      "left_suffix": "3",
+      "right_suffix": "3"
+    },
+    {
+      "left_suffix": "1",
+      "right_suffix": "2"
+    },
+    {
+      "left_suffix": "11",
+      "right_suffix": "3"
+    },
+    {
+      "left_suffix": "12",
+      "right_suffix": "3"
+    },
+    {
+      "left_suffix": "13",
+      "right_suffix": "31"
+    }
+  ],
+  "automaton_legality": [
+    {
+      "left_suffix": "",
+      "right_suffix": "1",
+      "legal": true,
+      "left_state": "",
+      "right_state": "31"
+    },
+    {
+      "left_suffix": "3",
+      "right_suffix": "3",
+      "legal": true,
+      "left_state": "3",
+      "right_state": "3"
+    },
+    {
+      "left_suffix": "1",
+      "right_suffix": "2",
+      "legal": true,
+      "left_state": "",
+      "right_state": ""
+    },
+    {
+      "left_suffix": "11",
+      "right_suffix": "3",
+      "legal": true,
+      "left_state": "",
+      "right_state": "3"
+    },
+    {
+      "left_suffix": "12",
+      "right_suffix": "3",
+      "legal": true,
+      "left_state": "",
+      "right_state": "3"
+    },
+    {
+      "left_suffix": "13",
+      "right_suffix": "31",
+      "legal": true,
+      "left_state": "3",
+      "right_state": "31"
+    }
+  ],
+  "ratio_inequality_certificates": [
+    {
+      "label": "parent lower",
+      "threshold": "1",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "label": "parent upper",
+      "threshold": "19/10",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "label": "child_0 lower",
+      "threshold": "5/17",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "label": "child_0 upper",
+      "threshold": "17/5",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "label": "child_1 lower",
+      "threshold": "5/17",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "label": "child_1 upper",
+      "threshold": "17/5",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "label": "child_2 lower",
+      "threshold": "5/17",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "label": "child_2 upper",
+      "threshold": "17/5",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "label": "child_3 lower",
+      "threshold": "5/17",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "label": "child_3 upper",
+      "threshold": "17/5",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "label": "child_4 lower",
+      "threshold": "5/17",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "label": "child_4 upper",
+      "threshold": "17/5",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "label": "child_5 lower",
+      "threshold": "5/17",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "label": "child_5 upper",
+      "threshold": "17/5",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    }
+  ],
+  "endpoint_denominator_certificates": [
+    {
+      "word_pair": [
+        "4322313121",
+        "32113131213"
+      ],
+      "endpoint": "lo",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "word_pair": [
+        "4322313121",
+        "32113131213"
+      ],
+      "endpoint": "hi",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "word_pair": [
+        "4322313121",
+        "321131312131"
+      ],
+      "endpoint": "lo",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "word_pair": [
+        "4322313121",
+        "321131312131"
+      ],
+      "endpoint": "hi",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "word_pair": [
+        "43223131213",
+        "321131312133"
+      ],
+      "endpoint": "lo",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "word_pair": [
+        "43223131213",
+        "321131312133"
+      ],
+      "endpoint": "hi",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "word_pair": [
+        "43223131211",
+        "321131312132"
+      ],
+      "endpoint": "lo",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "word_pair": [
+        "43223131211",
+        "321131312132"
+      ],
+      "endpoint": "hi",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "word_pair": [
+        "432231312111",
+        "321131312133"
+      ],
+      "endpoint": "lo",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "word_pair": [
+        "432231312111",
+        "321131312133"
+      ],
+      "endpoint": "hi",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "word_pair": [
+        "432231312112",
+        "321131312133"
+      ],
+      "endpoint": "lo",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "word_pair": [
+        "432231312112",
+        "321131312133"
+      ],
+      "endpoint": "hi",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "word_pair": [
+        "432231312113",
+        "3211313121331"
+      ],
+      "endpoint": "lo",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "word_pair": [
+        "432231312113",
+        "3211313121331"
+      ],
+      "endpoint": "hi",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    }
+  ],
+  "old_v_denominator_certificates": [
+    {
+      "word_pair": [
+        "4322313121",
+        "32113131213"
+      ],
+      "side": "left",
+      "factor": "alpha",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "word_pair": [
+        "4322313121",
+        "32113131213"
+      ],
+      "side": "left",
+      "factor": "beta",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "word_pair": [
+        "4322313121",
+        "32113131213"
+      ],
+      "side": "right",
+      "factor": "alpha",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "word_pair": [
+        "4322313121",
+        "32113131213"
+      ],
+      "side": "right",
+      "factor": "beta",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "word_pair": [
+        "4322313121",
+        "321131312131"
+      ],
+      "side": "left",
+      "factor": "alpha",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "word_pair": [
+        "4322313121",
+        "321131312131"
+      ],
+      "side": "left",
+      "factor": "beta",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "word_pair": [
+        "4322313121",
+        "321131312131"
+      ],
+      "side": "right",
+      "factor": "alpha",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "word_pair": [
+        "4322313121",
+        "321131312131"
+      ],
+      "side": "right",
+      "factor": "beta",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "word_pair": [
+        "43223131213",
+        "321131312133"
+      ],
+      "side": "left",
+      "factor": "alpha",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "word_pair": [
+        "43223131213",
+        "321131312133"
+      ],
+      "side": "left",
+      "factor": "beta",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "word_pair": [
+        "43223131213",
+        "321131312133"
+      ],
+      "side": "right",
+      "factor": "alpha",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "word_pair": [
+        "43223131213",
+        "321131312133"
+      ],
+      "side": "right",
+      "factor": "beta",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "word_pair": [
+        "43223131211",
+        "321131312132"
+      ],
+      "side": "left",
+      "factor": "alpha",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "word_pair": [
+        "43223131211",
+        "321131312132"
+      ],
+      "side": "left",
+      "factor": "beta",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "word_pair": [
+        "43223131211",
+        "321131312132"
+      ],
+      "side": "right",
+      "factor": "alpha",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "word_pair": [
+        "43223131211",
+        "321131312132"
+      ],
+      "side": "right",
+      "factor": "beta",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "word_pair": [
+        "432231312111",
+        "321131312133"
+      ],
+      "side": "left",
+      "factor": "alpha",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "word_pair": [
+        "432231312111",
+        "321131312133"
+      ],
+      "side": "left",
+      "factor": "beta",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "word_pair": [
+        "432231312111",
+        "321131312133"
+      ],
+      "side": "right",
+      "factor": "alpha",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "word_pair": [
+        "432231312111",
+        "321131312133"
+      ],
+      "side": "right",
+      "factor": "beta",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "word_pair": [
+        "432231312112",
+        "321131312133"
+      ],
+      "side": "left",
+      "factor": "alpha",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "word_pair": [
+        "432231312112",
+        "321131312133"
+      ],
+      "side": "left",
+      "factor": "beta",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "word_pair": [
+        "432231312112",
+        "321131312133"
+      ],
+      "side": "right",
+      "factor": "alpha",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "word_pair": [
+        "432231312112",
+        "321131312133"
+      ],
+      "side": "right",
+      "factor": "beta",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "word_pair": [
+        "432231312113",
+        "3211313121331"
+      ],
+      "side": "left",
+      "factor": "alpha",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "word_pair": [
+        "432231312113",
+        "3211313121331"
+      ],
+      "side": "left",
+      "factor": "beta",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "word_pair": [
+        "432231312113",
+        "3211313121331"
+      ],
+      "side": "right",
+      "factor": "alpha",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "word_pair": [
+        "432231312113",
+        "3211313121331"
+      ],
+      "side": "right",
+      "factor": "beta",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    }
+  ],
+  "interval_cover_certificates": [
+    {
+      "label": "parent_low_minus_child_0_low",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": true
+    },
+    {
+      "label": "child 0 overlaps child 1",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "label": "child 1 overlaps child 2",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "label": "child 2 overlaps child 3",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "label": "child 3 overlaps child 4",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "label": "child 4 overlaps child 5",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "label": "last child reaches parent high",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": true
+    }
+  ],
+  "positive_child_width_certificates": [
+    {
+      "label": "child_0_positive_width",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "label": "child_1_positive_width",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "label": "child_2_positive_width",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "label": "child_3_positive_width",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "label": "child_4_positive_width",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    },
+    {
+      "label": "child_5_positive_width",
+      "proved": true,
+      "leaves": 1,
+      "max_depth": 0,
+      "identically_zero": false
+    }
+  ],
+  "all_checks_pass": true,
+  "bernstein_method": "Exact polynomial inequalities in Q(sqrt(462)) or Q(sqrt(21)); Bernstein coefficients on rational subintervals, with exact bisection."
+}

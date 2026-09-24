@@ -52,26 +52,12 @@ def numeric_gaps(cell, parameters, depth, target):
             for x, y in outer_tail_intervals(state_of(cell.states[0]), depth)]
     right = [sorted((cell.parity*ratio*side(x, s, b), cell.parity*ratio*side(y, s, b)))
              for x, y in outer_tail_intervals(state_of(cell.states[1]), depth)]
-    # Merge each row first. This avoids materializing the whole Cartesian sum.
-    right.sort()
-    rows = []
-    for x, y in left:
-        lo, hi = x+right[0][0], y+right[0][1]
-        for u, v in right[1:]:
-            if x+u <= hi+1e-14:
-                hi = max(hi, y+v)
-            else:
-                rows.append((lo, hi))
-                lo, hi = x+u, y+v
-        rows.append((lo, hi))
-    rows.sort()
-    end = rows[0][1]
-    for lo, hi in rows[1:]:
-        if lo > end+1e-12:
-            lower, upper = max(target[0], end), min(target[1], lo)
-            if upper > lower+1e-12:
-                yield lower, upper
-        end = max(end, hi)
+    # A max tree skips right-side gaps absorbed by each left interval.
+    # Float output still only proposes a witness for verify_witness below.
+    from sum_interval_gaps import sum_gaps
+    for lower,upper in sum_gaps(left,right,target):
+        if upper>lower+1e-12:
+            yield lower,upper
 
 
 def verify_witness(checker, witness):

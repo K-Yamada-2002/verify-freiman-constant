@@ -1,0 +1,100 @@
+{
+  "claims": [
+    {
+      "claim": 5,
+      "tried": 18,
+      "coarse_candidates": [
+        {
+          "forbidden": [
+            "11131",
+            "13111",
+            "1312",
+            "2113112",
+            "2131",
+            "21323",
+            "313",
+            "32312"
+          ],
+          "left": [
+            "11",
+            "12",
+            "133"
+          ],
+          "right": [
+            "11",
+            "12",
+            "133"
+          ],
+          "scan": {
+            "exponent": 7,
+            "scale": 1000000000000000,
+            "visited": 531506,
+            "leaves": 184528,
+            "max_width_units": 99998904,
+            "max_depth": 17,
+            "complete": true,
+            "covers_target": true,
+            "seconds": 0.0456185,
+            "covered": [
+              [
+                1172070000000000,
+                1178463000000000
+              ]
+            ]
+          },
+          "dominance_bound": "817/196",
+          "target": [
+            4.17207,
+            4.178463
+          ],
+          "subset_of_original": true
+        },
+        {
+          "forbidden": [
+            "11131",
+            "121323",
+            "13111",
+            "1312",
+            "2113112",
+            "2131",
+            "313",
+            "323121"
+          ],
+          "left": [
+            "11",
+            "12",
+            "133"
+          ],
+          "right": [
+            "11",
+            "12",
+            "133"
+          ],
+          "scan": {
+            "exponent": 7,
+            "scale": 1000000000000000,
+            "visited": 530694,
+            "leaves": 184511,
+            "max_width_units": 99999878,
+            "max_depth": 17,
+            "complete": true,
+            "covers_target": true,
+            "seconds": 0.0450197,
+            "covered": [
+              [
+                1172070000000000,
+                1178463000000000
+              ]
+            ]
+          },
+          "dominance_bound": "817/196",
+          "target": [
+            4.17207,
+            4.178463
+          ],
+          "subset_of_original": true
+        }
+      ]
+    }
+  ]
+}

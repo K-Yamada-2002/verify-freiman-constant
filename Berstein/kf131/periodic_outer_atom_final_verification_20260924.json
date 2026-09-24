@@ -1,0 +1,132 @@
+{
+  "source": "periodic_outer_atom_current_20260924.json",
+  "source_sha256": "77d37eb098c1768edb097d6a636737d58bada77e517c47ec9a586edb91a3c2d9",
+  "graph": {
+    "nodes": 15,
+    "local_rules": 10,
+    "open_nodes": 5,
+    "supported_nodes": [],
+    "root_ranks": [
+      3
+    ]
+  },
+  "local_checks": [
+    {
+      "node": 0,
+      "children": 1,
+      "dependencies": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "node": 1,
+      "children": 1,
+      "dependencies": [
+        4,
+        5
+      ]
+    },
+    {
+      "node": 2,
+      "children": 1,
+      "dependencies": [
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "node": 3,
+      "children": 1,
+      "dependencies": [
+        6,
+        7
+      ]
+    },
+    {
+      "node": 4,
+      "children": 1,
+      "dependencies": [
+        11
+      ]
+    },
+    {
+      "node": 5,
+      "children": 1,
+      "dependencies": [
+        9,
+        11
+      ]
+    },
+    {
+      "node": 6,
+      "children": 1,
+      "dependencies": [
+        10,
+        12
+      ]
+    },
+    {
+      "node": 7,
+      "children": 1,
+      "dependencies": [
+        12
+      ]
+    },
+    {
+      "node": 8,
+      "children": 1,
+      "dependencies": [
+        11,
+        12
+      ]
+    },
+    {
+      "node": 10,
+      "children": 1,
+      "dependencies": [
+        13,
+        14
+      ]
+    }
+  ],
+  "seed": [
+    {
+      "a": {
+        "a": "148559885596003049778047912919258143/169677463425570357004670501888000000",
+        "b": "0"
+      },
+      "b": {
+        "a": "-1967260440521088730154966300095089/84838731712785178502335250944000000",
+        "b": "0"
+      },
+      "decimal": "0.8427497082859128394602"
+    },
+    {
+      "a": {
+        "a": "148589527510579413578601149836506143/169677463425570357004670501888000000",
+        "b": "0"
+      },
+      "b": {
+        "a": "-1977740439923238333071301937599089/84838731712785178502335250944000000",
+        "b": "0"
+      },
+      "decimal": "0.8427497082859128395072"
+    }
+  ],
+  "closed": false,
+  "closure_error": "node 12 is an open obligation",
+  "known_bank_refutations": [],
+  "frontier_audit": {
+    "source": "periodic_outer_atom_frontier_audit_20260924.json",
+    "checked": 5,
+    "excluded": 0,
+    "positive_conclusion": false
+  },
+  "tests": {
+    "passed": 43,
+    "cell_index_regression": "143 rules and 402 nodes exactly reproduced"
+  }
+}

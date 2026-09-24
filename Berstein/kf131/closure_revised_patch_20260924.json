@@ -1,0 +1,108 @@
+{
+  "schema": "kf131-scalar-atlas-v1",
+  "settings": {
+    "base": 0.996,
+    "bins": 512,
+    "memory": 7,
+    "grid": 1024000000,
+    "max_step": 4,
+    "block_span": 1
+  },
+  "nodes": [
+    {
+      "id": 0,
+      "states": [
+        "22223",
+        "22213"
+      ],
+      "parity": -1,
+      "ratio_bin": 382,
+      "interval": [
+        339523997,
+        340000000
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "13",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                74892068,
+                86069264
+              ],
+              "destinations": [
+                1,
+                3,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "source_node": 512583
+    },
+    {
+      "id": 1,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 36,
+      "interval": [
+        74892068,
+        86069264
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 400919
+    },
+    {
+      "id": 2,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 37,
+      "interval": [
+        74892068,
+        86069264
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 19889
+    },
+    {
+      "id": 3,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 36,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        74892068,
+        86069264
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 402033
+    }
+  ],
+  "roots": [
+    0
+  ],
+  "closed_candidate": false,
+  "status": "local gap repairs; child obligations remain open",
+  "open_nodes": 3
+}

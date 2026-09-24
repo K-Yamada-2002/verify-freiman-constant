@@ -1,0 +1,91 @@
+{
+  "source_proof_hash": "77ffc974e248bad44d7b9ade3bbd5543b81f3ad69716ce8ce0875078c29f7794",
+  "depths": [
+    5,
+    6,
+    7
+  ],
+  "rows": [
+    {
+      "node": 3214,
+      "witness": null,
+      "seconds": 2.4698061659999997
+    },
+    {
+      "node": 3215,
+      "witness": null,
+      "seconds": 1.0970061249999992
+    },
+    {
+      "node": 3216,
+      "witness": null,
+      "seconds": 2.3343339590000003
+    },
+    {
+      "node": 3217,
+      "witness": {
+        "node": 3217,
+        "base_parameters": [
+          [
+            "5/19",
+            "0"
+          ],
+          [
+            "5/9",
+            "0"
+          ],
+          [
+            "282810057883082752/1490116119384765625",
+            "0"
+          ]
+        ],
+        "witness": {
+          "node": 0,
+          "depth": 5,
+          "sample": 0,
+          "parameters": [
+            [
+              "62/143",
+              "0"
+            ],
+            [
+              "119/151",
+              "0"
+            ],
+            [
+              "63732290709976623119623362803666944/98115927549345020949840545654296875",
+              "-559112122252215415233607770185728/19623185509869004189968109130859375"
+            ]
+          ],
+          "gap": [
+            [
+              "2906832993266421/5000000000000000",
+              "0"
+            ],
+            [
+              "2906865103547993/5000000000000000",
+              "0"
+            ]
+          ],
+          "verification": {
+            "left_cylinders": 242,
+            "right_cylinders": 234,
+            "comparisons": 315
+          }
+        },
+        "exact_replay": {
+          "left_cylinders": 242,
+          "right_cylinders": 234,
+          "comparisons": 315
+        }
+      },
+      "seconds": 0.6611883340000002
+    },
+    {
+      "node": 3218,
+      "witness": null,
+      "seconds": 7.90892375
+    }
+  ],
+  "scope": "Counterexample search only; no filling assertion"
+}

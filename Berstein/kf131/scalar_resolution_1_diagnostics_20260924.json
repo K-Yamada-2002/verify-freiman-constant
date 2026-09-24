@@ -1,0 +1,2021 @@
+{
+  "settings": {
+    "base": "0.996",
+    "bins": 512,
+    "grid": 8192
+  },
+  "types": 22095,
+  "rules": 11611,
+  "supported": 0,
+  "root_ranks": {
+    "0": 3
+  },
+  "deletion_rank_histogram": {
+    "0": 17059,
+    "1": 3827,
+    "2": 1013,
+    "3": 175,
+    "4": 21
+  },
+  "dependency_count_histogram": {
+    "1": 12,
+    "2": 23,
+    "3": 260,
+    "4": 426,
+    "5": 304,
+    "6": 1952,
+    "7": 2544,
+    "8": 1653,
+    "9": 366,
+    "10": 443,
+    "11": 233,
+    "12": 368,
+    "13": 106,
+    "14": 746,
+    "15": 111,
+    "16": 196,
+    "17": 48,
+    "18": 202,
+    "19": 37,
+    "20": 74,
+    "21": 38,
+    "22": 113,
+    "23": 28,
+    "24": 188,
+    "25": 43,
+    "26": 132,
+    "27": 37,
+    "28": 56,
+    "29": 50,
+    "30": 87,
+    "31": 25,
+    "32": 71,
+    "33": 29,
+    "34": 28,
+    "35": 124,
+    "36": 45,
+    "37": 27,
+    "38": 48,
+    "39": 13,
+    "40": 37,
+    "41": 21,
+    "42": 17,
+    "43": 9,
+    "44": 14,
+    "45": 15,
+    "46": 23,
+    "47": 6,
+    "48": 21,
+    "49": 4,
+    "50": 7,
+    "51": 8,
+    "52": 21,
+    "53": 6,
+    "54": 3,
+    "55": 11,
+    "56": 2,
+    "57": 1,
+    "58": 11,
+    "60": 2,
+    "62": 9,
+    "63": 5,
+    "64": 15,
+    "65": 3,
+    "66": 1,
+    "67": 3,
+    "68": 1,
+    "69": 4,
+    "71": 4,
+    "72": 3,
+    "73": 5,
+    "77": 1,
+    "78": 2,
+    "79": 1,
+    "89": 1,
+    "91": 1,
+    "92": 3,
+    "96": 1,
+    "97": 2,
+    "105": 2,
+    "106": 1,
+    "108": 1,
+    "109": 3,
+    "112": 14
+  },
+  "deepest": [
+    {
+      "node": 15338,
+      "rank": 4,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "ratio_refinement": [
+          2,
+          0
+        ],
+        "interval": [
+          0,
+          1
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 15344,
+      "rank": 4,
+      "type": {
+        "states": [
+          "222222",
+          "222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "ratio_refinement": [
+          2,
+          0
+        ],
+        "interval": [
+          0,
+          1
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 15350,
+      "rank": 4,
+      "type": {
+        "states": [
+          "2222222",
+          "2222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "ratio_refinement": [
+          2,
+          0
+        ],
+        "interval": [
+          0,
+          1
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 15362,
+      "rank": 4,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "ratio_refinement": [
+          3,
+          0
+        ],
+        "interval": [
+          0,
+          1
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 15363,
+      "rank": 4,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "ratio_refinement": [
+          3,
+          0
+        ],
+        "interval": [
+          1,
+          2
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 15365,
+      "rank": 4,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "ratio_refinement": [
+          3,
+          1
+        ],
+        "interval": [
+          0,
+          1
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 15495,
+      "rank": 4,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "ratio_refinement": [
+          1,
+          1
+        ],
+        "interval": [
+          1,
+          2
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 15497,
+      "rank": 4,
+      "type": {
+        "states": [
+          "222222",
+          "222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "ratio_refinement": [
+          3,
+          0
+        ],
+        "interval": [
+          0,
+          1
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 15498,
+      "rank": 4,
+      "type": {
+        "states": [
+          "222222",
+          "222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "ratio_refinement": [
+          3,
+          0
+        ],
+        "interval": [
+          1,
+          2
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 15505,
+      "rank": 4,
+      "type": {
+        "states": [
+          "222222",
+          "222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "ratio_refinement": [
+          1,
+          1
+        ],
+        "interval": [
+          1,
+          2
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 15510,
+      "rank": 4,
+      "type": {
+        "states": [
+          "2222222",
+          "2222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "ratio_refinement": [
+          3,
+          0
+        ],
+        "interval": [
+          1,
+          2
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 15516,
+      "rank": 4,
+      "type": {
+        "states": [
+          "2222222",
+          "2222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "ratio_refinement": [
+          1,
+          1
+        ],
+        "interval": [
+          1,
+          2
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 15582,
+      "rank": 4,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "ratio_refinement": [
+          1,
+          0
+        ],
+        "interval": [
+          0,
+          1
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 15744,
+      "rank": 4,
+      "type": {
+        "states": [
+          "222222",
+          "222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "ratio_refinement": [
+          1,
+          0
+        ],
+        "interval": [
+          0,
+          1
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 15850,
+      "rank": 4,
+      "type": {
+        "states": [
+          "22222",
+          "222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "ratio_refinement": [
+          2,
+          0
+        ],
+        "interval": [
+          0,
+          1
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 15975,
+      "rank": 4,
+      "type": {
+        "states": [
+          "222222",
+          "222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "ratio_refinement": [
+          2,
+          2
+        ],
+        "interval": [
+          1,
+          2
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 15976,
+      "rank": 4,
+      "type": {
+        "states": [
+          "222222",
+          "222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "ratio_refinement": [
+          2,
+          3
+        ],
+        "interval": [
+          1,
+          2
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 16145,
+      "rank": 4,
+      "type": {
+        "states": [
+          "2222222",
+          "2222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "ratio_refinement": [
+          1,
+          0
+        ],
+        "interval": [
+          0,
+          1
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 16174,
+      "rank": 4,
+      "type": {
+        "states": [
+          "22222",
+          "222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "ratio_refinement": [
+          3,
+          1
+        ],
+        "interval": [
+          0,
+          1
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 16647,
+      "rank": 4,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "ratio_refinement": [
+          2,
+          1
+        ],
+        "interval": [
+          1,
+          2
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 17079,
+      "rank": 4,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "ratio_refinement": [
+          2,
+          3
+        ],
+        "interval": [
+          0,
+          1
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 0,
+      "rank": 3,
+      "type": {
+        "states": [
+          "2222222",
+          "2222222"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "interval": [
+          0,
+          1
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 1,
+      "rank": 3,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "interval": [
+          -6,
+          -5
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 2,
+      "rank": 3,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "interval": [
+          -3,
+          -2
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 4,
+      "rank": 3,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "ratio_refinement": [
+          1,
+          1
+        ],
+        "interval": [
+          -4,
+          -3
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 5,
+      "rank": 3,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "ratio_refinement": [
+          1,
+          1
+        ],
+        "interval": [
+          -5,
+          -4
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 6,
+      "rank": 3,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "ratio_refinement": [
+          1,
+          1
+        ],
+        "interval": [
+          -1,
+          0
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 7,
+      "rank": 3,
+      "type": {
+        "states": [
+          "2222222",
+          "2222222"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "ratio_refinement": [
+          1,
+          0
+        ],
+        "interval": [
+          -5,
+          -4
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 8,
+      "rank": 3,
+      "type": {
+        "states": [
+          "2222222",
+          "2222222"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "ratio_refinement": [
+          1,
+          0
+        ],
+        "interval": [
+          -4,
+          -3
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 9,
+      "rank": 3,
+      "type": {
+        "states": [
+          "2222222",
+          "2222222"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "ratio_refinement": [
+          1,
+          0
+        ],
+        "interval": [
+          -1,
+          0
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 10,
+      "rank": 3,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "interval": [
+          29,
+          30
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 18,
+      "rank": 3,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "interval": [
+          15,
+          16
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    }
+  ],
+  "most_shared_unexpanded": [
+    {
+      "node": 16782,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "interval": [
+          2,
+          3
+        ]
+      },
+      "direct_references": 65,
+      "rules_with_this_only_unexpanded_child": 28
+    },
+    {
+      "node": 2254,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22213",
+          "22313"
+        ],
+        "parity": -1,
+        "ratio_bin": 402,
+        "interval": [
+          -967,
+          -966
+        ]
+      },
+      "direct_references": 50,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 2252,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22213",
+          "22313"
+        ],
+        "parity": -1,
+        "ratio_bin": 402,
+        "interval": [
+          -969,
+          -968
+        ]
+      },
+      "direct_references": 49,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 2256,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22213",
+          "22313"
+        ],
+        "parity": -1,
+        "ratio_bin": 402,
+        "interval": [
+          -965,
+          -964
+        ]
+      },
+      "direct_references": 49,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 6780,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22213",
+          "22313"
+        ],
+        "parity": -1,
+        "ratio_bin": 403,
+        "interval": [
+          -946,
+          -945
+        ]
+      },
+      "direct_references": 48,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 17851,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22213",
+          "22313"
+        ],
+        "parity": -1,
+        "ratio_bin": 403,
+        "interval": [
+          -970,
+          -969
+        ]
+      },
+      "direct_references": 48,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 2249,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22213",
+          "22313"
+        ],
+        "parity": -1,
+        "ratio_bin": 403,
+        "interval": [
+          -959,
+          -958
+        ]
+      },
+      "direct_references": 47,
+      "rules_with_this_only_unexpanded_child": 2
+    },
+    {
+      "node": 2253,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22213",
+          "22313"
+        ],
+        "parity": -1,
+        "ratio_bin": 402,
+        "interval": [
+          -968,
+          -967
+        ]
+      },
+      "direct_references": 47,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 2258,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22213",
+          "22313"
+        ],
+        "parity": -1,
+        "ratio_bin": 402,
+        "interval": [
+          -963,
+          -962
+        ]
+      },
+      "direct_references": 47,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 18188,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22213",
+          "22313"
+        ],
+        "parity": -1,
+        "ratio_bin": 402,
+        "interval": [
+          -970,
+          -969
+        ]
+      },
+      "direct_references": 46,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 2176,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22231",
+          "22213"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "ratio_refinement": [
+          1,
+          1
+        ],
+        "interval": [
+          -1558,
+          -1557
+        ]
+      },
+      "direct_references": 45,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 2255,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22213",
+          "22313"
+        ],
+        "parity": -1,
+        "ratio_bin": 402,
+        "interval": [
+          -966,
+          -965
+        ]
+      },
+      "direct_references": 45,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 2177,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22231",
+          "22213"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "ratio_refinement": [
+          1,
+          1
+        ],
+        "interval": [
+          -1557,
+          -1556
+        ]
+      },
+      "direct_references": 44,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 2257,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22213",
+          "22313"
+        ],
+        "parity": -1,
+        "ratio_bin": 402,
+        "interval": [
+          -964,
+          -963
+        ]
+      },
+      "direct_references": 44,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 18184,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22213",
+          "22313"
+        ],
+        "parity": -1,
+        "ratio_bin": 402,
+        "interval": [
+          -974,
+          -973
+        ]
+      },
+      "direct_references": 43,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 16369,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22221"
+        ],
+        "parity": -1,
+        "ratio_bin": 394,
+        "interval": [
+          -1084,
+          -1083
+        ]
+      },
+      "direct_references": 42,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 18183,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22213",
+          "22313"
+        ],
+        "parity": -1,
+        "ratio_bin": 402,
+        "interval": [
+          -975,
+          -974
+        ]
+      },
+      "direct_references": 42,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 15633,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "interval": [
+          21,
+          22
+        ]
+      },
+      "direct_references": 40,
+      "rules_with_this_only_unexpanded_child": 38
+    },
+    {
+      "node": 15710,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "ratio_refinement": [
+          2,
+          0
+        ],
+        "interval": [
+          3,
+          4
+        ]
+      },
+      "direct_references": 40,
+      "rules_with_this_only_unexpanded_child": 5
+    },
+    {
+      "node": 16368,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22221"
+        ],
+        "parity": -1,
+        "ratio_bin": 394,
+        "interval": [
+          -1085,
+          -1084
+        ]
+      },
+      "direct_references": 40,
+      "rules_with_this_only_unexpanded_child": 1
+    },
+    {
+      "node": 2260,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22213",
+          "22313"
+        ],
+        "parity": -1,
+        "ratio_bin": 402,
+        "interval": [
+          -961,
+          -960
+        ]
+      },
+      "direct_references": 39,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 15511,
+      "rank": 0,
+      "type": {
+        "states": [
+          "2222222",
+          "2222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "ratio_refinement": [
+          3,
+          0
+        ],
+        "interval": [
+          2,
+          3
+        ]
+      },
+      "direct_references": 38,
+      "rules_with_this_only_unexpanded_child": 5
+    },
+    {
+      "node": 6986,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22213",
+          "22313"
+        ],
+        "parity": -1,
+        "ratio_bin": 402,
+        "interval": [
+          -946,
+          -945
+        ]
+      },
+      "direct_references": 38,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 2259,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22213",
+          "22313"
+        ],
+        "parity": -1,
+        "ratio_bin": 402,
+        "interval": [
+          -962,
+          -961
+        ]
+      },
+      "direct_references": 38,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 16683,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22221",
+          "22231"
+        ],
+        "parity": -1,
+        "ratio_bin": 405,
+        "interval": [
+          -755,
+          -754
+        ]
+      },
+      "direct_references": 37,
+      "rules_with_this_only_unexpanded_child": 27
+    },
+    {
+      "node": 18179,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22213",
+          "22313"
+        ],
+        "parity": -1,
+        "ratio_bin": 402,
+        "interval": [
+          -979,
+          -978
+        ]
+      },
+      "direct_references": 36,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 2261,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22213",
+          "22313"
+        ],
+        "parity": -1,
+        "ratio_bin": 402,
+        "interval": [
+          -960,
+          -959
+        ]
+      },
+      "direct_references": 36,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 2262,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22213",
+          "22313"
+        ],
+        "parity": -1,
+        "ratio_bin": 402,
+        "interval": [
+          -959,
+          -958
+        ]
+      },
+      "direct_references": 36,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 2178,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22231",
+          "22213"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "ratio_refinement": [
+          1,
+          1
+        ],
+        "interval": [
+          -1556,
+          -1555
+        ]
+      },
+      "direct_references": 35,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 18186,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22213",
+          "22313"
+        ],
+        "parity": -1,
+        "ratio_bin": 402,
+        "interval": [
+          -972,
+          -971
+        ]
+      },
+      "direct_references": 35,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 2264,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22213",
+          "22313"
+        ],
+        "parity": -1,
+        "ratio_bin": 402,
+        "interval": [
+          -957,
+          -956
+        ]
+      },
+      "direct_references": 35,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 18542,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22213",
+          "22313"
+        ],
+        "parity": -1,
+        "ratio_bin": 402,
+        "interval": [
+          -993,
+          -992
+        ]
+      },
+      "direct_references": 35,
+      "rules_with_this_only_unexpanded_child": 0
+    }
+  ],
+  "one_missing": [
+    {
+      "node": 15633,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "interval": [
+          21,
+          22
+        ]
+      },
+      "direct_references": 40,
+      "rules_with_this_only_unexpanded_child": 38
+    },
+    {
+      "node": 16782,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "interval": [
+          2,
+          3
+        ]
+      },
+      "direct_references": 65,
+      "rules_with_this_only_unexpanded_child": 28
+    },
+    {
+      "node": 16683,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22221",
+          "22231"
+        ],
+        "parity": -1,
+        "ratio_bin": 405,
+        "interval": [
+          -755,
+          -754
+        ]
+      },
+      "direct_references": 37,
+      "rules_with_this_only_unexpanded_child": 27
+    },
+    {
+      "node": 15334,
+      "rank": 0,
+      "type": {
+        "states": [
+          "2222222",
+          "2222222"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "interval": [
+          -4,
+          -3
+        ]
+      },
+      "direct_references": 24,
+      "rules_with_this_only_unexpanded_child": 24
+    },
+    {
+      "node": 15396,
+      "rank": 0,
+      "type": {
+        "states": [
+          "222222",
+          "222221"
+        ],
+        "parity": -1,
+        "ratio_bin": 395,
+        "ratio_refinement": [
+          3,
+          7
+        ],
+        "interval": [
+          -1086,
+          -1085
+        ]
+      },
+      "direct_references": 21,
+      "rules_with_this_only_unexpanded_child": 21
+    },
+    {
+      "node": 16342,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "ratio_refinement": [
+          2,
+          0
+        ],
+        "interval": [
+          -7,
+          -6
+        ]
+      },
+      "direct_references": 20,
+      "rules_with_this_only_unexpanded_child": 19
+    },
+    {
+      "node": 19260,
+      "rank": 0,
+      "type": {
+        "states": [
+          "222222",
+          "222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "interval": [
+          -8,
+          -7
+        ]
+      },
+      "direct_references": 23,
+      "rules_with_this_only_unexpanded_child": 18
+    },
+    {
+      "node": 16270,
+      "rank": 0,
+      "type": {
+        "states": [
+          "222222",
+          "222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "interval": [
+          64,
+          65
+        ]
+      },
+      "direct_references": 17,
+      "rules_with_this_only_unexpanded_child": 16
+    },
+    {
+      "node": 16682,
+      "rank": 0,
+      "type": {
+        "states": [
+          "222222",
+          "222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "ratio_refinement": [
+          1,
+          0
+        ],
+        "interval": [
+          60,
+          61
+        ]
+      },
+      "direct_references": 18,
+      "rules_with_this_only_unexpanded_child": 15
+    },
+    {
+      "node": 15340,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "ratio_refinement": [
+          2,
+          0
+        ],
+        "interval": [
+          2,
+          3
+        ]
+      },
+      "direct_references": 14,
+      "rules_with_this_only_unexpanded_child": 14
+    },
+    {
+      "node": 16681,
+      "rank": 0,
+      "type": {
+        "states": [
+          "2222222",
+          "2222222"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "interval": [
+          34,
+          35
+        ]
+      },
+      "direct_references": 22,
+      "rules_with_this_only_unexpanded_child": 14
+    },
+    {
+      "node": 17992,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22221",
+          "2222231"
+        ],
+        "parity": -1,
+        "ratio_bin": 405,
+        "interval": [
+          -775,
+          -774
+        ]
+      },
+      "direct_references": 17,
+      "rules_with_this_only_unexpanded_child": 14
+    },
+    {
+      "node": 380,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22221",
+          "222231"
+        ],
+        "parity": -1,
+        "ratio_bin": 405,
+        "ratio_refinement": [
+          1,
+          0
+        ],
+        "interval": [
+          -758,
+          -757
+        ]
+      },
+      "direct_references": 23,
+      "rules_with_this_only_unexpanded_child": 14
+    },
+    {
+      "node": 17487,
+      "rank": 0,
+      "type": {
+        "states": [
+          "222222",
+          "222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "interval": [
+          33,
+          34
+        ]
+      },
+      "direct_references": 16,
+      "rules_with_this_only_unexpanded_child": 12
+    },
+    {
+      "node": 109,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "interval": [
+          -204,
+          -203
+        ]
+      },
+      "direct_references": 14,
+      "rules_with_this_only_unexpanded_child": 11
+    },
+    {
+      "node": 176,
+      "rank": 0,
+      "type": {
+        "states": [
+          "222222",
+          "222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "interval": [
+          -70,
+          -69
+        ]
+      },
+      "direct_references": 11,
+      "rules_with_this_only_unexpanded_child": 11
+    },
+    {
+      "node": 16025,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "interval": [
+          -70,
+          -69
+        ]
+      },
+      "direct_references": 13,
+      "rules_with_this_only_unexpanded_child": 10
+    },
+    {
+      "node": 16670,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "ratio_refinement": [
+          1,
+          0
+        ],
+        "interval": [
+          59,
+          60
+        ]
+      },
+      "direct_references": 20,
+      "rules_with_this_only_unexpanded_child": 10
+    },
+    {
+      "node": 8449,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22213",
+          "22313"
+        ],
+        "parity": -1,
+        "ratio_bin": 403,
+        "interval": [
+          -911,
+          -910
+        ]
+      },
+      "direct_references": 21,
+      "rules_with_this_only_unexpanded_child": 10
+    },
+    {
+      "node": 15503,
+      "rank": 0,
+      "type": {
+        "states": [
+          "222222",
+          "222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "ratio_refinement": [
+          1,
+          0
+        ],
+        "interval": [
+          2,
+          3
+        ]
+      },
+      "direct_references": 22,
+      "rules_with_this_only_unexpanded_child": 9
+    },
+    {
+      "node": 15979,
+      "rank": 0,
+      "type": {
+        "states": [
+          "222222",
+          "222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "interval": [
+          21,
+          22
+        ]
+      },
+      "direct_references": 13,
+      "rules_with_this_only_unexpanded_child": 9
+    },
+    {
+      "node": 16833,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "ratio_refinement": [
+          1,
+          1
+        ],
+        "interval": [
+          1,
+          2
+        ]
+      },
+      "direct_references": 22,
+      "rules_with_this_only_unexpanded_child": 9
+    },
+    {
+      "node": 17456,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "ratio_refinement": [
+          1,
+          1
+        ],
+        "interval": [
+          26,
+          27
+        ]
+      },
+      "direct_references": 22,
+      "rules_with_this_only_unexpanded_child": 9
+    },
+    {
+      "node": 16268,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "ratio_refinement": [
+          1,
+          1
+        ],
+        "interval": [
+          21,
+          22
+        ]
+      },
+      "direct_references": 23,
+      "rules_with_this_only_unexpanded_child": 8
+    },
+    {
+      "node": 17914,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22212",
+          "22232"
+        ],
+        "parity": 1,
+        "ratio_bin": 195,
+        "interval": [
+          -1481,
+          -1480
+        ]
+      },
+      "direct_references": 12,
+      "rules_with_this_only_unexpanded_child": 8
+    },
+    {
+      "node": 15853,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "ratio_refinement": [
+          3,
+          1
+        ],
+        "interval": [
+          2,
+          3
+        ]
+      },
+      "direct_references": 26,
+      "rules_with_this_only_unexpanded_child": 7
+    },
+    {
+      "node": 7732,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "interval": [
+          508,
+          509
+        ]
+      },
+      "direct_references": 8,
+      "rules_with_this_only_unexpanded_child": 7
+    },
+    {
+      "node": 17451,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": -1,
+        "ratio_bin": 266,
+        "ratio_refinement": [
+          2,
+          0
+        ],
+        "interval": [
+          23,
+          24
+        ]
+      },
+      "direct_references": 17,
+      "rules_with_this_only_unexpanded_child": 7
+    },
+    {
+      "node": 18606,
+      "rank": 0,
+      "type": {
+        "states": [
+          "222222",
+          "222222"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "ratio_refinement": [
+          2,
+          1
+        ],
+        "interval": [
+          -6,
+          -5
+        ]
+      },
+      "direct_references": 18,
+      "rules_with_this_only_unexpanded_child": 7
+    },
+    {
+      "node": 2373,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22213",
+          "222313"
+        ],
+        "parity": -1,
+        "ratio_bin": 403,
+        "interval": [
+          -911,
+          -910
+        ]
+      },
+      "direct_references": 7,
+      "rules_with_this_only_unexpanded_child": 7
+    },
+    {
+      "node": 15576,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22212",
+          "22232"
+        ],
+        "parity": 1,
+        "ratio_bin": 196,
+        "interval": [
+          -1474,
+          -1473
+        ]
+      },
+      "direct_references": 6,
+      "rules_with_this_only_unexpanded_child": 6
+    },
+    {
+      "node": 16628,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "222222"
+        ],
+        "parity": -1,
+        "ratio_bin": 267,
+        "interval": [
+          59,
+          60
+        ]
+      },
+      "direct_references": 7,
+      "rules_with_this_only_unexpanded_child": 6
+    }
+  ],
+  "scope": "all retained rules, no geometric rejection; finite ranks do not disprove interval inclusion",
+  "source_sha256": "07ffb4f80e5471b9e1bc21bd2f66050fe715f6a4565743a2392b997637922ab2"
+}

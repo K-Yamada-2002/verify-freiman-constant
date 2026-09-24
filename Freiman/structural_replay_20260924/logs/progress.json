@@ -1,0 +1,1204 @@
+[
+  {
+    "group": "global_selection",
+    "status": "PASS",
+    "records": [
+      {
+        "label": "verify_word_guards_normal",
+        "command": [
+          "verify_word_guards.py"
+        ],
+        "cwd": "work/report_parts/global_selection",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 0.042,
+        "log": "replay_logs/global_selection__verify_word_guards_normal.log",
+        "stdout": "WORD GUARDS PASS {'rows': 422, 'selected_candidates': 2202, 'births313': 9, 'births3131': 147, 'J_families': 48} preserving alphabet [('', '1'), ('1', ''), ('2', ''), ('2', '1'), ('3', ''), ('3', '1')]",
+        "stderr": ""
+      },
+      {
+        "label": "verify_word_guards_O",
+        "command": [
+          "-O",
+          "verify_word_guards.py"
+        ],
+        "cwd": "work/report_parts/global_selection",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 0.044,
+        "log": "replay_logs/global_selection__verify_word_guards_O.log",
+        "stdout": "WORD GUARDS PASS {'rows': 422, 'selected_candidates': 2202, 'births313': 9, 'births3131': 147, 'J_families': 48} preserving alphabet [('', '1'), ('1', ''), ('2', ''), ('2', '1'), ('3', ''), ('3', '1')]",
+        "stderr": ""
+      },
+      {
+        "label": "verify_source_bindings_normal",
+        "command": [
+          "verify_source_bindings.py"
+        ],
+        "cwd": "work/report_parts/global_selection",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 0.244,
+        "log": "replay_logs/global_selection__verify_source_bindings_normal.log",
+        "stdout": "SOURCE INTERFACES VERIFIED: 422 guarded rows; every selected child assigned to its local branch or stated connecting family.",
+        "stderr": ""
+      },
+      {
+        "label": "verify_source_bindings_O",
+        "command": [
+          "-O",
+          "verify_source_bindings.py"
+        ],
+        "cwd": "work/report_parts/global_selection",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 0.247,
+        "log": "replay_logs/global_selection__verify_source_bindings_O.log",
+        "stdout": "SOURCE INTERFACES VERIFIED: 422 guarded rows; every selected child assigned to its local branch or stated connecting family.",
+        "stderr": ""
+      },
+      {
+        "label": "printed_word_identity_False",
+        "status": "PASS",
+        "exit_code": 0,
+        "expected": "accept",
+        "stdout": "PRINTED BOUNDARY TABLE VERIFIED: 33 shared rows; 422 source/state rows; 2202 candidate checks.",
+        "seconds": 0.024
+      },
+      {
+        "label": "printed_word_identity_True",
+        "status": "PASS",
+        "exit_code": 0,
+        "expected": "accept",
+        "stdout": "PRINTED BOUNDARY TABLE VERIFIED: 33 shared rows; 422 source/state rows; 2202 candidate checks.",
+        "seconds": 0.025
+      }
+    ]
+  },
+  {
+    "group": "initial",
+    "status": "PASS",
+    "records": [
+      {
+        "label": "run_replay_normal",
+        "command": [
+          "run_replay.py"
+        ],
+        "cwd": "work/report_parts/lower_core/width_oriented_mixed",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 25.666,
+        "log": "replay_logs/initial__run_replay_normal.log",
+        "stdout": "verify_h_finite_independent PASS\nverify_h_finite_independent_optimized PASS\nverify_replay_inventory PASS\nverify_replay_inventory_optimized PASS\nvalidate_fixed_initial PASS\nvalidate_fixed_initial_optimized PASS\nverify_redundancy PASS\nverify_redundancy_optimized PASS\nvalidate_h_seams_independent PASS\nvalidate_h_seams_independent_optimized PASS\nnegative_missing_branch REJECTED\nnegative_changed_endpoint REJECTED",
+        "stderr": ""
+      },
+      {
+        "label": "verify_parity_audit_normal",
+        "command": [
+          "verify_parity_audit.py"
+        ],
+        "cwd": "work/report_parts/parity_audit",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 0.044,
+        "log": "replay_logs/initial__verify_parity_audit_normal.log",
+        "stdout": "VERIFIED: I5 exact source/old/symmetric endpoint identities and strict gaps; all 1152 abstract parity decision states are invariant under simultaneous parity and endpoint-order reversal.",
+        "stderr": ""
+      },
+      {
+        "label": "verify_parity_audit_O",
+        "command": [
+          "-O",
+          "verify_parity_audit.py"
+        ],
+        "cwd": "work/report_parts/parity_audit",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 0.044,
+        "log": "replay_logs/initial__verify_parity_audit_O.log",
+        "stdout": "VERIFIED: I5 exact source/old/symmetric endpoint identities and strict gaps; all 1152 abstract parity decision states are invariant under simultaneous parity and endpoint-order reversal.",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "group": "foundations_upper",
+    "status": "PASS",
+    "records": [
+      {
+        "label": "run_foundations_checks_normal",
+        "command": [
+          "run_foundations_checks.py"
+        ],
+        "cwd": "work/report_parts/foundations",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 9.193,
+        "log": "replay_logs/foundations_upper__run_foundations_checks_normal.log",
+        "stdout": "PASS verify_foundations.py.normal\nPASS verify_foundations.py.optimized\nPASS validate_foundations_independent.py.normal\nPASS validate_foundations_independent.py.optimized\nPASS regenerate.optimized\nREJECTED negative.greedy_cycle.verify_foundations.py\nREJECTED negative.greedy_cycle.validate_foundations_independent.py\nREJECTED negative.period_matrix.verify_foundations.py\nREJECTED negative.period_matrix.validate_foundations_independent.py\nREJECTED negative.background_constant.verify_foundations.py\nREJECTED negative.background_constant.validate_foundations_independent.py\nREJECTED negative.square_witness.verify_foundations.py\nREJECTED negative.square_witness.validate_foundations_independent.py\nREJECTED negative.secondary_bound.verify_foundations.py\nREJECTED negative.secondary_bound.validate_foundations_independent.py\nREJECTED negative.endpoint_tail.verify_foundations.py\nREJECTED negative.endpoint_tail.validate_foundations_independent.py\nPASS_FOUNDATIONS_REPLAY",
+        "stderr": ""
+      },
+      {
+        "label": "generate_exact_normal",
+        "command": [
+          "generate_exact.py",
+          "--check",
+          "exact_certificate.json"
+        ],
+        "cwd": "work/report_parts/m2a",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 0.586,
+        "log": "replay_logs/foundations_upper__generate_exact_normal.log",
+        "stdout": "PASS_M2A_EXACT_RECONSTRUCTION\nendpoints=8 recurrences=8 ordering=7 deletion_maxima=10 radical_enclosures=2 strict_inequalities=9 periodic_identity=1\nall decisions exact; decimal approximations and assert statements are not used",
+        "stderr": ""
+      },
+      {
+        "label": "generate_exact_O",
+        "command": [
+          "-O",
+          "generate_exact.py",
+          "--check",
+          "exact_certificate.json"
+        ],
+        "cwd": "work/report_parts/m2a",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 1.53,
+        "log": "replay_logs/foundations_upper__generate_exact_O.log",
+        "stdout": "PASS_M2A_EXACT_RECONSTRUCTION\nendpoints=8 recurrences=8 ordering=7 deletion_maxima=10 radical_enclosures=2 strict_inequalities=9 periodic_identity=1\nall decisions exact; decimal approximations and assert statements are not used",
+        "stderr": ""
+      },
+      {
+        "label": "validate_independent_normal",
+        "command": [
+          "validate_independent.py",
+          "exact_certificate.json"
+        ],
+        "cwd": "work/report_parts/m2a",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 0.024,
+        "log": "replay_logs/foundations_upper__validate_independent_normal.log",
+        "stdout": "PASS_M2A_INDEPENDENT_RATIONAL_PAIR_CHECK\nendpoints=8 recurrences=8 ordering=7 deletion_maxima=10 radical_enclosures=2 strict_inequalities=9 periodic_identity=1\nfinite arithmetic only; no Decimal, SymPy, generator import, or assert statement",
+        "stderr": ""
+      },
+      {
+        "label": "validate_independent_O",
+        "command": [
+          "-O",
+          "validate_independent.py",
+          "exact_certificate.json"
+        ],
+        "cwd": "work/report_parts/m2a",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 0.024,
+        "log": "replay_logs/foundations_upper__validate_independent_O.log",
+        "stdout": "PASS_M2A_INDEPENDENT_RATIONAL_PAIR_CHECK\nendpoints=8 recurrences=8 ordering=7 deletion_maxima=10 radical_enclosures=2 strict_inequalities=9 periodic_identity=1\nfinite arithmetic only; no Decimal, SymPy, generator import, or assert statement",
+        "stderr": ""
+      },
+      {
+        "label": "negative_controls_normal",
+        "command": [
+          "negative_controls.py"
+        ],
+        "cwd": "work/report_parts/m2a",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 4.837,
+        "log": "replay_logs/foundations_upper__negative_controls_normal.log",
+        "stdout": "REJECTED missing_deletion generator exit 1\nREJECTED missing_deletion independent exit 1\nREJECTED wrong_endpoint generator exit 1\nREJECTED wrong_endpoint independent exit 1\nREJECTED false_peak_margin generator exit 1\nREJECTED false_peak_margin independent exit 1\nPASS_M2A_SIX_NEGATIVE_CONTROLS",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "group": "section14",
+    "status": "PASS",
+    "records": [
+      {
+        "label": "verify_exact_normal",
+        "command": [
+          "verify_exact.py",
+          "certificates/geometry_1_1.json",
+          "certificates/geometry_1_2.json",
+          "certificates/geometry_1_3.json",
+          "certificates/geometry_1_31.json",
+          "certificates/geometry_2_1.json",
+          "certificates/geometry_2_2.json",
+          "certificates/geometry_2_3.json",
+          "certificates/geometry_2_31.json",
+          "certificates/geometry_31_1.json",
+          "certificates/geometry_31_2.json",
+          "certificates/geometry_31_3.json",
+          "certificates/geometry_31_31.json",
+          "certificates/geometry_3_1.json",
+          "certificates/geometry_3_2.json",
+          "certificates/geometry_3_3.json",
+          "certificates/geometry_3_31.json"
+        ],
+        "cwd": "work/report_parts/lower_section14/source_selected",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 98.892,
+        "log": "replay_logs/section14__verify_exact_normal.log",
+        "stdout": "EXACTLY VERIFIED 1 1 6228 records {'branches': 8886, 'componentwise': 4687, 'excluded_cases': 2029, 'active_cases': 19}\nEXACTLY VERIFIED 1 2 4949 records {'branches': 6226, 'componentwise': 3311, 'excluded_cases': 2034, 'active_cases': 14}\nEXACTLY VERIFIED 1 3 2754 records {'branches': 5235, 'componentwise': 2582, 'excluded_cases': 101, 'active_cases': 11}\nEXACTLY VERIFIED 1 31 2318 records {'branches': 4438, 'componentwise': 2238, 'excluded_cases': 118, 'active_cases': 10}\nEXACTLY VERIFIED 2 1 6987 records {'branches': 10356, 'componentwise': 5399, 'excluded_cases': 2030, 'active_cases': 18}\nEXACTLY VERIFIED 2 2 6170 records {'branches': 8656, 'componentwise': 4519, 'excluded_cases': 2033, 'active_cases': 15}\nEXACTLY VERIFIED 2 3 2743 records {'branches': 5224, 'componentwise': 2582, 'excluded_cases': 101, 'active_cases': 11}\nEXACTLY VERIFIED 2 31 2667 records {'branches': 5124, 'componentwise': 2575, 'excluded_cases': 118, 'active_cases': 10}\nEXACTLY VERIFIED 31 1 5032 records {'branches': 6532, 'componentwise': 3532, 'excluded_cases': 2032, 'active_cases': 16}\nEXACTLY VERIFIED 31 2 4110 records {'branches': 4557, 'componentwise': 2483, 'excluded_cases': 2036, 'active_cases': 12}\nEXACTLY VERIFIED 31 3 1755 records {'branches': 3179, 'componentwise': 1527, 'excluded_cases': 103, 'active_cases': 9}\nEXACTLY VERIFIED 31 31 1909 records {'branches': 3638, 'componentwise': 1848, 'excluded_cases': 119, 'active_cases': 9}\nEXACTLY VERIFIED 3 1 3625 records {'branches': 6199, 'componentwise': 3073, 'excluded_cases': 499, 'active_cases': 13}\nEXACTLY VERIFIED 3 2 3179 records {'branches': 5310, 'componentwise': 2631, 'excluded_cases': 500, 'active_cases': 12}\nEXACTLY VERIFIED 3 3 1376 records {'branches': 2667, 'componentwise': 1313, 'excluded_cases': 22, 'active_cases': 6}\nEXACTLY VERIFIED 3 31 2667 records {'branches': 5057, 'componentwise': 2506, 'excluded_cases': 116, 'active_cases': 12}",
+        "stderr": ""
+      },
+      {
+        "label": "verify_exact_O",
+        "command": [
+          "-O",
+          "verify_exact.py",
+          "certificates/geometry_1_1.json",
+          "certificates/geometry_1_2.json",
+          "certificates/geometry_1_3.json",
+          "certificates/geometry_1_31.json",
+          "certificates/geometry_2_1.json",
+          "certificates/geometry_2_2.json",
+          "certificates/geometry_2_3.json",
+          "certificates/geometry_2_31.json",
+          "certificates/geometry_31_1.json",
+          "certificates/geometry_31_2.json",
+          "certificates/geometry_31_3.json",
+          "certificates/geometry_31_31.json",
+          "certificates/geometry_3_1.json",
+          "certificates/geometry_3_2.json",
+          "certificates/geometry_3_3.json",
+          "certificates/geometry_3_31.json"
+        ],
+        "cwd": "work/report_parts/lower_section14/source_selected",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 103.872,
+        "log": "replay_logs/section14__verify_exact_O.log",
+        "stdout": "EXACTLY VERIFIED 1 1 6228 records {'branches': 8886, 'componentwise': 4687, 'excluded_cases': 2029, 'active_cases': 19}\nEXACTLY VERIFIED 1 2 4949 records {'branches': 6226, 'componentwise': 3311, 'excluded_cases': 2034, 'active_cases': 14}\nEXACTLY VERIFIED 1 3 2754 records {'branches': 5235, 'componentwise': 2582, 'excluded_cases': 101, 'active_cases': 11}\nEXACTLY VERIFIED 1 31 2318 records {'branches': 4438, 'componentwise': 2238, 'excluded_cases': 118, 'active_cases': 10}\nEXACTLY VERIFIED 2 1 6987 records {'branches': 10356, 'componentwise': 5399, 'excluded_cases': 2030, 'active_cases': 18}\nEXACTLY VERIFIED 2 2 6170 records {'branches': 8656, 'componentwise': 4519, 'excluded_cases': 2033, 'active_cases': 15}\nEXACTLY VERIFIED 2 3 2743 records {'branches': 5224, 'componentwise': 2582, 'excluded_cases': 101, 'active_cases': 11}\nEXACTLY VERIFIED 2 31 2667 records {'branches': 5124, 'componentwise': 2575, 'excluded_cases': 118, 'active_cases': 10}\nEXACTLY VERIFIED 31 1 5032 records {'branches': 6532, 'componentwise': 3532, 'excluded_cases': 2032, 'active_cases': 16}\nEXACTLY VERIFIED 31 2 4110 records {'branches': 4557, 'componentwise': 2483, 'excluded_cases': 2036, 'active_cases': 12}\nEXACTLY VERIFIED 31 3 1755 records {'branches': 3179, 'componentwise': 1527, 'excluded_cases': 103, 'active_cases': 9}\nEXACTLY VERIFIED 31 31 1909 records {'branches': 3638, 'componentwise': 1848, 'excluded_cases': 119, 'active_cases': 9}\nEXACTLY VERIFIED 3 1 3625 records {'branches': 6199, 'componentwise': 3073, 'excluded_cases': 499, 'active_cases': 13}\nEXACTLY VERIFIED 3 2 3179 records {'branches': 5310, 'componentwise': 2631, 'excluded_cases': 500, 'active_cases': 12}\nEXACTLY VERIFIED 3 3 1376 records {'branches': 2667, 'componentwise': 1313, 'excluded_cases': 22, 'active_cases': 6}\nEXACTLY VERIFIED 3 31 2667 records {'branches': 5057, 'componentwise': 2506, 'excluded_cases': 116, 'active_cases': 12}",
+        "stderr": ""
+      },
+      {
+        "label": "verify_independent_normal",
+        "command": [
+          "verify_independent.py",
+          "certificates/geometry_1_1.json",
+          "certificates/geometry_1_2.json",
+          "certificates/geometry_1_3.json",
+          "certificates/geometry_1_31.json",
+          "certificates/geometry_2_1.json",
+          "certificates/geometry_2_2.json",
+          "certificates/geometry_2_3.json",
+          "certificates/geometry_2_31.json",
+          "certificates/geometry_31_1.json",
+          "certificates/geometry_31_2.json",
+          "certificates/geometry_31_3.json",
+          "certificates/geometry_31_31.json",
+          "certificates/geometry_3_1.json",
+          "certificates/geometry_3_2.json",
+          "certificates/geometry_3_3.json",
+          "certificates/geometry_3_31.json"
+        ],
+        "cwd": "work/report_parts/lower_section14/source_selected",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 55.422,
+        "log": "replay_logs/section14__verify_independent_normal.log",
+        "stdout": "INDEPENDENTLY VERIFIED 1 1 6228 records 6222 distinct proofs {'branches': 8886, 'componentwise': 4687, 'excluded_cases': 2029, 'active_cases': 19}\nINDEPENDENTLY VERIFIED 1 2 4949 records 4947 distinct proofs {'branches': 6226, 'componentwise': 3311, 'excluded_cases': 2034, 'active_cases': 14}\nINDEPENDENTLY VERIFIED 1 3 2754 records 2740 distinct proofs {'branches': 5235, 'componentwise': 2582, 'excluded_cases': 101, 'active_cases': 11}\nINDEPENDENTLY VERIFIED 1 31 2318 records 2318 distinct proofs {'branches': 4438, 'componentwise': 2238, 'excluded_cases': 118, 'active_cases': 10}\nINDEPENDENTLY VERIFIED 2 1 6987 records 6981 distinct proofs {'branches': 10356, 'componentwise': 5399, 'excluded_cases': 2030, 'active_cases': 18}\nINDEPENDENTLY VERIFIED 2 2 6170 records 6167 distinct proofs {'branches': 8656, 'componentwise': 4519, 'excluded_cases': 2033, 'active_cases': 15}\nINDEPENDENTLY VERIFIED 2 3 2743 records 2729 distinct proofs {'branches': 5224, 'componentwise': 2582, 'excluded_cases': 101, 'active_cases': 11}\nINDEPENDENTLY VERIFIED 2 31 2667 records 2667 distinct proofs {'branches': 5124, 'componentwise': 2575, 'excluded_cases': 118, 'active_cases': 10}\nINDEPENDENTLY VERIFIED 31 1 5032 records 5027 distinct proofs {'branches': 6532, 'componentwise': 3532, 'excluded_cases': 2032, 'active_cases': 16}\nINDEPENDENTLY VERIFIED 31 2 4110 records 4108 distinct proofs {'branches': 4557, 'componentwise': 2483, 'excluded_cases': 2036, 'active_cases': 12}\nINDEPENDENTLY VERIFIED 31 3 1755 records 1747 distinct proofs {'branches': 3179, 'componentwise': 1527, 'excluded_cases': 103, 'active_cases': 9}\nINDEPENDENTLY VERIFIED 31 31 1909 records 1909 distinct proofs {'branches': 3638, 'componentwise': 1848, 'excluded_cases': 119, 'active_cases': 9}\nINDEPENDENTLY VERIFIED 3 1 3625 records 3625 distinct proofs {'branches': 6199, 'componentwise': 3073, 'excluded_cases': 499, 'active_cases': 13}\nINDEPENDENTLY VERIFIED 3 2 3179 records 3179 distinct proofs {'branches': 5310, 'componentwise': 2631, 'excluded_cases': 500, 'active_cases': 12}\nINDEPENDENTLY VERIFIED 3 3 1376 records 1376 distinct proofs {'branches': 2667, 'componentwise': 1313, 'excluded_cases': 22, 'active_cases': 6}\nINDEPENDENTLY VERIFIED 3 31 2667 records 2667 distinct proofs {'branches': 5057, 'componentwise': 2506, 'excluded_cases': 116, 'active_cases': 12}",
+        "stderr": ""
+      },
+      {
+        "label": "verify_independent_O",
+        "command": [
+          "-O",
+          "verify_independent.py",
+          "certificates/geometry_1_1.json",
+          "certificates/geometry_1_2.json",
+          "certificates/geometry_1_3.json",
+          "certificates/geometry_1_31.json",
+          "certificates/geometry_2_1.json",
+          "certificates/geometry_2_2.json",
+          "certificates/geometry_2_3.json",
+          "certificates/geometry_2_31.json",
+          "certificates/geometry_31_1.json",
+          "certificates/geometry_31_2.json",
+          "certificates/geometry_31_3.json",
+          "certificates/geometry_31_31.json",
+          "certificates/geometry_3_1.json",
+          "certificates/geometry_3_2.json",
+          "certificates/geometry_3_3.json",
+          "certificates/geometry_3_31.json"
+        ],
+        "cwd": "work/report_parts/lower_section14/source_selected",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 56.001,
+        "log": "replay_logs/section14__verify_independent_O.log",
+        "stdout": "INDEPENDENTLY VERIFIED 1 1 6228 records 6222 distinct proofs {'branches': 8886, 'componentwise': 4687, 'excluded_cases': 2029, 'active_cases': 19}\nINDEPENDENTLY VERIFIED 1 2 4949 records 4947 distinct proofs {'branches': 6226, 'componentwise': 3311, 'excluded_cases': 2034, 'active_cases': 14}\nINDEPENDENTLY VERIFIED 1 3 2754 records 2740 distinct proofs {'branches': 5235, 'componentwise': 2582, 'excluded_cases': 101, 'active_cases': 11}\nINDEPENDENTLY VERIFIED 1 31 2318 records 2318 distinct proofs {'branches': 4438, 'componentwise': 2238, 'excluded_cases': 118, 'active_cases': 10}\nINDEPENDENTLY VERIFIED 2 1 6987 records 6981 distinct proofs {'branches': 10356, 'componentwise': 5399, 'excluded_cases': 2030, 'active_cases': 18}\nINDEPENDENTLY VERIFIED 2 2 6170 records 6167 distinct proofs {'branches': 8656, 'componentwise': 4519, 'excluded_cases': 2033, 'active_cases': 15}\nINDEPENDENTLY VERIFIED 2 3 2743 records 2729 distinct proofs {'branches': 5224, 'componentwise': 2582, 'excluded_cases': 101, 'active_cases': 11}\nINDEPENDENTLY VERIFIED 2 31 2667 records 2667 distinct proofs {'branches': 5124, 'componentwise': 2575, 'excluded_cases': 118, 'active_cases': 10}\nINDEPENDENTLY VERIFIED 31 1 5032 records 5027 distinct proofs {'branches': 6532, 'componentwise': 3532, 'excluded_cases': 2032, 'active_cases': 16}\nINDEPENDENTLY VERIFIED 31 2 4110 records 4108 distinct proofs {'branches': 4557, 'componentwise': 2483, 'excluded_cases': 2036, 'active_cases': 12}\nINDEPENDENTLY VERIFIED 31 3 1755 records 1747 distinct proofs {'branches': 3179, 'componentwise': 1527, 'excluded_cases': 103, 'active_cases': 9}\nINDEPENDENTLY VERIFIED 31 31 1909 records 1909 distinct proofs {'branches': 3638, 'componentwise': 1848, 'excluded_cases': 119, 'active_cases': 9}\nINDEPENDENTLY VERIFIED 3 1 3625 records 3625 distinct proofs {'branches': 6199, 'componentwise': 3073, 'excluded_cases': 499, 'active_cases': 13}\nINDEPENDENTLY VERIFIED 3 2 3179 records 3179 distinct proofs {'branches': 5310, 'componentwise': 2631, 'excluded_cases': 500, 'active_cases': 12}\nINDEPENDENTLY VERIFIED 3 3 1376 records 1376 distinct proofs {'branches': 2667, 'componentwise': 1313, 'excluded_cases': 22, 'active_cases': 6}\nINDEPENDENTLY VERIFIED 3 31 2667 records 2667 distinct proofs {'branches': 5057, 'componentwise': 2506, 'excluded_cases': 116, 'active_cases': 12}",
+        "stderr": ""
+      },
+      {
+        "label": "verify_full_tex_normal",
+        "command": [
+          "verify_full_tex.py"
+        ],
+        "cwd": "work/report_parts/lower_section14/source_selected",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 19.948,
+        "log": "replay_logs/section14__verify_full_tex_normal.log",
+        "stdout": "INDEPENDENTLY VERIFIED ACTUAL TEX: 58469 original records; 16598 lossless groups; 730 thresholds; 1736 exact polynomial domains; 1731 proof types",
+        "stderr": ""
+      },
+      {
+        "label": "verify_full_tex_O",
+        "command": [
+          "-O",
+          "verify_full_tex.py"
+        ],
+        "cwd": "work/report_parts/lower_section14/source_selected",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 22.005,
+        "log": "replay_logs/section14__verify_full_tex_O.log",
+        "stdout": "INDEPENDENTLY VERIFIED ACTUAL TEX: 58469 original records; 16598 lossless groups; 730 thresholds; 1736 exact polynomial domains; 1731 proof types",
+        "stderr": ""
+      },
+      {
+        "label": "negative_controls_normal",
+        "command": [
+          "negative_controls.py"
+        ],
+        "cwd": "work/report_parts/lower_section14/source_selected",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 5.372,
+        "log": "replay_logs/section14__negative_controls_normal.log",
+        "stdout": "REJECTED deleted obligation : ('missing obligation', ('H22-chain', 15, \"good ('1', '') 0 [(1, 1), ()]\", 0))\nREJECTED removed witness premises : ('premises mismatch', ('H2', 0, 'EXCLUDED', -1))\nREJECTED open geometry flag : open geometry\nREJECTED changed parameter rectangle : state rectangle\nREJECTED incomplete branch accounting : complete branch counts\nREJECTED duplicate obligation : duplicate goal\nREJECTED incomplete rectangle cover : rectangle split\nCOMPLETE: all 7 invalid controls rejected",
+        "stderr": ""
+      },
+      {
+        "label": "negative_controls_O",
+        "command": [
+          "-O",
+          "negative_controls.py"
+        ],
+        "cwd": "work/report_parts/lower_section14/source_selected",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 6.149,
+        "log": "replay_logs/section14__negative_controls_O.log",
+        "stdout": "REJECTED deleted obligation : ('missing obligation', ('H22-chain', 15, \"good ('1', '') 0 [(1, 1), ()]\", 0))\nREJECTED removed witness premises : ('premises mismatch', ('H2', 0, 'EXCLUDED', -1))\nREJECTED open geometry flag : open geometry\nREJECTED changed parameter rectangle : state rectangle\nREJECTED incomplete branch accounting : complete branch counts\nREJECTED duplicate obligation : duplicate goal\nREJECTED incomplete rectangle cover : rectangle split\nCOMPLETE: all 7 invalid controls rejected",
+        "stderr": ""
+      },
+      {
+        "label": "missing_record",
+        "command": [
+          "-O",
+          "verify_exact.py",
+          "/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/tmpljdnhu_i/missing_record.json"
+        ],
+        "cwd": "work/report_parts/lower_section14/source_selected",
+        "exit_code": 1,
+        "expected": "reject",
+        "status": "PASS",
+        "seconds": 11.488,
+        "log": "replay_logs/section14__missing_record.log",
+        "stdout": "",
+        "stderr": "Traceback (most recent call last):\n  File \"/private/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-math-replay-iw2pcwwg/work/report_parts/lower_section14/source_selected/verify_exact.py\", line 68, in <module>\n    for path in sys.argv[1:]:main(path)\n                             ^^^^^^^^^^\n  File \"/private/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-math-replay-iw2pcwwg/work/report_parts/lower_section14/source_selected/verify_exact.py\", line 63, in main\n    check((name,pi,goal,j),cs)\n  File \"/private/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-math-replay-iw2pcwwg/work/report_parts/lower_section14/source_selected/verify_exact.py\", line 47, in check\n    need(key in lookup,('missing obligation',key));ci,ti=lookup[key]\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/private/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-math-replay-iw2pcwwg/work/report_parts/lower_section14/source_selected/verify_exact.py\", line 8, in need\n    if not ok:raise ArithmeticError(message)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nArithmeticError: ('missing obligation', ('H22-chain', 255, \"good ('1', '') 0 [(1, 1), ()]\", 0))"
+      },
+      {
+        "label": "false_bound",
+        "command": [
+          "-O",
+          "verify_exact.py",
+          "/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/tmpljdnhu_i/false_bound.json"
+        ],
+        "cwd": "work/report_parts/lower_section14/source_selected",
+        "exit_code": 1,
+        "expected": "reject",
+        "status": "PASS",
+        "seconds": 0.523,
+        "log": "replay_logs/section14__false_bound.log",
+        "stdout": "",
+        "stderr": "Traceback (most recent call last):\n  File \"/private/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-math-replay-iw2pcwwg/work/report_parts/lower_section14/source_selected/verify_exact.py\", line 68, in <module>\n    for path in sys.argv[1:]:main(path)\n                             ^^^^^^^^^^\n  File \"/private/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-math-replay-iw2pcwwg/work/report_parts/lower_section14/source_selected/verify_exact.py\", line 55, in main\n    if excluded in lookup:check(excluded,base);counts['excluded_cases']+=1;continue\n                          ^^^^^^^^^^^^^^^^^^^^\n  File \"/private/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-math-replay-iw2pcwwg/work/report_parts/lower_section14/source_selected/verify_exact.py\", line 48, in check\n    need(premises[ci]==cs,('premise mismatch',key))\n  File \"/private/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-math-replay-iw2pcwwg/work/report_parts/lower_section14/source_selected/verify_exact.py\", line 8, in need\n    if not ok:raise ArithmeticError(message)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nArithmeticError: ('premise mismatch', ('H2', 0, 'EXCLUDED', -1))"
+      }
+    ]
+  },
+  {
+    "group": "section15",
+    "status": "PASS",
+    "records": [
+      {
+        "label": "run_checks_normal",
+        "command": [
+          "run_checks.py"
+        ],
+        "cwd": "work/report_parts/lower_120_132/width_oriented_mixed",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 287.886,
+        "log": "replay_logs/section15__run_checks_normal.log",
+        "stdout": "PASS trunk.verify_trunk.py.normal\nPASS trunk.verify_trunk.py.optimized\nPASS trunk.independent_trunk.py.normal\nPASS trunk.independent_trunk.py.optimized\nPASS residual.verify_residual.py.normal\nPASS residual.verify_residual.py.optimized\nPASS residual.independent_residual.py.normal\nPASS residual.independent_residual.py.optimized\nPASS extension1.verify_extensions.py.normal\nPASS extension1.verify_extensions.py.optimized\nPASS extension1.independent_extensions.py.normal\nPASS extension1.independent_extensions.py.optimized\nPASS extension2.verify_extensions.py.normal\nPASS extension2.verify_extensions.py.optimized\nPASS extension2.independent_extensions.py.normal\nPASS extension2.independent_extensions.py.optimized\nREJECTED negative.trunk_missing_record.verify_trunk.py\nREJECTED negative.trunk_missing_record.independent_trunk.py\nREJECTED negative.trunk_false_bound.verify_trunk.py\nREJECTED negative.trunk_false_bound.independent_trunk.py\nREJECTED negative.residual_missing_record.verify_residual.py\nREJECTED negative.residual_missing_record.independent_residual.py\nREJECTED negative.residual_flip_witness.verify_residual.py\nREJECTED negative.residual_flip_witness.independent_residual.py\nREJECTED negative.extension_missing_hypothesis.verify_extensions.py\nREJECTED negative.extension_missing_hypothesis.independent_extensions.py\nREJECTED negative.extension_state.verify_extensions.py\nREJECTED negative.extension_state.independent_extensions.py\nPASS_ALL_FINITE_GEOMETRY_CHECKS",
+        "stderr": ""
+      },
+      {
+        "label": "check_readable_normal",
+        "command": [
+          "check_readable.py"
+        ],
+        "cwd": "work/report_parts/lower_120_132/width_oriented_mixed",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 26.965,
+        "log": "replay_logs/section15__check_readable_normal.log",
+        "stdout": "VERIFIED_PRINTED_APPENDIX 239 values 10410 exact witnesses 61531 proof entries 97261 total entries",
+        "stderr": ""
+      },
+      {
+        "label": "check_readable_O",
+        "command": [
+          "-O",
+          "check_readable.py"
+        ],
+        "cwd": "work/report_parts/lower_120_132/width_oriented_mixed",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 26.786,
+        "log": "replay_logs/section15__check_readable_O.log",
+        "stdout": "VERIFIED_PRINTED_APPENDIX 239 values 10410 exact witnesses 61531 proof entries 97261 total entries",
+        "stderr": ""
+      },
+      {
+        "label": "verify_compressed_tex_normal",
+        "command": [
+          "verify_compressed_tex.py"
+        ],
+        "cwd": "work/report_parts/lower_120_132/width_oriented_mixed",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 0.221,
+        "log": "replay_logs/section15__verify_compressed_tex_normal.log",
+        "stdout": "VISIBLE SECTION15 LEDGER VERIFIED: 4402 shared rows expand to 33693 complete original groups.",
+        "stderr": ""
+      },
+      {
+        "label": "verify_compressed_tex_O",
+        "command": [
+          "-O",
+          "verify_compressed_tex.py"
+        ],
+        "cwd": "work/report_parts/lower_120_132/width_oriented_mixed",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 0.213,
+        "log": "replay_logs/section15__verify_compressed_tex_O.log",
+        "stdout": "VISIBLE SECTION15 LEDGER VERIFIED: 4402 shared rows expand to 33693 complete original groups.",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "group": "terminal",
+    "status": "PASS",
+    "records": [
+      {
+        "label": "run_validation_normal",
+        "command": [
+          "run_validation.py"
+        ],
+        "cwd": "work/report_parts/lower_133_139/width_oriented_mixed",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 25.373,
+        "log": "replay_logs/terminal__run_validation_normal.log",
+        "stdout": "verify_exact.py VERIFIED 952 proof records; 1741 endpoint branches; 789 componentwise comparisons\nverify_independent.py INDEPENDENTLY VERIFIED 952 proof records; 1741 endpoint branches; 789 componentwise comparisons\nREJECTED missing-record by both verifiers\nREJECTED altered-hypothesis by both verifiers\nREJECTED reversed-witness by both verifiers\nVALIDATION COMPLETE: four successful checks, six expected rejections",
+        "stderr": ""
+      },
+      {
+        "label": "check_readable_normal",
+        "command": [
+          "check_readable.py"
+        ],
+        "cwd": "work/report_parts/lower_133_139/width_oriented_mixed",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 2.044,
+        "log": "replay_logs/terminal__check_readable_normal.log",
+        "stdout": "INDEPENDENTLY VERIFIED 533 readable positivity witnesses and all 9 coefficients per witness",
+        "stderr": ""
+      },
+      {
+        "label": "check_readable_O",
+        "command": [
+          "-O",
+          "check_readable.py"
+        ],
+        "cwd": "work/report_parts/lower_133_139/width_oriented_mixed",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 3.075,
+        "log": "replay_logs/terminal__check_readable_O.log",
+        "stdout": "INDEPENDENTLY VERIFIED 533 readable positivity witnesses and all 9 coefficients per witness",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "group": "late",
+    "status": "PASS",
+    "records": [
+      {
+        "label": "negative_controls_normal",
+        "command": [
+          "negative_controls.py"
+        ],
+        "cwd": "work/report_parts/parity_experiment_late_readable",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 45.075,
+        "log": "replay_logs/late__negative_controls_normal.log",
+        "stdout": "PASS primary_right3_normal 3.583\nPASS primary_right3_O 3.612\nPASS primary_other_O 8.616\nPASS primary_other_normal 8.635\nPASS independent_right3_normal 2.126\nPASS independent_other_normal 4.453\nPASS negative_missing_complement_primary_normal 0.129\nPASS negative_missing_complement_primary_O 0.129\nPASS negative_missing_complement_independent_normal 0.295\nPASS negative_missing_complement_independent_O 1.928\nPASS negative_endpoint_coordinate_primary_normal 0.224\nPASS independent_right3_O 3.748\nPASS negative_endpoint_coordinate_primary_O 0.199\nPASS negative_endpoint_coordinate_independent_normal 0.461\nPASS independent_other_O 6.389\nPASS negative_weaken_strict_goodness_primary_normal 0.335\nPASS negative_weaken_strict_goodness_primary_O 0.33\nPASS negative_weaken_strict_goodness_independent_normal 0.39\nPASS negative_endpoint_coordinate_independent_O 1.569\nPASS negative_missing_implication_primary_normal 0.867\nPASS negative_weaken_strict_goodness_independent_O 1.515\nPASS negative_missing_implication_primary_O 0.885\nPASS negative_missing_implication_independent_normal 0.6\nPASS negative_reversed_witness_primary_normal 0.549\nPASS negative_reversed_witness_primary_O 0.557\nPASS negative_reversed_witness_independent_normal 0.506\nPASS negative_changed_family_primary_normal 0.167\nPASS negative_changed_family_primary_O 0.172\nPASS negative_changed_family_independent_normal 0.411\nPASS negative_missing_implication_independent_O 1.98\nPASS negative_changed_parent_context_primary_normal 0.153\nPASS negative_changed_parent_context_primary_O 0.144\nPASS negative_changed_parent_context_independent_normal 0.356\nPASS negative_reversed_witness_independent_O 1.87\nPASS negative_changed_base_primary_normal 0.149\nPASS negative_changed_base_primary_O 0.175\nPASS negative_changed_base_independent_normal 0.426\nPASS negative_changed_family_independent_O 1.677\nPASS negative_changed_parent_context_independent_O 1.745\nPASS negative_changed_base_independent_O 1.791\nPASS printed_numeric_normal 6.61\nPASS readable_normal 7.799\nPASS negative_readable_coefficient_normal 0.309\nPASS negative_readable_coefficient_O 1.588\nPASS negative_readable_lower_bound_normal 0.374\nPASS readable_O 8.992\nPASS negative_printed_missing_cell_normal 0.676\nPASS negative_readable_lower_bound_O 1.672\nPASS negative_printed_changed_bound_normal 0.606\nPASS negative_printed_missing_cell_O 1.936\nPASS negative_printed_transposed_cells_normal 0.648\nPASS negative_printed_changed_bound_O 1.947\nPASS negative_printed_wrong_rectangle_normal 0.654\nPASS printed_numeric_O 7.658\nPASS negative_printed_threshold_factor_normal 0.411\nPASS negative_printed_transposed_cells_O 1.912\nPASS negative_printed_wrong_rectangle_O 1.896\nPASS negative_printed_threshold_factor_O 1.694\nPASS negative_printed_omitted_witness_normal 5.955\nPASS negative_printed_omitted_witness_O 6.747\nVALIDATION PASS 12 accepted 48 corruptions rejected",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "group": "j_family",
+    "status": "PASS",
+    "records": [
+      {
+        "label": "check_j_short_normal",
+        "command": [
+          "check_j_short.py"
+        ],
+        "cwd": "verification/revision_math",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 0.276,
+        "log": "replay_logs/j_family__check_j_short_normal.log",
+        "stdout": "{\n  \"status\": \"passed\",\n  \"signs\": 28,\n  \"polynomials\": 2,\n  \"endpoint_branches\": 28\n}",
+        "stderr": ""
+      },
+      {
+        "label": "check_j_short_O",
+        "command": [
+          "-O",
+          "check_j_short.py"
+        ],
+        "cwd": "verification/revision_math",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 1.191,
+        "log": "replay_logs/j_family__check_j_short_O.log",
+        "stdout": "{\n  \"status\": \"passed\",\n  \"signs\": 28,\n  \"polynomials\": 2,\n  \"endpoint_branches\": 28\n}",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "group": "targets_bridges",
+    "status": "PASS",
+    "records": [
+      {
+        "label": "verify_h5_original_independent_normal",
+        "command": [
+          "verify_h5_original_independent.py"
+        ],
+        "cwd": "work/report_parts/occurrence_closure_v2",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 0.598,
+        "log": "replay_logs/targets_bridges__verify_h5_original_independent_normal.log",
+        "stdout": "H5 original two-cover lemma: 23 predecessors; 89 independent polynomial trees; 92 automatic branches; 3 branches assigned to the stated target-priority argument.",
+        "stderr": ""
+      },
+      {
+        "label": "verify_h5_original_independent_O",
+        "command": [
+          "-O",
+          "verify_h5_original_independent.py"
+        ],
+        "cwd": "work/report_parts/occurrence_closure_v2",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 1.509,
+        "log": "replay_logs/targets_bridges__verify_h5_original_independent_O.log",
+        "stdout": "H5 original two-cover lemma: 23 predecessors; 89 independent polynomial trees; 92 automatic branches; 3 branches assigned to the stated target-priority argument.",
+        "stderr": ""
+      },
+      {
+        "label": "verify_other22_residual_independent_normal",
+        "command": [
+          "verify_other22_residual_independent.py"
+        ],
+        "cwd": "work/report_parts/occurrence_closure_v2",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 0.82,
+        "log": "replay_logs/targets_bridges__verify_other22_residual_independent_normal.log",
+        "stdout": "OTHER22 RESIDUAL: six source contexts, 144 independently reconstructed exact obligations; no open cases.",
+        "stderr": ""
+      },
+      {
+        "label": "verify_other22_residual_independent_O",
+        "command": [
+          "-O",
+          "verify_other22_residual_independent.py"
+        ],
+        "cwd": "work/report_parts/occurrence_closure_v2",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 1.636,
+        "log": "replay_logs/targets_bridges__verify_other22_residual_independent_O.log",
+        "stdout": "OTHER22 RESIDUAL: six source contexts, 144 independently reconstructed exact obligations; no open cases.",
+        "stderr": ""
+      },
+      {
+        "label": "verify_target_printed_normal",
+        "command": [
+          "verify_target_printed.py"
+        ],
+        "cwd": "work/report_parts/occurrence_closure_v2",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 1.099,
+        "log": "replay_logs/targets_bridges__verify_target_printed_normal.log",
+        "stdout": "h5_original_appendix 89 obligations; 639 exact coefficient bounds checked\nother22_residual_appendix 144 obligations; 828 exact coefficient bounds checked",
+        "stderr": ""
+      },
+      {
+        "label": "verify_target_printed_O",
+        "command": [
+          "-O",
+          "verify_target_printed.py"
+        ],
+        "cwd": "work/report_parts/occurrence_closure_v2",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 2.036,
+        "log": "replay_logs/targets_bridges__verify_target_printed_O.log",
+        "stdout": "h5_original_appendix 89 obligations; 639 exact coefficient bounds checked\nother22_residual_appendix 144 obligations; 828 exact coefficient bounds checked",
+        "stderr": ""
+      },
+      {
+        "label": "verify_H_entry_bridges_independent_normal",
+        "command": [
+          "verify_H_entry_bridges_independent.py"
+        ],
+        "cwd": "work/report_parts/occurrence_closure_v2",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 0.465,
+        "log": "replay_logs/targets_bridges__verify_H_entry_bridges_independent_normal.log",
+        "stdout": "A n=0 74 independent obligations PASS\nA n>=1 61 independent obligations PASS\nB n=0 19 independent obligations PASS\nB n>=1 19 independent obligations PASS\nC n=0 6 independent obligations PASS\nC n>=1 6 independent obligations PASS\nINITIAL BRIDGES INDEPENDENT PASS: 185 polynomial identities and full-box signs",
+        "stderr": ""
+      },
+      {
+        "label": "verify_H_entry_bridges_independent_O",
+        "command": [
+          "-O",
+          "verify_H_entry_bridges_independent.py"
+        ],
+        "cwd": "work/report_parts/occurrence_closure_v2",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 1.377,
+        "log": "replay_logs/targets_bridges__verify_H_entry_bridges_independent_O.log",
+        "stdout": "A n=0 74 independent obligations PASS\nA n>=1 61 independent obligations PASS\nB n=0 19 independent obligations PASS\nB n>=1 19 independent obligations PASS\nC n=0 6 independent obligations PASS\nC n>=1 6 independent obligations PASS\nINITIAL BRIDGES INDEPENDENT PASS: 185 polynomial identities and full-box signs",
+        "stderr": ""
+      },
+      {
+        "label": "verify_H_bridge_printed_normal",
+        "command": [
+          "verify_H_bridge_printed.py"
+        ],
+        "cwd": "work/report_parts/occurrence_closure_v2",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 0.258,
+        "log": "replay_logs/targets_bridges__verify_H_bridge_printed_normal.log",
+        "stdout": "H BRIDGE PRINTED PACKET PASS: 185 obligations; 405 exact directed coefficient bounds; all evaluated endpoints.",
+        "stderr": ""
+      },
+      {
+        "label": "verify_H_bridge_printed_O",
+        "command": [
+          "-O",
+          "verify_H_bridge_printed.py"
+        ],
+        "cwd": "work/report_parts/occurrence_closure_v2",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 1.203,
+        "log": "replay_logs/targets_bridges__verify_H_bridge_printed_O.log",
+        "stdout": "H BRIDGE PRINTED PACKET PASS: 185 obligations; 405 exact directed coefficient bounds; all evaluated endpoints.",
+        "stderr": ""
+      },
+      {
+        "label": "check_H_entry_controls_normal",
+        "command": [
+          "check_H_entry_controls.py"
+        ],
+        "cwd": "work/report_parts/occurrence_closure_v2",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 3.642,
+        "log": "replay_logs/targets_bridges__check_H_entry_controls_normal.log",
+        "stdout": "INITIAL ENTRY CONTROLS PASS: 10 deliberate corruptions rejected",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "group": "suffix_histories",
+    "status": "PASS",
+    "records": [
+      {
+        "label": "history_left_normal",
+        "command": [
+          "verify_suffix_targets_independent.py",
+          "left"
+        ],
+        "cwd": "work/report_parts/occurrence_closure_v2",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 36.348,
+        "log": "replay_logs/suffix_histories__history_left_normal.log",
+        "stdout": "left 594 independently enumerated source histories; {'excluded': 1464, 'gap_bound': 72, 'automatic': 0}",
+        "stderr": ""
+      },
+      {
+        "label": "history_left_O",
+        "command": [
+          "-O",
+          "verify_suffix_targets_independent.py",
+          "left"
+        ],
+        "cwd": "work/report_parts/occurrence_closure_v2",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 32.748,
+        "log": "replay_logs/suffix_histories__history_left_O.log",
+        "stdout": "left 594 independently enumerated source histories; {'excluded': 1464, 'gap_bound': 72, 'automatic': 0}",
+        "stderr": ""
+      },
+      {
+        "label": "history_right_normal",
+        "command": [
+          "verify_suffix_targets_independent.py",
+          "right"
+        ],
+        "cwd": "work/report_parts/occurrence_closure_v2",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 3.839,
+        "log": "replay_logs/suffix_histories__history_right_normal.log",
+        "stdout": "right 90 independently enumerated source histories; {'excluded': 120, 'gap_bound': 144, 'automatic': 0}",
+        "stderr": ""
+      },
+      {
+        "label": "history_right_O",
+        "command": [
+          "-O",
+          "verify_suffix_targets_independent.py",
+          "right"
+        ],
+        "cwd": "work/report_parts/occurrence_closure_v2",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 4.661,
+        "log": "replay_logs/suffix_histories__history_right_O.log",
+        "stdout": "right 90 independently enumerated source histories; {'excluded': 120, 'gap_bound': 144, 'automatic': 0}",
+        "stderr": ""
+      },
+      {
+        "label": "history_mixed_normal",
+        "command": [
+          "verify_suffix_targets_independent.py",
+          "mixed"
+        ],
+        "cwd": "work/report_parts/occurrence_closure_v2",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 15.026,
+        "log": "replay_logs/suffix_histories__history_mixed_normal.log",
+        "stdout": "mixed 312 independently enumerated source histories; {'excluded': 576, 'gap_bound': 270, 'automatic': 0}",
+        "stderr": ""
+      },
+      {
+        "label": "history_mixed_O",
+        "command": [
+          "-O",
+          "verify_suffix_targets_independent.py",
+          "mixed"
+        ],
+        "cwd": "work/report_parts/occurrence_closure_v2",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 15.499,
+        "log": "replay_logs/suffix_histories__history_mixed_O.log",
+        "stdout": "mixed 312 independently enumerated source histories; {'excluded': 576, 'gap_bound': 270, 'automatic': 0}",
+        "stderr": ""
+      },
+      {
+        "label": "history_rightmixed_normal",
+        "command": [
+          "verify_suffix_targets_independent.py",
+          "rightmixed"
+        ],
+        "cwd": "work/report_parts/occurrence_closure_v2",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 3.479,
+        "log": "replay_logs/suffix_histories__history_rightmixed_normal.log",
+        "stdout": "rightmixed 90 independently enumerated source histories; {'excluded': 132, 'gap_bound': 0, 'automatic': 0}",
+        "stderr": ""
+      },
+      {
+        "label": "history_rightmixed_O",
+        "command": [
+          "-O",
+          "verify_suffix_targets_independent.py",
+          "rightmixed"
+        ],
+        "cwd": "work/report_parts/occurrence_closure_v2",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 4.321,
+        "log": "replay_logs/suffix_histories__history_rightmixed_O.log",
+        "stdout": "rightmixed 90 independently enumerated source histories; {'excluded': 132, 'gap_bound': 0, 'automatic': 0}",
+        "stderr": ""
+      },
+      {
+        "label": "verify_H_entry_reduction_independent_normal",
+        "command": [
+          "verify_H_entry_reduction_independent.py"
+        ],
+        "cwd": "work/report_parts/occurrence_closure_v2",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 14.238,
+        "log": "replay_logs/suffix_histories__verify_H_entry_reduction_independent_normal.log",
+        "stdout": "H ENTRY REDUCTION INDEPENDENT PASS: 406 histories; 844 exclusions; two S cases assigned to the parametric bridge lemma.",
+        "stderr": ""
+      },
+      {
+        "label": "verify_H_entry_reduction_independent_O",
+        "command": [
+          "-O",
+          "verify_H_entry_reduction_independent.py"
+        ],
+        "cwd": "work/report_parts/occurrence_closure_v2",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 15.191,
+        "log": "replay_logs/suffix_histories__verify_H_entry_reduction_independent_O.log",
+        "stdout": "H ENTRY REDUCTION INDEPENDENT PASS: 406 histories; 844 exclusions; two S cases assigned to the parametric bridge lemma.",
+        "stderr": ""
+      },
+      {
+        "label": "verify_all_history_printed_normal",
+        "command": [
+          "verify_all_history_printed.py"
+        ],
+        "cwd": "work/report_parts/occurrence_closure_v2",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 8.939,
+        "log": "replay_logs/suffix_histories__verify_all_history_printed_normal.log",
+        "stdout": "ACTUAL HISTORY TEX VERIFIED: 1492 paths; 3622 arithmetic obligations; two bridge survivors; 10746 coefficient bounds.",
+        "stderr": ""
+      },
+      {
+        "label": "verify_all_history_printed_O",
+        "command": [
+          "-O",
+          "verify_all_history_printed.py"
+        ],
+        "cwd": "work/report_parts/occurrence_closure_v2",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 10.006,
+        "log": "replay_logs/suffix_histories__verify_all_history_printed_O.log",
+        "stdout": "ACTUAL HISTORY TEX VERIFIED: 1492 paths; 3622 arithmetic obligations; two bridge survivors; 10746 coefficient bounds.",
+        "stderr": ""
+      },
+      {
+        "label": "check_suffix_negative_controls_normal",
+        "command": [
+          "check_suffix_negative_controls.py",
+          "left",
+          "right",
+          "mixed",
+          "rightmixed"
+        ],
+        "cwd": "work/report_parts/occurrence_closure_v2",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 21.3,
+        "log": "replay_logs/suffix_histories__check_suffix_negative_controls_normal.log",
+        "stdout": "24 deliberately corrupted certificates rejected",
+        "stderr": ""
+      },
+      {
+        "label": "missing_printed_history_False",
+        "command": [
+          "verify_all_history_printed.py",
+          "/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/tmp7qg8ldt3/missing_printed_path.tex"
+        ],
+        "cwd": "work/report_parts/occurrence_closure_v2",
+        "exit_code": 1,
+        "expected": "reject",
+        "status": "PASS",
+        "seconds": 8.864,
+        "log": "replay_logs/suffix_histories__missing_printed_history_False.log",
+        "stdout": "",
+        "stderr": "Traceback (most recent call last):\n  File \"/private/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-math-replay-iw2pcwwg/work/report_parts/occurrence_closure_v2/verify_all_history_printed.py\", line 117, in <module>\n    if __name__=='__main__':main(Path(sys.argv[1])if len(sys.argv)>1 else ROOT/'all_suffix_histories_appendix.tex')\n                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/private/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-math-replay-iw2pcwwg/work/report_parts/occurrence_closure_v2/verify_all_history_printed.py\", line 101, in main\n    need(seen==set(expected_paths),'complete printed path inventory')\n  File \"/private/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-math-replay-iw2pcwwg/work/report_parts/parity_experiment_late/independent_engine.py\", line 16, in need\n    if not ok:raise ArithmeticError(msg)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^\nArithmeticError: complete printed path inventory"
+      },
+      {
+        "label": "missing_printed_history_True",
+        "command": [
+          "-O",
+          "verify_all_history_printed.py",
+          "/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/tmp7qg8ldt3/missing_printed_path.tex"
+        ],
+        "cwd": "work/report_parts/occurrence_closure_v2",
+        "exit_code": 1,
+        "expected": "reject",
+        "status": "PASS",
+        "seconds": 9.679,
+        "log": "replay_logs/suffix_histories__missing_printed_history_True.log",
+        "stdout": "",
+        "stderr": "Traceback (most recent call last):\n  File \"/private/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-math-replay-iw2pcwwg/work/report_parts/occurrence_closure_v2/verify_all_history_printed.py\", line 117, in <module>\n    if __name__=='__main__':main(Path(sys.argv[1])if len(sys.argv)>1 else ROOT/'all_suffix_histories_appendix.tex')\n                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/private/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-math-replay-iw2pcwwg/work/report_parts/occurrence_closure_v2/verify_all_history_printed.py\", line 101, in main\n    need(seen==set(expected_paths),'complete printed path inventory')\n  File \"/private/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-math-replay-iw2pcwwg/work/report_parts/parity_experiment_late/independent_engine.py\", line 16, in need\n    if not ok:raise ArithmeticError(msg)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^\nArithmeticError: complete printed path inventory"
+      }
+    ]
+  },
+  {
+    "group": "middle",
+    "status": "PASS",
+    "records": [
+      {
+        "label": "induction_verify_exact_normal",
+        "command": [
+          "verify_exact.py"
+        ],
+        "cwd": "work/m2b_induction",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 13.766,
+        "log": "replay_logs/middle__induction_verify_exact_normal.log",
+        "stdout": "opposite_certificate.json : 1520 endpoint branches; 1982 proof records verified\nequal_certificate.json : 3984 endpoint branches; 6359 proof records verified\nExact reconstruction: VERIFIED",
+        "stderr": ""
+      },
+      {
+        "label": "induction_verify_exact_O",
+        "command": [
+          "-O",
+          "verify_exact.py"
+        ],
+        "cwd": "work/m2b_induction",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 15.351,
+        "log": "replay_logs/middle__induction_verify_exact_O.log",
+        "stdout": "opposite_certificate.json : 1520 endpoint branches; 1982 proof records verified\nequal_certificate.json : 3984 endpoint branches; 6359 proof records verified\nExact reconstruction: VERIFIED",
+        "stderr": ""
+      },
+      {
+        "label": "induction_verify_independent_normal",
+        "command": [
+          "verify_independent.py"
+        ],
+        "cwd": "work/m2b_induction",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 10.864,
+        "log": "replay_logs/middle__induction_verify_independent_normal.log",
+        "stdout": "opposite_certificate.json : 1982 proof records; 1520 endpoint branches; 406 componentwise truths\nequal_certificate.json : 6359 proof records; 3984 endpoint branches; 1562 componentwise truths\nuniform: 80 goodness cases; 11 J polynomials; all-k tail invariants\nelementary endpoint repair, reverse contacts and ratio bound: VERIFIED\nIndependent reconstruction and arithmetic: VERIFIED",
+        "stderr": ""
+      },
+      {
+        "label": "induction_verify_independent_O",
+        "command": [
+          "-O",
+          "verify_independent.py"
+        ],
+        "cwd": "work/m2b_induction",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 11.987,
+        "log": "replay_logs/middle__induction_verify_independent_O.log",
+        "stdout": "opposite_certificate.json : 1982 proof records; 1520 endpoint branches; 406 componentwise truths\nequal_certificate.json : 6359 proof records; 3984 endpoint branches; 1562 componentwise truths\nuniform: 80 goodness cases; 11 J polynomials; all-k tail invariants\nelementary endpoint repair, reverse contacts and ratio bound: VERIFIED\nIndependent reconstruction and arithmetic: VERIFIED",
+        "stderr": ""
+      },
+      {
+        "label": "initial_verify_exact_normal",
+        "command": [
+          "verify_exact.py"
+        ],
+        "cwd": "work/m2b_induction/initial",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 1.345,
+        "log": "replay_logs/middle__initial_verify_exact_normal.log",
+        "stdout": "{\"method\": \"Q(sqrt(3),sqrt(7)); rational sign certificates\", \"root_count\": 15, \"contact_count\": 14, \"goodness_count\": 15, \"dominance_count\": 8, \"Bernstein_coefficients\": 72, \"result\": \"verified\"}",
+        "stderr": ""
+      },
+      {
+        "label": "initial_verify_exact_O",
+        "command": [
+          "-O",
+          "verify_exact.py"
+        ],
+        "cwd": "work/m2b_induction/initial",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 1.231,
+        "log": "replay_logs/middle__initial_verify_exact_O.log",
+        "stdout": "{\"method\": \"Q(sqrt(3),sqrt(7)); rational sign certificates\", \"root_count\": 15, \"contact_count\": 14, \"goodness_count\": 15, \"dominance_count\": 8, \"Bernstein_coefficients\": 72, \"result\": \"verified\"}",
+        "stderr": ""
+      },
+      {
+        "label": "initial_verify_independent_normal",
+        "command": [
+          "verify_independent.py"
+        ],
+        "cwd": "work/m2b_induction/initial",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 0.16,
+        "log": "replay_logs/middle__initial_verify_independent_normal.log",
+        "stdout": "{\"method\": \"rational continued-fraction cylinders; no floating-point decisions\", \"root_endpoint_inequalities\": 30, \"goodness_child_endpoint_inequalities\": 60, \"adjacent_contacts\": 14, \"goodness_intersections\": 15, \"central_tail_separations\": 8, \"positive_bernstein_coefficients\": 72, \"result\": \"verified\"}",
+        "stderr": ""
+      },
+      {
+        "label": "initial_verify_independent_O",
+        "command": [
+          "-O",
+          "verify_independent.py"
+        ],
+        "cwd": "work/m2b_induction/initial",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 0.158,
+        "log": "replay_logs/middle__initial_verify_independent_O.log",
+        "stdout": "{\"method\": \"rational continued-fraction cylinders; no floating-point decisions\", \"root_endpoint_inequalities\": 30, \"goodness_child_endpoint_inequalities\": 60, \"adjacent_contacts\": 14, \"goodness_intersections\": 15, \"central_tail_separations\": 8, \"positive_bernstein_coefficients\": 72, \"result\": \"verified\"}",
+        "stderr": ""
+      },
+      {
+        "label": "run_validation_normal",
+        "command": [
+          "run_validation.py",
+          "--source",
+          "/private/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-math-replay-iw2pcwwg/work/m2b_induction"
+        ],
+        "cwd": "work/report_parts/m2b_appendix",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 55.036,
+        "log": "replay_logs/middle__run_validation_normal.log",
+        "stdout": "ACCEPTED verify_m2b_appendix_identity.py\nACCEPTED verify_m2b_appendix_identity.py -O\nACCEPTED verify_m2b_tex.py\nACCEPTED verify_m2b_tex.py -O\nREJECTED missing original record group\nREJECTED changed exact endpoint\nREJECTED changed printed parent index\nREJECTED changed printed continued fraction\nCOMPLETE: four positive identity gates and four rejected corruptions.",
+        "stderr": ""
+      }
+    ]
+  },
+  {
+    "group": "translation",
+    "status": "PASS",
+    "records": [
+      {
+        "label": "verify_translation_current_normal",
+        "command": [
+          "verify_translation_current.py"
+        ],
+        "cwd": "work/release_tools",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 0.254,
+        "log": "replay_logs/translation__verify_translation_current_normal.log",
+        "stdout": "CURRENT TRANSLATION VERIFIED: 140 fragments,109+57 exact decimal records, correct six-digit maximum period.",
+        "stderr": ""
+      },
+      {
+        "label": "verify_translation_current_O",
+        "command": [
+          "-O",
+          "verify_translation_current.py"
+        ],
+        "cwd": "work/release_tools",
+        "exit_code": 0,
+        "expected": "accept",
+        "status": "PASS",
+        "seconds": 0.23,
+        "log": "replay_logs/translation__verify_translation_current_O.log",
+        "stdout": "CURRENT TRANSLATION VERIFIED: 140 fragments,109+57 exact decimal records, correct six-digit maximum period.",
+        "stderr": ""
+      }
+    ]
+  }
+]

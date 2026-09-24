@@ -1,0 +1,324 @@
+{
+  "length": 2,
+  "return_blocks": false,
+  "geometry_moves": 409,
+  "history": [
+    {
+      "iteration": 1,
+      "domains": 77,
+      "components": 104,
+      "root_components": [
+        1
+      ],
+      "stable": false
+    },
+    {
+      "iteration": 2,
+      "domains": 54,
+      "components": 76,
+      "root_components": [
+        1
+      ],
+      "stable": false
+    },
+    {
+      "iteration": 3,
+      "domains": 36,
+      "components": 65,
+      "root_components": [
+        1
+      ],
+      "stable": false
+    },
+    {
+      "iteration": 4,
+      "domains": 23,
+      "components": 55,
+      "root_components": [
+        1
+      ],
+      "stable": false
+    },
+    {
+      "iteration": 5,
+      "domains": 17,
+      "components": 37,
+      "root_components": [
+        1
+      ],
+      "stable": false
+    },
+    {
+      "iteration": 6,
+      "domains": 11,
+      "components": 29,
+      "root_components": [
+        0
+      ],
+      "stable": false
+    },
+    {
+      "iteration": 7,
+      "domains": 11,
+      "components": 29,
+      "root_components": [
+        0
+      ],
+      "stable": false
+    },
+    {
+      "iteration": 8,
+      "domains": 11,
+      "components": 29,
+      "root_components": [
+        0
+      ],
+      "stable": false
+    },
+    {
+      "iteration": 9,
+      "domains": 11,
+      "components": 29,
+      "root_components": [
+        0
+      ],
+      "stable": false
+    },
+    {
+      "iteration": 10,
+      "domains": 11,
+      "components": 29,
+      "root_components": [
+        0
+      ],
+      "stable": false
+    },
+    {
+      "iteration": 11,
+      "domains": 11,
+      "components": 29,
+      "root_components": [
+        0
+      ],
+      "stable": false
+    },
+    {
+      "iteration": 12,
+      "domains": 9,
+      "components": 18,
+      "root_components": [
+        0
+      ],
+      "stable": false
+    },
+    {
+      "iteration": 13,
+      "domains": 5,
+      "components": 7,
+      "root_components": [
+        0
+      ],
+      "stable": false
+    },
+    {
+      "iteration": 14,
+      "domains": 1,
+      "components": 1,
+      "root_components": [
+        0
+      ],
+      "stable": false
+    },
+    {
+      "iteration": 15,
+      "domains": 0,
+      "components": 0,
+      "root_components": [
+        0
+      ],
+      "stable": false
+    }
+  ],
+  "reason": "empty",
+  "intervals": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+  ],
+  "closed": false,
+  "scope": "grid search; no nonexistence inference from an empty result",
+  "source": "return_domain_successors_20260925.json",
+  "source_sha256": "5c9e5fb98fd6959f8302d4997154007cde30cb658c3ca2fddd7fc02cb4acb6de"
+}

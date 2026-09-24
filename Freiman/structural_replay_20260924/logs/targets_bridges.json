@@ -1,0 +1,165 @@
+{
+  "group": "targets_bridges",
+  "status": "PASS",
+  "records": [
+    {
+      "label": "verify_h5_original_independent_normal",
+      "command": [
+        "verify_h5_original_independent.py"
+      ],
+      "cwd": "work/report_parts/occurrence_closure_v2",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 0.598,
+      "log": "replay_logs/targets_bridges__verify_h5_original_independent_normal.log",
+      "stdout": "H5 original two-cover lemma: 23 predecessors; 89 independent polynomial trees; 92 automatic branches; 3 branches assigned to the stated target-priority argument.",
+      "stderr": ""
+    },
+    {
+      "label": "verify_h5_original_independent_O",
+      "command": [
+        "-O",
+        "verify_h5_original_independent.py"
+      ],
+      "cwd": "work/report_parts/occurrence_closure_v2",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 1.509,
+      "log": "replay_logs/targets_bridges__verify_h5_original_independent_O.log",
+      "stdout": "H5 original two-cover lemma: 23 predecessors; 89 independent polynomial trees; 92 automatic branches; 3 branches assigned to the stated target-priority argument.",
+      "stderr": ""
+    },
+    {
+      "label": "verify_other22_residual_independent_normal",
+      "command": [
+        "verify_other22_residual_independent.py"
+      ],
+      "cwd": "work/report_parts/occurrence_closure_v2",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 0.82,
+      "log": "replay_logs/targets_bridges__verify_other22_residual_independent_normal.log",
+      "stdout": "OTHER22 RESIDUAL: six source contexts, 144 independently reconstructed exact obligations; no open cases.",
+      "stderr": ""
+    },
+    {
+      "label": "verify_other22_residual_independent_O",
+      "command": [
+        "-O",
+        "verify_other22_residual_independent.py"
+      ],
+      "cwd": "work/report_parts/occurrence_closure_v2",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 1.636,
+      "log": "replay_logs/targets_bridges__verify_other22_residual_independent_O.log",
+      "stdout": "OTHER22 RESIDUAL: six source contexts, 144 independently reconstructed exact obligations; no open cases.",
+      "stderr": ""
+    },
+    {
+      "label": "verify_target_printed_normal",
+      "command": [
+        "verify_target_printed.py"
+      ],
+      "cwd": "work/report_parts/occurrence_closure_v2",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 1.099,
+      "log": "replay_logs/targets_bridges__verify_target_printed_normal.log",
+      "stdout": "h5_original_appendix 89 obligations; 639 exact coefficient bounds checked\nother22_residual_appendix 144 obligations; 828 exact coefficient bounds checked",
+      "stderr": ""
+    },
+    {
+      "label": "verify_target_printed_O",
+      "command": [
+        "-O",
+        "verify_target_printed.py"
+      ],
+      "cwd": "work/report_parts/occurrence_closure_v2",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 2.036,
+      "log": "replay_logs/targets_bridges__verify_target_printed_O.log",
+      "stdout": "h5_original_appendix 89 obligations; 639 exact coefficient bounds checked\nother22_residual_appendix 144 obligations; 828 exact coefficient bounds checked",
+      "stderr": ""
+    },
+    {
+      "label": "verify_H_entry_bridges_independent_normal",
+      "command": [
+        "verify_H_entry_bridges_independent.py"
+      ],
+      "cwd": "work/report_parts/occurrence_closure_v2",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 0.465,
+      "log": "replay_logs/targets_bridges__verify_H_entry_bridges_independent_normal.log",
+      "stdout": "A n=0 74 independent obligations PASS\nA n>=1 61 independent obligations PASS\nB n=0 19 independent obligations PASS\nB n>=1 19 independent obligations PASS\nC n=0 6 independent obligations PASS\nC n>=1 6 independent obligations PASS\nINITIAL BRIDGES INDEPENDENT PASS: 185 polynomial identities and full-box signs",
+      "stderr": ""
+    },
+    {
+      "label": "verify_H_entry_bridges_independent_O",
+      "command": [
+        "-O",
+        "verify_H_entry_bridges_independent.py"
+      ],
+      "cwd": "work/report_parts/occurrence_closure_v2",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 1.377,
+      "log": "replay_logs/targets_bridges__verify_H_entry_bridges_independent_O.log",
+      "stdout": "A n=0 74 independent obligations PASS\nA n>=1 61 independent obligations PASS\nB n=0 19 independent obligations PASS\nB n>=1 19 independent obligations PASS\nC n=0 6 independent obligations PASS\nC n>=1 6 independent obligations PASS\nINITIAL BRIDGES INDEPENDENT PASS: 185 polynomial identities and full-box signs",
+      "stderr": ""
+    },
+    {
+      "label": "verify_H_bridge_printed_normal",
+      "command": [
+        "verify_H_bridge_printed.py"
+      ],
+      "cwd": "work/report_parts/occurrence_closure_v2",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 0.258,
+      "log": "replay_logs/targets_bridges__verify_H_bridge_printed_normal.log",
+      "stdout": "H BRIDGE PRINTED PACKET PASS: 185 obligations; 405 exact directed coefficient bounds; all evaluated endpoints.",
+      "stderr": ""
+    },
+    {
+      "label": "verify_H_bridge_printed_O",
+      "command": [
+        "-O",
+        "verify_H_bridge_printed.py"
+      ],
+      "cwd": "work/report_parts/occurrence_closure_v2",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 1.203,
+      "log": "replay_logs/targets_bridges__verify_H_bridge_printed_O.log",
+      "stdout": "H BRIDGE PRINTED PACKET PASS: 185 obligations; 405 exact directed coefficient bounds; all evaluated endpoints.",
+      "stderr": ""
+    },
+    {
+      "label": "check_H_entry_controls_normal",
+      "command": [
+        "check_H_entry_controls.py"
+      ],
+      "cwd": "work/report_parts/occurrence_closure_v2",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 3.642,
+      "log": "replay_logs/targets_bridges__check_H_entry_controls_normal.log",
+      "stdout": "INITIAL ENTRY CONTROLS PASS: 10 deliberate corruptions rejected",
+      "stderr": ""
+    }
+  ]
+}

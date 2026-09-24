@@ -1,0 +1,28 @@
+{
+  "claim": 4,
+  "target": [
+    4.171797,
+    4.172072
+  ],
+  "language_state_pairs": 112,
+  "source_sha256": "74b1dd046490caa96bdc048dcea553a3eb672cc5d3e4797e175f17b6e24a2ba4",
+  "input_sha256": "be9600c2aef917812bb5ce028933cb3512c9fe75ee7906408050f53b1d786b6a",
+  "cpp_sha256": "c1bf515d8b77ab0b01b57f011b1001dd9d97909d495eba865a7df27f2326a63f",
+  "scan": {
+    "exponent": 11,
+    "scale": 1000000000000000,
+    "visited": 227931506,
+    "leaves": 79621196,
+    "max_width_units": 10000,
+    "max_depth": 25,
+    "complete": true,
+    "covers_target": true,
+    "seconds": 75.7189,
+    "covered": [
+      [
+        1171797000000000,
+        1172072000000000
+      ]
+    ]
+  }
+}

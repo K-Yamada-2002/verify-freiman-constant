@@ -1,0 +1,647 @@
+{
+  "schema": "kf131-scalar-atlas-v1",
+  "settings": {
+    "base": 0.996,
+    "bins": 512,
+    "memory": 7,
+    "grid": 1024000000,
+    "max_step": 4,
+    "block_span": 1
+  },
+  "nodes": [
+    {
+      "id": 0,
+      "states": [
+        "22222",
+        "22222"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "interval": [
+        -187000000,
+        -186000000
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -113971908,
+                -113276859
+              ],
+              "destinations": [
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "321",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -103358382,
+                -76180400
+              ],
+              "destinations": [
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16
+              ]
+            }
+          ]
+        }
+      ],
+      "source_node": 398520
+    },
+    {
+      "id": 1,
+      "states": [
+        "22222",
+        "22222"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -187000000,
+        -186000000
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "32",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -176762570,
+                -168666410
+              ],
+              "destinations": [
+                17,
+                18,
+                19,
+                20,
+                21
+              ]
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "321",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -100575139,
+                -76333066
+              ],
+              "destinations": [
+                22,
+                23,
+                24,
+                25,
+                26
+              ]
+            }
+          ]
+        }
+      ],
+      "source_node": 390934
+    },
+    {
+      "id": 2,
+      "states": [
+        "22222",
+        "22223"
+      ],
+      "parity": -1,
+      "ratio_bin": 418,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -113971908,
+        -113276859
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 234244
+    },
+    {
+      "id": 3,
+      "states": [
+        "22222",
+        "22223"
+      ],
+      "parity": -1,
+      "ratio_bin": 418,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -113971908,
+        -113276859
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 234245
+    },
+    {
+      "id": 4,
+      "states": [
+        "22222",
+        "22223"
+      ],
+      "parity": -1,
+      "ratio_bin": 418,
+      "ratio_refinement": [
+        3,
+        1
+      ],
+      "interval": [
+        -113971908,
+        -113276859
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 398501
+    },
+    {
+      "id": 5,
+      "states": [
+        "22222",
+        "22223"
+      ],
+      "parity": -1,
+      "ratio_bin": 419,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -113971908,
+        -113276859
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 234248
+    },
+    {
+      "id": 6,
+      "states": [
+        "22222",
+        "22223"
+      ],
+      "parity": -1,
+      "ratio_bin": 419,
+      "interval": [
+        -113971908,
+        -113276859
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 234249
+    },
+    {
+      "id": 7,
+      "states": [
+        "22222",
+        "22223"
+      ],
+      "parity": -1,
+      "ratio_bin": 419,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        -113971908,
+        -113276859
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 234243
+    },
+    {
+      "id": 8,
+      "states": [
+        "222223",
+        "2222321"
+      ],
+      "parity": 1,
+      "ratio_bin": 492,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -103358382,
+        -76180400
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -1683
+    },
+    {
+      "id": 9,
+      "states": [
+        "222223",
+        "2222321"
+      ],
+      "parity": 1,
+      "ratio_bin": 492,
+      "ratio_refinement": [
+        3,
+        1
+      ],
+      "interval": [
+        -103358382,
+        -76180400
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -1684
+    },
+    {
+      "id": 10,
+      "states": [
+        "222223",
+        "2222321"
+      ],
+      "parity": 1,
+      "ratio_bin": 492,
+      "ratio_refinement": [
+        3,
+        2
+      ],
+      "interval": [
+        -103358382,
+        -76180400
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -1685
+    },
+    {
+      "id": 11,
+      "states": [
+        "222223",
+        "2222321"
+      ],
+      "parity": 1,
+      "ratio_bin": 492,
+      "ratio_refinement": [
+        3,
+        3
+      ],
+      "interval": [
+        -103358382,
+        -76180400
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -1686
+    },
+    {
+      "id": 12,
+      "states": [
+        "222223",
+        "2222321"
+      ],
+      "parity": 1,
+      "ratio_bin": 492,
+      "ratio_refinement": [
+        3,
+        4
+      ],
+      "interval": [
+        -103358382,
+        -76180400
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -1687
+    },
+    {
+      "id": 13,
+      "states": [
+        "222223",
+        "2222321"
+      ],
+      "parity": 1,
+      "ratio_bin": 492,
+      "ratio_refinement": [
+        3,
+        5
+      ],
+      "interval": [
+        -103358382,
+        -76180400
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -1688
+    },
+    {
+      "id": 14,
+      "states": [
+        "222223",
+        "2222321"
+      ],
+      "parity": 1,
+      "ratio_bin": 492,
+      "ratio_refinement": [
+        3,
+        6
+      ],
+      "interval": [
+        -103358382,
+        -76180400
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -1689
+    },
+    {
+      "id": 15,
+      "states": [
+        "222223",
+        "2222321"
+      ],
+      "parity": 1,
+      "ratio_bin": 492,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -103358382,
+        -76180400
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -1690
+    },
+    {
+      "id": 16,
+      "states": [
+        "222223",
+        "2222321"
+      ],
+      "parity": 1,
+      "ratio_bin": 493,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -103358382,
+        -76180400
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -1691
+    },
+    {
+      "id": 17,
+      "states": [
+        "222223",
+        "2222232"
+      ],
+      "parity": -1,
+      "ratio_bin": 267,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -176762570,
+        -168666410
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -773
+    },
+    {
+      "id": 18,
+      "states": [
+        "222223",
+        "2222232"
+      ],
+      "parity": -1,
+      "ratio_bin": 267,
+      "ratio_refinement": [
+        3,
+        1
+      ],
+      "interval": [
+        -176762570,
+        -168666410
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -774
+    },
+    {
+      "id": 19,
+      "states": [
+        "222223",
+        "2222232"
+      ],
+      "parity": -1,
+      "ratio_bin": 268,
+      "ratio_refinement": [
+        3,
+        5
+      ],
+      "interval": [
+        -176762570,
+        -168666410
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -775
+    },
+    {
+      "id": 20,
+      "states": [
+        "222223",
+        "2222232"
+      ],
+      "parity": -1,
+      "ratio_bin": 268,
+      "ratio_refinement": [
+        3,
+        6
+      ],
+      "interval": [
+        -176762570,
+        -168666410
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -776
+    },
+    {
+      "id": 21,
+      "states": [
+        "222223",
+        "2222232"
+      ],
+      "parity": -1,
+      "ratio_bin": 268,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -176762570,
+        -168666410
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -777
+    },
+    {
+      "id": 22,
+      "states": [
+        "222223",
+        "2222321"
+      ],
+      "parity": 1,
+      "ratio_bin": 492,
+      "ratio_refinement": [
+        3,
+        3
+      ],
+      "interval": [
+        -100575139,
+        -76333066
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -1686
+    },
+    {
+      "id": 23,
+      "states": [
+        "222223",
+        "2222321"
+      ],
+      "parity": 1,
+      "ratio_bin": 492,
+      "ratio_refinement": [
+        3,
+        4
+      ],
+      "interval": [
+        -100575139,
+        -76333066
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -1687
+    },
+    {
+      "id": 24,
+      "states": [
+        "222223",
+        "2222321"
+      ],
+      "parity": 1,
+      "ratio_bin": 492,
+      "ratio_refinement": [
+        3,
+        5
+      ],
+      "interval": [
+        -100575139,
+        -76333066
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -1688
+    },
+    {
+      "id": 25,
+      "states": [
+        "222223",
+        "2222321"
+      ],
+      "parity": 1,
+      "ratio_bin": 492,
+      "ratio_refinement": [
+        3,
+        6
+      ],
+      "interval": [
+        -100575139,
+        -76333066
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -1689
+    },
+    {
+      "id": 26,
+      "states": [
+        "222223",
+        "2222321"
+      ],
+      "parity": 1,
+      "ratio_bin": 492,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -100575139,
+        -76333066
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -1690
+    }
+  ],
+  "roots": [
+    0,
+    1
+  ],
+  "closed_candidate": false,
+  "status": "local gap repairs; child obligations remain open",
+  "open_nodes": 25
+}

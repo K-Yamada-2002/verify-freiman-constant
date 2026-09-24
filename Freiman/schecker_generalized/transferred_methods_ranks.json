@@ -1,0 +1,117 @@
+{
+  "continued_reduced.json": {
+    "scope": "chosen strategy only; finite rank does not refute filledness",
+    "proof_hash": "13b4b13becd3e244958ffe08b5b89257eb957bde106bcc3ea94bf735653e23f7",
+    "nodes": 2821,
+    "root_ranks": {
+      "zero": 2,
+      "positive": 2
+    },
+    "histogram": {
+      "0": 1758,
+      "1": 713,
+      "2": 324,
+      "3": 26
+    },
+    "structurally_closed": 0
+  },
+  "propagated_incoming.json": {
+    "scope": "chosen strategy only; finite rank does not refute filledness",
+    "proof_hash": "5ee38f1770f2623fd227ca9caa7966113147ca5e26ee0a19cf922f7a25381427",
+    "nodes": 2908,
+    "root_ranks": {
+      "zero": 2,
+      "positive": 2
+    },
+    "histogram": {
+      "0": 1828,
+      "1": 726,
+      "2": 327,
+      "3": 27
+    },
+    "structurally_closed": 0
+  },
+  "known_returns_run.json": {
+    "scope": "chosen strategy only; finite rank does not refute filledness",
+    "proof_hash": "cc0d2e8d43226915e434fccfc18c4d2b53a0adb631fed01f3862ea21f21baee5",
+    "nodes": 3664,
+    "root_ranks": {
+      "zero": 2,
+      "positive": 2
+    },
+    "histogram": {
+      "0": 2459,
+      "1": 784,
+      "2": 380,
+      "3": 41
+    },
+    "structurally_closed": 0
+  },
+  "root_shape_expansion.json": {
+    "scope": "chosen strategy only; finite rank does not refute filledness",
+    "proof_hash": "fdf00c811bfa0a2357fdfcc4cf5e3a3d55332ce2618d04e3c64f85f5b01e68f3",
+    "nodes": 2911,
+    "root_ranks": {
+      "zero": 2,
+      "positive": 3
+    },
+    "histogram": {
+      "0": 1830,
+      "1": 726,
+      "2": 327,
+      "3": 28
+    },
+    "structurally_closed": 0
+  },
+  "root_memory_expansion.json": {
+    "scope": "chosen strategy only; finite rank does not refute filledness",
+    "proof_hash": "b5042ebfb275fcfa5e970c28b14e2969b543f91062ca41b96d751e329b3011d2",
+    "nodes": 2961,
+    "root_ranks": {
+      "zero": 3,
+      "positive": 4
+    },
+    "histogram": {
+      "0": 1860,
+      "1": 735,
+      "2": 334,
+      "3": 31,
+      "4": 1
+    },
+    "structurally_closed": 0
+  },
+  "root_native_continuation.json": {
+    "scope": "chosen strategy only; finite rank does not refute filledness",
+    "proof_hash": "e7e42f74e503e3a51f96aec58ed7a8c2b1805af8127aca5dc7bff1e50cbb9337",
+    "nodes": 3125,
+    "root_ranks": {
+      "zero": 4,
+      "positive": 4
+    },
+    "histogram": {
+      "0": 1960,
+      "1": 777,
+      "2": 349,
+      "3": 37,
+      "4": 2
+    },
+    "structurally_closed": 0
+  },
+  "exact_offers_search.json": {
+    "scope": "chosen strategy only; finite rank does not refute filledness",
+    "proof_hash": "c5eac4a36fa6e52b719548f25ed5caaa3ecd31a57a6c9c19cc36461095f5b8fe",
+    "nodes": 205,
+    "root_ranks": {
+      "zero": 4,
+      "positive": 4
+    },
+    "histogram": {
+      "0": 124,
+      "1": 51,
+      "2": 20,
+      "3": 8,
+      "4": 2
+    },
+    "structurally_closed": 0
+  }
+}

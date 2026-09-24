@@ -1,0 +1,20 @@
+{
+  "group": "late",
+  "status": "PASS",
+  "records": [
+    {
+      "label": "negative_controls_normal",
+      "command": [
+        "negative_controls.py"
+      ],
+      "cwd": "work/report_parts/parity_experiment_late_readable",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 45.075,
+      "log": "replay_logs/late__negative_controls_normal.log",
+      "stdout": "PASS primary_right3_normal 3.583\nPASS primary_right3_O 3.612\nPASS primary_other_O 8.616\nPASS primary_other_normal 8.635\nPASS independent_right3_normal 2.126\nPASS independent_other_normal 4.453\nPASS negative_missing_complement_primary_normal 0.129\nPASS negative_missing_complement_primary_O 0.129\nPASS negative_missing_complement_independent_normal 0.295\nPASS negative_missing_complement_independent_O 1.928\nPASS negative_endpoint_coordinate_primary_normal 0.224\nPASS independent_right3_O 3.748\nPASS negative_endpoint_coordinate_primary_O 0.199\nPASS negative_endpoint_coordinate_independent_normal 0.461\nPASS independent_other_O 6.389\nPASS negative_weaken_strict_goodness_primary_normal 0.335\nPASS negative_weaken_strict_goodness_primary_O 0.33\nPASS negative_weaken_strict_goodness_independent_normal 0.39\nPASS negative_endpoint_coordinate_independent_O 1.569\nPASS negative_missing_implication_primary_normal 0.867\nPASS negative_weaken_strict_goodness_independent_O 1.515\nPASS negative_missing_implication_primary_O 0.885\nPASS negative_missing_implication_independent_normal 0.6\nPASS negative_reversed_witness_primary_normal 0.549\nPASS negative_reversed_witness_primary_O 0.557\nPASS negative_reversed_witness_independent_normal 0.506\nPASS negative_changed_family_primary_normal 0.167\nPASS negative_changed_family_primary_O 0.172\nPASS negative_changed_family_independent_normal 0.411\nPASS negative_missing_implication_independent_O 1.98\nPASS negative_changed_parent_context_primary_normal 0.153\nPASS negative_changed_parent_context_primary_O 0.144\nPASS negative_changed_parent_context_independent_normal 0.356\nPASS negative_reversed_witness_independent_O 1.87\nPASS negative_changed_base_primary_normal 0.149\nPASS negative_changed_base_primary_O 0.175\nPASS negative_changed_base_independent_normal 0.426\nPASS negative_changed_family_independent_O 1.677\nPASS negative_changed_parent_context_independent_O 1.745\nPASS negative_changed_base_independent_O 1.791\nPASS printed_numeric_normal 6.61\nPASS readable_normal 7.799\nPASS negative_readable_coefficient_normal 0.309\nPASS negative_readable_coefficient_O 1.588\nPASS negative_readable_lower_bound_normal 0.374\nPASS readable_O 8.992\nPASS negative_printed_missing_cell_normal 0.676\nPASS negative_readable_lower_bound_O 1.672\nPASS negative_printed_changed_bound_normal 0.606\nPASS negative_printed_missing_cell_O 1.936\nPASS negative_printed_transposed_cells_normal 0.648\nPASS negative_printed_changed_bound_O 1.947\nPASS negative_printed_wrong_rectangle_normal 0.654\nPASS printed_numeric_O 7.658\nPASS negative_printed_threshold_factor_normal 0.411\nPASS negative_printed_transposed_cells_O 1.912\nPASS negative_printed_wrong_rectangle_O 1.896\nPASS negative_printed_threshold_factor_O 1.694\nPASS negative_printed_omitted_witness_normal 5.955\nPASS negative_printed_omitted_witness_O 6.747\nVALIDATION PASS 12 accepted 48 corruptions rejected",
+      "stderr": ""
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "source_sha256": "a45d5c604c0b7f04a667f6a1907860a696b9529d6818788b6354daaaf4c90cf5",
+  "check": "Exact path-set equality, not just counts",
+  "histories": {
+    "left": 594,
+    "right": 90,
+    "mixed": 312,
+    "rightmixed": 90
+  }
+}

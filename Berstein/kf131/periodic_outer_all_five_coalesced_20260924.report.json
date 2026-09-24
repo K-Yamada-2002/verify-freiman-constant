@@ -1,0 +1,167 @@
+{
+  "merges": [
+    {
+      "kept": 21,
+      "removed": 15,
+      "kind": "scalar union"
+    },
+    {
+      "kept": 24,
+      "removed": 17,
+      "kind": "scalar union"
+    },
+    {
+      "kept": 27,
+      "removed": 19,
+      "kind": "scalar union"
+    },
+    {
+      "kept": 30,
+      "removed": 22,
+      "kind": "scalar union"
+    },
+    {
+      "kept": 33,
+      "removed": 32,
+      "kind": "scalar union"
+    },
+    {
+      "kept": 36,
+      "removed": 35,
+      "kind": "scalar union"
+    },
+    {
+      "kept": 41,
+      "removed": 40,
+      "kind": "scalar union"
+    },
+    {
+      "kept": 65,
+      "removed": 43,
+      "kind": "scalar union"
+    },
+    {
+      "kept": 65,
+      "removed": 45,
+      "kind": "scalar union"
+    },
+    {
+      "kept": 67,
+      "removed": 54,
+      "kind": "scalar union"
+    },
+    {
+      "kept": 73,
+      "removed": 58,
+      "kind": "scalar union"
+    },
+    {
+      "kept": 73,
+      "removed": 75,
+      "kind": "scalar union"
+    },
+    {
+      "kept": 73,
+      "removed": 77,
+      "kind": "scalar union"
+    },
+    {
+      "kept": 73,
+      "removed": 62,
+      "kind": "scalar union"
+    },
+    {
+      "kept": 73,
+      "removed": 79,
+      "kind": "scalar union"
+    },
+    {
+      "kept": 73,
+      "removed": 81,
+      "kind": "scalar union"
+    },
+    {
+      "kept": 73,
+      "removed": 66,
+      "kind": "scalar union"
+    },
+    {
+      "kept": 73,
+      "removed": 47,
+      "kind": "scalar union"
+    },
+    {
+      "kept": 73,
+      "removed": 44,
+      "kind": "scalar union"
+    },
+    {
+      "kept": 73,
+      "removed": 46,
+      "kind": "scalar union"
+    },
+    {
+      "kept": 74,
+      "removed": 76,
+      "kind": "scalar union"
+    },
+    {
+      "kept": 74,
+      "removed": 78,
+      "kind": "scalar union"
+    },
+    {
+      "kept": 74,
+      "removed": 80,
+      "kind": "scalar union"
+    },
+    {
+      "kept": 74,
+      "removed": 82,
+      "kind": "scalar union"
+    },
+    {
+      "kept": 74,
+      "removed": 48,
+      "kind": "scalar union"
+    },
+    {
+      "kept": 52,
+      "removed": 69,
+      "kind": "scalar union"
+    },
+    {
+      "kept": 56,
+      "removed": 71,
+      "kind": "scalar union"
+    },
+    {
+      "kept": 25,
+      "removed": 26,
+      "kind": "dyadic union"
+    },
+    {
+      "kept": 28,
+      "removed": 29,
+      "kind": "dyadic union"
+    },
+    {
+      "kept": 49,
+      "removed": 50,
+      "kind": "dyadic union"
+    },
+    {
+      "kept": 59,
+      "removed": 60,
+      "kind": "dyadic union"
+    },
+    {
+      "kept": 63,
+      "removed": 64,
+      "kind": "dyadic union"
+    }
+  ],
+  "before": 83,
+  "after": 51,
+  "status": "equivalent open obligations; no filling asserted"
+}

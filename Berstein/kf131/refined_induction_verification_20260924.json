@@ -1,0 +1,50 @@
+{
+  "source_sha256": "115a300f7126a102cff75855c51b6b8c9708589822924a277800b42964028a46",
+  "closed": false,
+  "closed_rejection": "node 26 is an open obligation",
+  "physical_seed_verified": true,
+  "physical_interval": [
+    {
+      "a": {
+        "a": "7586808277433294773642817121/9002448733953151449088000000",
+        "b": "0"
+      },
+      "b": {
+        "a": "195632906369801625377/900244873395315144908800000",
+        "b": "0"
+      },
+      "decimal": "0.8427497082528646502647"
+    },
+    {
+      "a": {
+        "a": "3793404140647671873190799979/4501224366976575724544000000",
+        "b": "0"
+      },
+      "b": {
+        "a": "97697355434173297323/450122436697657572454400000",
+        "b": "0"
+      },
+      "decimal": "0.8427497083076781683177"
+    }
+  ],
+  "known_refutations": [],
+  "bank_size": 980,
+  "nodes": 30,
+  "local_rules": 16,
+  "open_nodes": 14,
+  "supported_nodes": [],
+  "root_ranks": [
+    4
+  ],
+  "code_hashes": {
+    "verify_scalar_graph.py": "09594db350e288b67b3d071cc9330f58f315974b67e3eeffeda8607b02332726",
+    "verify_type_graph.py": "14d3fc9d582f93078dbb89d927ff669999c25a7f4f7bbd6cdc50cb96778ddad7",
+    "repair_gap_intervals.py": "40ae784efbe148b09e4ed53dea2aa48579cd2dcc94c6b112c9eb7f0f6f5386a5",
+    "add_gap_repair_moves.py": "6024badd6f457841e766c407ea68b5bfe2051168549465f26dd3dafc183f1b64",
+    "continue_gap_closure.py": "799c747d0d5fa846236cae6be7eb9efa6864f9137ffc71d876741b07cd8b5e56",
+    "coalesce_open_types.py": "1432f2fde8085437c4cf2f11b04a1e38f0f4990e315da4358e0fa4544f62ac82",
+    "contract_scalar_graph.py": "5f082e1903591653f1ef12b92b8e59eec6103c072c3005e1e88d08ca8e7fbe34",
+    "refine_scalar_seed.py": "74f359010bb7dbb6d6fa43ac6a306d32b46627ce652aecdeaa79b8e75e788d84",
+    "audit_whole_scalar_intervals.py": "f1821a87bd1985beb8bd69f058a3a6538d572d5817d8d7de06b4048dac0e3e8a"
+  }
+}

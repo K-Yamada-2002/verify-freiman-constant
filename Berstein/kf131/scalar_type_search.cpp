@@ -4,10 +4,20 @@
 #define KF131_SEARCH_LIBRARY
 #include "adaptive_type_search.cpp"
 #include <cstdio>
+#include <filesystem>
 using Segment = pair<int, int>;
 using Domain = vector<Segment>;
 vector<Domain> domains;
 int grid = 1024;
+double band_slope = 0;
+bool tail_tilt = false;
+string band_tail;
+vector<double> shape_slopes;
+vector<double> band_slopes{0};
+double domain_slope(int did) {
+  const auto &c = cells[did % cells.size()];
+  return c.p * (tail_tilt ? shape_slopes[c.t] : band_slopes[did / cells.size()]);
+}
 struct ScalarCase {
   bool swap;
   Segment interval;
@@ -36,16 +46,19 @@ Bounds quadratic_range(string w, double k, Bounds rb) {
   }
   return out;
 }
-Bounds combine(const Cell &c, Bounds l, Bounds r) {
+Bounds combine(const Cell &c, Bounds l, Bounds r, double parent_slope) {
   if (c.p < 0)
     r = {-r.hi, -r.lo};
+  r.lo -= parent_slope;
+  r.hi -= parent_slope;
   return {l.lo + min(c.q.lo * r.lo, c.q.hi * r.lo),
           l.hi + max(c.q.lo * r.hi, c.q.hi * r.hi)};
 }
-Bounds endpoint_image(const Cell &c, const Move &m, bool sw, double endpoint) {
+Bounds endpoint_image(const Cell &c, const Move &m, bool sw, double endpoint,
+                      double child_slope, double parent_slope) {
   int eu = m.u.size() % 2 ? -1 : 1, ev = m.v.size() % 2 ? -1 : 1;
-  return combine(c, quadratic_range(m.u, sw ? 0 : eu * endpoint, c.r),
-                 quadratic_range(m.v, sw ? ev * endpoint : 0, c.sb));
+  return combine(c, quadratic_range(m.u, sw ? c.p * ev * child_slope : eu * endpoint, c.r),
+                 quadratic_range(m.v, sw ? ev * endpoint : c.p * eu * child_slope, c.sb),parent_slope);
 }
 Domain intersect(const Domain &a, const Domain &b) {
   Domain out;
@@ -62,7 +75,7 @@ Domain intersect(const Domain &a, const Domain &b) {
   return out;
 }
 vector<ScalarOffer> scalar_offers(int cid) {
-  const auto &c = cells[cid];
+  const auto &c = cells[cid % cells.size()];
   vector<ScalarOffer> all;
   for (int mi = 0; mi < (int)c.moves.size(); ++mi) {
     const auto &m = c.moves[mi];
@@ -71,21 +84,24 @@ vector<ScalarOffer> scalar_offers(int cid) {
       dependencies[d.swap].push_back(d.cell);
     vector<ScalarOffer> branches[2];
     for (int sw = 0; sw < 2; ++sw) {
-      auto &deps = dependencies[sw];
-      if (deps.empty())
+      if (dependencies[sw].empty())
         continue;
+      for (int layer = 0; layer < (int)band_slopes.size(); ++layer) {
+      vector<int> deps;
+      for (int d : dependencies[sw]) deps.push_back(layer*cells.size()+d);
       Domain common = domains[deps.front()];
       for (size_t i = 1; i < deps.size() && !common.empty(); ++i)
         common = intersect(common, domains[deps[i]]);
       for (auto ab : common) {
-        auto l = endpoint_image(c, m, sw, double(ab.first) / grid);
-        auto r = endpoint_image(c, m, sw, double(ab.second) / grid);
+        auto l = endpoint_image(c, m, sw, double(ab.first) / grid,domain_slope(deps.front()),domain_slope(cid));
+        auto r = endpoint_image(c, m, sw, double(ab.second) / grid,domain_slope(deps.front()),domain_slope(cid));
         int sign = sw ? c.p * (m.v.size() % 2 ? -1 : 1)
                       : (m.u.size() % 2 ? -1 : 1);
         double lo = sign > 0 ? l.hi : r.hi;
         double hi = sign > 0 ? r.lo : l.lo;
         if (lo < hi)
           branches[sw].push_back({lo, hi, mi, {{bool(sw), ab, deps}}});
+      }
       }
       sort(branches[sw].begin(), branches[sw].end(),
            [](const auto &a, const auto &b) { return a.lo < b.lo; });
@@ -132,13 +148,16 @@ void initial_domains() {
   double a = (2 * sqrt(10) - 5) / 5, b = (2 * sqrt(10) - 4) / 3,
          cc = (sqrt(10) - 2) / 4, d = (2 * sqrt(10) - 5) / 3;
   array<Bounds, 3> tails = {Bounds{a, b}, Bounds{cc, b}, Bounds{a, d}};
-  for (const auto &c : cells) {
+  for (int layer = 0; layer < (int)band_slopes.size(); ++layer)
+  for (int cid = 0; cid < (int)cells.size(); ++cid) {
+    const auto &c = cells[cid];
+    double slope = domain_slope(layer*cells.size()+cid);
     auto l = tails[shapes[c.s].state], r = tails[shapes[c.t].state];
     auto range = [](double x, Bounds rb) {
       return Bounds{delta_min(x, anchor, rb), -delta_min(anchor, x, rb)};
     };
-    auto low = combine(c, range(l.lo, c.r), range(c.p > 0 ? r.lo : r.hi, c.sb));
-    auto high = combine(c, range(l.hi, c.r), range(c.p > 0 ? r.hi : r.lo, c.sb));
+    auto low = combine(c, range(l.lo, c.r), range(c.p > 0 ? r.lo : r.hi, c.sb),slope);
+    auto high = combine(c, range(l.hi, c.r), range(c.p > 0 ? r.hi : r.lo, c.sb),slope);
     int lo = ceil(low.hi * grid), hi = floor(high.lo * grid);
     domains.push_back(lo < hi ? Domain{{lo, hi}} : Domain{});
   }
@@ -222,7 +241,13 @@ bool save_scalar(string output, int root, const vector<array<long, 5>> &history)
     open += !n.covered;
   bool closed = !nodes.empty() && !open;
   ofstream out(output + ".tmp");
-  out << setprecision(17) << "{\"schema\":\"kf131-scalar-intervals-v1\",\"settings\":{\"base\":"
+  out << setprecision(17) << "{\"schema\":\""
+#ifdef KF131_AFFINE_BANDS
+      << "kf131-sloped-atlas-v1"
+#else
+      << "kf131-scalar-intervals-v1"
+#endif
+      << "\",\"settings\":{\"base\":"
       << base << ",\"bins\":" << bins << ",\"grid\":" << grid
       << ",\"memory\":" << memory << ",\"max_step\":" << maxstep
       << "},\"root_prefixes\":[\"" << root_left << "\",\"" << root_right
@@ -239,10 +264,13 @@ bool save_scalar(string output, int root, const vector<array<long, 5>> &history)
   out << "],\"nodes\":[";
   for (int i = 0; i < (int)nodes.size(); ++i) {
     if (i) out << ',';
-    const auto &n = nodes[i]; const auto &c = cells[n.cell];
+    const auto &n = nodes[i]; const auto &c = cells[n.cell % cells.size()];
     auto ab = n.interval;
     out << "{\"states\":[\"" << shapes[c.s].word << "\",\"" << shapes[c.t].word
         << "\"],\"parity\":" << c.p << ",\"ratio_bin\":" << c.qi
+#ifdef KF131_AFFINE_BANDS
+        << ",\"scalar_slope\":\"" << domain_slope(n.cell) << "\""
+#endif
         << ",\"interval\":[" << ab.first << ',' << ab.second
         << "],\"covered\":" << (n.covered ? "true" : "false") << ",\"children\":[";
     for (int j = 0; j < (int)n.offers.size(); ++j) {
@@ -271,24 +299,51 @@ bool save_scalar(string output, int root, const vector<array<long, 5>> &history)
   out << "]}\n"; out.close();
   if (rename((output + ".tmp").c_str(), output.c_str()) != 0)
     throw runtime_error("could not save scalar graph");
+  if (!nodes.empty())
+    std::filesystem::copy_file(output,output+".last_nonempty.json",
+                              std::filesystem::copy_options::overwrite_existing);
   cerr << "graph " << nodes.size() << " open " << open << " closed " << closed << endl;
   return closed;
 }
 
 int main(int argc, char **argv) {
+#ifdef KF131_AFFINE_BANDS
+  if (argc != 9) {
+    cerr << "usage: engine MEMORY BINS BASE MAX_STEP GRID ROUNDS OUTPUT SLOPE\n";
+#else
   if (argc != 8) {
     cerr << "usage: engine MEMORY BINS BASE MAX_STEP GRID ROUNDS OUTPUT\n";
+#endif
     return 2;
   }
   memory = stoi(argv[1]); bins = stoi(argv[2]); base = stod(argv[3]);
   maxstep = stoi(argv[4]); grid = stoi(argv[5]); int rounds = stoi(argv[6]);
   string output = argv[7];
+#ifdef KF131_AFFINE_BANDS
+  string tilt_arg = argv[8];
+  if (tilt_arg.rfind("tail:", 0) == 0) {
+    tail_tilt = true; band_tail = tilt_arg.substr(5);
+  } else if (tilt_arg.rfind("menu:", 0) == 0) {
+    band_slopes.clear(); string item; stringstream stream(tilt_arg.substr(5));
+    while (getline(stream,item,',')) band_slopes.push_back(stod(item));
+    if (band_slopes.empty()) throw runtime_error("empty slope menu");
+  } else { band_slope = stod(tilt_arg); band_slopes = {band_slope}; }
+#endif
   if (memory < 1 || bins < 1 || base <= 0 || base >= 1 || maxstep < 1 ||
       grid < 1 || rounds < 1) return 2;
   menu = 1;
   root_left = "112" + string(memory, '2');
   root_right = "122" + string(memory, '2');
-  prepare(); initial_domains();
+  prepare();
+  if (tail_tilt) {
+    double beta = phi(band_tail, anchor);
+    for (const auto &s : shapes) {
+      double r = (s.r.lo + s.r.hi) / 2;
+      double k = (beta-anchor)*(1+r*anchor)/(1+r*beta);
+      shape_slopes.push_back(round(k*1024)/1024);
+    }
+  }
+  initial_domains();
   int root = -1;
   for (int i = 0; i < (int)cells.size(); ++i) {
     const auto &c = cells[i];
@@ -297,9 +352,9 @@ int main(int argc, char **argv) {
   }
   vector<array<long, 5>> history;
   for (int round = 0; round < rounds; ++round) {
-    vector<Domain> next(cells.size());
+    vector<Domain> next(domains.size());
     long active = 0, components = 0, units = 0, changed = 0;
-    for (int i = 0; i < (int)cells.size(); ++i) {
+    for (int i = 0; i < (int)domains.size(); ++i) {
       if (!domains[i].empty()) next[i] = scalar_update(i, scalar_offers(i));
       changed += next[i] != domains[i]; active += !next[i].empty(); components += next[i].size();
       for (auto ab : next[i]) units += ab.second - ab.first;

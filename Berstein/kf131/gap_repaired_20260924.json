@@ -1,0 +1,5961 @@
+{
+  "schema": "kf131-scalar-atlas-v1",
+  "settings": {
+    "base": 0.996,
+    "bins": 512,
+    "memory": 7,
+    "grid": 1024000000,
+    "max_step": 4,
+    "block_span": 1
+  },
+  "nodes": [
+    {
+      "id": 0,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -91000000,
+        -90000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 387073
+    },
+    {
+      "id": 1,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -88000000,
+        -87000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 387077
+    },
+    {
+      "id": 2,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 37,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        81000000,
+        82000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 415766
+    },
+    {
+      "id": 3,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 37,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        82000000,
+        83000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 415767
+    },
+    {
+      "id": 4,
+      "states": [
+        "22221",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 195,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        21000000,
+        22000000
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            "13"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -11215327,
+                -4000000
+              ],
+              "destinations": [
+                275,
+                102,
+                30,
+                21,
+                26,
+                93,
+                272,
+                78,
+                27,
+                80,
+                35,
+                36,
+                39,
+                40,
+                132,
+                273,
+                79,
+                28,
+                189,
+                190,
+                274,
+                103,
+                29,
+                31,
+                22,
+                227,
+                216,
+                217
+              ]
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                337000000,
+                341000000
+              ],
+              "destinations": [
+                245,
+                246,
+                12,
+                247
+              ]
+            }
+          ]
+        }
+      ],
+      "source_node": 80
+    },
+    {
+      "id": 5,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -89000000,
+        -88000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 399485
+    },
+    {
+      "id": 6,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        3,
+        4
+      ],
+      "interval": [
+        -11000000,
+        -10000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 401543
+    },
+    {
+      "id": 7,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 173,
+      "interval": [
+        -94000000,
+        -93000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 399495
+    },
+    {
+      "id": 8,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 173,
+      "interval": [
+        -93000000,
+        -92000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 399496
+    },
+    {
+      "id": 9,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 173,
+      "interval": [
+        -91000000,
+        -90000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 399498
+    },
+    {
+      "id": 10,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 173,
+      "interval": [
+        -90000000,
+        -89000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 399499
+    },
+    {
+      "id": 11,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 173,
+      "interval": [
+        -92000000,
+        -91000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 399497
+    },
+    {
+      "id": 12,
+      "states": [
+        "22223",
+        "22213"
+      ],
+      "parity": -1,
+      "ratio_bin": 382,
+      "interval": [
+        339000000,
+        340000000
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "13",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -14651923,
+                -12000000
+              ],
+              "destinations": [
+                265,
+                24,
+                25,
+                92,
+                261,
+                262,
+                270,
+                82,
+                188,
+                271,
+                145,
+                142,
+                50,
+                186
+              ]
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -143000000,
+                -139000000
+              ],
+              "destinations": [
+                106,
+                112,
+                135,
+                113,
+                107,
+                115,
+                139,
+                136,
+                109,
+                118,
+                119,
+                111,
+                125,
+                110,
+                126
+              ]
+            }
+          ]
+        }
+      ],
+      "source_node": 399351
+    },
+    {
+      "id": 13,
+      "states": [
+        "22222",
+        "22222"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -188000000,
+        -187000000
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -116000000,
+                -113276859
+              ],
+              "destinations": [
+                253,
+                88,
+                66,
+                90,
+                255,
+                65,
+                91,
+                258
+              ]
+            }
+          ]
+        }
+      ],
+      "source_node": 221339
+    },
+    {
+      "id": 14,
+      "states": [
+        "22222",
+        "22222"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "interval": [
+        -188000000,
+        -187000000
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -117000000,
+                -113276859
+              ],
+              "destinations": [
+                94,
+                99,
+                251,
+                95,
+                252,
+                133,
+                96,
+                97,
+                98,
+                100,
+                253,
+                101,
+                254
+              ]
+            }
+          ]
+        }
+      ],
+      "source_node": 221344
+    },
+    {
+      "id": 15,
+      "states": [
+        "22221",
+        "22231"
+      ],
+      "parity": -1,
+      "ratio_bin": 405,
+      "ratio_refinement": [
+        2,
+        2
+      ],
+      "interval": [
+        -106000000,
+        -105000000
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -143000000,
+                -137000000
+              ],
+              "destinations": [
+                112,
+                135,
+                113,
+                114,
+                107,
+                105,
+                116,
+                118,
+                119,
+                120,
+                126,
+                121
+              ]
+            }
+          ]
+        }
+      ],
+      "source_node": 166
+    },
+    {
+      "id": 16,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 36,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        82000000,
+        83000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 19196
+    },
+    {
+      "id": 17,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 36,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        83000000,
+        84000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 19197
+    },
+    {
+      "id": 18,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "interval": [
+        -99000000,
+        -98000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 278861
+    },
+    {
+      "id": 19,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "interval": [
+        -98000000,
+        -97000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 278862
+    },
+    {
+      "id": 20,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "interval": [
+        -97000000,
+        -96000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 278863
+    },
+    {
+      "id": 21,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -5000000,
+        -4000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 2384
+    },
+    {
+      "id": 22,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        -6000000,
+        -5000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 2389
+    },
+    {
+      "id": 23,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "ratio_refinement": [
+        2,
+        3
+      ],
+      "interval": [
+        -7000000,
+        -6000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 2394
+    },
+    {
+      "id": 24,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -14000000,
+        -13000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 2398
+    },
+    {
+      "id": 25,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -13000000,
+        -12000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 2401
+    },
+    {
+      "id": 26,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -11000000,
+        -10000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 2402
+    },
+    {
+      "id": 27,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "interval": [
+        -10000000,
+        -9000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 2404
+    },
+    {
+      "id": 28,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "interval": [
+        -10000000,
+        -9000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 2406
+    },
+    {
+      "id": 29,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        -9000000,
+        -8000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 2407
+    },
+    {
+      "id": 30,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -8000000,
+        -7000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 4477
+    },
+    {
+      "id": 31,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        -8000000,
+        -7000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 4479
+    },
+    {
+      "id": 32,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        -7000000,
+        -6000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 4480
+    },
+    {
+      "id": 33,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -17000000,
+        -16000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 403855
+    },
+    {
+      "id": 34,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -16000000,
+        -15000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 403856
+    },
+    {
+      "id": 35,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "interval": [
+        -8000000,
+        -7000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 10652
+    },
+    {
+      "id": 36,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "interval": [
+        -7000000,
+        -6000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 10653
+    },
+    {
+      "id": 37,
+      "states": [
+        "22221",
+        "22231"
+      ],
+      "parity": -1,
+      "ratio_bin": 405,
+      "interval": [
+        -106000000,
+        -105000000
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -11215327,
+                -6000000
+              ],
+              "destinations": [
+                30,
+                83,
+                26,
+                93,
+                272,
+                78,
+                27,
+                80,
+                35,
+                36,
+                132,
+                6,
+                273,
+                79,
+                28,
+                81,
+                187,
+                274,
+                103,
+                29,
+                31,
+                32,
+                215,
+                183,
+                23
+              ]
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                532000000,
+                540000000
+              ],
+              "destinations": [
+                104,
+                41,
+                42,
+                43,
+                44,
+                45,
+                46,
+                47,
+                127,
+                128,
+                123,
+                124,
+                129,
+                130,
+                131,
+                122
+              ]
+            }
+          ]
+        }
+      ],
+      "source_node": 444
+    },
+    {
+      "id": 38,
+      "states": [
+        "22222",
+        "22223"
+      ],
+      "parity": -1,
+      "ratio_bin": 417,
+      "interval": [
+        -115000000,
+        -114000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 385496
+    },
+    {
+      "id": 39,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "interval": [
+        -6000000,
+        -5000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 10775
+    },
+    {
+      "id": 40,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "interval": [
+        -5000000,
+        -4000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 10776
+    },
+    {
+      "id": 41,
+      "states": [
+        "22231",
+        "22212"
+      ],
+      "parity": 1,
+      "ratio_bin": 33,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        533000000,
+        534000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 404015
+    },
+    {
+      "id": 42,
+      "states": [
+        "22231",
+        "22212"
+      ],
+      "parity": 1,
+      "ratio_bin": 33,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        534000000,
+        535000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 404016
+    },
+    {
+      "id": 43,
+      "states": [
+        "22231",
+        "22212"
+      ],
+      "parity": 1,
+      "ratio_bin": 33,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        535000000,
+        536000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 404017
+    },
+    {
+      "id": 44,
+      "states": [
+        "22231",
+        "22212"
+      ],
+      "parity": 1,
+      "ratio_bin": 33,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        536000000,
+        537000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 404018
+    },
+    {
+      "id": 45,
+      "states": [
+        "22231",
+        "22212"
+      ],
+      "parity": 1,
+      "ratio_bin": 33,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        537000000,
+        538000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 404019
+    },
+    {
+      "id": 46,
+      "states": [
+        "22231",
+        "22212"
+      ],
+      "parity": 1,
+      "ratio_bin": 33,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        538000000,
+        539000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 404020
+    },
+    {
+      "id": 47,
+      "states": [
+        "22231",
+        "22212"
+      ],
+      "parity": 1,
+      "ratio_bin": 33,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        539000000,
+        540000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 404021
+    },
+    {
+      "id": 48,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -89000000,
+        -88000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 393783
+    },
+    {
+      "id": 49,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -89000000,
+        -88000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 393793
+    },
+    {
+      "id": 50,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "ratio_refinement": [
+        3,
+        4
+      ],
+      "interval": [
+        -14000000,
+        -13000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 404039
+    },
+    {
+      "id": 51,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 173,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -89000000,
+        -88000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 393797
+    },
+    {
+      "id": 52,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -95000000,
+        -94000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 393806
+    },
+    {
+      "id": 53,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -94000000,
+        -93000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 393807
+    },
+    {
+      "id": 54,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -93000000,
+        -92000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 393808
+    },
+    {
+      "id": 55,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -92000000,
+        -91000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 393809
+    },
+    {
+      "id": 56,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -86000000,
+        -85000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 393819
+    },
+    {
+      "id": 57,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        -86000000,
+        -85000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 393820
+    },
+    {
+      "id": 58,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "ratio_refinement": [
+        2,
+        2
+      ],
+      "interval": [
+        -86000000,
+        -85000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 393821
+    },
+    {
+      "id": 59,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "ratio_refinement": [
+        2,
+        1
+      ],
+      "interval": [
+        -89000000,
+        -88000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 393824
+    },
+    {
+      "id": 60,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        -96000000,
+        -95000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 393825
+    },
+    {
+      "id": 61,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 170,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -99000000,
+        -98000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 393835
+    },
+    {
+      "id": 62,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 170,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -98000000,
+        -97000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 393836
+    },
+    {
+      "id": 63,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 170,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -97000000,
+        -96000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 393837
+    },
+    {
+      "id": 64,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 170,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -96000000,
+        -95000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 393838
+    },
+    {
+      "id": 65,
+      "states": [
+        "22222",
+        "22223"
+      ],
+      "parity": -1,
+      "ratio_bin": 419,
+      "interval": [
+        -116000000,
+        -115000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 391805
+    },
+    {
+      "id": 66,
+      "states": [
+        "22222",
+        "22223"
+      ],
+      "parity": -1,
+      "ratio_bin": 418,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -115000000,
+        -114000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 391806
+    },
+    {
+      "id": 67,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -84000000,
+        -83000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 391808
+    },
+    {
+      "id": 68,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 36,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        76000000,
+        77000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 418445
+    },
+    {
+      "id": 69,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 36,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        77000000,
+        78000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 418446
+    },
+    {
+      "id": 70,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 36,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        78000000,
+        79000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 418447
+    },
+    {
+      "id": 71,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 36,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        79000000,
+        80000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 418448
+    },
+    {
+      "id": 72,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 37,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        76000000,
+        77000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 418449
+    },
+    {
+      "id": 73,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 37,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        77000000,
+        78000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 418450
+    },
+    {
+      "id": 74,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 37,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        78000000,
+        79000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 418451
+    },
+    {
+      "id": 75,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 37,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        79000000,
+        80000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 418452
+    },
+    {
+      "id": 76,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "interval": [
+        -17000000,
+        -16000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 4827
+    },
+    {
+      "id": 77,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "interval": [
+        -13000000,
+        -12000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 4834
+    },
+    {
+      "id": 78,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "interval": [
+        -11000000,
+        -10000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 4836
+    },
+    {
+      "id": 79,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "interval": [
+        -11000000,
+        -10000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 4839
+    },
+    {
+      "id": 80,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "interval": [
+        -9000000,
+        -8000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 4841
+    },
+    {
+      "id": 81,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "interval": [
+        -9000000,
+        -8000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 4842
+    },
+    {
+      "id": 82,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        -14000000,
+        -13000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 4844
+    },
+    {
+      "id": 83,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -7000000,
+        -6000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 4845
+    },
+    {
+      "id": 84,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 36,
+      "ratio_refinement": [
+        3,
+        1
+      ],
+      "interval": [
+        74000000,
+        75000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 4848
+    },
+    {
+      "id": 85,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 36,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        80000000,
+        81000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 19194
+    },
+    {
+      "id": 86,
+      "states": [
+        "22222",
+        "22223"
+      ],
+      "parity": -1,
+      "ratio_bin": 419,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -116000000,
+        -115000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 234235
+    },
+    {
+      "id": 87,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 36,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        81000000,
+        82000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 19195
+    },
+    {
+      "id": 88,
+      "states": [
+        "22222",
+        "22223"
+      ],
+      "parity": -1,
+      "ratio_bin": 418,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -116000000,
+        -115000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 234239
+    },
+    {
+      "id": 89,
+      "states": [
+        "22222",
+        "22223"
+      ],
+      "parity": -1,
+      "ratio_bin": 418,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -115000000,
+        -114000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 234240
+    },
+    {
+      "id": 90,
+      "states": [
+        "22222",
+        "22223"
+      ],
+      "parity": -1,
+      "ratio_bin": 418,
+      "ratio_refinement": [
+        3,
+        1
+      ],
+      "interval": [
+        -115000000,
+        -114000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 234241
+    },
+    {
+      "id": 91,
+      "states": [
+        "22222",
+        "22223"
+      ],
+      "parity": -1,
+      "ratio_bin": 419,
+      "interval": [
+        -115000000,
+        -114000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 234242
+    },
+    {
+      "id": 92,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "interval": [
+        -14000000,
+        -13000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 4867
+    },
+    {
+      "id": 93,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -9000000,
+        -8000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 4869
+    },
+    {
+      "id": 94,
+      "states": [
+        "22222",
+        "22223"
+      ],
+      "parity": -1,
+      "ratio_bin": 417,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -116000000,
+        -115000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 234263
+    },
+    {
+      "id": 95,
+      "states": [
+        "22222",
+        "22223"
+      ],
+      "parity": -1,
+      "ratio_bin": 417,
+      "interval": [
+        -117000000,
+        -116000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 234266
+    },
+    {
+      "id": 96,
+      "states": [
+        "22222",
+        "22223"
+      ],
+      "parity": -1,
+      "ratio_bin": 418,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -117000000,
+        -116000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 234268
+    },
+    {
+      "id": 97,
+      "states": [
+        "22222",
+        "22223"
+      ],
+      "parity": -1,
+      "ratio_bin": 418,
+      "interval": [
+        -117000000,
+        -116000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 234269
+    },
+    {
+      "id": 98,
+      "states": [
+        "22222",
+        "22223"
+      ],
+      "parity": -1,
+      "ratio_bin": 418,
+      "interval": [
+        -116000000,
+        -115000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 234270
+    },
+    {
+      "id": 99,
+      "states": [
+        "22222",
+        "22223"
+      ],
+      "parity": -1,
+      "ratio_bin": 417,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -115000000,
+        -114000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 234272
+    },
+    {
+      "id": 100,
+      "states": [
+        "22222",
+        "22223"
+      ],
+      "parity": -1,
+      "ratio_bin": 418,
+      "interval": [
+        -115000000,
+        -114000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 234275
+    },
+    {
+      "id": 101,
+      "states": [
+        "22222",
+        "22223"
+      ],
+      "parity": -1,
+      "ratio_bin": 418,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        -115000000,
+        -114000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 234279
+    },
+    {
+      "id": 102,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -11000000,
+        -10000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 400256
+    },
+    {
+      "id": 103,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        -11000000,
+        -10000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 400259
+    },
+    {
+      "id": 104,
+      "states": [
+        "22231",
+        "22212"
+      ],
+      "parity": 1,
+      "ratio_bin": 33,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        532000000,
+        533000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 404444
+    },
+    {
+      "id": 105,
+      "states": [
+        "22231",
+        "22213"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -138000000,
+        -137000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 1056
+    },
+    {
+      "id": 106,
+      "states": [
+        "22231",
+        "22213"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "interval": [
+        -143000000,
+        -142000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 1088
+    },
+    {
+      "id": 107,
+      "states": [
+        "22231",
+        "22213"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -143000000,
+        -142000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 1094
+    },
+    {
+      "id": 108,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "interval": [
+        -99000000,
+        -98000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 393841
+    },
+    {
+      "id": 109,
+      "states": [
+        "22231",
+        "22213"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "ratio_refinement": [
+        3,
+        4
+      ],
+      "interval": [
+        -143000000,
+        -142000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 1098
+    },
+    {
+      "id": 110,
+      "states": [
+        "22231",
+        "22213"
+      ],
+      "parity": 1,
+      "ratio_bin": 173,
+      "ratio_refinement": [
+        2,
+        3
+      ],
+      "interval": [
+        -143000000,
+        -142000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 1107
+    },
+    {
+      "id": 111,
+      "states": [
+        "22231",
+        "22213"
+      ],
+      "parity": 1,
+      "ratio_bin": 173,
+      "ratio_refinement": [
+        2,
+        2
+      ],
+      "interval": [
+        -143000000,
+        -142000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 1109
+    },
+    {
+      "id": 112,
+      "states": [
+        "22231",
+        "22213"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "interval": [
+        -142000000,
+        -141000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 1110
+    },
+    {
+      "id": 113,
+      "states": [
+        "22231",
+        "22213"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "interval": [
+        -140000000,
+        -139000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 1111
+    },
+    {
+      "id": 114,
+      "states": [
+        "22231",
+        "22213"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "interval": [
+        -139000000,
+        -138000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 1112
+    },
+    {
+      "id": 115,
+      "states": [
+        "22231",
+        "22213"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -141000000,
+        -140000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 1113
+    },
+    {
+      "id": 116,
+      "states": [
+        "22231",
+        "22213"
+      ],
+      "parity": 1,
+      "ratio_bin": 173,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        -143000000,
+        -142000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 1117
+    },
+    {
+      "id": 117,
+      "states": [
+        "22231",
+        "22213"
+      ],
+      "parity": 1,
+      "ratio_bin": 173,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        -142000000,
+        -141000000
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -17000000,
+                -14814525
+              ],
+              "destinations": [
+                264,
+                76,
+                228,
+                259,
+                268,
+                267,
+                260
+              ]
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "3",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                73000000,
+                84000000
+              ],
+              "destinations": [
+                140,
+                229,
+                147,
+                68,
+                69,
+                70,
+                71,
+                85,
+                87,
+                16,
+                17,
+                171,
+                172,
+                173,
+                72,
+                73,
+                74,
+                75,
+                184,
+                2,
+                3,
+                185
+              ]
+            }
+          ]
+        }
+      ],
+      "source_node": 1118
+    },
+    {
+      "id": 118,
+      "states": [
+        "22231",
+        "22213"
+      ],
+      "parity": 1,
+      "ratio_bin": 173,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        -141000000,
+        -140000000
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -14651923,
+                -12000000
+              ],
+              "destinations": [
+                266,
+                269,
+                92,
+                77
+              ]
+            }
+          ]
+        }
+      ],
+      "source_node": 1119
+    },
+    {
+      "id": 119,
+      "states": [
+        "22231",
+        "22213"
+      ],
+      "parity": 1,
+      "ratio_bin": 173,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        -140000000,
+        -139000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 1120
+    },
+    {
+      "id": 120,
+      "states": [
+        "22231",
+        "22213"
+      ],
+      "parity": 1,
+      "ratio_bin": 173,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        -139000000,
+        -138000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 1121
+    },
+    {
+      "id": 121,
+      "states": [
+        "22231",
+        "22213"
+      ],
+      "parity": 1,
+      "ratio_bin": 173,
+      "ratio_refinement": [
+        2,
+        3
+      ],
+      "interval": [
+        -138000000,
+        -137000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 1122
+    },
+    {
+      "id": 122,
+      "states": [
+        "22231",
+        "22212"
+      ],
+      "parity": 1,
+      "ratio_bin": 34,
+      "interval": [
+        539000000,
+        540000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 392314
+    },
+    {
+      "id": 123,
+      "states": [
+        "22231",
+        "22212"
+      ],
+      "parity": 1,
+      "ratio_bin": 34,
+      "interval": [
+        534000000,
+        535000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 392319
+    },
+    {
+      "id": 124,
+      "states": [
+        "22231",
+        "22212"
+      ],
+      "parity": 1,
+      "ratio_bin": 34,
+      "interval": [
+        535000000,
+        536000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 392320
+    },
+    {
+      "id": 125,
+      "states": [
+        "22231",
+        "22213"
+      ],
+      "parity": 1,
+      "ratio_bin": 173,
+      "ratio_refinement": [
+        2,
+        2
+      ],
+      "interval": [
+        -142000000,
+        -141000000
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -17000000,
+                -14814525
+              ],
+              "destinations": [
+                76,
+                228,
+                263
+              ]
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "3",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                73000000,
+                84000000
+              ],
+              "destinations": [
+                137,
+                138,
+                171,
+                172,
+                173,
+                72,
+                73,
+                74,
+                75,
+                184,
+                185,
+                141
+              ]
+            }
+          ]
+        }
+      ],
+      "source_node": 400520
+    },
+    {
+      "id": 126,
+      "states": [
+        "22231",
+        "22213"
+      ],
+      "parity": 1,
+      "ratio_bin": 173,
+      "ratio_refinement": [
+        2,
+        3
+      ],
+      "interval": [
+        -142000000,
+        -141000000
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -17000000,
+                -14814525
+              ],
+              "destinations": [
+                33,
+                34,
+                259,
+                260
+              ]
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "3",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                73000000,
+                76000000
+              ],
+              "destinations": [
+                140,
+                147,
+                146,
+                84,
+                148,
+                141,
+                143
+              ]
+            }
+          ]
+        }
+      ],
+      "source_node": 400521
+    },
+    {
+      "id": 127,
+      "states": [
+        "22231",
+        "22212"
+      ],
+      "parity": 1,
+      "ratio_bin": 34,
+      "interval": [
+        532000000,
+        533000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 392328
+    },
+    {
+      "id": 128,
+      "states": [
+        "22231",
+        "22212"
+      ],
+      "parity": 1,
+      "ratio_bin": 34,
+      "interval": [
+        533000000,
+        534000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 392329
+    },
+    {
+      "id": 129,
+      "states": [
+        "22231",
+        "22212"
+      ],
+      "parity": 1,
+      "ratio_bin": 34,
+      "interval": [
+        536000000,
+        537000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 392330
+    },
+    {
+      "id": 130,
+      "states": [
+        "22231",
+        "22212"
+      ],
+      "parity": 1,
+      "ratio_bin": 34,
+      "interval": [
+        537000000,
+        538000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 392331
+    },
+    {
+      "id": 131,
+      "states": [
+        "22231",
+        "22212"
+      ],
+      "parity": 1,
+      "ratio_bin": 34,
+      "interval": [
+        538000000,
+        539000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 392332
+    },
+    {
+      "id": 132,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -10000000,
+        -9000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 400519
+    },
+    {
+      "id": 133,
+      "states": [
+        "22222",
+        "22223"
+      ],
+      "parity": -1,
+      "ratio_bin": 417,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -115000000,
+        -114000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 398498
+    },
+    {
+      "id": 134,
+      "states": [
+        "22222",
+        "22222"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "interval": [
+        -187000000,
+        -186000000
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -114000000,
+                -113276859
+              ],
+              "destinations": [
+                256,
+                255,
+                257,
+                258
+              ]
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "3",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -99000000,
+                -84000000
+              ],
+              "destinations": [
+                61,
+                62,
+                63,
+                64,
+                218,
+                219,
+                220,
+                221,
+                175,
+                176,
+                226,
+                177,
+                178,
+                158,
+                159,
+                108,
+                234,
+                235,
+                204,
+                179,
+                180,
+                181,
+                161,
+                162,
+                225,
+                163,
+                149,
+                160,
+                150,
+                151,
+                224,
+                222,
+                152,
+                205,
+                5,
+                56,
+                165,
+                167,
+                169,
+                166,
+                168,
+                170,
+                60,
+                57,
+                58,
+                59,
+                18,
+                19,
+                20,
+                206,
+                207,
+                208,
+                209,
+                153,
+                200,
+                202,
+                154,
+                203,
+                155,
+                210,
+                49
+              ]
+            }
+          ]
+        }
+      ],
+      "source_node": 398520
+    },
+    {
+      "id": 135,
+      "states": [
+        "22231",
+        "22213"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "interval": [
+        -141000000,
+        -140000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 1221
+    },
+    {
+      "id": 136,
+      "states": [
+        "22231",
+        "22213"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        -140000000,
+        -139000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 1223
+    },
+    {
+      "id": 137,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 37,
+      "interval": [
+        81000000,
+        82000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 19677
+    },
+    {
+      "id": 138,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 37,
+      "interval": [
+        82000000,
+        83000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 19678
+    },
+    {
+      "id": 139,
+      "states": [
+        "22231",
+        "22213"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        -143000000,
+        -142000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 1268
+    },
+    {
+      "id": 140,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 36,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        73000000,
+        74000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 19709
+    },
+    {
+      "id": 141,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 37,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        74000000,
+        75000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 19795
+    },
+    {
+      "id": 142,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -13000000,
+        -12000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 5390
+    },
+    {
+      "id": 143,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 37,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        75000000,
+        76000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 19796
+    },
+    {
+      "id": 144,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -88000000,
+        -87000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 400654
+    },
+    {
+      "id": 145,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -14000000,
+        -13000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 5450
+    },
+    {
+      "id": 146,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 36,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        74000000,
+        75000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 19789
+    },
+    {
+      "id": 147,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 36,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        75000000,
+        76000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 19790
+    },
+    {
+      "id": 148,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 37,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        73000000,
+        74000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 19794
+    },
+    {
+      "id": 149,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "interval": [
+        -87000000,
+        -86000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 271706
+    },
+    {
+      "id": 150,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -91000000,
+        -90000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 271707
+    },
+    {
+      "id": 151,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -90000000,
+        -89000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 271708
+    },
+    {
+      "id": 152,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -85000000,
+        -84000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 271709
+    },
+    {
+      "id": 153,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "interval": [
+        -91000000,
+        -90000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 271710
+    },
+    {
+      "id": 154,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "interval": [
+        -87000000,
+        -86000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 271711
+    },
+    {
+      "id": 155,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "interval": [
+        -85000000,
+        -84000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 271712
+    },
+    {
+      "id": 156,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        -90000000,
+        -89000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 271713
+    },
+    {
+      "id": 157,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "ratio_refinement": [
+        2,
+        2
+      ],
+      "interval": [
+        -90000000,
+        -89000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 271726
+    },
+    {
+      "id": 158,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 170,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -86000000,
+        -85000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 271743
+    },
+    {
+      "id": 159,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 170,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -85000000,
+        -84000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 271744
+    },
+    {
+      "id": 160,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "interval": [
+        -85000000,
+        -84000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 271750
+    },
+    {
+      "id": 161,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "interval": [
+        -91000000,
+        -90000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 271756
+    },
+    {
+      "id": 162,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "interval": [
+        -90000000,
+        -89000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 271757
+    },
+    {
+      "id": 163,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "interval": [
+        -88000000,
+        -87000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 271758
+    },
+    {
+      "id": 164,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "interval": [
+        -86000000,
+        -85000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 271759
+    },
+    {
+      "id": 165,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -99000000,
+        -98000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 271773
+    },
+    {
+      "id": 166,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "ratio_refinement": [
+        3,
+        1
+      ],
+      "interval": [
+        -99000000,
+        -98000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 271774
+    },
+    {
+      "id": 167,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -98000000,
+        -97000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 271775
+    },
+    {
+      "id": 168,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "ratio_refinement": [
+        3,
+        1
+      ],
+      "interval": [
+        -98000000,
+        -97000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 271776
+    },
+    {
+      "id": 169,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -97000000,
+        -96000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 271777
+    },
+    {
+      "id": 170,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "ratio_refinement": [
+        3,
+        1
+      ],
+      "interval": [
+        -97000000,
+        -96000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 271778
+    },
+    {
+      "id": 171,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 37,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        73000000,
+        74000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 19878
+    },
+    {
+      "id": 172,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 37,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        74000000,
+        75000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 19879
+    },
+    {
+      "id": 173,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 37,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        75000000,
+        76000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 19880
+    },
+    {
+      "id": 174,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -87000000,
+        -86000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 271792
+    },
+    {
+      "id": 175,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 170,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -91000000,
+        -90000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 271793
+    },
+    {
+      "id": 176,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 170,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -90000000,
+        -89000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 271794
+    },
+    {
+      "id": 177,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 170,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -88000000,
+        -87000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 271795
+    },
+    {
+      "id": 178,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 170,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -87000000,
+        -86000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 271796
+    },
+    {
+      "id": 179,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "interval": [
+        -94000000,
+        -93000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 271801
+    },
+    {
+      "id": 180,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "interval": [
+        -93000000,
+        -92000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 271802
+    },
+    {
+      "id": 181,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "interval": [
+        -92000000,
+        -91000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 271803
+    },
+    {
+      "id": 182,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "interval": [
+        -96000000,
+        -95000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 271799
+    },
+    {
+      "id": 183,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "ratio_refinement": [
+        3,
+        4
+      ],
+      "interval": [
+        -11000000,
+        -10000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 400930
+    },
+    {
+      "id": 184,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 37,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        80000000,
+        81000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 411171
+    },
+    {
+      "id": 185,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 37,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        83000000,
+        84000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 411172
+    },
+    {
+      "id": 186,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "ratio_refinement": [
+        3,
+        4
+      ],
+      "interval": [
+        -13000000,
+        -12000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 400934
+    },
+    {
+      "id": 187,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "interval": [
+        -8000000,
+        -7000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 5199
+    },
+    {
+      "id": 188,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        -13000000,
+        -12000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 400945
+    },
+    {
+      "id": 189,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "interval": [
+        -7000000,
+        -6000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 5200
+    },
+    {
+      "id": 190,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "interval": [
+        -6000000,
+        -5000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 5201
+    },
+    {
+      "id": 191,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "ratio_refinement": [
+        2,
+        2
+      ],
+      "interval": [
+        -96000000,
+        -95000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 431685
+    },
+    {
+      "id": 192,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 173,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -85000000,
+        -84000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 271975
+    },
+    {
+      "id": 193,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 173,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -88000000,
+        -87000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 271983
+    },
+    {
+      "id": 194,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 173,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -87000000,
+        -86000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 271984
+    },
+    {
+      "id": 195,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 173,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -86000000,
+        -85000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 271985
+    },
+    {
+      "id": 196,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -83000000,
+        -82000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 272004
+    },
+    {
+      "id": 197,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "interval": [
+        -84000000,
+        -83000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 272007
+    },
+    {
+      "id": 198,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "interval": [
+        -83000000,
+        -82000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 272008
+    },
+    {
+      "id": 199,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -90000000,
+        -89000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 272012
+    },
+    {
+      "id": 200,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "interval": [
+        -90000000,
+        -89000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 272022
+    },
+    {
+      "id": 201,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "interval": [
+        -89000000,
+        -88000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 272023
+    },
+    {
+      "id": 202,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "interval": [
+        -88000000,
+        -87000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 272024
+    },
+    {
+      "id": 203,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "interval": [
+        -86000000,
+        -85000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 272025
+    },
+    {
+      "id": 204,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "interval": [
+        -95000000,
+        -94000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 272033
+    },
+    {
+      "id": 205,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -96000000,
+        -95000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 272034
+    },
+    {
+      "id": 206,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "interval": [
+        -95000000,
+        -94000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 272035
+    },
+    {
+      "id": 207,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "interval": [
+        -94000000,
+        -93000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 272036
+    },
+    {
+      "id": 208,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "interval": [
+        -93000000,
+        -92000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 272037
+    },
+    {
+      "id": 209,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "interval": [
+        -92000000,
+        -91000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 272038
+    },
+    {
+      "id": 210,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        -96000000,
+        -95000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 272039
+    },
+    {
+      "id": 211,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -86000000,
+        -85000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 405197
+    },
+    {
+      "id": 212,
+      "states": [
+        "22222",
+        "22222"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "interval": [
+        -187000000,
+        -186000000
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -115000000,
+                -113276859
+              ],
+              "destinations": [
+                99,
+                251,
+                38,
+                252,
+                100,
+                253,
+                89,
+                101,
+                254,
+                255
+              ]
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "3",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -96000000,
+                -82000000
+              ],
+              "destinations": [
+                182,
+                161,
+                164,
+                160,
+                52,
+                53,
+                54,
+                55,
+                151,
+                223,
+                174,
+                196,
+                144,
+                67,
+                230,
+                231,
+                237,
+                0,
+                199,
+                48,
+                1,
+                249,
+                211,
+                242,
+                243,
+                238,
+                239,
+                240,
+                241,
+                250,
+                236,
+                206,
+                207,
+                208,
+                209,
+                153,
+                200,
+                201,
+                202,
+                154,
+                203,
+                155,
+                197,
+                198,
+                191,
+                157,
+                210,
+                156,
+                232,
+                233,
+                7,
+                8,
+                11,
+                9,
+                10,
+                244,
+                248,
+                51,
+                193,
+                194,
+                195,
+                192
+              ]
+            }
+          ]
+        }
+      ],
+      "source_node": 390931
+    },
+    {
+      "id": 213,
+      "states": [
+        "22222",
+        "22222"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -188000000,
+        -187000000
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -116000000,
+                -113276859
+              ],
+              "destinations": [
+                98,
+                100,
+                253,
+                88,
+                86,
+                65,
+                91,
+                257,
+                258
+              ]
+            }
+          ]
+        }
+      ],
+      "source_node": 390933
+    },
+    {
+      "id": 214,
+      "states": [
+        "22222",
+        "22222"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -187000000,
+        -186000000
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -114000000,
+                -113276859
+              ],
+              "destinations": [
+                256,
+                255,
+                258
+              ]
+            }
+          ]
+        },
+        {
+          "suffixes": [
+            "3",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -97000000,
+                -84000000
+              ],
+              "destinations": [
+                235,
+                204,
+                179,
+                180,
+                181,
+                161,
+                162,
+                225,
+                163,
+                149,
+                160,
+                150,
+                151,
+                224,
+                222,
+                152,
+                205,
+                5,
+                56,
+                169,
+                170,
+                60,
+                58,
+                59,
+                20,
+                206,
+                207,
+                208,
+                209,
+                153,
+                200,
+                202,
+                154,
+                203,
+                155,
+                210,
+                49
+              ]
+            }
+          ]
+        }
+      ],
+      "source_node": 390934
+    },
+    {
+      "id": 215,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "ratio_refinement": [
+        2,
+        2
+      ],
+      "interval": [
+        -7000000,
+        -6000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 423701
+    },
+    {
+      "id": 216,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -7000000,
+        -6000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 423704
+    },
+    {
+      "id": 217,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -5000000,
+        -4000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 423705
+    },
+    {
+      "id": 218,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 170,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -95000000,
+        -94000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 405310
+    },
+    {
+      "id": 219,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 170,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -94000000,
+        -93000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 405311
+    },
+    {
+      "id": 220,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 170,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -93000000,
+        -92000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 405312
+    },
+    {
+      "id": 221,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 170,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -92000000,
+        -91000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 405313
+    },
+    {
+      "id": 222,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -86000000,
+        -85000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 384839
+    },
+    {
+      "id": 223,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -89000000,
+        -88000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 384840
+    },
+    {
+      "id": 224,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -88000000,
+        -87000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 384841
+    },
+    {
+      "id": 225,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "interval": [
+        -89000000,
+        -88000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 384843
+    },
+    {
+      "id": 226,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 170,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -89000000,
+        -88000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 384844
+    },
+    {
+      "id": 227,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "ratio_refinement": [
+        3,
+        6
+      ],
+      "interval": [
+        -5000000,
+        -4000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 431450
+    },
+    {
+      "id": 228,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "interval": [
+        -16000000,
+        -15000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 4864
+    },
+    {
+      "id": 229,
+      "states": [
+        "22313",
+        "22132"
+      ],
+      "parity": 1,
+      "ratio_bin": 36,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        74000000,
+        75000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 384972
+    },
+    {
+      "id": 230,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -96000000,
+        -95000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 387026
+    },
+    {
+      "id": 231,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -95000000,
+        -94000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 387027
+    },
+    {
+      "id": 232,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 173,
+      "interval": [
+        -96000000,
+        -95000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 387033
+    },
+    {
+      "id": 233,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 173,
+      "interval": [
+        -95000000,
+        -94000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 387034
+    },
+    {
+      "id": 234,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "interval": [
+        -98000000,
+        -97000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 387038
+    },
+    {
+      "id": 235,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "interval": [
+        -97000000,
+        -96000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 387039
+    },
+    {
+      "id": 236,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "interval": [
+        -96000000,
+        -95000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 387040
+    },
+    {
+      "id": 237,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -93000000,
+        -92000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 387041
+    },
+    {
+      "id": 238,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -96000000,
+        -95000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 387042
+    },
+    {
+      "id": 239,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -95000000,
+        -94000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 387043
+    },
+    {
+      "id": 240,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -94000000,
+        -93000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 387044
+    },
+    {
+      "id": 241,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -92000000,
+        -91000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 387045
+    },
+    {
+      "id": 242,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -85000000,
+        -84000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 387055
+    },
+    {
+      "id": 243,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -83000000,
+        -82000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 387057
+    },
+    {
+      "id": 244,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 173,
+      "interval": [
+        -84000000,
+        -83000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 387060
+    },
+    {
+      "id": 245,
+      "states": [
+        "22223",
+        "22213"
+      ],
+      "parity": -1,
+      "ratio_bin": 382,
+      "interval": [
+        337000000,
+        338000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 399349
+    },
+    {
+      "id": 246,
+      "states": [
+        "22223",
+        "22213"
+      ],
+      "parity": -1,
+      "ratio_bin": 382,
+      "interval": [
+        338000000,
+        339000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 399350
+    },
+    {
+      "id": 247,
+      "states": [
+        "22223",
+        "22213"
+      ],
+      "parity": -1,
+      "ratio_bin": 382,
+      "interval": [
+        340000000,
+        341000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 399352
+    },
+    {
+      "id": 248,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 173,
+      "interval": [
+        -83000000,
+        -82000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 387061
+    },
+    {
+      "id": 249,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -87000000,
+        -86000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 387067
+    },
+    {
+      "id": 250,
+      "states": [
+        "22223",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -90000000,
+        -89000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 387071
+    },
+    {
+      "id": 251,
+      "states": [
+        "22222",
+        "22223"
+      ],
+      "parity": -1,
+      "ratio_bin": 417,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -114000000,
+        -113276859
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 234273
+    },
+    {
+      "id": 252,
+      "states": [
+        "22222",
+        "22223"
+      ],
+      "parity": -1,
+      "ratio_bin": 417,
+      "interval": [
+        -114000000,
+        -113276859
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 385501
+    },
+    {
+      "id": 253,
+      "states": [
+        "22222",
+        "22223"
+      ],
+      "parity": -1,
+      "ratio_bin": 418,
+      "interval": [
+        -114000000,
+        -113276859
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 234238
+    },
+    {
+      "id": 254,
+      "states": [
+        "22222",
+        "22223"
+      ],
+      "parity": -1,
+      "ratio_bin": 418,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        -114000000,
+        -113276859
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 234280
+    },
+    {
+      "id": 255,
+      "states": [
+        "22222",
+        "22223"
+      ],
+      "parity": -1,
+      "ratio_bin": 418,
+      "ratio_refinement": [
+        3,
+        1
+      ],
+      "interval": [
+        -114000000,
+        -113276859
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 398501
+    },
+    {
+      "id": 256,
+      "states": [
+        "22222",
+        "22223"
+      ],
+      "parity": -1,
+      "ratio_bin": 418,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -114000000,
+        -113276859
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 234245
+    },
+    {
+      "id": 257,
+      "states": [
+        "22222",
+        "22223"
+      ],
+      "parity": -1,
+      "ratio_bin": 419,
+      "interval": [
+        -114000000,
+        -113276859
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 234249
+    },
+    {
+      "id": 258,
+      "states": [
+        "22222",
+        "22223"
+      ],
+      "parity": -1,
+      "ratio_bin": 419,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        -114000000,
+        -113276859
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 234243
+    },
+    {
+      "id": 259,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -15000000,
+        -14814525
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 4843
+    },
+    {
+      "id": 260,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        3,
+        2
+      ],
+      "interval": [
+        -15000000,
+        -14814525
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 384898
+    },
+    {
+      "id": 261,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        2,
+        0
+      ],
+      "interval": [
+        -14651923,
+        -14000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 4843
+    },
+    {
+      "id": 262,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        3,
+        2
+      ],
+      "interval": [
+        -14651923,
+        -14000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 384898
+    },
+    {
+      "id": 263,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "interval": [
+        -15000000,
+        -14814525
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 403854
+    },
+    {
+      "id": 264,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -15000000,
+        -14814525
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 384896
+    },
+    {
+      "id": 265,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -14651923,
+        -14000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 384896
+    },
+    {
+      "id": 266,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -14651923,
+        -14000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 4831
+    },
+    {
+      "id": 267,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        2,
+        1
+      ],
+      "interval": [
+        -15000000,
+        -14814525
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 384897
+    },
+    {
+      "id": 268,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        3,
+        4
+      ],
+      "interval": [
+        -15000000,
+        -14814525
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 4866
+    },
+    {
+      "id": 269,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        3,
+        4
+      ],
+      "interval": [
+        -14651923,
+        -14000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 4866
+    },
+    {
+      "id": 270,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        -14651923,
+        -14000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 400258
+    },
+    {
+      "id": 271,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "ratio_refinement": [
+        1,
+        0
+      ],
+      "interval": [
+        -14651923,
+        -14000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 5449
+    },
+    {
+      "id": 272,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "interval": [
+        -11215327,
+        -11000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 4835
+    },
+    {
+      "id": 273,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "interval": [
+        -11215327,
+        -11000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 4838
+    },
+    {
+      "id": 274,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 403,
+      "ratio_refinement": [
+        1,
+        1
+      ],
+      "interval": [
+        -11215327,
+        -11000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 404037
+    },
+    {
+      "id": 275,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -11215327,
+        -11000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 2399
+    }
+  ],
+  "roots": [
+    212,
+    134,
+    214,
+    213,
+    126,
+    14,
+    118,
+    125,
+    13,
+    117,
+    12,
+    37,
+    15,
+    4
+  ],
+  "closed_candidate": false,
+  "status": "local gap repairs; child obligations remain open",
+  "open_nodes": 262
+}

@@ -1,0 +1,138 @@
+{
+  "group": "middle",
+  "status": "PASS",
+  "records": [
+    {
+      "label": "induction_verify_exact_normal",
+      "command": [
+        "verify_exact.py"
+      ],
+      "cwd": "work/m2b_induction",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 13.766,
+      "log": "replay_logs/middle__induction_verify_exact_normal.log",
+      "stdout": "opposite_certificate.json : 1520 endpoint branches; 1982 proof records verified\nequal_certificate.json : 3984 endpoint branches; 6359 proof records verified\nExact reconstruction: VERIFIED",
+      "stderr": ""
+    },
+    {
+      "label": "induction_verify_exact_O",
+      "command": [
+        "-O",
+        "verify_exact.py"
+      ],
+      "cwd": "work/m2b_induction",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 15.351,
+      "log": "replay_logs/middle__induction_verify_exact_O.log",
+      "stdout": "opposite_certificate.json : 1520 endpoint branches; 1982 proof records verified\nequal_certificate.json : 3984 endpoint branches; 6359 proof records verified\nExact reconstruction: VERIFIED",
+      "stderr": ""
+    },
+    {
+      "label": "induction_verify_independent_normal",
+      "command": [
+        "verify_independent.py"
+      ],
+      "cwd": "work/m2b_induction",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 10.864,
+      "log": "replay_logs/middle__induction_verify_independent_normal.log",
+      "stdout": "opposite_certificate.json : 1982 proof records; 1520 endpoint branches; 406 componentwise truths\nequal_certificate.json : 6359 proof records; 3984 endpoint branches; 1562 componentwise truths\nuniform: 80 goodness cases; 11 J polynomials; all-k tail invariants\nelementary endpoint repair, reverse contacts and ratio bound: VERIFIED\nIndependent reconstruction and arithmetic: VERIFIED",
+      "stderr": ""
+    },
+    {
+      "label": "induction_verify_independent_O",
+      "command": [
+        "-O",
+        "verify_independent.py"
+      ],
+      "cwd": "work/m2b_induction",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 11.987,
+      "log": "replay_logs/middle__induction_verify_independent_O.log",
+      "stdout": "opposite_certificate.json : 1982 proof records; 1520 endpoint branches; 406 componentwise truths\nequal_certificate.json : 6359 proof records; 3984 endpoint branches; 1562 componentwise truths\nuniform: 80 goodness cases; 11 J polynomials; all-k tail invariants\nelementary endpoint repair, reverse contacts and ratio bound: VERIFIED\nIndependent reconstruction and arithmetic: VERIFIED",
+      "stderr": ""
+    },
+    {
+      "label": "initial_verify_exact_normal",
+      "command": [
+        "verify_exact.py"
+      ],
+      "cwd": "work/m2b_induction/initial",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 1.345,
+      "log": "replay_logs/middle__initial_verify_exact_normal.log",
+      "stdout": "{\"method\": \"Q(sqrt(3),sqrt(7)); rational sign certificates\", \"root_count\": 15, \"contact_count\": 14, \"goodness_count\": 15, \"dominance_count\": 8, \"Bernstein_coefficients\": 72, \"result\": \"verified\"}",
+      "stderr": ""
+    },
+    {
+      "label": "initial_verify_exact_O",
+      "command": [
+        "-O",
+        "verify_exact.py"
+      ],
+      "cwd": "work/m2b_induction/initial",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 1.231,
+      "log": "replay_logs/middle__initial_verify_exact_O.log",
+      "stdout": "{\"method\": \"Q(sqrt(3),sqrt(7)); rational sign certificates\", \"root_count\": 15, \"contact_count\": 14, \"goodness_count\": 15, \"dominance_count\": 8, \"Bernstein_coefficients\": 72, \"result\": \"verified\"}",
+      "stderr": ""
+    },
+    {
+      "label": "initial_verify_independent_normal",
+      "command": [
+        "verify_independent.py"
+      ],
+      "cwd": "work/m2b_induction/initial",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 0.16,
+      "log": "replay_logs/middle__initial_verify_independent_normal.log",
+      "stdout": "{\"method\": \"rational continued-fraction cylinders; no floating-point decisions\", \"root_endpoint_inequalities\": 30, \"goodness_child_endpoint_inequalities\": 60, \"adjacent_contacts\": 14, \"goodness_intersections\": 15, \"central_tail_separations\": 8, \"positive_bernstein_coefficients\": 72, \"result\": \"verified\"}",
+      "stderr": ""
+    },
+    {
+      "label": "initial_verify_independent_O",
+      "command": [
+        "-O",
+        "verify_independent.py"
+      ],
+      "cwd": "work/m2b_induction/initial",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 0.158,
+      "log": "replay_logs/middle__initial_verify_independent_O.log",
+      "stdout": "{\"method\": \"rational continued-fraction cylinders; no floating-point decisions\", \"root_endpoint_inequalities\": 30, \"goodness_child_endpoint_inequalities\": 60, \"adjacent_contacts\": 14, \"goodness_intersections\": 15, \"central_tail_separations\": 8, \"positive_bernstein_coefficients\": 72, \"result\": \"verified\"}",
+      "stderr": ""
+    },
+    {
+      "label": "run_validation_normal",
+      "command": [
+        "run_validation.py",
+        "--source",
+        "/private/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-math-replay-iw2pcwwg/work/m2b_induction"
+      ],
+      "cwd": "work/report_parts/m2b_appendix",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 55.036,
+      "log": "replay_logs/middle__run_validation_normal.log",
+      "stdout": "ACCEPTED verify_m2b_appendix_identity.py\nACCEPTED verify_m2b_appendix_identity.py -O\nACCEPTED verify_m2b_tex.py\nACCEPTED verify_m2b_tex.py -O\nREJECTED missing original record group\nREJECTED changed exact endpoint\nREJECTED changed printed parent index\nREJECTED changed printed continued fraction\nCOMPLETE: four positive identity gates and four rejected corruptions.",
+      "stderr": ""
+    }
+  ]
+}

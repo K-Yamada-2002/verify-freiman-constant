@@ -1,0 +1,752 @@
+{
+  "status": "Unproved inclusion candidates; rational full-target distance <=1e-9",
+  "definitions": [
+    {
+      "label": "A",
+      "alphabet": "123",
+      "forbidden": [
+        "131",
+        "2132",
+        "2312",
+        "2313",
+        "3132"
+      ]
+    },
+    {
+      "label": "B",
+      "alphabet": "123",
+      "forbidden": [
+        "1123121",
+        "1213211",
+        "131",
+        "21322",
+        "22312",
+        "2313",
+        "3132",
+        "323"
+      ]
+    },
+    {
+      "label": "C",
+      "alphabet": "123",
+      "forbidden": [
+        "131",
+        "21323",
+        "2313",
+        "3132",
+        "32312"
+      ]
+    },
+    {
+      "label": "D",
+      "alphabet": "123",
+      "forbidden": [
+        "11131",
+        "121323",
+        "13111",
+        "1312",
+        "2113112",
+        "2131",
+        "313",
+        "323121"
+      ]
+    },
+    {
+      "label": "E",
+      "alphabet": "123",
+      "forbidden": [
+        "131",
+        "313"
+      ]
+    },
+    {
+      "label": "F",
+      "alphabet": "123",
+      "forbidden": [
+        "1113111",
+        "1113112",
+        "1312",
+        "2113111",
+        "2131",
+        "313"
+      ]
+    },
+    {
+      "label": "G",
+      "alphabet": "123",
+      "forbidden": [
+        "1113111",
+        "1312",
+        "1313",
+        "2131",
+        "3131"
+      ]
+    },
+    {
+      "label": "KF",
+      "alphabet": "123",
+      "forbidden": [
+        "131"
+      ]
+    },
+    {
+      "label": "H",
+      "alphabet": "123",
+      "forbidden": [
+        "111312",
+        "213111",
+        "21312",
+        "313"
+      ]
+    },
+    {
+      "label": "I",
+      "alphabet": "123",
+      "forbidden": [
+        "21312",
+        "21313",
+        "31312",
+        "31313"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim": 1,
+      "label": "A",
+      "forbidden": [
+        "131",
+        "2132",
+        "2312",
+        "2313",
+        "3132"
+      ],
+      "left": [
+        "11",
+        "12",
+        "2"
+      ],
+      "right": [
+        "11",
+        "12",
+        "2"
+      ],
+      "target": [
+        4.1,
+        4.124769
+      ],
+      "origin": [
+        1
+      ],
+      "dominance_bound": "31721/7772",
+      "background_bound": "31721/7772",
+      "radius": 4,
+      "tail_bound_iterations": 16,
+      "prefix_relaxations": [],
+      "rational_leaf_check": {
+        "covered": [
+          [
+            "41/10",
+            "4124769/1000000"
+          ]
+        ],
+        "maximum_width": "1/1000000000"
+      },
+      "source_factors": [
+        {
+          "left": [
+            "11",
+            "12",
+            "2"
+          ],
+          "right": [
+            "11",
+            "12",
+            "2"
+          ]
+        }
+      ]
+    },
+    {
+      "claim": 2,
+      "label": "B",
+      "forbidden": [
+        "1123121",
+        "1213211",
+        "131",
+        "21322",
+        "22312",
+        "2313",
+        "3132",
+        "323"
+      ],
+      "left": [
+        "11",
+        "12",
+        "21",
+        "22",
+        "2311",
+        "232",
+        "233"
+      ],
+      "right": [
+        "11",
+        "12",
+        "21",
+        "22",
+        "2311",
+        "232",
+        "233"
+      ],
+      "target": [
+        4.124768,
+        4.1615813
+      ],
+      "origin": [
+        2
+      ],
+      "dominance_bound": "62422/15197",
+      "background_bound": "62422/15197",
+      "radius": 4,
+      "tail_bound_iterations": 16,
+      "prefix_relaxations": [],
+      "rational_leaf_check": {
+        "covered": [
+          [
+            "128899/31250",
+            "41615813/10000000"
+          ]
+        ],
+        "maximum_width": "1/1000000000"
+      },
+      "source_factors": [
+        {
+          "left": [
+            "11",
+            "12",
+            "21",
+            "22",
+            "2311",
+            "232",
+            "233"
+          ],
+          "right": [
+            "11",
+            "12",
+            "21",
+            "22",
+            "2311",
+            "232",
+            "233"
+          ]
+        }
+      ]
+    },
+    {
+      "claim": 3,
+      "label": "C",
+      "forbidden": [
+        "131",
+        "21323",
+        "2313",
+        "3132",
+        "32312"
+      ],
+      "left": [
+        "11",
+        "12"
+      ],
+      "right": [
+        "11",
+        "12",
+        "21",
+        "22",
+        "2311",
+        "232",
+        "233"
+      ],
+      "target": [
+        4.16158,
+        4.171799
+      ],
+      "origin": [
+        3
+      ],
+      "dominance_bound": "59817/14378",
+      "background_bound": "59817/14378",
+      "radius": 4,
+      "tail_bound_iterations": 16,
+      "prefix_relaxations": [],
+      "rational_leaf_check": {
+        "covered": [
+          [
+            "208079/50000",
+            "4171799/1000000"
+          ]
+        ],
+        "maximum_width": "1/1000000000"
+      },
+      "source_factors": [
+        {
+          "left": [
+            "11",
+            "12"
+          ],
+          "right": [
+            "11",
+            "12",
+            "21",
+            "22",
+            "2311",
+            "232",
+            "233"
+          ]
+        }
+      ]
+    },
+    {
+      "claim": 4,
+      "label": "C",
+      "forbidden": [
+        "131",
+        "21323",
+        "2313",
+        "3132",
+        "32312"
+      ],
+      "left": [
+        "12"
+      ],
+      "right": [
+        "23122",
+        "23123"
+      ],
+      "target": [
+        4.171797,
+        4.172072
+      ],
+      "origin": [
+        4
+      ],
+      "dominance_bound": "59817/14378",
+      "background_bound": "59817/14378",
+      "radius": 4,
+      "tail_bound_iterations": 16,
+      "prefix_relaxations": [],
+      "rational_leaf_check": {
+        "covered": [
+          [
+            "4171797/1000000",
+            "521509/125000"
+          ]
+        ],
+        "maximum_width": "1/1000000000"
+      },
+      "source_factors": [
+        {
+          "left": [
+            "12"
+          ],
+          "right": [
+            "23122",
+            "23123"
+          ]
+        }
+      ]
+    },
+    {
+      "claim": 5,
+      "label": "D",
+      "forbidden": [
+        "11131",
+        "121323",
+        "13111",
+        "1312",
+        "2113112",
+        "2131",
+        "313",
+        "323121"
+      ],
+      "left": [
+        "11",
+        "12",
+        "133"
+      ],
+      "right": [
+        "11",
+        "12",
+        "133"
+      ],
+      "target": [
+        4.17207,
+        4.178463
+      ],
+      "origin": [
+        5
+      ],
+      "dominance_bound": "59817/14378",
+      "background_bound": "59817/14378",
+      "radius": 4,
+      "tail_bound_iterations": 16,
+      "prefix_relaxations": [],
+      "rational_leaf_check": {
+        "covered": [
+          [
+            "417207/100000",
+            "4178463/1000000"
+          ]
+        ],
+        "maximum_width": "1/1000000000"
+      },
+      "source_factors": [
+        {
+          "left": [
+            "11",
+            "12",
+            "133"
+          ],
+          "right": [
+            "11",
+            "12",
+            "133"
+          ]
+        }
+      ]
+    },
+    {
+      "claim": 6,
+      "label": "E",
+      "forbidden": [
+        "131",
+        "313"
+      ],
+      "left": [
+        "11",
+        "12",
+        "133"
+      ],
+      "right": [
+        "11",
+        "12",
+        "2"
+      ],
+      "target": [
+        4.178461,
+        4.219534
+      ],
+      "origin": [
+        6
+      ],
+      "dominance_bound": "1249/299",
+      "background_bound": "1249/299",
+      "radius": 4,
+      "tail_bound_iterations": 16,
+      "prefix_relaxations": [],
+      "rational_leaf_check": {
+        "covered": [
+          [
+            "4178461/1000000",
+            "2109767/500000"
+          ]
+        ],
+        "maximum_width": "1/1000000000"
+      },
+      "source_factors": [
+        {
+          "left": [
+            "11",
+            "12",
+            "133"
+          ],
+          "right": [
+            "11",
+            "12",
+            "2"
+          ]
+        }
+      ]
+    },
+    {
+      "claim": 7,
+      "label": "F",
+      "forbidden": [
+        "1113111",
+        "1113112",
+        "1312",
+        "2113111",
+        "2131",
+        "313"
+      ],
+      "left": [
+        "11"
+      ],
+      "right": [
+        "11"
+      ],
+      "target": [
+        4.219532,
+        4.235001
+      ],
+      "origin": [
+        7
+      ],
+      "dominance_bound": "40319/9581",
+      "background_bound": "40319/9581",
+      "radius": 4,
+      "tail_bound_iterations": 16,
+      "prefix_relaxations": [],
+      "rational_leaf_check": {
+        "covered": [
+          [
+            "1054883/250000",
+            "4235001/1000000"
+          ]
+        ],
+        "maximum_width": "1/1000000000"
+      },
+      "source_factors": [
+        {
+          "left": [
+            "11"
+          ],
+          "right": [
+            "11"
+          ]
+        }
+      ]
+    },
+    {
+      "claim": 8,
+      "label": "G",
+      "forbidden": [
+        "1113111",
+        "1312",
+        "1313",
+        "2131",
+        "3131"
+      ],
+      "left": [
+        "11",
+        "12"
+      ],
+      "right": [
+        "11",
+        "12"
+      ],
+      "target": [
+        4.234999,
+        4.270001
+      ],
+      "origin": [
+        8
+      ],
+      "dominance_bound": "29774/7035",
+      "background_bound": "29774/7035",
+      "radius": 4,
+      "tail_bound_iterations": 16,
+      "prefix_relaxations": [],
+      "rational_leaf_check": {
+        "covered": [
+          [
+            "4234999/1000000",
+            "4270001/1000000"
+          ]
+        ],
+        "maximum_width": "1/1000000000"
+      },
+      "source_factors": [
+        {
+          "left": [
+            "11",
+            "12"
+          ],
+          "right": [
+            "11",
+            "12"
+          ]
+        }
+      ]
+    },
+    {
+      "claim": 9,
+      "label": "KF",
+      "forbidden": [
+        "131"
+      ],
+      "left": [
+        ""
+      ],
+      "right": [
+        ""
+      ],
+      "target": [
+        4.27,
+        4.36
+      ],
+      "origin": [
+        "KF"
+      ],
+      "dominance_bound": "717651524001091675/169573871942910864",
+      "background_bound": "165907/39346",
+      "radius": 4,
+      "tail_bound_iterations": 16,
+      "prefix_relaxations": [],
+      "rational_leaf_check": {
+        "covered": [
+          [
+            "427/100",
+            "109/25"
+          ]
+        ],
+        "maximum_width": "1/1000000000"
+      },
+      "source_factors": [
+        {
+          "left": [
+            "1",
+            "2",
+            "3"
+          ],
+          "right": [
+            "1",
+            "2",
+            "3"
+          ]
+        }
+      ]
+    },
+    {
+      "claim": 10,
+      "label": "H",
+      "forbidden": [
+        "111312",
+        "213111",
+        "21312",
+        "313"
+      ],
+      "left": [
+        "11",
+        "12",
+        "13113",
+        "133"
+      ],
+      "right": [
+        "11",
+        "12",
+        "13113",
+        "132",
+        "133"
+      ],
+      "target": [
+        4.358477,
+        4.448557
+      ],
+      "origin": [
+        9,
+        10
+      ],
+      "dominance_bound": "1417545807983091/325334667181076",
+      "background_bound": "5906/1365",
+      "radius": 4,
+      "tail_bound_iterations": 16,
+      "prefix_relaxations": [],
+      "rational_leaf_check": {
+        "covered": [
+          [
+            "4358477/1000000",
+            "4448557/1000000"
+          ]
+        ],
+        "maximum_width": "1/1000000000"
+      },
+      "source_factors": [
+        {
+          "left": [
+            "11"
+          ],
+          "right": [
+            "11",
+            "12",
+            "13113"
+          ]
+        },
+        {
+          "left": [
+            "11",
+            "12",
+            "13113",
+            "133"
+          ],
+          "right": [
+            "11",
+            "12",
+            "132",
+            "133"
+          ]
+        }
+      ]
+    },
+    {
+      "claim": 11,
+      "label": "I",
+      "forbidden": [
+        "21312",
+        "21313",
+        "31312",
+        "31313"
+      ],
+      "left": [
+        "12",
+        "1311",
+        "132"
+      ],
+      "right": [
+        "12",
+        "1311",
+        "133"
+      ],
+      "target": [
+        4.448555,
+        4.52
+      ],
+      "origin": [
+        11
+      ],
+      "dominance_bound": "149734021556568/33779422918781",
+      "background_bound": "19277/4355",
+      "radius": 4,
+      "tail_bound_iterations": 16,
+      "prefix_relaxations": [],
+      "rational_leaf_check": {
+        "covered": [
+          [
+            "889711/200000",
+            "113/25"
+          ]
+        ],
+        "maximum_width": "1/1000000000"
+      },
+      "source_factors": [
+        {
+          "left": [
+            "12",
+            "1311",
+            "132"
+          ],
+          "right": [
+            "12",
+            "1311",
+            "133"
+          ]
+        }
+      ]
+    }
+  ],
+  "source_sha256": {
+    "replacement_cover.json": "74b1dd046490caa96bdc048dcea553a3eb672cc5d3e4797e175f17b6e24a2ba4",
+    "simple_choices_refined.json": "bd397a7928616dcad91fa4498ea8626570a6ef3f46b52ef9f808996453a1380c",
+    "short_choices_refined.json": "04aa29cc2f48b27a58ba968c00837b3589a17a32b73ccc4d33c84654be6b4bce",
+    "last_short_choices_refined.json": "294aa354bd7ca5750f4c97e1d094cef2d77eeb650a20d97fe1a4d19d8976411e"
+  },
+  "construction": "Use newly scanned simpler models; clip old row 8, insert KF+KF, merge shared models, and enlarge prefix factors only with exact cross-pair dominance."
+}

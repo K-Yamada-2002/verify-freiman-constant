@@ -1,0 +1,54 @@
+{
+  "status": "PASS_PROFILED_INDEPENDENT_REPLAY",
+  "seconds": 5.841952749993652,
+  "field_operations": {
+    "__mul__": 115769,
+    "__add__": 64889,
+    "sign": 3903,
+    "__radd__": 13946,
+    "inv": 13946
+  },
+  "records": 1095,
+  "bernstein_coefficients": 3903,
+  "max_saved_coefficient_bits": 123,
+  "max_coordinate_degree": 2,
+  "verified_inputs": [
+    {
+      "path": "uniform_periodic_strip.json",
+      "sha256": "36e955608fb95248ed6f4929fece700bc8bd119d3cb3985cfa56c84602ed0aa2",
+      "cases": [
+        {
+          "records": 300,
+          "coefficients": 300
+        },
+        {
+          "records": 300,
+          "coefficients": 896
+        },
+        {
+          "records": 218,
+          "coefficients": 650
+        },
+        {
+          "records": 218,
+          "coefficients": 1942
+        }
+      ]
+    },
+    {
+      "path": "uniform_root_connection.json",
+      "sha256": "bccf93482bdab68f752899e3e9316070ff3cd725cc35d1984bcde0e5fe67c0ce",
+      "cases": [
+        {
+          "records": 29,
+          "coefficients": 29
+        },
+        {
+          "records": 30,
+          "coefficients": 86
+        }
+      ]
+    }
+  ],
+  "caveat": "Counts field operations of this implementation, including nested calls. Saved coefficient bits do not bound intermediate integer sizes. No historical-machine speed or memory claim."
+}

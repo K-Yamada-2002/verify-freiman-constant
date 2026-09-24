@@ -1,0 +1,22 @@
+{
+  "status": "incomplete induction: 15 types, 10 conditional rules, 5 open",
+  "files": {
+    "periodic_cycle_diagnostic.py": "5f09ff477b3459540aee55a920aae69c5e7bbea64d174df6f56cdacc7992ae70",
+    "periodic_exact_cycle_diagnostic_20260924.json": "989ba157bf747edfe53659d73c28cecf478afe540348deeaee91c9e67ba83de4",
+    "periodic_outer_atom_current_20260924.json": "77d37eb098c1768edb097d6a636737d58bada77e517c47ec9a586edb91a3c2d9",
+    "periodic_outer_atom_final_verification_20260924.json": "b5968d904fee259c6a5db24e96362f3d2bef34b7049fb1111f7e0c544e88bb01",
+    "periodic_outer_atom_frontier_audit_20260924.json": "de000543068da1d1e47a9cbf15e6eac562d5b6122bb767accaabaac98734619b",
+    "periodic_outer_atom_frontier_audit_source_20260924.json": "59920573ac4ab5e60e1f208e627d21c6cfb1338d2441680cc380033f62337e8e",
+    "periodic_outer_atom_stage2_20260924/history.json": "74e10db3f0390a6d5e1542693b45bb6260ebbf8beeb6255a2f6a5bdd4e586fe9",
+    "periodic_outer_atom_stage2_20260924/obstructions.json": "5c19e7fed3e0003b8703481ac48bbdac640d95d199f3960d0cee8979965a0a60",
+    "periodic_return_retry2_20260924.report.json": "4f41271e73e2edd6750eeb56a1ab2d1d33f85ec647f320a8c1bafe52e3464055",
+    "periodic_return_deep_audit_status_20260924.json": "1b9991b7fdbcf927c8a0f01142f70b1655b629908a41eacec52614319bf50ca8",
+    "periodic_cell_index_regression_20260924.json": "7d60e6459bafbf1aec691743d844223b411ad0b3139617838c06cab1af32e8f5",
+    "add_gap_repair_moves.py": "4afa6ca79779860bbe4ebf11846ac4df07c22cf5ecf5172b9131e97c8eab5b4c",
+    "repair_gap_intervals.py": "5ee87601a59b75f44205e0aca18311a76f494a72e61f92f6ff1661dd8ec1ebd6",
+    "audit_whole_scalar_intervals.py": "599ee989da980c1abbd0f1251820c83e111a551f22093b33bb88c362e3403f0b",
+    "test_periodic_return.py": "8cb0c3466a3692e2b630208d6497afef8789f8a2ee7080f5f5e4196c97c03cb9",
+    "test_whole_scalar_intervals.py": "92a8ca6a470be9649b41d5f10731fee8a34f8183addacebc556ae5d81dd04cd2",
+    "RESTRICTED_BOX_INDUCTION.md": "6e7cba1295fd588b81fb67c59203625a9662f8e03fa52f7ffd0b07c0719a73db"
+  }
+}

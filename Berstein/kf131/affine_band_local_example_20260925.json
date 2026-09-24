@@ -1,0 +1,51 @@
+{
+  "status": "exact local-rule audit; open nodes are remaining induction obligations",
+  "verified_rules": [
+    {
+      "node": 0,
+      "children": 2,
+      "dependencies": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "open_nodes": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "failed_rules": [],
+  "root_interval": [
+    {
+      "a": {
+        "a": "-58537/1024",
+        "b": "0"
+      },
+      "b": {
+        "a": "5291/128",
+        "b": "0"
+      },
+      "decimal": "1.2928043634066086188261"
+    },
+    {
+      "a": {
+        "a": "-430791/8192",
+        "b": "0"
+      },
+      "b": {
+        "a": "39013/1024",
+        "b": "0"
+      },
+      "decimal": "1.2928112391226143934573"
+    }
+  ],
+  "proof_hash": "fab4f07c0ddc57cc1349ddc442952eea9b4697128c0ba52a13884f9741a5ce2e",
+  "source": "affine_band_extended_runs_20260925/stage_00.json.last_nonempty.json",
+  "source_sha256": "4ceb644688a251eb588301c8f5c95ea5e7c35bb332d133d1db8d15cea1ea3316",
+  "same_numeric_intervals_without_slopes": "node 0: uncovered or non-progressing contact",
+  "closed": false
+}

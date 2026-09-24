@@ -1,0 +1,141 @@
+{
+  "schema": "kf131-scalar-atlas-v1",
+  "settings": {
+    "base": 0.996,
+    "bins": 512,
+    "memory": 8,
+    "grid": 1024000000,
+    "max_step": 4,
+    "block_span": 1
+  },
+  "nodes": [
+    {
+      "id": 0,
+      "states": [
+        "22222222",
+        "22222222"
+      ],
+      "parity": 1,
+      "ratio_bin": 108,
+      "ratio_refinement": [
+        5,
+        18
+      ],
+      "interval": [
+        -193244909,
+        -192220909
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -231035187,
+                -219988125
+              ],
+              "destinations": [
+                1,
+                2,
+                3,
+                4
+              ]
+            }
+          ]
+        }
+      ],
+      "source_node": 2
+    },
+    {
+      "id": 1,
+      "states": [
+        "22222223",
+        "22222223"
+      ],
+      "parity": 1,
+      "ratio_bin": 108,
+      "ratio_refinement": [
+        6,
+        35
+      ],
+      "interval": [
+        -231035187,
+        -219988125
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -55
+    },
+    {
+      "id": 2,
+      "states": [
+        "22222223",
+        "22222223"
+      ],
+      "parity": 1,
+      "ratio_bin": 108,
+      "ratio_refinement": [
+        6,
+        36
+      ],
+      "interval": [
+        -231035187,
+        -219988125
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -56
+    },
+    {
+      "id": 3,
+      "states": [
+        "22222223",
+        "22222223"
+      ],
+      "parity": 1,
+      "ratio_bin": 108,
+      "ratio_refinement": [
+        6,
+        37
+      ],
+      "interval": [
+        -231035187,
+        -219988125
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -57
+    },
+    {
+      "id": 4,
+      "states": [
+        "22222223",
+        "22222223"
+      ],
+      "parity": 1,
+      "ratio_bin": 108,
+      "ratio_refinement": [
+        6,
+        38
+      ],
+      "interval": [
+        -231035187,
+        -219988125
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -58
+    }
+  ],
+  "roots": [
+    0
+  ],
+  "closed_candidate": false,
+  "status": "local gap repairs; child obligations remain open",
+  "open_nodes": 4
+}

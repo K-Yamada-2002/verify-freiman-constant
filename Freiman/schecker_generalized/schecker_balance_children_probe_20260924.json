@@ -1,0 +1,85 @@
+{
+  "source_proof_hash": "3b5cb0ccc926d13e2386fee21b3ea34c3b9ee8780738804a7eb5c89bcbc46d6d",
+  "depths": [
+    5,
+    6
+  ],
+  "rows": [
+    {
+      "node": 3214,
+      "witness": null,
+      "seconds": 0.18902891599999982
+    },
+    {
+      "node": 3215,
+      "witness": {
+        "node": 3215,
+        "base_parameters": [
+          [
+            "4/9",
+            "0"
+          ],
+          [
+            "19/24",
+            "0"
+          ],
+          [
+            "5153632/9765625",
+            "0"
+          ]
+        ],
+        "witness": {
+          "node": 0,
+          "depth": 6,
+          "sample": 0,
+          "parameters": [
+            [
+              "40/151",
+              "0"
+            ],
+            [
+              "91/340",
+              "0"
+            ],
+            [
+              "204707077686274621799/132011777343750",
+              "-1587304794876890881/22001962890625"
+            ]
+          ],
+          "gap": [
+            [
+              "7345061418235707/10000000000000000",
+              "0"
+            ],
+            [
+              "1469012795587351/2000000000000000",
+              "0"
+            ]
+          ],
+          "verification": {
+            "left_cylinders": 643,
+            "right_cylinders": 715,
+            "comparisons": 742
+          }
+        },
+        "exact_replay": {
+          "left_cylinders": 643,
+          "right_cylinders": 715,
+          "comparisons": 742
+        }
+      },
+      "seconds": 1.3783101670000004
+    },
+    {
+      "node": 3216,
+      "witness": null,
+      "seconds": 0.22858741600000076
+    },
+    {
+      "node": 3217,
+      "witness": null,
+      "seconds": 0.32625500000000063
+    }
+  ],
+  "scope": "Counterexample search only; no filling assertion"
+}

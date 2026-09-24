@@ -1,0 +1,2616 @@
+{
+  "date": "2026-09-25",
+  "scope": "Schecker source, reports and saved states; proof remains open",
+  "files": [
+    {
+      "path": "schecker_generalized/AUTOMATED_CYCLIC_INDUCTION.md",
+      "bytes": 13818,
+      "sha256": "d5f6bd822247da39ac1a638bdfead399d10d3f6ca3c020fbec2325e4d0696934"
+    },
+    {
+      "path": "schecker_generalized/BERSTEIN_TRANSFER_20260924.md",
+      "bytes": 9480,
+      "sha256": "f79a32a22f1065042bc0bb90108549d3a6a239c7ba3480db1ac1e9d63ad7ddf3"
+    },
+    {
+      "path": "schecker_generalized/COMPLETE_INDUCTION_SEARCH.md",
+      "bytes": 13291,
+      "sha256": "5a4599905fd284bd8a5ca9c151bc6ab184cf419604044ebcfd1ba06847d53693"
+    },
+    {
+      "path": "schecker_generalized/CONTINUATION_20260924.md",
+      "bytes": 7695,
+      "sha256": "900b16d23892f9e3269437d64764694c9b097a2499d7a5dcf95bccc23d968c0a"
+    },
+    {
+      "path": "schecker_generalized/CORRELATED_TYPE_SEARCH.md",
+      "bytes": 11876,
+      "sha256": "73ba81e752d6938b8be2f8c4a001b9b9064a6e0c4aec54f234acdfb68ae197f1"
+    },
+    {
+      "path": "schecker_generalized/CYCLIC_SEARCH_REFINEMENT.md",
+      "bytes": 13257,
+      "sha256": "48511462b4fb095cfb68fe5f4b17809bb40ffe6ea3929a076c2c01dd5b41c062"
+    },
+    {
+      "path": "schecker_generalized/FRONTIER_REDUCTION.md",
+      "bytes": 11773,
+      "sha256": "ba4476ab670bc76c1131865e490e1c193b3317f43e48c90056fac2ce09504f00"
+    },
+    {
+      "path": "schecker_generalized/FRONTIER_REPAIR.md",
+      "bytes": 11106,
+      "sha256": "73b1d803a6369866ea91a2f8cb857d7e2dabca04c1019335e0666d46d0a047c5"
+    },
+    {
+      "path": "schecker_generalized/GAP_BANK_CONTINUATION_20260924.md",
+      "bytes": 7557,
+      "sha256": "b0d77cfd03d6315159c9a7c21ee5f62080d073f984342e47cd4aef839eb1fa23"
+    },
+    {
+      "path": "schecker_generalized/HANDOFF_20260925.md",
+      "bytes": 18346,
+      "sha256": "318b42c9643e05a5a4852bb7123c11448a066dda18da2f71c46cc49de634f1f3"
+    },
+    {
+      "path": "schecker_generalized/HANDOFF_CHECK_20260925.json",
+      "bytes": 149037,
+      "sha256": "e34c1075dc2b0e39d7b342a569e1cf281812c5b0ce14f279ecc859377d238c7d"
+    },
+    {
+      "path": "schecker_generalized/HANDOFF_CHECK_20260925.log",
+      "bytes": 1029,
+      "sha256": "b7bb9046e85890584b0d02664a643cdb13604d5155e37274f5e716b506895056"
+    },
+    {
+      "path": "schecker_generalized/HANDOFF_TESTS_20260925.log",
+      "bytes": 3723,
+      "sha256": "12b9df911f24f87a516d94343ea78e9cebc0ffc814ff221b997e5e9e62da3ed6"
+    },
+    {
+      "path": "schecker_generalized/HYBRID_INDUCTION_SEARCH.md",
+      "bytes": 10946,
+      "sha256": "42d1eb612e120ff96d01b6e82a166ef3fa32d0cf9dfdb84c7a6bfc9c1006b605"
+    },
+    {
+      "path": "schecker_generalized/PIECEWISE_INDUCTION.md",
+      "bytes": 10834,
+      "sha256": "86c5b77faff0009c84150d436d87238652c18ab28c51b5af8d069e1e42f45ca2"
+    },
+    {
+      "path": "schecker_generalized/REACHABLE_CHART_INDUCTION.md",
+      "bytes": 13210,
+      "sha256": "5768d8038d8dcc46c2e4cd182bcecadf70ecbc7a45502c277db1a3e8784cae6a"
+    },
+    {
+      "path": "schecker_generalized/README.md",
+      "bytes": 30535,
+      "sha256": "8a01dd6db3f9026edd5f083048d31efd66c867613426af619df547f7f7728657"
+    },
+    {
+      "path": "schecker_generalized/SCHECKER_CORRELATED_RETURNS_20260924.md",
+      "bytes": 6603,
+      "sha256": "e9baf23ade14d9809c50f0e79f8f216b29675ff15b28246b0038294129c080a5"
+    },
+    {
+      "path": "schecker_generalized/SCHECKER_RESTART_20260924.md",
+      "bytes": 6790,
+      "sha256": "fa381de205daace12f9ba47315f6e9b6a266317643f8f0cfdafa6d5b4683f769"
+    },
+    {
+      "path": "schecker_generalized/SMALL_TYPE_SEARCH.md",
+      "bytes": 9944,
+      "sha256": "9ba4c0633eebc4fee60f5476e243f1a62082cd20715c3b074c71976c80f44912"
+    },
+    {
+      "path": "schecker_generalized/adaptive_depth4_certificate.json",
+      "bytes": 79643,
+      "sha256": "a6eced0d4a8089e0d0ac507ac91d592171f3b84a0176c97a4d711ccb1ac9de8b"
+    },
+    {
+      "path": "schecker_generalized/adaptive_depth6_certificate.json",
+      "bytes": 419677,
+      "sha256": "aacd00679804954553ae35eab2dd6da44c45d2f4eff9351f10c8837e5e52e33c"
+    },
+    {
+      "path": "schecker_generalized/adaptive_depth8_certificate.json",
+      "bytes": 5404027,
+      "sha256": "d5978eab5f019b43070d81ff023f7baf70979a76db8638c99da700acdfc00f52"
+    },
+    {
+      "path": "schecker_generalized/adaptive_depth8_positive_certificate.json",
+      "bytes": 2563250,
+      "sha256": "0f8982121c97bf779c20a4d86b3aaf3a42be6bca904fd094cbefa4caa6ef354f"
+    },
+    {
+      "path": "schecker_generalized/adaptive_depth8_zero_certificate.json",
+      "bytes": 1771118,
+      "sha256": "7093e5d1879a46a3cd41bf956915c32274446cfcb26da935ca81eb996c4ac233"
+    },
+    {
+      "path": "schecker_generalized/adaptive_extra_endpoint_shapes.json",
+      "bytes": 97909,
+      "sha256": "11c50a5de863aa80aac6cc62f232a5952d9bcb29571b64a3313207bed63babe8"
+    },
+    {
+      "path": "schecker_generalized/adaptive_induction.py",
+      "bytes": 20256,
+      "sha256": "c98c4f1255ac9187115a45a12302c76fa6bd24c03461dc960c26a54dd7bccffe"
+    },
+    {
+      "path": "schecker_generalized/adaptive_induction_report.md",
+      "bytes": 14872,
+      "sha256": "72f819e19b1ffdfd0f722f914bb89fd4ea8c98bc4066386bdc2165cf91f6b8e8"
+    },
+    {
+      "path": "schecker_generalized/adaptive_type_boxes_refined_float.json",
+      "bytes": 22635,
+      "sha256": "626d029e7c4bc3c90101d03676eab695f256ba9c65aabd28f2bb3c3dbb87cff3"
+    },
+    {
+      "path": "schecker_generalized/adaptive_type_boxes_step1_float.json",
+      "bytes": 12645,
+      "sha256": "00c920d6808e5bf2f9ed8e96ecec1d6495e0b3cd4119b06eb79071f595905236"
+    },
+    {
+      "path": "schecker_generalized/adaptive_types.py",
+      "bytes": 15325,
+      "sha256": "b29360929e5e3774f5a0538ba8657c629867a32b2f4a99e4acd97879f5309eaa"
+    },
+    {
+      "path": "schecker_generalized/audit_chart_gaps.py",
+      "bytes": 6880,
+      "sha256": "e42aa40e33d267f34e4df27ec9dc15e9c39ff4dc46ca105ea48667f426db0ef7"
+    },
+    {
+      "path": "schecker_generalized/audit_child_covers.py",
+      "bytes": 2968,
+      "sha256": "650aa149efde634ff02d1ad3ab5cb391f9cb04beff19f11c220256845e2a71da"
+    },
+    {
+      "path": "schecker_generalized/backward_gap_audit.py",
+      "bytes": 5769,
+      "sha256": "6f1c4fba8be66b277f12b9e00558880176e267975b6c80ff25a5d41cb9dbe057"
+    },
+    {
+      "path": "schecker_generalized/benchmark_hybrid_mosaic.py",
+      "bytes": 3192,
+      "sha256": "1ff94e6215dec8ac608aa9bbef89d6e552300fb6e77854531e2f8e4b30400f60"
+    },
+    {
+      "path": "schecker_generalized/berstein_transfer_summary.json",
+      "bytes": 6149,
+      "sha256": "7e0e9537eb0684ae5c3a537a1a04f53ee4e47d32630c03186212687b7cbe5198"
+    },
+    {
+      "path": "schecker_generalized/chart_central_probe.json",
+      "bytes": 1432,
+      "sha256": "ca9be9d0e043330da6994ec756451c3f563e736460b828631be44404c36383dd"
+    },
+    {
+      "path": "schecker_generalized/chart_contact_example.json",
+      "bytes": 1294,
+      "sha256": "5e92872ea693edbb0b637d5794782cf791a5a6c2ae2b5457ad4b57fece710053"
+    },
+    {
+      "path": "schecker_generalized/chart_contact_example.py",
+      "bytes": 3478,
+      "sha256": "9b891cf56d074c9c653c2a3a87f3c735685d267b3aa91fc6d61a2354fad1d80c"
+    },
+    {
+      "path": "schecker_generalized/chart_dfs_audit.json",
+      "bytes": 58932,
+      "sha256": "c69529f3db1df9167bc53a7c08e3a7a429f9d139b940da7ff062193dbe1422e4"
+    },
+    {
+      "path": "schecker_generalized/chart_dfs_graph.json",
+      "bytes": 1423456,
+      "sha256": "db251369092dc5dbbfd7f20256a3eb20f8c81896d5a6a710ef2d149142a7599f"
+    },
+    {
+      "path": "schecker_generalized/chart_dfs_graph.state.json",
+      "bytes": 1053065,
+      "sha256": "02ca91eb13580875f6a19f80698052350ef13489caecf4337a1f4fe0abd88d72"
+    },
+    {
+      "path": "schecker_generalized/chart_geometry.py",
+      "bytes": 5281,
+      "sha256": "07e64e47c907edd415e31ba55c64d366a2f831cc610705ebe1ddd2669436d08d"
+    },
+    {
+      "path": "schecker_generalized/chart_memory1_audit.json",
+      "bytes": 155105,
+      "sha256": "1bb31f729877c2c0f250bc3c42fb344d10e29c0092d77ade30f516cd61e5c813"
+    },
+    {
+      "path": "schecker_generalized/chart_memory1_graph.json",
+      "bytes": 3145492,
+      "sha256": "93be7877f8c5420761539793ed132eb5ccf878ecec6bdc7a136cec124597a0c8"
+    },
+    {
+      "path": "schecker_generalized/chart_memory2_audit.json",
+      "bytes": 196050,
+      "sha256": "cc59e0c31163c154e61689407015980fe4b5cf53af11712abd4eb9a9771daa3b"
+    },
+    {
+      "path": "schecker_generalized/chart_memory2_graph.json",
+      "bytes": 4968817,
+      "sha256": "c12b5eb73a437f51ca204dab629e3c7a74335fcf19f8d0c2adb793989efeb985"
+    },
+    {
+      "path": "schecker_generalized/chart_paired_audit.json",
+      "bytes": 15981,
+      "sha256": "903e5eff063157f06c732f281e6970df88417c5f9849c3cc2e0408e847da6a73"
+    },
+    {
+      "path": "schecker_generalized/chart_paired_graph.json",
+      "bytes": 467300,
+      "sha256": "abb5b824286c6022e23b838a86065a194376777ee525b642fcdeb1d6ffb7b555"
+    },
+    {
+      "path": "schecker_generalized/chart_paired_graph.state.json",
+      "bytes": 1314294,
+      "sha256": "43b146c89cbee544db09ca58d09a5cf9d535f2b2bd2f9814917d7d4020dbc1af"
+    },
+    {
+      "path": "schecker_generalized/chart_routes_audit.json",
+      "bytes": 128603,
+      "sha256": "fe63bc14f2ab639ca109c31b253f8ec2dcc1b9c446de212cfb590e0a78d5cba0"
+    },
+    {
+      "path": "schecker_generalized/chart_routes_breadth_audit.json",
+      "bytes": 249117,
+      "sha256": "b719e9b14964162c1201e000b701db6520e80242926d4c79e71f1a8d2c1de0d8"
+    },
+    {
+      "path": "schecker_generalized/chart_routes_breadth_graph.json",
+      "bytes": 5014428,
+      "sha256": "b185e23aa9ec39b655dd23ca7b24cef550e4466d6f7aa8df4ea161df462de29a"
+    },
+    {
+      "path": "schecker_generalized/chart_routes_breadth_graph.state.json",
+      "bytes": 3079528,
+      "sha256": "ccf05209818ba1efd56b54833cbc13996446ec13f0f1588ed797d1b639c394ff"
+    },
+    {
+      "path": "schecker_generalized/chart_routes_graph.json",
+      "bytes": 2920584,
+      "sha256": "7747158671648891e88c5e04aec166cff57ab5f58572076bd12a0c3bf5159dce"
+    },
+    {
+      "path": "schecker_generalized/chart_routes_graph.state.json",
+      "bytes": 2004314,
+      "sha256": "a8b721a3d8c63d1c37a2f5ad496a4fd429d8b66026e0de9517553489a0cfa327"
+    },
+    {
+      "path": "schecker_generalized/chart_strategy_ranks.py",
+      "bytes": 1941,
+      "sha256": "e25d6f5a652fd4e8db75484ed094e09bfbd15df30287a995fcf136032c1313a3"
+    },
+    {
+      "path": "schecker_generalized/check_handoff_20260925.py",
+      "bytes": 3003,
+      "sha256": "5088ccdaf671b1e79b3cdeefcc984c7f4e9df07ad1c21f9d4474ca91c0244fa8"
+    },
+    {
+      "path": "schecker_generalized/child_H11_1_cover.json",
+      "bytes": 2201,
+      "sha256": "f949e122e788a92a83e1117d70bec54c3c7e5b86016c7f109a17e7d19e454c86"
+    },
+    {
+      "path": "schecker_generalized/child_J1_covers.json",
+      "bytes": 5342,
+      "sha256": "128c318d2b44859b35b597610527b0ba4144a44cfe926375c87e0809d6bc51d7"
+    },
+    {
+      "path": "schecker_generalized/child_J2R_covers.json",
+      "bytes": 8619,
+      "sha256": "6160e8ff56d2a783132037f8b80a59eaf521ae3f74c29a58f7347baa54789921"
+    },
+    {
+      "path": "schecker_generalized/child_cover_audit.json",
+      "bytes": 6336,
+      "sha256": "a8e81a63060e01bf43369677394c0d4ded2b1e8cb18b2bbbd2f9038c2d74c38c"
+    },
+    {
+      "path": "schecker_generalized/child_family_covers.json",
+      "bytes": 16869,
+      "sha256": "dca1746d68097a4a1f00294b86fdd351a04c9c3e168cc421272a80e43607d3e4"
+    },
+    {
+      "path": "schecker_generalized/child_family_covers.py",
+      "bytes": 6661,
+      "sha256": "fa889dd830354d20554337e84a155a2c308b1fab4a75caa4cc28be42331115d9"
+    },
+    {
+      "path": "schecker_generalized/child_family_covers_deep.json",
+      "bytes": 6062,
+      "sha256": "429151abdaa1129c2297d74cc0c7ce8be7d8f164d68574dd2dd058b59b06b9d0"
+    },
+    {
+      "path": "schecker_generalized/child_frontier_covers.json",
+      "bytes": 8472,
+      "sha256": "ff3bc53b383439c95f3f1fe8a00e4f9cb6883aa247df5c1bf73ed77d267c604f"
+    },
+    {
+      "path": "schecker_generalized/child_gap_survey.json",
+      "bytes": 2595,
+      "sha256": "01f59b520b0cfea6ab8ae301acb746e2fc85afd1fade0472ec101d1a9f0ccfc4"
+    },
+    {
+      "path": "schecker_generalized/child_induction_report.md",
+      "bytes": 9800,
+      "sha256": "2e1e6c859ce8cf62f3b5daf7de0aff88ce26113098be1983ffc378b2d1bdfd86"
+    },
+    {
+      "path": "schecker_generalized/child_repair.json",
+      "bytes": 10334,
+      "sha256": "ce5f59b61960f8bcc92691eda137f9cf1a7c821112265800e5f09d81ee039207"
+    },
+    {
+      "path": "schecker_generalized/compact_cyclic_graph.py",
+      "bytes": 9978,
+      "sha256": "0e3cf10216e1dacbe0467ce690a8a9f4608972c5e4e691de0d2cf26c313ab309"
+    },
+    {
+      "path": "schecker_generalized/complete_certificate_codec.py",
+      "bytes": 8687,
+      "sha256": "315a0c8ef4778b602872f35fff94883990702bb3d278956c59185edcbff71535"
+    },
+    {
+      "path": "schecker_generalized/complete_chart_library.py",
+      "bytes": 14330,
+      "sha256": "a9594a538a5dabc4beeaf96ae3e2a4ce3b93ce35f9c170ffce8e4f3b6de1604f"
+    },
+    {
+      "path": "schecker_generalized/complete_codec_roundtrip.json",
+      "bytes": 527,
+      "sha256": "9fdf7ad7cc3c65dae7ab4ae54ce4a8a08b32fc615643a2646f50dbe48cb50204"
+    },
+    {
+      "path": "schecker_generalized/complete_induction_first_run.json",
+      "bytes": 1343,
+      "sha256": "4d3aa38de122e0004c21b0c8009d2d55a61c31a0ecaae5b5d631a164f3122303"
+    },
+    {
+      "path": "schecker_generalized/complete_induction_report.json",
+      "bytes": 7192,
+      "sha256": "1ed1292c8eebab21750d11d7a9e43c9910a7e73de231ebe4f24c675b56b21198"
+    },
+    {
+      "path": "schecker_generalized/complete_induction_roundtrip.json",
+      "bytes": 782,
+      "sha256": "9713918d00337366e1be9e1a666ff12ab7e492c90ec9ca3c8759326d252f0a2c"
+    },
+    {
+      "path": "schecker_generalized/complete_induction_run.bank.json",
+      "bytes": 3343641,
+      "sha256": "bbe32e7f5043e8737414003502ccbd23e8bce453296a6a93b5df4bb516deee7c"
+    },
+    {
+      "path": "schecker_generalized/complete_induction_run.json",
+      "bytes": 1151,
+      "sha256": "5211ab9a72363a21a495c41bac132589bffb9b79db448de285b7f8a3db74d8f0"
+    },
+    {
+      "path": "schecker_generalized/complete_induction_run.state.json",
+      "bytes": 28256,
+      "sha256": "8e76e32c7002cd52025085572a08062e9d4245335e4e5009f6a739687ef1e6bf"
+    },
+    {
+      "path": "schecker_generalized/continuation_20260924_report.json",
+      "bytes": 1822,
+      "sha256": "8ade20606b0e42b4500faadb08a64524fcf791682d5f617fc89ef92cf1204403"
+    },
+    {
+      "path": "schecker_generalized/continuation_tests_20260924.log",
+      "bytes": 2883,
+      "sha256": "3029999dfbc048fde4426d96ddb6a398b9b428c5458e8713882e76b92c05654b"
+    },
+    {
+      "path": "schecker_generalized/continue_saved_covers.py",
+      "bytes": 2652,
+      "sha256": "6adaa6249c9f281284ade6d7df098eaf03c70e411f300509f03e9993115dc326"
+    },
+    {
+      "path": "schecker_generalized/continued_chart_gaps.json",
+      "bytes": 19521,
+      "sha256": "2d7308cad1881a48b940d130a6a9f9ee4f070fa4795eb1e7a38bb10bc46addcd"
+    },
+    {
+      "path": "schecker_generalized/continued_incoming_split.audit.json",
+      "bytes": 179960,
+      "sha256": "a2505fbe38fd856299b5cc73af9f695a4dfe92f09fd3cbf2953c97eefed4acb2"
+    },
+    {
+      "path": "schecker_generalized/continued_incoming_split.json",
+      "bytes": 4431321,
+      "sha256": "49f1d2f4f8928dfa369bc6ed8d1e4745f2efa45c9479d81288b11268a53b3ff2"
+    },
+    {
+      "path": "schecker_generalized/continued_incoming_split.witnesses.json",
+      "bytes": 1954,
+      "sha256": "5164104af52df4aacf86cc277144b642f20ab0a59fbaa0b430c233bd2f4a60fb"
+    },
+    {
+      "path": "schecker_generalized/continued_mosaic_seed.json",
+      "bytes": 4381903,
+      "sha256": "49811fdb6dd98ecac50a2602d0a71b886aeafeb7f4eee9e5dcddaffa968b7bb0"
+    },
+    {
+      "path": "schecker_generalized/continued_reduced.audit.json",
+      "bytes": 177350,
+      "sha256": "4ddf3697be68e0cc363155cdfec170d8dc9c76c798272662afc5d66e2008d76a"
+    },
+    {
+      "path": "schecker_generalized/continued_reduced.json",
+      "bytes": 4560337,
+      "sha256": "357ec4fc110bd8ea9ab4d0d93636f8589200853f7b89efdd387d89a0f9229149"
+    },
+    {
+      "path": "schecker_generalized/continued_reduced.state.json",
+      "bytes": 1780274,
+      "sha256": "482234a74ca3e8e517d61370a2b22e9e45a870e1303c582699dc96512b328bba"
+    },
+    {
+      "path": "schecker_generalized/continued_reduced_gaps.json",
+      "bytes": 19289,
+      "sha256": "9f235715735018e252bd28be832f71fa7b26ffbd272d3f5e9cba6783e45b4209"
+    },
+    {
+      "path": "schecker_generalized/continued_root_gap_probe.json",
+      "bytes": 2242,
+      "sha256": "3f679f2258fe2d8c086abdb09749c1b303391d277a31a365813d98f3dc5fcb97"
+    },
+    {
+      "path": "schecker_generalized/contract_cyclic_domains.py",
+      "bytes": 4073,
+      "sha256": "27a3faaef18c454e4201c37cc0265212b55d7e93c0f9645f3f75981c2a49c735"
+    },
+    {
+      "path": "schecker_generalized/contract_piecewise_charts.py",
+      "bytes": 11177,
+      "sha256": "a74e4023911cf30d844313f11e538b78108cb7941c329726ed77e9f0e43dad3f"
+    },
+    {
+      "path": "schecker_generalized/corrected_root_gap_repair.audit.json",
+      "bytes": 84694,
+      "sha256": "ea2013c67a56163e20d7a8cd0251b6c5232ac43df4c4a4fde20a7bbea7e42007"
+    },
+    {
+      "path": "schecker_generalized/corrected_root_gap_repair.json",
+      "bytes": 1810247,
+      "sha256": "7839cba4dd624f2a104b3c20f65f086692399522112eba99933e175c93a453e0"
+    },
+    {
+      "path": "schecker_generalized/corrected_root_gap_repair.report.json",
+      "bytes": 442,
+      "sha256": "e79097402a401b4ae43d7d927a40db2ef88ebd286ead27cc27ae315368ff7439"
+    },
+    {
+      "path": "schecker_generalized/corrected_root_gap_repair.state.json",
+      "bytes": 3013187,
+      "sha256": "654c57eed9a54c1b2e12daaa333749db24b5951817977b54f63b0a310e6df12e"
+    },
+    {
+      "path": "schecker_generalized/correlated_parent_repair.audit.json",
+      "bytes": 181623,
+      "sha256": "493d4a09866117463a85f3915f4cdc7144acd845156179bbe7ef1564e9ecd3ad"
+    },
+    {
+      "path": "schecker_generalized/correlated_parent_repair.json",
+      "bytes": 4558111,
+      "sha256": "9b1b8c2d76b139bca5272239624f08dd14f48a643d8b26a8e1ec4a5ab02910a2"
+    },
+    {
+      "path": "schecker_generalized/correlated_repair.audit.json",
+      "bytes": 181623,
+      "sha256": "4b18b2d926b694b9ab1b5d31f43817d45c35816cf1fb97e4a3a2b78c0f1d1ad4"
+    },
+    {
+      "path": "schecker_generalized/correlated_repair.json",
+      "bytes": 4557975,
+      "sha256": "e7481ab99aeea158e6e4c6bfc55e252cefebefa8eca49aefa9e1084ade8ebec2"
+    },
+    {
+      "path": "schecker_generalized/correlated_repair.state.json",
+      "bytes": 1730724,
+      "sha256": "42ea23373be5fbd1c88fa5fc7941f0b6c1215a0884b1e79d4b0efca69f5dd46d"
+    },
+    {
+      "path": "schecker_generalized/correlated_repair.witnesses.json",
+      "bytes": 2004,
+      "sha256": "3c45bccf807b6f791c4caa46e9ba40d97cf20e2d1b6f746789782ab15c4b2d0f"
+    },
+    {
+      "path": "schecker_generalized/correlated_subtree_repair.audit.json",
+      "bytes": 181468,
+      "sha256": "019407c254f7509aaf086a4b9f1f2899e4cfbc145c763749317776efc2e4f547"
+    },
+    {
+      "path": "schecker_generalized/correlated_subtree_repair.json",
+      "bytes": 4557424,
+      "sha256": "2cde0c849c2b90e665b5c453aab604e547e7bef4e9f9ed816fb585cd92a59ea2"
+    },
+    {
+      "path": "schecker_generalized/correlated_type_search_report.json",
+      "bytes": 11926,
+      "sha256": "c1e34a6d4bc2aa4416d868811fb5fccb4e9195568ce1bb6d22d253742c6eda7b"
+    },
+    {
+      "path": "schecker_generalized/cover_optimization.py",
+      "bytes": 1504,
+      "sha256": "c90d260037075c869d74081bfbbb7862959e76651198d783bb088aaea7695a74"
+    },
+    {
+      "path": "schecker_generalized/cyclic_boundary_regression.json",
+      "bytes": 1244,
+      "sha256": "db27ef835a7c48f2f6f3fd25a7f1cc656915e66ab455f7b0f89f3454d103fc6f"
+    },
+    {
+      "path": "schecker_generalized/cyclic_direct_memory3_audit.json",
+      "bytes": 745599,
+      "sha256": "51ee0ac090ae0ced0e92f9cf711967c91a9a32cd5a802601276d305727938514"
+    },
+    {
+      "path": "schecker_generalized/cyclic_direct_memory3_graph.json",
+      "bytes": 15795053,
+      "sha256": "c478a91e2c96105eaf9db38e0bdbbe4b95cdb2e3b9a4e6451c1799b8d5d23d8d"
+    },
+    {
+      "path": "schecker_generalized/cyclic_direct_states13_audit.json",
+      "bytes": 710005,
+      "sha256": "a946f2a54aac2fe982962c3463fb01346f7f45145e231e8d42e0b59bc839c79a"
+    },
+    {
+      "path": "schecker_generalized/cyclic_direct_states13_graph.json",
+      "bytes": 11613152,
+      "sha256": "17ecb4cb5ac043107d3df02a4a85c33ad39ecf6f583ac07af18b90f4a031c25c"
+    },
+    {
+      "path": "schecker_generalized/cyclic_frontier_gaps.py",
+      "bytes": 8569,
+      "sha256": "da79e769c6f0ce66b37caaa800464061d803f4ee7da92bcd4a02a26bd4a2a6f9"
+    },
+    {
+      "path": "schecker_generalized/cyclic_pending_states13_audit.json",
+      "bytes": 491964,
+      "sha256": "82f7daad21f5c1261467f357399e21d4d4d8fad93836f69e600f5221b0a28f44"
+    },
+    {
+      "path": "schecker_generalized/cyclic_pending_states13_graph.json",
+      "bytes": 8635899,
+      "sha256": "c883df0d6a6d54052a086a8e004f1d3f3dbc025f0f1b718da409f6276a1d4301"
+    },
+    {
+      "path": "schecker_generalized/cyclic_planner.cpp",
+      "bytes": 10010,
+      "sha256": "30bb6da9c661027b06204949e1add848546ca2b29012ce859461de70433dde54"
+    },
+    {
+      "path": "schecker_generalized/cyclic_refined_breadth_audit.json",
+      "bytes": 248922,
+      "sha256": "9f40b342b01c94cb42e18df2271a2b7c540aaf13948ba8d329b17723b5575b61"
+    },
+    {
+      "path": "schecker_generalized/cyclic_refined_breadth_graph.json",
+      "bytes": 4639518,
+      "sha256": "648f8346bd146062fc66d7ea55e5ebec2efed3aa9e761be0492a3efa976912b1"
+    },
+    {
+      "path": "schecker_generalized/cyclic_refined_endpoints_audit.json",
+      "bytes": 134342,
+      "sha256": "39ba50474ef6d8b8802311df6c844fd47c532f0194b30fb9b8aeebfbd6927dab"
+    },
+    {
+      "path": "schecker_generalized/cyclic_refined_endpoints_graph.json",
+      "bytes": 3261756,
+      "sha256": "0ace6ee4d6cb8eca2247dae4f65ae314691d2285c26743c404de62b05065d150"
+    },
+    {
+      "path": "schecker_generalized/cyclic_refined_memory3_audit.json",
+      "bytes": 39473,
+      "sha256": "e25fa5d55182ec5bad27ee58db3ba21dee2a28d77f205e8e6c66bb31675b6aca"
+    },
+    {
+      "path": "schecker_generalized/cyclic_refined_memory3_graph.json",
+      "bytes": 1268545,
+      "sha256": "c12168a5bd9f64c99f6e806271d3ee628c78754d25e3aaee9cb82b07e3184f12"
+    },
+    {
+      "path": "schecker_generalized/cyclic_refinement_plan.json",
+      "bytes": 534,
+      "sha256": "84b8fa3241e2e857261d38de69642df88a1efe164bdbe2e997af1d682840a199"
+    },
+    {
+      "path": "schecker_generalized/cyclic_refinement_report.json",
+      "bytes": 31232,
+      "sha256": "48b22a22933ea85dfb12951cab1f4f8f1b4dd32359b7fb360c947d5f7a2eb564"
+    },
+    {
+      "path": "schecker_generalized/cyclic_type_search_graph.audit.json",
+      "bytes": 15528,
+      "sha256": "586a2988884db26edb4e25d80161268fa2b385915aad48459f03e1f678c91c14"
+    },
+    {
+      "path": "schecker_generalized/cyclic_type_search_graph.json",
+      "bytes": 334277,
+      "sha256": "2adb8ce2836b720a9bf3f4fff8495b5faa3075fde4e3aa61c5e9f213f2fede31"
+    },
+    {
+      "path": "schecker_generalized/cyclic_type_search_plan.json",
+      "bytes": 178,
+      "sha256": "822d79094f935a4264d7b9f7e38dbc7ca2aef30114a8510915970d5373d794a7"
+    },
+    {
+      "path": "schecker_generalized/cyclic_type_search_refined_graph.audit.json",
+      "bytes": 763,
+      "sha256": "03ad1fab8852a760b4edba3bb6f9415fe931ac4e1efc98e259c49936a27deaf4"
+    },
+    {
+      "path": "schecker_generalized/cyclic_type_search_refined_graph.json",
+      "bytes": 23308,
+      "sha256": "29a61e3e959d9270ec9d5f0ca43c86bc5d06a5692de45c6ea95af398601abd3a"
+    },
+    {
+      "path": "schecker_generalized/cyclic_type_search_report.json",
+      "bytes": 7968,
+      "sha256": "f285e739d5d626e67fb56a55155150a002b78576afca64e34d8c60cefbb60f87"
+    },
+    {
+      "path": "schecker_generalized/deeper_child_gaps.json",
+      "bytes": 943,
+      "sha256": "d6d4d0c7e5cb7f5ac14e6e7c18d54ba26dfe7eec16ddb179413d4df6af905f99"
+    },
+    {
+      "path": "schecker_generalized/deeper_child_gaps.py",
+      "bytes": 3259,
+      "sha256": "51eb97042847a25bdc7fb51c036df39000ad1497bfe503cfccfd1064a6df80b4"
+    },
+    {
+      "path": "schecker_generalized/definition_proposal.md",
+      "bytes": 5862,
+      "sha256": "d77a51f19e1577830a0ad5b9002f30c127b401f0e2fb61f65604db8cd3d43ff5"
+    },
+    {
+      "path": "schecker_generalized/eight_shapes_float.json",
+      "bytes": 9224,
+      "sha256": "2834d5e9a4a26ebc042bc31e5436ce2f89074d04e929e476125a57f8f69fefc2"
+    },
+    {
+      "path": "schecker_generalized/exact_offers_search.audit.json",
+      "bytes": 10563,
+      "sha256": "7b3f326a54569de895db3fa119e0a11377551ad1cec92b44f8d4699c48a26ae5"
+    },
+    {
+      "path": "schecker_generalized/exact_offers_search.json",
+      "bytes": 103921,
+      "sha256": "07a4a43fa8e9c97c5d27986c3c5844aad41a791b8164ac91d0f0cb54f32c2f4f"
+    },
+    {
+      "path": "schecker_generalized/exact_offers_search.report.json",
+      "bytes": 7441,
+      "sha256": "24514a2fc6d96d819a691b5220c5b491eb0dbfd7f93f7fa69b0e2d14c11bb06d"
+    },
+    {
+      "path": "schecker_generalized/exact_offers_search.state.json",
+      "bytes": 941467,
+      "sha256": "f1e17fc8d805e15949f26c76097aab4e5528ae5870445c93f7f6748f18397602"
+    },
+    {
+      "path": "schecker_generalized/exact_root_offers.audit.json",
+      "bytes": 492,
+      "sha256": "ecc2d25305074b4006168d7b5725e0d4b79d0c257601b86e260d2de1e2e80118"
+    },
+    {
+      "path": "schecker_generalized/exact_root_offers.json",
+      "bytes": 14665,
+      "sha256": "e34184fc7e8b8971caf4c06bb0400beba95e124f2ffcb476067707bdafbc0ced"
+    },
+    {
+      "path": "schecker_generalized/exact_root_offers.state.json",
+      "bytes": 15843,
+      "sha256": "e6ed8004d770ff725ce33398521bbbc36f45bb5d71fb61752a3faa1bdd0b9008"
+    },
+    {
+      "path": "schecker_generalized/exact_shape_search.py",
+      "bytes": 3019,
+      "sha256": "8ffacb931ad3b1bc5df9def73e233ba92ff04052843aa50a9166e8a5e5e72276"
+    },
+    {
+      "path": "schecker_generalized/explore.py",
+      "bytes": 14098,
+      "sha256": "0a68dcb33ad716070131fbdeb573b4bb0ce7a39538119cce18e82eaa8977d643"
+    },
+    {
+      "path": "schecker_generalized/finite_type_game.py",
+      "bytes": 9842,
+      "sha256": "fb404f8cf415f4dab6851a2ae7665ba53e24b08f6f1b3369c6dd3ffa6476d46b"
+    },
+    {
+      "path": "schecker_generalized/four_shapes_exact.json",
+      "bytes": 2841,
+      "sha256": "bfdcafc34393f3c8e073e9c9065bc70c6195ed2e64248886625346d265c0846e"
+    },
+    {
+      "path": "schecker_generalized/four_shapes_float.json",
+      "bytes": 34075,
+      "sha256": "7bebdb2779b902de60aab38d7b570e274aae5ca10966ad954fef7de089222ee8"
+    },
+    {
+      "path": "schecker_generalized/four_shapes_step2_certificate.json",
+      "bytes": 466122,
+      "sha256": "97a43a9a529ca95443580b0cc8db7d3568f04bae98392582ffb98e5c54567815"
+    },
+    {
+      "path": "schecker_generalized/four_shapes_step2_float.json",
+      "bytes": 7647,
+      "sha256": "42fa6e12452de86d4d6543e43feb384dde53957952e4ff4722c6b37232623a17"
+    },
+    {
+      "path": "schecker_generalized/frontier_backward_gaps.json",
+      "bytes": 63408,
+      "sha256": "653f01cf6afe16a78875882724dde1beb81e50ac24434dead34366598a05bb5b"
+    },
+    {
+      "path": "schecker_generalized/frontier_box_gaps.json",
+      "bytes": 45558,
+      "sha256": "38faf193e5a9b9e30c4da4bbd63833ebbbdaca12e77c80d5ce0dcbacffcb541e"
+    },
+    {
+      "path": "schecker_generalized/frontier_compacted.audit.json",
+      "bytes": 178361,
+      "sha256": "e8546ad450d912dd101d553dec0c0808fbac65e6562c156db493a12318485f4c"
+    },
+    {
+      "path": "schecker_generalized/frontier_compacted.json",
+      "bytes": 4370836,
+      "sha256": "773d74af7fbdcfe4799f00284725705f50854b9c521187f9dd8931d916e299f6"
+    },
+    {
+      "path": "schecker_generalized/frontier_compacted.roundtrip.json",
+      "bytes": 1006,
+      "sha256": "15f57ca50d12ead91fed7dc10583e32bc7b3096012119769a4847048f98fbdcf"
+    },
+    {
+      "path": "schecker_generalized/frontier_compacted.state.json",
+      "bytes": 1880212,
+      "sha256": "e75392bd42481997e46c374df038827b2e313c47d5dfe9ec4d68fd3357fca915"
+    },
+    {
+      "path": "schecker_generalized/frontier_contracted_audit.json",
+      "bytes": 80037,
+      "sha256": "64e35c74391c8f5dc8bff520ee141367f0e18fca76031d7fa0aa261e8ec4bf4b"
+    },
+    {
+      "path": "schecker_generalized/frontier_contracted_gaps.json",
+      "bytes": 49354,
+      "sha256": "5f98a71ee6e3a001140053c6e50f7e08c6e18a14c6cecd1b43389b30bf2a3009"
+    },
+    {
+      "path": "schecker_generalized/frontier_contracted_graph.json",
+      "bytes": 1347211,
+      "sha256": "f5a5d6bf277bd175ce87e1afcd9b57c1d3b4e7c978da8d39c588b7fbd06b099f"
+    },
+    {
+      "path": "schecker_generalized/frontier_contraction_control.audit.json",
+      "bytes": 231451,
+      "sha256": "48d3a77acda83af1d5501005a330ff027372ff0707071cc722eb26c701e5a207"
+    },
+    {
+      "path": "schecker_generalized/frontier_contraction_control.json",
+      "bytes": 6027711,
+      "sha256": "a266610ae5c11f341cdfaabe715b08307939e4178cb0c1e5eaa5d0053719d996"
+    },
+    {
+      "path": "schecker_generalized/frontier_final.audit.json",
+      "bytes": 178890,
+      "sha256": "303eef998b094c721fbaac2df9792829ace65eaea86af29feb28a29cb8a4a1e1"
+    },
+    {
+      "path": "schecker_generalized/frontier_final.json",
+      "bytes": 4517708,
+      "sha256": "3660f95ceac50c9ab91453561bd7acab36750596031c12726e2e168949495d7b"
+    },
+    {
+      "path": "schecker_generalized/frontier_learned_audit.json",
+      "bytes": 111658,
+      "sha256": "d0e03dd347483d152ba35c7a9fae5c0ead1c6240845e814c8e9f3cdf89c27700"
+    },
+    {
+      "path": "schecker_generalized/frontier_learned_graph.json",
+      "bytes": 1968302,
+      "sha256": "8567e701052df1e7c6a1f440e671dccb2ebc743e2422b8efaffff9f5facc969d"
+    },
+    {
+      "path": "schecker_generalized/frontier_library_search.json",
+      "bytes": 326,
+      "sha256": "e3f5b390ac74f4936fdf6fb8c0d4f0087f1ca149dca4b801e244cc8b23659562"
+    },
+    {
+      "path": "schecker_generalized/frontier_obstructions.py",
+      "bytes": 5036,
+      "sha256": "72c868d15f4d2ba6c11f35e7616f23d384128cee33b8a95b6289e372e696d826"
+    },
+    {
+      "path": "schecker_generalized/frontier_persistent_audit.json",
+      "bytes": 176777,
+      "sha256": "761626eadf72dbe7e6039eb18d869c571681cc2bbc8fa92d41f78e71adb604e9"
+    },
+    {
+      "path": "schecker_generalized/frontier_persistent_graph.json",
+      "bytes": 2788998,
+      "sha256": "509ed4731635a7b0f103a45952668454b4eda901b2a8d286ea15ed7634707347"
+    },
+    {
+      "path": "schecker_generalized/frontier_policy_eight.audit.json",
+      "bytes": 185783,
+      "sha256": "0371a15ca9c87b796ca3748033e97f7c12bea9800fe07c750af4dedb65e7607f"
+    },
+    {
+      "path": "schecker_generalized/frontier_policy_eight.json",
+      "bytes": 4584771,
+      "sha256": "cb34715d4465be4f1f58ae5e65592d28ff0b530cb42ba3fdb190d0416f3d66b1"
+    },
+    {
+      "path": "schecker_generalized/frontier_recipe_eight.audit.json",
+      "bytes": 188415,
+      "sha256": "993e8be8431229a396480e01e494a5ced18cabcd4c3344cf6f8433a2b508f9fd"
+    },
+    {
+      "path": "schecker_generalized/frontier_recipe_eight.json",
+      "bytes": 4650420,
+      "sha256": "a5338dce0dfe9f375fa054148db50d3d77eaf4702e6c22149048b74a8f090033"
+    },
+    {
+      "path": "schecker_generalized/frontier_recipe_four.audit.json",
+      "bytes": 207272,
+      "sha256": "b3a9a002a900c78200496a0e7b81919a6c192a9f686990f1d1616b84a9cb8749"
+    },
+    {
+      "path": "schecker_generalized/frontier_recipe_four.json",
+      "bytes": 4936068,
+      "sha256": "2466eb2293d135dbfb2b5fb8f286acde6601376870ec3ca83f1a0a86ba16ceff"
+    },
+    {
+      "path": "schecker_generalized/frontier_reduced_eight.audit.json",
+      "bytes": 167474,
+      "sha256": "6ead1d9c2714964a21d8fa89d431059fc735519010a7e2dd79bb2271a2e2c151"
+    },
+    {
+      "path": "schecker_generalized/frontier_reduced_eight.json",
+      "bytes": 4450135,
+      "sha256": "fcb0ce863df0d528a814caaabe7230ccb9956e2769efc000c89030ad28ae705d"
+    },
+    {
+      "path": "schecker_generalized/frontier_reduced_eleven.audit.json",
+      "bytes": 180909,
+      "sha256": "e1bf1e120847d67096f02ee4130aa0c1b84abb067c51820e12d1ee24126d68a4"
+    },
+    {
+      "path": "schecker_generalized/frontier_reduced_eleven.json",
+      "bytes": 4577568,
+      "sha256": "149f7b09820ece964d59ed268d1b9a850bd5c2bfbd8a04d6c64badc7816f6484"
+    },
+    {
+      "path": "schecker_generalized/frontier_reduced_four.audit.json",
+      "bytes": 181492,
+      "sha256": "d1ad4294af6dfe27b417fe7a7b498f4924cb9c2c666965cf62489f5e6bfa4580"
+    },
+    {
+      "path": "schecker_generalized/frontier_reduced_four.json",
+      "bytes": 4689115,
+      "sha256": "ecf769f924e6ef051102c170e5a97ed610ef3fe10bc50ca11628042e49a298a3"
+    },
+    {
+      "path": "schecker_generalized/frontier_reduction_report.json",
+      "bytes": 43161,
+      "sha256": "010b3138edc3f2ebc36177686c376f5abbb772f8485392afba4924fb5533033b"
+    },
+    {
+      "path": "schecker_generalized/frontier_refined_box_gaps.json",
+      "bytes": 44080,
+      "sha256": "9e1bf82865b8ab651e2fae208c02200a1265ea397f4fc6c5abf503b3e26a5a21"
+    },
+    {
+      "path": "schecker_generalized/frontier_repair_report.json",
+      "bytes": 5396,
+      "sha256": "11f5941f3aefedf6e33777956c5febeb431c20c4a3a349639ed6235d339e20c5"
+    },
+    {
+      "path": "schecker_generalized/frontier_resume_audit.json",
+      "bytes": 260319,
+      "sha256": "362599386f108414a9a799e2c6191bb27ed44a7fe48a205c79f3952f6a2edfc0"
+    },
+    {
+      "path": "schecker_generalized/frontier_resume_graph.json",
+      "bytes": 3734411,
+      "sha256": "3da62322674ebfba4c12636bd43f071497527cba8021567a17c71fa6ca3c3cf8"
+    },
+    {
+      "path": "schecker_generalized/gap_bank_continuation_summary.json",
+      "bytes": 4535,
+      "sha256": "338d761fbcbf3128ee89a250d60ded5018844ed37c08ed731557190695985243"
+    },
+    {
+      "path": "schecker_generalized/gap_bank_tests.log",
+      "bytes": 2903,
+      "sha256": "f81a97fe1605232b04ea4e68b4d27a1327a3359db768021ecca1f171898ad9c4"
+    },
+    {
+      "path": "schecker_generalized/gap_parent_repair.audit.json",
+      "bytes": 98985,
+      "sha256": "b52afa3df55432a702a45d5b6266a919710782a7eb7de703fb49c3e7cfac3212"
+    },
+    {
+      "path": "schecker_generalized/gap_parent_repair.json",
+      "bytes": 2027786,
+      "sha256": "da7fb1b1a8b0986e62b47089b696d456ee3bb5012de17f13109f4da288e71a52"
+    },
+    {
+      "path": "schecker_generalized/gap_parent_repair.report.json",
+      "bytes": 142,
+      "sha256": "e60e30dd2e61187292656788e82df4ff4e121256dced6fdd3c0e757f7643fc50"
+    },
+    {
+      "path": "schecker_generalized/gap_parent_repair.state.json",
+      "bytes": 3299214,
+      "sha256": "3adec8c80e3d6dbb4e72b47f5e4b3227eb3796f9e4b83406614ee351207eebcd"
+    },
+    {
+      "path": "schecker_generalized/gap_repaired_audit.json",
+      "bytes": 7771,
+      "sha256": "208126f8be4efc228477ab720ad5a9461175aac24fb6bacd8379009d53d2f4dc"
+    },
+    {
+      "path": "schecker_generalized/gap_repaired_covers.json",
+      "bytes": 12122,
+      "sha256": "64769145be57fb0f7db31a7c3014ee54a6d701a7499194ac72b687b99e1314b9"
+    },
+    {
+      "path": "schecker_generalized/hybrid_discovery.py",
+      "bytes": 10924,
+      "sha256": "783a3d54ba9a1eeca5918a9ef3adf5f646ecf415f2144271084512dc89cb2d6e"
+    },
+    {
+      "path": "schecker_generalized/hybrid_induction_20260924.json",
+      "bytes": 1702,
+      "sha256": "cf0dcdc6605a34d4e9a80ce71f3e748a2cd874f6fd89eef0f339eac938079dbe"
+    },
+    {
+      "path": "schecker_generalized/hybrid_induction_20260924.mosaic.audit.json",
+      "bytes": 79568,
+      "sha256": "d4acbffc6b78079faf3ff168e55701c246ccd341b5fdb79d2f9ab444ca8fa00f"
+    },
+    {
+      "path": "schecker_generalized/hybrid_induction_20260924.mosaic.json",
+      "bytes": 1700093,
+      "sha256": "22528ba6115ab6e6ad18fc5e07df298ea51b47b0e40c7a484cebd7f186a039f2"
+    },
+    {
+      "path": "schecker_generalized/hybrid_induction_20260924.state.json",
+      "bytes": 5439544,
+      "sha256": "a9c01407824ff6b833d38fc25e47c541cfa928206538d82c8cb2e84c670d451b"
+    },
+    {
+      "path": "schecker_generalized/hybrid_induction_20260924.synthesis.audit.json",
+      "bytes": 84670,
+      "sha256": "45a9c73a0eff9164b1b8d1682af89137ee96c6a17088197dc2f032eedb1b248a"
+    },
+    {
+      "path": "schecker_generalized/hybrid_induction_20260924.synthesis.json",
+      "bytes": 1802523,
+      "sha256": "64c00db51fc1ce5e5848a236a53cfc378e0dbb2140d0e02c8f49e1cdcab4e05e"
+    },
+    {
+      "path": "schecker_generalized/hybrid_induction_20260924_finish.json",
+      "bytes": 1705,
+      "sha256": "e85f35625096c5e209bb3c7878bd72147ebdbda693f91cf697907ca5784cad0e"
+    },
+    {
+      "path": "schecker_generalized/hybrid_induction_20260924_finish.mosaic.audit.json",
+      "bytes": 79926,
+      "sha256": "b12d41db5794a027a3914fb11cfe3720da453284583d82352ea9b7e54a52d954"
+    },
+    {
+      "path": "schecker_generalized/hybrid_induction_20260924_finish.mosaic.json",
+      "bytes": 1702520,
+      "sha256": "a536cdd1b51ffa89654af2b84fc49148d7ecaec12dabc9152f724a5da7312aef"
+    },
+    {
+      "path": "schecker_generalized/hybrid_induction_20260924_finish.state.json",
+      "bytes": 5761144,
+      "sha256": "f3f36dacd24b04ff2da36e0105d4cf80370a2acf11704b964661849b9ff1000f"
+    },
+    {
+      "path": "schecker_generalized/hybrid_induction_20260924_finish.synthesis.audit.json",
+      "bytes": 88346,
+      "sha256": "79d5095e567f9a5ab3821bf99219693aa27fb763a44bca4acccecf343c1369af"
+    },
+    {
+      "path": "schecker_generalized/hybrid_induction_20260924_finish.synthesis.json",
+      "bytes": 1878426,
+      "sha256": "bba255b7890e2fbb99edb16596a4359cc722fe8bde2ad49d676ae351e97db564"
+    },
+    {
+      "path": "schecker_generalized/hybrid_induction_report.json",
+      "bytes": 6171,
+      "sha256": "825c098f0b0b6899ba257534730cebfe84e3a4011de30eb7fb2b07c697117abf"
+    },
+    {
+      "path": "schecker_generalized/hybrid_induction_resume.json",
+      "bytes": 1692,
+      "sha256": "030d720765712d910f633e14c82c00594a141781be9df58c63decfdac1c0e786"
+    },
+    {
+      "path": "schecker_generalized/hybrid_induction_resume.mosaic.audit.json",
+      "bytes": 79153,
+      "sha256": "be1ad5b789a9537694d5b6d05a40eef2b75a7a3af68297f0573f2df4f980b072"
+    },
+    {
+      "path": "schecker_generalized/hybrid_induction_resume.mosaic.json",
+      "bytes": 1697229,
+      "sha256": "c059589dbbfbc5fb50296f323d5e40bc179df90083da92d8647a0b783cdc02e0"
+    },
+    {
+      "path": "schecker_generalized/hybrid_induction_resume.state.json",
+      "bytes": 4569811,
+      "sha256": "cb9e13aed5b0aedfd537f95455183ab3d72a728e03f7ceed4af51069b124b850"
+    },
+    {
+      "path": "schecker_generalized/hybrid_induction_resume.synthesis.audit.json",
+      "bytes": 82239,
+      "sha256": "df2d459fc2a9b6ad7d375decf15fcedc79b706327d5fff3cd33969eb82654b1e"
+    },
+    {
+      "path": "schecker_generalized/hybrid_induction_resume.synthesis.json",
+      "bytes": 1760065,
+      "sha256": "dde45f396f8ddff1d6fadad9463e600eb18e7af32986ea5b3fe1a2fc7fcfe998"
+    },
+    {
+      "path": "schecker_generalized/hybrid_induction_roundtrip.json",
+      "bytes": 490,
+      "sha256": "43eb2faa93a0dc249f52769c6badc18ec685983fc505dca89a2e25b2920e816d"
+    },
+    {
+      "path": "schecker_generalized/hybrid_induction_run.json",
+      "bytes": 1708,
+      "sha256": "4a5822e1c214f51fad4cb7e0facf80ded6d49af16d3d4764a522d7856838bd57"
+    },
+    {
+      "path": "schecker_generalized/hybrid_induction_run.mosaic.audit.json",
+      "bytes": 79153,
+      "sha256": "be1ad5b789a9537694d5b6d05a40eef2b75a7a3af68297f0573f2df4f980b072"
+    },
+    {
+      "path": "schecker_generalized/hybrid_induction_run.mosaic.json",
+      "bytes": 1697229,
+      "sha256": "c059589dbbfbc5fb50296f323d5e40bc179df90083da92d8647a0b783cdc02e0"
+    },
+    {
+      "path": "schecker_generalized/hybrid_induction_run.state.json",
+      "bytes": 4562917,
+      "sha256": "eb29901424f2a4cef0d55c066e1d6069654fd67aca492bfc3955d3da99915b69"
+    },
+    {
+      "path": "schecker_generalized/hybrid_induction_run.synthesis.audit.json",
+      "bytes": 82239,
+      "sha256": "df2d459fc2a9b6ad7d375decf15fcedc79b706327d5fff3cd33969eb82654b1e"
+    },
+    {
+      "path": "schecker_generalized/hybrid_induction_run.synthesis.json",
+      "bytes": 1760065,
+      "sha256": "dde45f396f8ddff1d6fadad9463e600eb18e7af32986ea5b3fe1a2fc7fcfe998"
+    },
+    {
+      "path": "schecker_generalized/hybrid_mosaic_benchmark.json",
+      "bytes": 1152,
+      "sha256": "b61cefa664e3213c870a0538265396ae379cc0b02ca7d3dfa228c9c3592d3876"
+    },
+    {
+      "path": "schecker_generalized/induction_obstructions.json",
+      "bytes": 5710,
+      "sha256": "e92d71ee14e8e1edfed353eaa7dcc0b7e1ab97074a4a6a1492b7b5761d5b756f"
+    },
+    {
+      "path": "schecker_generalized/induction_obstructions_report.md",
+      "bytes": 9493,
+      "sha256": "bdf0658e90648c5934111a67ee71d7a4d58122c3e3365eadf854d47334afcb3f"
+    },
+    {
+      "path": "schecker_generalized/initial_gap_checks.json",
+      "bytes": 1115,
+      "sha256": "5be7185f86bc4bd71b6bbb30f843e66498d231ff326bbd7098930041dfdd7cbd"
+    },
+    {
+      "path": "schecker_generalized/invariant_anchor_components.py",
+      "bytes": 4832,
+      "sha256": "0914c60408515b259807cd10224a790fcd7093cf7caefb9c48012b39ef4eba9a"
+    },
+    {
+      "path": "schecker_generalized/invariant_anchor_components_float.json",
+      "bytes": 2972,
+      "sha256": "fad611b58a6a5f4da93cb4f0533aa1ac62309be718e5f4515dce83fa9f072e9e"
+    },
+    {
+      "path": "schecker_generalized/invariant_boxes.py",
+      "bytes": 11151,
+      "sha256": "b7cc1619d848c7a3e36f4b7659f7f4ac20009313df0c82ca92db9c817cbc5382"
+    },
+    {
+      "path": "schecker_generalized/invariant_boxes13_float.json",
+      "bytes": 1625,
+      "sha256": "054f61f2924685f62a148ecf036b15e4473efc092c6624ebe706461c161970ae"
+    },
+    {
+      "path": "schecker_generalized/invariant_boxes_float.json",
+      "bytes": 806,
+      "sha256": "7595cb0b1031eae4b614d0a9bc8f50dc3d3c0b407e4a8e1dd9ea80c399262b5b"
+    },
+    {
+      "path": "schecker_generalized/invariant_endpoint_components.py",
+      "bytes": 8207,
+      "sha256": "df619cf92e1b3f630137afba773723ba42c3b5beb2528ad441633ca6dfd7411e"
+    },
+    {
+      "path": "schecker_generalized/invariant_endpoint_components_float.json",
+      "bytes": 1770,
+      "sha256": "e4eff0951e4de292edd33ef4905873444e87d3799bc16e7ab71f5905a96977f0"
+    },
+    {
+      "path": "schecker_generalized/invariant_width_boxes.py",
+      "bytes": 3112,
+      "sha256": "3e546565ab204a4427a1352d9744c3f48f18f83806b9928d4d705a19ab0048cb"
+    },
+    {
+      "path": "schecker_generalized/invariant_width_boxes_float.json",
+      "bytes": 1342,
+      "sha256": "1b280834ba4e4dc81887cffa8b86cfc54b2cc90a10fc6805a73133a58011334d"
+    },
+    {
+      "path": "schecker_generalized/known_gap_bank_round2.json",
+      "bytes": 11999,
+      "sha256": "2045b5fcf3d8c4d7a03ca2dc35d0148a60c5a111a9ff8a3bfb36e15b76795694"
+    },
+    {
+      "path": "schecker_generalized/known_returns_run.audit.json",
+      "bytes": 209300,
+      "sha256": "3ee3955c8cb93f47bbcee4e62ffec27befa6edfca36a428973acd37e6c8bd663"
+    },
+    {
+      "path": "schecker_generalized/known_returns_run.json",
+      "bytes": 1981476,
+      "sha256": "d148de9d6741ab32a6de2506e0f56aee4a5a724628dabfb65b09ccfbece02faa"
+    },
+    {
+      "path": "schecker_generalized/known_returns_run.state.json",
+      "bytes": 3083186,
+      "sha256": "9e9e728686ba27a188227525f0d12f955554b4ee4a547bb5effe44f71c7a0bf7"
+    },
+    {
+      "path": "schecker_generalized/learn_small_type_menu.py",
+      "bytes": 5338,
+      "sha256": "5dcb379bbc9fc7d223b0db06ee4d2023cc86c133e178490bdf8b4cfade0cba9c"
+    },
+    {
+      "path": "schecker_generalized/learned_anchored_components_float.json",
+      "bytes": 234186,
+      "sha256": "d5904b216fdff649c42af2e49836de1a1108d776a1bdcfcfeaae3847ed18ca34"
+    },
+    {
+      "path": "schecker_generalized/learned_components_float.json",
+      "bytes": 232838,
+      "sha256": "b37d9513eca43dde4bae4dad79da3ce3de5b0398732606fafbcdb71b8333b94e"
+    },
+    {
+      "path": "schecker_generalized/learned_components_native.cpp",
+      "bytes": 9538,
+      "sha256": "bad7728b55ea3cf167dabb7e3bcfb206b3b55282df79b89ef56b4be17918241c"
+    },
+    {
+      "path": "schecker_generalized/learned_enriched_anchored_components_float.json",
+      "bytes": 976705,
+      "sha256": "b6af774fd47a90d63c8c91203ab4e118b5b4e8af7ebbc56baf09e1cbfebeee12"
+    },
+    {
+      "path": "schecker_generalized/periodic_anchor_invariant.json",
+      "bytes": 838,
+      "sha256": "708a78eddd3f8f8592274f676cc5e2540ffda0cd1e0c8823233456b433c154d6"
+    },
+    {
+      "path": "schecker_generalized/periodic_anchor_invariant.py",
+      "bytes": 2675,
+      "sha256": "d063c1482ddadca43a85301ea3dc06356d5ecc3739ffa418c587cf0e01876ad3"
+    },
+    {
+      "path": "schecker_generalized/piecewise_axes_audit.json",
+      "bytes": 362228,
+      "sha256": "6aa5830d04b93f760d4f23a8c352c07584e206f26ed8241fb8040ecf235c655c"
+    },
+    {
+      "path": "schecker_generalized/piecewise_axes_graph.json",
+      "bytes": 6787131,
+      "sha256": "e05e6c470890c8c4afa5a57246a96b1c398729253e1615ac7e9c4cf633713a92"
+    },
+    {
+      "path": "schecker_generalized/piecewise_axes_graph.state.json",
+      "bytes": 4214293,
+      "sha256": "872f8ea5975052d6b53b724ab521ec878d5df83ed905db450ed703648186f609"
+    },
+    {
+      "path": "schecker_generalized/piecewise_chart_example.json",
+      "bytes": 18544,
+      "sha256": "794c214d527126ef2e7b151ee152d465c83a4887800654984c7ad4a709093d22"
+    },
+    {
+      "path": "schecker_generalized/piecewise_chart_example.py",
+      "bytes": 4936,
+      "sha256": "ae4ec230041dc0d2c2982fda2155c7018e2fd9d116822627853a9fe0c225c616"
+    },
+    {
+      "path": "schecker_generalized/piecewise_contracted_graph.audit.json",
+      "bytes": 284624,
+      "sha256": "1c16fe90b6c18ef2d10cc72be19a56999285f8cd68c4d6fc9e92a82ae12f001e"
+    },
+    {
+      "path": "schecker_generalized/piecewise_contracted_graph.json",
+      "bytes": 6331853,
+      "sha256": "1f12d369a6c3c70e2c57633736c08a580795982820a7d834841532df83fb4842"
+    },
+    {
+      "path": "schecker_generalized/piecewise_first_audit.json",
+      "bytes": 319208,
+      "sha256": "2c0eb34c060ded34457d753ba6930b94025561801086387347751f9fa3455b6f"
+    },
+    {
+      "path": "schecker_generalized/piecewise_first_graph.json",
+      "bytes": 6048846,
+      "sha256": "eb5ba094e3f1b6eedf5df5a1f280f6145d5d09badfd122baa280a08612d5c86d"
+    },
+    {
+      "path": "schecker_generalized/piecewise_incoming_eager.audit.json",
+      "bytes": 307802,
+      "sha256": "03b832cdb9536fc853e03bda7ee36cdaa24cbedaceb74060c2f27e66e67cd362"
+    },
+    {
+      "path": "schecker_generalized/piecewise_incoming_eager.json",
+      "bytes": 7614072,
+      "sha256": "1c6f38f280e3abf71cb4e0b4f5423929ef512f27ae0af475b3879d549ac6344f"
+    },
+    {
+      "path": "schecker_generalized/piecewise_incoming_eager.state.json",
+      "bytes": 5614848,
+      "sha256": "4ada8b486bb594dc131558ff6e1acf27111b673f3322970735e396281f156699"
+    },
+    {
+      "path": "schecker_generalized/piecewise_incoming_selective.audit.json",
+      "bytes": 296061,
+      "sha256": "eb3033529e7961b208e83bad221ece9c47b5ba8aa8285b9f0797ac1118f40b66"
+    },
+    {
+      "path": "schecker_generalized/piecewise_incoming_selective.json",
+      "bytes": 6711129,
+      "sha256": "d001e865d47b53c382236e43e443ff303f463e8e548c445482a04244beeb3ecb"
+    },
+    {
+      "path": "schecker_generalized/piecewise_incoming_selective.roundtrip.json",
+      "bytes": 361,
+      "sha256": "77e99ae8f62c0756c18ff03d41a16b1eacc50085eb216415ac774534e2700477"
+    },
+    {
+      "path": "schecker_generalized/piecewise_incoming_selective.state.json",
+      "bytes": 4269189,
+      "sha256": "a75253bf935c7d5e76757b1bbd5d4e32e34996179e772e85672a9728c887ab82"
+    },
+    {
+      "path": "schecker_generalized/piecewise_longer_word_diagnosis.json",
+      "bytes": 47385,
+      "sha256": "76a1242d9b54e2bcdba987981f10d354e44a59e3bd5540eff711e4e2652935f4"
+    },
+    {
+      "path": "schecker_generalized/piecewise_menu_diagnosis.json",
+      "bytes": 89328,
+      "sha256": "4d9dae746507285ec41f414ec01b50380e8eb659b5f206724d12b2228b8b8229"
+    },
+    {
+      "path": "schecker_generalized/piecewise_search_report.json",
+      "bytes": 7509,
+      "sha256": "b536ec1b3d9b151f3f15e3eba0cb1eb9185a452e83d158542d4f07eb302b08fa"
+    },
+    {
+      "path": "schecker_generalized/piecewise_specialized_baseline.audit.json",
+      "bytes": 229136,
+      "sha256": "1cb8da17ff764f409fcc53839149f182585b2ad1ddde5da94239837db7f3bbf9"
+    },
+    {
+      "path": "schecker_generalized/piecewise_specialized_baseline.json",
+      "bytes": 5289929,
+      "sha256": "897d8ff15ffeabd0df596f47961b155e1865be23ca0aabb6165a5254efc914ef"
+    },
+    {
+      "path": "schecker_generalized/piecewise_specialized_baseline.state.json",
+      "bytes": 4075710,
+      "sha256": "e3c4594e5b16d0219aa22641bb5d2647189fcb913d9ba85fee09c182bf5f6c0b"
+    },
+    {
+      "path": "schecker_generalized/piecewise_specialized_initial.state.json",
+      "bytes": 2094415,
+      "sha256": "6a914ba5b08c0d1bb4ba9d90a51d9cb1d1004efb2193a0818b90e5c765672c04"
+    },
+    {
+      "path": "schecker_generalized/piecewise_targeted_probes.json",
+      "bytes": 31638,
+      "sha256": "d236a150d654ee0c5dd4c7b09049b8b8e0c4e3a08025d9da3b2fa1f7c10c812d"
+    },
+    {
+      "path": "schecker_generalized/planner_time_limit.py",
+      "bytes": 1118,
+      "sha256": "cad2ba51da061e77f243351af398c8d907e638c290b23b315f7665a6f4aa3ffc"
+    },
+    {
+      "path": "schecker_generalized/probe_chart_sum_gaps.py",
+      "bytes": 2613,
+      "sha256": "cce089f1fcabda5e3777ff8082b66293cea2722c4a7139f97e9626442fe2d124"
+    },
+    {
+      "path": "schecker_generalized/propagated_incoming.audit.json",
+      "bytes": 181623,
+      "sha256": "493d4a09866117463a85f3915f4cdc7144acd845156179bbe7ef1564e9ecd3ad"
+    },
+    {
+      "path": "schecker_generalized/propagated_incoming.json",
+      "bytes": 4557817,
+      "sha256": "34445ad8c863c5e451cbffcf240356324488053d5e6a81d89f6231d56c7ebb3d"
+    },
+    {
+      "path": "schecker_generalized/propagated_incoming.state.json",
+      "bytes": 1730860,
+      "sha256": "18db4d58fc47ef9616b5f5c776cfbe6f3443a5d81a53181f1fe6d98e660b9419"
+    },
+    {
+      "path": "schecker_generalized/propagated_incoming.witnesses.json",
+      "bytes": 2004,
+      "sha256": "9789ebfc3db0b46d533e280aee408859cdfbd36c0a8bd5c2cc0994eb461b4eba"
+    },
+    {
+      "path": "schecker_generalized/reachable_search_report.json",
+      "bytes": 8141,
+      "sha256": "0383ff5100fd16c7808b5e0490f45b29dc539712a42747da0e3b27a0201bf2b0"
+    },
+    {
+      "path": "schecker_generalized/rechart_open_incoming.py",
+      "bytes": 7248,
+      "sha256": "2893952c9acb5f7ab9ddb3cedf9b9452a488486fa9d3d7271bdb706181becba9"
+    },
+    {
+      "path": "schecker_generalized/reduce_chart_frontier.py",
+      "bytes": 8397,
+      "sha256": "714709250b0f248463e7e9dc1b54f3b1be0d9d3e30cbc018a267f025e912c9c5"
+    },
+    {
+      "path": "schecker_generalized/repair_chart_menu.py",
+      "bytes": 9194,
+      "sha256": "8f99d7598b0b34ef8c95addfdb40a5a5573e0dcd678868857393c6b710025dda"
+    },
+    {
+      "path": "schecker_generalized/repair_child_covers.py",
+      "bytes": 3254,
+      "sha256": "72c55d0714630b4e056ec17bd061b39a1296f248b71cd566eebd8ba28a20c9b6"
+    },
+    {
+      "path": "schecker_generalized/repair_root_point_gap.py",
+      "bytes": 8831,
+      "sha256": "5b28d88a47463c03f8a3783502fd409438b177300941f52a116eb2dae546e0b5"
+    },
+    {
+      "path": "schecker_generalized/repaired_frontier_round2.audit.json",
+      "bytes": 186123,
+      "sha256": "6a8312f1ca7a22894afad8c714311d09afb82f76d6fa71b480b5ad54432bcc3a"
+    },
+    {
+      "path": "schecker_generalized/repaired_frontier_round2.json",
+      "bytes": 1775794,
+      "sha256": "4f0d2e767efc1b4088da945f36d8e6b749701a5d53f708ac44a1dd183db0c02c"
+    },
+    {
+      "path": "schecker_generalized/repaired_frontier_round2.report.json",
+      "bytes": 3583,
+      "sha256": "b4a0f4112bf63d8c180d8b7e116b6b4d0964783d15560ed8dabdf4d7bfac6709"
+    },
+    {
+      "path": "schecker_generalized/repaired_frontier_round2.state.json",
+      "bytes": 2316150,
+      "sha256": "4fe8fea18f2f31b76a73366f5b8d8ff9fd501531c8e8f60b3c373faa5925fc75"
+    },
+    {
+      "path": "schecker_generalized/repaired_frontier_with_gaps.state.json",
+      "bytes": 2579857,
+      "sha256": "766e4ef64b39ee5813ba6fab0254a39844f2063a1b9bf291a477bfd852841dbc"
+    },
+    {
+      "path": "schecker_generalized/results.json",
+      "bytes": 24462,
+      "sha256": "1d3fc13289704da75f3b67f645d5542e8f5213951be360b41fc22c47a6a09004"
+    },
+    {
+      "path": "schecker_generalized/resume_cyclic_search.py",
+      "bytes": 5585,
+      "sha256": "5800d4c46396223be41437a3faa6344e8c2e4fae18f737601e0242fea1410db4"
+    },
+    {
+      "path": "schecker_generalized/retain_schecker_unblocked_rule.py",
+      "bytes": 3022,
+      "sha256": "058418d4efb9c082b4d11cb2d6be462c3e7d438e35e596a1b9cde547ac4f9c76"
+    },
+    {
+      "path": "schecker_generalized/reuse_chart_rules.py",
+      "bytes": 9013,
+      "sha256": "01f8fb8abbf3a50f687290fb142a2a61e9ad6ed871015f2444edf94078ccd460"
+    },
+    {
+      "path": "schecker_generalized/root_frontier_gap_probe.json",
+      "bytes": 211,
+      "sha256": "57d0adff432ef40fbafa8a8db1a2742e3a99a8c70c4939bfdb8144caff95f1d3"
+    },
+    {
+      "path": "schecker_generalized/root_frontier_recharted.audit.json",
+      "bytes": 181623,
+      "sha256": "f6f20c57edaf73e2b142e7eb22f7ec131adffa9bbe642fd24724c945f68e9a0a"
+    },
+    {
+      "path": "schecker_generalized/root_frontier_recharted.json",
+      "bytes": 4557975,
+      "sha256": "1a5456323c4d3f2be063163c2b978c6a04bfcb99485cbc8768cc55ec79880570"
+    },
+    {
+      "path": "schecker_generalized/root_frontier_run.audit.json",
+      "bytes": 184319,
+      "sha256": "3a12ae0e79063c001fe2de4bb5d50ed1951e97e13c72c9f61b9b446d4ab72577"
+    },
+    {
+      "path": "schecker_generalized/root_frontier_run.json",
+      "bytes": 1754615,
+      "sha256": "bb762b0e9350ca24f398c4927c3d7412abbaec5299c869b1b08d59eda5727cc9"
+    },
+    {
+      "path": "schecker_generalized/root_frontier_run.report.json",
+      "bytes": 2252,
+      "sha256": "d61a5b103700b22bd0dc46d31fd8e9a802ed49dc93a173e44552a9907d50f24e"
+    },
+    {
+      "path": "schecker_generalized/root_frontier_run.state.json",
+      "bytes": 1983824,
+      "sha256": "c370b47ba9352e91de139dc335c934a0d68b1028ed73b44a0fe523de6d019431"
+    },
+    {
+      "path": "schecker_generalized/root_memory_expansion.audit.json",
+      "bytes": 184498,
+      "sha256": "189024ccfe5895610c38b301dad3bb7fc21fe1300f5cc1a6db870705eaee6a30"
+    },
+    {
+      "path": "schecker_generalized/root_memory_expansion.json",
+      "bytes": 1754144,
+      "sha256": "bd0e50002bf0c8ba1a7103af8aecb8fa8242b1a93b8095da522ba8e0c4a4afa9"
+    },
+    {
+      "path": "schecker_generalized/root_memory_expansion.report.json",
+      "bytes": 2261,
+      "sha256": "87c27d680f95b41072e319879b21481b50724a6a672d2b0669d7f1776de7c8d1"
+    },
+    {
+      "path": "schecker_generalized/root_memory_expansion.state.json",
+      "bytes": 1968612,
+      "sha256": "383ae84f0e9df063a01c4fc0322ce44049fb3150485d46c21d945ad6169c5178"
+    },
+    {
+      "path": "schecker_generalized/root_native_continuation.audit.json",
+      "bytes": 193248,
+      "sha256": "213b4830b948e1f1566f8059adca941dce4683d04b89e60d3582b8eebe8ab8d3"
+    },
+    {
+      "path": "schecker_generalized/root_native_continuation.json",
+      "bytes": 1829692,
+      "sha256": "d5b5870bd44ffbaa82be97ba1b6443dbf1edfbb65185d456c12e2ca4e84830d2"
+    },
+    {
+      "path": "schecker_generalized/root_native_continuation.report.json",
+      "bytes": 7331,
+      "sha256": "78c6a736c9464875307209256bafd87e5db56c3d61e653eef851b4d871114740"
+    },
+    {
+      "path": "schecker_generalized/root_native_continuation.state.json",
+      "bytes": 2961431,
+      "sha256": "09846d72c1167e91eb46e86b5c731f2eb0f417fba1c06e0df70c4c07b8c612e5"
+    },
+    {
+      "path": "schecker_generalized/root_native_failed_probes.json",
+      "bytes": 5948,
+      "sha256": "18e7d4367ef9be7ed90674731382e377180bfc55acfc3a525078cf407e7acf7b"
+    },
+    {
+      "path": "schecker_generalized/root_shape_expansion.audit.json",
+      "bytes": 181770,
+      "sha256": "7a3fff8c09cdfe0438aeb9579486877c263c0c703d01e7d925802578abf33bc6"
+    },
+    {
+      "path": "schecker_generalized/root_shape_expansion.json",
+      "bytes": 1731028,
+      "sha256": "1f50507823bfaf5d50bfc6dfd8f873253f5ef7e3f774e9f98a9bd8e2e74b9a06"
+    },
+    {
+      "path": "schecker_generalized/root_shape_expansion.report.json",
+      "bytes": 717,
+      "sha256": "d80d5b241b06ff2e827d972ce8f35b9ca8c49afa5cd267558f1ee4de7c185755"
+    },
+    {
+      "path": "schecker_generalized/root_shape_expansion.state.json",
+      "bytes": 1757223,
+      "sha256": "62d621e6daa7bd1940b581fa16ea95810953c4c4009cb551ab1021c8c444d459"
+    },
+    {
+      "path": "schecker_generalized/run_cyclic_search.py",
+      "bytes": 4643,
+      "sha256": "5e41b4707410e089b268f2c1aa240b13930d38f1dfd0b7e9f0d528ff4cf6aca1"
+    },
+    {
+      "path": "schecker_generalized/schecker_all_known_obstructions_20260924.json",
+      "bytes": 2911,
+      "sha256": "c4fdeeb111afc6dd40913e3d40f5fe3924afbf1db5b12c5c3a382b695fb2f919"
+    },
+    {
+      "path": "schecker_generalized/schecker_balance_children_probe_20260924.json",
+      "bytes": 1752,
+      "sha256": "0b42d6c3fbb9482b3cb4fdbebe33dab6736426c798b369d77b7af60754ba1729"
+    },
+    {
+      "path": "schecker_generalized/schecker_balance_control_20260924.audit.json",
+      "bytes": 196128,
+      "sha256": "71841bfda8b8c6963557f447057b6b616ac6601cd2cd4b16afd3552235e5f278"
+    },
+    {
+      "path": "schecker_generalized/schecker_balance_control_20260924.closure.json",
+      "bytes": 64,
+      "sha256": "ddbf293260895efa49cdcb1730d95f9be9428a20e7e0f07c91001fb6f5b76e8f"
+    },
+    {
+      "path": "schecker_generalized/schecker_balance_control_20260924.json",
+      "bytes": 1866910,
+      "sha256": "3ffbe9e4a0ba1b3e8aa4231149d892c22a69bff7c01fa5dbf33f8debbe66b0ab"
+    },
+    {
+      "path": "schecker_generalized/schecker_balance_control_20260924.report.json",
+      "bytes": 598,
+      "sha256": "89a3529143a285a053e92d862c7956252af3ffa94ed8c6dc7ec4cc1add997095"
+    },
+    {
+      "path": "schecker_generalized/schecker_balance_control_20260924.state.json",
+      "bytes": 3448104,
+      "sha256": "de3b8a30ace3bb959efd0b1f06a18512e3198274f783c7f7d3e4d70100144c7d"
+    },
+    {
+      "path": "schecker_generalized/schecker_both_roots_20260924.json",
+      "bytes": 1867388,
+      "sha256": "135025d17498b42cf52e2726eb140d8349aa9da15f181fb86c2fc6ae9d50b3d9"
+    },
+    {
+      "path": "schecker_generalized/schecker_both_roots_20260924.report.json",
+      "bytes": 1018,
+      "sha256": "d08d9c72484ead28a4eeddbbe2ad4e2b53ef7f1d91eae4c82cf200ddd8809725"
+    },
+    {
+      "path": "schecker_generalized/schecker_both_roots_20260924.state.json",
+      "bytes": 3593055,
+      "sha256": "be20335511f31eb740b8bf9a20e222530cfa3e717e711695945c62f03f98b2b9"
+    },
+    {
+      "path": "schecker_generalized/schecker_combined_return_20260924.audit.json",
+      "bytes": 86937,
+      "sha256": "06c9def86d06f482a0fb30d7c54b2a3a3d8c2f48811f6bcd42a7ba47f9472825"
+    },
+    {
+      "path": "schecker_generalized/schecker_combined_return_20260924.json",
+      "bytes": 1987282,
+      "sha256": "8fdebfee62e5537384f06753d4f2d84d0531aa20d1a9371bab60c83e011f094e"
+    },
+    {
+      "path": "schecker_generalized/schecker_combined_return_20260924.log",
+      "bytes": 4642,
+      "sha256": "5afa710a987559d5a9602cf111a1b58a47b794ec7684022957a38cd67c3d3961"
+    },
+    {
+      "path": "schecker_generalized/schecker_combined_return_20260924.report.json",
+      "bytes": 4222,
+      "sha256": "c2f0f80e1eb524181049c305160312679cea51cf285eb6f652ae26bdf1a77dd4"
+    },
+    {
+      "path": "schecker_generalized/schecker_compact_return_20260924.audit.json",
+      "bytes": 194608,
+      "sha256": "1a5103f7089016f977ad1c93e03ac69811887cfdce7e7576c1bbf91235526581"
+    },
+    {
+      "path": "schecker_generalized/schecker_compact_return_20260924.import.log",
+      "bytes": 240,
+      "sha256": "924033be4dfd2163d6d95a857a7251645b4b2151c88e9d716bb4ebaf1afdbc29"
+    },
+    {
+      "path": "schecker_generalized/schecker_compact_return_20260924.json",
+      "bytes": 5016587,
+      "sha256": "999cd7a72e056a75f20a80f6d450aaa7c19cd0ca93e25dbe5ed61941078178bb"
+    },
+    {
+      "path": "schecker_generalized/schecker_compact_return_20260924.log",
+      "bytes": 515,
+      "sha256": "38b7bf3ef292c317f7a5d81a71efa312d7fec1f24a032dc9f8b7ea751428d701"
+    },
+    {
+      "path": "schecker_generalized/schecker_compact_return_20260924.state.json",
+      "bytes": 1945771,
+      "sha256": "daffa39677e8f7221dbd7a68dc71f28c2e7844bd0337bc32cec75f5e48deeea5"
+    },
+    {
+      "path": "schecker_generalized/schecker_compact_return_20260924.status.json",
+      "bytes": 836,
+      "sha256": "c325e4cd5604b0696ff8aebdc45f5b3a7e828d8e88045617e20fcb49c9ca4216"
+    },
+    {
+      "path": "schecker_generalized/schecker_fast_deep_probe_20260924.json",
+      "bytes": 710,
+      "sha256": "ab4b194e159fbe5164c83cc0fe708bf3ed7f1cf05c20a4ceaaf058165bf19db7"
+    },
+    {
+      "path": "schecker_generalized/schecker_fast_depth9_ordered_20260924.json",
+      "bytes": 547,
+      "sha256": "d80b22454f0bd8d1a79d961d4626ddcaeb8eaf8c1999e9e817854e338c2cde2b"
+    },
+    {
+      "path": "schecker_generalized/schecker_fragment_return_20260924.audit.json",
+      "bytes": 195957,
+      "sha256": "54183326c18698b3afb3dcede0a6d8dddf66a5f8c668380f3f0a942fb9d76e24"
+    },
+    {
+      "path": "schecker_generalized/schecker_fragment_return_20260924.closure.json",
+      "bytes": 64,
+      "sha256": "ddbf293260895efa49cdcb1730d95f9be9428a20e7e0f07c91001fb6f5b76e8f"
+    },
+    {
+      "path": "schecker_generalized/schecker_fragment_return_20260924.json",
+      "bytes": 1864923,
+      "sha256": "04c4b51aad794dd9d5e7a235f30d240bd5d4ca838857938c148952bd948928f7"
+    },
+    {
+      "path": "schecker_generalized/schecker_fragment_return_20260924.report.json",
+      "bytes": 862,
+      "sha256": "1d16cbdbdfc524118469239fbd2e8811ede6afb7b494da018088210984ff0b56"
+    },
+    {
+      "path": "schecker_generalized/schecker_fragment_return_20260924.state.json",
+      "bytes": 3441100,
+      "sha256": "1b9b9c0f7cadf271e1e721117b71cdc431b60594ce35a174b183bc91bd438822"
+    },
+    {
+      "path": "schecker_generalized/schecker_intermediate_bank_20260924.json",
+      "bytes": 241,
+      "sha256": "1f7cc0eb476eb93443a4168bc132cc3af07558a6b9c534fb48f2c025187efda7"
+    },
+    {
+      "path": "schecker_generalized/schecker_interval_fragments_20260924.audit.json",
+      "bytes": 193083,
+      "sha256": "dd02576acd439add7d8c3c1e92fd9f58d27337f3bd9ec69e8cca0cf7170a854d"
+    },
+    {
+      "path": "schecker_generalized/schecker_interval_fragments_20260924.closure.json",
+      "bytes": 64,
+      "sha256": "ddbf293260895efa49cdcb1730d95f9be9428a20e7e0f07c91001fb6f5b76e8f"
+    },
+    {
+      "path": "schecker_generalized/schecker_interval_fragments_20260924.json",
+      "bytes": 1842172,
+      "sha256": "56229e37242485476b04f620a1f34d94db6c7fbaf75741dd4e21ebabcaaf9d23"
+    },
+    {
+      "path": "schecker_generalized/schecker_interval_fragments_20260924.report.json",
+      "bytes": 1050,
+      "sha256": "c25bb2bea68f06b148ed00d8a3f7bfff5df4b7043aecd280dee0dfef67a91ef2"
+    },
+    {
+      "path": "schecker_generalized/schecker_interval_fragments_20260924.state.json",
+      "bytes": 3097107,
+      "sha256": "1d1d40a3290d5d3d978bb4cc633b8ec1ab158a548070ff707eedcbe555d29405"
+    },
+    {
+      "path": "schecker_generalized/schecker_long_memory_children_probe_20260924.json",
+      "bytes": 1931,
+      "sha256": "117ab424e94d6c9122daf521f07671f3c27c6041ca5ecabce12ff2cfff9300db"
+    },
+    {
+      "path": "schecker_generalized/schecker_parent_recharted_20260924.audit.json",
+      "bytes": 193509,
+      "sha256": "e03b67f7a2ee4bbfc688ea7ff4fe9bd395fd23213870cc61bebd107f83ce9391"
+    },
+    {
+      "path": "schecker_generalized/schecker_parent_recharted_20260924.json",
+      "bytes": 5003668,
+      "sha256": "649150c2b5292465cda7fce572a057641ed1bd48beb5929540284bd63e0b0f55"
+    },
+    {
+      "path": "schecker_generalized/schecker_parent_recharted_20260924.log",
+      "bytes": 132,
+      "sha256": "0346dc96bd5bf5bfecc84ef510631d7ecb37932f9f2f6fd0644c691ca4a27020"
+    },
+    {
+      "path": "schecker_generalized/schecker_policy_obstruction_20260924.json",
+      "bytes": 1181,
+      "sha256": "1b0865fd4ac560f163712ab6696f1468263ff776cd1cce39972562df1a621ec8"
+    },
+    {
+      "path": "schecker_generalized/schecker_positive_backward_trace_20260924.json",
+      "bytes": 2943,
+      "sha256": "7e8c71391c776c107aee5fec8485ab2aebd5fb91ff37fea200f18a15c656613c"
+    },
+    {
+      "path": "schecker_generalized/schecker_positive_frontier_probe_20260924.json",
+      "bytes": 13705,
+      "sha256": "94a0843378b2b523476008c1d23a2e242c4c859794e90fc7f41bf9134b9232cc"
+    },
+    {
+      "path": "schecker_generalized/schecker_positive_obstruction_bank_20260924.json",
+      "bytes": 36680,
+      "sha256": "b6b9c877b1aeae85b9b7d791ef3598839ba33114099270c9fa915e03c3c4fffc"
+    },
+    {
+      "path": "schecker_generalized/schecker_positive_recharted_20260924.audit.json",
+      "bytes": 196104,
+      "sha256": "272b44c9c2ce7e7fe839ccc4c9f89875f21ed07b2e797104be62fe384b86d20b"
+    },
+    {
+      "path": "schecker_generalized/schecker_positive_recharted_20260924.json",
+      "bytes": 4865900,
+      "sha256": "14525b661de17d9194aa2ff3b2c80fa2b4b66f57c15e957bd521e984d285cdc4"
+    },
+    {
+      "path": "schecker_generalized/schecker_positive_recharted_20260924.log",
+      "bytes": 133,
+      "sha256": "e8ce54a3ba7afcd1c0a31a32707eacebccde5dc10b3942d26f7fa2efaf66d44c"
+    },
+    {
+      "path": "schecker_generalized/schecker_positive_recharted_20260924.obstructions.json",
+      "bytes": 2849,
+      "sha256": "1d30aae590a02c50cd9cdfe9db78913e4b0c8914658f2a06b0da5b94bc550cd5"
+    },
+    {
+      "path": "schecker_generalized/schecker_positive_refined_search_20260924.audit.json",
+      "bytes": 194200,
+      "sha256": "63a89dbe641ca52d5518080a7900b9d17877eea653cdffac5f5528067ea0d330"
+    },
+    {
+      "path": "schecker_generalized/schecker_positive_refined_search_20260924.closure.json",
+      "bytes": 64,
+      "sha256": "2bfcc33d15befd0d25cc17c94d108e0e0ba769832e46cfb2168ae0a7e26ce001"
+    },
+    {
+      "path": "schecker_generalized/schecker_positive_refined_search_20260924.json",
+      "bytes": 1932631,
+      "sha256": "6c6c4edd4a494ff3c7c82448ec27bc58984272d3bf597c06635d82cdbab2841f"
+    },
+    {
+      "path": "schecker_generalized/schecker_positive_refined_search_20260924.log",
+      "bytes": 997,
+      "sha256": "abee4bdf4cc6ca74a2ca8a03656401fb7620ceb3ee2468e8006feb2f85452932"
+    },
+    {
+      "path": "schecker_generalized/schecker_positive_refined_search_20260924.report.json",
+      "bytes": 1082,
+      "sha256": "742704b3c9683743174426444d34840293bd637acfd99662546a86efbd2f620c"
+    },
+    {
+      "path": "schecker_generalized/schecker_positive_refined_search_20260924.state.json",
+      "bytes": 2045086,
+      "sha256": "cca2a8d0ec6ae112dc12f091366c02e8e29193f6faaadb341cbb288bdc10b429"
+    },
+    {
+      "path": "schecker_generalized/schecker_propagated_20260924.audit.json",
+      "bytes": 85959,
+      "sha256": "5f3fe79dadd02bf989c381871093a172f25f8f5b9f84eeeace0c0a06a2b1584a"
+    },
+    {
+      "path": "schecker_generalized/schecker_propagated_20260924.import.log",
+      "bytes": 240,
+      "sha256": "57228c0a02188a04cbffc59500463a5bf946a9166f1876a83747789e95547a75"
+    },
+    {
+      "path": "schecker_generalized/schecker_propagated_20260924.json",
+      "bytes": 1980621,
+      "sha256": "858e830f91079f84abeda10d2a5b10c743ab85d6cae35f7cd3dff8aa876d86ee"
+    },
+    {
+      "path": "schecker_generalized/schecker_propagated_20260924.obstructions.json",
+      "bytes": 152,
+      "sha256": "01d74ac414a9a80f99df36a9942c5d810e886b75954ac3d06148dd87ed37d025"
+    },
+    {
+      "path": "schecker_generalized/schecker_propagated_20260924.report.json",
+      "bytes": 120,
+      "sha256": "1925f4de95d7e8637a7ab0d9a2743ee24285e6c506ec7fb08f24f88101201af1"
+    },
+    {
+      "path": "schecker_generalized/schecker_propagated_20260924.state.json",
+      "bytes": 1941644,
+      "sha256": "ad41f3039696aa245c53bb73e27851820a1ca7b8dc5bbac19f95cf0b153e9bce"
+    },
+    {
+      "path": "schecker_generalized/schecker_reduced_recharted_20260924.audit.json",
+      "bytes": 193509,
+      "sha256": "3e907867f35acef88c0a47ced3d0f57b36c2d27984f8bd45e5dfe9a57629d039"
+    },
+    {
+      "path": "schecker_generalized/schecker_reduced_recharted_20260924.json",
+      "bytes": 5003718,
+      "sha256": "773476c338f04a85008ba22725508b0e82da77ca96e4aa147b7b6aa0ee5a37e8"
+    },
+    {
+      "path": "schecker_generalized/schecker_reduced_recharted_20260924.log",
+      "bytes": 132,
+      "sha256": "43b44afc5c9c82aa1d88f2df399f0c97475598c951bb1f3ab327c680a7f75bb3"
+    },
+    {
+      "path": "schecker_generalized/schecker_repair_seed_20260924.state.json",
+      "bytes": 3601381,
+      "sha256": "a786d1e4bba27eebf9ed94db4776215e90db721c3d8d2dcb4e35734b51c35ee2"
+    },
+    {
+      "path": "schecker_generalized/schecker_resumed_positive_20260924.audit.json",
+      "bytes": 195810,
+      "sha256": "9ff649cc30968e268c81c659e3e52a7c64ed69cc1959d25447d9ad1d7b1fb330"
+    },
+    {
+      "path": "schecker_generalized/schecker_resumed_positive_20260924.json",
+      "bytes": 1863500,
+      "sha256": "bb66fb9267c402f39534fb2bf406a3adb2c1e8aa3e82de356543f6d720efc3ea"
+    },
+    {
+      "path": "schecker_generalized/schecker_resumed_positive_20260924.report.json",
+      "bytes": 3718,
+      "sha256": "7cf5d7cd57c22c7163570af9ab5de2f25f65906e2b0e98a0ec78b70899252e53"
+    },
+    {
+      "path": "schecker_generalized/schecker_resumed_positive_20260924.state.json",
+      "bytes": 3372989,
+      "sha256": "d84b8ae7de12cc1d2e665f9e8a4bf9443ad6d1c4171972e3d303da0f0e79f5de"
+    },
+    {
+      "path": "schecker_generalized/schecker_return_current_20260924.audit.json",
+      "bytes": 87008,
+      "sha256": "60b15b6eaf9243869d75d5727379d0702dfca10b22ea0abc5537615ae88891de"
+    },
+    {
+      "path": "schecker_generalized/schecker_return_current_20260924.json",
+      "bytes": 1866449,
+      "sha256": "0719c6a762e2d0a662bc9015254987c518df33e3c3f746269b1c3a89115b0de3"
+    },
+    {
+      "path": "schecker_generalized/schecker_return_current_20260924.report.json",
+      "bytes": 608,
+      "sha256": "f6676b68439dde43de2f5185b7fd9a6277428c6cb43606aa5d3058818f501443"
+    },
+    {
+      "path": "schecker_generalized/schecker_return_current_20260924.state.json",
+      "bytes": 3594545,
+      "sha256": "6ea02f48ac82da592b5c24ac08103f33c5bf146dac62acb442c34505ffe69006"
+    },
+    {
+      "path": "schecker_generalized/schecker_return_reduced_20260924.audit.json",
+      "bytes": 193509,
+      "sha256": "3d8db3542e46819884db67009869c98bdd99c6155c82584c860ea3573ee204c9"
+    },
+    {
+      "path": "schecker_generalized/schecker_return_reduced_20260924.json",
+      "bytes": 5003396,
+      "sha256": "345a07c19e56794a66a8ed0b98721efabe94f56612016c49088f5381c387ff21"
+    },
+    {
+      "path": "schecker_generalized/schecker_return_reduced_20260924.log",
+      "bytes": 996,
+      "sha256": "3c579d76d1918d09850a9f2fff423cd70e6dbb2f0544fd609bb0b34057d0fa67"
+    },
+    {
+      "path": "schecker_generalized/schecker_return_reduced_20260924.obstructions.json",
+      "bytes": 1798,
+      "sha256": "c451c87fdf13a3499cde1282f81642fd2532493691d62bf35ea73400cb0a1d18"
+    },
+    {
+      "path": "schecker_generalized/schecker_saved_covers_20260924.audit.json",
+      "bytes": 87161,
+      "sha256": "9f97b5e036fc805c08ff7f5145416282a4293cb8f9fa03c73021df6707ba3967"
+    },
+    {
+      "path": "schecker_generalized/schecker_saved_covers_20260924.closure.json",
+      "bytes": 55,
+      "sha256": "d21737f2e04d7e818687e2a82a634e67ba75a67b4047168da7faed197a241b37"
+    },
+    {
+      "path": "schecker_generalized/schecker_saved_covers_20260924.json",
+      "bytes": 1867609,
+      "sha256": "b03b747c4d77b539e8f317f143cb3cfb5489b317dbecde8f8869ee9534a9e00b"
+    },
+    {
+      "path": "schecker_generalized/schecker_saved_covers_20260924.log",
+      "bytes": 3584,
+      "sha256": "c599ba766e3521db8cf51894dc06cd37b0d56feab794b0c0ea6a2e5020991957"
+    },
+    {
+      "path": "schecker_generalized/schecker_saved_covers_20260924.mosaic.state.json",
+      "bytes": 2892221,
+      "sha256": "3aff76d6e4ad46ddfd75fa5d1eaf1be9e5de6532e9a6799ecc9cb6beb585db24"
+    },
+    {
+      "path": "schecker_generalized/schecker_saved_covers_20260924.report.json",
+      "bytes": 668,
+      "sha256": "e5a88ea749d4f649451be5c6c88299b853eee4a1706eac94a6e027cef9ce4ebe"
+    },
+    {
+      "path": "schecker_generalized/schecker_unbalanced_returns_20260924.audit.json",
+      "bytes": 196227,
+      "sha256": "71ed3be904d2e70e55d1387b2ad90ae2eb4e72466b346199eeebf068c9c64d67"
+    },
+    {
+      "path": "schecker_generalized/schecker_unbalanced_returns_20260924.closure.json",
+      "bytes": 64,
+      "sha256": "ddbf293260895efa49cdcb1730d95f9be9428a20e7e0f07c91001fb6f5b76e8f"
+    },
+    {
+      "path": "schecker_generalized/schecker_unbalanced_returns_20260924.json",
+      "bytes": 1867388,
+      "sha256": "f171809b3068a7417aa8265eb9b5dc63aafa8bfedbc18268fe6825e672d8c365"
+    },
+    {
+      "path": "schecker_generalized/schecker_unbalanced_returns_20260924.report.json",
+      "bytes": 696,
+      "sha256": "cf4f1d482ace05b4290661bc510b017491dbd1043ac308ec32df5c430665a9de"
+    },
+    {
+      "path": "schecker_generalized/schecker_unbalanced_returns_20260924.state.json",
+      "bytes": 3593033,
+      "sha256": "89b2346478bfdcf61246051aa51a545f6e88377d26b24aebbcf4661ebde9591e"
+    },
+    {
+      "path": "schecker_generalized/search_adaptive_type_boxes.py",
+      "bytes": 7962,
+      "sha256": "dd30f65d4fab1ed6f7106b46234876de838675edb7b47ba0bfdf757dc261d7fc"
+    },
+    {
+      "path": "schecker_generalized/search_chart_types.py",
+      "bytes": 13438,
+      "sha256": "213c8df63720ce21ed6e8834fb3215c26dc3ce1ee431357bd480af89edac0ef2"
+    },
+    {
+      "path": "schecker_generalized/search_complete_induction.py",
+      "bytes": 9105,
+      "sha256": "6de4183bea6040687d174046291a716b470cbb5f52d3979b00822a6e1e8d9636"
+    },
+    {
+      "path": "schecker_generalized/search_cyclic_types.py",
+      "bytes": 54086,
+      "sha256": "d4e1179fb74121dc21702c7392e27a11461d8b77f21c103ac222fc6b413b4568"
+    },
+    {
+      "path": "schecker_generalized/search_hybrid_induction.py",
+      "bytes": 9962,
+      "sha256": "e6a10bc67fffb952e5a86a84f3cb4050f76f83eeb97c4e6a9f1f88622d09a641"
+    },
+    {
+      "path": "schecker_generalized/search_interval_fragments.py",
+      "bytes": 9417,
+      "sha256": "80bc5f32f9583e091900e47830f0f38f9af3cacd940ce4c0a5f4c16cde0507f4"
+    },
+    {
+      "path": "schecker_generalized/search_known_chart_returns.py",
+      "bytes": 5849,
+      "sha256": "25a8aff587ea9baf5e2c925743f6c3b8839671853280a3523c99d7c2ba0b0cbc"
+    },
+    {
+      "path": "schecker_generalized/search_learned_components.py",
+      "bytes": 7303,
+      "sha256": "5857408a708ac292c383ed53cb2f11a0fc66a07981c10209027db4a447117f92"
+    },
+    {
+      "path": "schecker_generalized/search_piecewise_charts.py",
+      "bytes": 12874,
+      "sha256": "035e6fef8ad569ea9026249b4acadf77632d7d68c844eabcba4ac2d631ce37ed"
+    },
+    {
+      "path": "schecker_generalized/search_reachable_charts.py",
+      "bytes": 9944,
+      "sha256": "e0da0f84e125c5c050211b87779ad551f6950df2323edc19f1b33bf54857ab9f"
+    },
+    {
+      "path": "schecker_generalized/search_root_frontier.py",
+      "bytes": 5024,
+      "sha256": "9969f5c2f6b459526f34f472c099d4b1ff80e83da087e9dacea67e3feff86d21"
+    },
+    {
+      "path": "schecker_generalized/search_shape_bank.py",
+      "bytes": 4564,
+      "sha256": "b375931f259466c587cfdcc5b32bdbbf63fabcfa136b33369be1d4f412043f7e"
+    },
+    {
+      "path": "schecker_generalized/search_types.py",
+      "bytes": 5236,
+      "sha256": "dec54520aff5e60ae79315aaa8a63b3890da866d8ad31278e62d4de6e1087ca2"
+    },
+    {
+      "path": "schecker_generalized/small_type_adaptive_audit.json",
+      "bytes": 85317,
+      "sha256": "a182e5b45efba29b38134dcb09519b96c9090a34450c317a41192e3f3577b504"
+    },
+    {
+      "path": "schecker_generalized/small_type_adaptive_graph.json",
+      "bytes": 1308316,
+      "sha256": "d11c15376f51ef5cda5863d5238101fd397cb16b634b0a052be1087feb9e5153"
+    },
+    {
+      "path": "schecker_generalized/small_type_compacted_audit.json",
+      "bytes": 81460,
+      "sha256": "0a356e1c7013510eeed7fe5092af9063c6784751ea3c11f07476623712a061d3"
+    },
+    {
+      "path": "schecker_generalized/small_type_compacted_graph.json",
+      "bytes": 1396653,
+      "sha256": "55b5424cdf0f5866d383cd1e899b2ab321c552786f1825ba2db91c6986bf254a"
+    },
+    {
+      "path": "schecker_generalized/small_type_control_audit.json",
+      "bytes": 84356,
+      "sha256": "bfe14e169f51a6cc921197c0523c4e8dd05bad05cd82d1d000f12d919c169cbc"
+    },
+    {
+      "path": "schecker_generalized/small_type_control_graph.json",
+      "bytes": 1262669,
+      "sha256": "d6fd2df706ae63f98252056f493ecfcce25e549260639d4af57c441290809afd"
+    },
+    {
+      "path": "schecker_generalized/small_type_long_audit.json",
+      "bytes": 155640,
+      "sha256": "1734b4020552e41f69a57346ad995c53aea59543512ef9111d58b422306bf176"
+    },
+    {
+      "path": "schecker_generalized/small_type_long_graph.json",
+      "bytes": 2265482,
+      "sha256": "e02a97110c2f4bb8c6dedd4fdb4f65ad6f34991a3bd29ee34d20a74028a2a350"
+    },
+    {
+      "path": "schecker_generalized/small_type_macro_audit.json",
+      "bytes": 91413,
+      "sha256": "c92ca57dfb92bcebaec8ad9436334a4baed75ddb8d1868d4d4a4a38d9ae9dd45"
+    },
+    {
+      "path": "schecker_generalized/small_type_macro_graph.json",
+      "bytes": 1460091,
+      "sha256": "d81a192588c297f8b6077a33cfaccadfb52807af9114b4c87b255da798ec8b7d"
+    },
+    {
+      "path": "schecker_generalized/small_type_menu12.json",
+      "bytes": 44194,
+      "sha256": "e35e7da34716f7ce013badc285d7cd2357a8ea4983cc09556598f279335145d6"
+    },
+    {
+      "path": "schecker_generalized/small_type_optimal_audit.json",
+      "bytes": 80937,
+      "sha256": "4ccef420c087f4ee3c42686501d5b3981043bab25b7155951ab249c10ee9d926"
+    },
+    {
+      "path": "schecker_generalized/small_type_optimal_graph.json",
+      "bytes": 1215760,
+      "sha256": "f7d832e06f71de26cfbf31c63330372a0abc572d93fb290dc84d1ec9937c8e85"
+    },
+    {
+      "path": "schecker_generalized/small_type_optimal_macro_audit.json",
+      "bytes": 92251,
+      "sha256": "ffecfcb87eb7cf43d6b41ea3307a32bda6a7a84458a9d2ab7c9f1a997c958c66"
+    },
+    {
+      "path": "schecker_generalized/small_type_optimal_macro_graph.json",
+      "bytes": 1399316,
+      "sha256": "42707f4b56d3179c62a9c9ab11c344bb52f66f7364e3e1e92e147dc40791ef56"
+    },
+    {
+      "path": "schecker_generalized/small_type_refined_audit.json",
+      "bytes": 163381,
+      "sha256": "d187bb5591a5dcf90d5f0c1747fdd829b321da0823b3ab399f5410183949fbea"
+    },
+    {
+      "path": "schecker_generalized/small_type_refined_graph.json",
+      "bytes": 2170815,
+      "sha256": "13fc8cc669f97e794e27067f98cce8d6285e3364c12204e0c53afad3d7c597c8"
+    },
+    {
+      "path": "schecker_generalized/small_type_search_plan.json",
+      "bytes": 1073,
+      "sha256": "7dda60c8fc9cc17c47a452ffae0e933c38bc7620580b9566419a2c6e3be01e43"
+    },
+    {
+      "path": "schecker_generalized/small_type_search_report.json",
+      "bytes": 31499,
+      "sha256": "9708435f67c0853d12e496358df1d8f26762fc2a520289e694daa7b617f1d935"
+    },
+    {
+      "path": "schecker_generalized/solve_known_type_library.py",
+      "bytes": 12183,
+      "sha256": "3c3d0c9dffadacb862be304260b618c268126288ff9bd4aae9bff11f4d4832d7"
+    },
+    {
+      "path": "schecker_generalized/specialize_piecewise_search.py",
+      "bytes": 5230,
+      "sha256": "a0366f7476ce0728c57bc011016ee18c370ff4bd849fbdbde8fc0bdf647a97be"
+    },
+    {
+      "path": "schecker_generalized/split_chart_incoming.py",
+      "bytes": 9371,
+      "sha256": "1b0a2d240aecd0a20ed978823bf2d7341925f614cdddc2395b6aa87ad5bbc4d1"
+    },
+    {
+      "path": "schecker_generalized/strategy_ranks_comparison.json",
+      "bytes": 1641,
+      "sha256": "4f2f17d24f4a376436e39bbb7e7e9cdbbcdbec68f3f54e80af79e643caf297fe"
+    },
+    {
+      "path": "schecker_generalized/sum_interval_gaps.py",
+      "bytes": 2059,
+      "sha256": "905633ceac160f452cdb2179de0c6de96998cb50711327ee87a552fd090578a0"
+    },
+    {
+      "path": "schecker_generalized/test_adaptive_types.py",
+      "bytes": 7060,
+      "sha256": "1aa2fde3ed0ee5baba1ae17e1b8a26e7d30bbbb1d0e85c315f2a269ae79bb46b"
+    },
+    {
+      "path": "schecker_generalized/test_chart_contraction.py",
+      "bytes": 6475,
+      "sha256": "1a0acea1abcd2215a50981d8b8e6d6bf28e3aa1763bf51dbb493c3bcf3095f89"
+    },
+    {
+      "path": "schecker_generalized/test_chart_gaps.py",
+      "bytes": 3437,
+      "sha256": "d6370296a9bf0b3303fba313e3e02214316fff8d2a565cab3c397241a1700894"
+    },
+    {
+      "path": "schecker_generalized/test_chart_repair.py",
+      "bytes": 3204,
+      "sha256": "879e545d14f40db9256b88194475fed5a6af37659e1840bb387a101f171515a0"
+    },
+    {
+      "path": "schecker_generalized/test_chart_strategy_ranks.py",
+      "bytes": 1387,
+      "sha256": "eb61f7e7f5019d3f5cf0f89a6ed9abc95639e485a781f13e03b8eaf2e7729f43"
+    },
+    {
+      "path": "schecker_generalized/test_chart_types.py",
+      "bytes": 13417,
+      "sha256": "96eff591bc7db4b03541e62a8dc1b4535771455f83ae78c57e8e36253dac228f"
+    },
+    {
+      "path": "schecker_generalized/test_child_covers.py",
+      "bytes": 2589,
+      "sha256": "faae2cb4191cbf44ffc6baedfb94b7c2a7b5885252cf4482826b34379fb9d0a4"
+    },
+    {
+      "path": "schecker_generalized/test_complete_induction.py",
+      "bytes": 9204,
+      "sha256": "2d0bf48b422d0a8ec6432dbb8069a933e89017630240135ca89a8834e117795d"
+    },
+    {
+      "path": "schecker_generalized/test_cyclic_types.py",
+      "bytes": 18249,
+      "sha256": "92c1a0c7e83f0379721eef53aa7a2b1faee63bc0e5573337494a0bbcdfdfacfb"
+    },
+    {
+      "path": "schecker_generalized/test_explore.py",
+      "bytes": 5985,
+      "sha256": "7b0f846058d02129e9283fd1bfe69d5f208fcad69babd2d89c41653b07ba045d"
+    },
+    {
+      "path": "schecker_generalized/test_frontier_reduction.py",
+      "bytes": 3231,
+      "sha256": "bc2ad2160d1be1c958b23af3afee8ec469ad6b6db33612f21d10c82eb92e5af7"
+    },
+    {
+      "path": "schecker_generalized/test_frontier_repair.py",
+      "bytes": 7694,
+      "sha256": "03491b3bece1c0c0a24414e4c493fc7d3194c4f5a3cc82a7c2fc614fee29f5cb"
+    },
+    {
+      "path": "schecker_generalized/test_hybrid_induction.py",
+      "bytes": 7898,
+      "sha256": "a0769169a1d0a31056ed7822379bca05540ca04f32be1b860dd94d33b0a8da24"
+    },
+    {
+      "path": "schecker_generalized/test_induction_obstructions.py",
+      "bytes": 3177,
+      "sha256": "e547d7be44de9fb75feff5ca454ef03dfaf93ce21cef287e506c307bd345f99c"
+    },
+    {
+      "path": "schecker_generalized/test_interval_fragments.py",
+      "bytes": 5089,
+      "sha256": "f33a4ac11eb9dc9810e80f1766a4d21f2917f625a4a978b5ca62072e5ea8c6cd"
+    },
+    {
+      "path": "schecker_generalized/test_known_chart_returns.py",
+      "bytes": 1503,
+      "sha256": "d8401944c639d5790a30499a0a21cba54b500953386d2d1a505b92de1639bd82"
+    },
+    {
+      "path": "schecker_generalized/test_piecewise_charts.py",
+      "bytes": 5916,
+      "sha256": "808770c1835afe66225e6e6fd016fda054fa26ad72ece71fd42978803811e93e"
+    },
+    {
+      "path": "schecker_generalized/test_planner_time_limit.py",
+      "bytes": 1221,
+      "sha256": "9e64200b43fd2d0ac7c6af40a3114af0e8d54cd57530fff6fd1d77eeb7e59730"
+    },
+    {
+      "path": "schecker_generalized/test_point_gap_filter.py",
+      "bytes": 6641,
+      "sha256": "cc3d44153b5a3d519092ae9aecd32a74e1ea1bfa6f5d1a966a897c18a0c90b32"
+    },
+    {
+      "path": "schecker_generalized/test_reachable_charts.py",
+      "bytes": 5293,
+      "sha256": "7ed5f59da69191e0cba217e132cdf73659baf94dcd5f2eec258b4a35f5db0ef7"
+    },
+    {
+      "path": "schecker_generalized/test_rechart_incoming.py",
+      "bytes": 2354,
+      "sha256": "04e28806afad6b5ef5dcef807705ba3eec7d180f6a3a7d60d757bef46bd6009b"
+    },
+    {
+      "path": "schecker_generalized/test_root_frontier.py",
+      "bytes": 1284,
+      "sha256": "01d34cb32d878b0cd3e837542acf149c993064588be8c3cff91a74ba9325f42c"
+    },
+    {
+      "path": "schecker_generalized/test_rule_reuse.py",
+      "bytes": 5225,
+      "sha256": "9d2641f3e2b9b7650f1cb7b756147c557ab88526f2027af2820568ffd4112b74"
+    },
+    {
+      "path": "schecker_generalized/test_small_type_menu.py",
+      "bytes": 8439,
+      "sha256": "d8488a6e1b7fd81a3010eea86616c7ccc6967d821b65f5227fa3e334e09ce393"
+    },
+    {
+      "path": "schecker_generalized/test_split_chart_incoming.py",
+      "bytes": 2252,
+      "sha256": "31ca3a6f02922f820ba88fb249c5f91c781c57636f77870bf09ca690d42d4a89"
+    },
+    {
+      "path": "schecker_generalized/test_sum_interval_gaps.py",
+      "bytes": 1389,
+      "sha256": "85617314f854cf184dac74ce98a4f2dd24dcc3e4d76de5171a48b2b42bb604d9"
+    },
+    {
+      "path": "schecker_generalized/test_transfer_saved_covers.py",
+      "bytes": 1772,
+      "sha256": "af8ad6f162594c934ba77244c63584530b421fbea41c477fe56bbac9152dae88"
+    },
+    {
+      "path": "schecker_generalized/test_type_search.py",
+      "bytes": 3467,
+      "sha256": "5a4c0ba275ae1fa22829e2991bc7d123de4e22ab52d77e1b6f70523edbdcc4b2"
+    },
+    {
+      "path": "schecker_generalized/transfer_saved_covers.py",
+      "bytes": 2944,
+      "sha256": "26641416b6e81f1e40848636b13e02b75f931a13161b6352043d095dcdef48ae"
+    },
+    {
+      "path": "schecker_generalized/transferred_methods_ranks.json",
+      "bytes": 2851,
+      "sha256": "ffb3ffec084177e6bd575e6e4b13ceb363e630f7cdbb59bcb192c0c66445966a"
+    },
+    {
+      "path": "schecker_generalized/transferred_methods_tests.log",
+      "bytes": 2897,
+      "sha256": "698dea546f0425f95363cd75d10f64a04400f1abb75c711b6278659c92183cbc"
+    },
+    {
+      "path": "schecker_generalized/type_certificate.json",
+      "bytes": 295532,
+      "sha256": "64fc3b7588bf9991f84aea8059f4e5084fce170927e0272ff7bee3738a75d9be"
+    },
+    {
+      "path": "schecker_generalized/type_certificate_depth8.json",
+      "bytes": 488281,
+      "sha256": "d6ba9400af61e462216faf23060c004d46ef7ef4f0eb1ecf78af08f38f980176"
+    },
+    {
+      "path": "schecker_generalized/type_certificates.py",
+      "bytes": 7655,
+      "sha256": "2ca6b425f2294232aca647a473db2c8397a5fd1df0be409e447b3feb8d04d69b"
+    },
+    {
+      "path": "schecker_generalized/type_graph_geometry.py",
+      "bytes": 6900,
+      "sha256": "ad86f69bb10a8ee838175fe768567d3b0501de50adf315599e1a4f71b3e74ad8"
+    },
+    {
+      "path": "schecker_generalized/type_search_b20.json",
+      "bytes": 22888,
+      "sha256": "ede0afb3660c79e4d0ad5211a546bdae3e33550bf65db91658996caf509a4db9"
+    },
+    {
+      "path": "schecker_generalized/type_search_m1.json",
+      "bytes": 53111,
+      "sha256": "ac784e5287098d6f259659123e2c3023831ef42917aecb4fe4cc8f88ef7d1c18"
+    },
+    {
+      "path": "schecker_generalized/type_search_m2.json",
+      "bytes": 47150,
+      "sha256": "55465d0567344d9ad6392f3120375436265764ed1e8e0082a2de99b42b3dad4b"
+    },
+    {
+      "path": "schecker_generalized/type_search_report.md",
+      "bytes": 14934,
+      "sha256": "fe3d6ec8bf03fd432bca06a6878b064f540b2a1059646eb0b727caf52161014f"
+    },
+    {
+      "path": "schecker_generalized/uniform_initial_cover.json",
+      "bytes": 4031,
+      "sha256": "86f8d94f90289fa4ff248cee56aa12a37c5dbbdf1b0e3a131390e6b47f101f21"
+    },
+    {
+      "path": "schecker_generalized/uniform_initial_cover.py",
+      "bytes": 4401,
+      "sha256": "450a31402e787485eb2bbd0a68e5149cbe4349e0021560f312bcbd635b75fe4e"
+    },
+    {
+      "path": "schecker_generalized/verify_chart_types.py",
+      "bytes": 5767,
+      "sha256": "b20f667f46c6f3009356cff19eb4ed9bda84ef9eee5b83b36cb42c59c8d72a37"
+    },
+    {
+      "path": "schecker_generalized/verify_cyclic_types.py",
+      "bytes": 8443,
+      "sha256": "d28545a64a9e11242cfe5649dcfe7ec37c51151c8d4cc9f96d79550bd46394f7"
+    },
+    {
+      "path": "schecker_generalized/verify_piecewise_charts.py",
+      "bytes": 3985,
+      "sha256": "cf643e3e5538b6b1ea16c3403e4ed17b2ec5b9c37c87e7bf37e8c858003f651d"
+    },
+    {
+      "path": "schecker_generalized/zero_exact_offers_child_probes.json",
+      "bytes": 304,
+      "sha256": "a28d7c2a206fb44bf19e9fc24423fcffaeda288cdda10b76ca3b601176d863f2"
+    },
+    {
+      "path": "schecker_generalized/zero_frontier_with_gaps.audit.json",
+      "bytes": 192543,
+      "sha256": "944e0bbcd85efb63b95b0e5bad2de52c2cf791a33f0aa1cb27732339eb5ec24f"
+    },
+    {
+      "path": "schecker_generalized/zero_frontier_with_gaps.json",
+      "bytes": 1837355,
+      "sha256": "cd1d91548687d32ae8a8f8e5118803f31ba56d8362aa4bfccd17675fb89d8835"
+    },
+    {
+      "path": "schecker_generalized/zero_frontier_with_gaps.report.json",
+      "bytes": 4809,
+      "sha256": "88aa5dca0040abca62d261066aa23fb39df7d21426173e48866e0b617057ef08"
+    },
+    {
+      "path": "schecker_generalized/zero_frontier_with_gaps.state.json",
+      "bytes": 2975433,
+      "sha256": "8ed6cf2c585101f27d9920b8e4099b79e96ea60b0289551dda6537c76d8cea5d"
+    },
+    {
+      "path": "schecker_generalized/zero_parent_deep_probe.json",
+      "bytes": 1115,
+      "sha256": "def7fa221c43f6159786381a64170de1339873ee851dce90cadb69f1542b24e7"
+    },
+    {
+      "path": "schecker_generalized/zero_parent_gap_probes.json",
+      "bytes": 2640,
+      "sha256": "8a1aa554fd1336562ea7ba59a4652a6098c568ab66b009118945090408e95bf5"
+    },
+    {
+      "path": "schecker_generalized/zero_parent_repair.audit.json",
+      "bytes": 98985,
+      "sha256": "b52afa3df55432a702a45d5b6266a919710782a7eb7de703fb49c3e7cfac3212"
+    },
+    {
+      "path": "schecker_generalized/zero_parent_repair.json",
+      "bytes": 2027786,
+      "sha256": "f6ef8b99dcaf69d7e0d6fe4b2c1f52f4a6c5e4bace19333c8f83336d8c460bd4"
+    },
+    {
+      "path": "schecker_generalized/zero_parent_repair.report.json",
+      "bytes": 36,
+      "sha256": "2ab5b7fb7764abe7943ca5f9acd5affe3735ed31a5cda605bf190262582a6424"
+    },
+    {
+      "path": "schecker_generalized/zero_parent_repair.state.json",
+      "bytes": 3362783,
+      "sha256": "00d5102475a87a5b6fadf1082b0ed1fcb57f4e53d9fd193bd95a95a230662c86"
+    },
+    {
+      "path": "schecker_generalized/zero_root_deep_probe_round2.json",
+      "bytes": 141,
+      "sha256": "169bb4bb6112cef47dd1c4eacb6da04e7d47decf67166926f2e3b73cf62822d4"
+    },
+    {
+      "path": "schecker_generalized/zero_root_exact_offers.audit.json",
+      "bytes": 182883,
+      "sha256": "6d782016c065c87ea40258db188a0f3d68fc9194197d4f1d13fdaf1a50bd6e28"
+    },
+    {
+      "path": "schecker_generalized/zero_root_exact_offers.json",
+      "bytes": 4515644,
+      "sha256": "c38f0243f7187ca4aa9fe346da9669fb6d649f96c989df0890b72f53f38e9605"
+    },
+    {
+      "path": "schecker_generalized/zero_root_exact_offers.state.json",
+      "bytes": 1745635,
+      "sha256": "00b57f78d0e3b509a98611440d02ecb1d53d8fe6ab7e1df8eda4b5de81a0f61c"
+    },
+    {
+      "path": "schecker_generalized/zero_root_gap_repair.audit.json",
+      "bytes": 97911,
+      "sha256": "0340b30da1cbeca2dc7e8189041217d88ee1a920df2581f01df3b71273971aea"
+    },
+    {
+      "path": "schecker_generalized/zero_root_gap_repair.json",
+      "bytes": 2006226,
+      "sha256": "ae25fce7f5146a37787710358908393467433d55f280c380c8661347e0510684"
+    },
+    {
+      "path": "schecker_generalized/zero_root_gap_repair.report.json",
+      "bytes": 237,
+      "sha256": "528fda4c9cdaf3611191f1713cfe3afada05885ed4b98f27cdfe462292e9b901"
+    },
+    {
+      "path": "schecker_generalized/zero_root_gap_repair.state.json",
+      "bytes": 3355966,
+      "sha256": "6f86a1c1ebbf9b0510cb6318c31eedb15187e96b7b1b0244bcf2620b5d985bb9"
+    },
+    {
+      "path": "schecker_generalized/zero_root_repaired_child_probes.json",
+      "bytes": 1441,
+      "sha256": "9b66fbfbfaf34b0e9b047105566fd5573371fc1a0b40177a3e3206b51d726e1f"
+    },
+    {
+      "path": "schecker_generalized/zero_round2_ancestor_probes.json",
+      "bytes": 253,
+      "sha256": "39aab447ce24ba5b94013f67cf031bbfe5d1880724e5c429b4cba7e5a6fbbde4"
+    },
+    {
+      "path": "schecker_generalized/zero_round2_false_repair_audit.json",
+      "bytes": 1238,
+      "sha256": "c95abd7675ef5c8d12220b47764faac8da6755e3a25b97d0a528b6cd23e0725d"
+    },
+    {
+      "path": "schecker_generalized/zero_round2_gap_for_repair.json",
+      "bytes": 1094,
+      "sha256": "85085fba4f1934a6de00dab8d0700e41579717bcb071d2f775302ed76bb51576"
+    },
+    {
+      "path": "schecker_generalized/zero_round2_gap_probes.json",
+      "bytes": 1975,
+      "sha256": "b5e04d1b3a39ce024085ef13a751e2a03c6e3a58798979f81f1dd581df80dd4b"
+    },
+    {
+      "path": "schecker_generalized/zero_round2_invariant_child_audit.json",
+      "bytes": 101,
+      "sha256": "7fb29655f465d31ed6b8741fc20d68a9f3f9c50f4715ecb946a1f9d2fa40e0b0"
+    },
+    {
+      "path": "schecker_generalized/zero_round2_invariant_repair.audit.json",
+      "bytes": 85315,
+      "sha256": "e78a7c94b35838baed9803e566527287c68a6b912bcd06197862846e54f62f93"
+    },
+    {
+      "path": "schecker_generalized/zero_round2_invariant_repair.json",
+      "bytes": 1837351,
+      "sha256": "68b5733883158e9e2b7ad107d38c8d4e99a52bfc2e597e8b8afce5501d7d08d6"
+    },
+    {
+      "path": "schecker_generalized/zero_round2_invariant_repair.report.json",
+      "bytes": 543,
+      "sha256": "5a0e36589b2c26794e72ea1b2ec9947eb17dc84505e3e77f5b24301c1a1cfee4"
+    },
+    {
+      "path": "schecker_generalized/zero_round2_invariant_repair.state.json",
+      "bytes": 3014341,
+      "sha256": "cc8bcd77f2731f8901b34809ca41f77d1b5ba24438699ebb57f82899ef6dfd56"
+    },
+    {
+      "path": "schecker_generalized/zero_round2_longer_step.audit.json",
+      "bytes": 85315,
+      "sha256": "d5f0cfcd5b986aed9d8266bdeb79af976ecdc1394d8b192cb59b5c6107ef641e"
+    },
+    {
+      "path": "schecker_generalized/zero_round2_longer_step.json",
+      "bytes": 1837355,
+      "sha256": "b886af7f5f0dd1d535c917f0834d84820c1fa7529aa90d660aed440ff8dbfb19"
+    },
+    {
+      "path": "schecker_generalized/zero_round2_longer_step.report.json",
+      "bytes": 461,
+      "sha256": "84b0e30c0c6c4c9a1d384bc6d0c766ae474a8280a49441d0759bbbd3e5050044"
+    },
+    {
+      "path": "schecker_generalized/zero_round2_longer_step.state.json",
+      "bytes": 3022296,
+      "sha256": "ab1f5262d8163fbd3130f42018400e4f04d1d77bfa4d654b77197952981058f8"
+    },
+    {
+      "path": "schecker_generalized/zero_round2_parent_repair.audit.json",
+      "bytes": 85315,
+      "sha256": "83154ccf873d2110b64730043b731fee2fc414e9a10a9087b60ff9d29d42b6de"
+    },
+    {
+      "path": "schecker_generalized/zero_round2_parent_repair.json",
+      "bytes": 1837357,
+      "sha256": "45d72e837e1ff9b93d8348401a93a1573a1f2a4dd8f9cec1793910b4d8952595"
+    },
+    {
+      "path": "schecker_generalized/zero_round2_parent_repair.report.json",
+      "bytes": 468,
+      "sha256": "9e21f382755c2e04f8b6bcfe9db32976aee27ae98b45527c4031cc6ca624c972"
+    },
+    {
+      "path": "schecker_generalized/zero_round2_parent_repair.state.json",
+      "bytes": 3014342,
+      "sha256": "0fb7da39288c4a82977856007d8379949310e4df82102216ae0d4912de7b42a2"
+    },
+    {
+      "path": "schecker_generalized/zero_round2_repair_seed.state.json",
+      "bytes": 3307000,
+      "sha256": "935f70a52af03000a9cad3cf821dc2e4b3cd0c65159335e343aeacbacc6a9f7f"
+    },
+    {
+      "path": "schecker_generalized/zero_round2_repaired_children_probes.json",
+      "bytes": 253,
+      "sha256": "4c40172f5004a649977eed6f93715421045386a2ecb88ff4b2d2a251c85c9724"
+    },
+    {
+      "path": "schecker_generalized/zero_round2_repaired_expansion.audit.json",
+      "bytes": 192666,
+      "sha256": "f26b3a520022f4c3d2c77b903d5344a79a712095a43d7091559b080233cc855c"
+    },
+    {
+      "path": "schecker_generalized/zero_round2_repaired_expansion.json",
+      "bytes": 1838382,
+      "sha256": "49c0c319651e607c38c5c5225e5406ef3abb25fa97d52cf120a2fa9b90077eaa"
+    },
+    {
+      "path": "schecker_generalized/zero_round2_repaired_expansion.report.json",
+      "bytes": 768,
+      "sha256": "a929eb3ad6cd3c3b1afc12272d2f69eaa2ee0827b50bbedf491d4400f94ecc71"
+    },
+    {
+      "path": "schecker_generalized/zero_round2_repaired_expansion.state.json",
+      "bytes": 3015224,
+      "sha256": "3ca05c3260937c1af1c706adc35ed7194dbddf1c254f5e9e54594b9a56b8a916"
+    },
+    {
+      "path": "schecker_generalized/zero_round2_second_deep_gap.status.json",
+      "bytes": 235,
+      "sha256": "5685418bca18aeb0402b7dd3a2f7d23e599ab55cd713906ba74cd278668716e0"
+    },
+    {
+      "path": "schecker_generalized/zero_round2_second_gap.json",
+      "bytes": 131,
+      "sha256": "dbfc16cdd0c5bb287c1248a7594b5e3ade71e4910f29c0fbfeac49cb242b7c50"
+    },
+    {
+      "path": "VERIFY_BUNDLE.py",
+      "bytes": 459,
+      "sha256": "e14617abc138e8bf30efd24176066cb3165a9c38cae1b53fda1c3efcd572528c"
+    },
+    {
+      "path": "README.txt",
+      "bytes": 846,
+      "sha256": "5396e82bb42532b752d070697dc988e19d29e8a3cc085116b14e36498203bac1"
+    }
+  ]
+}

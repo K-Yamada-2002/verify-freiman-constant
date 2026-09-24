@@ -1,0 +1,38 @@
+{
+  "source_sha256": "053a8a7fcba2f90cf443ff93df4d64be68e3f77f7c3ed1776b9be6bde5f55d41",
+  "initial_obligations": 4,
+  "batches": [
+    {
+      "batch": 1,
+      "targets": 3,
+      "repaired": 3,
+      "failed": 0,
+      "reused_requests": 0,
+      "new_obstructions": 0,
+      "before": {
+        "nodes": 4,
+        "local_rules": 1,
+        "open_nodes": 3,
+        "supported_nodes": [],
+        "root_ranks": [
+          1
+        ]
+      },
+      "after": {
+        "nodes": 11,
+        "local_rules": 4,
+        "open_nodes": 7,
+        "supported_nodes": [],
+        "root_ranks": [
+          2
+        ]
+      }
+    }
+  ],
+  "attempted_keys": [
+    "[[[\"22222223\",\"22222223\"],1,108,[5,18]],[-231035187,-219988125]]",
+    "[[[\"22222223\",\"22222223\"],1,108,[6,35]],[-231035187,-219988125]]",
+    "[[[\"22222223\",\"22222223\"],1,108,[6,38]],[-231035187,-219988125]]"
+  ],
+  "initial_unattempted": 0
+}

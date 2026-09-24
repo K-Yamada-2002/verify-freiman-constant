@@ -1,0 +1,42 @@
+{
+  "status": "PASS_INDEPENDENT_UNIFORM_ARITHMETIC",
+  "results": [
+    {
+      "path": "uniform_periodic_strip.json",
+      "sha256": "36e955608fb95248ed6f4929fece700bc8bd119d3cb3985cfa56c84602ed0aa2",
+      "cases": [
+        {
+          "records": 300,
+          "coefficients": 300
+        },
+        {
+          "records": 300,
+          "coefficients": 896
+        },
+        {
+          "records": 218,
+          "coefficients": 650
+        },
+        {
+          "records": 218,
+          "coefficients": 1942
+        }
+      ]
+    },
+    {
+      "path": "uniform_root_connection.json",
+      "sha256": "bccf93482bdab68f752899e3e9316070ff3cd725cc35d1984bcde0e5fe67c0ce",
+      "cases": [
+        {
+          "records": 29,
+          "coefficients": 29
+        },
+        {
+          "records": 30,
+          "coefficients": 86
+        }
+      ]
+    }
+  ],
+  "scope": "All-index strip and root-connection arithmetic. Restart and lower-subsystem lemmas remain written proof dependencies."
+}

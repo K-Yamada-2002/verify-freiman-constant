@@ -1,0 +1,1245 @@
+{
+  "status": "PASS_STRUCTURAL_ONLY",
+  "states": 31,
+  "edges": 86,
+  "max_steps_after_entry": 7,
+  "histories": 406,
+  "classified": {
+    "mixed": 114,
+    "left": 224,
+    "rightmixed": 34,
+    "right": 34
+  },
+  "source_sha256": "b2a5ba316380d999239f21c9abbf1b5ed722c4e1cf32093bc7455a8bfafee3dc",
+  "check": "Exact path-set equality to independently enumerated initial histories",
+  "roots": [
+    {
+      "context": "2",
+      "entry": [
+        "1",
+        ""
+      ],
+      "wider": 0,
+      "node": 2
+    },
+    {
+      "context": "2",
+      "entry": [
+        "1",
+        ""
+      ],
+      "wider": 1,
+      "node": 3
+    },
+    {
+      "context": "2",
+      "entry": [
+        "2",
+        "1"
+      ],
+      "wider": 0,
+      "node": 14
+    },
+    {
+      "context": "2",
+      "entry": [
+        "2",
+        "1"
+      ],
+      "wider": 1,
+      "node": 15
+    },
+    {
+      "context": "2",
+      "entry": [
+        "3",
+        "1"
+      ],
+      "wider": 0,
+      "node": 20
+    },
+    {
+      "context": "2",
+      "entry": [
+        "3",
+        "1"
+      ],
+      "wider": 1,
+      "node": 21
+    },
+    {
+      "context": "3",
+      "entry": [
+        "1",
+        ""
+      ],
+      "wider": 0,
+      "node": 23
+    },
+    {
+      "context": "3",
+      "entry": [
+        "1",
+        ""
+      ],
+      "wider": 1,
+      "node": 24
+    },
+    {
+      "context": "3",
+      "entry": [
+        "2",
+        "1"
+      ],
+      "wider": 0,
+      "node": 14
+    },
+    {
+      "context": "3",
+      "entry": [
+        "2",
+        "1"
+      ],
+      "wider": 1,
+      "node": 15
+    },
+    {
+      "context": "3",
+      "entry": [
+        "3",
+        "1"
+      ],
+      "wider": 0,
+      "node": 20
+    },
+    {
+      "context": "3",
+      "entry": [
+        "3",
+        "1"
+      ],
+      "wider": 1,
+      "node": 21
+    }
+  ],
+  "nodes": [
+    {
+      "id": 0,
+      "state": [
+        "1",
+        "313",
+        0,
+        0,
+        0,
+        1
+      ],
+      "rank": 6,
+      "edges": [
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 3
+        },
+        {
+          "label": [
+            "2",
+            "",
+            true
+          ],
+          "target": 11
+        },
+        {
+          "label": [
+            "3",
+            "",
+            true
+          ],
+          "target": 17
+        },
+        {
+          "label": [
+            "2",
+            "1",
+            false
+          ],
+          "target": 14
+        },
+        {
+          "label": [
+            "2",
+            "1",
+            true
+          ],
+          "target": 15
+        },
+        {
+          "label": [
+            "3",
+            "1",
+            false
+          ],
+          "target": 20
+        },
+        {
+          "label": [
+            "3",
+            "1",
+            true
+          ],
+          "target": 21
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "state": [
+        "1",
+        "313",
+        0,
+        0,
+        1,
+        0
+      ],
+      "rank": 4,
+      "edges": [
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 4
+        },
+        {
+          "label": [
+            "1",
+            "",
+            false
+          ],
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "state": [
+        "1",
+        "313",
+        1,
+        0,
+        0,
+        0
+      ],
+      "rank": 7,
+      "edges": [
+        {
+          "label": [
+            "1",
+            "",
+            false
+          ],
+          "target": 0
+        },
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 1
+        },
+        {
+          "label": [
+            "2",
+            "",
+            true
+          ],
+          "target": 10
+        },
+        {
+          "label": [
+            "3",
+            "",
+            true
+          ],
+          "target": 16
+        },
+        {
+          "label": [
+            "",
+            "1",
+            false
+          ],
+          "target": 7
+        },
+        {
+          "label": [
+            "2",
+            "1",
+            false
+          ],
+          "target": 12
+        },
+        {
+          "label": [
+            "2",
+            "1",
+            true
+          ],
+          "target": 13
+        },
+        {
+          "label": [
+            "3",
+            "1",
+            false
+          ],
+          "target": 18
+        },
+        {
+          "label": [
+            "3",
+            "1",
+            true
+          ],
+          "target": 19
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "state": [
+        "1",
+        "313",
+        1,
+        0,
+        1,
+        0
+      ],
+      "rank": 5,
+      "edges": [
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 7
+        },
+        {
+          "label": [
+            "1",
+            "",
+            false
+          ],
+          "target": 9
+        },
+        {
+          "label": [
+            "",
+            "1",
+            false
+          ],
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "state": [
+        "1",
+        "3131",
+        0,
+        1,
+        0,
+        0
+      ],
+      "rank": 3,
+      "edges": [
+        {
+          "label": [
+            "1",
+            "",
+            false
+          ],
+          "target": 8
+        },
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 9
+        },
+        {
+          "label": [
+            "2",
+            "",
+            true
+          ],
+          "target": 15
+        },
+        {
+          "label": [
+            "3",
+            "",
+            true
+          ],
+          "target": 21
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "state": [
+        "1",
+        "3131",
+        0,
+        1,
+        0,
+        1
+      ],
+      "rank": 1,
+      "edges": [
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 9
+        },
+        {
+          "label": [
+            "2",
+            "",
+            true
+          ],
+          "target": 15
+        },
+        {
+          "label": [
+            "3",
+            "",
+            true
+          ],
+          "target": 21
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "state": [
+        "1",
+        "3131",
+        0,
+        1,
+        1,
+        0
+      ],
+      "rank": 1,
+      "edges": [
+        {
+          "label": [
+            "",
+            "1",
+            false
+          ],
+          "target": 9
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "state": [
+        "1",
+        "3131",
+        1,
+        1,
+        0,
+        0
+      ],
+      "rank": 2,
+      "edges": [
+        {
+          "label": [
+            "1",
+            "",
+            false
+          ],
+          "target": 5
+        },
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 6
+        },
+        {
+          "label": [
+            "2",
+            "",
+            true
+          ],
+          "target": 13
+        },
+        {
+          "label": [
+            "3",
+            "",
+            true
+          ],
+          "target": 19
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "state": [
+        "1",
+        "3131",
+        1,
+        1,
+        0,
+        1
+      ],
+      "rank": 2,
+      "edges": [
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 6
+        },
+        {
+          "label": [
+            "2",
+            "",
+            true
+          ],
+          "target": 13
+        },
+        {
+          "label": [
+            "3",
+            "",
+            true
+          ],
+          "target": 19
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "state": [
+        "1",
+        "3131",
+        1,
+        1,
+        1,
+        0
+      ],
+      "rank": 0,
+      "edges": []
+    },
+    {
+      "id": 10,
+      "state": [
+        "2",
+        "313",
+        0,
+        0,
+        1,
+        0
+      ],
+      "rank": 4,
+      "edges": [
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 12
+        },
+        {
+          "label": [
+            "1",
+            "",
+            false
+          ],
+          "target": 13
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "state": [
+        "2",
+        "313",
+        1,
+        0,
+        1,
+        0
+      ],
+      "rank": 5,
+      "edges": [
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 14
+        },
+        {
+          "label": [
+            "1",
+            "",
+            false
+          ],
+          "target": 15
+        },
+        {
+          "label": [
+            "",
+            "1",
+            false
+          ],
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "state": [
+        "2",
+        "3131",
+        0,
+        1,
+        0,
+        0
+      ],
+      "rank": 3,
+      "edges": [
+        {
+          "label": [
+            "1",
+            "",
+            false
+          ],
+          "target": 8
+        },
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 9
+        },
+        {
+          "label": [
+            "2",
+            "",
+            true
+          ],
+          "target": 15
+        },
+        {
+          "label": [
+            "3",
+            "",
+            true
+          ],
+          "target": 21
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "state": [
+        "2",
+        "3131",
+        0,
+        1,
+        1,
+        0
+      ],
+      "rank": 1,
+      "edges": [
+        {
+          "label": [
+            "",
+            "1",
+            false
+          ],
+          "target": 9
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "state": [
+        "2",
+        "3131",
+        1,
+        1,
+        0,
+        0
+      ],
+      "rank": 2,
+      "edges": [
+        {
+          "label": [
+            "1",
+            "",
+            false
+          ],
+          "target": 5
+        },
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 6
+        },
+        {
+          "label": [
+            "2",
+            "",
+            true
+          ],
+          "target": 13
+        },
+        {
+          "label": [
+            "3",
+            "",
+            true
+          ],
+          "target": 19
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "state": [
+        "2",
+        "3131",
+        1,
+        1,
+        1,
+        0
+      ],
+      "rank": 0,
+      "edges": []
+    },
+    {
+      "id": 16,
+      "state": [
+        "3",
+        "313",
+        0,
+        0,
+        1,
+        0
+      ],
+      "rank": 4,
+      "edges": [
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 18
+        },
+        {
+          "label": [
+            "1",
+            "",
+            false
+          ],
+          "target": 19
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "state": [
+        "3",
+        "313",
+        1,
+        0,
+        1,
+        0
+      ],
+      "rank": 5,
+      "edges": [
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 20
+        },
+        {
+          "label": [
+            "1",
+            "",
+            false
+          ],
+          "target": 21
+        },
+        {
+          "label": [
+            "",
+            "1",
+            false
+          ],
+          "target": 22
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "state": [
+        "3",
+        "3131",
+        0,
+        1,
+        0,
+        0
+      ],
+      "rank": 3,
+      "edges": [
+        {
+          "label": [
+            "1",
+            "",
+            false
+          ],
+          "target": 29
+        },
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 30
+        },
+        {
+          "label": [
+            "2",
+            "",
+            true
+          ],
+          "target": 15
+        },
+        {
+          "label": [
+            "3",
+            "",
+            true
+          ],
+          "target": 21
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "state": [
+        "3",
+        "3131",
+        0,
+        1,
+        1,
+        0
+      ],
+      "rank": 1,
+      "edges": [
+        {
+          "label": [
+            "",
+            "1",
+            false
+          ],
+          "target": 30
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "state": [
+        "3",
+        "3131",
+        1,
+        1,
+        0,
+        0
+      ],
+      "rank": 2,
+      "edges": [
+        {
+          "label": [
+            "1",
+            "",
+            false
+          ],
+          "target": 26
+        },
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 27
+        },
+        {
+          "label": [
+            "2",
+            "",
+            true
+          ],
+          "target": 13
+        },
+        {
+          "label": [
+            "3",
+            "",
+            true
+          ],
+          "target": 19
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "state": [
+        "3",
+        "3131",
+        1,
+        1,
+        1,
+        0
+      ],
+      "rank": 0,
+      "edges": []
+    },
+    {
+      "id": 22,
+      "state": [
+        "31",
+        "313",
+        0,
+        0,
+        1,
+        0
+      ],
+      "rank": 4,
+      "edges": [
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 25
+        },
+        {
+          "label": [
+            "1",
+            "",
+            false
+          ],
+          "target": 27
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "state": [
+        "31",
+        "313",
+        1,
+        0,
+        0,
+        0
+      ],
+      "rank": 7,
+      "edges": [
+        {
+          "label": [
+            "1",
+            "",
+            false
+          ],
+          "target": 0
+        },
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 1
+        },
+        {
+          "label": [
+            "2",
+            "",
+            true
+          ],
+          "target": 10
+        },
+        {
+          "label": [
+            "",
+            "1",
+            false
+          ],
+          "target": 28
+        },
+        {
+          "label": [
+            "2",
+            "1",
+            false
+          ],
+          "target": 12
+        },
+        {
+          "label": [
+            "2",
+            "1",
+            true
+          ],
+          "target": 13
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "state": [
+        "31",
+        "313",
+        1,
+        0,
+        1,
+        0
+      ],
+      "rank": 5,
+      "edges": [
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 28
+        },
+        {
+          "label": [
+            "1",
+            "",
+            false
+          ],
+          "target": 30
+        },
+        {
+          "label": [
+            "",
+            "1",
+            false
+          ],
+          "target": 1
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "state": [
+        "31",
+        "3131",
+        0,
+        1,
+        0,
+        0
+      ],
+      "rank": 3,
+      "edges": [
+        {
+          "label": [
+            "1",
+            "",
+            false
+          ],
+          "target": 8
+        },
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 9
+        },
+        {
+          "label": [
+            "2",
+            "",
+            true
+          ],
+          "target": 15
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "state": [
+        "31",
+        "3131",
+        0,
+        1,
+        0,
+        1
+      ],
+      "rank": 1,
+      "edges": [
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 9
+        },
+        {
+          "label": [
+            "2",
+            "",
+            true
+          ],
+          "target": 15
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "state": [
+        "31",
+        "3131",
+        0,
+        1,
+        1,
+        0
+      ],
+      "rank": 1,
+      "edges": [
+        {
+          "label": [
+            "",
+            "1",
+            false
+          ],
+          "target": 9
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "state": [
+        "31",
+        "3131",
+        1,
+        1,
+        0,
+        0
+      ],
+      "rank": 2,
+      "edges": [
+        {
+          "label": [
+            "1",
+            "",
+            false
+          ],
+          "target": 5
+        },
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 6
+        },
+        {
+          "label": [
+            "2",
+            "",
+            true
+          ],
+          "target": 13
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "state": [
+        "31",
+        "3131",
+        1,
+        1,
+        0,
+        1
+      ],
+      "rank": 2,
+      "edges": [
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 6
+        },
+        {
+          "label": [
+            "2",
+            "",
+            true
+          ],
+          "target": 13
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "state": [
+        "31",
+        "3131",
+        1,
+        1,
+        1,
+        0
+      ],
+      "rank": 0,
+      "edges": []
+    }
+  ]
+}

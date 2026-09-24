@@ -1,0 +1,35 @@
+{
+  "status": "NEW_SCHECKER_INDUCTION_NOT_CLOSED",
+  "structural_checks": {
+    "generic_history": "PASS",
+    "entry_history": "PASS_STRUCTURAL_ONLY",
+    "joint_history": "PASS_STRUCTURAL_QUOTIENT",
+    "C89_graph": "PASS",
+    "parameter_recurrences": "PASS",
+    "root_interface": "PASS_NONCONTAINMENT_CHECK",
+    "short_parent": "PASS_SCOPED_SHORT_PARENT_CHECKS"
+  },
+  "existing_Freiman_certificate_groups": {
+    "global_selection": "PASS",
+    "initial": "PASS",
+    "foundations_upper": "PASS",
+    "section14": "PASS",
+    "section15": "PASS",
+    "terminal": "PASS",
+    "late": "PASS",
+    "j_family": "PASS",
+    "targets_bridges": "PASS",
+    "suffix_histories": "PASS",
+    "middle": "PASS",
+    "translation": "PASS"
+  },
+  "mathematical_replay_status": "PASS_MATHEMATICAL_GROUPS",
+  "passed_groups": 12,
+  "total_groups": 12,
+  "missing_new_proof_connections": [
+    "Express carried-target and selection-priority hypotheses in the new induction checker.",
+    "Prove the connection of its requested initial intervals to the replacement selection system."
+  ],
+  "complete_package_validation": "NOT_RUN_MISSING_DELIVERED_PDF",
+  "note": "The Freiman report contains the existing all-depth proof. Finite replay and the small structural graphs do not themselves close the separate Schecker search graph."
+}

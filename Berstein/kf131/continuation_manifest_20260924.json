@@ -1,0 +1,35 @@
+{
+  "status": "interior existence remains unproved",
+  "artifacts": {
+    "SCALAR_OBSTRUCTIONS.md": "4fcb465cf41d23848b3f0e5aec2c39f4ae78351bb2e2492869910fc3ca88ed42",
+    "closure_diagnostics.py": "beff5b442eca2abcef9debea4f64ec27a3579f0aaafff1c8771f0fbb411775bb",
+    "closure_diagnostics_continued_20260924.json": "b1a9a99044e84e4f3e2de2619596382b1641692f34fa47a3f89d92856cd15c16",
+    "closure_diagnostics_prior_20260924.json": "5802f3c9725837720fd65c4b0c04b75253bf3ad40291dac7153ab68d50ab26ce",
+    "continuation_report_20260924.json": "bb0bfcc6a1d729ae5e33e8d4d06578e96db831204cf1927f169d697d58f379d5",
+    "continued_local_audit_20260924.audit.json": "1eb74d5b2073f01b720f978d0770ed19625575a81938820651c6c3ef04c1db6e",
+    "continued_local_audit_20260924.core.json": "3989cbc0f8da4bdd191ff74a6cd38ac80940944c1f1426bc7ce5a11decb41903",
+    "continued_local_audit_20260924.json": "80111f70472d8ba35df5c91d87c0ed172599431f52f4b8af08f9c69815622214",
+    "continued_state_20260924.global.txt": "2912024a97b155fc4e37cf2ae092ada70eae025365dd4fe4c2b5f799a9b97826",
+    "continued_state_20260924.json.gz": "5d1209c5526d72d0234c68cda0ba8cfc4bfcfcc4725967addbb3f48821328da5",
+    "continued_state_20260924.learning.txt": "024a97f2ddf9eee9e90e40bc4863ea8fff2437dce17f238758b644e2315c55f9",
+    "resume_plan_20260924.json": "abc39a7b064ad5dc46636fb7adbac17095cec3aaa9c6bead5b1fcc0f9c9c394f",
+    "scalar_obstruction_tests_20260924.log": "5e52bd0f7efa51489849fd5612e71d51deda3f7b292dc93b9ce3ca8fb195481f",
+    "scalar_obstructions.py": "5a743ede23096bfd3d57a12884c0ae9ade7c5d20869c8637be9f76eb6a2a3fb1",
+    "scalar_obstructions_20260924.json": "f763783b9ac51a962b49bf5f8ee3ee051fcd97cded489e620f657e6fa61552eb",
+    "scalar_resolution_1_20260924.json.gz": "07ffb4f80e5471b9e1bc21bd2f66050fe715f6a4565743a2392b997637922ab2",
+    "scalar_resolution_1_diagnostics_20260924.json": "10d9fbb188dc5a7f6b43f85d5403c3fc30e1024590b8b283e8a3f52215612a6b",
+    "scalar_resolution_2_20260924.json.gz": "352cd617aab7c3e2c4a85b6b987b7655a3033be58bfdb617640e1049f352c718",
+    "scalar_resolution_2_diagnostics_20260924.json": "032a0f7ce29034e285109fe952eec2aaca2e0b1b000fe175fd12094d3621aa97",
+    "scalar_resolution_plan_20260924.json": "99eb4d2d0b250aa7a19d7a8deed7cc9f30b03480caf64019f079960d73451e8d",
+    "scalar_resolution_report_20260924.json": "eced0a2e903d931cc58f172bdabb4bdb4f4db6bfee521defdd8c50326a4f60b3",
+    "test_closure_diagnostics.py": "4cedc253e90213a1530206a943f0de06be52e5417d59e497b26073eb3cbcd364",
+    "test_scalar_obstructions.py": "6e6954e2663ad7e75251a915a0d9f8bd5eeac52b53ff5dfcc4218121632c3c2e"
+  },
+  "checks": {
+    "new_unit_tests_passed": 9,
+    "new_local_rules_verified": 32,
+    "exact_obstructions": 8,
+    "uniform_box_gaps": 2,
+    "physical_witness_pairs": 2
+  }
+}

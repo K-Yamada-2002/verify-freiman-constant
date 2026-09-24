@@ -1,0 +1,9 @@
+{
+  "status": "interrupted; no completed audit or positive/negative conclusion",
+  "source": "periodic_return_continued_20260924/current.json",
+  "source_sha256": "048d7951e1eae26afd63bff865e0c3fe7f9f6b96f0ddb4571f37f43f8d1a7687",
+  "epsilon": 1e-06,
+  "parameter_samples_requested": 9,
+  "selection": "all",
+  "reason": "Full sum-of-cylinder sweep remained expensive; effort moved to exact outer-interval obligations."
+}

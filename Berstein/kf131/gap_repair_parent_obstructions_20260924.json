@@ -1,0 +1,14 @@
+{
+  "source_sha256": "30345aee04b5f8fbbb5aa1586c5029c17c55904744e973ae8d122df3064fe2bb",
+  "obstructions": [],
+  "unresolved": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "budget_per_point": 10000,
+  "scope": "five points at one interior parameter per open type; not a filling proof"
+}

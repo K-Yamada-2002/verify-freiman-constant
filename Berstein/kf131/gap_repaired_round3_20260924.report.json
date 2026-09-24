@@ -1,0 +1,678 @@
+{
+  "bands": [
+    {
+      "source_node": 70611,
+      "interval": [
+        -77804764,
+        -77699370
+      ]
+    },
+    {
+      "source_node": 384901,
+      "interval": [
+        -11561331,
+        -11418728
+      ]
+    },
+    {
+      "source_node": 404040,
+      "interval": [
+        -11284911,
+        -11215327
+      ]
+    },
+    {
+      "source_node": 384898,
+      "interval": [
+        -14782874,
+        -14727858
+      ]
+    },
+    {
+      "source_node": 431374,
+      "interval": [
+        -113276859,
+        -113241558
+      ]
+    },
+    {
+      "source_node": 398501,
+      "interval": [
+        -113274489,
+        -113246590
+      ]
+    },
+    {
+      "source_node": 403854,
+      "interval": [
+        -14814525,
+        -14651923
+      ]
+    },
+    {
+      "source_node": 271961,
+      "interval": [
+        -215638835,
+        -215328651
+      ]
+    },
+    {
+      "source_node": 399485,
+      "interval": [
+        -88821059,
+        -88564694
+      ]
+    },
+    {
+      "source_node": 393824,
+      "interval": [
+        -88821059,
+        -88628198
+      ]
+    },
+    {
+      "source_node": 19795,
+      "interval": [
+        74005187,
+        74323692
+      ]
+    },
+    {
+      "source_node": 19789,
+      "interval": [
+        74118316,
+        74440590
+      ]
+    },
+    {
+      "source_node": 19878,
+      "interval": [
+        73665800,
+        74323692
+      ]
+    },
+    {
+      "source_node": 19879,
+      "interval": [
+        73665800,
+        74323692
+      ]
+    },
+    {
+      "source_node": 272023,
+      "interval": [
+        -88696918,
+        -88311696
+      ]
+    },
+    {
+      "source_node": 384843,
+      "interval": [
+        -88945200,
+        -88564694
+      ]
+    },
+    {
+      "source_node": 384972,
+      "interval": [
+        74118316,
+        74557488
+      ]
+    },
+    {
+      "source_node": 336214,
+      "interval": [
+        -177410080,
+        -177084514
+      ]
+    },
+    {
+      "source_node": 393830,
+      "interval": [
+        608775343,
+        623978286
+      ]
+    },
+    {
+      "source_node": 271791,
+      "interval": [
+        608775343,
+        624864345
+      ]
+    },
+    {
+      "source_node": 4868,
+      "interval": [
+        -11235813,
+        -11203064
+      ]
+    },
+    {
+      "source_node": 4827,
+      "interval": [
+        -11361810,
+        -11222913
+      ]
+    }
+  ],
+  "repaired": [
+    {
+      "parent": 390931,
+      "certificate_node": 11,
+      "trimmed_edges": 2,
+      "rules": [
+        36325,
+        161756
+      ],
+      "verification": {
+        "node": 11,
+        "children": 2,
+        "dependencies": [
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      }
+    },
+    {
+      "parent": 398520,
+      "certificate_node": 10,
+      "trimmed_edges": 1,
+      "rules": [
+        2781,
+        -45
+      ],
+      "verification": {
+        "node": 10,
+        "children": 2,
+        "dependencies": [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35
+        ]
+      }
+    },
+    {
+      "parent": 390934,
+      "certificate_node": 13,
+      "trimmed_edges": 2,
+      "rules": [
+        2783,
+        98874
+      ],
+      "verification": {
+        "node": 13,
+        "children": 2,
+        "dependencies": [
+          18,
+          21,
+          22,
+          23,
+          26,
+          36
+        ]
+      }
+    },
+    {
+      "parent": 390933,
+      "certificate_node": 12,
+      "trimmed_edges": 0,
+      "rules": [
+        2777
+      ],
+      "verification": {
+        "node": 12,
+        "children": 1,
+        "dependencies": [
+          37,
+          38,
+          39,
+          40,
+          41
+        ]
+      }
+    },
+    {
+      "parent": 400521,
+      "certificate_node": 9,
+      "trimmed_edges": 1,
+      "rules": [
+        41111,
+        227206
+      ],
+      "verification": {
+        "node": 9,
+        "children": 2,
+        "dependencies": [
+          42,
+          43,
+          44,
+          45
+        ]
+      }
+    },
+    {
+      "parent": 221344,
+      "certificate_node": 3,
+      "trimmed_edges": 0,
+      "rules": [
+        642
+      ],
+      "verification": {
+        "node": 3,
+        "children": 1,
+        "dependencies": [
+          46,
+          47,
+          48
+        ]
+      }
+    },
+    {
+      "parent": 1119,
+      "certificate_node": 7,
+      "trimmed_edges": 0,
+      "rules": [
+        118448
+      ],
+      "verification": {
+        "node": 7,
+        "children": 1,
+        "dependencies": [
+          49
+        ]
+      }
+    },
+    {
+      "parent": 400520,
+      "certificate_node": 8,
+      "trimmed_edges": 1,
+      "rules": [
+        41112,
+        -54
+      ],
+      "verification": {
+        "node": 8,
+        "children": 2,
+        "dependencies": [
+          50,
+          54,
+          55,
+          56
+        ]
+      }
+    },
+    {
+      "parent": 221339,
+      "certificate_node": 2,
+      "trimmed_edges": 1,
+      "rules": [
+        81606,
+        163502
+      ],
+      "verification": {
+        "node": 2,
+        "children": 2,
+        "dependencies": [
+          57,
+          58,
+          59
+        ]
+      }
+    },
+    {
+      "parent": 1118,
+      "certificate_node": 6,
+      "trimmed_edges": 1,
+      "rules": [
+        56104,
+        -81
+      ],
+      "verification": {
+        "node": 6,
+        "children": 2,
+        "dependencies": [
+          50,
+          51,
+          52,
+          53,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66
+        ]
+      }
+    },
+    {
+      "parent": 399351,
+      "certificate_node": 1,
+      "trimmed_edges": 1,
+      "rules": [
+        72363,
+        6436
+      ],
+      "verification": {
+        "node": 1,
+        "children": 2,
+        "dependencies": [
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79
+        ]
+      }
+    },
+    {
+      "parent": 444,
+      "certificate_node": 5,
+      "trimmed_edges": 1,
+      "rules": [
+        203648,
+        6639
+      ],
+      "verification": {
+        "node": 5,
+        "children": 2,
+        "dependencies": [
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94
+        ]
+      }
+    },
+    {
+      "parent": 166,
+      "certificate_node": 4,
+      "trimmed_edges": 2,
+      "rules": [
+        233549,
+        204059,
+        191378
+      ],
+      "verification": {
+        "node": 4,
+        "children": 3,
+        "dependencies": [
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105
+        ]
+      }
+    },
+    {
+      "parent": 80,
+      "certificate_node": 0,
+      "trimmed_edges": 1,
+      "rules": [
+        209938,
+        243315
+      ],
+      "verification": {
+        "node": 0,
+        "children": 2,
+        "dependencies": [
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116
+        ]
+      }
+    }
+  ],
+  "failed": [],
+  "candidates": 817,
+  "cut_edges": 455,
+  "expanded_offers": true,
+  "final_local_checks": [
+    {
+      "node": 11,
+      "children": 2,
+      "dependencies": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "node": 10,
+      "children": 2,
+      "dependencies": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ]
+    },
+    {
+      "node": 13,
+      "children": 2,
+      "dependencies": [
+        18,
+        21,
+        22,
+        23,
+        26,
+        36
+      ]
+    },
+    {
+      "node": 12,
+      "children": 1,
+      "dependencies": [
+        37,
+        38,
+        39,
+        40,
+        41
+      ]
+    },
+    {
+      "node": 9,
+      "children": 2,
+      "dependencies": [
+        42,
+        43,
+        44,
+        45
+      ]
+    },
+    {
+      "node": 3,
+      "children": 1,
+      "dependencies": [
+        46,
+        47,
+        48
+      ]
+    },
+    {
+      "node": 7,
+      "children": 1,
+      "dependencies": [
+        49
+      ]
+    },
+    {
+      "node": 8,
+      "children": 2,
+      "dependencies": [
+        50,
+        54,
+        55,
+        56
+      ]
+    },
+    {
+      "node": 2,
+      "children": 2,
+      "dependencies": [
+        57,
+        58,
+        59
+      ]
+    },
+    {
+      "node": 6,
+      "children": 2,
+      "dependencies": [
+        50,
+        51,
+        52,
+        53,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66
+      ]
+    },
+    {
+      "node": 1,
+      "children": 2,
+      "dependencies": [
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79
+      ]
+    },
+    {
+      "node": 5,
+      "children": 2,
+      "dependencies": [
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94
+      ]
+    },
+    {
+      "node": 4,
+      "children": 3,
+      "dependencies": [
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105
+      ]
+    },
+    {
+      "node": 0,
+      "children": 2,
+      "dependencies": [
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116
+      ]
+    }
+  ],
+  "nodes": 117,
+  "open_nodes": 103
+}

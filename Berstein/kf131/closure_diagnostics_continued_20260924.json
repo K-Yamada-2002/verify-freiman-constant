@@ -1,0 +1,2121 @@
+{
+  "settings": {
+    "base": "0.996",
+    "bins": 512,
+    "grid": 1024
+  },
+  "types": 929994,
+  "rules": 483225,
+  "supported": 0,
+  "root_ranks": {
+    "0": 6
+  },
+  "deletion_rank_histogram": {
+    "0": 676350,
+    "1": 130913,
+    "2": 81726,
+    "3": 30381,
+    "4": 8477,
+    "5": 1807,
+    "6": 328,
+    "7": 12
+  },
+  "dependency_count_histogram": {
+    "1": 4464,
+    "2": 29218,
+    "3": 30398,
+    "4": 52322,
+    "5": 16189,
+    "6": 79417,
+    "7": 53240,
+    "8": 55132,
+    "9": 18195,
+    "10": 21201,
+    "11": 11076,
+    "12": 20734,
+    "13": 7765,
+    "14": 22651,
+    "15": 6604,
+    "16": 11676,
+    "17": 4843,
+    "18": 6745,
+    "19": 3525,
+    "20": 3851,
+    "21": 2579,
+    "22": 2410,
+    "23": 1758,
+    "24": 2140,
+    "25": 1335,
+    "26": 1619,
+    "27": 1002,
+    "28": 1080,
+    "29": 768,
+    "30": 890,
+    "31": 684,
+    "32": 919,
+    "33": 546,
+    "34": 1000,
+    "35": 498,
+    "36": 422,
+    "37": 333,
+    "38": 326,
+    "39": 235,
+    "40": 234,
+    "41": 203,
+    "42": 197,
+    "43": 175,
+    "44": 179,
+    "45": 155,
+    "46": 140,
+    "47": 115,
+    "48": 95,
+    "49": 114,
+    "50": 117,
+    "51": 100,
+    "52": 89,
+    "53": 81,
+    "54": 78,
+    "55": 66,
+    "56": 61,
+    "57": 61,
+    "58": 54,
+    "59": 35,
+    "60": 65,
+    "61": 59,
+    "62": 33,
+    "63": 27,
+    "64": 17,
+    "65": 41,
+    "66": 33,
+    "67": 31,
+    "68": 33,
+    "69": 24,
+    "70": 25,
+    "71": 35,
+    "72": 28,
+    "73": 20,
+    "74": 36,
+    "75": 25,
+    "76": 24,
+    "77": 14,
+    "78": 22,
+    "79": 18,
+    "80": 9,
+    "81": 21,
+    "82": 17,
+    "83": 11,
+    "84": 15,
+    "85": 17,
+    "86": 25,
+    "87": 10,
+    "88": 11,
+    "89": 14,
+    "90": 14,
+    "91": 11,
+    "92": 14,
+    "93": 18,
+    "94": 9,
+    "95": 13,
+    "96": 15,
+    "97": 10,
+    "98": 7,
+    "99": 7,
+    "100": 7,
+    "101": 7,
+    "102": 9,
+    "103": 6,
+    "104": 5,
+    "105": 7,
+    "106": 5,
+    "107": 1,
+    "108": 5,
+    "109": 2,
+    "111": 2,
+    "112": 1,
+    "113": 1,
+    "114": 5,
+    "116": 1,
+    "117": 2,
+    "118": 1,
+    "120": 2,
+    "121": 3,
+    "122": 42,
+    "123": 1,
+    "124": 4,
+    "125": 5,
+    "126": 3,
+    "127": 2,
+    "128": 3,
+    "129": 3,
+    "130": 3,
+    "132": 8,
+    "133": 3,
+    "134": 1,
+    "135": 4,
+    "136": 3,
+    "137": 1,
+    "138": 7,
+    "140": 1,
+    "141": 2,
+    "142": 1,
+    "143": 1,
+    "145": 1,
+    "146": 1,
+    "147": 1,
+    "152": 1,
+    "153": 2,
+    "155": 1,
+    "156": 3,
+    "158": 1,
+    "159": 1,
+    "160": 1,
+    "161": 1,
+    "163": 2,
+    "164": 1,
+    "165": 3,
+    "166": 2,
+    "167": 2,
+    "168": 3,
+    "169": 2,
+    "170": 2,
+    "172": 1,
+    "173": 1,
+    "174": 1,
+    "192": 1,
+    "253": 1,
+    "257": 1,
+    "260": 1
+  },
+  "deepest": [
+    {
+      "node": 10,
+      "rank": 7,
+      "type": {
+        "states": [
+          "22221",
+          "22223"
+        ],
+        "parity": 1,
+        "ratio_bin": 195,
+        "ratio_refinement": [
+          2,
+          0
+        ],
+        "interval": [
+          26,
+          27
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 15,
+      "rank": 7,
+      "type": {
+        "states": [
+          "22221",
+          "22223"
+        ],
+        "parity": 1,
+        "ratio_bin": 195,
+        "ratio_refinement": [
+          3,
+          0
+        ],
+        "interval": [
+          26,
+          27
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 16,
+      "rank": 7,
+      "type": {
+        "states": [
+          "22221",
+          "22223"
+        ],
+        "parity": 1,
+        "ratio_bin": 195,
+        "ratio_refinement": [
+          3,
+          0
+        ],
+        "interval": [
+          27,
+          28
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 29,
+      "rank": 7,
+      "type": {
+        "states": [
+          "22221",
+          "22223"
+        ],
+        "parity": 1,
+        "ratio_bin": 196,
+        "ratio_refinement": [
+          1,
+          1
+        ],
+        "interval": [
+          26,
+          27
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 932,
+      "rank": 7,
+      "type": {
+        "states": [
+          "22231",
+          "22121"
+        ],
+        "parity": -1,
+        "ratio_bin": 251,
+        "ratio_refinement": [
+          3,
+          3
+        ],
+        "interval": [
+          279,
+          280
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 289030,
+      "rank": 7,
+      "type": {
+        "states": [
+          "22222",
+          "22223"
+        ],
+        "parity": -1,
+        "ratio_bin": 417,
+        "ratio_refinement": [
+          2,
+          0
+        ],
+        "interval": [
+          260,
+          261
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 289031,
+      "rank": 7,
+      "type": {
+        "states": [
+          "22222",
+          "22223"
+        ],
+        "parity": -1,
+        "ratio_bin": 417,
+        "ratio_refinement": [
+          2,
+          0
+        ],
+        "interval": [
+          261,
+          262
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 289037,
+      "rank": 7,
+      "type": {
+        "states": [
+          "22222",
+          "22223"
+        ],
+        "parity": -1,
+        "ratio_bin": 417,
+        "ratio_refinement": [
+          3,
+          0
+        ],
+        "interval": [
+          260,
+          261
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 456058,
+      "rank": 7,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 171,
+        "ratio_refinement": [
+          1,
+          0
+        ],
+        "interval": [
+          0,
+          1
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 469057,
+      "rank": 7,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 171,
+        "ratio_refinement": [
+          2,
+          0
+        ],
+        "interval": [
+          0,
+          1
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 493427,
+      "rank": 7,
+      "type": {
+        "states": [
+          "22221",
+          "22223"
+        ],
+        "parity": 1,
+        "ratio_bin": 195,
+        "ratio_refinement": [
+          3,
+          1
+        ],
+        "interval": [
+          26,
+          27
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 500949,
+      "rank": 7,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "ratio_refinement": [
+          3,
+          2
+        ],
+        "interval": [
+          -6,
+          -5
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 0,
+      "rank": 6,
+      "type": {
+        "states": [
+          "22222",
+          "22222"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "interval": [
+          0,
+          1
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 4,
+      "rank": 6,
+      "type": {
+        "states": [
+          "22222",
+          "22221"
+        ],
+        "parity": -1,
+        "ratio_bin": 394,
+        "ratio_refinement": [
+          1,
+          0
+        ],
+        "interval": [
+          -136,
+          -135
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 7,
+      "rank": 6,
+      "type": {
+        "states": [
+          "22222",
+          "22221"
+        ],
+        "parity": -1,
+        "ratio_bin": 395,
+        "ratio_refinement": [
+          3,
+          7
+        ],
+        "interval": [
+          -136,
+          -135
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 8,
+      "rank": 6,
+      "type": {
+        "states": [
+          "22222",
+          "22221"
+        ],
+        "parity": -1,
+        "ratio_bin": 395,
+        "ratio_refinement": [
+          3,
+          7
+        ],
+        "interval": [
+          -135,
+          -134
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 11,
+      "rank": 6,
+      "type": {
+        "states": [
+          "22221",
+          "22223"
+        ],
+        "parity": 1,
+        "ratio_bin": 195,
+        "ratio_refinement": [
+          2,
+          0
+        ],
+        "interval": [
+          27,
+          28
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 14,
+      "rank": 6,
+      "type": {
+        "states": [
+          "22221",
+          "22223"
+        ],
+        "parity": 1,
+        "ratio_bin": 195,
+        "ratio_refinement": [
+          3,
+          0
+        ],
+        "interval": [
+          25,
+          26
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 17,
+      "rank": 6,
+      "type": {
+        "states": [
+          "22221",
+          "22223"
+        ],
+        "parity": 1,
+        "ratio_bin": 195,
+        "ratio_refinement": [
+          3,
+          0
+        ],
+        "interval": [
+          28,
+          29
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 18,
+      "rank": 6,
+      "type": {
+        "states": [
+          "22221",
+          "22223"
+        ],
+        "parity": 1,
+        "ratio_bin": 195,
+        "ratio_refinement": [
+          3,
+          0
+        ],
+        "interval": [
+          29,
+          30
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 19,
+      "rank": 6,
+      "type": {
+        "states": [
+          "22221",
+          "22223"
+        ],
+        "parity": 1,
+        "ratio_bin": 195,
+        "ratio_refinement": [
+          3,
+          0
+        ],
+        "interval": [
+          30,
+          31
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 20,
+      "rank": 6,
+      "type": {
+        "states": [
+          "22221",
+          "22223"
+        ],
+        "parity": 1,
+        "ratio_bin": 195,
+        "ratio_refinement": [
+          3,
+          1
+        ],
+        "interval": [
+          25,
+          26
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 21,
+      "rank": 6,
+      "type": {
+        "states": [
+          "22221",
+          "22223"
+        ],
+        "parity": 1,
+        "ratio_bin": 195,
+        "ratio_refinement": [
+          3,
+          1
+        ],
+        "interval": [
+          28,
+          29
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 22,
+      "rank": 6,
+      "type": {
+        "states": [
+          "22221",
+          "22223"
+        ],
+        "parity": 1,
+        "ratio_bin": 196,
+        "interval": [
+          26,
+          27
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 26,
+      "rank": 6,
+      "type": {
+        "states": [
+          "22221",
+          "22223"
+        ],
+        "parity": 1,
+        "ratio_bin": 196,
+        "ratio_refinement": [
+          1,
+          0
+        ],
+        "interval": [
+          25,
+          26
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 27,
+      "rank": 6,
+      "type": {
+        "states": [
+          "22221",
+          "22223"
+        ],
+        "parity": 1,
+        "ratio_bin": 196,
+        "ratio_refinement": [
+          1,
+          0
+        ],
+        "interval": [
+          27,
+          28
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 28,
+      "rank": 6,
+      "type": {
+        "states": [
+          "22221",
+          "22223"
+        ],
+        "parity": 1,
+        "ratio_bin": 196,
+        "ratio_refinement": [
+          1,
+          1
+        ],
+        "interval": [
+          25,
+          26
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 30,
+      "rank": 6,
+      "type": {
+        "states": [
+          "22221",
+          "22223"
+        ],
+        "parity": 1,
+        "ratio_bin": 196,
+        "ratio_refinement": [
+          1,
+          1
+        ],
+        "interval": [
+          27,
+          28
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 37,
+      "rank": 6,
+      "type": {
+        "states": [
+          "22221",
+          "22223"
+        ],
+        "parity": 1,
+        "ratio_bin": 195,
+        "ratio_refinement": [
+          2,
+          0
+        ],
+        "interval": [
+          23,
+          24
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 38,
+      "rank": 6,
+      "type": {
+        "states": [
+          "22221",
+          "22223"
+        ],
+        "parity": 1,
+        "ratio_bin": 195,
+        "ratio_refinement": [
+          2,
+          0
+        ],
+        "interval": [
+          24,
+          25
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 39,
+      "rank": 6,
+      "type": {
+        "states": [
+          "22221",
+          "22223"
+        ],
+        "parity": 1,
+        "ratio_bin": 195,
+        "ratio_refinement": [
+          2,
+          0
+        ],
+        "interval": [
+          25,
+          26
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 59,
+      "rank": 6,
+      "type": {
+        "states": [
+          "22221",
+          "22223"
+        ],
+        "parity": 1,
+        "ratio_bin": 195,
+        "ratio_refinement": [
+          2,
+          0
+        ],
+        "interval": [
+          28,
+          29
+        ]
+      },
+      "direct_references": 0,
+      "rules_with_this_only_unexpanded_child": 0
+    }
+  ],
+  "most_shared_unexpanded": [
+    {
+      "node": 17904,
+      "rank": 0,
+      "type": {
+        "states": [
+          "23112",
+          "21212"
+        ],
+        "parity": 1,
+        "ratio_bin": 0,
+        "ratio_refinement": [
+          3,
+          7
+        ],
+        "interval": [
+          86,
+          87
+        ]
+      },
+      "direct_references": 116,
+      "rules_with_this_only_unexpanded_child": 30
+    },
+    {
+      "node": 467946,
+      "rank": 0,
+      "type": {
+        "states": [
+          "21212",
+          "23112"
+        ],
+        "parity": 1,
+        "ratio_bin": 0,
+        "ratio_refinement": [
+          1,
+          1
+        ],
+        "interval": [
+          86,
+          87
+        ]
+      },
+      "direct_references": 102,
+      "rules_with_this_only_unexpanded_child": 30
+    },
+    {
+      "node": 14861,
+      "rank": 0,
+      "type": {
+        "states": [
+          "21212",
+          "23112"
+        ],
+        "parity": 1,
+        "ratio_bin": 0,
+        "interval": [
+          86,
+          87
+        ]
+      },
+      "direct_references": 96,
+      "rules_with_this_only_unexpanded_child": 37
+    },
+    {
+      "node": 342769,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22223",
+          "22223"
+        ],
+        "parity": 1,
+        "ratio_bin": 171,
+        "interval": [
+          -90,
+          -89
+        ]
+      },
+      "direct_references": 94,
+      "rules_with_this_only_unexpanded_child": 23
+    },
+    {
+      "node": 49753,
+      "rank": 0,
+      "type": {
+        "states": [
+          "23112",
+          "21212"
+        ],
+        "parity": 1,
+        "ratio_bin": 0,
+        "interval": [
+          85,
+          86
+        ]
+      },
+      "direct_references": 91,
+      "rules_with_this_only_unexpanded_child": 8
+    },
+    {
+      "node": 300348,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22231",
+          "22213"
+        ],
+        "parity": 1,
+        "ratio_bin": 171,
+        "interval": [
+          219,
+          220
+        ]
+      },
+      "direct_references": 79,
+      "rules_with_this_only_unexpanded_child": 7
+    },
+    {
+      "node": 342999,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22231"
+        ],
+        "parity": -1,
+        "ratio_bin": 187,
+        "interval": [
+          356,
+          357
+        ]
+      },
+      "direct_references": 78,
+      "rules_with_this_only_unexpanded_child": 47
+    },
+    {
+      "node": 10751,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22313",
+          "22132"
+        ],
+        "parity": 1,
+        "ratio_bin": 36,
+        "interval": [
+          56,
+          57
+        ]
+      },
+      "direct_references": 68,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 331766,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22233",
+          "22223"
+        ],
+        "parity": 1,
+        "ratio_bin": 14,
+        "interval": [
+          396,
+          397
+        ]
+      },
+      "direct_references": 68,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 331767,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22233",
+          "22223"
+        ],
+        "parity": 1,
+        "ratio_bin": 14,
+        "interval": [
+          397,
+          398
+        ]
+      },
+      "direct_references": 68,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 468174,
+      "rank": 0,
+      "type": {
+        "states": [
+          "23112",
+          "21212"
+        ],
+        "parity": 1,
+        "ratio_bin": 0,
+        "ratio_refinement": [
+          1,
+          1
+        ],
+        "interval": [
+          85,
+          86
+        ]
+      },
+      "direct_references": 66,
+      "rules_with_this_only_unexpanded_child": 1
+    },
+    {
+      "node": 331755,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22233",
+          "22223"
+        ],
+        "parity": 1,
+        "ratio_bin": 14,
+        "interval": [
+          385,
+          386
+        ]
+      },
+      "direct_references": 63,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 331756,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22233",
+          "22223"
+        ],
+        "parity": 1,
+        "ratio_bin": 14,
+        "interval": [
+          386,
+          387
+        ]
+      },
+      "direct_references": 63,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 325244,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22231",
+          "22213"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "ratio_refinement": [
+          1,
+          1
+        ],
+        "interval": [
+          219,
+          220
+        ]
+      },
+      "direct_references": 62,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 455965,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22313",
+          "22132"
+        ],
+        "parity": 1,
+        "ratio_bin": 36,
+        "interval": [
+          75,
+          76
+        ]
+      },
+      "direct_references": 60,
+      "rules_with_this_only_unexpanded_child": 7
+    },
+    {
+      "node": 331744,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22233",
+          "22223"
+        ],
+        "parity": 1,
+        "ratio_bin": 14,
+        "interval": [
+          374,
+          375
+        ]
+      },
+      "direct_references": 60,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 331745,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22233",
+          "22223"
+        ],
+        "parity": 1,
+        "ratio_bin": 14,
+        "interval": [
+          375,
+          376
+        ]
+      },
+      "direct_references": 60,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 331722,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22233",
+          "22223"
+        ],
+        "parity": 1,
+        "ratio_bin": 14,
+        "interval": [
+          352,
+          353
+        ]
+      },
+      "direct_references": 59,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 331723,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22233",
+          "22223"
+        ],
+        "parity": 1,
+        "ratio_bin": 14,
+        "interval": [
+          353,
+          354
+        ]
+      },
+      "direct_references": 59,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 331733,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22233",
+          "22223"
+        ],
+        "parity": 1,
+        "ratio_bin": 14,
+        "interval": [
+          363,
+          364
+        ]
+      },
+      "direct_references": 59,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 331734,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22233",
+          "22223"
+        ],
+        "parity": 1,
+        "ratio_bin": 14,
+        "interval": [
+          364,
+          365
+        ]
+      },
+      "direct_references": 59,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 456023,
+      "rank": 0,
+      "type": {
+        "states": [
+          "23112",
+          "21212"
+        ],
+        "parity": 1,
+        "ratio_bin": 0,
+        "ratio_refinement": [
+          1,
+          1
+        ],
+        "interval": [
+          86,
+          87
+        ]
+      },
+      "direct_references": 58,
+      "rules_with_this_only_unexpanded_child": 7
+    },
+    {
+      "node": 343035,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22223",
+          "22223"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "interval": [
+          -89,
+          -88
+        ]
+      },
+      "direct_references": 58,
+      "rules_with_this_only_unexpanded_child": 11
+    },
+    {
+      "node": 471776,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22231",
+          "22213"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "interval": [
+          219,
+          220
+        ]
+      },
+      "direct_references": 57,
+      "rules_with_this_only_unexpanded_child": 22
+    },
+    {
+      "node": 455844,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22223",
+          "22223"
+        ],
+        "parity": 1,
+        "ratio_bin": 171,
+        "interval": [
+          -89,
+          -88
+        ]
+      },
+      "direct_references": 55,
+      "rules_with_this_only_unexpanded_child": 2
+    },
+    {
+      "node": 331762,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22233",
+          "22223"
+        ],
+        "parity": 1,
+        "ratio_bin": 14,
+        "interval": [
+          392,
+          393
+        ]
+      },
+      "direct_references": 55,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 331763,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22233",
+          "22223"
+        ],
+        "parity": 1,
+        "ratio_bin": 14,
+        "interval": [
+          393,
+          394
+        ]
+      },
+      "direct_references": 55,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 331764,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22233",
+          "22223"
+        ],
+        "parity": 1,
+        "ratio_bin": 14,
+        "interval": [
+          394,
+          395
+        ]
+      },
+      "direct_references": 55,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 331765,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22233",
+          "22223"
+        ],
+        "parity": 1,
+        "ratio_bin": 14,
+        "interval": [
+          395,
+          396
+        ]
+      },
+      "direct_references": 55,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 331768,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22233",
+          "22223"
+        ],
+        "parity": 1,
+        "ratio_bin": 14,
+        "interval": [
+          398,
+          399
+        ]
+      },
+      "direct_references": 55,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 331817,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22233",
+          "22223"
+        ],
+        "parity": 1,
+        "ratio_bin": 15,
+        "ratio_refinement": [
+          2,
+          3
+        ],
+        "interval": [
+          386,
+          387
+        ]
+      },
+      "direct_references": 54,
+      "rules_with_this_only_unexpanded_child": 0
+    },
+    {
+      "node": 331761,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22233",
+          "22223"
+        ],
+        "parity": 1,
+        "ratio_bin": 14,
+        "interval": [
+          391,
+          392
+        ]
+      },
+      "direct_references": 54,
+      "rules_with_this_only_unexpanded_child": 0
+    }
+  ],
+  "one_missing": [
+    {
+      "node": 342999,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22231"
+        ],
+        "parity": -1,
+        "ratio_bin": 187,
+        "interval": [
+          356,
+          357
+        ]
+      },
+      "direct_references": 78,
+      "rules_with_this_only_unexpanded_child": 47
+    },
+    {
+      "node": 85750,
+      "rank": 0,
+      "type": {
+        "states": [
+          "12121",
+          "31122"
+        ],
+        "parity": 1,
+        "ratio_bin": 222,
+        "ratio_refinement": [
+          1,
+          0
+        ],
+        "interval": [
+          -78,
+          -77
+        ]
+      },
+      "direct_references": 39,
+      "rules_with_this_only_unexpanded_child": 39
+    },
+    {
+      "node": 14861,
+      "rank": 0,
+      "type": {
+        "states": [
+          "21212",
+          "23112"
+        ],
+        "parity": 1,
+        "ratio_bin": 0,
+        "interval": [
+          86,
+          87
+        ]
+      },
+      "direct_references": 96,
+      "rules_with_this_only_unexpanded_child": 37
+    },
+    {
+      "node": 55034,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22133",
+          "23132"
+        ],
+        "parity": -1,
+        "ratio_bin": 244,
+        "ratio_refinement": [
+          2,
+          0
+        ],
+        "interval": [
+          -243,
+          -242
+        ]
+      },
+      "direct_references": 44,
+      "rules_with_this_only_unexpanded_child": 31
+    },
+    {
+      "node": 467946,
+      "rank": 0,
+      "type": {
+        "states": [
+          "21212",
+          "23112"
+        ],
+        "parity": 1,
+        "ratio_bin": 0,
+        "ratio_refinement": [
+          1,
+          1
+        ],
+        "interval": [
+          86,
+          87
+        ]
+      },
+      "direct_references": 102,
+      "rules_with_this_only_unexpanded_child": 30
+    },
+    {
+      "node": 17904,
+      "rank": 0,
+      "type": {
+        "states": [
+          "23112",
+          "21212"
+        ],
+        "parity": 1,
+        "ratio_bin": 0,
+        "ratio_refinement": [
+          3,
+          7
+        ],
+        "interval": [
+          86,
+          87
+        ]
+      },
+      "direct_references": 116,
+      "rules_with_this_only_unexpanded_child": 30
+    },
+    {
+      "node": 455902,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22213",
+          "22313"
+        ],
+        "parity": -1,
+        "ratio_bin": 404,
+        "interval": [
+          -12,
+          -11
+        ]
+      },
+      "direct_references": 25,
+      "rules_with_this_only_unexpanded_child": 25
+    },
+    {
+      "node": 474988,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22213",
+          "22313"
+        ],
+        "parity": -1,
+        "ratio_bin": 402,
+        "ratio_refinement": [
+          1,
+          0
+        ],
+        "interval": [
+          -12,
+          -11
+        ]
+      },
+      "direct_references": 26,
+      "rules_with_this_only_unexpanded_child": 24
+    },
+    {
+      "node": 342769,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22223",
+          "22223"
+        ],
+        "parity": 1,
+        "ratio_bin": 171,
+        "interval": [
+          -90,
+          -89
+        ]
+      },
+      "direct_references": 94,
+      "rules_with_this_only_unexpanded_child": 23
+    },
+    {
+      "node": 471776,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22231",
+          "22213"
+        ],
+        "parity": 1,
+        "ratio_bin": 172,
+        "interval": [
+          219,
+          220
+        ]
+      },
+      "direct_references": 57,
+      "rules_with_this_only_unexpanded_child": 22
+    },
+    {
+      "node": 455899,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22213",
+          "22313"
+        ],
+        "parity": -1,
+        "ratio_bin": 402,
+        "ratio_refinement": [
+          3,
+          2
+        ],
+        "interval": [
+          -15,
+          -14
+        ]
+      },
+      "direct_references": 48,
+      "rules_with_this_only_unexpanded_child": 21
+    },
+    {
+      "node": 501828,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22223"
+        ],
+        "parity": -1,
+        "ratio_bin": 418,
+        "ratio_refinement": [
+          1,
+          0
+        ],
+        "interval": [
+          -114,
+          -113
+        ]
+      },
+      "direct_references": 20,
+      "rules_with_this_only_unexpanded_child": 20
+    },
+    {
+      "node": 469454,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22222",
+          "22223"
+        ],
+        "parity": -1,
+        "ratio_bin": 418,
+        "ratio_refinement": [
+          3,
+          1
+        ],
+        "interval": [
+          -114,
+          -113
+        ]
+      },
+      "direct_references": 19,
+      "rules_with_this_only_unexpanded_child": 19
+    },
+    {
+      "node": 474802,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22213",
+          "22313"
+        ],
+        "parity": -1,
+        "ratio_bin": 402,
+        "interval": [
+          -15,
+          -14
+        ]
+      },
+      "direct_references": 39,
+      "rules_with_this_only_unexpanded_child": 19
+    },
+    {
+      "node": 342973,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22223",
+          "22231"
+        ],
+        "parity": -1,
+        "ratio_bin": 382,
+        "interval": [
+          -216,
+          -215
+        ]
+      },
+      "direct_references": 18,
+      "rules_with_this_only_unexpanded_child": 18
+    },
+    {
+      "node": 330063,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22213",
+          "22311"
+        ],
+        "parity": -1,
+        "ratio_bin": 79,
+        "interval": [
+          -217,
+          -216
+        ]
+      },
+      "direct_references": 17,
+      "rules_with_this_only_unexpanded_child": 17
+    },
+    {
+      "node": 19580,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22132",
+          "23132"
+        ],
+        "parity": -1,
+        "ratio_bin": 403,
+        "ratio_refinement": [
+          1,
+          0
+        ],
+        "interval": [
+          98,
+          99
+        ]
+      },
+      "direct_references": 25,
+      "rules_with_this_only_unexpanded_child": 17
+    },
+    {
+      "node": 498120,
+      "rank": 0,
+      "type": {
+        "states": [
+          "23112",
+          "21211"
+        ],
+        "parity": 1,
+        "ratio_bin": 465,
+        "interval": [
+          125,
+          126
+        ]
+      },
+      "direct_references": 28,
+      "rules_with_this_only_unexpanded_child": 17
+    },
+    {
+      "node": 367251,
+      "rank": 0,
+      "type": {
+        "states": [
+          "23111",
+          "22132"
+        ],
+        "parity": -1,
+        "ratio_bin": 124,
+        "interval": [
+          315,
+          316
+        ]
+      },
+      "direct_references": 18,
+      "rules_with_this_only_unexpanded_child": 16
+    },
+    {
+      "node": 136864,
+      "rank": 0,
+      "type": {
+        "states": [
+          "21332",
+          "31332"
+        ],
+        "parity": -1,
+        "ratio_bin": 403,
+        "interval": [
+          98,
+          99
+        ]
+      },
+      "direct_references": 17,
+      "rules_with_this_only_unexpanded_child": 15
+    },
+    {
+      "node": 472795,
+      "rank": 0,
+      "type": {
+        "states": [
+          "21212",
+          "31122"
+        ],
+        "parity": -1,
+        "ratio_bin": 440,
+        "ratio_refinement": [
+          1,
+          1
+        ],
+        "interval": [
+          105,
+          106
+        ]
+      },
+      "direct_references": 14,
+      "rules_with_this_only_unexpanded_child": 14
+    },
+    {
+      "node": 19581,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22132",
+          "23132"
+        ],
+        "parity": -1,
+        "ratio_bin": 403,
+        "ratio_refinement": [
+          1,
+          1
+        ],
+        "interval": [
+          98,
+          99
+        ]
+      },
+      "direct_references": 25,
+      "rules_with_this_only_unexpanded_child": 14
+    },
+    {
+      "node": 369923,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22221",
+          "22211"
+        ],
+        "parity": -1,
+        "ratio_bin": 74,
+        "interval": [
+          -59,
+          -58
+        ]
+      },
+      "direct_references": 14,
+      "rules_with_this_only_unexpanded_child": 14
+    },
+    {
+      "node": 487740,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22213",
+          "222313"
+        ],
+        "parity": -1,
+        "ratio_bin": 402,
+        "ratio_refinement": [
+          1,
+          0
+        ],
+        "interval": [
+          -15,
+          -14
+        ]
+      },
+      "direct_references": 17,
+      "rules_with_this_only_unexpanded_child": 13
+    },
+    {
+      "node": 102734,
+      "rank": 0,
+      "type": {
+        "states": [
+          "12121",
+          "31123"
+        ],
+        "parity": 1,
+        "ratio_bin": 373,
+        "interval": [
+          106,
+          107
+        ]
+      },
+      "direct_references": 13,
+      "rules_with_this_only_unexpanded_child": 13
+    },
+    {
+      "node": 391982,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22213",
+          "23111"
+        ],
+        "parity": 1,
+        "ratio_bin": 315,
+        "interval": [
+          -25,
+          -24
+        ]
+      },
+      "direct_references": 34,
+      "rules_with_this_only_unexpanded_child": 12
+    },
+    {
+      "node": 474222,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22221",
+          "22231"
+        ],
+        "parity": -1,
+        "ratio_bin": 406,
+        "interval": [
+          -177,
+          -176
+        ]
+      },
+      "direct_references": 12,
+      "rules_with_this_only_unexpanded_child": 12
+    },
+    {
+      "node": 475289,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22133",
+          "23133"
+        ],
+        "parity": -1,
+        "ratio_bin": 403,
+        "interval": [
+          39,
+          40
+        ]
+      },
+      "direct_references": 12,
+      "rules_with_this_only_unexpanded_child": 12
+    },
+    {
+      "node": 455921,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22112",
+          "22122"
+        ],
+        "parity": -1,
+        "ratio_bin": 459,
+        "interval": [
+          110,
+          111
+        ]
+      },
+      "direct_references": 12,
+      "rules_with_this_only_unexpanded_child": 12
+    },
+    {
+      "node": 455892,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22223",
+          "22213"
+        ],
+        "parity": 1,
+        "ratio_bin": 476,
+        "interval": [
+          13,
+          14
+        ]
+      },
+      "direct_references": 12,
+      "rules_with_this_only_unexpanded_child": 11
+    },
+    {
+      "node": 470354,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22212",
+          "22232"
+        ],
+        "parity": 1,
+        "ratio_bin": 195,
+        "ratio_refinement": [
+          1,
+          0
+        ],
+        "interval": [
+          428,
+          429
+        ]
+      },
+      "direct_references": 11,
+      "rules_with_this_only_unexpanded_child": 11
+    },
+    {
+      "node": 3724,
+      "rank": 0,
+      "type": {
+        "states": [
+          "22133",
+          "23132"
+        ],
+        "parity": -1,
+        "ratio_bin": 245,
+        "interval": [
+          -243,
+          -242
+        ]
+      },
+      "direct_references": 22,
+      "rules_with_this_only_unexpanded_child": 11
+    }
+  ],
+  "scope": "all retained rules, no geometric rejection; finite ranks do not disprove interval inclusion",
+  "source_sha256": "5d1209c5526d72d0234c68cda0ba8cfc4bfcfcc4725967addbb3f48821328da5"
+}

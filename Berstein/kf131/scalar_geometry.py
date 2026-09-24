@@ -9,6 +9,17 @@ from exact import matrix, transform
 from anchored_geometry import ALPHA, B
 
 
+@lru_cache(maxsize=65536)
+def quadratic_parameters(word,rbox):
+    _,_,c,d=matrix(word)
+    z,denominator=transform(word,ALPHA),c*ALPHA+d
+    lo,hi=map(B.coerce,rbox)
+    if not 0 <= lo <= hi:
+        raise ValueError('invalid shape interval')
+    ts=tuple(sorted((1+r*ALPHA)/(1+r*z) for r in (lo,hi)))
+    return z-ALPHA,1/(denominator**2),ts
+
+
 @lru_cache(maxsize=131072)
 def quadratic_range(word, coefficient, rbox):
     """Exact range of c_word(r) + coefficient / f_word(r)^2.
@@ -17,18 +28,14 @@ Write z=phi_word(alpha), D=c*alpha+d, t=(1+r*alpha)/(1+r*z).
 The expression is (z-alpha)*t + coefficient*t^2/D^2. The map r -> t
 is monotone, so two endpoints and at most one quadratic vertex suffice.
     """
-    _, _, c, d = matrix(word)
-    z, denominator = transform(word, ALPHA), c*ALPHA+d
-    lo, hi = map(B.coerce, rbox)
-    if not 0 <= lo <= hi:
-        raise ValueError('invalid shape interval')
-    ts = sorted(((1+r*ALPHA)/(1+r*z) for r in (lo, hi)))
-    a, b = B.coerce(coefficient)/(denominator**2), z-ALPHA
+    b,inverse_square,ts=quadratic_parameters(word,rbox)
+    a=B.coerce(coefficient)*inverse_square
     candidates = list(ts)
-    if a != 0:
+    # The derivative is affine; only divide when its zero lies strictly
+    # between the endpoints. This is the same exact extremum test.
+    if a != 0 and (2*a*ts[0]+b)*(2*a*ts[1]+b)<0:
         critical = -b/(2*a)
-        if ts[0] < critical < ts[1]:
-            candidates.append(critical)
+        candidates.append(critical)
     values = [(a*t+b)*t for t in candidates]
     return min(values), max(values)
 

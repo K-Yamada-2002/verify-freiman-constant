@@ -1,0 +1,374 @@
+{
+  "bands": [
+    {
+      "source_node": 70611,
+      "interval": [
+        -77804764,
+        -77699370
+      ]
+    },
+    {
+      "source_node": 384901,
+      "interval": [
+        -11561331,
+        -11418728
+      ]
+    },
+    {
+      "source_node": 404040,
+      "interval": [
+        -11284911,
+        -11215327
+      ]
+    },
+    {
+      "source_node": 384898,
+      "interval": [
+        -14782874,
+        -14727858
+      ]
+    },
+    {
+      "source_node": 431374,
+      "interval": [
+        -113276859,
+        -113241558
+      ]
+    },
+    {
+      "source_node": 398501,
+      "interval": [
+        -113274489,
+        -113246590
+      ]
+    },
+    {
+      "source_node": 403854,
+      "interval": [
+        -14814525,
+        -14651923
+      ]
+    },
+    {
+      "source_node": 271961,
+      "interval": [
+        -215638835,
+        -215328651
+      ]
+    },
+    {
+      "source_node": 399485,
+      "interval": [
+        -88821059,
+        -88564694
+      ]
+    },
+    {
+      "source_node": 393824,
+      "interval": [
+        -88821059,
+        -88628198
+      ]
+    },
+    {
+      "source_node": 19795,
+      "interval": [
+        74005187,
+        74323692
+      ]
+    },
+    {
+      "source_node": 19789,
+      "interval": [
+        74118316,
+        74440590
+      ]
+    },
+    {
+      "source_node": 19878,
+      "interval": [
+        73665800,
+        74323692
+      ]
+    },
+    {
+      "source_node": 19879,
+      "interval": [
+        73665800,
+        74323692
+      ]
+    },
+    {
+      "source_node": 272023,
+      "interval": [
+        -88696918,
+        -88311696
+      ]
+    },
+    {
+      "source_node": 384843,
+      "interval": [
+        -88945200,
+        -88564694
+      ]
+    },
+    {
+      "source_node": 384972,
+      "interval": [
+        74118316,
+        74557488
+      ]
+    },
+    {
+      "source_node": 336214,
+      "interval": [
+        -177410080,
+        -177084514
+      ]
+    },
+    {
+      "source_node": 393830,
+      "interval": [
+        608775343,
+        623978286
+      ]
+    },
+    {
+      "source_node": 271791,
+      "interval": [
+        608775343,
+        624864345
+      ]
+    },
+    {
+      "source_node": 4868,
+      "interval": [
+        -11235813,
+        -11203064
+      ]
+    },
+    {
+      "source_node": 4827,
+      "interval": [
+        -11361810,
+        -11222913
+      ]
+    },
+    {
+      "source_node": 335557,
+      "interval": [
+        -177193159,
+        -176869362
+      ]
+    },
+    {
+      "source_node": 399492,
+      "interval": [
+        607690241,
+        623682933
+      ]
+    }
+  ],
+  "repaired": [
+    {
+      "parent": 23,
+      "certificate_node": 0,
+      "trimmed_edges": 2,
+      "rules": [
+        -7,
+        -3
+      ],
+      "verification": {
+        "node": 0,
+        "children": 2,
+        "dependencies": [
+          7,
+          8,
+          9,
+          10
+        ]
+      }
+    },
+    {
+      "parent": 44,
+      "certificate_node": 1,
+      "trimmed_edges": 1,
+      "rules": [
+        -49,
+        -56
+      ],
+      "verification": {
+        "node": 1,
+        "children": 2,
+        "dependencies": [
+          11,
+          12,
+          13,
+          14
+        ]
+      }
+    },
+    {
+      "parent": 52,
+      "certificate_node": 2,
+      "trimmed_edges": 1,
+      "rules": [
+        -71,
+        -78
+      ],
+      "verification": {
+        "node": 2,
+        "children": 2,
+        "dependencies": [
+          15,
+          16,
+          17,
+          18
+        ]
+      }
+    },
+    {
+      "parent": 53,
+      "certificate_node": 3,
+      "trimmed_edges": 1,
+      "rules": [
+        -93,
+        -100
+      ],
+      "verification": {
+        "node": 3,
+        "children": 2,
+        "dependencies": [
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      }
+    },
+    {
+      "parent": 89,
+      "certificate_node": 4,
+      "trimmed_edges": 0,
+      "rules": [
+        -123
+      ],
+      "verification": {
+        "node": 4,
+        "children": 1,
+        "dependencies": [
+          21,
+          22
+        ]
+      }
+    },
+    {
+      "parent": 99,
+      "certificate_node": 5,
+      "trimmed_edges": 0,
+      "rules": [
+        -145
+      ],
+      "verification": {
+        "node": 5,
+        "children": 1,
+        "dependencies": [
+          23,
+          24
+        ]
+      }
+    },
+    {
+      "parent": 110,
+      "certificate_node": 6,
+      "trimmed_edges": 0,
+      "rules": [
+        -167
+      ],
+      "verification": {
+        "node": 6,
+        "children": 1,
+        "dependencies": [
+          25,
+          26
+        ]
+      }
+    }
+  ],
+  "failed": [],
+  "candidates": 49,
+  "cut_edges": 5,
+  "expanded_offers": true,
+  "final_local_checks": [
+    {
+      "node": 0,
+      "children": 2,
+      "dependencies": [
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "node": 1,
+      "children": 2,
+      "dependencies": [
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "node": 2,
+      "children": 2,
+      "dependencies": [
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "node": 3,
+      "children": 2,
+      "dependencies": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "node": 4,
+      "children": 1,
+      "dependencies": [
+        21,
+        22
+      ]
+    },
+    {
+      "node": 5,
+      "children": 1,
+      "dependencies": [
+        23,
+        24
+      ]
+    },
+    {
+      "node": 6,
+      "children": 1,
+      "dependencies": [
+        25,
+        26
+      ]
+    }
+  ],
+  "nodes": 27,
+  "open_nodes": 20
+}

@@ -1,0 +1,63 @@
+{
+  "scope": "Exact local implication only; children still require filling",
+  "source_proof_hash": "3b5cb0ccc926d13e2386fee21b3ea34c3b9ee8780738804a7eb5c89bcbc46d6d",
+  "node": 3007,
+  "left_width": [
+    "5543443/6352",
+    "-2319281/57168"
+  ],
+  "right_width": [
+    "40230835861913/1285291634754",
+    "-5513715577325/3855874904262"
+  ],
+  "right_over_left": [
+    "86961128788904/205860876833099",
+    "3705252091552/205860876833099"
+  ],
+  "ratio_approx": 0.8092965805035212,
+  "edge_policy": [
+    {
+      "suffixes": [
+        "",
+        "3"
+      ],
+      "excluded_by_old_balance": true
+    },
+    {
+      "suffixes": [
+        "3",
+        "3"
+      ],
+      "excluded_by_old_balance": false
+    },
+    {
+      "suffixes": [
+        "",
+        "2"
+      ],
+      "excluded_by_old_balance": true
+    },
+    {
+      "suffixes": [
+        "",
+        "1"
+      ],
+      "excluded_by_old_balance": true
+    }
+  ],
+  "local_verification": {
+    "node": 3007,
+    "children": 4,
+    "dependencies": [
+      3214,
+      3215,
+      3216,
+      3217
+    ]
+  },
+  "known_gap_hits": [],
+  "old_limit": "9/10",
+  "new_limit": "0",
+  "max_added_digits": 2,
+  "chart_memory": 3
+}

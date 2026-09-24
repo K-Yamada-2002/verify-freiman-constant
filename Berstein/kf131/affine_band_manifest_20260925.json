@@ -1,0 +1,52 @@
+{
+  "closed": false,
+  "interior_proved": false,
+  "strict_results": {
+    "baseline_local_rules": 23,
+    "extended_local_rules": 870,
+    "extended_open_types": 3401,
+    "selected_rules_supported_types": 0,
+    "tests_passed": 79
+  },
+  "limitations": [
+    "Numerical exhaustion is not a nonexistence proof.",
+    "Historical exact kernel eighth round predates union-before-rounding correction.",
+    "Selected-rule graph is not the full numerical iteration state.",
+    "All verified local rules remain conditional on their children."
+  ],
+  "sha256": {
+    "AFFINE_BAND_INDUCTION.md": "d02c3276825a86c50f2fb2b6aaf86cacb148b0aa1bbf14f17cd1f55d483f0531",
+    "RETURN_DOMAIN_EXPLORATION.md": "6aac23cca43b093b894e8ad32f94c4a9e54849c797c3c3c3b48a14c676180070",
+    "README.md": "0eb152c8e7971e749f751921ea6bf3873157037a1a13c3d9a3251cb17c4e805e",
+    "sloped_scalar_geometry.py": "4898e145801aae92b9703d3caf106d6e689b3442a181b1cd7ed58465c702202a",
+    "verify_scalar_graph.py": "b99b922171319844da99636b5dfbab2e4725efb580904be3c54a8eb62b2d8713",
+    "close_scalar_library.py": "d3caa002be0c6a9b4e175af7562a637ce6c89e6b1796c40d6fc0f2708f728f13",
+    "search_return_kernel.py": "9ad3eee71d8b1e881744d66993412cc0aef406c9b5586f61344d75f7ac8b4223",
+    "fast_return_kernel.py": "6776bdfd24e18b1bfd34101f71a3fad9aafb47f82644ea385a422af179e17c55",
+    "scalar_type_search.cpp": "1661f0bb20ba6358cecc123b87d5cd93dffe3e7aace5c26f41e413882697c323",
+    "sloped_type_search.cpp": "4ef7fa9446a3a99431f4d8b7d5f85eeb101dea39f8c4dbf1f185747fcc686255",
+    "run_affine_band_search.py": "28fdc9609e994fdb71add9201dfe589e1652a1e5f6cdbb4c014e9ad75fe09a0a",
+    "audit_affine_bands.py": "e3dc3a554e839c4e63efda538866e37aa168da5e6bed5be6bab1db8e6c394ffb",
+    "test_affine_band_obstructions.py": "f494d3322ff1acfc0dd476e39ef0fd8b1019107ff485a8f79bdd982ae38db8f2",
+    "test_sloped_scalar_geometry.py": "ff468737a18aa9430fa3594071b4e319e7a6e9e52286409c7958d3d828244c0f",
+    "test_fast_return_kernel.py": "c257f5a803605ddcf65a2020c367c397f2528905ac88a36daba01b66b4d30620",
+    "test_close_scalar_library.py": "fb2586f95c675d952d6d9da526e49e271110216fe49642fdc391436ab6d40f8f",
+    "affine_band_extended_plan_20260925.json": "ed4d559c34b61d3f17428aed020a255cae7474b9e4ac120f60af4b1ef9cb276e",
+    "affine_band_baseline_replay_20260925.json": "b3c7a66f47de19baaa36d6b7f273100108f236068c9a2a8627ef0cb44562ad86",
+    "affine_band_local_example_20260925.json": "adcb2b7f9eb959f9ce715e9252f4ad5e1558f3cef1d072975c44b86550291cfc",
+    "affine_band_local_obstructions_20260925.json": "b3ff251e3c475d13e4f2d5f0895785571734fbc61c44bbe7a7bf1b9ced39c32c",
+    "affine_band_selected_closure_20260925.json": "8bbbd6859f0358fe3fa206eae7c041c1aa8df5b1769ec4b9eb96fdfaa0eef3c4",
+    "return_domain_successors3_corrected_numeric_20260925.json": "18fbb70a33b7144d8ade05f3f7ac90a9810b12afacefc500009efc039d5f2cc1",
+    "return_domain_successors3_exact_eighth_20260925.json": "4b80e846127626b469ef3d79ea0fc784f2e6425558d2b77d139f1d96d988281f",
+    "affine_band_extended_runs_20260925/stage_00.json": "68ba76bd53f7ac87a791cd2d43a7dca24af912ea1a679c5dbcc2129cacbb06a4",
+    "affine_band_extended_runs_20260925/stage_00.json.last_nonempty.json": "4ceb644688a251eb588301c8f5c95ea5e7c35bb332d133d1db8d15cea1ea3316",
+    "affine_band_extended_runs_20260925/stage_00.log": "ef2c8c53b9a705f7e6f61942b1b60770518697f0bd5cd30c4254069cf6798585",
+    "affine_band_extended_runs_20260925/stage_01.json": "bcc04e56fb2266c2aa38523dbc1e34cb73eaefdd06dbf0d022619092631b6aff",
+    "affine_band_extended_runs_20260925/stage_01.json.last_nonempty.json": "bcc04e56fb2266c2aa38523dbc1e34cb73eaefdd06dbf0d022619092631b6aff",
+    "affine_band_extended_runs_20260925/stage_01.log": "8eb4966ba044f62a89d5fa413d2bdfb3e391b78c74ab30723568299c22520762",
+    "affine_band_extended_runs_20260925/summary.json": "c062e23ce3ffb88f52a4c1e6bbe513f3c7bbcabe13ae2730df62657f39c849a9",
+    "affine_band_runs_20260925/menu_summary.json": "7b559683f372aad5d75b56e21b44493f97b960c7256584bede4ab93264c16024",
+    "affine_band_runs_20260925/summary.json": "b2706befdedb992c4b164a8dd98abec46c7f31b9a964f000930b0cae60b11350",
+    "affine_band_runs_20260925/tail_summary.json": "f67b3f519cb73f697a3e65eda6ba57aa3a24a60c8c71896cc67caaf11c91cdef"
+  }
+}

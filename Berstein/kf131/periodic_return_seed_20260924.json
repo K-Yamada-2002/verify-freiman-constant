@@ -1,0 +1,42 @@
+{
+  "schema": "kf131-scalar-atlas-v1",
+  "settings": {
+    "base": 0.996,
+    "bins": 512,
+    "memory": 8,
+    "grid": 1024000000,
+    "max_step": 4,
+    "block_span": 1
+  },
+  "nodes": [
+    {
+      "id": 0,
+      "states": [
+        "22222222",
+        "22222222"
+      ],
+      "parity": -1,
+      "ratio_bin": 331,
+      "ratio_refinement": [
+        6,
+        39
+      ],
+      "interval": [
+        -51200000,
+        51200000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -15
+    }
+  ],
+  "roots": [
+    0
+  ],
+  "root_prefixes": [
+    "2211122223133122222222",
+    "22121222213212222222222"
+  ],
+  "closed_candidate": false,
+  "status": "periodic central return probe; no filling proved"
+}

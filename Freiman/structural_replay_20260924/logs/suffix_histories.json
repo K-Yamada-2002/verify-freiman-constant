@@ -1,0 +1,237 @@
+{
+  "group": "suffix_histories",
+  "status": "PASS",
+  "records": [
+    {
+      "label": "history_left_normal",
+      "command": [
+        "verify_suffix_targets_independent.py",
+        "left"
+      ],
+      "cwd": "work/report_parts/occurrence_closure_v2",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 36.348,
+      "log": "replay_logs/suffix_histories__history_left_normal.log",
+      "stdout": "left 594 independently enumerated source histories; {'excluded': 1464, 'gap_bound': 72, 'automatic': 0}",
+      "stderr": ""
+    },
+    {
+      "label": "history_left_O",
+      "command": [
+        "-O",
+        "verify_suffix_targets_independent.py",
+        "left"
+      ],
+      "cwd": "work/report_parts/occurrence_closure_v2",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 32.748,
+      "log": "replay_logs/suffix_histories__history_left_O.log",
+      "stdout": "left 594 independently enumerated source histories; {'excluded': 1464, 'gap_bound': 72, 'automatic': 0}",
+      "stderr": ""
+    },
+    {
+      "label": "history_right_normal",
+      "command": [
+        "verify_suffix_targets_independent.py",
+        "right"
+      ],
+      "cwd": "work/report_parts/occurrence_closure_v2",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 3.839,
+      "log": "replay_logs/suffix_histories__history_right_normal.log",
+      "stdout": "right 90 independently enumerated source histories; {'excluded': 120, 'gap_bound': 144, 'automatic': 0}",
+      "stderr": ""
+    },
+    {
+      "label": "history_right_O",
+      "command": [
+        "-O",
+        "verify_suffix_targets_independent.py",
+        "right"
+      ],
+      "cwd": "work/report_parts/occurrence_closure_v2",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 4.661,
+      "log": "replay_logs/suffix_histories__history_right_O.log",
+      "stdout": "right 90 independently enumerated source histories; {'excluded': 120, 'gap_bound': 144, 'automatic': 0}",
+      "stderr": ""
+    },
+    {
+      "label": "history_mixed_normal",
+      "command": [
+        "verify_suffix_targets_independent.py",
+        "mixed"
+      ],
+      "cwd": "work/report_parts/occurrence_closure_v2",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 15.026,
+      "log": "replay_logs/suffix_histories__history_mixed_normal.log",
+      "stdout": "mixed 312 independently enumerated source histories; {'excluded': 576, 'gap_bound': 270, 'automatic': 0}",
+      "stderr": ""
+    },
+    {
+      "label": "history_mixed_O",
+      "command": [
+        "-O",
+        "verify_suffix_targets_independent.py",
+        "mixed"
+      ],
+      "cwd": "work/report_parts/occurrence_closure_v2",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 15.499,
+      "log": "replay_logs/suffix_histories__history_mixed_O.log",
+      "stdout": "mixed 312 independently enumerated source histories; {'excluded': 576, 'gap_bound': 270, 'automatic': 0}",
+      "stderr": ""
+    },
+    {
+      "label": "history_rightmixed_normal",
+      "command": [
+        "verify_suffix_targets_independent.py",
+        "rightmixed"
+      ],
+      "cwd": "work/report_parts/occurrence_closure_v2",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 3.479,
+      "log": "replay_logs/suffix_histories__history_rightmixed_normal.log",
+      "stdout": "rightmixed 90 independently enumerated source histories; {'excluded': 132, 'gap_bound': 0, 'automatic': 0}",
+      "stderr": ""
+    },
+    {
+      "label": "history_rightmixed_O",
+      "command": [
+        "-O",
+        "verify_suffix_targets_independent.py",
+        "rightmixed"
+      ],
+      "cwd": "work/report_parts/occurrence_closure_v2",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 4.321,
+      "log": "replay_logs/suffix_histories__history_rightmixed_O.log",
+      "stdout": "rightmixed 90 independently enumerated source histories; {'excluded': 132, 'gap_bound': 0, 'automatic': 0}",
+      "stderr": ""
+    },
+    {
+      "label": "verify_H_entry_reduction_independent_normal",
+      "command": [
+        "verify_H_entry_reduction_independent.py"
+      ],
+      "cwd": "work/report_parts/occurrence_closure_v2",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 14.238,
+      "log": "replay_logs/suffix_histories__verify_H_entry_reduction_independent_normal.log",
+      "stdout": "H ENTRY REDUCTION INDEPENDENT PASS: 406 histories; 844 exclusions; two S cases assigned to the parametric bridge lemma.",
+      "stderr": ""
+    },
+    {
+      "label": "verify_H_entry_reduction_independent_O",
+      "command": [
+        "-O",
+        "verify_H_entry_reduction_independent.py"
+      ],
+      "cwd": "work/report_parts/occurrence_closure_v2",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 15.191,
+      "log": "replay_logs/suffix_histories__verify_H_entry_reduction_independent_O.log",
+      "stdout": "H ENTRY REDUCTION INDEPENDENT PASS: 406 histories; 844 exclusions; two S cases assigned to the parametric bridge lemma.",
+      "stderr": ""
+    },
+    {
+      "label": "verify_all_history_printed_normal",
+      "command": [
+        "verify_all_history_printed.py"
+      ],
+      "cwd": "work/report_parts/occurrence_closure_v2",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 8.939,
+      "log": "replay_logs/suffix_histories__verify_all_history_printed_normal.log",
+      "stdout": "ACTUAL HISTORY TEX VERIFIED: 1492 paths; 3622 arithmetic obligations; two bridge survivors; 10746 coefficient bounds.",
+      "stderr": ""
+    },
+    {
+      "label": "verify_all_history_printed_O",
+      "command": [
+        "-O",
+        "verify_all_history_printed.py"
+      ],
+      "cwd": "work/report_parts/occurrence_closure_v2",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 10.006,
+      "log": "replay_logs/suffix_histories__verify_all_history_printed_O.log",
+      "stdout": "ACTUAL HISTORY TEX VERIFIED: 1492 paths; 3622 arithmetic obligations; two bridge survivors; 10746 coefficient bounds.",
+      "stderr": ""
+    },
+    {
+      "label": "check_suffix_negative_controls_normal",
+      "command": [
+        "check_suffix_negative_controls.py",
+        "left",
+        "right",
+        "mixed",
+        "rightmixed"
+      ],
+      "cwd": "work/report_parts/occurrence_closure_v2",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 21.3,
+      "log": "replay_logs/suffix_histories__check_suffix_negative_controls_normal.log",
+      "stdout": "24 deliberately corrupted certificates rejected",
+      "stderr": ""
+    },
+    {
+      "label": "missing_printed_history_False",
+      "command": [
+        "verify_all_history_printed.py",
+        "/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/tmp7qg8ldt3/missing_printed_path.tex"
+      ],
+      "cwd": "work/report_parts/occurrence_closure_v2",
+      "exit_code": 1,
+      "expected": "reject",
+      "status": "PASS",
+      "seconds": 8.864,
+      "log": "replay_logs/suffix_histories__missing_printed_history_False.log",
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/private/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-math-replay-iw2pcwwg/work/report_parts/occurrence_closure_v2/verify_all_history_printed.py\", line 117, in <module>\n    if __name__=='__main__':main(Path(sys.argv[1])if len(sys.argv)>1 else ROOT/'all_suffix_histories_appendix.tex')\n                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/private/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-math-replay-iw2pcwwg/work/report_parts/occurrence_closure_v2/verify_all_history_printed.py\", line 101, in main\n    need(seen==set(expected_paths),'complete printed path inventory')\n  File \"/private/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-math-replay-iw2pcwwg/work/report_parts/parity_experiment_late/independent_engine.py\", line 16, in need\n    if not ok:raise ArithmeticError(msg)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^\nArithmeticError: complete printed path inventory"
+    },
+    {
+      "label": "missing_printed_history_True",
+      "command": [
+        "-O",
+        "verify_all_history_printed.py",
+        "/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/tmp7qg8ldt3/missing_printed_path.tex"
+      ],
+      "cwd": "work/report_parts/occurrence_closure_v2",
+      "exit_code": 1,
+      "expected": "reject",
+      "status": "PASS",
+      "seconds": 9.679,
+      "log": "replay_logs/suffix_histories__missing_printed_history_True.log",
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/private/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-math-replay-iw2pcwwg/work/report_parts/occurrence_closure_v2/verify_all_history_printed.py\", line 117, in <module>\n    if __name__=='__main__':main(Path(sys.argv[1])if len(sys.argv)>1 else ROOT/'all_suffix_histories_appendix.tex')\n                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/private/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-math-replay-iw2pcwwg/work/report_parts/occurrence_closure_v2/verify_all_history_printed.py\", line 101, in main\n    need(seen==set(expected_paths),'complete printed path inventory')\n  File \"/private/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-math-replay-iw2pcwwg/work/report_parts/parity_experiment_late/independent_engine.py\", line 16, in need\n    if not ok:raise ArithmeticError(msg)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^\nArithmeticError: complete printed path inventory"
+    }
+  ]
+}

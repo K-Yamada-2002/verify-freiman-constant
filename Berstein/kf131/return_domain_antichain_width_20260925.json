@@ -1,0 +1,19 @@
+{
+  "source": "return_domain_successors3_20260925.width.json",
+  "source_sha256": "a314c664b846a90c1ae484ac261e6c0faaafa3ed972da363053d01d1af1ef81d",
+  "results": [
+    {
+      "mode": "left_digit",
+      "contributions": 2639,
+      "expansion_certificate": null,
+      "root_positive": false
+    },
+    {
+      "mode": "both_digits",
+      "contributions": 4653,
+      "expansion_certificate": null,
+      "root_positive": false
+    }
+  ],
+  "closed": false
+}

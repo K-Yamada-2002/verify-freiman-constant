@@ -1,0 +1,12 @@
+{
+  "source_sha256": "56d2b9e2e3d0fe426bbfd3eefb8f04d7fe8e398d19c560ac2facd043bf13980b",
+  "depth": 7,
+  "epsilon": 1e-05,
+  "selection": "all",
+  "obstructions": [],
+  "unresolved": [
+    0
+  ],
+  "parameter_samples": 1,
+  "scope": "whole finite outer approximation at sampled parameters; no positive filling proof"
+}

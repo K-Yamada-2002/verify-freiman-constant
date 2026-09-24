@@ -1,0 +1,8 @@
+{
+  "archive": "schecker_handoff_20260925.tar.gz",
+  "sha256": "3db7818c0f7ef8ca637a7e9ea72a556576274c19cd15fc6bb118f743964212cf",
+  "bytes": 31744733,
+  "payload_files": 522,
+  "uncompressed_bytes": 471868846,
+  "status": "PASS_ARCHIVE_HASH_REPLAY"
+}

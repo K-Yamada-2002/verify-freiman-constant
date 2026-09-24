@@ -1,0 +1,12 @@
+{
+  "visited": 869,
+  "excluded_leaves": 543,
+  "max_depth": 16,
+  "leaf_sha256": "e88dfdbdf4de3ac36b36a3e9e1b1e44c014e049c9610b98630b1c5f8f4a49821",
+  "excluded_closed_interval": [
+    "1161581372998897/1000000000000000",
+    "1161581373028403/1000000000000000"
+  ],
+  "source": "Rejected full row 2 of rebuilt_cover.json",
+  "midpoint": "23231627460273/20000000000000"
+}

@@ -1,0 +1,11 @@
+{
+  "source": "return_domain_successors3_20260925.width.json",
+  "source_sha256": "a314c664b846a90c1ae484ac261e6c0faaafa3ed972da363053d01d1af1ef81d",
+  "exact_expansion_replayed": true,
+  "root_weight": "11076107/25000000",
+  "positive_weights": 996,
+  "nonnegative_margins": true,
+  "strictly_positive_margins": 996,
+  "closed": false,
+  "meaning": "root-positive solution of the necessary length inequalities; no interval cover proved"
+}

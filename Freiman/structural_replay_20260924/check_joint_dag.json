@@ -1,0 +1,1283 @@
+{
+  "status": "PASS_STRUCTURAL_QUOTIENT",
+  "states": 33,
+  "edges": 102,
+  "max_steps": 7,
+  "scope": "Simultaneous parity quotient of history structure only; not of target inequalities",
+  "nodes": [
+    {
+      "id": 0,
+      "state": [
+        "1",
+        "313",
+        0,
+        1,
+        0,
+        0
+      ],
+      "rank": 7,
+      "edges": [
+        {
+          "label": [
+            "",
+            "1",
+            false
+          ],
+          "target": 5
+        },
+        {
+          "label": [
+            "1",
+            "",
+            false
+          ],
+          "target": 3
+        },
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 4
+        },
+        {
+          "label": [
+            "2",
+            "",
+            true
+          ],
+          "target": 13
+        },
+        {
+          "label": [
+            "2",
+            "1",
+            false
+          ],
+          "target": 16
+        },
+        {
+          "label": [
+            "2",
+            "1",
+            true
+          ],
+          "target": 17
+        },
+        {
+          "label": [
+            "3",
+            "",
+            true
+          ],
+          "target": 19
+        },
+        {
+          "label": [
+            "3",
+            "1",
+            false
+          ],
+          "target": 22
+        },
+        {
+          "label": [
+            "3",
+            "1",
+            true
+          ],
+          "target": 23
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "state": [
+        "1",
+        "313",
+        0,
+        1,
+        0,
+        1
+      ],
+      "rank": 5,
+      "edges": [
+        {
+          "label": [
+            "",
+            "1",
+            false
+          ],
+          "target": 5
+        },
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 4
+        },
+        {
+          "label": [
+            "2",
+            "",
+            true
+          ],
+          "target": 13
+        },
+        {
+          "label": [
+            "2",
+            "1",
+            false
+          ],
+          "target": 16
+        },
+        {
+          "label": [
+            "2",
+            "1",
+            true
+          ],
+          "target": 17
+        },
+        {
+          "label": [
+            "3",
+            "",
+            true
+          ],
+          "target": 19
+        },
+        {
+          "label": [
+            "3",
+            "1",
+            false
+          ],
+          "target": 22
+        },
+        {
+          "label": [
+            "3",
+            "1",
+            true
+          ],
+          "target": 23
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "state": [
+        "1",
+        "313",
+        0,
+        1,
+        1,
+        0
+      ],
+      "rank": 5,
+      "edges": [
+        {
+          "label": [
+            "",
+            "1",
+            false
+          ],
+          "target": 4
+        },
+        {
+          "label": [
+            "1",
+            "",
+            false
+          ],
+          "target": 7
+        },
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "state": [
+        "1",
+        "313",
+        1,
+        1,
+        0,
+        1
+      ],
+      "rank": 6,
+      "edges": [
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 2
+        },
+        {
+          "label": [
+            "2",
+            "",
+            true
+          ],
+          "target": 11
+        },
+        {
+          "label": [
+            "2",
+            "1",
+            false
+          ],
+          "target": 14
+        },
+        {
+          "label": [
+            "2",
+            "1",
+            true
+          ],
+          "target": 15
+        },
+        {
+          "label": [
+            "3",
+            "",
+            true
+          ],
+          "target": 18
+        },
+        {
+          "label": [
+            "3",
+            "1",
+            false
+          ],
+          "target": 20
+        },
+        {
+          "label": [
+            "3",
+            "1",
+            true
+          ],
+          "target": 21
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "state": [
+        "1",
+        "313",
+        1,
+        1,
+        1,
+        0
+      ],
+      "rank": 4,
+      "edges": [
+        {
+          "label": [
+            "1",
+            "",
+            false
+          ],
+          "target": 10
+        },
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 8
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "state": [
+        "1",
+        "3131",
+        0,
+        0,
+        0,
+        0
+      ],
+      "rank": 2,
+      "edges": [
+        {
+          "label": [
+            "1",
+            "",
+            false
+          ],
+          "target": 9
+        },
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 10
+        },
+        {
+          "label": [
+            "2",
+            "",
+            true
+          ],
+          "target": 17
+        },
+        {
+          "label": [
+            "3",
+            "",
+            true
+          ],
+          "target": 23
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "state": [
+        "1",
+        "3131",
+        0,
+        0,
+        0,
+        1
+      ],
+      "rank": 2,
+      "edges": [
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 10
+        },
+        {
+          "label": [
+            "2",
+            "",
+            true
+          ],
+          "target": 17
+        },
+        {
+          "label": [
+            "3",
+            "",
+            true
+          ],
+          "target": 23
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "state": [
+        "1",
+        "3131",
+        0,
+        0,
+        1,
+        0
+      ],
+      "rank": 0,
+      "edges": []
+    },
+    {
+      "id": 8,
+      "state": [
+        "1",
+        "3131",
+        1,
+        0,
+        0,
+        0
+      ],
+      "rank": 3,
+      "edges": [
+        {
+          "label": [
+            "1",
+            "",
+            false
+          ],
+          "target": 6
+        },
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 7
+        },
+        {
+          "label": [
+            "2",
+            "",
+            true
+          ],
+          "target": 15
+        },
+        {
+          "label": [
+            "3",
+            "",
+            true
+          ],
+          "target": 21
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "state": [
+        "1",
+        "3131",
+        1,
+        0,
+        0,
+        1
+      ],
+      "rank": 1,
+      "edges": [
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 7
+        },
+        {
+          "label": [
+            "2",
+            "",
+            true
+          ],
+          "target": 15
+        },
+        {
+          "label": [
+            "3",
+            "",
+            true
+          ],
+          "target": 21
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "state": [
+        "1",
+        "3131",
+        1,
+        0,
+        1,
+        0
+      ],
+      "rank": 1,
+      "edges": [
+        {
+          "label": [
+            "",
+            "1",
+            false
+          ],
+          "target": 7
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "state": [
+        "2",
+        "313",
+        0,
+        1,
+        1,
+        0
+      ],
+      "rank": 5,
+      "edges": [
+        {
+          "label": [
+            "",
+            "1",
+            false
+          ],
+          "target": 4
+        },
+        {
+          "label": [
+            "1",
+            "",
+            false
+          ],
+          "target": 15
+        },
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 14
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "state": [
+        "2",
+        "313",
+        1,
+        1,
+        0,
+        0
+      ],
+      "rank": 6,
+      "edges": [
+        {
+          "label": [
+            "1",
+            "",
+            false
+          ],
+          "target": 1
+        },
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 2
+        },
+        {
+          "label": [
+            "2",
+            "",
+            true
+          ],
+          "target": 11
+        },
+        {
+          "label": [
+            "2",
+            "1",
+            false
+          ],
+          "target": 14
+        },
+        {
+          "label": [
+            "2",
+            "1",
+            true
+          ],
+          "target": 15
+        },
+        {
+          "label": [
+            "3",
+            "",
+            true
+          ],
+          "target": 18
+        },
+        {
+          "label": [
+            "3",
+            "1",
+            false
+          ],
+          "target": 20
+        },
+        {
+          "label": [
+            "3",
+            "1",
+            true
+          ],
+          "target": 21
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "state": [
+        "2",
+        "313",
+        1,
+        1,
+        1,
+        0
+      ],
+      "rank": 4,
+      "edges": [
+        {
+          "label": [
+            "1",
+            "",
+            false
+          ],
+          "target": 17
+        },
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 16
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "state": [
+        "2",
+        "3131",
+        0,
+        0,
+        0,
+        0
+      ],
+      "rank": 2,
+      "edges": [
+        {
+          "label": [
+            "1",
+            "",
+            false
+          ],
+          "target": 9
+        },
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 10
+        },
+        {
+          "label": [
+            "2",
+            "",
+            true
+          ],
+          "target": 17
+        },
+        {
+          "label": [
+            "3",
+            "",
+            true
+          ],
+          "target": 23
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "state": [
+        "2",
+        "3131",
+        0,
+        0,
+        1,
+        0
+      ],
+      "rank": 0,
+      "edges": []
+    },
+    {
+      "id": 16,
+      "state": [
+        "2",
+        "3131",
+        1,
+        0,
+        0,
+        0
+      ],
+      "rank": 3,
+      "edges": [
+        {
+          "label": [
+            "1",
+            "",
+            false
+          ],
+          "target": 6
+        },
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 7
+        },
+        {
+          "label": [
+            "2",
+            "",
+            true
+          ],
+          "target": 15
+        },
+        {
+          "label": [
+            "3",
+            "",
+            true
+          ],
+          "target": 21
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "state": [
+        "2",
+        "3131",
+        1,
+        0,
+        1,
+        0
+      ],
+      "rank": 1,
+      "edges": [
+        {
+          "label": [
+            "",
+            "1",
+            false
+          ],
+          "target": 7
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "state": [
+        "3",
+        "313",
+        0,
+        1,
+        1,
+        0
+      ],
+      "rank": 5,
+      "edges": [
+        {
+          "label": [
+            "",
+            "1",
+            false
+          ],
+          "target": 26
+        },
+        {
+          "label": [
+            "1",
+            "",
+            false
+          ],
+          "target": 21
+        },
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 20
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "state": [
+        "3",
+        "313",
+        1,
+        1,
+        1,
+        0
+      ],
+      "rank": 4,
+      "edges": [
+        {
+          "label": [
+            "1",
+            "",
+            false
+          ],
+          "target": 23
+        },
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 22
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "state": [
+        "3",
+        "3131",
+        0,
+        0,
+        0,
+        0
+      ],
+      "rank": 2,
+      "edges": [
+        {
+          "label": [
+            "1",
+            "",
+            false
+          ],
+          "target": 31
+        },
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 32
+        },
+        {
+          "label": [
+            "2",
+            "",
+            true
+          ],
+          "target": 17
+        },
+        {
+          "label": [
+            "3",
+            "",
+            true
+          ],
+          "target": 23
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "state": [
+        "3",
+        "3131",
+        0,
+        0,
+        1,
+        0
+      ],
+      "rank": 0,
+      "edges": []
+    },
+    {
+      "id": 22,
+      "state": [
+        "3",
+        "3131",
+        1,
+        0,
+        0,
+        0
+      ],
+      "rank": 3,
+      "edges": [
+        {
+          "label": [
+            "1",
+            "",
+            false
+          ],
+          "target": 28
+        },
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 29
+        },
+        {
+          "label": [
+            "2",
+            "",
+            true
+          ],
+          "target": 15
+        },
+        {
+          "label": [
+            "3",
+            "",
+            true
+          ],
+          "target": 21
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "state": [
+        "3",
+        "3131",
+        1,
+        0,
+        1,
+        0
+      ],
+      "rank": 1,
+      "edges": [
+        {
+          "label": [
+            "",
+            "1",
+            false
+          ],
+          "target": 29
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "state": [
+        "31",
+        "313",
+        0,
+        1,
+        0,
+        0
+      ],
+      "rank": 7,
+      "edges": [
+        {
+          "label": [
+            "",
+            "1",
+            false
+          ],
+          "target": 27
+        },
+        {
+          "label": [
+            "1",
+            "",
+            false
+          ],
+          "target": 3
+        },
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 4
+        },
+        {
+          "label": [
+            "2",
+            "",
+            true
+          ],
+          "target": 13
+        },
+        {
+          "label": [
+            "2",
+            "1",
+            false
+          ],
+          "target": 16
+        },
+        {
+          "label": [
+            "2",
+            "1",
+            true
+          ],
+          "target": 17
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "state": [
+        "31",
+        "313",
+        0,
+        1,
+        1,
+        0
+      ],
+      "rank": 5,
+      "edges": [
+        {
+          "label": [
+            "",
+            "1",
+            false
+          ],
+          "target": 4
+        },
+        {
+          "label": [
+            "1",
+            "",
+            false
+          ],
+          "target": 29
+        },
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 27
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "state": [
+        "31",
+        "313",
+        1,
+        1,
+        1,
+        0
+      ],
+      "rank": 4,
+      "edges": [
+        {
+          "label": [
+            "1",
+            "",
+            false
+          ],
+          "target": 32
+        },
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 30
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "state": [
+        "31",
+        "3131",
+        0,
+        0,
+        0,
+        0
+      ],
+      "rank": 2,
+      "edges": [
+        {
+          "label": [
+            "1",
+            "",
+            false
+          ],
+          "target": 9
+        },
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 10
+        },
+        {
+          "label": [
+            "2",
+            "",
+            true
+          ],
+          "target": 17
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "state": [
+        "31",
+        "3131",
+        0,
+        0,
+        0,
+        1
+      ],
+      "rank": 2,
+      "edges": [
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 10
+        },
+        {
+          "label": [
+            "2",
+            "",
+            true
+          ],
+          "target": 17
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "state": [
+        "31",
+        "3131",
+        0,
+        0,
+        1,
+        0
+      ],
+      "rank": 0,
+      "edges": []
+    },
+    {
+      "id": 30,
+      "state": [
+        "31",
+        "3131",
+        1,
+        0,
+        0,
+        0
+      ],
+      "rank": 3,
+      "edges": [
+        {
+          "label": [
+            "1",
+            "",
+            false
+          ],
+          "target": 6
+        },
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 7
+        },
+        {
+          "label": [
+            "2",
+            "",
+            true
+          ],
+          "target": 15
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "state": [
+        "31",
+        "3131",
+        1,
+        0,
+        0,
+        1
+      ],
+      "rank": 1,
+      "edges": [
+        {
+          "label": [
+            "1",
+            "",
+            true
+          ],
+          "target": 7
+        },
+        {
+          "label": [
+            "2",
+            "",
+            true
+          ],
+          "target": 15
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "state": [
+        "31",
+        "3131",
+        1,
+        0,
+        1,
+        0
+      ],
+      "rank": 1,
+      "edges": [
+        {
+          "label": [
+            "",
+            "1",
+            false
+          ],
+          "target": 7
+        }
+      ]
+    }
+  ]
+}

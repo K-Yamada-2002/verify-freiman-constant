@@ -1,0 +1,125 @@
+{
+  "choices": [
+    {
+      "claim": 3,
+      "forbidden": [
+        "131",
+        "2313",
+        "3132",
+        "21323",
+        "32312"
+      ],
+      "left": [
+        "11",
+        "12"
+      ],
+      "right": [
+        "11",
+        "12",
+        "21",
+        "22",
+        "2311",
+        "232",
+        "233"
+      ],
+      "target": [
+        4.16158,
+        4.171799
+      ],
+      "dominance_bound": "59817/14378",
+      "scan": {
+        "exponent": 9,
+        "scale": 1000000000000000,
+        "visited": 84606713,
+        "leaves": 29596872,
+        "max_width_units": 1000000,
+        "max_depth": 21,
+        "complete": true,
+        "covers_target": true,
+        "seconds": 19.0653,
+        "covered": [
+          [
+            1161580000000000,
+            1171799000000000
+          ]
+        ]
+      }
+    },
+    {
+      "claim": 6,
+      "forbidden": [
+        "131",
+        "313"
+      ],
+      "left": [
+        "11",
+        "12",
+        "133"
+      ],
+      "right": [
+        "11",
+        "12",
+        "2"
+      ],
+      "target": [
+        4.178461,
+        4.219534
+      ],
+      "dominance_bound": "1249/299",
+      "scan": {
+        "exponent": 9,
+        "scale": 1000000000000000,
+        "visited": 337815760,
+        "leaves": 118254073,
+        "max_width_units": 1000000,
+        "max_depth": 22,
+        "complete": true,
+        "covers_target": true,
+        "seconds": 77.4397,
+        "covered": [
+          [
+            1178461000000000,
+            1219534000000000
+          ]
+        ]
+      }
+    }
+  ],
+  "kf": {
+    "forbidden": [
+      "131"
+    ],
+    "left": [
+      "1",
+      "2",
+      "3"
+    ],
+    "right": [
+      "1",
+      "2",
+      "3"
+    ],
+    "target": [
+      4.27,
+      4.36
+    ],
+    "dominance_bound": "191/45",
+    "scan": {
+      "exponent": 9,
+      "scale": 1000000000000000,
+      "visited": 744580115,
+      "leaves": 260924061,
+      "max_width_units": 1000000,
+      "max_depth": 22,
+      "complete": true,
+      "covers_target": true,
+      "seconds": 178.211,
+      "covered": [
+        [
+          1270000000000000,
+          1360000000000000
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "bad": [],
+  "retry": [],
+  "graph": {
+    "nodes": 65,
+    "local_rules": 25,
+    "open_nodes": 40,
+    "supported_nodes": [],
+    "root_ranks": [
+      3
+    ]
+  }
+}

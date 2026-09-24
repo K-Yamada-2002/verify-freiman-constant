@@ -1,0 +1,66 @@
+{
+  "hybrid_induction_resume.mosaic.json": {
+    "scope": "chosen strategy only; finite rank does not refute filledness",
+    "proof_hash": "a807ddc87a71b324503beb246e8b6bca07984594f7df018e3f1caaeae7fc6249",
+    "nodes": 2848,
+    "root_ranks": {
+      "zero": 2,
+      "positive": 2
+    },
+    "histogram": {
+      "0": 1778,
+      "1": 718,
+      "2": 326,
+      "3": 26
+    },
+    "structurally_closed": 0
+  },
+  "hybrid_induction_20260924_finish.mosaic.json": {
+    "scope": "chosen strategy only; finite rank does not refute filledness",
+    "proof_hash": "009e24a3b85d1168ddd7f284ea72e597b556b20b1273063562fb2b7d4ef51287",
+    "nodes": 2848,
+    "root_ranks": {
+      "zero": 2,
+      "positive": 2
+    },
+    "histogram": {
+      "0": 1768,
+      "1": 725,
+      "2": 329,
+      "3": 26
+    },
+    "structurally_closed": 0
+  },
+  "continued_reduced.json": {
+    "scope": "chosen strategy only; finite rank does not refute filledness",
+    "proof_hash": "13b4b13becd3e244958ffe08b5b89257eb957bde106bcc3ea94bf735653e23f7",
+    "nodes": 2821,
+    "root_ranks": {
+      "zero": 2,
+      "positive": 2
+    },
+    "histogram": {
+      "0": 1758,
+      "1": 713,
+      "2": 324,
+      "3": 26
+    },
+    "structurally_closed": 0
+  },
+  "continued_incoming_split.json": {
+    "scope": "chosen strategy only; finite rank does not refute filledness",
+    "proof_hash": "3b7f48d42f374713b4f8db107268c0213fe97ad95c29b84edb9669873caafef8",
+    "nodes": 2894,
+    "root_ranks": {
+      "zero": 2,
+      "positive": 2
+    },
+    "histogram": {
+      "0": 1823,
+      "1": 718,
+      "2": 327,
+      "3": 26
+    },
+    "structurally_closed": 0
+  }
+}

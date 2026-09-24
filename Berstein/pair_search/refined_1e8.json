@@ -1,0 +1,384 @@
+{
+  "meaning": "For every x in each target I, distance(x,K+L) <= 10^(-exponent). Does NOT prove I subset K+L.",
+  "source_sha256": "1095a96cd80f7f8932e22f197fd1c00242114bdc1d53c98a0aa26bc0a11db128",
+  "cpp_sha256": "2345c68843489e78b37b733a092325cbf239a968519e6c1eb62de9876a2a5c95",
+  "claims": [
+    {
+      "exponent": 8,
+      "scale": 1000000000000000,
+      "visited": 61506552,
+      "leaves": 21333775,
+      "max_width_units": 10000000,
+      "max_depth": 19,
+      "complete": true,
+      "covers_target": false,
+      "seconds": 10.3309,
+      "covered": [
+        [
+          1100000000000000,
+          1124769854719188
+        ],
+        [
+          1124769906522760,
+          1124769914299352
+        ],
+        [
+          1124769916712683,
+          1161581372053037
+        ],
+        [
+          1161581373043156,
+          1161581373520841
+        ],
+        [
+          1161581375745363,
+          1171799000000000
+        ]
+      ],
+      "claim": 1,
+      "left": [
+        "11",
+        "12",
+        "2"
+      ],
+      "right": [
+        "11",
+        "12",
+        "2"
+      ],
+      "language_state_pairs": 110,
+      "target_sum": [
+        "11/10",
+        "1171799/1000000"
+      ],
+      "input_sha256": "253a1e2e7523bd6dca710279b1c14dc2567058ee2d12bbcffb967464f8c06ac6"
+    },
+    {
+      "exponent": 8,
+      "scale": 1000000000000000,
+      "visited": 226492,
+      "leaves": 79382,
+      "max_width_units": 9999862,
+      "max_depth": 18,
+      "complete": true,
+      "covers_target": true,
+      "seconds": 0.0304683,
+      "covered": [
+        [
+          1171797000000000,
+          1172072000000000
+        ]
+      ],
+      "claim": 2,
+      "left": [
+        "12"
+      ],
+      "right": [
+        "23122",
+        "23123"
+      ],
+      "language_state_pairs": 112,
+      "target_sum": [
+        "1171797/1000000",
+        "146509/125000"
+      ],
+      "input_sha256": "be9600c2aef917812bb5ce028933cb3512c9fe75ee7906408050f53b1d786b6a"
+    },
+    {
+      "exponent": 8,
+      "scale": 1000000000000000,
+      "visited": 5306781,
+      "leaves": 1853127,
+      "max_width_units": 9999996,
+      "max_depth": 19,
+      "complete": true,
+      "covers_target": false,
+      "seconds": 0.7511,
+      "covered": [
+        [
+          1172070000000000,
+          1173060796324267
+        ],
+        [
+          1173060829613233,
+          1173060839228006
+        ],
+        [
+          1173060845195758,
+          1173666028008365
+        ],
+        [
+          1173666028433991,
+          1178463000000000
+        ]
+      ],
+      "claim": 3,
+      "left": [
+        "11",
+        "12",
+        "133"
+      ],
+      "right": [
+        "11",
+        "12",
+        "133"
+      ],
+      "language_state_pairs": 112,
+      "target_sum": [
+        "117207/100000",
+        "1178463/1000000"
+      ],
+      "input_sha256": "65a53cb14e768bd2ed8d8f60e6f2b7f8ef4adeab8ab8c7b485262c17408576d7"
+    },
+    {
+      "exponent": 8,
+      "scale": 1000000000000000,
+      "visited": 33931206,
+      "leaves": 11872726,
+      "max_width_units": 9999998,
+      "max_depth": 20,
+      "complete": true,
+      "covers_target": true,
+      "seconds": 5.42027,
+      "covered": [
+        [
+          1178461000000000,
+          1219534000000000
+        ]
+      ],
+      "claim": 4,
+      "left": [
+        "11",
+        "12",
+        "133"
+      ],
+      "right": [
+        "11",
+        "12",
+        "2"
+      ],
+      "language_state_pairs": 112,
+      "target_sum": [
+        "1178461/1000000",
+        "609767/500000"
+      ],
+      "input_sha256": "d0a0f7c2751beadc8a460b54479f121c3bc59c25beed55c39f8cae6b284244ea"
+    },
+    {
+      "exponent": 8,
+      "scale": 1000000000000000,
+      "visited": 12815528,
+      "leaves": 4460151,
+      "max_width_units": 9999999,
+      "max_depth": 20,
+      "complete": true,
+      "covers_target": true,
+      "seconds": 2.16686,
+      "covered": [
+        [
+          1219532000000000,
+          1235001000000000
+        ]
+      ],
+      "claim": 5,
+      "left": [
+        "11"
+      ],
+      "right": [
+        "11"
+      ],
+      "language_state_pairs": 992,
+      "target_sum": [
+        "304883/250000",
+        "1235001/1000000"
+      ],
+      "input_sha256": "a20912bc91f0953a03c9f9d168eeebb2465b1bcdbe011ff9c754efd343e0bd40"
+    },
+    {
+      "exponent": 8,
+      "scale": 1000000000000000,
+      "visited": 100537229,
+      "leaves": 35220037,
+      "max_width_units": 10000000,
+      "max_depth": 20,
+      "complete": true,
+      "covers_target": true,
+      "seconds": 15.1252,
+      "covered": [
+        [
+          1234999000000000,
+          1358479000000000
+        ]
+      ],
+      "claim": 6,
+      "left": [
+        "11",
+        "12"
+      ],
+      "right": [
+        "11",
+        "12"
+      ],
+      "language_state_pairs": 8371,
+      "target_sum": [
+        "1234999/1000000",
+        "1358479/1000000"
+      ],
+      "input_sha256": "fcb35182466cf6c9c8f9c9afd2bb704f550763ea9e107d4af9f2ecaf8084e804"
+    },
+    {
+      "exponent": 8,
+      "scale": 1000000000000000,
+      "visited": 10044727,
+      "leaves": 3547907,
+      "max_width_units": 9999998,
+      "max_depth": 19,
+      "complete": true,
+      "covers_target": false,
+      "seconds": 1.56323,
+      "covered": [
+        [
+          1358477000000000,
+          1367178912415172
+        ],
+        [
+          1367178913431823,
+          1370965000000000
+        ]
+      ],
+      "claim": 7,
+      "left": [
+        "11"
+      ],
+      "right": [
+        "11",
+        "12",
+        "13113"
+      ],
+      "language_state_pairs": 117,
+      "target_sum": [
+        "1358477/1000000",
+        "274193/200000"
+      ],
+      "input_sha256": "f3b42d2549fa6bb311d7b55fc0ba93d920ae5db0b5b6160fa3c675cc989f61a0"
+    },
+    {
+      "exponent": 8,
+      "scale": 1000000000000000,
+      "visited": 5752903,
+      "leaves": 1991988,
+      "max_width_units": 9999973,
+      "max_depth": 18,
+      "complete": true,
+      "covers_target": true,
+      "seconds": 0.805655,
+      "covered": [
+        [
+          1370963000000000,
+          1378064000000000
+        ]
+      ],
+      "claim": 8,
+      "left": [
+        "11",
+        "12",
+        "133"
+      ],
+      "right": [
+        "11",
+        "12",
+        "133"
+      ],
+      "language_state_pairs": 1063,
+      "target_sum": [
+        "1370963/1000000",
+        "86129/62500"
+      ],
+      "input_sha256": "544c624ec375a1a035eda39262ab7792c2513d18667cf67dc6eed90ff8b03d65"
+    },
+    {
+      "exponent": 8,
+      "scale": 1000000000000000,
+      "visited": 56707970,
+      "leaves": 19994729,
+      "max_width_units": 10000000,
+      "max_depth": 20,
+      "complete": true,
+      "covers_target": false,
+      "seconds": 8.23371,
+      "covered": [
+        [
+          1378062000000000,
+          1382214348845850
+        ],
+        [
+          1382214355048320,
+          1382214767138756
+        ],
+        [
+          1382214767385974,
+          1382214994722008
+        ],
+        [
+          1382215029143125,
+          1382215333227626
+        ],
+        [
+          1382215350395969,
+          1448557000000000
+        ]
+      ],
+      "claim": 9,
+      "left": [
+        "11",
+        "12",
+        "13113"
+      ],
+      "right": [
+        "12",
+        "132",
+        "133"
+      ],
+      "language_state_pairs": 117,
+      "target_sum": [
+        "689031/500000",
+        "1448557/1000000"
+      ],
+      "input_sha256": "b33a1bd9c1b0899d6d3cdec52b4634511b981f80e36f23a2e54e243f90390a43"
+    },
+    {
+      "exponent": 8,
+      "scale": 1000000000000000,
+      "visited": 57717957,
+      "leaves": 19926565,
+      "max_width_units": 10000000,
+      "max_depth": 19,
+      "complete": true,
+      "covers_target": true,
+      "seconds": 7.82659,
+      "covered": [
+        [
+          1448555000000000,
+          1520000000000000
+        ]
+      ],
+      "claim": 10,
+      "left": [
+        "12",
+        "1311",
+        "132"
+      ],
+      "right": [
+        "12",
+        "1311",
+        "133"
+      ],
+      "language_state_pairs": 121,
+      "target_sum": [
+        "289711/200000",
+        "38/25"
+      ],
+      "input_sha256": "6db9c69d4e19eae5b62edc1470744cbbc4248573736eb84ba5b2ab80ab144947"
+    }
+  ]
+}

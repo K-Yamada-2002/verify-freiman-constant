@@ -91,11 +91,16 @@ def main():
     ap.add_argument('--min-cost-cover', action='store_true', help='minimize additive new-obligation cost for each cover')
     ap.add_argument('--output', type=Path, required=True)
     args = ap.parse_args()
-    search, game, config = import_graph(json.loads(args.graph.read_text()), json.loads(args.source_state.read_text()))
+    source_state = json.loads(args.source_state.read_text())
+    search, game, config = import_graph(json.loads(args.graph.read_text()), source_state)
     if args.min_cost_cover:
         search.min_cost_cover = True
         config['min_cost_cover'] = True
     state = search.snapshot(game, config, fingerprint())
+    if source_state.get('gap_filter_bank'):
+        from repair_root_point_gap import install_bank
+        install_bank(search, source_state['gap_filter_bank'])
+        state['gap_filter_bank'] = copy.deepcopy(source_state['gap_filter_bank'])
     args.output.write_text(json.dumps(state, separators=(',', ':'))+'\n')
     print(json.dumps(dict(game.summary(), proof_hash=PiecewiseVerifier(search.certificate(game)).proof_hash())), flush=True)
 

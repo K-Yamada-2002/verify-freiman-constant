@@ -1,0 +1,21 @@
+{
+  "bank_size": 2278,
+  "results": [
+    {
+      "source": "return_domain_coarse096_20260925/memory2_ref0_radius2.json",
+      "root_refutations": []
+    },
+    {
+      "source": "return_domain_successors_20260925.json",
+      "root_refutations": []
+    },
+    {
+      "source": "return_domain_successors2_20260925.json",
+      "root_refutations": []
+    },
+    {
+      "source": "return_domain_successors3_20260925.json",
+      "root_refutations": []
+    }
+  ]
+}

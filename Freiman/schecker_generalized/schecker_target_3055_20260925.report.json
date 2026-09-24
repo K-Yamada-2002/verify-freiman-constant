@@ -1,0 +1,19 @@
+{
+  "target": 3055,
+  "statistics": {
+    "attempts": 1,
+    "accepted": 1,
+    "no_rule": 0,
+    "exact_rejected": 0,
+    "sweeps": 0
+  },
+  "nodes": 3134,
+  "verified_rules": 1078,
+  "failed_rules": 0,
+  "open_nodes": 2056,
+  "closure": {
+    "closed": false,
+    "reason": "node 3133: unresolved type"
+  },
+  "proof_hash": "5a81443c1191d178aff1f3c3fbd7d2555facd00bd35eed5a0d3024642e47d42a"
+}

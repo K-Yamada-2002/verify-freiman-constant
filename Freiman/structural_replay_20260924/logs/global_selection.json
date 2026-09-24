@@ -1,0 +1,80 @@
+{
+  "group": "global_selection",
+  "status": "PASS",
+  "records": [
+    {
+      "label": "verify_word_guards_normal",
+      "command": [
+        "verify_word_guards.py"
+      ],
+      "cwd": "work/report_parts/global_selection",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 0.042,
+      "log": "replay_logs/global_selection__verify_word_guards_normal.log",
+      "stdout": "WORD GUARDS PASS {'rows': 422, 'selected_candidates': 2202, 'births313': 9, 'births3131': 147, 'J_families': 48} preserving alphabet [('', '1'), ('1', ''), ('2', ''), ('2', '1'), ('3', ''), ('3', '1')]",
+      "stderr": ""
+    },
+    {
+      "label": "verify_word_guards_O",
+      "command": [
+        "-O",
+        "verify_word_guards.py"
+      ],
+      "cwd": "work/report_parts/global_selection",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 0.044,
+      "log": "replay_logs/global_selection__verify_word_guards_O.log",
+      "stdout": "WORD GUARDS PASS {'rows': 422, 'selected_candidates': 2202, 'births313': 9, 'births3131': 147, 'J_families': 48} preserving alphabet [('', '1'), ('1', ''), ('2', ''), ('2', '1'), ('3', ''), ('3', '1')]",
+      "stderr": ""
+    },
+    {
+      "label": "verify_source_bindings_normal",
+      "command": [
+        "verify_source_bindings.py"
+      ],
+      "cwd": "work/report_parts/global_selection",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 0.244,
+      "log": "replay_logs/global_selection__verify_source_bindings_normal.log",
+      "stdout": "SOURCE INTERFACES VERIFIED: 422 guarded rows; every selected child assigned to its local branch or stated connecting family.",
+      "stderr": ""
+    },
+    {
+      "label": "verify_source_bindings_O",
+      "command": [
+        "-O",
+        "verify_source_bindings.py"
+      ],
+      "cwd": "work/report_parts/global_selection",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 0.247,
+      "log": "replay_logs/global_selection__verify_source_bindings_O.log",
+      "stdout": "SOURCE INTERFACES VERIFIED: 422 guarded rows; every selected child assigned to its local branch or stated connecting family.",
+      "stderr": ""
+    },
+    {
+      "label": "printed_word_identity_False",
+      "status": "PASS",
+      "exit_code": 0,
+      "expected": "accept",
+      "stdout": "PRINTED BOUNDARY TABLE VERIFIED: 33 shared rows; 422 source/state rows; 2202 candidate checks.",
+      "seconds": 0.024
+    },
+    {
+      "label": "printed_word_identity_True",
+      "status": "PASS",
+      "exit_code": 0,
+      "expected": "accept",
+      "stdout": "PRINTED BOUNDARY TABLE VERIFIED: 33 shared rows; 422 source/state rows; 2202 candidate checks.",
+      "seconds": 0.025
+    }
+  ]
+}

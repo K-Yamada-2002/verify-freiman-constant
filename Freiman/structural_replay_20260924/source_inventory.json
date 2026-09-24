@@ -1,0 +1,14 @@
+{
+  "differences": {
+    "missing": [
+      "report/Freiman_Hall_ray_report.pdf"
+    ],
+    "extra": [
+      ".DS_Store",
+      "report/.DS_Store"
+    ],
+    "changed": []
+  },
+  "matched_files": 498,
+  "manifest_sha256": "204a17eca0558b4ef157a63a02c92844cc9df3c3e37fa60216ad866cecc02d1f"
+}

@@ -1,0 +1,15 @@
+{
+  "obstructions": [],
+  "unresolved": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "depth": 7,
+  "budget": 2000,
+  "closed": false,
+  "scope": "sampled point exclusions; absence of a witness is not a filling proof",
+  "source": "affine_band_extended_runs_20260925/stage_00.json.last_nonempty.json",
+  "source_sha256": "4ceb644688a251eb588301c8f5c95ea5e7c35bb332d133d1db8d15cea1ea3316"
+}

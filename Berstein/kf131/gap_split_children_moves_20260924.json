@@ -1,0 +1,7883 @@
+{
+  "settings": {
+    "base": 0.996,
+    "bins": 512,
+    "memory": 7,
+    "grid": 1024000000,
+    "max_step": 4,
+    "block_span": 1
+  },
+  "parents": {
+    "23": [],
+    "44": [],
+    "52": [],
+    "53": [],
+    "89": [],
+    "99": [],
+    "110": []
+  },
+  "nodes": {
+    "23": {
+      "id": 23,
+      "states": [
+        "22222",
+        "22223"
+      ],
+      "parity": -1,
+      "ratio_bin": 418,
+      "ratio_refinement": [
+        3,
+        1
+      ],
+      "interval": [
+        -113971908,
+        -113276859
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 398501
+    },
+    "44": {
+      "id": 44,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        3,
+        2
+      ],
+      "interval": [
+        -16549522,
+        -14814525
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 384898
+    },
+    "52": {
+      "id": 52,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        3,
+        2
+      ],
+      "interval": [
+        -16566105,
+        -14814525
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 384898
+    },
+    "53": {
+      "id": 53,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        2,
+        1
+      ],
+      "interval": [
+        -16566105,
+        -14814525
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 384897
+    },
+    "89": {
+      "id": 89,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        3,
+        2
+      ],
+      "interval": [
+        -11203064,
+        -6898435
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 384898
+    },
+    "99": {
+      "id": 99,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        3,
+        2
+      ],
+      "interval": [
+        -14651923,
+        -11361810
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 384898
+    },
+    "110": {
+      "id": 110,
+      "states": [
+        "22213",
+        "22313"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        3,
+        2
+      ],
+      "interval": [
+        -11203064,
+        -4480670
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 384898
+    },
+    "-1": {
+      "id": -1,
+      "states": [
+        "222221",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 196,
+      "ratio_refinement": [
+        3,
+        1
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-2": {
+      "id": -2,
+      "states": [
+        "222221",
+        "22223"
+      ],
+      "parity": 1,
+      "ratio_bin": 196,
+      "ratio_refinement": [
+        3,
+        2
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-3": {
+      "id": -3,
+      "states": [
+        "222221",
+        "222231"
+      ],
+      "parity": -1,
+      "ratio_bin": 406,
+      "ratio_refinement": [
+        3,
+        4
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-4": {
+      "id": -4,
+      "states": [
+        "222221",
+        "222231"
+      ],
+      "parity": -1,
+      "ratio_bin": 406,
+      "ratio_refinement": [
+        3,
+        5
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-5": {
+      "id": -5,
+      "states": [
+        "22223",
+        "222222"
+      ],
+      "parity": 1,
+      "ratio_bin": 20,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-6": {
+      "id": -6,
+      "states": [
+        "22223",
+        "222222"
+      ],
+      "parity": 1,
+      "ratio_bin": 21,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-7": {
+      "id": -7,
+      "states": [
+        "222222",
+        "222231"
+      ],
+      "parity": -1,
+      "ratio_bin": 188,
+      "ratio_refinement": [
+        3,
+        1
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-8": {
+      "id": -8,
+      "states": [
+        "222222",
+        "222231"
+      ],
+      "parity": -1,
+      "ratio_bin": 188,
+      "ratio_refinement": [
+        3,
+        2
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-9": {
+      "id": -9,
+      "states": [
+        "222222",
+        "222232"
+      ],
+      "parity": -1,
+      "ratio_bin": 418,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-10": {
+      "id": -10,
+      "states": [
+        "222222",
+        "222232"
+      ],
+      "parity": -1,
+      "ratio_bin": 418,
+      "ratio_refinement": [
+        3,
+        1
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-11": {
+      "id": -11,
+      "states": [
+        "222222",
+        "222232"
+      ],
+      "parity": -1,
+      "ratio_bin": 418,
+      "ratio_refinement": [
+        3,
+        2
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-12": {
+      "id": -12,
+      "states": [
+        "222222",
+        "2222311"
+      ],
+      "parity": 1,
+      "ratio_bin": 440,
+      "ratio_refinement": [
+        3,
+        1
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-13": {
+      "id": -13,
+      "states": [
+        "222222",
+        "2222311"
+      ],
+      "parity": 1,
+      "ratio_bin": 440,
+      "ratio_refinement": [
+        3,
+        2
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-14": {
+      "id": -14,
+      "states": [
+        "222222",
+        "2222311"
+      ],
+      "parity": 1,
+      "ratio_bin": 440,
+      "ratio_refinement": [
+        3,
+        3
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-15": {
+      "id": -15,
+      "states": [
+        "22223",
+        "222223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-16": {
+      "id": -16,
+      "states": [
+        "22223",
+        "222223"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-17": {
+      "id": -17,
+      "states": [
+        "222223",
+        "222231"
+      ],
+      "parity": -1,
+      "ratio_bin": 37,
+      "ratio_refinement": [
+        3,
+        2
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-18": {
+      "id": -18,
+      "states": [
+        "222223",
+        "222231"
+      ],
+      "parity": -1,
+      "ratio_bin": 37,
+      "ratio_refinement": [
+        3,
+        3
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-19": {
+      "id": -19,
+      "states": [
+        "222223",
+        "222232"
+      ],
+      "parity": -1,
+      "ratio_bin": 267,
+      "ratio_refinement": [
+        3,
+        1
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-20": {
+      "id": -20,
+      "states": [
+        "222223",
+        "222232"
+      ],
+      "parity": -1,
+      "ratio_bin": 267,
+      "ratio_refinement": [
+        3,
+        2
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-21": {
+      "id": -21,
+      "states": [
+        "222223",
+        "222233"
+      ],
+      "parity": -1,
+      "ratio_bin": 424,
+      "ratio_refinement": [
+        3,
+        2
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-22": {
+      "id": -22,
+      "states": [
+        "222223",
+        "222233"
+      ],
+      "parity": -1,
+      "ratio_bin": 424,
+      "ratio_refinement": [
+        3,
+        3
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-23": {
+      "id": -23,
+      "states": [
+        "222223",
+        "2222311"
+      ],
+      "parity": 1,
+      "ratio_bin": 289,
+      "ratio_refinement": [
+        3,
+        2
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-24": {
+      "id": -24,
+      "states": [
+        "222223",
+        "2222311"
+      ],
+      "parity": 1,
+      "ratio_bin": 289,
+      "ratio_refinement": [
+        3,
+        3
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-25": {
+      "id": -25,
+      "states": [
+        "222223",
+        "2222312"
+      ],
+      "parity": 1,
+      "ratio_bin": 477,
+      "ratio_refinement": [
+        3,
+        3
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-26": {
+      "id": -26,
+      "states": [
+        "222223",
+        "2222312"
+      ],
+      "parity": 1,
+      "ratio_bin": 477,
+      "ratio_refinement": [
+        3,
+        4
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-27": {
+      "id": -27,
+      "states": [
+        "222223",
+        "2222321"
+      ],
+      "parity": 1,
+      "ratio_bin": 491,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-28": {
+      "id": -28,
+      "states": [
+        "222223",
+        "2222321"
+      ],
+      "parity": 1,
+      "ratio_bin": 492,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-29": {
+      "id": -29,
+      "states": [
+        "22223",
+        "2222211"
+      ],
+      "parity": -1,
+      "ratio_bin": 50,
+      "ratio_refinement": [
+        3,
+        4
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-30": {
+      "id": -30,
+      "states": [
+        "22223",
+        "2222211"
+      ],
+      "parity": -1,
+      "ratio_bin": 50,
+      "ratio_refinement": [
+        3,
+        5
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-31": {
+      "id": -31,
+      "states": [
+        "2222211",
+        "222231"
+      ],
+      "parity": 1,
+      "ratio_bin": 159,
+      "ratio_refinement": [
+        3,
+        4
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-32": {
+      "id": -32,
+      "states": [
+        "2222211",
+        "222231"
+      ],
+      "parity": 1,
+      "ratio_bin": 159,
+      "ratio_refinement": [
+        3,
+        5
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-33": {
+      "id": -33,
+      "states": [
+        "2222211",
+        "222232"
+      ],
+      "parity": 1,
+      "ratio_bin": 389,
+      "ratio_refinement": [
+        3,
+        4
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-34": {
+      "id": -34,
+      "states": [
+        "2222211",
+        "222232"
+      ],
+      "parity": 1,
+      "ratio_bin": 389,
+      "ratio_refinement": [
+        3,
+        5
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-35": {
+      "id": -35,
+      "states": [
+        "22223",
+        "2222212"
+      ],
+      "parity": -1,
+      "ratio_bin": 243,
+      "ratio_refinement": [
+        3,
+        6
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-36": {
+      "id": -36,
+      "states": [
+        "22223",
+        "2222212"
+      ],
+      "parity": -1,
+      "ratio_bin": 243,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-37": {
+      "id": -37,
+      "states": [
+        "222231",
+        "2222212"
+      ],
+      "parity": 1,
+      "ratio_bin": 33,
+      "ratio_refinement": [
+        3,
+        4
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-38": {
+      "id": -38,
+      "states": [
+        "222231",
+        "2222212"
+      ],
+      "parity": 1,
+      "ratio_bin": 33,
+      "ratio_refinement": [
+        3,
+        5
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-39": {
+      "id": -39,
+      "states": [
+        "2222212",
+        "222232"
+      ],
+      "parity": 1,
+      "ratio_bin": 196,
+      "ratio_refinement": [
+        3,
+        1
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-40": {
+      "id": -40,
+      "states": [
+        "2222212",
+        "222232"
+      ],
+      "parity": 1,
+      "ratio_bin": 196,
+      "ratio_refinement": [
+        3,
+        2
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-41": {
+      "id": -41,
+      "states": [
+        "2222212",
+        "222233"
+      ],
+      "parity": 1,
+      "ratio_bin": 353,
+      "ratio_refinement": [
+        3,
+        2
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-42": {
+      "id": -42,
+      "states": [
+        "2222212",
+        "222233"
+      ],
+      "parity": 1,
+      "ratio_bin": 353,
+      "ratio_refinement": [
+        3,
+        3
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-43": {
+      "id": -43,
+      "states": [
+        "22223",
+        "2222213"
+      ],
+      "parity": -1,
+      "ratio_bin": 381,
+      "ratio_refinement": [
+        3,
+        1
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-44": {
+      "id": -44,
+      "states": [
+        "22223",
+        "2222213"
+      ],
+      "parity": -1,
+      "ratio_bin": 381,
+      "ratio_refinement": [
+        3,
+        2
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-45": {
+      "id": -45,
+      "states": [
+        "222231",
+        "2222213"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-46": {
+      "id": -46,
+      "states": [
+        "222231",
+        "2222213"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-47": {
+      "id": -47,
+      "states": [
+        "2222213",
+        "222232"
+      ],
+      "parity": 1,
+      "ratio_bin": 57,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-48": {
+      "id": -48,
+      "states": [
+        "2222213",
+        "222232"
+      ],
+      "parity": 1,
+      "ratio_bin": 58,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-49": {
+      "id": -49,
+      "states": [
+        "2222213",
+        "222233"
+      ],
+      "parity": 1,
+      "ratio_bin": 214,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-50": {
+      "id": -50,
+      "states": [
+        "2222213",
+        "222233"
+      ],
+      "parity": 1,
+      "ratio_bin": 214,
+      "ratio_refinement": [
+        3,
+        1
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-51": {
+      "id": -51,
+      "states": [
+        "22223",
+        "2222221"
+      ],
+      "parity": -1,
+      "ratio_bin": 243,
+      "ratio_refinement": [
+        3,
+        6
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-52": {
+      "id": -52,
+      "states": [
+        "22223",
+        "2222221"
+      ],
+      "parity": -1,
+      "ratio_bin": 243,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-53": {
+      "id": -53,
+      "states": [
+        "222231",
+        "2222221"
+      ],
+      "parity": 1,
+      "ratio_bin": 33,
+      "ratio_refinement": [
+        3,
+        4
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-54": {
+      "id": -54,
+      "states": [
+        "222231",
+        "2222221"
+      ],
+      "parity": 1,
+      "ratio_bin": 33,
+      "ratio_refinement": [
+        3,
+        5
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-55": {
+      "id": -55,
+      "states": [
+        "2222221",
+        "222232"
+      ],
+      "parity": 1,
+      "ratio_bin": 196,
+      "ratio_refinement": [
+        3,
+        1
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-56": {
+      "id": -56,
+      "states": [
+        "2222221",
+        "222232"
+      ],
+      "parity": 1,
+      "ratio_bin": 196,
+      "ratio_refinement": [
+        3,
+        2
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-57": {
+      "id": -57,
+      "states": [
+        "2222221",
+        "222233"
+      ],
+      "parity": 1,
+      "ratio_bin": 353,
+      "ratio_refinement": [
+        3,
+        2
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-58": {
+      "id": -58,
+      "states": [
+        "2222221",
+        "222233"
+      ],
+      "parity": 1,
+      "ratio_bin": 353,
+      "ratio_refinement": [
+        3,
+        3
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-59": {
+      "id": -59,
+      "states": [
+        "22223",
+        "2222222"
+      ],
+      "parity": -1,
+      "ratio_bin": 460,
+      "ratio_refinement": [
+        3,
+        1
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-60": {
+      "id": -60,
+      "states": [
+        "22223",
+        "2222222"
+      ],
+      "parity": -1,
+      "ratio_bin": 460,
+      "ratio_refinement": [
+        3,
+        2
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-61": {
+      "id": -61,
+      "states": [
+        "222231",
+        "2222222"
+      ],
+      "parity": 1,
+      "ratio_bin": 251,
+      "ratio_refinement": [
+        3,
+        6
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-62": {
+      "id": -62,
+      "states": [
+        "222231",
+        "2222222"
+      ],
+      "parity": 1,
+      "ratio_bin": 251,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-63": {
+      "id": -63,
+      "states": [
+        "222232",
+        "2222222"
+      ],
+      "parity": 1,
+      "ratio_bin": 20,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-64": {
+      "id": -64,
+      "states": [
+        "222232",
+        "2222222"
+      ],
+      "parity": 1,
+      "ratio_bin": 21,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-65": {
+      "id": -65,
+      "states": [
+        "2222222",
+        "222233"
+      ],
+      "parity": 1,
+      "ratio_bin": 135,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-66": {
+      "id": -66,
+      "states": [
+        "2222222",
+        "222233"
+      ],
+      "parity": 1,
+      "ratio_bin": 135,
+      "ratio_refinement": [
+        3,
+        1
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-67": {
+      "id": -67,
+      "states": [
+        "222231",
+        "2222223"
+      ],
+      "parity": 1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        3,
+        6
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-68": {
+      "id": -68,
+      "states": [
+        "222231",
+        "2222223"
+      ],
+      "parity": 1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-69": {
+      "id": -69,
+      "states": [
+        "222232",
+        "2222223"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-70": {
+      "id": -70,
+      "states": [
+        "222232",
+        "2222223"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-71": {
+      "id": -71,
+      "states": [
+        "222233",
+        "2222223"
+      ],
+      "parity": 1,
+      "ratio_bin": 15,
+      "ratio_refinement": [
+        3,
+        6
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-72": {
+      "id": -72,
+      "states": [
+        "222233",
+        "2222223"
+      ],
+      "parity": 1,
+      "ratio_bin": 15,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-73": {
+      "id": -73,
+      "states": [
+        "22223",
+        "2222231"
+      ],
+      "parity": -1,
+      "ratio_bin": 381,
+      "ratio_refinement": [
+        3,
+        1
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-74": {
+      "id": -74,
+      "states": [
+        "22223",
+        "2222231"
+      ],
+      "parity": -1,
+      "ratio_bin": 381,
+      "ratio_refinement": [
+        3,
+        2
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-75": {
+      "id": -75,
+      "states": [
+        "222231",
+        "2222231"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-76": {
+      "id": -76,
+      "states": [
+        "222231",
+        "2222231"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-77": {
+      "id": -77,
+      "states": [
+        "2222231",
+        "222232"
+      ],
+      "parity": 1,
+      "ratio_bin": 57,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-78": {
+      "id": -78,
+      "states": [
+        "2222231",
+        "222232"
+      ],
+      "parity": 1,
+      "ratio_bin": 58,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-79": {
+      "id": -79,
+      "states": [
+        "2222231",
+        "222233"
+      ],
+      "parity": 1,
+      "ratio_bin": 214,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-80": {
+      "id": -80,
+      "states": [
+        "2222231",
+        "222233"
+      ],
+      "parity": 1,
+      "ratio_bin": 214,
+      "ratio_refinement": [
+        3,
+        1
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-81": {
+      "id": -81,
+      "states": [
+        "222231",
+        "2222232"
+      ],
+      "parity": 1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        3,
+        6
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-82": {
+      "id": -82,
+      "states": [
+        "222231",
+        "2222232"
+      ],
+      "parity": 1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-83": {
+      "id": -83,
+      "states": [
+        "222232",
+        "2222232"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-84": {
+      "id": -84,
+      "states": [
+        "222232",
+        "2222232"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-85": {
+      "id": -85,
+      "states": [
+        "222233",
+        "2222232"
+      ],
+      "parity": 1,
+      "ratio_bin": 15,
+      "ratio_refinement": [
+        3,
+        5
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-86": {
+      "id": -86,
+      "states": [
+        "222233",
+        "2222232"
+      ],
+      "parity": 1,
+      "ratio_bin": 15,
+      "ratio_refinement": [
+        3,
+        6
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-87": {
+      "id": -87,
+      "states": [
+        "222233",
+        "2222232"
+      ],
+      "parity": 1,
+      "ratio_bin": 15,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-88": {
+      "id": -88,
+      "states": [
+        "222232",
+        "2222233"
+      ],
+      "parity": 1,
+      "ratio_bin": 328,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-89": {
+      "id": -89,
+      "states": [
+        "222232",
+        "2222233"
+      ],
+      "parity": 1,
+      "ratio_bin": 328,
+      "ratio_refinement": [
+        3,
+        1
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-90": {
+      "id": -90,
+      "states": [
+        "222233",
+        "2222233"
+      ],
+      "parity": 1,
+      "ratio_bin": 171,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-91": {
+      "id": -91,
+      "states": [
+        "222233",
+        "2222233"
+      ],
+      "parity": 1,
+      "ratio_bin": 172,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-92": {
+      "id": -92,
+      "states": [
+        "22223",
+        "2222111"
+      ],
+      "parity": 1,
+      "ratio_bin": 287,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-93": {
+      "id": -93,
+      "states": [
+        "22223",
+        "2222111"
+      ],
+      "parity": 1,
+      "ratio_bin": 287,
+      "ratio_refinement": [
+        3,
+        1
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-94": {
+      "id": -94,
+      "states": [
+        "22223",
+        "2222112"
+      ],
+      "parity": 1,
+      "ratio_bin": 490,
+      "ratio_refinement": [
+        3,
+        6
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-95": {
+      "id": -95,
+      "states": [
+        "22223",
+        "2222112"
+      ],
+      "parity": 1,
+      "ratio_bin": 490,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-96": {
+      "id": -96,
+      "states": [
+        "22223",
+        "2222121"
+      ],
+      "parity": 1,
+      "ratio_bin": 460,
+      "ratio_refinement": [
+        3,
+        1
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-97": {
+      "id": -97,
+      "states": [
+        "22223",
+        "2222121"
+      ],
+      "parity": 1,
+      "ratio_bin": 460,
+      "ratio_refinement": [
+        3,
+        2
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-98": {
+      "id": -98,
+      "states": [
+        "22223",
+        "2222211"
+      ],
+      "parity": 1,
+      "ratio_bin": 490,
+      "ratio_refinement": [
+        3,
+        6
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-99": {
+      "id": -99,
+      "states": [
+        "22223",
+        "2222211"
+      ],
+      "parity": 1,
+      "ratio_bin": 490,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-100": {
+      "id": -100,
+      "states": [
+        "22313",
+        "222132"
+      ],
+      "parity": 1,
+      "ratio_bin": 37,
+      "ratio_refinement": [
+        3,
+        6
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-101": {
+      "id": -101,
+      "states": [
+        "22313",
+        "222132"
+      ],
+      "parity": 1,
+      "ratio_bin": 37,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-102": {
+      "id": -102,
+      "states": [
+        "222132",
+        "223132"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        3,
+        1
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-103": {
+      "id": -103,
+      "states": [
+        "222132",
+        "223132"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        3,
+        2
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-104": {
+      "id": -104,
+      "states": [
+        "222132",
+        "223132"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        3,
+        3
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-105": {
+      "id": -105,
+      "states": [
+        "22313",
+        "222133"
+      ],
+      "parity": 1,
+      "ratio_bin": 195,
+      "ratio_refinement": [
+        3,
+        6
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-106": {
+      "id": -106,
+      "states": [
+        "22313",
+        "222133"
+      ],
+      "parity": 1,
+      "ratio_bin": 195,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-107": {
+      "id": -107,
+      "states": [
+        "222133",
+        "223132"
+      ],
+      "parity": -1,
+      "ratio_bin": 244,
+      "ratio_refinement": [
+        3,
+        2
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-108": {
+      "id": -108,
+      "states": [
+        "222133",
+        "223132"
+      ],
+      "parity": -1,
+      "ratio_bin": 244,
+      "ratio_refinement": [
+        3,
+        3
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-109": {
+      "id": -109,
+      "states": [
+        "222133",
+        "223133"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-110": {
+      "id": -110,
+      "states": [
+        "222133",
+        "223133"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        3,
+        1
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-111": {
+      "id": -111,
+      "states": [
+        "222133",
+        "2231321"
+      ],
+      "parity": 1,
+      "ratio_bin": 469,
+      "ratio_refinement": [
+        3,
+        4
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-112": {
+      "id": -112,
+      "states": [
+        "222133",
+        "2231321"
+      ],
+      "parity": 1,
+      "ratio_bin": 469,
+      "ratio_refinement": [
+        3,
+        5
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-113": {
+      "id": -113,
+      "states": [
+        "22313",
+        "2221321"
+      ],
+      "parity": -1,
+      "ratio_bin": 261,
+      "ratio_refinement": [
+        3,
+        1
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-114": {
+      "id": -114,
+      "states": [
+        "22313",
+        "2221321"
+      ],
+      "parity": -1,
+      "ratio_bin": 261,
+      "ratio_refinement": [
+        3,
+        2
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-115": {
+      "id": -115,
+      "states": [
+        "2221321",
+        "223132"
+      ],
+      "parity": 1,
+      "ratio_bin": 178,
+      "ratio_refinement": [
+        3,
+        6
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-116": {
+      "id": -116,
+      "states": [
+        "2221321",
+        "223132"
+      ],
+      "parity": 1,
+      "ratio_bin": 178,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-117": {
+      "id": -117,
+      "states": [
+        "2221321",
+        "223133"
+      ],
+      "parity": 1,
+      "ratio_bin": 336,
+      "ratio_refinement": [
+        3,
+        4
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-118": {
+      "id": -118,
+      "states": [
+        "2221321",
+        "223133"
+      ],
+      "parity": 1,
+      "ratio_bin": 336,
+      "ratio_refinement": [
+        3,
+        5
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-119": {
+      "id": -119,
+      "states": [
+        "22313",
+        "2221322"
+      ],
+      "parity": -1,
+      "ratio_bin": 476,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-120": {
+      "id": -120,
+      "states": [
+        "22313",
+        "2221322"
+      ],
+      "parity": -1,
+      "ratio_bin": 476,
+      "ratio_refinement": [
+        3,
+        1
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-121": {
+      "id": -121,
+      "states": [
+        "223132",
+        "2221322"
+      ],
+      "parity": 1,
+      "ratio_bin": 37,
+      "ratio_refinement": [
+        3,
+        6
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-122": {
+      "id": -122,
+      "states": [
+        "223132",
+        "2221322"
+      ],
+      "parity": 1,
+      "ratio_bin": 37,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-123": {
+      "id": -123,
+      "states": [
+        "2221322",
+        "223133"
+      ],
+      "parity": 1,
+      "ratio_bin": 121,
+      "ratio_refinement": [
+        3,
+        6
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-124": {
+      "id": -124,
+      "states": [
+        "2221322",
+        "223133"
+      ],
+      "parity": 1,
+      "ratio_bin": 121,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-125": {
+      "id": -125,
+      "states": [
+        "223132",
+        "2221323"
+      ],
+      "parity": 1,
+      "ratio_bin": 186,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-126": {
+      "id": -126,
+      "states": [
+        "223132",
+        "2221323"
+      ],
+      "parity": 1,
+      "ratio_bin": 187,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-127": {
+      "id": -127,
+      "states": [
+        "223133",
+        "2221323"
+      ],
+      "parity": 1,
+      "ratio_bin": 28,
+      "ratio_refinement": [
+        3,
+        1
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-128": {
+      "id": -128,
+      "states": [
+        "223133",
+        "2221323"
+      ],
+      "parity": 1,
+      "ratio_bin": 28,
+      "ratio_refinement": [
+        3,
+        2
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-129": {
+      "id": -129,
+      "states": [
+        "22313",
+        "2221331"
+      ],
+      "parity": -1,
+      "ratio_bin": 406,
+      "ratio_refinement": [
+        3,
+        5
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-130": {
+      "id": -130,
+      "states": [
+        "22313",
+        "2221331"
+      ],
+      "parity": -1,
+      "ratio_bin": 406,
+      "ratio_refinement": [
+        3,
+        6
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-131": {
+      "id": -131,
+      "states": [
+        "2221331",
+        "223132"
+      ],
+      "parity": 1,
+      "ratio_bin": 33,
+      "ratio_refinement": [
+        3,
+        3
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-132": {
+      "id": -132,
+      "states": [
+        "2221331",
+        "223132"
+      ],
+      "parity": 1,
+      "ratio_bin": 33,
+      "ratio_refinement": [
+        3,
+        4
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-133": {
+      "id": -133,
+      "states": [
+        "2221331",
+        "223133"
+      ],
+      "parity": 1,
+      "ratio_bin": 191,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-134": {
+      "id": -134,
+      "states": [
+        "2221331",
+        "223133"
+      ],
+      "parity": 1,
+      "ratio_bin": 191,
+      "ratio_refinement": [
+        3,
+        1
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-135": {
+      "id": -135,
+      "states": [
+        "2221331",
+        "223133"
+      ],
+      "parity": 1,
+      "ratio_bin": 191,
+      "ratio_refinement": [
+        3,
+        2
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-136": {
+      "id": -136,
+      "states": [
+        "223132",
+        "2221332"
+      ],
+      "parity": 1,
+      "ratio_bin": 195,
+      "ratio_refinement": [
+        3,
+        6
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-137": {
+      "id": -137,
+      "states": [
+        "223132",
+        "2221332"
+      ],
+      "parity": 1,
+      "ratio_bin": 195,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-138": {
+      "id": -138,
+      "states": [
+        "223133",
+        "2221332"
+      ],
+      "parity": 1,
+      "ratio_bin": 36,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-139": {
+      "id": -139,
+      "states": [
+        "223133",
+        "2221332"
+      ],
+      "parity": 1,
+      "ratio_bin": 36,
+      "ratio_refinement": [
+        3,
+        1
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-140": {
+      "id": -140,
+      "states": [
+        "223132",
+        "2221333"
+      ],
+      "parity": 1,
+      "ratio_bin": 351,
+      "ratio_refinement": [
+        3,
+        4
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-141": {
+      "id": -141,
+      "states": [
+        "223132",
+        "2221333"
+      ],
+      "parity": 1,
+      "ratio_bin": 351,
+      "ratio_refinement": [
+        3,
+        5
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-142": {
+      "id": -142,
+      "states": [
+        "223133",
+        "2221333"
+      ],
+      "parity": 1,
+      "ratio_bin": 193,
+      "ratio_refinement": [
+        3,
+        6
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-143": {
+      "id": -143,
+      "states": [
+        "223133",
+        "2221333"
+      ],
+      "parity": 1,
+      "ratio_bin": 193,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-144": {
+      "id": -144,
+      "states": [
+        "22313",
+        "2213211"
+      ],
+      "parity": 1,
+      "ratio_bin": 507,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-145": {
+      "id": -145,
+      "states": [
+        "22313",
+        "2213211"
+      ],
+      "parity": 1,
+      "ratio_bin": 507,
+      "ratio_refinement": [
+        3,
+        1
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-146": {
+      "id": -146,
+      "states": [
+        "22313",
+        "222132"
+      ],
+      "parity": 1,
+      "ratio_bin": 37,
+      "ratio_refinement": [
+        3,
+        5
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-147": {
+      "id": -147,
+      "states": [
+        "222132",
+        "223132"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        3,
+        4
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-148": {
+      "id": -148,
+      "states": [
+        "22313",
+        "222133"
+      ],
+      "parity": 1,
+      "ratio_bin": 195,
+      "ratio_refinement": [
+        3,
+        5
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-149": {
+      "id": -149,
+      "states": [
+        "222133",
+        "223132"
+      ],
+      "parity": -1,
+      "ratio_bin": 244,
+      "ratio_refinement": [
+        3,
+        4
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-150": {
+      "id": -150,
+      "states": [
+        "222133",
+        "223133"
+      ],
+      "parity": -1,
+      "ratio_bin": 402,
+      "ratio_refinement": [
+        3,
+        2
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-151": {
+      "id": -151,
+      "states": [
+        "222133",
+        "2231321"
+      ],
+      "parity": 1,
+      "ratio_bin": 469,
+      "ratio_refinement": [
+        3,
+        6
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-152": {
+      "id": -152,
+      "states": [
+        "22313",
+        "2221321"
+      ],
+      "parity": -1,
+      "ratio_bin": 261,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-153": {
+      "id": -153,
+      "states": [
+        "2221321",
+        "223132"
+      ],
+      "parity": 1,
+      "ratio_bin": 177,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-154": {
+      "id": -154,
+      "states": [
+        "2221321",
+        "223133"
+      ],
+      "parity": 1,
+      "ratio_bin": 336,
+      "ratio_refinement": [
+        3,
+        6
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-155": {
+      "id": -155,
+      "states": [
+        "22313",
+        "2221322"
+      ],
+      "parity": -1,
+      "ratio_bin": 477,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-156": {
+      "id": -156,
+      "states": [
+        "223132",
+        "2221322"
+      ],
+      "parity": 1,
+      "ratio_bin": 37,
+      "ratio_refinement": [
+        3,
+        5
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-157": {
+      "id": -157,
+      "states": [
+        "2221322",
+        "223133"
+      ],
+      "parity": 1,
+      "ratio_bin": 120,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-158": {
+      "id": -158,
+      "states": [
+        "223132",
+        "2221323"
+      ],
+      "parity": 1,
+      "ratio_bin": 187,
+      "ratio_refinement": [
+        3,
+        6
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-159": {
+      "id": -159,
+      "states": [
+        "223133",
+        "2221323"
+      ],
+      "parity": 1,
+      "ratio_bin": 28,
+      "ratio_refinement": [
+        3,
+        0
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-160": {
+      "id": -160,
+      "states": [
+        "22313",
+        "2221331"
+      ],
+      "parity": -1,
+      "ratio_bin": 406,
+      "ratio_refinement": [
+        3,
+        4
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-161": {
+      "id": -161,
+      "states": [
+        "2221331",
+        "223132"
+      ],
+      "parity": 1,
+      "ratio_bin": 33,
+      "ratio_refinement": [
+        3,
+        5
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-162": {
+      "id": -162,
+      "states": [
+        "2221331",
+        "223133"
+      ],
+      "parity": 1,
+      "ratio_bin": 191,
+      "ratio_refinement": [
+        3,
+        3
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-163": {
+      "id": -163,
+      "states": [
+        "223132",
+        "2221332"
+      ],
+      "parity": 1,
+      "ratio_bin": 195,
+      "ratio_refinement": [
+        3,
+        5
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-164": {
+      "id": -164,
+      "states": [
+        "223133",
+        "2221332"
+      ],
+      "parity": 1,
+      "ratio_bin": 37,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-165": {
+      "id": -165,
+      "states": [
+        "223132",
+        "2221333"
+      ],
+      "parity": 1,
+      "ratio_bin": 351,
+      "ratio_refinement": [
+        3,
+        3
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-166": {
+      "id": -166,
+      "states": [
+        "223133",
+        "2221333"
+      ],
+      "parity": 1,
+      "ratio_bin": 193,
+      "ratio_refinement": [
+        3,
+        5
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    },
+    "-167": {
+      "id": -167,
+      "states": [
+        "22313",
+        "2213211"
+      ],
+      "parity": 1,
+      "ratio_bin": 508,
+      "ratio_refinement": [
+        3,
+        7
+      ],
+      "interval": [
+        -1024000000,
+        1024000000
+      ],
+      "covered": false,
+      "children": []
+    }
+  },
+  "rules": [
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "1",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -1,
+                -2
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -1
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "1",
+            "1"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -3,
+                -4
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -2
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -5,
+                -6
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -3
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            "1"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -7,
+                -8
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -4
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -9,
+                -10,
+                -11
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -5
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            "11"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -12,
+                -13,
+                -14
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -6
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -15,
+                -16
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -7
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            "1"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -17,
+                -18
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -8
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -19,
+                -20
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -9
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -21,
+                -22
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -10
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            "11"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -23,
+                -24
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -11
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            "12"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -25,
+                -26
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -12
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            "21"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -27,
+                -28
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -13
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "11",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -29,
+                -30
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -14
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "11",
+            "1"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -31,
+                -32
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -15
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "11",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -33,
+                -34
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -16
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "12",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -35,
+                -36
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -17
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "12",
+            "1"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -37,
+                -38
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -18
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "12",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -39,
+                -40
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -19
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "12",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -41,
+                -42
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -20
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "13",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -43,
+                -44
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -21
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "13",
+            "1"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -45,
+                -46
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -22
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "13",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -47,
+                -48
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -23
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "13",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -49,
+                -50
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -24
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "21",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -51,
+                -52
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -25
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "21",
+            "1"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -53,
+                -54
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -26
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "21",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -55,
+                -56
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -27
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "21",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -57,
+                -58
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -28
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "22",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -59,
+                -60
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -29
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "22",
+            "1"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -61,
+                -62
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -30
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "22",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -63,
+                -64
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -31
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "22",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -65,
+                -66
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -32
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "23",
+            "1"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -67,
+                -68
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -33
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "23",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -69,
+                -70
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -34
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "23",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -71,
+                -72
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -35
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "31",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -73,
+                -74
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -36
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "31",
+            "1"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -75,
+                -76
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -37
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "31",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -77,
+                -78
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -38
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "31",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -79,
+                -80
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -39
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "32",
+            "1"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -81,
+                -82
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -40
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "32",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -83,
+                -84
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -41
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "32",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -85,
+                -86,
+                -87
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -42
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "33",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -88,
+                -89
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -43
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "33",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -90,
+                -91
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -44
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "111",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -92,
+                -93
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -45
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "112",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -94,
+                -95
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -46
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "121",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -96,
+                -97
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -47
+    },
+    {
+      "parent": 23,
+      "children": [
+        {
+          "suffixes": [
+            "211",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -98,
+                -99
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -48
+    },
+    {
+      "parent": 44,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -100,
+                -101
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -49
+    },
+    {
+      "parent": 44,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -102,
+                -103,
+                -104
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -50
+    },
+    {
+      "parent": 44,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -105,
+                -106
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -51
+    },
+    {
+      "parent": 44,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -107,
+                -108
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -52
+    },
+    {
+      "parent": 44,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -109,
+                -110
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -53
+    },
+    {
+      "parent": 44,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            "21"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -111,
+                -112
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -54
+    },
+    {
+      "parent": 44,
+      "children": [
+        {
+          "suffixes": [
+            "21",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -113,
+                -114
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -55
+    },
+    {
+      "parent": 44,
+      "children": [
+        {
+          "suffixes": [
+            "21",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -115,
+                -116
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -56
+    },
+    {
+      "parent": 44,
+      "children": [
+        {
+          "suffixes": [
+            "21",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -117,
+                -118
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -57
+    },
+    {
+      "parent": 44,
+      "children": [
+        {
+          "suffixes": [
+            "22",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -119,
+                -120
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -58
+    },
+    {
+      "parent": 44,
+      "children": [
+        {
+          "suffixes": [
+            "22",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -121,
+                -122
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -59
+    },
+    {
+      "parent": 44,
+      "children": [
+        {
+          "suffixes": [
+            "22",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -123,
+                -124
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -60
+    },
+    {
+      "parent": 44,
+      "children": [
+        {
+          "suffixes": [
+            "23",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -125,
+                -126
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -61
+    },
+    {
+      "parent": 44,
+      "children": [
+        {
+          "suffixes": [
+            "23",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -127,
+                -128
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -62
+    },
+    {
+      "parent": 44,
+      "children": [
+        {
+          "suffixes": [
+            "31",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -129,
+                -130
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -63
+    },
+    {
+      "parent": 44,
+      "children": [
+        {
+          "suffixes": [
+            "31",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -131,
+                -132
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -64
+    },
+    {
+      "parent": 44,
+      "children": [
+        {
+          "suffixes": [
+            "31",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -133,
+                -134,
+                -135
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -65
+    },
+    {
+      "parent": 44,
+      "children": [
+        {
+          "suffixes": [
+            "32",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -136,
+                -137
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -66
+    },
+    {
+      "parent": 44,
+      "children": [
+        {
+          "suffixes": [
+            "32",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -138,
+                -139
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -67
+    },
+    {
+      "parent": 44,
+      "children": [
+        {
+          "suffixes": [
+            "33",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -140,
+                -141
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -68
+    },
+    {
+      "parent": 44,
+      "children": [
+        {
+          "suffixes": [
+            "33",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -142,
+                -143
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -69
+    },
+    {
+      "parent": 44,
+      "children": [
+        {
+          "suffixes": [
+            "211",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -144,
+                -145
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -70
+    },
+    {
+      "parent": 52,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -100,
+                -101
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -71
+    },
+    {
+      "parent": 52,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -102,
+                -103,
+                -104
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -72
+    },
+    {
+      "parent": 52,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -105,
+                -106
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -73
+    },
+    {
+      "parent": 52,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -107,
+                -108
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -74
+    },
+    {
+      "parent": 52,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -109,
+                -110
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -75
+    },
+    {
+      "parent": 52,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            "21"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -111,
+                -112
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -76
+    },
+    {
+      "parent": 52,
+      "children": [
+        {
+          "suffixes": [
+            "21",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -113,
+                -114
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -77
+    },
+    {
+      "parent": 52,
+      "children": [
+        {
+          "suffixes": [
+            "21",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -115,
+                -116
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -78
+    },
+    {
+      "parent": 52,
+      "children": [
+        {
+          "suffixes": [
+            "21",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -117,
+                -118
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -79
+    },
+    {
+      "parent": 52,
+      "children": [
+        {
+          "suffixes": [
+            "22",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -119,
+                -120
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -80
+    },
+    {
+      "parent": 52,
+      "children": [
+        {
+          "suffixes": [
+            "22",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -121,
+                -122
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -81
+    },
+    {
+      "parent": 52,
+      "children": [
+        {
+          "suffixes": [
+            "22",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -123,
+                -124
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -82
+    },
+    {
+      "parent": 52,
+      "children": [
+        {
+          "suffixes": [
+            "23",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -125,
+                -126
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -83
+    },
+    {
+      "parent": 52,
+      "children": [
+        {
+          "suffixes": [
+            "23",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -127,
+                -128
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -84
+    },
+    {
+      "parent": 52,
+      "children": [
+        {
+          "suffixes": [
+            "31",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -129,
+                -130
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -85
+    },
+    {
+      "parent": 52,
+      "children": [
+        {
+          "suffixes": [
+            "31",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -131,
+                -132
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -86
+    },
+    {
+      "parent": 52,
+      "children": [
+        {
+          "suffixes": [
+            "31",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -133,
+                -134,
+                -135
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -87
+    },
+    {
+      "parent": 52,
+      "children": [
+        {
+          "suffixes": [
+            "32",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -136,
+                -137
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -88
+    },
+    {
+      "parent": 52,
+      "children": [
+        {
+          "suffixes": [
+            "32",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -138,
+                -139
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -89
+    },
+    {
+      "parent": 52,
+      "children": [
+        {
+          "suffixes": [
+            "33",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -140,
+                -141
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -90
+    },
+    {
+      "parent": 52,
+      "children": [
+        {
+          "suffixes": [
+            "33",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -142,
+                -143
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -91
+    },
+    {
+      "parent": 52,
+      "children": [
+        {
+          "suffixes": [
+            "211",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -144,
+                -145
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -92
+    },
+    {
+      "parent": 53,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -146,
+                -100,
+                -101
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -93
+    },
+    {
+      "parent": 53,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -102,
+                -103,
+                -104,
+                -147
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -94
+    },
+    {
+      "parent": 53,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -148,
+                -105,
+                -106
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -95
+    },
+    {
+      "parent": 53,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -107,
+                -108,
+                -149
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -96
+    },
+    {
+      "parent": 53,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -109,
+                -110,
+                -150
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -97
+    },
+    {
+      "parent": 53,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            "21"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -111,
+                -112,
+                -151
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -98
+    },
+    {
+      "parent": 53,
+      "children": [
+        {
+          "suffixes": [
+            "21",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -152,
+                -113,
+                -114
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -99
+    },
+    {
+      "parent": 53,
+      "children": [
+        {
+          "suffixes": [
+            "21",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -153,
+                -115,
+                -116
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -100
+    },
+    {
+      "parent": 53,
+      "children": [
+        {
+          "suffixes": [
+            "21",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -117,
+                -118,
+                -154
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -101
+    },
+    {
+      "parent": 53,
+      "children": [
+        {
+          "suffixes": [
+            "22",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -119,
+                -120,
+                -155
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -102
+    },
+    {
+      "parent": 53,
+      "children": [
+        {
+          "suffixes": [
+            "22",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -156,
+                -121,
+                -122
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -103
+    },
+    {
+      "parent": 53,
+      "children": [
+        {
+          "suffixes": [
+            "22",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -157,
+                -123,
+                -124
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -104
+    },
+    {
+      "parent": 53,
+      "children": [
+        {
+          "suffixes": [
+            "23",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -125,
+                -158,
+                -126
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -105
+    },
+    {
+      "parent": 53,
+      "children": [
+        {
+          "suffixes": [
+            "23",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -159,
+                -127,
+                -128
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -106
+    },
+    {
+      "parent": 53,
+      "children": [
+        {
+          "suffixes": [
+            "31",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -160,
+                -129,
+                -130
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -107
+    },
+    {
+      "parent": 53,
+      "children": [
+        {
+          "suffixes": [
+            "31",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -131,
+                -132,
+                -161
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -108
+    },
+    {
+      "parent": 53,
+      "children": [
+        {
+          "suffixes": [
+            "31",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -133,
+                -134,
+                -135,
+                -162
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -109
+    },
+    {
+      "parent": 53,
+      "children": [
+        {
+          "suffixes": [
+            "32",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -163,
+                -136,
+                -137
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -110
+    },
+    {
+      "parent": 53,
+      "children": [
+        {
+          "suffixes": [
+            "32",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -138,
+                -139,
+                -164
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -111
+    },
+    {
+      "parent": 53,
+      "children": [
+        {
+          "suffixes": [
+            "33",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -165,
+                -140,
+                -141
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -112
+    },
+    {
+      "parent": 53,
+      "children": [
+        {
+          "suffixes": [
+            "33",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -166,
+                -142,
+                -143
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -113
+    },
+    {
+      "parent": 53,
+      "children": [
+        {
+          "suffixes": [
+            "211",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -144,
+                -145,
+                -167
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -114
+    },
+    {
+      "parent": 89,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -100,
+                -101
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -115
+    },
+    {
+      "parent": 89,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -102,
+                -103,
+                -104
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -116
+    },
+    {
+      "parent": 89,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -105,
+                -106
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -117
+    },
+    {
+      "parent": 89,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -107,
+                -108
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -118
+    },
+    {
+      "parent": 89,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -109,
+                -110
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -119
+    },
+    {
+      "parent": 89,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            "21"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -111,
+                -112
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -120
+    },
+    {
+      "parent": 89,
+      "children": [
+        {
+          "suffixes": [
+            "21",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -113,
+                -114
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -121
+    },
+    {
+      "parent": 89,
+      "children": [
+        {
+          "suffixes": [
+            "21",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -115,
+                -116
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -122
+    },
+    {
+      "parent": 89,
+      "children": [
+        {
+          "suffixes": [
+            "21",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -117,
+                -118
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -123
+    },
+    {
+      "parent": 89,
+      "children": [
+        {
+          "suffixes": [
+            "22",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -119,
+                -120
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -124
+    },
+    {
+      "parent": 89,
+      "children": [
+        {
+          "suffixes": [
+            "22",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -121,
+                -122
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -125
+    },
+    {
+      "parent": 89,
+      "children": [
+        {
+          "suffixes": [
+            "22",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -123,
+                -124
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -126
+    },
+    {
+      "parent": 89,
+      "children": [
+        {
+          "suffixes": [
+            "23",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -125,
+                -126
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -127
+    },
+    {
+      "parent": 89,
+      "children": [
+        {
+          "suffixes": [
+            "23",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -127,
+                -128
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -128
+    },
+    {
+      "parent": 89,
+      "children": [
+        {
+          "suffixes": [
+            "31",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -129,
+                -130
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -129
+    },
+    {
+      "parent": 89,
+      "children": [
+        {
+          "suffixes": [
+            "31",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -131,
+                -132
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -130
+    },
+    {
+      "parent": 89,
+      "children": [
+        {
+          "suffixes": [
+            "31",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -133,
+                -134,
+                -135
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -131
+    },
+    {
+      "parent": 89,
+      "children": [
+        {
+          "suffixes": [
+            "32",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -136,
+                -137
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -132
+    },
+    {
+      "parent": 89,
+      "children": [
+        {
+          "suffixes": [
+            "32",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -138,
+                -139
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -133
+    },
+    {
+      "parent": 89,
+      "children": [
+        {
+          "suffixes": [
+            "33",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -140,
+                -141
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -134
+    },
+    {
+      "parent": 89,
+      "children": [
+        {
+          "suffixes": [
+            "33",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -142,
+                -143
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -135
+    },
+    {
+      "parent": 89,
+      "children": [
+        {
+          "suffixes": [
+            "211",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -144,
+                -145
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -136
+    },
+    {
+      "parent": 99,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -100,
+                -101
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -137
+    },
+    {
+      "parent": 99,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -102,
+                -103,
+                -104
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -138
+    },
+    {
+      "parent": 99,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -105,
+                -106
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -139
+    },
+    {
+      "parent": 99,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -107,
+                -108
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -140
+    },
+    {
+      "parent": 99,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -109,
+                -110
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -141
+    },
+    {
+      "parent": 99,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            "21"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -111,
+                -112
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -142
+    },
+    {
+      "parent": 99,
+      "children": [
+        {
+          "suffixes": [
+            "21",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -113,
+                -114
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -143
+    },
+    {
+      "parent": 99,
+      "children": [
+        {
+          "suffixes": [
+            "21",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -115,
+                -116
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -144
+    },
+    {
+      "parent": 99,
+      "children": [
+        {
+          "suffixes": [
+            "21",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -117,
+                -118
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -145
+    },
+    {
+      "parent": 99,
+      "children": [
+        {
+          "suffixes": [
+            "22",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -119,
+                -120
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -146
+    },
+    {
+      "parent": 99,
+      "children": [
+        {
+          "suffixes": [
+            "22",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -121,
+                -122
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -147
+    },
+    {
+      "parent": 99,
+      "children": [
+        {
+          "suffixes": [
+            "22",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -123,
+                -124
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -148
+    },
+    {
+      "parent": 99,
+      "children": [
+        {
+          "suffixes": [
+            "23",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -125,
+                -126
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -149
+    },
+    {
+      "parent": 99,
+      "children": [
+        {
+          "suffixes": [
+            "23",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -127,
+                -128
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -150
+    },
+    {
+      "parent": 99,
+      "children": [
+        {
+          "suffixes": [
+            "31",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -129,
+                -130
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -151
+    },
+    {
+      "parent": 99,
+      "children": [
+        {
+          "suffixes": [
+            "31",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -131,
+                -132
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -152
+    },
+    {
+      "parent": 99,
+      "children": [
+        {
+          "suffixes": [
+            "31",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -133,
+                -134,
+                -135
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -153
+    },
+    {
+      "parent": 99,
+      "children": [
+        {
+          "suffixes": [
+            "32",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -136,
+                -137
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -154
+    },
+    {
+      "parent": 99,
+      "children": [
+        {
+          "suffixes": [
+            "32",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -138,
+                -139
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -155
+    },
+    {
+      "parent": 99,
+      "children": [
+        {
+          "suffixes": [
+            "33",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -140,
+                -141
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -156
+    },
+    {
+      "parent": 99,
+      "children": [
+        {
+          "suffixes": [
+            "33",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -142,
+                -143
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -157
+    },
+    {
+      "parent": 99,
+      "children": [
+        {
+          "suffixes": [
+            "211",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -144,
+                -145
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -158
+    },
+    {
+      "parent": 110,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -100,
+                -101
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -159
+    },
+    {
+      "parent": 110,
+      "children": [
+        {
+          "suffixes": [
+            "2",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -102,
+                -103,
+                -104
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -160
+    },
+    {
+      "parent": 110,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -105,
+                -106
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -161
+    },
+    {
+      "parent": 110,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -107,
+                -108
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -162
+    },
+    {
+      "parent": 110,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -109,
+                -110
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -163
+    },
+    {
+      "parent": 110,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            "21"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -111,
+                -112
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -164
+    },
+    {
+      "parent": 110,
+      "children": [
+        {
+          "suffixes": [
+            "21",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -113,
+                -114
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -165
+    },
+    {
+      "parent": 110,
+      "children": [
+        {
+          "suffixes": [
+            "21",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -115,
+                -116
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -166
+    },
+    {
+      "parent": 110,
+      "children": [
+        {
+          "suffixes": [
+            "21",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -117,
+                -118
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -167
+    },
+    {
+      "parent": 110,
+      "children": [
+        {
+          "suffixes": [
+            "22",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -119,
+                -120
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -168
+    },
+    {
+      "parent": 110,
+      "children": [
+        {
+          "suffixes": [
+            "22",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -121,
+                -122
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -169
+    },
+    {
+      "parent": 110,
+      "children": [
+        {
+          "suffixes": [
+            "22",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -123,
+                -124
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -170
+    },
+    {
+      "parent": 110,
+      "children": [
+        {
+          "suffixes": [
+            "23",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -125,
+                -126
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -171
+    },
+    {
+      "parent": 110,
+      "children": [
+        {
+          "suffixes": [
+            "23",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -127,
+                -128
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -172
+    },
+    {
+      "parent": 110,
+      "children": [
+        {
+          "suffixes": [
+            "31",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -129,
+                -130
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -173
+    },
+    {
+      "parent": 110,
+      "children": [
+        {
+          "suffixes": [
+            "31",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -131,
+                -132
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -174
+    },
+    {
+      "parent": 110,
+      "children": [
+        {
+          "suffixes": [
+            "31",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -133,
+                -134,
+                -135
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -175
+    },
+    {
+      "parent": 110,
+      "children": [
+        {
+          "suffixes": [
+            "32",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -136,
+                -137
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -176
+    },
+    {
+      "parent": 110,
+      "children": [
+        {
+          "suffixes": [
+            "32",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -138,
+                -139
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -177
+    },
+    {
+      "parent": 110,
+      "children": [
+        {
+          "suffixes": [
+            "33",
+            "2"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -140,
+                -141
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -178
+    },
+    {
+      "parent": 110,
+      "children": [
+        {
+          "suffixes": [
+            "33",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -142,
+                -143
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -179
+    },
+    {
+      "parent": 110,
+      "children": [
+        {
+          "suffixes": [
+            "211",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -1024000000,
+                1024000000
+              ],
+              "destinations": [
+                -144,
+                -145
+              ]
+            }
+          ]
+        }
+      ],
+      "source_rule": -180
+    }
+  ],
+  "source_graph": "gap_repaired_round3_20260924.json",
+  "source_sha256": "5412e352b831848572e828d85a5e752d106b8824ad83a1da462c1411cdee1d95",
+  "generated_moves": {
+    "count": 180,
+    "boxes": 167,
+    "total_length": 3,
+    "memory": 7,
+    "ratio_refinement": 3,
+    "scope": "new intervals assigned only with --expand-offers"
+  }
+}

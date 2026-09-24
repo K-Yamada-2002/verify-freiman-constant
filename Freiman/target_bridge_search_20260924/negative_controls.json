@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "controls": [
+    {
+      "mutation": "missing_case",
+      "rejected": true
+    },
+    {
+      "mutation": "missing_record",
+      "rejected": true
+    },
+    {
+      "mutation": "wrong_sign",
+      "rejected": true
+    },
+    {
+      "mutation": "wrong_anchor",
+      "rejected": true
+    },
+    {
+      "mutation": "duplicate_monomial",
+      "rejected": true
+    },
+    {
+      "mutation": "false_mode",
+      "rejected": true
+    }
+  ]
+}

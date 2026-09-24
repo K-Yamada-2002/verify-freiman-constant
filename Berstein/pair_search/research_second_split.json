@@ -1,0 +1,87 @@
+{
+  "claims": [
+    {
+      "claim": 1,
+      "definition": {
+        "label": "R1",
+        "model": {
+          "digits": 4,
+          "radius": 3,
+          "threshold": "4161579/1000000",
+          "core_states": 621,
+          "core_edges": 1767,
+          "reset": "222222"
+        },
+        "graph": "0abc99824bcb0b7ae277895a57c74fdd7c915597424da6b3700e6f7dcb65dcca",
+        "alphabet": "123",
+        "forbidden": [
+          "1312",
+          "1313",
+          "2131",
+          "3131",
+          "11131",
+          "13111",
+          "22313",
+          "31322",
+          "31323",
+          "32313",
+          "121323",
+          "323121",
+          "1123132",
+          "1213221",
+          "1223121",
+          "2113112",
+          "2313211"
+        ]
+      },
+      "proposition": {
+        "left": [
+          "11",
+          "12"
+        ],
+        "right": [
+          "11",
+          "12",
+          "21",
+          "22",
+          "2311",
+          "232",
+          "233"
+        ],
+        "target": [
+          4.16158,
+          4.171799
+        ],
+        "model": {
+          "digits": 4,
+          "radius": 3,
+          "threshold": "4161579/1000000",
+          "core_states": 621,
+          "core_edges": 1767,
+          "reset": "222222"
+        },
+        "graph": "0abc99824bcb0b7ae277895a57c74fdd7c915597424da6b3700e6f7dcb65dcca",
+        "dominance_bound": "8039/1932"
+      },
+      "scan": {
+        "exponent": 9,
+        "scale": 1000000000000000,
+        "visited": 84736555,
+        "leaves": 29636470,
+        "max_width_units": 1000000,
+        "max_depth": 21,
+        "complete": true,
+        "covers_target": true,
+        "seconds": 20.4313,
+        "covered": [
+          [
+            1161580000000000,
+            1171799000000000
+          ]
+        ]
+      },
+      "language_state_pairs": 956
+    }
+  ],
+  "rejections": []
+}

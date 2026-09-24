@@ -1,0 +1,52 @@
+{
+  "merges": [
+    {
+      "kept": 16,
+      "removed": 24,
+      "kind": "scalar union"
+    },
+    {
+      "kept": 16,
+      "removed": 34,
+      "kind": "scalar union"
+    },
+    {
+      "kept": 17,
+      "removed": 25,
+      "kind": "scalar union"
+    },
+    {
+      "kept": 19,
+      "removed": 27,
+      "kind": "scalar union"
+    },
+    {
+      "kept": 20,
+      "removed": 30,
+      "kind": "scalar union"
+    },
+    {
+      "kept": 29,
+      "removed": 22,
+      "kind": "scalar union"
+    },
+    {
+      "kept": 23,
+      "removed": 33,
+      "kind": "scalar union"
+    },
+    {
+      "kept": 26,
+      "removed": 36,
+      "kind": "scalar union"
+    },
+    {
+      "kept": 28,
+      "removed": 38,
+      "kind": "scalar union"
+    }
+  ],
+  "before": 39,
+  "after": 30,
+  "status": "equivalent open obligations; no filling asserted"
+}

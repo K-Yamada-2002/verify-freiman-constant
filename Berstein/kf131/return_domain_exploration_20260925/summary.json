@@ -1,0 +1,38 @@
+[
+  {
+    "name": "memory2_ref0_radius0",
+    "types": 33,
+    "moves": 255,
+    "status": "positive-width closure impossible for this fixed return family"
+  },
+  {
+    "name": "memory2_ref2_radius0",
+    "types": 36,
+    "moves": 216,
+    "status": "positive-width closure impossible for this fixed return family"
+  },
+  {
+    "name": "memory3_ref0_radius0",
+    "types": 33,
+    "moves": 276,
+    "status": "positive-width closure impossible for this fixed return family"
+  },
+  {
+    "name": "memory3_ref2_radius0",
+    "types": 36,
+    "moves": 243,
+    "status": "positive-width closure impossible for this fixed return family"
+  },
+  {
+    "name": "memory4_ref0_radius0",
+    "types": 33,
+    "moves": 164,
+    "status": "positive-width closure impossible for this fixed return family"
+  },
+  {
+    "name": "memory4_ref2_radius0",
+    "types": 36,
+    "moves": 165,
+    "status": "positive-width closure impossible for this fixed return family"
+  }
+]

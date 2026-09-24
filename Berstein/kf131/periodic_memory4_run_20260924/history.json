@@ -1,0 +1,128 @@
+{
+  "source_sha256": "b5214576f964206e2cd8d61ba9245ec4c9066ef854ab598d3aef8e0a3434d99e",
+  "initial_obligations": 1,
+  "batches": [
+    {
+      "batch": 1,
+      "targets": 1,
+      "repaired": 1,
+      "failed": 0,
+      "reused_requests": 0,
+      "new_obstructions": 0,
+      "before": {
+        "nodes": 1,
+        "local_rules": 0,
+        "open_nodes": 1,
+        "supported_nodes": [],
+        "root_ranks": [
+          0
+        ]
+      },
+      "after": {
+        "nodes": 3,
+        "local_rules": 1,
+        "open_nodes": 2,
+        "supported_nodes": [],
+        "root_ranks": [
+          1
+        ]
+      }
+    },
+    {
+      "batch": 2,
+      "targets": 2,
+      "repaired": 2,
+      "failed": 0,
+      "reused_requests": 0,
+      "new_obstructions": 0,
+      "before": {
+        "nodes": 3,
+        "local_rules": 1,
+        "open_nodes": 2,
+        "supported_nodes": [],
+        "root_ranks": [
+          1
+        ]
+      },
+      "after": {
+        "nodes": 7,
+        "local_rules": 3,
+        "open_nodes": 4,
+        "supported_nodes": [],
+        "root_ranks": [
+          2
+        ]
+      }
+    },
+    {
+      "batch": 3,
+      "targets": 4,
+      "repaired": 4,
+      "failed": 0,
+      "reused_requests": 0,
+      "new_obstructions": 3,
+      "before": {
+        "nodes": 7,
+        "local_rules": 3,
+        "open_nodes": 4,
+        "supported_nodes": [],
+        "root_ranks": [
+          2
+        ]
+      },
+      "after": {
+        "nodes": 15,
+        "local_rules": 7,
+        "open_nodes": 8,
+        "supported_nodes": [],
+        "root_ranks": [
+          3
+        ]
+      }
+    },
+    {
+      "batch": 4,
+      "targets": 8,
+      "repaired": 4,
+      "failed": 4,
+      "reused_requests": 0,
+      "new_obstructions": 96,
+      "before": {
+        "nodes": 15,
+        "local_rules": 7,
+        "open_nodes": 8,
+        "supported_nodes": [],
+        "root_ranks": [
+          3
+        ]
+      },
+      "after": {
+        "nodes": 31,
+        "local_rules": 11,
+        "open_nodes": 20,
+        "supported_nodes": [],
+        "root_ranks": [
+          3
+        ]
+      }
+    }
+  ],
+  "attempted_keys": [
+    "[[[\"2222\",\"2222\"],1,108,[5,18]],[-193244909,-192220909]]",
+    "[[[\"2223\",\"2223\"],1,108,[4,8]],[-231103617,-219944354]]",
+    "[[[\"2223\",\"2223\"],1,108,[4,9]],[-231103617,-219944354]]",
+    "[[[\"2223\",\"2233\"],-1,488,[4,11]],[-158772147,-141498251]]",
+    "[[[\"2223\",\"2233\"],-1,488,[4,12]],[-158772147,-141498251]]",
+    "[[[\"2223\",\"2233\"],-1,488,[4,12]],[-158811920,-141533688]]",
+    "[[[\"2223\",\"2233\"],-1,488,[4,13]],[-158811920,-141533688]]",
+    "[[[\"2233\",\"2331\"],-1,102,[4,10]],[-284834624,-95830988]]",
+    "[[[\"2233\",\"2331\"],-1,102,[4,7]],[-285007099,-96050851]]",
+    "[[[\"2233\",\"2331\"],-1,102,[4,8]],[-284727200,-95723571]]",
+    "[[[\"2233\",\"2331\"],-1,102,[4,8]],[-285007099,-96050851]]",
+    "[[[\"2233\",\"2331\"],-1,102,[4,8]],[-285114524,-96158267]]",
+    "[[[\"2233\",\"2331\"],-1,102,[4,9]],[-284727200,-95723571]]",
+    "[[[\"2233\",\"2331\"],-1,102,[4,9]],[-284834624,-95830988]]",
+    "[[[\"2233\",\"2331\"],-1,102,[4,9]],[-285114524,-96158267]]"
+  ],
+  "initial_unattempted": 0
+}

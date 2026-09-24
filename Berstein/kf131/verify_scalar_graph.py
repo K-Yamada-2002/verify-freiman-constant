@@ -63,7 +63,7 @@ class ScalarVerifier(Verifier):
         require(values[0] < values[1], 'degenerate physical seed')
         return [v.record() for v in values]
 
-    def check_initial_hull(self, index):
+    def initial_hull(self, index):
         n = self.nodes[index]
         sl, sr = map(state_of, n['states'])
         p = n['parity']
@@ -71,8 +71,16 @@ class ScalarVerifier(Verifier):
         high = (extreme_tail(sl, True)[0], extreme_tail(sr, p > 0)[0])
         lower = difference_range(low, (ALPHA, ALPHA), *self.box(index), p)[1]
         upper = difference_range(high, (ALPHA, ALPHA), *self.box(index), p)[0]
+        return lower,upper
+
+    def check_initial_hull(self, index):
+        n=self.nodes[index]
+        lower,upper=self.initial_hull(index)
         a, b = self.interval(n['interval'])
         require(lower <= a < b <= upper, 'scalar type escapes the common hull')
+
+    def transport(self,index,u,v,swap,interval,destinations):
+        return uniform_child_core(u,v,swap,interval,*self.box(index),self.nodes[index]['parity'])
 
     def scalar_child(self, index, edge):
         parent = self.nodes[index]
@@ -107,8 +115,7 @@ class ScalarVerifier(Verifier):
             require(bool(boxes), 'empty destination list')
             cases[swap] = boxes
             rectangles[swap] = (child_interval, slabs)
-            cores.append(uniform_child_core(u, v, swap, child_interval,
-                                             *self.box(index), parent['parity']))
+            cores.append(self.transport(index,u,v,swap,child_interval,case['destinations']))
         if h[0] <= 1:
             required = h[0], min(h[1], B(1))
             self.covers_ratio(required, cases.get(False, []))
@@ -158,6 +165,13 @@ class ScalarVerifier(Verifier):
         return result
 
 
+def verifier_for(data):
+    if data.get('schema')=='kf131-sloped-atlas-v1':
+        from sloped_scalar_geometry import SlopedScalarVerifier
+        return SlopedScalarVerifier(data)
+    return ScalarVerifier(data)
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument('certificate', type=Path)
@@ -166,7 +180,7 @@ def main():
     ap.add_argument('--output', type=Path)
     args = ap.parse_args()
     require(not (args.audit and args.local is not None), 'choose audit or local')
-    checker = ScalarVerifier(json.loads(args.certificate.read_text()))
+    checker = verifier_for(json.loads(args.certificate.read_text()))
     result = checker.audit() if args.audit else (checker.closed() if args.local is None
                                                  else checker.local(args.local))
     if args.output:

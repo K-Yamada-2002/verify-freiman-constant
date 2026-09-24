@@ -1,0 +1,43 @@
+{
+  "schema": "kf131-scalar-atlas-v1",
+  "settings": {
+    "base": 0.996,
+    "bins": 512,
+    "memory": 8,
+    "grid": 1024000000,
+    "max_step": 4,
+    "block_span": 1
+  },
+  "nodes": [
+    {
+      "id": 0,
+      "states": [
+        "11122223",
+        "21222213"
+      ],
+      "parity": -1,
+      "ratio_bin": 382,
+      "interval": [
+        339523997,
+        340000000
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 512583,
+      "ratio_refinement": [
+        6,
+        46
+      ]
+    }
+  ],
+  "roots": [
+    0
+  ],
+  "closed_candidate": false,
+  "status": "refined physical seed; filling obligation open",
+  "open_nodes": 1,
+  "root_prefixes": [
+    "2211122223",
+    "22121222213"
+  ]
+}

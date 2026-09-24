@@ -1,0 +1,49 @@
+{
+  "group": "terminal",
+  "status": "PASS",
+  "records": [
+    {
+      "label": "run_validation_normal",
+      "command": [
+        "run_validation.py"
+      ],
+      "cwd": "work/report_parts/lower_133_139/width_oriented_mixed",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 25.373,
+      "log": "replay_logs/terminal__run_validation_normal.log",
+      "stdout": "verify_exact.py VERIFIED 952 proof records; 1741 endpoint branches; 789 componentwise comparisons\nverify_independent.py INDEPENDENTLY VERIFIED 952 proof records; 1741 endpoint branches; 789 componentwise comparisons\nREJECTED missing-record by both verifiers\nREJECTED altered-hypothesis by both verifiers\nREJECTED reversed-witness by both verifiers\nVALIDATION COMPLETE: four successful checks, six expected rejections",
+      "stderr": ""
+    },
+    {
+      "label": "check_readable_normal",
+      "command": [
+        "check_readable.py"
+      ],
+      "cwd": "work/report_parts/lower_133_139/width_oriented_mixed",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 2.044,
+      "log": "replay_logs/terminal__check_readable_normal.log",
+      "stdout": "INDEPENDENTLY VERIFIED 533 readable positivity witnesses and all 9 coefficients per witness",
+      "stderr": ""
+    },
+    {
+      "label": "check_readable_O",
+      "command": [
+        "-O",
+        "check_readable.py"
+      ],
+      "cwd": "work/report_parts/lower_133_139/width_oriented_mixed",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 3.075,
+      "log": "replay_logs/terminal__check_readable_O.log",
+      "stdout": "INDEPENDENTLY VERIFIED 533 readable positivity witnesses and all 9 coefficients per witness",
+      "stderr": ""
+    }
+  ]
+}

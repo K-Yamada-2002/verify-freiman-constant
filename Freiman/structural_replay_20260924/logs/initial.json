@@ -1,0 +1,49 @@
+{
+  "group": "initial",
+  "status": "PASS",
+  "records": [
+    {
+      "label": "run_replay_normal",
+      "command": [
+        "run_replay.py"
+      ],
+      "cwd": "work/report_parts/lower_core/width_oriented_mixed",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 25.666,
+      "log": "replay_logs/initial__run_replay_normal.log",
+      "stdout": "verify_h_finite_independent PASS\nverify_h_finite_independent_optimized PASS\nverify_replay_inventory PASS\nverify_replay_inventory_optimized PASS\nvalidate_fixed_initial PASS\nvalidate_fixed_initial_optimized PASS\nverify_redundancy PASS\nverify_redundancy_optimized PASS\nvalidate_h_seams_independent PASS\nvalidate_h_seams_independent_optimized PASS\nnegative_missing_branch REJECTED\nnegative_changed_endpoint REJECTED",
+      "stderr": ""
+    },
+    {
+      "label": "verify_parity_audit_normal",
+      "command": [
+        "verify_parity_audit.py"
+      ],
+      "cwd": "work/report_parts/parity_audit",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 0.044,
+      "log": "replay_logs/initial__verify_parity_audit_normal.log",
+      "stdout": "VERIFIED: I5 exact source/old/symmetric endpoint identities and strict gaps; all 1152 abstract parity decision states are invariant under simultaneous parity and endpoint-order reversal.",
+      "stderr": ""
+    },
+    {
+      "label": "verify_parity_audit_O",
+      "command": [
+        "-O",
+        "verify_parity_audit.py"
+      ],
+      "cwd": "work/report_parts/parity_audit",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 0.044,
+      "log": "replay_logs/initial__verify_parity_audit_O.log",
+      "stdout": "VERIFIED: I5 exact source/old/symmetric endpoint identities and strict gaps; all 1152 abstract parity decision states are invariant under simultaneous parity and endpoint-order reversal.",
+      "stderr": ""
+    }
+  ]
+}

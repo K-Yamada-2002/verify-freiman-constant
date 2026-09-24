@@ -1,0 +1,293 @@
+{
+  "schema": "freiman-current-report-live-replay-v1",
+  "status": "PASS_SCOPED_SHORT_PARENT_CHECKS",
+  "started_utc": "2026-09-24T10:58:52.088227+00:00",
+  "requested_stages": [],
+  "preflight": false,
+  "package": "/private/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-math-replay-iw2pcwwg",
+  "temporary_work": "/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-current-7fv73dtx",
+  "driver_sha256": "05032083481420cd7dc870c70fe68a0e579df3851f875ce377f1464ef352230b",
+  "commands": [
+    {
+      "id": "setup__active_print_bindings",
+      "kind": "driver_check",
+      "expected": "accept",
+      "log": "logs/setup__active_print_bindings.log",
+      "returncode": 0,
+      "status": "PASS",
+      "details": {
+        "literal_mathematical_pairs": [
+          [
+            "foundations/foundations_section.tex",
+            "foundations.tex"
+          ],
+          [
+            "m2a/m2a_section.tex",
+            "m2a.tex"
+          ],
+          [
+            "lower_core/width_oriented_mixed/lower_core_certificates.tex",
+            "lower_core_certificates.tex"
+          ]
+        ],
+        "identical_translation_pages": 140
+      },
+      "seconds": 0.013
+    },
+    {
+      "id": "late_j__audit_all__normal",
+      "kind": "command",
+      "command": [
+        "/tmp/freiman-structural-venv/bin/python",
+        "-B",
+        "audit_all.py"
+      ],
+      "cwd": "/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-current-7fv73dtx/independent/checks/late_j",
+      "expected": "accept",
+      "log": "logs/late_j__audit_all__normal.log",
+      "returncode": 0,
+      "status": "PASS",
+      "seconds": 13.369
+    },
+    {
+      "id": "late_j__audit_all__O",
+      "kind": "command",
+      "command": [
+        "/tmp/freiman-structural-venv/bin/python",
+        "-B",
+        "-O",
+        "audit_all.py"
+      ],
+      "cwd": "/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-current-7fv73dtx/independent/checks/late_j",
+      "expected": "accept",
+      "log": "logs/late_j__audit_all__O.log",
+      "returncode": 0,
+      "status": "PASS",
+      "seconds": 12.233
+    },
+    {
+      "id": "late_j__audit_tex__normal",
+      "kind": "command",
+      "command": [
+        "/tmp/freiman-structural-venv/bin/python",
+        "-B",
+        "audit_tex.py"
+      ],
+      "cwd": "/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-current-7fv73dtx/independent/checks/late_j",
+      "expected": "accept",
+      "log": "logs/late_j__audit_tex__normal.log",
+      "returncode": 0,
+      "status": "PASS",
+      "seconds": 10.12
+    },
+    {
+      "id": "late_j__audit_tex__O",
+      "kind": "command",
+      "command": [
+        "/tmp/freiman-structural-venv/bin/python",
+        "-B",
+        "-O",
+        "audit_tex.py"
+      ],
+      "cwd": "/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-current-7fv73dtx/independent/checks/late_j",
+      "expected": "accept",
+      "log": "logs/late_j__audit_tex__O.log",
+      "returncode": 0,
+      "status": "PASS",
+      "seconds": 9.106
+    },
+    {
+      "id": "late_j__short_case__normal",
+      "kind": "command",
+      "command": [
+        "/tmp/freiman-structural-venv/bin/python",
+        "-B",
+        "short_case.py"
+      ],
+      "cwd": "/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-current-7fv73dtx/independent/checks/late_j",
+      "expected": "accept",
+      "log": "logs/late_j__short_case__normal.log",
+      "returncode": 0,
+      "status": "PASS",
+      "seconds": 1.625
+    },
+    {
+      "id": "late_j__short_case__O",
+      "kind": "command",
+      "command": [
+        "/tmp/freiman-structural-venv/bin/python",
+        "-B",
+        "-O",
+        "short_case.py"
+      ],
+      "cwd": "/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-current-7fv73dtx/independent/checks/late_j",
+      "expected": "accept",
+      "log": "logs/late_j__short_case__O.log",
+      "returncode": 0,
+      "status": "PASS",
+      "seconds": 1.549
+    },
+    {
+      "id": "late_j__make_short_supplement__normal",
+      "kind": "command",
+      "command": [
+        "/tmp/freiman-structural-venv/bin/python",
+        "-B",
+        "make_short_supplement.py"
+      ],
+      "cwd": "/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-current-7fv73dtx/independent/checks/late_j",
+      "expected": "accept",
+      "log": "logs/late_j__make_short_supplement__normal.log",
+      "returncode": 0,
+      "status": "PASS",
+      "seconds": 0.336
+    },
+    {
+      "id": "late_j__make_short_supplement__O",
+      "kind": "command",
+      "command": [
+        "/tmp/freiman-structural-venv/bin/python",
+        "-B",
+        "-O",
+        "make_short_supplement.py"
+      ],
+      "cwd": "/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-current-7fv73dtx/independent/checks/late_j",
+      "expected": "accept",
+      "log": "logs/late_j__make_short_supplement__O.log",
+      "returncode": 0,
+      "status": "PASS",
+      "seconds": 0.307
+    },
+    {
+      "id": "global__check_fixed_roots__normal",
+      "kind": "command",
+      "command": [
+        "/tmp/freiman-structural-venv/bin/python",
+        "-B",
+        "check_fixed_roots.py"
+      ],
+      "cwd": "/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-current-7fv73dtx/independent/checks/global",
+      "expected": "accept",
+      "log": "logs/global__check_fixed_roots__normal.log",
+      "returncode": 0,
+      "status": "PASS",
+      "seconds": 0.47
+    },
+    {
+      "id": "global__check_fixed_roots__O",
+      "kind": "command",
+      "command": [
+        "/tmp/freiman-structural-venv/bin/python",
+        "-B",
+        "-O",
+        "check_fixed_roots.py"
+      ],
+      "cwd": "/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-current-7fv73dtx/independent/checks/global",
+      "expected": "accept",
+      "log": "logs/global__check_fixed_roots__O.log",
+      "returncode": 0,
+      "status": "PASS",
+      "seconds": 1.772
+    },
+    {
+      "id": "global__short_prefix_witness__normal",
+      "kind": "command",
+      "command": [
+        "/tmp/freiman-structural-venv/bin/python",
+        "-B",
+        "short_prefix_witness.py"
+      ],
+      "cwd": "/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-current-7fv73dtx/independent/checks/global",
+      "expected": "accept",
+      "log": "logs/global__short_prefix_witness__normal.log",
+      "returncode": 0,
+      "status": "PASS",
+      "seconds": 0.05
+    },
+    {
+      "id": "global__short_prefix_witness__O",
+      "kind": "command",
+      "command": [
+        "/tmp/freiman-structural-venv/bin/python",
+        "-B",
+        "-O",
+        "short_prefix_witness.py"
+      ],
+      "cwd": "/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-current-7fv73dtx/independent/checks/global",
+      "expected": "accept",
+      "log": "logs/global__short_prefix_witness__O.log",
+      "returncode": 0,
+      "status": "PASS",
+      "seconds": 0.054
+    },
+    {
+      "id": "global__short_prefix_repair__normal",
+      "kind": "command",
+      "command": [
+        "/tmp/freiman-structural-venv/bin/python",
+        "-B",
+        "short_prefix_repair.py"
+      ],
+      "cwd": "/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-current-7fv73dtx/independent/checks/global",
+      "expected": "accept",
+      "log": "logs/global__short_prefix_repair__normal.log",
+      "returncode": 0,
+      "status": "PASS",
+      "seconds": 0.069
+    },
+    {
+      "id": "global__short_prefix_repair__O",
+      "kind": "command",
+      "command": [
+        "/tmp/freiman-structural-venv/bin/python",
+        "-B",
+        "-O",
+        "short_prefix_repair.py"
+      ],
+      "cwd": "/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-current-7fv73dtx/independent/checks/global",
+      "expected": "accept",
+      "log": "logs/global__short_prefix_repair__O.log",
+      "returncode": 0,
+      "status": "PASS",
+      "seconds": 0.065
+    },
+    {
+      "id": "global__short_repair_peer_check__normal",
+      "kind": "command",
+      "command": [
+        "/tmp/freiman-structural-venv/bin/python",
+        "-B",
+        "short_repair_peer_check.py"
+      ],
+      "cwd": "/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-current-7fv73dtx/independent/checks/global",
+      "expected": "accept",
+      "log": "logs/global__short_repair_peer_check__normal.log",
+      "returncode": 0,
+      "status": "PASS",
+      "seconds": 0.173
+    },
+    {
+      "id": "global__short_repair_peer_check__O",
+      "kind": "command",
+      "command": [
+        "/tmp/freiman-structural-venv/bin/python",
+        "-B",
+        "-O",
+        "short_repair_peer_check.py"
+      ],
+      "cwd": "/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-current-7fv73dtx/independent/checks/global",
+      "expected": "accept",
+      "log": "logs/global__short_repair_peer_check__O.log",
+      "returncode": 0,
+      "status": "PASS",
+      "seconds": 0.168
+    }
+  ],
+  "interpretation": "Scoped short-parent and late-J finite verification only. No PDF or complete-package validation.",
+  "cached_results_used_as_evidence": 0,
+  "manual_visual_review_repeated_by_this_program": false,
+  "requested_modules": [
+    "late_j",
+    "global"
+  ]
+}

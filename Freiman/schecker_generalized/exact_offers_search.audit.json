@@ -1,0 +1,822 @@
+{
+  "status": "local audit only; no infinite filling assertion",
+  "verified_rules": [
+    {
+      "node": 0,
+      "children": 3,
+      "dependencies": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "node": 1,
+      "children": 3,
+      "dependencies": [
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "node": 2,
+      "children": 1,
+      "dependencies": [
+        8
+      ]
+    },
+    {
+      "node": 3,
+      "children": 3,
+      "dependencies": [
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "node": 4,
+      "children": 3,
+      "dependencies": [
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "node": 5,
+      "children": 2,
+      "dependencies": [
+        15,
+        16
+      ]
+    },
+    {
+      "node": 6,
+      "children": 3,
+      "dependencies": [
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "node": 7,
+      "children": 2,
+      "dependencies": [
+        20,
+        21
+      ]
+    },
+    {
+      "node": 8,
+      "children": 3,
+      "dependencies": [
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "node": 9,
+      "children": 3,
+      "dependencies": [
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "node": 10,
+      "children": 3,
+      "dependencies": [
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "node": 11,
+      "children": 3,
+      "dependencies": [
+        31,
+        32,
+        33
+      ]
+    },
+    {
+      "node": 12,
+      "children": 2,
+      "dependencies": [
+        34,
+        35
+      ]
+    },
+    {
+      "node": 13,
+      "children": 2,
+      "dependencies": [
+        36,
+        37
+      ]
+    },
+    {
+      "node": 14,
+      "children": 3,
+      "dependencies": [
+        38,
+        39,
+        40
+      ]
+    },
+    {
+      "node": 15,
+      "children": 2,
+      "dependencies": [
+        41,
+        42
+      ]
+    },
+    {
+      "node": 16,
+      "children": 4,
+      "dependencies": [
+        43,
+        44,
+        45,
+        46
+      ]
+    },
+    {
+      "node": 17,
+      "children": 3,
+      "dependencies": [
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "node": 18,
+      "children": 3,
+      "dependencies": [
+        50,
+        51,
+        52
+      ]
+    },
+    {
+      "node": 19,
+      "children": 2,
+      "dependencies": [
+        53,
+        54
+      ]
+    },
+    {
+      "node": 20,
+      "children": 2,
+      "dependencies": [
+        55,
+        56
+      ]
+    },
+    {
+      "node": 21,
+      "children": 3,
+      "dependencies": [
+        57,
+        58,
+        59
+      ]
+    },
+    {
+      "node": 22,
+      "children": 2,
+      "dependencies": [
+        60,
+        61
+      ]
+    },
+    {
+      "node": 23,
+      "children": 3,
+      "dependencies": [
+        62,
+        63,
+        64
+      ]
+    },
+    {
+      "node": 24,
+      "children": 3,
+      "dependencies": [
+        65,
+        66,
+        67
+      ]
+    },
+    {
+      "node": 25,
+      "children": 2,
+      "dependencies": [
+        68,
+        69
+      ]
+    },
+    {
+      "node": 26,
+      "children": 3,
+      "dependencies": [
+        70,
+        71,
+        72
+      ]
+    },
+    {
+      "node": 27,
+      "children": 2,
+      "dependencies": [
+        73,
+        74
+      ]
+    },
+    {
+      "node": 28,
+      "children": 3,
+      "dependencies": [
+        75,
+        76,
+        77
+      ]
+    },
+    {
+      "node": 29,
+      "children": 3,
+      "dependencies": [
+        78,
+        79,
+        80
+      ]
+    },
+    {
+      "node": 30,
+      "children": 1,
+      "dependencies": [
+        81
+      ]
+    },
+    {
+      "node": 31,
+      "children": 3,
+      "dependencies": [
+        82,
+        83,
+        84
+      ]
+    },
+    {
+      "node": 32,
+      "children": 2,
+      "dependencies": [
+        85,
+        86
+      ]
+    },
+    {
+      "node": 33,
+      "children": 1,
+      "dependencies": [
+        87
+      ]
+    },
+    {
+      "node": 34,
+      "children": 3,
+      "dependencies": [
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "node": 35,
+      "children": 2,
+      "dependencies": [
+        91,
+        92
+      ]
+    },
+    {
+      "node": 36,
+      "children": 2,
+      "dependencies": [
+        93,
+        94
+      ]
+    },
+    {
+      "node": 37,
+      "children": 2,
+      "dependencies": [
+        95,
+        96
+      ]
+    },
+    {
+      "node": 38,
+      "children": 3,
+      "dependencies": [
+        97,
+        98,
+        99
+      ]
+    },
+    {
+      "node": 39,
+      "children": 3,
+      "dependencies": [
+        100,
+        101,
+        102
+      ]
+    },
+    {
+      "node": 40,
+      "children": 3,
+      "dependencies": [
+        103,
+        104,
+        105
+      ]
+    },
+    {
+      "node": 41,
+      "children": 2,
+      "dependencies": [
+        106,
+        107
+      ]
+    },
+    {
+      "node": 42,
+      "children": 3,
+      "dependencies": [
+        108,
+        109,
+        110
+      ]
+    },
+    {
+      "node": 43,
+      "children": 3,
+      "dependencies": [
+        111,
+        112,
+        113
+      ]
+    },
+    {
+      "node": 44,
+      "children": 1,
+      "dependencies": [
+        114
+      ]
+    },
+    {
+      "node": 45,
+      "children": 1,
+      "dependencies": [
+        115
+      ]
+    },
+    {
+      "node": 46,
+      "children": 3,
+      "dependencies": [
+        116,
+        117,
+        118
+      ]
+    },
+    {
+      "node": 47,
+      "children": 2,
+      "dependencies": [
+        119,
+        120
+      ]
+    },
+    {
+      "node": 48,
+      "children": 3,
+      "dependencies": [
+        121,
+        122,
+        123
+      ]
+    },
+    {
+      "node": 49,
+      "children": 2,
+      "dependencies": [
+        124,
+        125
+      ]
+    },
+    {
+      "node": 50,
+      "children": 3,
+      "dependencies": [
+        126,
+        127,
+        128
+      ]
+    },
+    {
+      "node": 51,
+      "children": 3,
+      "dependencies": [
+        129,
+        130,
+        131
+      ]
+    },
+    {
+      "node": 52,
+      "children": 2,
+      "dependencies": [
+        132,
+        133
+      ]
+    },
+    {
+      "node": 53,
+      "children": 3,
+      "dependencies": [
+        134,
+        135,
+        136
+      ]
+    },
+    {
+      "node": 54,
+      "children": 1,
+      "dependencies": [
+        137
+      ]
+    },
+    {
+      "node": 55,
+      "children": 3,
+      "dependencies": [
+        138,
+        139,
+        140
+      ]
+    },
+    {
+      "node": 56,
+      "children": 2,
+      "dependencies": [
+        141,
+        142
+      ]
+    },
+    {
+      "node": 57,
+      "children": 2,
+      "dependencies": [
+        143,
+        144
+      ]
+    },
+    {
+      "node": 58,
+      "children": 3,
+      "dependencies": [
+        145,
+        146,
+        147
+      ]
+    },
+    {
+      "node": 59,
+      "children": 3,
+      "dependencies": [
+        148,
+        149,
+        150
+      ]
+    },
+    {
+      "node": 61,
+      "children": 3,
+      "dependencies": [
+        151,
+        152,
+        153
+      ]
+    },
+    {
+      "node": 62,
+      "children": 3,
+      "dependencies": [
+        154,
+        155,
+        156
+      ]
+    },
+    {
+      "node": 63,
+      "children": 3,
+      "dependencies": [
+        157,
+        158,
+        159
+      ]
+    },
+    {
+      "node": 64,
+      "children": 3,
+      "dependencies": [
+        160,
+        161,
+        162
+      ]
+    },
+    {
+      "node": 65,
+      "children": 3,
+      "dependencies": [
+        163,
+        164,
+        165
+      ]
+    },
+    {
+      "node": 66,
+      "children": 1,
+      "dependencies": [
+        166
+      ]
+    },
+    {
+      "node": 67,
+      "children": 3,
+      "dependencies": [
+        167,
+        168,
+        169
+      ]
+    },
+    {
+      "node": 68,
+      "children": 3,
+      "dependencies": [
+        170,
+        171,
+        172
+      ]
+    },
+    {
+      "node": 69,
+      "children": 3,
+      "dependencies": [
+        173,
+        174,
+        175
+      ]
+    },
+    {
+      "node": 70,
+      "children": 1,
+      "dependencies": [
+        176
+      ]
+    },
+    {
+      "node": 71,
+      "children": 3,
+      "dependencies": [
+        177,
+        178,
+        179
+      ]
+    },
+    {
+      "node": 72,
+      "children": 2,
+      "dependencies": [
+        180,
+        181
+      ]
+    },
+    {
+      "node": 73,
+      "children": 2,
+      "dependencies": [
+        182,
+        183
+      ]
+    },
+    {
+      "node": 74,
+      "children": 2,
+      "dependencies": [
+        184,
+        185
+      ]
+    },
+    {
+      "node": 75,
+      "children": 3,
+      "dependencies": [
+        186,
+        187,
+        188
+      ]
+    },
+    {
+      "node": 76,
+      "children": 3,
+      "dependencies": [
+        189,
+        190,
+        191
+      ]
+    },
+    {
+      "node": 77,
+      "children": 1,
+      "dependencies": [
+        192
+      ]
+    },
+    {
+      "node": 78,
+      "children": 3,
+      "dependencies": [
+        193,
+        194,
+        195
+      ]
+    },
+    {
+      "node": 79,
+      "children": 3,
+      "dependencies": [
+        196,
+        197,
+        198
+      ]
+    },
+    {
+      "node": 80,
+      "children": 3,
+      "dependencies": [
+        199,
+        200,
+        201
+      ]
+    },
+    {
+      "node": 81,
+      "children": 3,
+      "dependencies": [
+        202,
+        203,
+        204
+      ]
+    }
+  ],
+  "failed_rules": [],
+  "open_nodes": [
+    60,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204
+  ],
+  "proof_hash": "c5eac4a36fa6e52b719548f25ed5caaa3ecd31a57a6c9c19cc36461095f5b8fe"
+}

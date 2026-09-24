@@ -1,0 +1,155 @@
+{
+  "source_proof_hash": "fee569d1618417cc777f3ced3e296476f0eaa4fb744d69785aabd39b9668d3e0",
+  "rows": [
+    {
+      "node": 1942,
+      "trace": {
+        "node": 1942,
+        "status": "excluded",
+        "parents": [
+          {
+            "node": 801,
+            "status": "excluded",
+            "parents": [
+              {
+                "node": 791,
+                "status": "outside_parent_guard"
+              },
+              {
+                "node": 792,
+                "status": "outside_parent_guard"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "node": 2838,
+      "trace": {
+        "node": 2838,
+        "status": "excluded",
+        "parents": [
+          {
+            "node": 828,
+            "status": "outside_parent_guard"
+          }
+        ]
+      }
+    },
+    {
+      "node": 2839,
+      "trace": {
+        "node": 2839,
+        "status": "excluded",
+        "parents": [
+          {
+            "node": 828,
+            "status": "outside_parent_guard"
+          }
+        ]
+      }
+    },
+    {
+      "node": 2841,
+      "trace": {
+        "node": 2841,
+        "status": "excluded",
+        "parents": [
+          {
+            "node": 864,
+            "status": "outside_parent_guard"
+          }
+        ]
+      }
+    },
+    {
+      "node": 2847,
+      "trace": {
+        "node": 2847,
+        "status": "excluded",
+        "parents": [
+          {
+            "node": 867,
+            "status": "outside_parent_guard"
+          }
+        ]
+      }
+    },
+    {
+      "node": 2848,
+      "trace": {
+        "node": 2848,
+        "status": "excluded",
+        "parents": [
+          {
+            "node": 867,
+            "status": "outside_parent_guard"
+          },
+          {
+            "node": 868,
+            "status": "outside_parent_guard"
+          }
+        ]
+      }
+    },
+    {
+      "node": 2850,
+      "trace": {
+        "node": 2850,
+        "status": "excluded",
+        "parents": [
+          {
+            "node": 868,
+            "status": "outside_parent_guard"
+          }
+        ]
+      }
+    },
+    {
+      "node": 2851,
+      "trace": {
+        "node": 2851,
+        "status": "excluded",
+        "parents": [
+          {
+            "node": 869,
+            "status": "outside_parent_guard"
+          }
+        ]
+      }
+    },
+    {
+      "node": 2852,
+      "trace": {
+        "node": 2852,
+        "status": "excluded",
+        "parents": [
+          {
+            "node": 869,
+            "status": "outside_parent_guard"
+          }
+        ]
+      }
+    },
+    {
+      "node": 2861,
+      "trace": {
+        "node": 2861,
+        "status": "excluded",
+        "parents": [
+          {
+            "node": 2828,
+            "status": "excluded",
+            "parents": [
+              {
+                "node": 865,
+                "status": "outside_parent_guard"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "status": "membership of old counterexample points after splitting; not filledness",
+  "source_proof_hash": "500aff5d4118db7089482640a27f0472fb221082357e8c66964378d718c562e7",
+  "split_proof_hash": "3b7f48d42f374713b4f8db107268c0213fe97ad95c29b84edb9669873caafef8",
+  "rows": [
+    {
+      "source_node": 1950,
+      "replacement_nodes": [
+        2840,
+        2845,
+        2848,
+        2854,
+        2856,
+        2874,
+        2880,
+        2881,
+        2886,
+        2887
+      ],
+      "witness_retained_in": []
+    },
+    {
+      "source_node": 1949,
+      "replacement_nodes": [
+        2844,
+        2847,
+        2864,
+        2867,
+        2869,
+        2873,
+        2879,
+        2884,
+        2885
+      ],
+      "witness_retained_in": []
+    },
+    {
+      "source_node": 2117,
+      "replacement_nodes": [
+        2851,
+        2852,
+        2861,
+        2863,
+        2865,
+        2872,
+        2875,
+        2893
+      ],
+      "witness_retained_in": []
+    },
+    {
+      "source_node": 1951,
+      "replacement_nodes": [
+        2841,
+        2849,
+        2855,
+        2857,
+        2868,
+        2882
+      ],
+      "witness_retained_in": []
+    },
+    {
+      "source_node": 1263,
+      "replacement_nodes": [
+        2846,
+        2858,
+        2877,
+        2878,
+        2883,
+        2888,
+        2891
+      ],
+      "witness_retained_in": [
+        2846
+      ]
+    },
+    {
+      "source_node": 1628,
+      "replacement_nodes": [
+        2842,
+        2859,
+        2870,
+        2871
+      ],
+      "witness_retained_in": []
+    },
+    {
+      "source_node": 2131,
+      "replacement_nodes": [
+        2850,
+        2853,
+        2860,
+        2862,
+        2876,
+        2892
+      ],
+      "witness_retained_in": []
+    },
+    {
+      "source_node": 786,
+      "replacement_nodes": [
+        2843,
+        2866,
+        2889,
+        2890
+      ],
+      "witness_retained_in": [
+        2843
+      ]
+    }
+  ]
+}

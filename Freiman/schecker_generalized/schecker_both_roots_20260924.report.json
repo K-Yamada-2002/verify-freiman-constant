@@ -1,0 +1,46 @@
+{
+  "status": "interrupted during a later planner call; only the saved completed attempts are recorded",
+  "attempts": [
+    {
+      "node": 2848,
+      "root_depth": 4,
+      "accepted": false,
+      "elapsed": 0.058692583999999215,
+      "unresolved": 2035
+    },
+    {
+      "node": 1942,
+      "root_depth": 4,
+      "accepted": false,
+      "elapsed": 0.067478708000003,
+      "unresolved": 2035
+    }
+  ],
+  "fragments": {
+    "parent_attempts": 0,
+    "part_attempts": 0,
+    "accepted": 0,
+    "compile_rejected": 0
+  },
+  "fragment_cuts": [],
+  "ranks": {
+    "scope": "chosen strategy only; finite rank does not refute filledness",
+    "proof_hash": "77ffc974e248bad44d7b9ade3bbd5543b81f3ad69716ce8ce0875078c29f7794",
+    "nodes": 3219,
+    "root_ranks": {
+      "zero": 5,
+      "positive": 4
+    },
+    "histogram": {
+      "0": 2035,
+      "1": 793,
+      "2": 350,
+      "3": 36,
+      "4": 4,
+      "5": 1
+    },
+    "structurally_closed": 0
+  },
+  "seconds": 7.626825916999998,
+  "interrupted": true
+}

@@ -1,0 +1,479 @@
+{
+  "status": "Numerical candidates only; NOT interval inclusion",
+  "epsilon": 1e-06,
+  "claims": [
+    {
+      "product": 0,
+      "model": {
+        "digits": 4,
+        "radius": 2,
+        "threshold": "20499/5000",
+        "core_states": 71,
+        "core_edges": 196,
+        "reset": "2222"
+      },
+      "graph": "50de991b19a9a6feb8b3e70e0b0a7a438101a2735fd31ffb9cd4f47814a3bcb6",
+      "left": [
+        "11",
+        "12",
+        "2"
+      ],
+      "right": [
+        "11",
+        "12",
+        "2"
+      ],
+      "target": [
+        4.1,
+        4.171799
+      ],
+      "dominance_bound": "8917/2175",
+      "status": "completed_float",
+      "visited": 617953,
+      "leaves": 233564,
+      "covered": [
+        [
+          4.1,
+          4.171799
+        ]
+      ],
+      "gaps": [],
+      "rational_leaf_check": {
+        "covered": [
+          [
+            "41/10",
+            "4171799/1000000"
+          ]
+        ],
+        "maximum_width": "39651820229417040053731363/39651928620639332976216107204160"
+      }
+    },
+    {
+      "product": 274,
+      "model": {
+        "digits": 4,
+        "radius": 2,
+        "threshold": "833/200",
+        "core_states": 73,
+        "core_edges": 206,
+        "reset": "2222"
+      },
+      "graph": "6bcb26ab7628c10d7d459dc44549e19150052fd829a4393b249bc1869c8ab31b",
+      "left": [
+        "12"
+      ],
+      "right": [
+        "23122",
+        "23123"
+      ],
+      "target": [
+        4.171797,
+        4.172072
+      ],
+      "dominance_bound": "3831/920",
+      "status": "completed_float",
+      "visited": 2177,
+      "leaves": 837,
+      "covered": [
+        [
+          4.171797,
+          4.172072
+        ]
+      ],
+      "gaps": [],
+      "rational_leaf_check": {
+        "covered": [
+          [
+            "4171797/1000000",
+            "521509/125000"
+          ]
+        ],
+        "maximum_width": "10430077421270504981616753/10444395532147155862783357834640"
+      }
+    },
+    {
+      "product": 232,
+      "model": {
+        "digits": 4,
+        "radius": 2,
+        "threshold": "833/200",
+        "core_states": 73,
+        "core_edges": 206,
+        "reset": "2222"
+      },
+      "graph": "6bcb26ab7628c10d7d459dc44549e19150052fd829a4393b249bc1869c8ab31b",
+      "left": [
+        "11",
+        "12",
+        "133"
+      ],
+      "right": [
+        "11",
+        "12",
+        "133"
+      ],
+      "target": [
+        4.17207,
+        4.178463
+      ],
+      "dominance_bound": "3831/920",
+      "status": "completed_float",
+      "visited": 52988,
+      "leaves": 20287,
+      "covered": [
+        [
+          4.17207,
+          4.178463
+        ]
+      ],
+      "gaps": [],
+      "rational_leaf_check": {
+        "covered": [
+          [
+            "417207/100000",
+            "4178463/1000000"
+          ]
+        ],
+        "maximum_width": "1260293209222238476020995/1260426607257624956971165890036"
+      }
+    },
+    {
+      "product": 233,
+      "model": {
+        "digits": 4,
+        "radius": 2,
+        "threshold": "833/200",
+        "core_states": 73,
+        "core_edges": 206,
+        "reset": "2222"
+      },
+      "graph": "6bcb26ab7628c10d7d459dc44549e19150052fd829a4393b249bc1869c8ab31b",
+      "left": [
+        "11",
+        "12",
+        "133"
+      ],
+      "right": [
+        "11",
+        "12",
+        "2"
+      ],
+      "target": [
+        4.178461,
+        4.219534
+      ],
+      "dominance_bound": "33792711338668/8091259082701",
+      "status": "completed_float",
+      "visited": 338088,
+      "leaves": 129419,
+      "covered": [
+        [
+          4.178461,
+          4.219534
+        ]
+      ],
+      "gaps": [],
+      "rational_leaf_check": {
+        "covered": [
+          [
+            "4178461/1000000",
+            "2109767/500000"
+          ]
+        ],
+        "maximum_width": "2169458212102088379826949/2169484726518300672811686914580"
+      }
+    },
+    {
+      "product": 389,
+      "model": {
+        "digits": 4,
+        "radius": 3,
+        "threshold": "211/50",
+        "core_states": 651,
+        "core_edges": 1888,
+        "reset": "222222"
+      },
+      "graph": "ffac17552891268b878c8da6917f187f08e55048b23171aa3a5a30a27e53834a",
+      "left": [
+        "11"
+      ],
+      "right": [
+        "11"
+      ],
+      "target": [
+        4.219532,
+        4.235001
+      ],
+      "dominance_bound": "10747/2548",
+      "status": "completed_float",
+      "visited": 124241,
+      "leaves": 47917,
+      "covered": [
+        [
+          4.219532,
+          4.235001
+        ]
+      ],
+      "gaps": [],
+      "rational_leaf_check": {
+        "covered": [
+          [
+            "1054883/250000",
+            "4235001/1000000"
+          ]
+        ],
+        "maximum_width": "1234907700333300343236522617/1234994657560839967384173012687090"
+      }
+    },
+    {
+      "product": -2,
+      "model": {
+        "digits": 4,
+        "radius": 4,
+        "threshold": "4233/1000",
+        "core_states": 5489,
+        "core_edges": 15941,
+        "reset": "22222222"
+      },
+      "graph": "29a827bd58cd0a4f6084979f8e5f4972c9ee4c8366ab89c224b6117c6a1ed078",
+      "left": [
+        "11",
+        "12"
+      ],
+      "right": [
+        "11",
+        "12"
+      ],
+      "target": [
+        4.234999,
+        4.358479
+      ],
+      "dominance_bound": "43540/10287",
+      "status": "completed_float",
+      "visited": 992452,
+      "leaves": 384398,
+      "covered": [
+        [
+          4.234999,
+          4.358479
+        ]
+      ],
+      "gaps": [],
+      "rational_leaf_check": {
+        "covered": [
+          [
+            "4234999/1000000",
+            "4358479/1000000"
+          ]
+        ],
+        "maximum_width": "475645712893674915804900809/475646031929367062058145102788600"
+      }
+    },
+    {
+      "product": 291,
+      "model": {
+        "digits": 4,
+        "radius": 2,
+        "threshold": "859/200",
+        "core_states": 77,
+        "core_edges": 224,
+        "reset": "2222"
+      },
+      "graph": "e9a29a2ca28d130c48e7207ab49c6028e46cc3bf255d1f0e110b00a691ee779e",
+      "left": [
+        "11"
+      ],
+      "right": [
+        "11",
+        "12",
+        "13113"
+      ],
+      "target": [
+        4.358477,
+        4.370965
+      ],
+      "dominance_bound": "1490123220874/342484165193",
+      "status": "completed_float",
+      "visited": 98477,
+      "leaves": 38481,
+      "covered": [
+        [
+          4.358477,
+          4.370965
+        ]
+      ],
+      "gaps": [],
+      "rational_leaf_check": {
+        "covered": [
+          [
+            "4358477/1000000",
+            "874193/200000"
+          ]
+        ],
+        "maximum_width": "115918926614160492575737/115920862074622439114109488100"
+      }
+    },
+    {
+      "product": 392,
+      "model": {
+        "digits": 4,
+        "radius": 3,
+        "threshold": "437/100",
+        "core_states": 703,
+        "core_edges": 2067,
+        "reset": "222222"
+      },
+      "graph": "8b79f5c5822043f2f1c4894b475816d4b06789271cc089c7c89ded865fa1c094",
+      "left": [
+        "11",
+        "12",
+        "133"
+      ],
+      "right": [
+        "11",
+        "12",
+        "133"
+      ],
+      "target": [
+        4.370963,
+        4.378064
+      ],
+      "dominance_bound": "5779/1323",
+      "status": "completed_float",
+      "visited": 56000,
+      "leaves": 21936,
+      "covered": [
+        [
+          4.370963,
+          4.378064
+        ]
+      ],
+      "gaps": [],
+      "rational_leaf_check": {
+        "covered": [
+          [
+            "4370963/1000000",
+            "273629/62500"
+          ]
+        ],
+        "maximum_width": "99983666141161074243197/99987252816983048944620426376"
+      }
+    },
+    {
+      "product": 311,
+      "model": {
+        "digits": 4,
+        "radius": 2,
+        "threshold": "859/200",
+        "core_states": 77,
+        "core_edges": 224,
+        "reset": "2222"
+      },
+      "graph": "e9a29a2ca28d130c48e7207ab49c6028e46cc3bf255d1f0e110b00a691ee779e",
+      "left": [
+        "11",
+        "12",
+        "13113"
+      ],
+      "right": [
+        "12",
+        "132",
+        "133"
+      ],
+      "target": [
+        4.378062,
+        4.448557
+      ],
+      "dominance_bound": "112142363652833/25738600676958",
+      "status": "completed_float",
+      "visited": 562881,
+      "leaves": 218928,
+      "covered": [
+        [
+          4.378062,
+          4.448557
+        ]
+      ],
+      "gaps": [],
+      "rational_leaf_check": {
+        "covered": [
+          [
+            "2189031/500000",
+            "4448557/1000000"
+          ]
+        ],
+        "maximum_width": "586924126540093712919293765/586925687956464762491524448164116"
+      }
+    },
+    {
+      "product": 369,
+      "model": {
+        "digits": 4,
+        "radius": 2,
+        "threshold": "4441/1000",
+        "core_states": 81,
+        "core_edges": 239,
+        "reset": "2222"
+      },
+      "graph": "3f1788f5cbd14f017a242f5fa975fa814c65a5abc0f9d9a0fdf764a4afeda643",
+      "left": [
+        "12",
+        "1311",
+        "132"
+      ],
+      "right": [
+        "12",
+        "1311",
+        "133"
+      ],
+      "target": [
+        4.448555,
+        4.52
+      ],
+      "dominance_bound": "2189/493",
+      "status": "completed_float",
+      "visited": 552673,
+      "leaves": 220037,
+      "covered": [
+        [
+          4.448555,
+          4.52
+        ]
+      ],
+      "gaps": [],
+      "rational_leaf_check": {
+        "covered": [
+          [
+            "889711/200000",
+            "113/25"
+          ]
+        ],
+        "maximum_width": "80845802749580761933309/80846075944829451279105341280"
+      }
+    }
+  ],
+  "gaps": [],
+  "merge_audit": {
+    "equivalent": true,
+    "visited_state_pairs": 8371,
+    "models": [
+      {
+        "digits": 4,
+        "radius": 4,
+        "threshold": "4233/1000",
+        "core_states": 5489,
+        "core_edges": 15941,
+        "reset": "22222222"
+      },
+      {
+        "digits": 4,
+        "radius": 3,
+        "threshold": "106/25",
+        "core_states": 651,
+        "core_edges": 1890,
+        "reset": "222222"
+      }
+    ]
+  },
+  "construction": "First validated 11 products; then independently validated the merged product for the exactly equivalent presentations in rows 6 and 7."
+}

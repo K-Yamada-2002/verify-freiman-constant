@@ -1,0 +1,218 @@
+{
+  "group": "section14",
+  "status": "PASS",
+  "records": [
+    {
+      "label": "verify_exact_normal",
+      "command": [
+        "verify_exact.py",
+        "certificates/geometry_1_1.json",
+        "certificates/geometry_1_2.json",
+        "certificates/geometry_1_3.json",
+        "certificates/geometry_1_31.json",
+        "certificates/geometry_2_1.json",
+        "certificates/geometry_2_2.json",
+        "certificates/geometry_2_3.json",
+        "certificates/geometry_2_31.json",
+        "certificates/geometry_31_1.json",
+        "certificates/geometry_31_2.json",
+        "certificates/geometry_31_3.json",
+        "certificates/geometry_31_31.json",
+        "certificates/geometry_3_1.json",
+        "certificates/geometry_3_2.json",
+        "certificates/geometry_3_3.json",
+        "certificates/geometry_3_31.json"
+      ],
+      "cwd": "work/report_parts/lower_section14/source_selected",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 98.892,
+      "log": "replay_logs/section14__verify_exact_normal.log",
+      "stdout": "EXACTLY VERIFIED 1 1 6228 records {'branches': 8886, 'componentwise': 4687, 'excluded_cases': 2029, 'active_cases': 19}\nEXACTLY VERIFIED 1 2 4949 records {'branches': 6226, 'componentwise': 3311, 'excluded_cases': 2034, 'active_cases': 14}\nEXACTLY VERIFIED 1 3 2754 records {'branches': 5235, 'componentwise': 2582, 'excluded_cases': 101, 'active_cases': 11}\nEXACTLY VERIFIED 1 31 2318 records {'branches': 4438, 'componentwise': 2238, 'excluded_cases': 118, 'active_cases': 10}\nEXACTLY VERIFIED 2 1 6987 records {'branches': 10356, 'componentwise': 5399, 'excluded_cases': 2030, 'active_cases': 18}\nEXACTLY VERIFIED 2 2 6170 records {'branches': 8656, 'componentwise': 4519, 'excluded_cases': 2033, 'active_cases': 15}\nEXACTLY VERIFIED 2 3 2743 records {'branches': 5224, 'componentwise': 2582, 'excluded_cases': 101, 'active_cases': 11}\nEXACTLY VERIFIED 2 31 2667 records {'branches': 5124, 'componentwise': 2575, 'excluded_cases': 118, 'active_cases': 10}\nEXACTLY VERIFIED 31 1 5032 records {'branches': 6532, 'componentwise': 3532, 'excluded_cases': 2032, 'active_cases': 16}\nEXACTLY VERIFIED 31 2 4110 records {'branches': 4557, 'componentwise': 2483, 'excluded_cases': 2036, 'active_cases': 12}\nEXACTLY VERIFIED 31 3 1755 records {'branches': 3179, 'componentwise': 1527, 'excluded_cases': 103, 'active_cases': 9}\nEXACTLY VERIFIED 31 31 1909 records {'branches': 3638, 'componentwise': 1848, 'excluded_cases': 119, 'active_cases': 9}\nEXACTLY VERIFIED 3 1 3625 records {'branches': 6199, 'componentwise': 3073, 'excluded_cases': 499, 'active_cases': 13}\nEXACTLY VERIFIED 3 2 3179 records {'branches': 5310, 'componentwise': 2631, 'excluded_cases': 500, 'active_cases': 12}\nEXACTLY VERIFIED 3 3 1376 records {'branches': 2667, 'componentwise': 1313, 'excluded_cases': 22, 'active_cases': 6}\nEXACTLY VERIFIED 3 31 2667 records {'branches': 5057, 'componentwise': 2506, 'excluded_cases': 116, 'active_cases': 12}",
+      "stderr": ""
+    },
+    {
+      "label": "verify_exact_O",
+      "command": [
+        "-O",
+        "verify_exact.py",
+        "certificates/geometry_1_1.json",
+        "certificates/geometry_1_2.json",
+        "certificates/geometry_1_3.json",
+        "certificates/geometry_1_31.json",
+        "certificates/geometry_2_1.json",
+        "certificates/geometry_2_2.json",
+        "certificates/geometry_2_3.json",
+        "certificates/geometry_2_31.json",
+        "certificates/geometry_31_1.json",
+        "certificates/geometry_31_2.json",
+        "certificates/geometry_31_3.json",
+        "certificates/geometry_31_31.json",
+        "certificates/geometry_3_1.json",
+        "certificates/geometry_3_2.json",
+        "certificates/geometry_3_3.json",
+        "certificates/geometry_3_31.json"
+      ],
+      "cwd": "work/report_parts/lower_section14/source_selected",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 103.872,
+      "log": "replay_logs/section14__verify_exact_O.log",
+      "stdout": "EXACTLY VERIFIED 1 1 6228 records {'branches': 8886, 'componentwise': 4687, 'excluded_cases': 2029, 'active_cases': 19}\nEXACTLY VERIFIED 1 2 4949 records {'branches': 6226, 'componentwise': 3311, 'excluded_cases': 2034, 'active_cases': 14}\nEXACTLY VERIFIED 1 3 2754 records {'branches': 5235, 'componentwise': 2582, 'excluded_cases': 101, 'active_cases': 11}\nEXACTLY VERIFIED 1 31 2318 records {'branches': 4438, 'componentwise': 2238, 'excluded_cases': 118, 'active_cases': 10}\nEXACTLY VERIFIED 2 1 6987 records {'branches': 10356, 'componentwise': 5399, 'excluded_cases': 2030, 'active_cases': 18}\nEXACTLY VERIFIED 2 2 6170 records {'branches': 8656, 'componentwise': 4519, 'excluded_cases': 2033, 'active_cases': 15}\nEXACTLY VERIFIED 2 3 2743 records {'branches': 5224, 'componentwise': 2582, 'excluded_cases': 101, 'active_cases': 11}\nEXACTLY VERIFIED 2 31 2667 records {'branches': 5124, 'componentwise': 2575, 'excluded_cases': 118, 'active_cases': 10}\nEXACTLY VERIFIED 31 1 5032 records {'branches': 6532, 'componentwise': 3532, 'excluded_cases': 2032, 'active_cases': 16}\nEXACTLY VERIFIED 31 2 4110 records {'branches': 4557, 'componentwise': 2483, 'excluded_cases': 2036, 'active_cases': 12}\nEXACTLY VERIFIED 31 3 1755 records {'branches': 3179, 'componentwise': 1527, 'excluded_cases': 103, 'active_cases': 9}\nEXACTLY VERIFIED 31 31 1909 records {'branches': 3638, 'componentwise': 1848, 'excluded_cases': 119, 'active_cases': 9}\nEXACTLY VERIFIED 3 1 3625 records {'branches': 6199, 'componentwise': 3073, 'excluded_cases': 499, 'active_cases': 13}\nEXACTLY VERIFIED 3 2 3179 records {'branches': 5310, 'componentwise': 2631, 'excluded_cases': 500, 'active_cases': 12}\nEXACTLY VERIFIED 3 3 1376 records {'branches': 2667, 'componentwise': 1313, 'excluded_cases': 22, 'active_cases': 6}\nEXACTLY VERIFIED 3 31 2667 records {'branches': 5057, 'componentwise': 2506, 'excluded_cases': 116, 'active_cases': 12}",
+      "stderr": ""
+    },
+    {
+      "label": "verify_independent_normal",
+      "command": [
+        "verify_independent.py",
+        "certificates/geometry_1_1.json",
+        "certificates/geometry_1_2.json",
+        "certificates/geometry_1_3.json",
+        "certificates/geometry_1_31.json",
+        "certificates/geometry_2_1.json",
+        "certificates/geometry_2_2.json",
+        "certificates/geometry_2_3.json",
+        "certificates/geometry_2_31.json",
+        "certificates/geometry_31_1.json",
+        "certificates/geometry_31_2.json",
+        "certificates/geometry_31_3.json",
+        "certificates/geometry_31_31.json",
+        "certificates/geometry_3_1.json",
+        "certificates/geometry_3_2.json",
+        "certificates/geometry_3_3.json",
+        "certificates/geometry_3_31.json"
+      ],
+      "cwd": "work/report_parts/lower_section14/source_selected",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 55.422,
+      "log": "replay_logs/section14__verify_independent_normal.log",
+      "stdout": "INDEPENDENTLY VERIFIED 1 1 6228 records 6222 distinct proofs {'branches': 8886, 'componentwise': 4687, 'excluded_cases': 2029, 'active_cases': 19}\nINDEPENDENTLY VERIFIED 1 2 4949 records 4947 distinct proofs {'branches': 6226, 'componentwise': 3311, 'excluded_cases': 2034, 'active_cases': 14}\nINDEPENDENTLY VERIFIED 1 3 2754 records 2740 distinct proofs {'branches': 5235, 'componentwise': 2582, 'excluded_cases': 101, 'active_cases': 11}\nINDEPENDENTLY VERIFIED 1 31 2318 records 2318 distinct proofs {'branches': 4438, 'componentwise': 2238, 'excluded_cases': 118, 'active_cases': 10}\nINDEPENDENTLY VERIFIED 2 1 6987 records 6981 distinct proofs {'branches': 10356, 'componentwise': 5399, 'excluded_cases': 2030, 'active_cases': 18}\nINDEPENDENTLY VERIFIED 2 2 6170 records 6167 distinct proofs {'branches': 8656, 'componentwise': 4519, 'excluded_cases': 2033, 'active_cases': 15}\nINDEPENDENTLY VERIFIED 2 3 2743 records 2729 distinct proofs {'branches': 5224, 'componentwise': 2582, 'excluded_cases': 101, 'active_cases': 11}\nINDEPENDENTLY VERIFIED 2 31 2667 records 2667 distinct proofs {'branches': 5124, 'componentwise': 2575, 'excluded_cases': 118, 'active_cases': 10}\nINDEPENDENTLY VERIFIED 31 1 5032 records 5027 distinct proofs {'branches': 6532, 'componentwise': 3532, 'excluded_cases': 2032, 'active_cases': 16}\nINDEPENDENTLY VERIFIED 31 2 4110 records 4108 distinct proofs {'branches': 4557, 'componentwise': 2483, 'excluded_cases': 2036, 'active_cases': 12}\nINDEPENDENTLY VERIFIED 31 3 1755 records 1747 distinct proofs {'branches': 3179, 'componentwise': 1527, 'excluded_cases': 103, 'active_cases': 9}\nINDEPENDENTLY VERIFIED 31 31 1909 records 1909 distinct proofs {'branches': 3638, 'componentwise': 1848, 'excluded_cases': 119, 'active_cases': 9}\nINDEPENDENTLY VERIFIED 3 1 3625 records 3625 distinct proofs {'branches': 6199, 'componentwise': 3073, 'excluded_cases': 499, 'active_cases': 13}\nINDEPENDENTLY VERIFIED 3 2 3179 records 3179 distinct proofs {'branches': 5310, 'componentwise': 2631, 'excluded_cases': 500, 'active_cases': 12}\nINDEPENDENTLY VERIFIED 3 3 1376 records 1376 distinct proofs {'branches': 2667, 'componentwise': 1313, 'excluded_cases': 22, 'active_cases': 6}\nINDEPENDENTLY VERIFIED 3 31 2667 records 2667 distinct proofs {'branches': 5057, 'componentwise': 2506, 'excluded_cases': 116, 'active_cases': 12}",
+      "stderr": ""
+    },
+    {
+      "label": "verify_independent_O",
+      "command": [
+        "-O",
+        "verify_independent.py",
+        "certificates/geometry_1_1.json",
+        "certificates/geometry_1_2.json",
+        "certificates/geometry_1_3.json",
+        "certificates/geometry_1_31.json",
+        "certificates/geometry_2_1.json",
+        "certificates/geometry_2_2.json",
+        "certificates/geometry_2_3.json",
+        "certificates/geometry_2_31.json",
+        "certificates/geometry_31_1.json",
+        "certificates/geometry_31_2.json",
+        "certificates/geometry_31_3.json",
+        "certificates/geometry_31_31.json",
+        "certificates/geometry_3_1.json",
+        "certificates/geometry_3_2.json",
+        "certificates/geometry_3_3.json",
+        "certificates/geometry_3_31.json"
+      ],
+      "cwd": "work/report_parts/lower_section14/source_selected",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 56.001,
+      "log": "replay_logs/section14__verify_independent_O.log",
+      "stdout": "INDEPENDENTLY VERIFIED 1 1 6228 records 6222 distinct proofs {'branches': 8886, 'componentwise': 4687, 'excluded_cases': 2029, 'active_cases': 19}\nINDEPENDENTLY VERIFIED 1 2 4949 records 4947 distinct proofs {'branches': 6226, 'componentwise': 3311, 'excluded_cases': 2034, 'active_cases': 14}\nINDEPENDENTLY VERIFIED 1 3 2754 records 2740 distinct proofs {'branches': 5235, 'componentwise': 2582, 'excluded_cases': 101, 'active_cases': 11}\nINDEPENDENTLY VERIFIED 1 31 2318 records 2318 distinct proofs {'branches': 4438, 'componentwise': 2238, 'excluded_cases': 118, 'active_cases': 10}\nINDEPENDENTLY VERIFIED 2 1 6987 records 6981 distinct proofs {'branches': 10356, 'componentwise': 5399, 'excluded_cases': 2030, 'active_cases': 18}\nINDEPENDENTLY VERIFIED 2 2 6170 records 6167 distinct proofs {'branches': 8656, 'componentwise': 4519, 'excluded_cases': 2033, 'active_cases': 15}\nINDEPENDENTLY VERIFIED 2 3 2743 records 2729 distinct proofs {'branches': 5224, 'componentwise': 2582, 'excluded_cases': 101, 'active_cases': 11}\nINDEPENDENTLY VERIFIED 2 31 2667 records 2667 distinct proofs {'branches': 5124, 'componentwise': 2575, 'excluded_cases': 118, 'active_cases': 10}\nINDEPENDENTLY VERIFIED 31 1 5032 records 5027 distinct proofs {'branches': 6532, 'componentwise': 3532, 'excluded_cases': 2032, 'active_cases': 16}\nINDEPENDENTLY VERIFIED 31 2 4110 records 4108 distinct proofs {'branches': 4557, 'componentwise': 2483, 'excluded_cases': 2036, 'active_cases': 12}\nINDEPENDENTLY VERIFIED 31 3 1755 records 1747 distinct proofs {'branches': 3179, 'componentwise': 1527, 'excluded_cases': 103, 'active_cases': 9}\nINDEPENDENTLY VERIFIED 31 31 1909 records 1909 distinct proofs {'branches': 3638, 'componentwise': 1848, 'excluded_cases': 119, 'active_cases': 9}\nINDEPENDENTLY VERIFIED 3 1 3625 records 3625 distinct proofs {'branches': 6199, 'componentwise': 3073, 'excluded_cases': 499, 'active_cases': 13}\nINDEPENDENTLY VERIFIED 3 2 3179 records 3179 distinct proofs {'branches': 5310, 'componentwise': 2631, 'excluded_cases': 500, 'active_cases': 12}\nINDEPENDENTLY VERIFIED 3 3 1376 records 1376 distinct proofs {'branches': 2667, 'componentwise': 1313, 'excluded_cases': 22, 'active_cases': 6}\nINDEPENDENTLY VERIFIED 3 31 2667 records 2667 distinct proofs {'branches': 5057, 'componentwise': 2506, 'excluded_cases': 116, 'active_cases': 12}",
+      "stderr": ""
+    },
+    {
+      "label": "verify_full_tex_normal",
+      "command": [
+        "verify_full_tex.py"
+      ],
+      "cwd": "work/report_parts/lower_section14/source_selected",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 19.948,
+      "log": "replay_logs/section14__verify_full_tex_normal.log",
+      "stdout": "INDEPENDENTLY VERIFIED ACTUAL TEX: 58469 original records; 16598 lossless groups; 730 thresholds; 1736 exact polynomial domains; 1731 proof types",
+      "stderr": ""
+    },
+    {
+      "label": "verify_full_tex_O",
+      "command": [
+        "-O",
+        "verify_full_tex.py"
+      ],
+      "cwd": "work/report_parts/lower_section14/source_selected",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 22.005,
+      "log": "replay_logs/section14__verify_full_tex_O.log",
+      "stdout": "INDEPENDENTLY VERIFIED ACTUAL TEX: 58469 original records; 16598 lossless groups; 730 thresholds; 1736 exact polynomial domains; 1731 proof types",
+      "stderr": ""
+    },
+    {
+      "label": "negative_controls_normal",
+      "command": [
+        "negative_controls.py"
+      ],
+      "cwd": "work/report_parts/lower_section14/source_selected",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 5.372,
+      "log": "replay_logs/section14__negative_controls_normal.log",
+      "stdout": "REJECTED deleted obligation : ('missing obligation', ('H22-chain', 15, \"good ('1', '') 0 [(1, 1), ()]\", 0))\nREJECTED removed witness premises : ('premises mismatch', ('H2', 0, 'EXCLUDED', -1))\nREJECTED open geometry flag : open geometry\nREJECTED changed parameter rectangle : state rectangle\nREJECTED incomplete branch accounting : complete branch counts\nREJECTED duplicate obligation : duplicate goal\nREJECTED incomplete rectangle cover : rectangle split\nCOMPLETE: all 7 invalid controls rejected",
+      "stderr": ""
+    },
+    {
+      "label": "negative_controls_O",
+      "command": [
+        "-O",
+        "negative_controls.py"
+      ],
+      "cwd": "work/report_parts/lower_section14/source_selected",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 6.149,
+      "log": "replay_logs/section14__negative_controls_O.log",
+      "stdout": "REJECTED deleted obligation : ('missing obligation', ('H22-chain', 15, \"good ('1', '') 0 [(1, 1), ()]\", 0))\nREJECTED removed witness premises : ('premises mismatch', ('H2', 0, 'EXCLUDED', -1))\nREJECTED open geometry flag : open geometry\nREJECTED changed parameter rectangle : state rectangle\nREJECTED incomplete branch accounting : complete branch counts\nREJECTED duplicate obligation : duplicate goal\nREJECTED incomplete rectangle cover : rectangle split\nCOMPLETE: all 7 invalid controls rejected",
+      "stderr": ""
+    },
+    {
+      "label": "missing_record",
+      "command": [
+        "-O",
+        "verify_exact.py",
+        "/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/tmpljdnhu_i/missing_record.json"
+      ],
+      "cwd": "work/report_parts/lower_section14/source_selected",
+      "exit_code": 1,
+      "expected": "reject",
+      "status": "PASS",
+      "seconds": 11.488,
+      "log": "replay_logs/section14__missing_record.log",
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/private/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-math-replay-iw2pcwwg/work/report_parts/lower_section14/source_selected/verify_exact.py\", line 68, in <module>\n    for path in sys.argv[1:]:main(path)\n                             ^^^^^^^^^^\n  File \"/private/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-math-replay-iw2pcwwg/work/report_parts/lower_section14/source_selected/verify_exact.py\", line 63, in main\n    check((name,pi,goal,j),cs)\n  File \"/private/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-math-replay-iw2pcwwg/work/report_parts/lower_section14/source_selected/verify_exact.py\", line 47, in check\n    need(key in lookup,('missing obligation',key));ci,ti=lookup[key]\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/private/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-math-replay-iw2pcwwg/work/report_parts/lower_section14/source_selected/verify_exact.py\", line 8, in need\n    if not ok:raise ArithmeticError(message)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nArithmeticError: ('missing obligation', ('H22-chain', 255, \"good ('1', '') 0 [(1, 1), ()]\", 0))"
+    },
+    {
+      "label": "false_bound",
+      "command": [
+        "-O",
+        "verify_exact.py",
+        "/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/tmpljdnhu_i/false_bound.json"
+      ],
+      "cwd": "work/report_parts/lower_section14/source_selected",
+      "exit_code": 1,
+      "expected": "reject",
+      "status": "PASS",
+      "seconds": 0.523,
+      "log": "replay_logs/section14__false_bound.log",
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/private/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-math-replay-iw2pcwwg/work/report_parts/lower_section14/source_selected/verify_exact.py\", line 68, in <module>\n    for path in sys.argv[1:]:main(path)\n                             ^^^^^^^^^^\n  File \"/private/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-math-replay-iw2pcwwg/work/report_parts/lower_section14/source_selected/verify_exact.py\", line 55, in main\n    if excluded in lookup:check(excluded,base);counts['excluded_cases']+=1;continue\n                          ^^^^^^^^^^^^^^^^^^^^\n  File \"/private/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-math-replay-iw2pcwwg/work/report_parts/lower_section14/source_selected/verify_exact.py\", line 48, in check\n    need(premises[ci]==cs,('premise mismatch',key))\n  File \"/private/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-math-replay-iw2pcwwg/work/report_parts/lower_section14/source_selected/verify_exact.py\", line 8, in need\n    if not ok:raise ArithmeticError(message)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nArithmeticError: ('premise mismatch', ('H2', 0, 'EXCLUDED', -1))"
+    }
+  ]
+}

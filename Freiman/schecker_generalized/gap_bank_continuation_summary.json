@@ -1,0 +1,173 @@
+{
+  "status": "incomplete induction",
+  "branches": [
+    {
+      "file": "repaired_frontier_round2.json",
+      "scope": "chosen strategy only; finite rank does not refute filledness",
+      "proof_hash": "87122182749d332a15579d2e2f99290758e0afb8735027f328b8072d04d4c808",
+      "nodes": 3023,
+      "root_ranks": {
+        "zero": 4,
+        "positive": 4
+      },
+      "histogram": {
+        "0": 1911,
+        "1": 748,
+        "2": 332,
+        "3": 30,
+        "4": 2
+      },
+      "structurally_closed": 0,
+      "local": 1112,
+      "open": 1911,
+      "saved_gap_witnesses": 0
+    },
+    {
+      "file": "zero_frontier_with_gaps.json",
+      "scope": "chosen strategy only; finite rank does not refute filledness",
+      "proof_hash": "3942e05d4f0249d55313ace158d151d54870af8c199f401c4f0cf56be1f43af7",
+      "nodes": 3153,
+      "root_ranks": {
+        "zero": 4,
+        "positive": 4
+      },
+      "histogram": {
+        "0": 1997,
+        "1": 778,
+        "2": 342,
+        "3": 33,
+        "4": 3
+      },
+      "structurally_closed": 0,
+      "local": 1156,
+      "open": 1997,
+      "saved_gap_witnesses": 6
+    },
+    {
+      "file": "corrected_root_gap_repair.json",
+      "scope": "chosen strategy only; finite rank does not refute filledness",
+      "proof_hash": "6556cdc77387350eaddee008a8abeb1e46e2c5c97bcf396c0188dd906c826329",
+      "nodes": 3086,
+      "root_ranks": {
+        "zero": 4,
+        "positive": 4
+      },
+      "histogram": {
+        "0": 1935,
+        "1": 768,
+        "2": 346,
+        "3": 35,
+        "4": 2
+      },
+      "structurally_closed": 0,
+      "local": 1151,
+      "open": 1935,
+      "saved_gap_witnesses": 0
+    },
+    {
+      "file": "zero_round2_parent_repair.json",
+      "scope": "chosen strategy only; finite rank does not refute filledness",
+      "proof_hash": "4b5e4abbffc472cac5f5c9e13a97cc2d2a221e2073a1e5f79c2d2ea0a87fefa5",
+      "nodes": 3153,
+      "root_ranks": {
+        "zero": 4,
+        "positive": 4
+      },
+      "histogram": {
+        "0": 1997,
+        "1": 778,
+        "2": 342,
+        "3": 33,
+        "4": 3
+      },
+      "structurally_closed": 0,
+      "local": 1156,
+      "open": 1997,
+      "saved_gap_witnesses": 7
+    },
+    {
+      "file": "zero_round2_longer_step.json",
+      "scope": "chosen strategy only; finite rank does not refute filledness",
+      "proof_hash": "3942e05d4f0249d55313ace158d151d54870af8c199f401c4f0cf56be1f43af7",
+      "nodes": 3153,
+      "root_ranks": {
+        "zero": 4,
+        "positive": 4
+      },
+      "histogram": {
+        "0": 1997,
+        "1": 778,
+        "2": 342,
+        "3": 33,
+        "4": 3
+      },
+      "structurally_closed": 0,
+      "local": 1156,
+      "open": 1997,
+      "saved_gap_witnesses": 7
+    },
+    {
+      "file": "zero_round2_invariant_repair.json",
+      "scope": "chosen strategy only; finite rank does not refute filledness",
+      "proof_hash": "e29f5be182caadf0c2bcf05eaea04cd4de3615c0b0a70889eed85839e3c7d201",
+      "nodes": 3153,
+      "root_ranks": {
+        "zero": 4,
+        "positive": 4
+      },
+      "histogram": {
+        "0": 1997,
+        "1": 778,
+        "2": 342,
+        "3": 33,
+        "4": 3
+      },
+      "structurally_closed": 0,
+      "local": 1156,
+      "open": 1997,
+      "saved_gap_witnesses": 7
+    },
+    {
+      "file": "zero_round2_repaired_expansion.json",
+      "scope": "chosen strategy only; finite rank does not refute filledness",
+      "proof_hash": "08c5bed65680a97f161a3dac8f4a79406d14ecdc5d557e66e571db6ee71eeb03",
+      "nodes": 3155,
+      "root_ranks": {
+        "zero": 4,
+        "positive": 4
+      },
+      "histogram": {
+        "0": 1998,
+        "1": 778,
+        "2": 342,
+        "3": 33,
+        "4": 4
+      },
+      "structurally_closed": 0,
+      "local": 1157,
+      "open": 1998,
+      "saved_gap_witnesses": 7
+    }
+  ],
+  "recommended_state": "zero_round2_repaired_expansion.state.json",
+  "tests": {
+    "full_suite_passed": 168,
+    "additional_test_passed": 1,
+    "latest_focused_suite_passed": 10
+  },
+  "additional_probe": {
+    "source": "repaired_frontier_round2.json",
+    "node": 3008,
+    "requested_depths": [
+      8,
+      9
+    ],
+    "status": "terminated without a verdict after over five minutes and approximately 1.2 GB memory use",
+    "no_gap_claim": false
+  },
+  "discarded_repair": {
+    "file": "zero_round2_parent_repair.json",
+    "reason": "anchor change retained a known false child; replaced by invariant repair",
+    "audit": "zero_round2_false_repair_audit.json"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "group": "j_family",
+  "status": "PASS",
+  "records": [
+    {
+      "label": "check_j_short_normal",
+      "command": [
+        "check_j_short.py"
+      ],
+      "cwd": "verification/revision_math",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 0.276,
+      "log": "replay_logs/j_family__check_j_short_normal.log",
+      "stdout": "{\n  \"status\": \"passed\",\n  \"signs\": 28,\n  \"polynomials\": 2,\n  \"endpoint_branches\": 28\n}",
+      "stderr": ""
+    },
+    {
+      "label": "check_j_short_O",
+      "command": [
+        "-O",
+        "check_j_short.py"
+      ],
+      "cwd": "verification/revision_math",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 1.191,
+      "log": "replay_logs/j_family__check_j_short_O.log",
+      "stdout": "{\n  \"status\": \"passed\",\n  \"signs\": 28,\n  \"polynomials\": 2,\n  \"endpoint_branches\": 28\n}",
+      "stderr": ""
+    }
+  ]
+}

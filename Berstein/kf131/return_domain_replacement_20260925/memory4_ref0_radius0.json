@@ -1,0 +1,222 @@
+{
+  "schema": "kf131-scalar-atlas-v1",
+  "settings": {
+    "base": 0.996,
+    "bins": 512,
+    "memory": 4,
+    "grid": 1024000000,
+    "max_step": 2,
+    "block_span": 1
+  },
+  "nodes": [
+    {
+      "id": 0,
+      "states": [
+        "2222",
+        "2222"
+      ],
+      "parity": 1,
+      "ratio_bin": 108,
+      "ratio_refinement": [
+        5,
+        18
+      ],
+      "interval": [
+        -193244909,
+        -192220909
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": 2
+    },
+    {
+      "id": 1,
+      "states": [
+        "2222",
+        "2222"
+      ],
+      "parity": 1,
+      "ratio_bin": 108,
+      "ratio_refinement": [
+        0,
+        0
+      ],
+      "interval": [
+        -1,
+        1
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 2,
+      "states": [
+        "2223",
+        "2223"
+      ],
+      "parity": 1,
+      "ratio_bin": 108,
+      "ratio_refinement": [
+        0,
+        0
+      ],
+      "interval": [
+        -1,
+        1
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 3,
+      "states": [
+        "2223",
+        "2233"
+      ],
+      "parity": -1,
+      "ratio_bin": 488,
+      "ratio_refinement": [
+        0,
+        0
+      ],
+      "interval": [
+        -1,
+        1
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 4,
+      "states": [
+        "2233",
+        "2331"
+      ],
+      "parity": -1,
+      "ratio_bin": 102,
+      "ratio_refinement": [
+        0,
+        0
+      ],
+      "interval": [
+        -1,
+        1
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 5,
+      "states": [
+        "2233",
+        "3311"
+      ],
+      "parity": 1,
+      "ratio_bin": 353,
+      "ratio_refinement": [
+        0,
+        0
+      ],
+      "interval": [
+        -1,
+        1
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 6,
+      "states": [
+        "2233",
+        "3311"
+      ],
+      "parity": 1,
+      "ratio_bin": 354,
+      "ratio_refinement": [
+        0,
+        0
+      ],
+      "interval": [
+        -1,
+        1
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 7,
+      "states": [
+        "2331",
+        "2333"
+      ],
+      "parity": 1,
+      "ratio_bin": 493,
+      "ratio_refinement": [
+        0,
+        0
+      ],
+      "interval": [
+        -1,
+        1
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 8,
+      "states": [
+        "3311",
+        "2332"
+      ],
+      "parity": -1,
+      "ratio_bin": 85,
+      "ratio_refinement": [
+        0,
+        0
+      ],
+      "interval": [
+        -1,
+        1
+      ],
+      "covered": false,
+      "children": []
+    },
+    {
+      "id": 9,
+      "states": [
+        "2331",
+        "2332"
+      ],
+      "parity": 1,
+      "ratio_bin": 337,
+      "ratio_refinement": [
+        0,
+        0
+      ],
+      "interval": [
+        -1,
+        1
+      ],
+      "covered": false,
+      "children": []
+    }
+  ],
+  "roots": [
+    0
+  ],
+  "closed_candidate": false,
+  "status": "equivalent conjunction of open interval obligations; no filling proved",
+  "open_nodes": 10,
+  "root_prefixes": [
+    "22121222213212222222222",
+    "22111222231331222222222"
+  ],
+  "domain_exploration": {
+    "memory": 4,
+    "refinement": 0,
+    "radius": 0,
+    "replace_original": true,
+    "same_physical_seed": true,
+    "closed": false
+  }
+}

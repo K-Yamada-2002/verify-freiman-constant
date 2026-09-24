@@ -1,0 +1,23 @@
+{
+  "status": "PASS_MATHEMATICAL_GROUPS",
+  "scope": "Mathematical certificate groups only; not complete package or PDF verification",
+  "groups": [
+    "global_selection",
+    "initial",
+    "foundations_upper",
+    "section14",
+    "section15",
+    "terminal",
+    "late",
+    "j_family",
+    "targets_bridges",
+    "suffix_histories",
+    "middle",
+    "translation"
+  ],
+  "execution_tree": "/var/folders/wg/7j0j31_j5gxgqcy1_96cgz480000gn/T/freiman-math-replay-iw2pcwwg",
+  "python": "3.12.2 (main, Mar 17 2024, 16:11:24) [Clang 15.0.0 (clang-1500.1.0.2.5)]",
+  "returncode": 0,
+  "source_unchanged": true,
+  "seconds": 1171.104
+}

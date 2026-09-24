@@ -1,0 +1,235 @@
+{
+  "status": "incomplete induction",
+  "tests": 162,
+  "branches": [
+    {
+      "file": "propagated_incoming.json",
+      "scope": "chosen strategy only; finite rank does not refute filledness",
+      "proof_hash": "5ee38f1770f2623fd227ca9caa7966113147ca5e26ee0a19cf922f7a25381427",
+      "nodes": 2908,
+      "root_ranks": {
+        "zero": 2,
+        "positive": 2
+      },
+      "histogram": {
+        "0": 1828,
+        "1": 726,
+        "2": 327,
+        "3": 27
+      },
+      "structurally_closed": 0,
+      "verified_rules": 1080,
+      "open_nodes": 1828,
+      "failed_rules": 0
+    },
+    {
+      "file": "known_returns_run.json",
+      "scope": "chosen strategy only; finite rank does not refute filledness",
+      "proof_hash": "cc0d2e8d43226915e434fccfc18c4d2b53a0adb631fed01f3862ea21f21baee5",
+      "nodes": 3664,
+      "root_ranks": {
+        "zero": 2,
+        "positive": 2
+      },
+      "histogram": {
+        "0": 2459,
+        "1": 784,
+        "2": 380,
+        "3": 41
+      },
+      "structurally_closed": 0,
+      "verified_rules": 1205,
+      "open_nodes": 2459,
+      "failed_rules": 0
+    },
+    {
+      "file": "root_shape_expansion.json",
+      "scope": "chosen strategy only; finite rank does not refute filledness",
+      "proof_hash": "fdf00c811bfa0a2357fdfcc4cf5e3a3d55332ce2618d04e3c64f85f5b01e68f3",
+      "nodes": 2911,
+      "root_ranks": {
+        "zero": 2,
+        "positive": 3
+      },
+      "histogram": {
+        "0": 1830,
+        "1": 726,
+        "2": 327,
+        "3": 28
+      },
+      "structurally_closed": 0,
+      "verified_rules": 1081,
+      "open_nodes": 1830,
+      "failed_rules": 0
+    },
+    {
+      "file": "root_memory_expansion.json",
+      "scope": "chosen strategy only; finite rank does not refute filledness",
+      "proof_hash": "b5042ebfb275fcfa5e970c28b14e2969b543f91062ca41b96d751e329b3011d2",
+      "nodes": 2961,
+      "root_ranks": {
+        "zero": 3,
+        "positive": 4
+      },
+      "histogram": {
+        "0": 1860,
+        "1": 735,
+        "2": 334,
+        "3": 31,
+        "4": 1
+      },
+      "structurally_closed": 0,
+      "verified_rules": 1101,
+      "open_nodes": 1860,
+      "failed_rules": 0
+    },
+    {
+      "file": "root_native_continuation.json",
+      "scope": "chosen strategy only; finite rank does not refute filledness",
+      "proof_hash": "e7e42f74e503e3a51f96aec58ed7a8c2b1805af8127aca5dc7bff1e50cbb9337",
+      "nodes": 3125,
+      "root_ranks": {
+        "zero": 4,
+        "positive": 4
+      },
+      "histogram": {
+        "0": 1960,
+        "1": 777,
+        "2": 349,
+        "3": 37,
+        "4": 2
+      },
+      "structurally_closed": 0,
+      "verified_rules": 1165,
+      "open_nodes": 1960,
+      "failed_rules": 0
+    },
+    {
+      "file": "exact_offers_search.json",
+      "scope": "chosen strategy only; finite rank does not refute filledness",
+      "proof_hash": "c5eac4a36fa6e52b719548f25ed5caaa3ecd31a57a6c9c19cc36461095f5b8fe",
+      "nodes": 205,
+      "root_ranks": {
+        "zero": 4,
+        "positive": 4
+      },
+      "histogram": {
+        "0": 124,
+        "1": 51,
+        "2": 20,
+        "3": 8,
+        "4": 2
+      },
+      "structurally_closed": 0,
+      "verified_rules": 81,
+      "open_nodes": 124,
+      "failed_rules": 0
+    },
+    {
+      "file": "gap_parent_repair.json",
+      "scope": "chosen strategy only; finite rank does not refute filledness",
+      "proof_hash": "170fdebd1a34f93cc238d4b4b878599c0fb1bfd6c0524e7531730ce7065d735d",
+      "nodes": 3124,
+      "root_ranks": {
+        "zero": 4,
+        "positive": 4
+      },
+      "histogram": {
+        "0": 1959,
+        "1": 777,
+        "2": 349,
+        "3": 37,
+        "4": 2
+      },
+      "structurally_closed": 0,
+      "verified_rules": 1165,
+      "open_nodes": 1959,
+      "failed_rules": 0
+    },
+    {
+      "file": "zero_parent_repair.json",
+      "scope": "chosen strategy only; finite rank does not refute filledness",
+      "proof_hash": "170fdebd1a34f93cc238d4b4b878599c0fb1bfd6c0524e7531730ce7065d735d",
+      "nodes": 3124,
+      "root_ranks": {
+        "zero": 4,
+        "positive": 4
+      },
+      "histogram": {
+        "0": 1959,
+        "1": 777,
+        "2": 349,
+        "3": 37,
+        "4": 2
+      },
+      "structurally_closed": 0,
+      "verified_rules": 1165,
+      "open_nodes": 1959,
+      "failed_rules": 0
+    },
+    {
+      "file": "zero_root_gap_repair.json",
+      "scope": "chosen strategy only; finite rank does not refute filledness",
+      "proof_hash": "6556cdc77387350eaddee008a8abeb1e46e2c5c97bcf396c0188dd906c826329",
+      "nodes": 3086,
+      "root_ranks": {
+        "zero": 4,
+        "positive": 4
+      },
+      "histogram": {
+        "0": 1935,
+        "1": 768,
+        "2": 346,
+        "3": 35,
+        "4": 2
+      },
+      "structurally_closed": 0,
+      "verified_rules": 1151,
+      "open_nodes": 1935,
+      "failed_rules": 0
+    },
+    {
+      "file": "zero_root_exact_offers.json",
+      "scope": "chosen strategy only; finite rank does not refute filledness",
+      "proof_hash": "3faa3f307a9494639cff278b1df2b862c4c97a7a0ebbf426df43ff4e95f32462",
+      "nodes": 2963,
+      "root_ranks": {
+        "zero": 1,
+        "positive": 4
+      },
+      "histogram": {
+        "0": 1875,
+        "1": 734,
+        "2": 326,
+        "3": 27,
+        "4": 1
+      },
+      "structurally_closed": 0,
+      "verified_rules": 1088,
+      "open_nodes": 1875,
+      "failed_rules": 0
+    }
+  ],
+  "obstructions": {
+    "source": "root_native_continuation.json",
+    "exact_replayed_nodes": [
+      2934,
+      945,
+      2013,
+      838,
+      826,
+      812
+    ],
+    "files": [
+      "root_native_failed_probes.json",
+      "zero_parent_gap_probes.json",
+      "zero_parent_deep_probe.json"
+    ],
+    "note": "945,838,826 belong to singleton charts descending from n=0; these refute selected intermediate intervals, not the root convex hull"
+  },
+  "references": [
+    "../../Berstein/kf131/SCALAR_OBSTRUCTIONS.md",
+    "../../Berstein/kf131/GAP_INTERVAL_REPAIR.md"
+  ],
+  "root_repair_reproduction_hash": "6556cdc77387350eaddee008a8abeb1e46e2c5c97bcf396c0188dd906c826329"
+}

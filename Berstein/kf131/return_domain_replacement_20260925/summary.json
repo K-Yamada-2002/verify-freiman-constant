@@ -1,0 +1,20 @@
+[
+  {
+    "name": "memory2_ref0_radius0",
+    "types": 10,
+    "moves": 29,
+    "status": "positive-width closure impossible for this fixed return family"
+  },
+  {
+    "name": "memory3_ref0_radius0",
+    "types": 10,
+    "moves": 38,
+    "status": "positive-width closure impossible for this fixed return family"
+  },
+  {
+    "name": "memory4_ref0_radius0",
+    "types": 10,
+    "moves": 33,
+    "status": "positive-width closure impossible for this fixed return family"
+  }
+]

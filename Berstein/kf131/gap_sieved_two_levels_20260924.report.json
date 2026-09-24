@@ -1,0 +1,8 @@
+{
+  "nodes": 114,
+  "open_nodes": 96,
+  "verified_local_rules": 18,
+  "newly_covered_reachable": 6,
+  "roots": 12,
+  "status": "exact local patch; open obligations remain"
+}

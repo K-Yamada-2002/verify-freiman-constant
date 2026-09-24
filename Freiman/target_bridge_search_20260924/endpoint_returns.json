@@ -1,0 +1,20 @@
+{
+  "status": "PASS_ALL_INDEX_ENDPOINT_IDENTITIES",
+  "periods": [
+    "313121",
+    "131213",
+    "131312"
+  ],
+  "eigenvalue": {
+    "a": "43",
+    "b": "2",
+    "decimal": "85.9883705204093540784880"
+  },
+  "minimum": {
+    "a": "2221564096/491993569",
+    "b": "283748/491993569",
+    "decimal": "4.5278295661608791408827"
+  },
+  "upper_formula": "4 + T_(3211 S^n 33)([0;overline(131213)]) + T_(4322 S^n)([0;overline(131312)])",
+  "scope": "Word-state returns, fixed-point identities and recurrence imply the formulas for every n and m."
+}

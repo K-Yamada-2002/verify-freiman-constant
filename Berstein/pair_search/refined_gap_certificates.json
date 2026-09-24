@@ -1,0 +1,194 @@
+[
+  {
+    "visited": 395,
+    "excluded_leaves": 248,
+    "max_depth": 13,
+    "leaf_sha256": "0876a6f6b4f33b00bef3e27aa839843bdcbf6dd1dd135935f20484d17ed641ed",
+    "claim": 1,
+    "excluded_closed_interval": [
+      "1124769867670081/1000000000000000",
+      "1124769893571867/1000000000000000"
+    ],
+    "decimal_display": [
+      1.124769867670081,
+      1.124769893571867
+    ],
+    "midpoint": "562384940310487/500000000000000"
+  },
+  {
+    "visited": 441,
+    "excluded_leaves": 276,
+    "max_depth": 15,
+    "leaf_sha256": "2e70a9ef720e31f22427c03925af29bd904cdbcc86a0aa355c72155e6abcec14",
+    "claim": 1,
+    "excluded_closed_interval": [
+      "4499079659610739/4000000000000000",
+      "4499079664437401/4000000000000000"
+    ],
+    "decimal_display": [
+      1.1247699149026849,
+      1.1247699161093503
+    ],
+    "midpoint": "449907966202407/400000000000000"
+  },
+  {
+    "visited": 543,
+    "excluded_leaves": 331,
+    "max_depth": 14,
+    "leaf_sha256": "85d1dbf86ae845112faeaeb5c873f31d5498bc49b491571b712a2e8321c34c5f",
+    "claim": 1,
+    "excluded_closed_interval": [
+      "4646325489202267/4000000000000000",
+      "929265098236501/800000000000000"
+    ],
+    "decimal_display": [
+      1.1615813723005668,
+      1.1615813727956263
+    ],
+    "midpoint": "2323162745096193/2000000000000000"
+  },
+  {
+    "visited": 545,
+    "excluded_leaves": 335,
+    "max_depth": 14,
+    "leaf_sha256": "45d0d3f726165a0c01edcf4d8ad903ecd3a031a09c0451aae7988e127ebcb06d",
+    "claim": 1,
+    "excluded_closed_interval": [
+      "2323162748153943/2000000000000000",
+      "464632550075693/400000000000000"
+    ],
+    "decimal_display": [
+      1.1615813740769716,
+      1.1615813751892325
+    ],
+    "midpoint": "580790687316551/500000000000000"
+  },
+  {
+    "visited": 376,
+    "excluded_leaves": 239,
+    "max_depth": 13,
+    "leaf_sha256": "5e3e621e594be42832eb113e1bdb2cf38725f3e2aff1fa3c147e48000691dace",
+    "claim": 3,
+    "excluded_closed_interval": [
+      "2346121609293017/2000000000000000",
+      "2346121642581983/2000000000000000"
+    ],
+    "decimal_display": [
+      1.1730608046465085,
+      1.1730608212909914
+    ],
+    "midpoint": "7507589203/6400000000"
+  },
+  {
+    "visited": 382,
+    "excluded_leaves": 243,
+    "max_depth": 13,
+    "leaf_sha256": "558f4132710cbcec9dd827ecb3f3bc3f6837f8d42dca1d8c64fb7f63de3179cb",
+    "claim": 3,
+    "excluded_closed_interval": [
+      "146632605089993/125000000000000",
+      "58653042185191/50000000000000"
+    ],
+    "decimal_display": [
+      1.173060840719944,
+      1.17306084370382
+    ],
+    "midpoint": "586530421105941/500000000000000"
+  },
+  {
+    "visited": 448,
+    "excluded_leaves": 285,
+    "max_depth": 15,
+    "leaf_sha256": "bcd2da661e48542121787bfc4a12d9a4d657affc558a9cb04ad5d6b89bd6340a",
+    "claim": 3,
+    "excluded_closed_interval": [
+      "2347332056229543/2000000000000000",
+      "2347332056655169/2000000000000000"
+    ],
+    "decimal_display": [
+      1.1736660281147715,
+      1.1736660283275846
+    ],
+    "midpoint": "586833014110589/500000000000000"
+  },
+  {
+    "visited": 182,
+    "excluded_leaves": 114,
+    "max_depth": 15,
+    "leaf_sha256": "74b3dee437fecd56c7e192c4b5176c15c7619ef5fad28ed80096be055f082d9f",
+    "claim": 7,
+    "excluded_closed_interval": [
+      "5468715650677339/4000000000000000",
+      "5468715652710641/4000000000000000"
+    ],
+    "decimal_display": [
+      1.3671789126693348,
+      1.3671789131776602
+    ],
+    "midpoint": "546871565169399/400000000000000"
+  },
+  {
+    "visited": 167,
+    "excluded_leaves": 108,
+    "max_depth": 14,
+    "leaf_sha256": "4d5e9f5f8c0d85367e7bbd21b8c2e818b061d4d8556f7eb0bbb827f21fd57515",
+    "claim": 9,
+    "excluded_closed_interval": [
+      "552885740158587/400000000000000",
+      "552885741399081/400000000000000"
+    ],
+    "decimal_display": [
+      1.3822143503964675,
+      1.3822143534977025
+    ],
+    "midpoint": "276442870389417/200000000000000"
+  },
+  {
+    "visited": 184,
+    "excluded_leaves": 117,
+    "max_depth": 17,
+    "leaf_sha256": "03147ab635580c2d93f1dc079e4b53acd37bacaf13d5876167ccd9db4a620ec0",
+    "claim": 9,
+    "excluded_closed_interval": [
+      "2764429534401121/2000000000000000",
+      "2764429534648339/2000000000000000"
+    ],
+    "decimal_display": [
+      1.3822147672005605,
+      1.3822147673241696
+    ],
+    "midpoint": "276442953452473/200000000000000"
+  },
+  {
+    "visited": 144,
+    "excluded_leaves": 94,
+    "max_depth": 12,
+    "leaf_sha256": "4d299a06965a7851f1f49451955780a191fa7f994e49f6de20e8f69b2d94f15e",
+    "claim": 9,
+    "excluded_closed_interval": [
+      "5528860013309149/4000000000000000",
+      "5528860082151383/4000000000000000"
+    ],
+    "decimal_display": [
+      1.3822150033272873,
+      1.3822150205378458
+    ],
+    "midpoint": "2764430023865133/2000000000000000"
+  },
+  {
+    "visited": 146,
+    "excluded_leaves": 95,
+    "max_depth": 14,
+    "leaf_sha256": "10b56c0ce7c76bba391a5a85e1dce6d80b73cf5e3f30cabd9010db5df22bdbaf",
+    "claim": 9,
+    "excluded_closed_interval": [
+      "5528861350078847/4000000000000000",
+      "5528861384415533/4000000000000000"
+    ],
+    "decimal_display": [
+      1.3822153375197117,
+      1.3822153461038833
+    ],
+    "midpoint": "552886136724719/400000000000000"
+  }
+]

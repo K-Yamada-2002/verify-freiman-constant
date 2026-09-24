@@ -1,0 +1,213 @@
+{
+  "source": "periodic_outer_all_five_coalesced_20260924.json",
+  "source_sha256": "4a0e56b142f9855178e458532fa269cd4357698b2d3a363b6b3d9884f25388a1",
+  "graph": {
+    "nodes": 51,
+    "local_rules": 15,
+    "open_nodes": 36,
+    "supported_nodes": [],
+    "root_ranks": [
+      4
+    ]
+  },
+  "original_frontier_now_locally_covered": [
+    9,
+    11,
+    12,
+    13,
+    14
+  ],
+  "all_local_checks": [
+    {
+      "node": 0,
+      "children": 1,
+      "dependencies": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "node": 1,
+      "children": 1,
+      "dependencies": [
+        4,
+        5
+      ]
+    },
+    {
+      "node": 2,
+      "children": 1,
+      "dependencies": [
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "node": 3,
+      "children": 1,
+      "dependencies": [
+        6,
+        7
+      ]
+    },
+    {
+      "node": 4,
+      "children": 1,
+      "dependencies": [
+        11
+      ]
+    },
+    {
+      "node": 5,
+      "children": 1,
+      "dependencies": [
+        9,
+        11
+      ]
+    },
+    {
+      "node": 6,
+      "children": 1,
+      "dependencies": [
+        10,
+        12
+      ]
+    },
+    {
+      "node": 7,
+      "children": 1,
+      "dependencies": [
+        12
+      ]
+    },
+    {
+      "node": 8,
+      "children": 1,
+      "dependencies": [
+        11,
+        12
+      ]
+    },
+    {
+      "node": 9,
+      "children": 3,
+      "dependencies": [
+        15,
+        16,
+        18,
+        20,
+        25,
+        26
+      ]
+    },
+    {
+      "node": 10,
+      "children": 1,
+      "dependencies": [
+        13,
+        14
+      ]
+    },
+    {
+      "node": 11,
+      "children": 3,
+      "dependencies": [
+        17,
+        18,
+        19,
+        20,
+        22,
+        24,
+        26,
+        27,
+        28
+      ]
+    },
+    {
+      "node": 12,
+      "children": 3,
+      "dependencies": [
+        21,
+        22,
+        23,
+        24,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "node": 13,
+      "children": 11,
+      "dependencies": [
+        31,
+        32,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        49
+      ]
+    },
+    {
+      "node": 14,
+      "children": 11,
+      "dependencies": [
+        32,
+        33,
+        34,
+        36,
+        39,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50
+      ]
+    }
+  ],
+  "all_initial_hulls": true,
+  "seed": [
+    {
+      "a": {
+        "a": "148559885596003049778047912919258143/169677463425570357004670501888000000",
+        "b": "0"
+      },
+      "b": {
+        "a": "-1967260440521088730154966300095089/84838731712785178502335250944000000",
+        "b": "0"
+      },
+      "decimal": "0.8427497082859128394602"
+    },
+    {
+      "a": {
+        "a": "148589527510579413578601149836506143/169677463425570357004670501888000000",
+        "b": "0"
+      },
+      "b": {
+        "a": "-1977740439923238333071301937599089/84838731712785178502335250944000000",
+        "b": "0"
+      },
+      "decimal": "0.8427497082859128395072"
+    }
+  ],
+  "same_physical_seed": true,
+  "known_refutations": [],
+  "bank_size": 2137,
+  "closed": false,
+  "tests": {
+    "full_suite_passed": 47,
+    "repair_tests_rerun_after_lazy_envelopes": 18
+  },
+  "closure_error": "node 30 is an open obligation"
+}

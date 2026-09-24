@@ -1,0 +1,10 @@
+{
+  "source": "repaired_frontier_round2.json",
+  "node": 3008,
+  "requested_depths": [
+    8,
+    9
+  ],
+  "status": "terminated without a verdict after over five minutes and approximately 1.2 GB memory use",
+  "no_gap_claim": false
+}

@@ -1,0 +1,33 @@
+{
+  "status": "local audit only; no infinite filling assertion",
+  "verified_rules": [
+    {
+      "node": 0,
+      "children": 3,
+      "dependencies": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "node": 1,
+      "children": 3,
+      "dependencies": [
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "failed_rules": [],
+  "open_nodes": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "proof_hash": "56a025796e136ca2d7959dc397aa801f49d60e346fc8e40bc8455baa8d55a249"
+}

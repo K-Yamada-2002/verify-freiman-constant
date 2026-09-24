@@ -1,0 +1,10 @@
+{
+  "source": "periodic_outer_atom_current_20260924.json",
+  "source_sha256": "77d37eb098c1768edb097d6a636737d58bada77e517c47ec9a586edb91a3c2d9",
+  "obstructions": [],
+  "unresolved": [
+    9,
+    11,
+    12
+  ]
+}

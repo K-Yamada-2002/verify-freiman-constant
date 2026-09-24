@@ -1,0 +1,35 @@
+{
+  "group": "translation",
+  "status": "PASS",
+  "records": [
+    {
+      "label": "verify_translation_current_normal",
+      "command": [
+        "verify_translation_current.py"
+      ],
+      "cwd": "work/release_tools",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 0.254,
+      "log": "replay_logs/translation__verify_translation_current_normal.log",
+      "stdout": "CURRENT TRANSLATION VERIFIED: 140 fragments,109+57 exact decimal records, correct six-digit maximum period.",
+      "stderr": ""
+    },
+    {
+      "label": "verify_translation_current_O",
+      "command": [
+        "-O",
+        "verify_translation_current.py"
+      ],
+      "cwd": "work/release_tools",
+      "exit_code": 0,
+      "expected": "accept",
+      "status": "PASS",
+      "seconds": 0.23,
+      "log": "replay_logs/translation__verify_translation_current_O.log",
+      "stdout": "CURRENT TRANSLATION VERIFIED: 140 fragments,109+57 exact decimal records, correct six-digit maximum period.",
+      "stderr": ""
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "source": "Berstein/pair_search/replacement_cover.json",
+  "neighborhoods": [
+    {
+      "claim": 2,
+      "target_sum": [
+        "1124769767670081/1000000000000000",
+        "1124770016109351/1000000000000000"
+      ],
+      "scan": {
+        "exponent": 12,
+        "scale": 1000000000000000,
+        "visited": 2067403,
+        "leaves": 719109,
+        "max_width_units": 1000,
+        "max_depth": 24,
+        "complete": true,
+        "covers_target": true,
+        "seconds": 0.542954,
+        "covered": [
+          [
+            1124769767670081,
+            1124770016109351
+          ]
+        ]
+      }
+    },
+    {
+      "claim": 3,
+      "target_sum": [
+        "580790636150283/500000000000000",
+        "1161581475189233/1000000000000000"
+      ],
+      "scan": {
+        "exponent": 12,
+        "scale": 1000000000000000,
+        "visited": 1689576,
+        "leaves": 589412,
+        "max_width_units": 1000,
+        "max_depth": 25,
+        "complete": true,
+        "covers_target": true,
+        "seconds": 0.726376,
+        "covered": [
+          [
+            1161581272300566,
+            1161581475189233
+          ]
+        ]
+      }
+    },
+    {
+      "claim": 5,
+      "target_sum": [
+        "293265176161627/250000000000000",
+        "58653047185191/50000000000000"
+      ],
+      "scan": {
+        "exponent": 12,
+        "scale": 1000000000000000,
+        "visited": 1977095,
+        "leaves": 690176,
+        "max_width_units": 1000,
+        "max_depth": 26,
+        "complete": true,
+        "covers_target": true,
+        "seconds": 0.534884,
+        "covered": [
+          [
+            1173060704646508,
+            1173060943703820
+          ]
+        ]
+      }
+    },
+    {
+      "claim": 5,
+      "target_sum": [
+        "1173665928114771/1000000000000000",
+        "234733225665517/200000000000000"
+      ],
+      "scan": {
+        "exponent": 12,
+        "scale": 1000000000000000,
+        "visited": 1671281,
+        "leaves": 584241,
+        "max_width_units": 1000,
+        "max_depth": 26,
+        "complete": true,
+        "covers_target": true,
+        "seconds": 0.4269,
+        "covered": [
+          [
+            1173665928114771,
+            1173666128327585
+          ]
+        ]
+      }
+    },
+    {
+      "claim": 9,
+      "target_sum": [
+        "683589406334667/500000000000000",
+        "1367179013177661/1000000000000000"
+      ],
+      "scan": {
+        "exponent": 12,
+        "scale": 1000000000000000,
+        "visited": 1595852,
+        "leaves": 556689,
+        "max_width_units": 1000,
+        "max_depth": 25,
+        "complete": true,
+        "covers_target": true,
+        "seconds": 0.389966,
+        "covered": [
+          [
+            1367178812669334,
+            1367179013177661
+          ]
+        ]
+      }
+    },
+    {
+      "claim": 10,
+      "target_sum": [
+        "1382214250396467/1000000000000000",
+        "1382214453497703/1000000000000000"
+      ],
+      "scan": {
+        "exponent": 12,
+        "scale": 1000000000000000,
+        "visited": 1644768,
+        "leaves": 569816,
+        "max_width_units": 1000,
+        "max_depth": 25,
+        "complete": true,
+        "covers_target": true,
+        "seconds": 0.455027,
+        "covered": [
+          [
+            1382214250396467,
+            1382214453497703
+          ]
+        ]
+      }
+    },
+    {
+      "claim": 10,
+      "target_sum": [
+        "17277683340007/12500000000000",
+        "138221486732417/100000000000000"
+      ],
+      "scan": {
+        "exponent": 12,
+        "scale": 1000000000000000,
+        "visited": 1613285,
+        "leaves": 558903,
+        "max_width_units": 1000,
+        "max_depth": 24,
+        "complete": true,
+        "covers_target": true,
+        "seconds": 0.507578,
+        "covered": [
+          [
+            1382214667200560,
+            1382214867324170
+          ]
+        ]
+      }
+    },
+    {
+      "claim": 10,
+      "target_sum": [
+        "1382214903327287/1000000000000000",
+        "691107560268923/500000000000000"
+      ],
+      "scan": {
+        "exponent": 12,
+        "scale": 1000000000000000,
+        "visited": 1764549,
+        "leaves": 609343,
+        "max_width_units": 1000,
+        "max_depth": 25,
+        "complete": true,
+        "covers_target": true,
+        "seconds": 0.438509,
+        "covered": [
+          [
+            1382214903327287,
+            1382215120537846
+          ]
+        ]
+      }
+    },
+    {
+      "claim": 10,
+      "target_sum": [
+        "1382215237519711/1000000000000000",
+        "345553861525971/250000000000000"
+      ],
+      "scan": {
+        "exponent": 12,
+        "scale": 1000000000000000,
+        "visited": 1691747,
+        "leaves": 585682,
+        "max_width_units": 1000,
+        "max_depth": 25,
+        "complete": true,
+        "covers_target": true,
+        "seconds": 0.417454,
+        "covered": [
+          [
+            1382215237519711,
+            1382215446103884
+          ]
+        ]
+      }
+    }
+  ]
+}

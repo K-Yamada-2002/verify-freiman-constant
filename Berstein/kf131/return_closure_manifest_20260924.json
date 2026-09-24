@@ -1,0 +1,36 @@
+{
+  "closed": false,
+  "current_branch": "periodic_memory4_partition_current_20260924.json",
+  "types": 58,
+  "conditional_local_rules": 23,
+  "open_obligations": 35,
+  "same_physical_seed": true,
+  "tests": {
+    "count": 58,
+    "result": "OK",
+    "command": "python3 -m unittest test_seed_refinement test_gap_interval_repair test_coalesce_open_types test_contract_scalar_graph test_whole_scalar_intervals test_reuse_gap_types test_periodic_return test_split_scalar_obligations test_return_barrier test_close_scalar_library test_return_widths"
+  },
+  "sha256": {
+    "RETURN_CLOSURE_STRATEGY.md": "f60b68356fb8f806b1d668531ca4734f0324555729fafe6c6d176b3b8b67e10b",
+    "RESTRICTED_BOX_INDUCTION.md": "59ebe7e2145074bfbe0e769b9963e2741772d857ae7ace740780e8477d26b32c",
+    "audit_return_barrier.py": "2141124a1bba2b1a4b6b14bb15b858bf896da409214efb8493135cf4ed922262",
+    "audit_return_widths.py": "56c35bac1a783e6c3f319721e872ac59be0d389e56cb5b32d7fa240deb76b972",
+    "close_scalar_library.py": "b922a7d34e39225fdda3a204a65103150bcdf911252d925f383384832021479c",
+    "repair_gap_intervals.py": "2a341370cf779cd4b3b26d634ce39a92916b82099f39fa8716562567dd4b4f39",
+    "continue_gap_closure.py": "c11343c48de14a6b7665d73fc781c3f45b0955846cfa5b861b71af249796bb8e",
+    "periodic_return_barrier_verified_20260924.json": "c7aa69806f6605e489dc1bffda58183572e1abcc67e55d82f6f01f7d0fe8ee14",
+    "periodic_memory4_seed_20260924.json": "b5214576f964206e2cd8d61ba9245ec4c9066ef854ab598d3aef8e0a3434d99e",
+    "periodic_memory4_partition_current_20260924.json": "fc4d2a09a27264a1525880002415dd8e0e99662dc6ab970fa983f71a2f2e6c2f",
+    "periodic_memory4_partition_verification_20260924.json": "ee7fa3cbb6fa7fe7074cd7a4eb5c837088df52afda68007bf8167a8d81d96949",
+    "periodic_memory4_partition_closure_20260924.closure.json": "c3f91df42c2a391980471718eb49ab71678f214469deab81d3b5ff3ad6ee8ecd",
+    "periodic_memory4_block_closure_20260924.closure.json": "d8bd8d83ba6dda3ec273e2aedd9a6476e95b7a621021e79ff34b6499e7c257e8",
+    "periodic_memory4_return_components_20260924.json": "e7fb91d50d4ac80c609c065511314c85920b24e76148ec78edc0572306e48ce8",
+    "periodic_memory4_width_barrier_20260924.json": "996d2fe40e9c662ff3c0b54d8bd7eb6c288e4aa15c4094b6397d134107d9e910",
+    "periodic_memory4_width_barrier_length6_20260924.json": "d74029e1e7028b3aa1a7df869ad26b7fda544e0d84f1d468407845be7bd8f395",
+    "periodic_memory4_width_replay_20260924.json": "4783045500dce6307c489df65f54d56fbc8d774e136f9314bcbd5b2a92052e0c",
+    "test_return_barrier.py": "290d217e5cb90bee536d1e5467d61c8429d5d3ee8c6ef75dac069c8b65813204",
+    "test_return_widths.py": "772781bc8d83d7422a74ec47ead68ca7c5742c7a5e061e55b334f20d9d501e85",
+    "test_close_scalar_library.py": "f28a74c4e6580dec36491c3ccb185c8ee677415928e8e7a2bf2fe5d5d918745b",
+    "test_reuse_gap_types.py": "716813d485e1411c1040998bc740b3dbfa5b32fc60bc1f6b0a958930ec69c880"
+  }
+}

@@ -1,0 +1,279 @@
+{
+  "source": "schecker_target_3055_20260925.state.json",
+  "rows": [
+    {
+      "target": 2919,
+      "accepted": true,
+      "elapsed": 3.225928416941315,
+      "new_types": 2,
+      "reachable": 139,
+      "unresolved": 2057
+    },
+    {
+      "target": 2920,
+      "accepted": true,
+      "elapsed": 3.334911458194256,
+      "new_types": 3,
+      "reachable": 140,
+      "unresolved": 2059
+    },
+    {
+      "target": 2834,
+      "accepted": true,
+      "elapsed": 3.534532082732767,
+      "new_types": 3,
+      "reachable": 173,
+      "unresolved": 2061
+    },
+    {
+      "target": 2835,
+      "accepted": true,
+      "elapsed": 3.4011142500676215,
+      "new_types": 3,
+      "reachable": 174,
+      "unresolved": 2063
+    },
+    {
+      "target": 2836,
+      "accepted": true,
+      "elapsed": 3.445709583349526,
+      "new_types": 2,
+      "reachable": 175,
+      "unresolved": 2064
+    },
+    {
+      "target": 2837,
+      "accepted": true,
+      "elapsed": 3.4541735420934856,
+      "new_types": 2,
+      "reachable": 176,
+      "unresolved": 2065
+    },
+    {
+      "target": 2838,
+      "accepted": true,
+      "elapsed": 3.0480374172329903,
+      "new_types": 3,
+      "reachable": 177,
+      "unresolved": 2067
+    },
+    {
+      "target": 2839,
+      "accepted": true,
+      "elapsed": 3.2501332499086857,
+      "new_types": 3,
+      "reachable": 178,
+      "unresolved": 2069
+    },
+    {
+      "target": 2840,
+      "accepted": true,
+      "elapsed": 3.4047819580882788,
+      "new_types": 2,
+      "reachable": 179,
+      "unresolved": 2070
+    },
+    {
+      "target": 2841,
+      "accepted": true,
+      "elapsed": 3.1164473751559854,
+      "new_types": 2,
+      "reachable": 180,
+      "unresolved": 2071
+    },
+    {
+      "target": 2842,
+      "accepted": true,
+      "elapsed": 3.0381366247311234,
+      "new_types": 2,
+      "reachable": 181,
+      "unresolved": 2072
+    },
+    {
+      "target": 2843,
+      "accepted": true,
+      "elapsed": 3.199525124859065,
+      "new_types": 3,
+      "reachable": 182,
+      "unresolved": 2074
+    },
+    {
+      "target": 2844,
+      "accepted": true,
+      "elapsed": 3.432424125261605,
+      "new_types": 2,
+      "reachable": 183,
+      "unresolved": 2075
+    },
+    {
+      "target": 2845,
+      "accepted": true,
+      "elapsed": 3.527591582853347,
+      "new_types": 2,
+      "reachable": 184,
+      "unresolved": 2076
+    },
+    {
+      "target": 2846,
+      "accepted": true,
+      "elapsed": 3.342527125030756,
+      "new_types": 2,
+      "reachable": 185,
+      "unresolved": 2077
+    },
+    {
+      "target": 2847,
+      "accepted": true,
+      "elapsed": 3.470888040959835,
+      "new_types": 3,
+      "reachable": 186,
+      "unresolved": 2079
+    },
+    {
+      "target": 2848,
+      "accepted": true,
+      "elapsed": 3.3362801666371524,
+      "new_types": 3,
+      "reachable": 187,
+      "unresolved": 2081
+    },
+    {
+      "target": 2849,
+      "accepted": true,
+      "elapsed": 3.365686541888863,
+      "new_types": 3,
+      "reachable": 188,
+      "unresolved": 2083
+    },
+    {
+      "target": 2850,
+      "accepted": true,
+      "elapsed": 3.4868050422519445,
+      "new_types": 2,
+      "reachable": 189,
+      "unresolved": 2084
+    },
+    {
+      "target": 2851,
+      "accepted": true,
+      "elapsed": 3.477641749661416,
+      "new_types": 2,
+      "reachable": 190,
+      "unresolved": 2085
+    },
+    {
+      "target": 2854,
+      "accepted": true,
+      "elapsed": 3.265198666136712,
+      "new_types": 3,
+      "reachable": 193,
+      "unresolved": 2087
+    },
+    {
+      "target": 2855,
+      "accepted": true,
+      "elapsed": 3.263789457734674,
+      "new_types": 2,
+      "reachable": 194,
+      "unresolved": 2088
+    },
+    {
+      "target": 2856,
+      "accepted": true,
+      "elapsed": 3.8057349999435246,
+      "new_types": 2,
+      "reachable": 195,
+      "unresolved": 2089
+    },
+    {
+      "target": 2857,
+      "accepted": true,
+      "elapsed": 2.7111660833470523,
+      "new_types": 1,
+      "reachable": 196,
+      "unresolved": 2089
+    },
+    {
+      "target": 2859,
+      "accepted": true,
+      "elapsed": 3.330016916617751,
+      "new_types": 3,
+      "reachable": 198,
+      "unresolved": 2091
+    },
+    {
+      "target": 2861,
+      "accepted": true,
+      "elapsed": 3.5100879170931876,
+      "new_types": 2,
+      "reachable": 200,
+      "unresolved": 2092
+    },
+    {
+      "target": 2862,
+      "accepted": true,
+      "elapsed": 2.966740292031318,
+      "new_types": 2,
+      "reachable": 201,
+      "unresolved": 2093
+    },
+    {
+      "target": 2863,
+      "accepted": true,
+      "elapsed": 3.094423290807754,
+      "new_types": 2,
+      "reachable": 202,
+      "unresolved": 2094
+    },
+    {
+      "target": 2864,
+      "accepted": true,
+      "elapsed": 3.414841457735747,
+      "new_types": 2,
+      "reachable": 203,
+      "unresolved": 2095
+    },
+    {
+      "target": 2865,
+      "accepted": true,
+      "elapsed": 3.3698040419258177,
+      "new_types": 3,
+      "reachable": 204,
+      "unresolved": 2097
+    },
+    {
+      "target": 2866,
+      "accepted": true,
+      "elapsed": 2.92026758287102,
+      "new_types": 2,
+      "reachable": 205,
+      "unresolved": 2098
+    },
+    {
+      "target": 2867,
+      "accepted": true,
+      "elapsed": 2.276673666667193,
+      "new_types": 2,
+      "reachable": 206,
+      "unresolved": 2099
+    },
+    {
+      "target": 2980,
+      "accepted": true,
+      "elapsed": 2.9586404161527753,
+      "new_types": 3,
+      "reachable": 207,
+      "unresolved": 2101
+    }
+  ],
+  "seconds": 126.39206654205918,
+  "nodes": 3212,
+  "verified_rules": 1111,
+  "failed_rules": 0,
+  "open_nodes": 2101,
+  "closure": {
+    "closed": false,
+    "reason": "node 3133: unresolved type"
+  },
+  "proof_hash": "cd94b07c3fd542cbe6cc6f81fa780e6c73b4e20e7a3f19bc89efa269392c1603"
+}

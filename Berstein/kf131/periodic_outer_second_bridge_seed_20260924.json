@@ -1,0 +1,943 @@
+{
+  "schema": "kf131-scalar-atlas-v1",
+  "settings": {
+    "base": 0.996,
+    "bins": 512,
+    "memory": 8,
+    "grid": 1024000000,
+    "max_step": 4,
+    "block_span": 1
+  },
+  "nodes": [
+    {
+      "id": 0,
+      "states": [
+        "22222222",
+        "22222222"
+      ],
+      "parity": 1,
+      "ratio_bin": 108,
+      "ratio_refinement": [
+        5,
+        18
+      ],
+      "interval": [
+        -193244909,
+        -192220909
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            "3"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -231035187,
+                -219988125
+              ],
+              "destinations": [
+                1,
+                2,
+                3
+              ]
+            }
+          ]
+        }
+      ],
+      "source_node": 2
+    },
+    {
+      "id": 1,
+      "states": [
+        "22222223",
+        "22222223"
+      ],
+      "parity": 1,
+      "ratio_bin": 108,
+      "ratio_refinement": [
+        6,
+        35
+      ],
+      "interval": [
+        -231035187,
+        -219988125
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -158674910,
+                -141604187
+              ],
+              "destinations": [
+                4,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "source_node": -55
+    },
+    {
+      "id": 2,
+      "states": [
+        "22222223",
+        "22222223"
+      ],
+      "parity": 1,
+      "ratio_bin": 108,
+      "ratio_refinement": [
+        5,
+        18
+      ],
+      "interval": [
+        -231035187,
+        -219988125
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -158664976,
+                -141586458
+              ],
+              "destinations": [
+                7,
+                8,
+                4
+              ]
+            }
+          ]
+        }
+      ],
+      "source_node": -56
+    },
+    {
+      "id": 3,
+      "states": [
+        "22222223",
+        "22222223"
+      ],
+      "parity": 1,
+      "ratio_bin": 108,
+      "ratio_refinement": [
+        6,
+        38
+      ],
+      "interval": [
+        -231035187,
+        -219988125
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            ""
+          ],
+          "cases": [
+            {
+              "swap": true,
+              "interval": [
+                -158645110,
+                -141577595
+              ],
+              "destinations": [
+                6,
+                7
+              ]
+            }
+          ]
+        }
+      ],
+      "source_node": -58
+    },
+    {
+      "id": 4,
+      "states": [
+        "22222223",
+        "22222233"
+      ],
+      "parity": -1,
+      "ratio_bin": 488,
+      "ratio_refinement": [
+        6,
+        48
+      ],
+      "interval": [
+        -158674910,
+        -141586458
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            "1"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -284041326,
+                -97241676
+              ],
+              "destinations": [
+                11
+              ]
+            }
+          ]
+        }
+      ],
+      "source_node": -19
+    },
+    {
+      "id": 5,
+      "states": [
+        "22222223",
+        "22222233"
+      ],
+      "parity": -1,
+      "ratio_bin": 488,
+      "ratio_refinement": [
+        6,
+        49
+      ],
+      "interval": [
+        -158674910,
+        -141604187
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            "1"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -283874408,
+                -97268531
+              ],
+              "destinations": [
+                11,
+                9
+              ]
+            }
+          ]
+        }
+      ],
+      "source_node": -20
+    },
+    {
+      "id": 6,
+      "states": [
+        "22222223",
+        "22222233"
+      ],
+      "parity": -1,
+      "ratio_bin": 488,
+      "ratio_refinement": [
+        6,
+        45
+      ],
+      "interval": [
+        -158645110,
+        -141577595
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            "1"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -284057630,
+                -97486816
+              ],
+              "destinations": [
+                10,
+                12
+              ]
+            }
+          ]
+        }
+      ],
+      "source_node": -48
+    },
+    {
+      "id": 7,
+      "states": [
+        "22222223",
+        "22222233"
+      ],
+      "parity": -1,
+      "ratio_bin": 488,
+      "ratio_refinement": [
+        6,
+        46
+      ],
+      "interval": [
+        -158664976,
+        -141577595
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            "1"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -284084486,
+                -97296541
+              ],
+              "destinations": [
+                12
+              ]
+            }
+          ]
+        }
+      ],
+      "source_node": -49
+    },
+    {
+      "id": 8,
+      "states": [
+        "22222223",
+        "22222233"
+      ],
+      "parity": -1,
+      "ratio_bin": 488,
+      "ratio_refinement": [
+        6,
+        47
+      ],
+      "interval": [
+        -158664976,
+        -141586458
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "3",
+            "1"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -284014471,
+                -97323396
+              ],
+              "destinations": [
+                12,
+                11
+              ]
+            }
+          ]
+        }
+      ],
+      "source_node": -68
+    },
+    {
+      "id": 9,
+      "states": [
+        "22222233",
+        "22222331"
+      ],
+      "parity": -1,
+      "ratio_bin": 102,
+      "ratio_refinement": [
+        6,
+        36
+      ],
+      "interval": [
+        -283874408,
+        -97268531
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -13
+    },
+    {
+      "id": 10,
+      "states": [
+        "22222233",
+        "22222331"
+      ],
+      "parity": -1,
+      "ratio_bin": 102,
+      "ratio_refinement": [
+        6,
+        31
+      ],
+      "interval": [
+        -284057630,
+        -97486816
+      ],
+      "covered": true,
+      "children": [
+        {
+          "suffixes": [
+            "",
+            "1"
+          ],
+          "cases": [
+            {
+              "swap": false,
+              "interval": [
+                -114156798,
+                72424669
+              ],
+              "destinations": [
+                13,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                14,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34
+              ]
+            }
+          ]
+        }
+      ],
+      "source_node": -41
+    },
+    {
+      "id": 11,
+      "states": [
+        "22222233",
+        "22222331"
+      ],
+      "parity": -1,
+      "ratio_bin": 102,
+      "ratio_refinement": [
+        5,
+        17
+      ],
+      "interval": [
+        -284041326,
+        -97241676
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -71
+    },
+    {
+      "id": 12,
+      "states": [
+        "22222233",
+        "22222331"
+      ],
+      "parity": -1,
+      "ratio_bin": 102,
+      "ratio_refinement": [
+        5,
+        16
+      ],
+      "interval": [
+        -284084486,
+        -97296541
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -42
+    },
+    {
+      "id": 13,
+      "states": [
+        "22222233",
+        "22223311"
+      ],
+      "parity": 1,
+      "ratio_bin": 353,
+      "ratio_refinement": [
+        6,
+        0
+      ],
+      "interval": [
+        -114156798,
+        -67511432
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -42
+    },
+    {
+      "id": 14,
+      "states": [
+        "22222233",
+        "22223311"
+      ],
+      "parity": 1,
+      "ratio_bin": 354,
+      "ratio_refinement": [
+        6,
+        63
+      ],
+      "interval": [
+        -114156798,
+        -67511432
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -84
+    },
+    {
+      "id": 15,
+      "states": [
+        "22222233",
+        "22223311"
+      ],
+      "parity": 1,
+      "ratio_bin": 353,
+      "ratio_refinement": [
+        6,
+        0
+      ],
+      "interval": [
+        -67511432,
+        -61680762
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -42
+    },
+    {
+      "id": 16,
+      "states": [
+        "22222233",
+        "22223311"
+      ],
+      "parity": 1,
+      "ratio_bin": 353,
+      "ratio_refinement": [
+        6,
+        0
+      ],
+      "interval": [
+        -61680762,
+        -55850091
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -42
+    },
+    {
+      "id": 17,
+      "states": [
+        "22222233",
+        "22223311"
+      ],
+      "parity": 1,
+      "ratio_bin": 353,
+      "ratio_refinement": [
+        6,
+        0
+      ],
+      "interval": [
+        -55850091,
+        -50019420
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -42
+    },
+    {
+      "id": 18,
+      "states": [
+        "22222233",
+        "22223311"
+      ],
+      "parity": 1,
+      "ratio_bin": 353,
+      "ratio_refinement": [
+        6,
+        0
+      ],
+      "interval": [
+        -50019420,
+        -44188749
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -42
+    },
+    {
+      "id": 19,
+      "states": [
+        "22222233",
+        "22223311"
+      ],
+      "parity": 1,
+      "ratio_bin": 353,
+      "ratio_refinement": [
+        6,
+        0
+      ],
+      "interval": [
+        -44188749,
+        -38358078
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -42
+    },
+    {
+      "id": 20,
+      "states": [
+        "22222233",
+        "22223311"
+      ],
+      "parity": 1,
+      "ratio_bin": 353,
+      "ratio_refinement": [
+        6,
+        0
+      ],
+      "interval": [
+        -38358078,
+        -32527407
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -42
+    },
+    {
+      "id": 21,
+      "states": [
+        "22222233",
+        "22223311"
+      ],
+      "parity": 1,
+      "ratio_bin": 353,
+      "ratio_refinement": [
+        6,
+        0
+      ],
+      "interval": [
+        -32527407,
+        -26696736
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -42
+    },
+    {
+      "id": 22,
+      "states": [
+        "22222233",
+        "22223311"
+      ],
+      "parity": 1,
+      "ratio_bin": 353,
+      "ratio_refinement": [
+        6,
+        0
+      ],
+      "interval": [
+        -26696736,
+        -20866065
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -42
+    },
+    {
+      "id": 23,
+      "states": [
+        "22222233",
+        "22223311"
+      ],
+      "parity": 1,
+      "ratio_bin": 353,
+      "ratio_refinement": [
+        6,
+        0
+      ],
+      "interval": [
+        -20866065,
+        25779302
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -42
+    },
+    {
+      "id": 24,
+      "states": [
+        "22222233",
+        "22223311"
+      ],
+      "parity": 1,
+      "ratio_bin": 353,
+      "ratio_refinement": [
+        6,
+        0
+      ],
+      "interval": [
+        25779302,
+        72424669
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -42
+    },
+    {
+      "id": 25,
+      "states": [
+        "22222233",
+        "22223311"
+      ],
+      "parity": 1,
+      "ratio_bin": 354,
+      "ratio_refinement": [
+        6,
+        63
+      ],
+      "interval": [
+        -67511432,
+        -61680762
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -84
+    },
+    {
+      "id": 26,
+      "states": [
+        "22222233",
+        "22223311"
+      ],
+      "parity": 1,
+      "ratio_bin": 354,
+      "ratio_refinement": [
+        6,
+        63
+      ],
+      "interval": [
+        -61680762,
+        -55850091
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -84
+    },
+    {
+      "id": 27,
+      "states": [
+        "22222233",
+        "22223311"
+      ],
+      "parity": 1,
+      "ratio_bin": 354,
+      "ratio_refinement": [
+        6,
+        63
+      ],
+      "interval": [
+        -55850091,
+        -50019420
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -84
+    },
+    {
+      "id": 28,
+      "states": [
+        "22222233",
+        "22223311"
+      ],
+      "parity": 1,
+      "ratio_bin": 354,
+      "ratio_refinement": [
+        6,
+        63
+      ],
+      "interval": [
+        -50019420,
+        -44188749
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -84
+    },
+    {
+      "id": 29,
+      "states": [
+        "22222233",
+        "22223311"
+      ],
+      "parity": 1,
+      "ratio_bin": 354,
+      "ratio_refinement": [
+        6,
+        63
+      ],
+      "interval": [
+        -44188749,
+        -38358078
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -84
+    },
+    {
+      "id": 30,
+      "states": [
+        "22222233",
+        "22223311"
+      ],
+      "parity": 1,
+      "ratio_bin": 354,
+      "ratio_refinement": [
+        6,
+        63
+      ],
+      "interval": [
+        -38358078,
+        -32527407
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -84
+    },
+    {
+      "id": 31,
+      "states": [
+        "22222233",
+        "22223311"
+      ],
+      "parity": 1,
+      "ratio_bin": 354,
+      "ratio_refinement": [
+        6,
+        63
+      ],
+      "interval": [
+        -32527407,
+        -26696736
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -84
+    },
+    {
+      "id": 32,
+      "states": [
+        "22222233",
+        "22223311"
+      ],
+      "parity": 1,
+      "ratio_bin": 354,
+      "ratio_refinement": [
+        6,
+        63
+      ],
+      "interval": [
+        -26696736,
+        -20866065
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -84
+    },
+    {
+      "id": 33,
+      "states": [
+        "22222233",
+        "22223311"
+      ],
+      "parity": 1,
+      "ratio_bin": 354,
+      "ratio_refinement": [
+        6,
+        63
+      ],
+      "interval": [
+        -20866065,
+        25779302
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -84
+    },
+    {
+      "id": 34,
+      "states": [
+        "22222233",
+        "22223311"
+      ],
+      "parity": 1,
+      "ratio_bin": 354,
+      "ratio_refinement": [
+        6,
+        63
+      ],
+      "interval": [
+        25779302,
+        72424669
+      ],
+      "covered": false,
+      "children": [],
+      "source_node": -84
+    }
+  ],
+  "roots": [
+    0
+  ],
+  "closed_candidate": false,
+  "status": "equivalent conjunction of open interval obligations; no filling proved",
+  "open_nodes": 25,
+  "root_prefixes": [
+    "22121222213212222222222",
+    "22111222231331222222222"
+  ]
+}
