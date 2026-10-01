@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "known_3131_pair_gap_state": 3448224,
+  "corrupt_family_rejected": true,
+  "verifier_diagnostic": "The supplied family is not closed: 1 states failed.",
+  "algebraic_float_regression_cases": 12
+}

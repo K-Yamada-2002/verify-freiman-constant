@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "claim": "The saved finite and translation Hall chains need graph_wide only.",
+  "endpoint_status": "Separate existing endpoint certificate assumed; its band and root bound checked here.",
+  "kernel": "graph_wide",
+  "kernel_states": 3464816,
+  "fixed_entrance_conditions": 34,
+  "fixed_entrance_child_bands": 379,
+  "children_with_nonempty_extension": 379,
+  "direct_hall_rows": 51,
+  "hall_rows_replaced_by_entrances": 85,
+  "finite_hall_rows": 93,
+  "translation_hall_rows": 43,
+  "finite_chain_covered": true,
+  "translation_chain_covered": true,
+  "spectral_roots_recomputed": 91,
+  "bulk_bound": [
+    "0",
+    "4/19"
+  ],
+  "graph_m2_used_for_chains": false,
+  "sha256": {
+    "hall_ray_certificate.json": "bd8feefe19ca1533d7e0e0be51604e9ed8bd4f8be5d32babef665b7133be30c7",
+    "wide_bootstrap_certificate.json": "9ac548cd8c927c7602368068c10f76a3d8f2a5d2985f5812f542561a8f69a754",
+    "wide_bootstrap_search.py": "9b6f8322ebd2513f41eb835bb6205c94f34e9c41ced3cd19f45c5c24a2ff2c29",
+    "wide_bootstrap_verify.py": "0ad0aa3bb5a83b74f30150514a8022b0e6625c4d850c525a3382d4155bbd1e0c",
+    "graph_wide_verification_manifest.json": "f00eb0fad97c1994c1cc895c663134c723e3db528dacf01c9b9791495e07a2c8",
+    "endpoint_closure_verified.json": "5303c26317f01cf26689b40ebe41961fa1f1c1109373058679b19e6ff713dbf5"
+  }
+}

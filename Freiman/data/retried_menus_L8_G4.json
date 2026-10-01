@@ -1,0 +1,53 @@
+{
+  "proof_complete": false,
+  "records": [
+    {
+      "a": "321133",
+      "b": "432212",
+      "seconds": 59.845191955566406,
+      "status": "no_cover_within_limits",
+      "menu": null,
+      "candidate_count": 5778
+    },
+    {
+      "a": "32113123",
+      "b": "432232",
+      "seconds": 61.18820905685425,
+      "status": "no_cover_within_limits",
+      "menu": null,
+      "candidate_count": 6241
+    },
+    {
+      "a": "3211312",
+      "b": "43222",
+      "seconds": 64.1658308506012,
+      "status": "no_cover_within_limits",
+      "menu": null,
+      "candidate_count": 6275
+    },
+    {
+      "a": "3211311",
+      "b": "43222",
+      "seconds": 65.24371910095215,
+      "status": "no_cover_within_limits",
+      "menu": null,
+      "candidate_count": 6218
+    },
+    {
+      "a": "3211311",
+      "b": "43221",
+      "seconds": 64.57494783401489,
+      "status": "no_cover_within_limits",
+      "menu": null,
+      "candidate_count": 6098
+    },
+    {
+      "a": "321132",
+      "b": "432211",
+      "seconds": 67.59087586402893,
+      "status": "no_cover_within_limits",
+      "menu": null,
+      "candidate_count": 5996
+    }
+  ]
+}

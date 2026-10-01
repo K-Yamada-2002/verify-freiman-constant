@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "controls": [
+    {
+      "case": "kernel_control_cover",
+      "expected_survival": true,
+      "survivors": 20
+    },
+    {
+      "case": "kernel_control_gap",
+      "expected_survival": false,
+      "survivors": 0
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "a": "322",
+  "b": "431",
+  "center": 4,
+  "scope": "Spectral domination only; filling still requires a closed Lem2 certificate.",
+  "bulk_max": [
+    "0",
+    "4/19"
+  ],
+  "bulk_max_decimal": 4.525091633727301,
+  "bulk_window": [
+    3,
+    1,
+    3,
+    1,
+    2
+  ],
+  "radius": 9,
+  "enumerated_tail_prefixes": 57054,
+  "theta_upper": [
+    "1/3025",
+    "4/19"
+  ],
+  "theta_upper_decimal": 4.525422212239698,
+  "maximizing_bound": {
+    "type": "far_tail",
+    "radius": 9
+  },
+  "theta_le_cF": true,
+  "hull": [
+    [
+      "8512493/17339617",
+      "28004/17339617"
+    ],
+    [
+      "450943/744658",
+      "-8081/2233974"
+    ]
+  ],
+  "conditional_markov_interval": [
+    [
+      "77870961/17339617",
+      "28004/17339617"
+    ],
+    [
+      "3429575/744658",
+      "-8081/2233974"
+    ]
+  ],
+  "conditional_markov_interval_decimal": [
+    4.5256411467465965,
+    4.527819253452496
+  ],
+  "core_bounds": [
+    {
+      "position": -3,
+      "upper": [
+        "6028449/4206607",
+        "4206599/50479284"
+      ],
+      "decimal": 3.224269310582768
+    },
+    {
+      "position": -2,
+      "upper": [
+        "63785/19274",
+        "-115721/4452294"
+      ],
+      "decimal": 2.750718256140285
+    },
+    {
+      "position": -1,
+      "upper": [
+        "42909489/10395494",
+        "-226081/10395494"
+      ],
+      "decimal": 3.6602456893522968
+    },
+    {
+      "position": 1,
+      "upper": [
+        "4242651/926342",
+        "-8531/2779026"
+      ],
+      "decimal": 4.514022576811153
+    },
+    {
+      "position": 2,
+      "upper": [
+        "3771995/2140046",
+        "2477929/23540506"
+      ],
+      "decimal": 4.025105067309671
+    },
+    {
+      "position": 3,
+      "upper": [
+        "482139/1560271",
+        "1560263/18723252"
+      ],
+      "decimal": 2.1001827020563915
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "status": "proved",
+  "independent_endpoint_checks": 228,
+  "word_pair": [
+    "13",
+    "13"
+  ],
+  "gap": [
+    "7679/5000",
+    "192/125"
+  ],
+  "parent": [
+    [
+      "44/37",
+      "4/37"
+    ],
+    [
+      "-8/3",
+      "4/3"
+    ]
+  ],
+  "children": [
+    {
+      "digits": [
+        2,
+        2
+      ],
+      "endpoints": [
+        [
+          "254/173",
+          "4/173"
+        ],
+        [
+          "-8/3",
+          "4/3"
+        ]
+      ]
+    },
+    {
+      "digits": [
+        2,
+        3
+      ],
+      "endpoints": [
+        [
+          "8505/6401",
+          "420/6401"
+        ],
+        [
+          "-451/831",
+          "548/831"
+        ]
+      ]
+    },
+    {
+      "digits": [
+        3,
+        2
+      ],
+      "endpoints": [
+        [
+          "8505/6401",
+          "420/6401"
+        ],
+        [
+          "-451/831",
+          "548/831"
+        ]
+      ]
+    },
+    {
+      "digits": [
+        3,
+        3
+      ],
+      "endpoints": [
+        [
+          "44/37",
+          "4/37"
+        ],
+        [
+          "438/277",
+          "-4/277"
+        ]
+      ]
+    }
+  ],
+  "claim": "H is inside the full hull but disjoint from K_F(13)+K_F(13).",
+  "uniform_obstruction": {
+    "suffix": "13",
+    "same_parity": true,
+    "small_branch_width_ratio": [
+      "5/6",
+      "6/5"
+    ],
+    "gap_width_threshold": [
+      "16/9",
+      "-8/45"
+    ],
+    "threshold_strictly_greater_than": "6/5"
+  },
+  "global_sum_excluded": false,
+  "interior_proved": false
+}

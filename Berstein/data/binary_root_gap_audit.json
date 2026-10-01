@@ -1,0 +1,10 @@
+{
+  "depth": 5,
+  "root": [
+    "112",
+    "122"
+  ],
+  "parent_type": "binary+binary",
+  "gaps": [],
+  "interior_proved": false
+}

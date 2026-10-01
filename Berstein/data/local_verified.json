@@ -1,0 +1,53 @@
+{
+  "local_cover_proved": true,
+  "closed_recursion": false,
+  "root": [
+    "112",
+    "122"
+  ],
+  "B1": [
+    "4",
+    "131",
+    "3"
+  ],
+  "B2": [
+    "4",
+    "131"
+  ],
+  "menu": [
+    [
+      "1",
+      ""
+    ],
+    [
+      "2",
+      ""
+    ],
+    [
+      "3",
+      "2"
+    ]
+  ],
+  "failed_child": [
+    "1122",
+    "122"
+  ],
+  "rational_gap": [
+    "647729/500000",
+    "1295459/1000000"
+  ],
+  "exact_outer_gap": [
+    [
+      "1115714976/860951089",
+      "-123268/860951089"
+    ],
+    [
+      "57165253/44192529",
+      "26692/44192529"
+    ]
+  ],
+  "reason": "H is a genuine gap of both the second child and the entire root cylinder sum.",
+  "root_cylinder_sum_excluded": true,
+  "global_sum_excluded": false,
+  "interior_proved": false
+}

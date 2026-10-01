@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "checks": {
+    "exact_point_covers": 8,
+    "independent_uniform_rows": 3,
+    "binary_endpoint_rational_enclosures": 10,
+    "width_formula_enclosure_samples": 2250,
+    "exact_width_transitions": 75
+  },
+  "closed_lemma_proved": false,
+  "freiman_ray_proved": false
+}

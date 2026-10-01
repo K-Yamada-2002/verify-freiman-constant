@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "controls": [
+    {
+      "name": "cover",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "gap",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "missing_endpoint",
+      "expected": false,
+      "actual": false
+    }
+  ]
+}

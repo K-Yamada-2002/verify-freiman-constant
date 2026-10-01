@@ -1,0 +1,212 @@
+{
+  "passed": true,
+  "full_check": {
+    "passed": true,
+    "geometry_range": [
+      0,
+      484
+    ],
+    "adopted_rows": 3464816,
+    "adopted_cells": 150040,
+    "child_vertices": 40962030,
+    "endpoint_tests": 491043673,
+    "pair_tests": 40432647,
+    "certified_unions": 17438619,
+    "failed_cells": 0
+  },
+  "negative_controls": {
+    "passed": true,
+    "case_count": 9,
+    "cases": [
+      {
+        "name": "overlapping_cover",
+        "expected_accept": true,
+        "exit_code": 0,
+        "checker_result": {
+          "passed": true,
+          "geometry_range": [
+            0,
+            1
+          ],
+          "adopted_rows": 1,
+          "adopted_cells": 1,
+          "child_vertices": 4,
+          "endpoint_tests": 23,
+          "pair_tests": 4,
+          "certified_unions": 3,
+          "failed_cells": 0
+        },
+        "diagnostic": ""
+      },
+      {
+        "name": "middle_gap_and_false_reverse_overlap",
+        "expected_accept": false,
+        "exit_code": 1,
+        "checker_result": {
+          "passed": false,
+          "geometry_range": [
+            0,
+            1
+          ],
+          "adopted_rows": 1,
+          "adopted_cells": 1,
+          "child_vertices": 2,
+          "endpoint_tests": 9,
+          "pair_tests": 1,
+          "certified_unions": 0,
+          "failed_cells": 1
+        },
+        "diagnostic": "uncovered adopted row(s): geometry=0 bin=0 types=0, vertices=2"
+      },
+      {
+        "name": "missing_right_endpoint",
+        "expected_accept": false,
+        "exit_code": 1,
+        "checker_result": {
+          "passed": false,
+          "geometry_range": [
+            0,
+            1
+          ],
+          "adopted_rows": 1,
+          "adopted_cells": 1,
+          "child_vertices": 2,
+          "endpoint_tests": 10,
+          "pair_tests": 1,
+          "certified_unions": 1,
+          "failed_cells": 1
+        },
+        "diagnostic": "uncovered adopted row(s): geometry=0 bin=0 types=0, vertices=2"
+      },
+      {
+        "name": "missing_left_endpoint",
+        "expected_accept": false,
+        "exit_code": 1,
+        "checker_result": {
+          "passed": false,
+          "geometry_range": [
+            0,
+            1
+          ],
+          "adopted_rows": 1,
+          "adopted_cells": 1,
+          "child_vertices": 2,
+          "endpoint_tests": 9,
+          "pair_tests": 1,
+          "certified_unions": 1,
+          "failed_cells": 1
+        },
+        "diagnostic": "uncovered adopted row(s): geometry=0 bin=0 types=0, vertices=2"
+      },
+      {
+        "name": "two_state_closed_cover",
+        "expected_accept": true,
+        "exit_code": 0,
+        "checker_result": {
+          "passed": true,
+          "geometry_range": [
+            0,
+            4
+          ],
+          "adopted_rows": 4,
+          "adopted_cells": 4,
+          "child_vertices": 16,
+          "endpoint_tests": 92,
+          "pair_tests": 16,
+          "certified_unions": 12,
+          "failed_cells": 0
+        },
+        "diagnostic": ""
+      },
+      {
+        "name": "child_state_removed",
+        "expected_accept": false,
+        "exit_code": 1,
+        "checker_result": {
+          "passed": false,
+          "geometry_range": [
+            0,
+            4
+          ],
+          "adopted_rows": 1,
+          "adopted_cells": 1,
+          "child_vertices": 0,
+          "endpoint_tests": 0,
+          "pair_tests": 0,
+          "certified_unions": 0,
+          "failed_cells": 1
+        },
+        "diagnostic": "uncovered adopted row(s): geometry=0 bin=0 types=0, vertices=0"
+      },
+      {
+        "name": "two_bin_closed_cover",
+        "expected_accept": true,
+        "exit_code": 0,
+        "checker_result": {
+          "passed": true,
+          "geometry_range": [
+            0,
+            1
+          ],
+          "adopted_rows": 2,
+          "adopted_cells": 2,
+          "child_vertices": 2,
+          "endpoint_tests": 6,
+          "pair_tests": 0,
+          "certified_unions": 0,
+          "failed_cells": 0
+        },
+        "diagnostic": ""
+      },
+      {
+        "name": "cross_bin_child_removed",
+        "expected_accept": false,
+        "exit_code": 1,
+        "checker_result": {
+          "passed": false,
+          "geometry_range": [
+            0,
+            1
+          ],
+          "adopted_rows": 1,
+          "adopted_cells": 1,
+          "child_vertices": 0,
+          "endpoint_tests": 0,
+          "pair_tests": 0,
+          "certified_unions": 0,
+          "failed_cells": 1
+        },
+        "diagnostic": "uncovered adopted row(s): geometry=0 bin=0 types=0, vertices=0"
+      },
+      {
+        "name": "truncated_final_endpoint",
+        "expected_accept": null,
+        "exit_code": 2,
+        "checker_result": null,
+        "diagnostic": "verification error: missing transition endpoint"
+      }
+    ],
+    "one_way_overlap_explanation": "In the gap control at S=1, the children are [0,3/4] and [5/4,2]. The comparison 2>=0 passes, but 3/4>=5/4 fails. Omitting the second overlap inequality would wrongly connect endpoints of the parent [0,2].",
+    "scope": "Artificial certificates test coverage and recursive availability; not CF input semantics."
+  },
+  "compiler_flags": [
+    "clang++",
+    "-O2",
+    "-std=c++17",
+    "-Wall",
+    "-Wextra",
+    "-fsanitize=undefined",
+    "-fno-sanitize-recover=all"
+  ],
+  "scope": "Independent fixed-table coverage verifier; input CF semantics are checked separately by independent_input.py. Every adopted row is checked without deletion. No production checker code is imported. Proof comparisons use integer arithmetic; graph connectivity uses all retained vertices and no bounded frontier.",
+  "source_sha256": "afcfa622cde730ede065ac3db4d2c1a1625bc0f1c9e3a29ca97e7514873afbfb",
+  "sha256": {
+    "Berstein/audit/independent_kernel.cpp": "afcfa622cde730ede065ac3db4d2c1a1625bc0f1c9e3a29ca97e7514873afbfb",
+    "Berstein/audit/check_independent_kernel.py": "fe4c32d617a98a38e1b2122bbe0a913044a487cd98f5aaad428e280e9d29ae2e",
+    "Freiman/data/graph_wide.dat": "f920da96f3fc28c6182f4dc9f0a3836dac059186a3f54e33b484198ed51a2234",
+    "Freiman/data/graph_wide.json.alive.bin": "a75629b1148bdbc6890d02eb85562b722e0209fb13a0dc5ac3f5fdfc60dc93a5",
+    "Berstein/audit/independent_kernel_controls.json": "7b501d31f6ac3130e286412dbb91ec2c42a7f57c728eb0fe97faf4c1fd5577c6",
+    "Berstein/audit/independent_kernel_ubsan.log": "3d289037d29fd1df2042d1b528d1d1ffb686c08ba91b5daef5679782971b579d",
+    "Berstein/audit/independent_kernel_ubsan.errors.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

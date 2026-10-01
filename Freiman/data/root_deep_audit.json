@@ -1,0 +1,481 @@
+{
+  "proof_complete": false,
+  "records": [
+    {
+      "a": "4322",
+      "b": "32113",
+      "center": 4,
+      "status": "no_gap_detected_through_depth",
+      "depth": 7
+    },
+    {
+      "a": "4323",
+      "b": "32113",
+      "center": 4,
+      "status": "no_gap_detected_through_depth",
+      "depth": 7
+    },
+    {
+      "a": "4322",
+      "b": "32112",
+      "center": 4,
+      "status": "certified_intrinsic_gap",
+      "depth": 4,
+      "gap": [
+        [
+          "1224659211451511/2319143491955977",
+          "-193726964/2319143491955977"
+        ],
+        [
+          "195793925/377429894",
+          "163441/377429894"
+        ]
+      ],
+      "gap_decimal": [
+        0.5280635077976037,
+        0.5280635140498784
+      ]
+    },
+    {
+      "a": "31311",
+      "b": "31312",
+      "center": 4,
+      "status": "no_gap_detected_through_depth",
+      "depth": 7
+    },
+    {
+      "a": "321",
+      "b": "431",
+      "center": 4,
+      "status": "no_gap_detected_through_depth",
+      "depth": 7
+    },
+    {
+      "a": "3131",
+      "b": "31212",
+      "center": 4,
+      "status": "no_gap_detected_through_depth",
+      "depth": 7
+    },
+    {
+      "a": "313",
+      "b": "31211",
+      "center": 4,
+      "status": "no_gap_detected_through_depth",
+      "depth": 7
+    },
+    {
+      "a": "313",
+      "b": "3122",
+      "center": 4,
+      "status": "no_gap_detected_through_depth",
+      "depth": 7
+    },
+    {
+      "a": "31212",
+      "b": "31213",
+      "center": 4,
+      "status": "certified_intrinsic_gap",
+      "depth": 4,
+      "gap": [
+        [
+          "175534769469959/327746625125363",
+          "-126960532/983239875376089"
+        ],
+        [
+          "-7095/30202",
+          "15157/422828"
+        ]
+      ],
+      "gap_decimal": [
+        0.5355779323893435,
+        0.5355779796724017
+      ]
+    },
+    {
+      "a": "332",
+      "b": "432",
+      "center": 4,
+      "status": "no_gap_detected_through_depth",
+      "depth": 7
+    },
+    {
+      "a": "33",
+      "b": "431",
+      "center": 4,
+      "status": "certified_intrinsic_gap",
+      "depth": 5,
+      "gap": [
+        [
+          "16968050723306/31654126804667",
+          "-38979460/94962380414001"
+        ],
+        [
+          "17529489965/32912045401",
+          "5237396/32912045401"
+        ]
+      ],
+      "gap_decimal": [
+        0.5360366296238965,
+        0.5360366792751513
+      ]
+    },
+    {
+      "a": "311",
+      "b": "313",
+      "center": 4,
+      "status": "no_gap_detected_through_depth",
+      "depth": 7
+    },
+    {
+      "a": "311",
+      "b": "312",
+      "center": 4,
+      "status": "no_gap_detected_through_depth",
+      "depth": 7
+    },
+    {
+      "a": "31111",
+      "b": "31112",
+      "center": 4,
+      "status": "no_gap_detected_through_depth",
+      "depth": 7
+    },
+    {
+      "a": "3111",
+      "b": "3112",
+      "center": 4,
+      "status": "no_gap_detected_through_depth",
+      "depth": 7
+    },
+    {
+      "a": "31",
+      "b": "32",
+      "center": 4,
+      "status": "no_gap_detected_through_depth",
+      "depth": 7
+    },
+    {
+      "a": "31",
+      "b": "33",
+      "center": 4,
+      "status": "no_gap_detected_through_depth",
+      "depth": 7
+    },
+    {
+      "a": "13311",
+      "b": "13313",
+      "center": 3,
+      "status": "no_gap_detected_through_depth",
+      "depth": 7
+    },
+    {
+      "a": "13311",
+      "b": "13312",
+      "center": 3,
+      "status": "no_gap_detected_through_depth",
+      "depth": 7
+    },
+    {
+      "a": "1331",
+      "b": "1332",
+      "center": 3,
+      "status": "no_gap_detected_through_depth",
+      "depth": 7
+    },
+    {
+      "a": "1331",
+      "b": "1333",
+      "center": 3,
+      "status": "certified_intrinsic_gap",
+      "depth": 4,
+      "gap": [
+        [
+          "19349904/12549841",
+          "-158212/414144753"
+        ],
+        [
+          "3121720175489/2035512167138",
+          "9551089/44781267677036"
+        ]
+      ],
+      "gap_decimal": [
+        1.533633323519645,
+        1.5336334301418797
+      ]
+    },
+    {
+      "a": "13321",
+      "b": "13322",
+      "center": 3,
+      "status": "no_gap_detected_through_depth",
+      "depth": 7
+    },
+    {
+      "a": "1332",
+      "b": "1333",
+      "center": 3,
+      "status": "certified_intrinsic_gap",
+      "depth": 4,
+      "gap": [
+        [
+          "20627623/13344658",
+          "-19841/40033974"
+        ],
+        [
+          "269893104395681/175814474701238",
+          "37803673/175814474701238"
+        ]
+      ],
+      "gap_decimal": [
+        1.5351062292804678,
+        1.5351063523834623
+      ]
+    },
+    {
+      "a": "13332",
+      "b": "13333",
+      "center": 3,
+      "status": "certified_intrinsic_gap",
+      "depth": 4,
+      "gap": [
+        [
+          "64224192597185197/41834651564616241",
+          "-824644484/41834651564616241"
+        ],
+        [
+          "2483178479/1618522498",
+          "218081/4855567494"
+        ]
+      ],
+      "gap_decimal": [
+        1.5351908637968603,
+        1.53519087514011
+      ]
+    },
+    {
+      "a": "13331",
+      "b": "13333",
+      "center": 3,
+      "status": "certified_intrinsic_gap",
+      "depth": 4,
+      "gap": [
+        [
+          "9323468507093854/6072628946367271",
+          "-832117316/42508402624570897"
+        ],
+        [
+          "113894235/74218357",
+          "215525/6234341988"
+        ]
+      ],
+      "gap_decimal": [
+        1.5353261387020196,
+        1.53532614872622
+      ]
+    },
+    {
+      "a": "13331",
+      "b": "13332",
+      "center": 3,
+      "status": "no_gap_detected_through_depth",
+      "depth": 7
+    },
+    {
+      "a": "132",
+      "b": "133",
+      "center": 3,
+      "status": "certified_intrinsic_gap",
+      "depth": 4,
+      "gap": [
+        [
+          "2265919437761/1475120978438",
+          "-3460777/1475120978438"
+        ],
+        [
+          "391459/273227",
+          "3940/819681"
+        ]
+      ],
+      "gap_decimal": [
+        1.5360401514852784,
+        1.5360415697389673
+      ]
+    },
+    {
+      "a": "13211",
+      "b": "13212",
+      "center": 3,
+      "status": "no_gap_detected_through_depth",
+      "depth": 7
+    },
+    {
+      "a": "1321",
+      "b": "1322",
+      "center": 3,
+      "status": "no_gap_detected_through_depth",
+      "depth": 7
+    },
+    {
+      "a": "133",
+      "b": "1311",
+      "center": 3,
+      "status": "no_gap_detected_through_depth",
+      "depth": 7
+    },
+    {
+      "a": "132",
+      "b": "1311",
+      "center": 3,
+      "status": "no_gap_detected_through_depth",
+      "depth": 7
+    },
+    {
+      "a": "1312",
+      "b": "13211",
+      "center": 3,
+      "status": "certified_intrinsic_gap",
+      "depth": 4,
+      "gap": [
+        [
+          "-104162/149663",
+          "15716/149663"
+        ],
+        [
+          "5000782113989/3203384821183",
+          "19062740/22423693748281"
+        ]
+      ],
+      "gap_decimal": [
+        1.5611114006092135,
+        1.5611114265539625
+      ]
+    },
+    {
+      "a": "1312",
+      "b": "1322",
+      "center": 3,
+      "status": "no_gap_detected_through_depth",
+      "depth": 7
+    },
+    {
+      "a": "1323",
+      "b": "13121",
+      "center": 3,
+      "status": "no_gap_detected_through_depth",
+      "depth": 7
+    },
+    {
+      "a": "13111",
+      "b": "13113",
+      "center": 3,
+      "status": "no_gap_detected_through_depth",
+      "depth": 7
+    },
+    {
+      "a": "13111",
+      "b": "13112",
+      "center": 3,
+      "status": "no_gap_detected_through_depth",
+      "depth": 7
+    },
+    {
+      "a": "1311",
+      "b": "1312",
+      "center": 3,
+      "status": "no_gap_detected_through_depth",
+      "depth": 7
+    },
+    {
+      "a": "13122",
+      "b": "13123",
+      "center": 3,
+      "status": "certified_intrinsic_gap",
+      "depth": 4,
+      "gap": [
+        [
+          "98408459172360/62509951014473",
+          "-45104869/250039804057892"
+        ],
+        [
+          "49309575/31522307",
+          "44020/94566921"
+        ]
+      ],
+      "gap_decimal": [
+        1.5742808177288896,
+        1.5742809162112215
+      ]
+    },
+    {
+      "a": "13121",
+      "b": "13123",
+      "center": 3,
+      "status": "no_gap_detected_through_depth",
+      "depth": 7
+    },
+    {
+      "a": "13121",
+      "b": "13122",
+      "center": 3,
+      "status": "no_gap_detected_through_depth",
+      "depth": 7
+    },
+    {
+      "a": "13123",
+      "b": "13133",
+      "center": 3,
+      "status": "no_gap_detected_through_depth",
+      "depth": 7
+    },
+    {
+      "a": "13122",
+      "b": "13133",
+      "center": 3,
+      "status": "no_gap_detected_through_depth",
+      "depth": 7
+    },
+    {
+      "a": "13122",
+      "b": "13132",
+      "center": 3,
+      "status": "no_gap_detected_through_depth",
+      "depth": 7
+    },
+    {
+      "a": "13121",
+      "b": "13132",
+      "center": 3,
+      "status": "no_gap_detected_through_depth",
+      "depth": 7
+    },
+    {
+      "a": "13132",
+      "b": "13133",
+      "center": 3,
+      "status": "certified_intrinsic_gap",
+      "depth": 4,
+      "gap": [
+        [
+          "2410041840619073/1524821044459729",
+          "-157376708/1524821044459729"
+        ],
+        [
+          "5604653/3556534",
+          "2315/10669602"
+        ]
+      ],
+      "gap_decimal": [
+        1.5805385600438606,
+        1.5805386216728021
+      ]
+    },
+    {
+      "a": "13131",
+      "b": "13132",
+      "center": 3,
+      "status": "no_gap_detected_through_depth",
+      "depth": 7
+    }
+  ]
+}

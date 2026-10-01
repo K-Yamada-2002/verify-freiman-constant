@@ -1,0 +1,157 @@
+{
+  "passed": true,
+  "claim": "[c_F,infinity) is contained in M and L",
+  "proof_kind": "Exact finite verification plus nested-cylinder iteration and gluing.",
+  "general_kernels": 1,
+  "general_kernel": "graph_wide",
+  "general_kernel_states": 3464816,
+  "graph_m2_data_used": false,
+  "ancestor_or_repetition_counter_used": false,
+  "exact_endpoint_scale_equality_required": false,
+  "local_conditions": [
+    {
+      "condition": "entry",
+      "menu_size": 102,
+      "coordinate": "S",
+      "box": [
+        [
+          "8709/31250",
+          "278689/1000000"
+        ],
+        [
+          "205479/500000",
+          "410959/1000000"
+        ],
+        [
+          "84563/100000",
+          "845631/1000000"
+        ]
+      ],
+      "kernel_memberships": 2415,
+      "uniform_comparisons": 305
+    },
+    {
+      "condition": "period",
+      "menu_size": 48,
+      "coordinate": "S",
+      "box": [
+        [
+          "267649/1000000",
+          "267651/1000000"
+        ],
+        [
+          "368091/500000",
+          "736231/1000000"
+        ],
+        [
+          "84563/100000",
+          "845631/1000000"
+        ]
+      ],
+      "kernel_memberships": 997,
+      "uniform_comparisons": 143
+    },
+    {
+      "condition": "three_a",
+      "menu_size": 17,
+      "coordinate": "V",
+      "box": [
+        [
+          "756939/2500000",
+          "37847/125000"
+        ],
+        [
+          "756939/2500000",
+          "37847/125000"
+        ],
+        [
+          "105399/12500",
+          "421597/50000"
+        ]
+      ],
+      "kernel_memberships": 396,
+      "uniform_comparisons": 50
+    },
+    {
+      "condition": "three_b",
+      "menu_size": 19,
+      "coordinate": "V",
+      "box": [
+        [
+          "756939/2500000",
+          "15139/50000"
+        ],
+        [
+          "756939/2500000",
+          "151403/500000"
+        ],
+        [
+          "842593/100000",
+          "842603/100000"
+        ]
+      ],
+      "kernel_memberships": 407,
+      "uniform_comparisons": 56
+    }
+  ],
+  "local_menu_count": 186,
+  "initial_entrances": 34,
+  "entrance_child_bands": 379,
+  "direct_initial_rows": 51,
+  "initial_rows_using_entrances": 85,
+  "finite_hall_rows": 93,
+  "translation_hall_rows": 43,
+  "finite_covered_interval_decimal": [
+    4.52782956616088,
+    6.52472642611028
+  ],
+  "translation_ray_start": "13/2",
+  "spectral_roots_recomputed": 91,
+  "bulk_bound": [
+    "0",
+    "4/19"
+  ],
+  "negative_local_controls": [
+    {
+      "condition": "entry",
+      "removed": "period",
+      "rejected": true
+    },
+    {
+      "condition": "period",
+      "removed": "period",
+      "rejected": true
+    },
+    {
+      "condition": "period",
+      "removed": "three_b",
+      "rejected": true
+    },
+    {
+      "condition": "three_b",
+      "removed": "three_b",
+      "rejected": true
+    }
+  ],
+  "negative_ray_controls_passed": true,
+  "freiman_ray_in_M_verified": true,
+  "freiman_ray_in_L_verified": true,
+  "general_conditions_under_1000_achieved": false,
+  "sha256": {
+    "unified_proof_certificate.json": "547184faead7f59e474b213ecf500a89d2742f340153ea63885536fd494b2bb6",
+    "verify_unified_proof.py": "926cc476fe537df947e60a2323699e5327654d767a00a2a4312668893f85deb1",
+    "local_invariant_returns.py": "d25ce201f9a239cc7f6b187bf25258b2af72ff980b372599d5e3de46e45b294d",
+    "graph_wide_verification_manifest.json": "f00eb0fad97c1994c1cc895c663134c723e3db528dacf01c9b9791495e07a2c8",
+    "endpoint_return.py": "f59e897cd67af881cec53a27263357c5dd361d4717eb36382036207cab45c01e",
+    "endpoint_certificate.py": "42dacecb4adedc1f14108c86cdeb2ea09774e540111ded9f090209bbcf0ea50c",
+    "anchor_boxes.py": "501c0f18c6cc0f8d187ee8462c0288cd12724bc782963d208ec61723a27fac2e",
+    "box_certificates.py": "a1c9c4c84e8461fc5bd127abd87b2efecc670eb156b2a9192eaa6f9f03e7e68e",
+    "exact_cf.py": "a8dad8aabf1b53eabdac8e8c6658f25d812427ef002c2c014a03f9b672356bfb",
+    "typed_intervals.py": "0c4863aea656f3cf7de508e1a51bc4d89ee99e31aa37eb58435f7b26cb2c731e",
+    "typed_boxes.py": "12bb441cc874d542a3d178c168339c9cd7d8b586352ec0c734bc8b816a45c56c",
+    "spectral_bounds.py": "e656925632fe72f9a901329dff1148217b40bb8494c4e1f906adc06084f6642a",
+    "obstruction_probe.py": "91c88758f0189ee140a6945a78bf11edc5ff53fa25c85b0224d8560e1ed10ed3",
+    "verify_hall_ray.py": "c5634255ec657455473875b1080c81d8a680e544382465af39be074a64b9d0f3",
+    "layout.py": "31a863b7f09460f4c831842f701296caba587a368c9c07d0855a16c2738ec16f"
+  }
+}

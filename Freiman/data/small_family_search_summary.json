@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-01",
+  "target_conditions": 1000,
+  "target_achieved": false,
+  "new_proof_established": false,
+  "original_proof_verification": "verify_hall_ray.py passed using validated full-replay hashes; no full replay rerun in this experiment.",
+  "limitations": [
+    "Successor words restricted to the supplied list.",
+    "Only 8 graph-frontier vertices retained per component.",
+    "Floating-point ordering/rejection can lose valid covers, though successful overlap comparisons use integer intervals.",
+    "Even a surviving subset must be compressed again and all endpoint/initial covers must be verified before replacing the original proof."
+  ],
+  "experiments": [
+    {
+      "name": "small3",
+      "surviving_states": 0,
+      "interpretation": "The implemented conservative reduction returned the empty family; not a mathematical nonexistence proof.",
+      "rectangular_conditions": 759,
+      "represented_states": 1975948,
+      "allow_overlap": false,
+      "sha256": {
+        "data/small3.dat": "f920da96f3fc28c6182f4dc9f0a3836dac059186a3f54e33b484198ed51a2234",
+        "data/small3.meta.json": "487b048ddb9b6e706aa250909c76218049e00008c8c0cc4ab4ebf0714e73bb12",
+        "data/small3.json": "83e69c26d82b25b60a7124323356f9edb98df99f02e2098056edfcc711d76884",
+        "data/small3.json.alive.bin": "9901664b06f43814377ebb10d7a4effc0f6889d301354ae57c6d65dead7d7dac",
+        "data/small3_proposal.json": "f5f5235325ae3fe35cb77772df4713af8969a3083eda7b876d95f939815914c3",
+        "data/small3.seed.bin": "8f7e82f83706e3af34c733acc81cff173ce627ed75e297de106931eaaa50acc4"
+      }
+    },
+    {
+      "name": "small990",
+      "surviving_states": 0,
+      "interpretation": "The implemented conservative reduction returned the empty family; not a mathematical nonexistence proof.",
+      "rectangular_conditions": 990,
+      "represented_states": 2168660,
+      "allow_overlap": false,
+      "sha256": {
+        "data/small990.dat": "f920da96f3fc28c6182f4dc9f0a3836dac059186a3f54e33b484198ed51a2234",
+        "data/small990.meta.json": "487b048ddb9b6e706aa250909c76218049e00008c8c0cc4ab4ebf0714e73bb12",
+        "data/small990.json": "83e69c26d82b25b60a7124323356f9edb98df99f02e2098056edfcc711d76884",
+        "data/small990.json.alive.bin": "9901664b06f43814377ebb10d7a4effc0f6889d301354ae57c6d65dead7d7dac",
+        "data/small990_proposal.json": "c111a7ea807f250d36aa7e55832e0c8f214df40d7ff6e8a4e2902fe2efe34ef2",
+        "data/small990.seed.bin": "3576310008d5a7c2cf34226defa2afe137540ab68f1e18854c7dde0d0241ea4b"
+      }
+    },
+    {
+      "name": "small990_overlap",
+      "surviving_states": 0,
+      "interpretation": "The implemented conservative reduction returned the empty family; not a mathematical nonexistence proof.",
+      "rectangular_conditions": 990,
+      "represented_states": 2348832,
+      "allow_overlap": true,
+      "sha256": {
+        "data/small990_overlap.dat": "f920da96f3fc28c6182f4dc9f0a3836dac059186a3f54e33b484198ed51a2234",
+        "data/small990_overlap.meta.json": "487b048ddb9b6e706aa250909c76218049e00008c8c0cc4ab4ebf0714e73bb12",
+        "data/small990_overlap.json": "83e69c26d82b25b60a7124323356f9edb98df99f02e2098056edfcc711d76884",
+        "data/small990_overlap.json.alive.bin": "9901664b06f43814377ebb10d7a4effc0f6889d301354ae57c6d65dead7d7dac",
+        "data/small990_overlap_proposal.json": "91f8d7f4f5516c495c82a387570a77f4226c2dbfab0d0df9ceb7ab99857cf805",
+        "data/small990_overlap.seed.bin": "cd0eddd0f971512a5ac5a776fe4c3c17e505d71825efa738a8b003ec364dda3d"
+      }
+    },
+    {
+      "name": "coarse_s4",
+      "surviving_states": 0,
+      "interpretation": "The implemented conservative reduction returned the empty family; not a mathematical nonexistence proof.",
+      "coarsening_stride": 4,
+      "S_bins": 78,
+      "sha256": {
+        "data/coarse_s4.dat": "0c8c618287ce15cf804153078350bab3f8326ea903a9f1ea58743b9589590e65",
+        "data/coarse_s4.meta.json": "77e219257ac58022ffd774d365d3b43351f59a967161f0054df8c17530cbb2b9",
+        "data/coarse_s4.json": "83e69c26d82b25b60a7124323356f9edb98df99f02e2098056edfcc711d76884",
+        "data/coarse_s4.json.alive.bin": "ff4ce394cc97861337e455aab0c4d34440c8ef101e67971752379c13659c0908"
+      }
+    },
+    {
+      "name": "coarse_s8",
+      "surviving_states": 0,
+      "interpretation": "The implemented conservative reduction returned the empty family; not a mathematical nonexistence proof.",
+      "coarsening_stride": 8,
+      "S_bins": 40,
+      "sha256": {
+        "data/coarse_s8.dat": "284c2c79d2ca96777706cd73aba98463cac877d096bef5d33bdc2081a94ef192",
+        "data/coarse_s8.meta.json": "1994ece0928422ad2300785d17b838e8240d8423bef0b1f13331c000eaad2fef",
+        "data/coarse_s8.json": "83e69c26d82b25b60a7124323356f9edb98df99f02e2098056edfcc711d76884",
+        "data/coarse_s8.json.alive.bin": "d40c62cfefb4f8d9314be95e341d17f67c828b9c6b277e2a54ebd6797ca2f2f8"
+      }
+    },
+    {
+      "name": "coarse_s16",
+      "surviving_states": 0,
+      "interpretation": "The implemented conservative reduction returned the empty family; not a mathematical nonexistence proof.",
+      "coarsening_stride": 16,
+      "S_bins": 20,
+      "sha256": {
+        "data/coarse_s16.dat": "3887cf63962586371d09d6ea25cd3633f41de5d33a1f7600f818c36b6dc536aa",
+        "data/coarse_s16.meta.json": "94bbe30e803f256dbfbb6ecaa80d9aa49b13646abd48d4e6ae3d591b9a615787",
+        "data/coarse_s16.json": "83e69c26d82b25b60a7124323356f9edb98df99f02e2098056edfcc711d76884",
+        "data/coarse_s16.json.alive.bin": "138ccf9b023c8e13dfc95c4d35af66e34fe5aeef4fbe7ff700a982018ca34e0f"
+      }
+    }
+  ],
+  "rectangle_lower_bound_file": "admissibility_rectangle_bound.json"
+}

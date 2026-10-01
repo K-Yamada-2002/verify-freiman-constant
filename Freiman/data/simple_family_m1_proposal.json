@@ -1,0 +1,9 @@
+{
+  "proposal_only": true,
+  "source": "graph_wide",
+  "coarse_geometry_pairs": 144,
+  "coarse_rows": 1013276,
+  "fine_rows": 3420530,
+  "individual_type_runs_after_swap": 4235,
+  "rectangle_lower_bound_after_swap": 529
+}

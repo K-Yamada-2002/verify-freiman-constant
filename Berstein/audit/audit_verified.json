@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "claim": "[4.52578,4.52754] is contained in the classical Markov spectrum below c_F",
+  "date": "2026-10-01",
+  "coverage_rows": 3464816,
+  "coverage_cells": 150040,
+  "coverage_endpoint_tests": 491043673,
+  "construction_math_modules_imported": false,
+  "uniform_box_coverage": true,
+  "input_semantics_and_symbolic_aliases_verified": true,
+  "initial_bands": 25,
+  "noncentral_values_uniformly_bounded": true,
+  "exact_bulk": [
+    "0",
+    "4/19"
+  ],
+  "exact_noncentral_bound": [
+    "1/3025",
+    "4/19"
+  ],
+  "exact_bulk_witness": [
+    3,
+    1,
+    3,
+    1,
+    2
+  ],
+  "analytic_steps": [
+    "Uniform connected interval covers and child parameter inclusion",
+    "Positive progress and bounded derivative ratio force both words to grow",
+    "Nested continued-fraction cylinders shrink to the chosen target sum",
+    "Every noncentral local value is strictly below each target value"
+  ],
+  "scope": "Ordinary mathematical/code audit with a separately implemented full certificate verifier.",
+  "sha256": {
+    "Berstein/audit/independent_input.py": "73351a0888873066a8950aa14e2ab66bec746706cd8640a807e96548ba1e178e",
+    "Berstein/audit/independent_input.json": "0d7332e7d9efb5eb5fc692cb9f23b647bdf4982bc08391eb92a4849d42b7616c",
+    "Berstein/audit/independent_kernel.cpp": "afcfa622cde730ede065ac3db4d2c1a1625bc0f1c9e3a29ca97e7514873afbfb",
+    "Berstein/audit/independent_kernel_summary.json": "8eb168404ec96334891f4d64ef2539c0b6f77413567155f3cfb04c2adbd2de18",
+    "Berstein/audit/check_independent_kernel.py": "fe4c32d617a98a38e1b2122bbe0a913044a487cd98f5aaad428e280e9d29ae2e",
+    "Berstein/audit/independent_kernel_controls.json": "7b501d31f6ac3130e286412dbb91ec2c42a7f57c728eb0fe97faf4c1fd5577c6",
+    "Berstein/audit/independent_spectral.py": "475c31fb3637ec11bf3c2eec22f619b3e9c129adab04abc94e985f439a55d793",
+    "Berstein/audit/independent_spectral.json": "5a545b8370b55592ead46fb354402e7608c4259fb38145d4c2dd424b25512211",
+    "Berstein/audit/check_independent_arithmetic.py": "48482e8b3abbbd14cb5a44a21eb54ef9762efc004cdbe1c79adb56d6a1c4acd6",
+    "Berstein/audit/arithmetic_harness.cpp": "0bb9a50150bdcbeadbe09b8518476b5e216cd2cd1d16b46d441d3a71f9d24208",
+    "Berstein/audit/independent_arithmetic.json": "9f58a2d41cacb89d6910df433fc35a3d90591cd1e8c42b36066bdf82d0d34d9c",
+    "Berstein/audit/finalize_audit.py": "26e26017400bf5658803c82ea055130fcf2fd6e290b6ee3d9f7015c5524fb185",
+    "Berstein/audit/REPORT.txt": "92b116efecd07d77c93dcddfe864dccb8a5bbc0b1e7e357730994ca9127cc2b0",
+    "Freiman/data/graph_wide.dat": "f920da96f3fc28c6182f4dc9f0a3836dac059186a3f54e33b484198ed51a2234",
+    "Freiman/data/graph_wide.meta.json": "487b048ddb9b6e706aa250909c76218049e00008c8c0cc4ab4ebf0714e73bb12",
+    "Freiman/data/graph_wide.json.alive.bin": "a75629b1148bdbc6890d02eb85562b722e0209fb13a0dc5ac3f5fdfc60dc93a5"
+  }
+}

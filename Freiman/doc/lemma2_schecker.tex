@@ -1,0 +1,911 @@
+% Standalone: XeLaTeX / Codex built-in LaTeX editor.
+\documentclass[11pt,a4paper]{article}
+\usepackage{fontspec,xeCJK}
+\setCJKmainfont{HaranoAjiMincho-Regular.otf}[BoldFont=HaranoAjiMincho-Bold.otf,ItalicFont=HaranoAjiMincho-Regular.otf]
+\setCJKsansfont{HaranoAjiGothic-Medium.otf}
+\setCJKmonofont{HaranoAjiGothic-Medium.otf}
+\usepackage{amsmath,amssymb,amsthm,booktabs,array,needspace}
+\usepackage[margin=25mm]{geometry}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning}
+\usepackage{hyperref,xurl}
+\hypersetup{colorlinks=true,linkcolor=blue!45!black,urlcolor=blue!45!black,
+ pdftitle={Freiman 半直線の Schecker 型証明}}
+\setlength{\parindent}{1em}
+\setlength{\parskip}{2pt}
+\setlength{\abovedisplayskip}{9pt}
+\setlength{\belowdisplayskip}{9pt}
+\renewcommand{\arraystretch}{1.25}
+\renewcommand{\labelenumi}{(\arabic{enumi})}
+\emergencystretch=1em
+\theoremstyle{definition}
+\newtheorem{definition}{定義}
+\newtheorem{theorem}{定理}
+\newtheorem{lemma}{補題}
+\newtheorem{proposition}{命題}
+\newtheorem{corollary}{系}
+\newtheorem{example}{例}
+\newtheorem{remark}{注意}
+\renewcommand{\proofname}{証明}
+\renewcommand{\abstractname}{要旨}
+\renewcommand{\figurename}{図}
+\renewcommand{\tablename}{表}
+\newcommand{\CF}{c_{\mathrm F}}
+\newcommand{\eps}{\varnothing}
+\newcommand{\A}{\mathcal A}
+\newcommand{\G}{\mathcal G}
+\newcommand{\file}[1]{{\small\nolinkurl{#1}}}
+\title{Freiman 半直線の Schecker 型証明}
+\author{}
+\date{2026年10月1日}
+\begin{document}
+\begin{center}
+{\LARGE Freiman 半直線の Schecker 型証明\par}
+\vspace{10pt}
+2026年10月1日
+\end{center}
+\vspace{8pt}
+\begin{abstract}
+本稿では，Freiman の定数 $\CF=4.527829566160879\ldots$ に対して
+$[\CF,\infty)\subset M\cap L$ を示す計算機援用証明を解説する．
+方法の骨格は Schecker の区間法と同じである．
+まず，有限の連分数を延長して得られる区間を考え，
+後続による被覆から無限連分数の存在を導く．
+次に，中心以外の位置での値を評価して $M$ に含まれる区間を作り，
+それらを接続する．許容条件と被覆の検証を区別して述べ，
+計算機が確認する不等式も明示する．
+\end{abstract}
+
+\section{準備}\label{sec:preparation}
+
+\subsection{Markov スペクトルと，中心で値を実現すること}
+両側無限列 $C=(c_i)_{i\in\mathbb Z}$，$c_i\in\mathbb N_{\ge1}$ に対して
+\[
+ \lambda_i(C)=c_i+[0;c_{i-1},c_{i-2},\ldots]+[0;c_{i+1},c_{i+2},\ldots]
+\]
+とおく．Markov 値と Lagrange 値を
+\[
+ m(C)=\sup_{i\in\mathbb Z}\lambda_i(C),\qquad
+ l(C)=\limsup_{i\to\infty}\lambda_i(C)
+\]
+とし，それらの有限値全体をそれぞれ $M,L$ と書く．
+
+ある数 $t$ が $M$ に入ることを示すには，$m(C)=t$ となる列 $C$ を一つ作ればよい．
+本稿では，中心を $i=0$ として
+\begin{equation}\label{eq:two-tasks}
+ \lambda_0(C)=t,\qquad \lambda_i(C)\le t\quad(i\ne0)
+\end{equation}
+を別々に示す．前者が連分数の和による実現の問題であり，
+後者が中心以外の位置での上界の問題である．
+この二つを合わせて初めて $m(C)=t$ が従う．
+
+\subsection{固定語と，その外側に続く連分数}
+有限語 $a=(a_1,\ldots,a_h)$ に対して
+\[
+ F_a(x)=[0;a_1,\ldots,a_h+x],\qquad F_\eps(x)=x
+\]
+とおく．例えば $x=[0;u_1,u_2,\ldots]$ なら
+\[
+ F_a(x)=[0;a_1,\ldots,a_h,u_1,u_2,\ldots].
+\]
+語の連結を $au$ と書けば，$F_{au}=F_a\circ F_u$ である．
+
+左右の固定語 $a=(a_1,\ldots,a_h)$，$b=(b_1,\ldots,b_k)$ は，
+どちらも中心から外に向かう順で書く．中心の数字を $c$ とすると，列の固定部分は
+\[
+ (\ldots,a_h,\ldots,a_1,\boxed{c},b_1,\ldots,b_k,\ldots)
+\]
+である．左と右の追加部分の連分数を $x,y$ とすれば，中心値は
+\[
+ \lambda_0=c+F_a(x)+F_b(y)
+\]
+となる．この記法では左側の語も中心から読むので，列の表示では順序が逆になる．
+
+追加する数字は $1,2,3$ に限り，さらに語 $31313$ を含まないようにする．
+この制限を置く理由は，中心から遠い位置の値を $\CF$ より小さく抑えるためである．
+実際，$1,2,3$ のみからなる $31313$ を含まない両側列では
+\begin{equation}\label{eq:bulk}
+ \lambda_i\le M_B:=\frac{4\sqrt{462}}{19}
+       =4.525091633727300429\ldots<\CF
+\end{equation}
+が成立する．この上界の計算は第\ref{sec:noncentral}節で説明する．
+禁止条件は左右それぞれの外向きの語に課す．中心をまたぐ固定部分全体に
+同じ条件を仮定するわけではない．
+
+\begin{definition}[許された延長]\label{def:K}
+$a$ を，数字 $1,2,3,4$ からなり $31313$ を含まない非空の有限語とする．
+\[
+ K(a)=\left\{F_a([0;u_1,u_2,\ldots]):
+  u_i\in\{1,2,3\},\
+  au_1u_2\cdots\text{ が }31313\text{ を含まない}\right\}.
+\]
+ここでは，固定語 $a$ と追加語の境界で禁止語ができることも除く．
+\end{definition}
+許された延長は，例えば $2$ を続ければ常に存在する．
+$K(a)$ はコンパクト集合なので，最小値と最大値を持つ．
+左右の延長は独立に選べるから，可能な中心値全体は $c+K(a)+K(b)$ である．
+以下，集合の和 $K(a)+K(b)$ は $\{x+y:x\in K(a),y\in K(b)\}$ を意味する．
+
+\subsection{考える区間と，その後続}
+$K(a)+K(b)$ の最小値，最大値をそれぞれ
+\[
+ \ell(a,b)=\min K(a)+\min K(b),\qquad
+ h(a,b)=\max K(a)+\max K(b)
+\]
+とおき，
+\[
+ H(a,b)=[\ell(a,b),h(a,b)],\qquad W(a,b)=h(a,b)-\ell(a,b)
+\]
+とする．$H(a,b)$ は $K(a)+K(b)$ を含む最小の閉区間である．
+その内部に実際の和として表せない点が残る可能性があるため，
+$H(a,b)$ 全体が $K(a)+K(b)$ に含まれるとは限らない．
+
+そこで，$H(a,b)$ の一部を次のように取り出す．
+\begin{definition}[部分区間と真の後続]\label{def:J}
+$0\le\alpha<\beta\le1$ に対して
+\begin{equation}\label{eq:J}
+ J_{\alpha,\beta}(a,b)
+   =[\ell(a,b)+\alpha W(a,b),\ \ell(a,b)+\beta W(a,b)]
+\end{equation}
+とする．$J_{0,1}(a,b)=H(a,b)$ であり，例えば $J_{0,1/8}(a,b)$ は
+$H(a,b)$ の左端から幅の $1/8$ までの部分である．
+
+$u,w$ を $1,2,3$ からなる有限語とする．空語も認める．
+$au,bw$ が禁止語を含まず，$|u|+|w|>0$ のとき，
+$J_{\alpha',\beta'}(au,bw)$ を $J_{\alpha,\beta}(a,b)$ の真の後続と呼ぶ．
+\end{definition}
+追加する語によって可能な延長は減るので，
+\begin{equation}\label{eq:hull-nesting}
+ K(au)\subset K(a),\quad K(bw)\subset K(b),\quad H(au,bw)\subset H(a,b)
+\end{equation}
+である．一方，切り取る位置 $\alpha',\beta'$ は変えてよいため，
+後続の $J$ 自体が親の $J$ に含まれることは要求しない．
+以下では，区間はその指定に使う語 $a,b$ と相対端点 $\alpha,\beta$ を伴って考える．
+数直線上で同じ区間になっても，指定する語が違えば後続の意味が異なるためである．
+
+\section{後続被覆から \texorpdfstring{$M$}{M} に含まれる区間を得る}
+\label{sec:principle}
+
+Schecker の方法の要点は，ある区間を後続で覆い，
+その後続でも同じ操作を続けることで，区間内の全点を実現することにある．
+まず，許容条件の具体的な形に依存しない部分を述べる．
+
+\Needspace{8\baselineskip}
+\begin{lemma}[後続被覆の反復]\label{lem:filling}
+区間 $J_{\alpha,\beta}(a,b)$ からなる族 $\A$ が次の条件を満たすとする．
+\begin{enumerate}
+\item $\A$ の各区間は，$\A$ に属する有限個の真の後続によって覆われる．
+\item $q_a,q_b$ を $[0;a_1,\ldots,a_h]$，$[0;b_1,\ldots,b_k]$ の分母とすると，
+族全体に共通な定数 $0<d<D<\infty$ があって
+\[
+ d\le q_a/q_b\le D
+\]
+が成立する．
+\end{enumerate}
+このとき，$\A$ に属するすべての区間について
+$J_{\alpha,\beta}(a,b)\subset K(a)+K(b)$ である．
+\end{lemma}
+\begin{proof}
+$z\in J_{\alpha,\beta}(a,b)$ を一つ固定する．条件(1)から，$z$ を含む後続を選べる．
+選んだ後続も $\A$ に属するので，さらに $z$ を含む後続を選べる．
+これを繰り返すと，語の対
+\[
+ (a^{(0)},b^{(0)})=(a,b),\quad
+ (a^{(1)},b^{(1)}),\quad (a^{(2)},b^{(2)}),\quad\ldots
+\]
+が得られ，各語は直前の語を延長している．また，各段階の部分区間は $z$ を含む．
+
+毎回，左右の少なくとも一方に数字が追加されるから，
+少なくとも一方の語の長さは無限大に向かう．
+連分数の分母は長さとともに発散するので，条件(2)により他方の分母も発散する．
+従って，左右とも無限に長い語が定まる．この段階で，
+片側だけをいつまでも延長してしまう可能性が排除される．
+
+長さ $h$ の連分数の同じ接頭語を共有する値の差は，高々 $1/q_h^2$ である．
+よって
+\[
+ |H(a^{(n)},b^{(n)})|
+ \le \frac1{q_{a^{(n)}}^2}+\frac1{q_{b^{(n)}}^2}\longrightarrow0.
+\]
+これらの $H$ は \eqref{eq:hull-nesting} により入れ子であり，どれも $z$ を含む．
+一方，構成された左右の無限連分数の和もすべての $H$ に属するから，
+その和は $z$ に等しい．各有限段階で禁止語を避けているので，
+無限の語も禁止条件を満たす．従って $z\in K(a)+K(b)$ である．
+\end{proof}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[x=1cm,y=.65cm,font=\small]
+ \draw[thick] (0,0)--(9,0);
+ \node[left] at(0,0){親の $J$};
+ \draw[thick,blue!65!black] (-.2,-1)--(3.4,-1);
+ \draw[thick,blue!65!black] (3,-1.8)--(6.3,-1.8);
+ \draw[thick,blue!65!black] (5.9,-2.6)--(9.2,-2.6);
+ \node[right] at(9.2,-2.6){後続の $J$};
+ \draw[dashed] (4.7,.45)--(4.7,-3);
+ \node[above] at(4.7,.45){$z$};
+\end{tikzpicture}
+\caption{後続による被覆の模式図．$z$ を含む後続を選び，
+その後続でも同じ選択を繰り返す．}
+\label{fig:cover}
+\end{figure}
+
+補題\ref{lem:filling}で得られるのは中心値の実現である．
+これを $M$ への包含に変えるには，\eqref{eq:two-tasks} のもう一つの条件が必要になる．
+
+\begin{proposition}[中心以外の上界を用いる]\label{prop:markov}
+$J=[L_0,U_0]\subset K(a)+K(b)$ とする．
+固定部分 $(a,b;c)$ の許されたすべての延長 $C$ について
+\[
+ \lambda_i(C)\le\Theta(a,b;c)\qquad(i\ne0)
+\]
+が成立するならば
+\begin{equation}\label{eq:markov-interval}
+ [\max\{c+L_0,\Theta(a,b;c)\},\ c+U_0]\subset M
+\end{equation}
+である．ただし，左端が右端を超える場合は空区間とする．
+\end{proposition}
+\begin{proof}
+左辺の区間に属する $t$ を取る．$t-c\in J\subset K(a)+K(b)$ だから，
+許された無限尾 $x,y$ によって
+\[
+ t=c+F_a(x)+F_b(y)
+\]
+と書ける．この尾を固定部分の左右につないだ列を $C$ とすると，
+$\lambda_0(C)=t$ である．また，仮定と $t\ge\Theta(a,b;c)$ により
+$i\ne0$ では $\lambda_i(C)\le t$ である．従って
+$m(C)=\lambda_0(C)=t$ となる．
+\end{proof}
+
+この命題により，計算するべきものは明確になる．
+語の対 $(a,b)$ に対して，まず実現できる区間 $J$ を求め，
+次に非中心上界 $\Theta(a,b;c)$ を求める．
+中心を加えた区間 $c+J$ のうち，$\Theta$ 以上の部分が $M$ に入る．
+以下では，補題\ref{lem:filling}を適用できる族を具体的に定める．
+
+\section{本稿で用いる許容条件}\label{sec:admissibility}
+
+\subsection{語の長さによらず比較するための量}
+後続被覆を個々の長い語について計算するのでは，無限に多くの検査が必要になる．
+そこで，端点の比較を決める情報だけを語から取り出す．
+
+$[0;a_1,\ldots,a_h]=p_h/q_h$ とし，
+\[
+ r_a=\frac{q_{h-1}}{q_h}=[0;a_h,\ldots,a_1]
+\]
+とおく．連分数の基本式より
+\begin{equation}\label{eq:mobius}
+ F_a(x)=\frac{p_h+p_{h-1}x}{q_h+q_{h-1}x},\qquad
+ F_a'(x)=\frac{(-1)^h}{q_h^2(1+r_ax)^2}.
+\end{equation}
+語の長さの偶奇は増減の向きを，$q_h^{-2}$ は大きさを，
+$r_a$ は尾を変えたときの変化の仕方を表す．
+
+次に，$a$ の末尾のうち，$31313$ の真の接頭語でもある最長の語を $\sigma(a)$ と書く．
+取り得る値は
+\[
+ \eps,\quad 3,\quad 31,\quad 313,\quad 3131
+\]
+の五つである．例えば $\sigma(32113)=3$，$\sigma(4322)=\eps$ である．
+末尾が $3131$ なら次に $3$ を付けられない，というように，
+この情報から今後の禁止条件が決まる．
+
+$\xi_a$ を $F_a(\xi_a)=\min K(a)$ となる極値尾とする．
+$\xi_a$ は $\sigma(a)$ と $|a|$ の偶奇だけで決まる．
+実際，連分数の大小は，最初に異なる数字の位置の偶奇で決まる．
+従って各位置で，禁止語を作らない数字の中から，
+値が小さくなる方を順に選べばよい．
+許された各数字の後には $2$ を続けられるので，この選択が行き止まりになることはない．
+
+\begin{definition}[左右の比]\label{def:ratio}
+語の対 $(a,b)$ に対して
+\[
+ r=r_a,\qquad s=r_b,\qquad \rho=(q_a/q_b)^2
+\]
+とし，
+\begin{equation}\label{eq:S}
+ S(a,b)=\frac{|F_b'(\xi_b)|}{|F_a'(\xi_a)|}
+       =\rho\frac{(1+r\xi_a)^2}{(1+s\xi_b)^2}
+\end{equation}
+と定める．
+\end{definition}
+$S$ は，左右の連分数の変化の大きさを，下端を与える尾で比較した比である．
+Schecker の T 比に対応する役割を持つが，定義は同じではない．
+$0\le r,s\le1$，$0<\xi_a,\xi_b<1$ だから
+\begin{equation}\label{eq:denominator-bounds}
+ \frac14\le \frac{S}{\rho}\le4.
+\end{equation}
+従って，$S$ が正の有界な範囲にあれば，補題\ref{lem:filling}で必要な分母比も有界になる．
+
+\Needspace{10\baselineskip}
+\subsection{一般条件}
+一般条件では $|a|,|b|\ge2$ とし，各語について
+\[
+ \bigl(\sigma(a),\ |a|\bmod2,\ \text{末尾2桁}\bigr)
+\]
+を記録する．追加に用いる数字 $1,2,3$ の語に現れる組は22個ある．
+固定語に $4$ があっても，現在の末尾の情報がこの22個のいずれかに一致し，
+以下の数値条件を満たせば，同じ条件を適用できる．
+
+$r_a$ の範囲も末尾から指定する．$v_a$ を $a$ の末尾
+$\max(2,|\sigma(a)|)$ 桁とし，$\operatorname{rev}(v_a)$ をその逆順とする．
+\begin{equation}\label{eq:r-box}
+ B(a)=\left\{F_{\operatorname{rev}(v_a)}(z):\frac14\le z\le\frac45\right\}
+\end{equation}
+という有理端点の区間を使う．実際の $r_a$ が $B(a)$ に入ることも条件の一部である．
+短い語では自動的には成立しないため，後で述べる初期入口の被覆を用いることがある．
+
+$S$ の範囲は $\kappa=51/50$ を用いて
+\[
+ [\kappa^i,\kappa^{i+1}],\qquad -155\le i\le154
+\]
+に分ける．また，$J$ の切り取り方は
+\[
+ \mathcal T=\{(0,1)\}\cup
+ \{(j/32,(j+2)/32):j=0,\ldots,30\}
+\]
+の32通りを基本とする．
+左右の状態，$S$ の範囲，$(\alpha,\beta)\in\mathcal T$ の組を一行とした有限表を作り，
+その中から固定した採用表 $\G$ を用いる．
+
+\begin{definition}[一般許容区間]\label{def:general}
+$(a,b)$ の左右の状態，$S(a,b)$，$(\alpha,\beta)$ が採用表 $\G$ の一行で指定された条件を満たし，
+さらに $r_a\in B(a)$，$r_b\in B(b)$ を満たすとき，
+$J_{\alpha,\beta}(a,b)$ を一般許容区間と呼ぶ．
+\end{definition}
+
+\begin{example}\label{ex:general-row}
+採用表には，次の行が含まれる．
+\[
+\begin{aligned}
+ &\sigma(a)=3,\quad |a|\text{ は奇数},\quad a\text{ の末尾は }13,\\
+ &\sigma(b)=\eps,\quad |b|\text{ は偶数},\quad b\text{ の末尾は }22,\\
+ &r\in[5/19,9/32],\quad s\in[9/22,14/33],\quad
+ S\in[\kappa^{-9},\kappa^{-8}],\\
+ &(\alpha,\beta)=(1/16,1/8).
+\end{aligned}
+\]
+この行を使えるかどうかは，現在の語から上の量を計算して判定できる．
+一行は，条件を満たすすべての語の対に同じ切り取り方の区間を許容するという意味である．
+\end{example}
+
+候補表は $22^2\cdot310\cdot32=4,801,280$ 行あり，
+採用表 $\G$ はそのうち3,464,816行からなる．
+この表を用いた全行の後続被覆は第\ref{sec:cover-proof}節で証明する．
+表が大きいのはパラメータの範囲を細かく分けているためであり，
+各行に適用する検証手続きは共通である．
+
+\subsection{左端を含めるための四つの局所条件}
+後で使う語 $A=32113$，$B=4322$ は例\ref{ex:general-row}の条件に入る．
+しかし，この状態と $S$ の範囲で採用される一般区間を全部合わせても，
+得られるのは $J_{1/16,31/32}(A,B)$ である．
+Freiman の定数に対応するのは $H(A,B)$ の左端なので，
+ここには届いていない．その部分を覆うため，四つの条件を追加する．
+
+条件1，2では比 $S$ を使う．条件3，4では，両側に $33$ を追加したときに
+保存される別の比を使う．
+\[
+ \zeta=[0;\overline3]=\frac{\sqrt{13}-3}{2},\qquad
+ V_\zeta(a,b)=\frac{|F_b'(\zeta)|}{|F_a'(\zeta)|}
+            =\rho\frac{(1+r\zeta)^2}{(1+s\zeta)^2}.
+\]
+$F_{33}(\zeta)=\zeta$ なので，連鎖律から
+$V_\zeta(a33,b33)=V_\zeta(a,b)$ となる．
+この保存性が，条件3，4に戻って同じ操作を続けるために役立つ．
+
+\begin{definition}[局所許容区間]\label{def:local}
+表\ref{tab:local-states}，\ref{tab:local-boxes}の同じ番号の条件を
+すべて満たす語の対について，指定された $J_{\alpha,\beta}(a,b)$ を局所許容区間と呼ぶ．
+表中の小数はすべて正確な有限小数，すなわち有理数を表す．
+\end{definition}
+
+\begin{table}[htbp]
+\centering\small
+\begin{tabular}{ccccc}
+\toprule
+条件 & 左の状態・偶奇・末尾 & 右の状態・偶奇・末尾 & 比 & $(\alpha,\beta)$\\
+\midrule
+1 & $3$・奇・13 & $\eps$・偶・22 & $S$ & $(0,1/8)$\\
+2 & $3$・奇・13 & $\eps$・偶・21 & $S$ & $(0,1/8)$\\
+3 & $3$・奇・33 & $3$・偶・33 & $V_\zeta$ & $(17/100,19/100)$\\
+4 & $3$・奇・33 & $3$・偶・33 & $V_\zeta$ & $(17/100,19/100)$\\
+\bottomrule
+\end{tabular}
+\caption{局所条件の状態と，許容する部分区間．}\label{tab:local-states}
+\end{table}
+\begin{table}[htbp]
+\centering\small
+\begin{tabular}{cccc}
+\toprule
+条件 & $r$ の範囲 & $s$ の範囲 & 指定した比の範囲\\
+\midrule
+1 & $[.278688,.278689]$ & $[.410958,.410959]$ & $[.845630,.845631]$\\
+2 & $[.267649,.267651]$ & $[.736182,.736231]$ & $[.845630,.845631]$\\
+3 & $[.3027756,.302776]$ & $[.3027756,.302776]$ & $[8.43192,8.43194]$\\
+4 & $[.3027756,.302780]$ & $[.3027756,.302806]$ & $[8.42593,8.42603]$\\
+\bottomrule
+\end{tabular}
+\caption{局所条件の数値範囲．各行は範囲内のすべての値について用いる．}
+\label{tab:local-boxes}
+\end{table}
+
+最後に，同じ語の対の許容区間をつなげたり，その一部を取り出したりできるようにする．
+\begin{definition}[許容性]\label{def:admissible}
+$J_{\alpha,\beta}(a,b)$ が，同じ $(a,b)$ の一般許容区間と局所許容区間の
+有限個の和集合に含まれるとき，$J_{\alpha,\beta}(a,b)$ を許容的と呼ぶ．
+この族を $\A$ とする．
+\end{definition}
+
+以上は語から計算する条件による定義である．この定義に対して，次が成立する．
+\begin{lemma}[許容後続による被覆]\label{lem:cover}
+許容的な区間は，有限個の許容的な真の後続によって覆われる．
+また，許容族 $\A$ 全体で分母比 $q_a/q_b$ は共通の正の上下界を持つ．
+\end{lemma}
+被覆の証明は第\ref{sec:cover-proof}節で行う．
+分母比については，一般条件と局所条件1，2では \eqref{eq:denominator-bounds} を用いればよい．
+局所条件3，4についても $1/4\le V_\zeta/\rho\le4$ なので同様である．
+従って補題\ref{lem:filling}により，許容的な区間はすべて $K(a)+K(b)$ に含まれる．
+
+Schecker の T 区間に対応するのが本稿の $J$ であり，
+その許容的な後続による被覆に対応するのが補題\ref{lem:cover}である．
+ここから無限尾を得る推論は共通している．
+本稿では禁止語を課した尾集合を使うため，区間や許容条件の具体的な定義を変更している．
+
+\section{初期区間から半直線を作る}\label{sec:ray}
+
+\subsection{Freiman の定数を左端とする区間}
+以下では
+\[
+ \CF=\frac{2221564096+283748\sqrt{462}}{491993569}
+       =4.527829566160879\ldots
+\]
+とおく．まず，語の対
+\[
+ A=(3,2,1,1,3),\qquad B=(4,3,2,2)
+\]
+と中心 $c=4$ を考える．固定部分は
+\[
+ (\ldots,3,1,1,2,3,\boxed4,4,3,2,2,\ldots)
+\]
+である．左の極値尾と右の極値尾はそれぞれ
+\[
+ x=[0;\overline{1,3,1,2,1,3}]=\frac{-28+2\sqrt{462}}{19},\qquad
+ y=[0;\overline{3,1,3,1,2,1}]=\frac{-29+2\sqrt{462}}{53}
+\]
+となる．連分数に代入して整理すると
+\begin{equation}\label{eq:CF-endpoint}
+ 4+\ell(A,B)=4+F_A(x)+F_B(y)=\CF
+\end{equation}
+を得る．これは近似値の一致ではなく，$\mathbb Q(\sqrt{462})$ における等式である．
+
+この語の対について
+\[
+ r_A=\frac{17}{61},\qquad r_B=\frac{30}{73},\qquad
+ S(A,B)=.845630170066686\ldots
+\]
+であるから，局所条件1が成立する．従って $J_{0,1/8}(A,B)$ は許容的であり，
+補題\ref{lem:cover}と補題\ref{lem:filling}から
+\[
+ J_{0,1/8}(A,B)\subset K(A)+K(B)
+\]
+が従う．端点を計算すると
+\[
+ H(A,B)=[.527829566160879\ldots,\ .528004647722301\ldots]
+\]
+である．$E_0:=\CF+W(A,B)/8$ とおけば，中心を加えた区間は
+\begin{equation}\label{eq:first-interval}
+ 4+J_{0,1/8}(A,B)
+   =[\CF,E_0],\qquad E_0\approx4.527851451356057
+\end{equation}
+となる．この段階で，左端 $\CF$ を含む小区間の各点が中心値として実現された．
+次に，他の位置でそれを超える値が出ないことを確認する．
+
+\subsection{中心以外の位置の上界}\label{sec:noncentral}
+まず，固定部分のない $31313$ を避ける両側 $1,2,3$ 列を考える．
+ある位置の前後2桁，合わせて5桁を固定すると，その外側の左右の尾は
+禁止条件の下で独立に延長できる．
+禁止語自体を除いた $3^5-1=242$ 個の5桁語について極値延長を計算すると，
+最大値は \eqref{eq:bulk} の $M_B=4\sqrt{462}/19$ になる．
+極値尾の求め方は第\ref{sec:admissibility}節で述べた偶奇による選択であり，
+その結果は最終的に周期的な連分数なので厳密に計算できる．
+
+固定部分 $(a,b;c)$ がある場合には，次の二種類の位置を調べる．
+\begin{enumerate}
+\item 固定部分の中の非中心位置，および左右に追加した最初の7桁までの位置．
+これらは有限個の場合を列挙し，残る無限尾を極値で評価する．
+\item それより遠い位置．中心方向の尾の最初の7桁を保ち，
+その先を禁止語を作らない $1,2,3$ の尾に置き換える．
+反対方向の尾は変更する必要がない．
+\end{enumerate}
+(2)では，置換後の列には $M_B$ の上界を適用できる．
+元の値との違いは，一方の連分数だけから生じる．
+7桁を共有する連分数の差は高々 $1/F_8^2=1/441$ だから，
+遠い位置の値は
+\begin{equation}\label{eq:far-bound}
+ M_B+\frac1{441}
+\end{equation}
+以下となる．ここで $F_j$ は Fibonacci 数，$F_1=F_2=1$ である．
+これと(1)の有限個の上界の最大値を $\Theta(a,b;c)$ として使う．
+
+$(A,B;4)$ では(1)の値はすべて \eqref{eq:far-bound} 以下であり，
+\[
+ \Theta(A,B;4)=\frac{4\sqrt{462}}{19}+\frac1{441}
+     =4.527359207423445\ldots<\CF.
+\]
+従って命題\ref{prop:markov}を \eqref{eq:first-interval} に適用すると，
+\begin{equation}\label{eq:first-M}
+ [\CF,E_0]\subset M
+\end{equation}
+が得られる．これが半直線の最初の区間である．
+
+\subsection{有限個の初期区間の接続}
+\eqref{eq:first-M} の右側も，同じ手順で覆っていく．
+固定証明書には，語 $(a,b)$，中心 $c$，切り取り方 $(\alpha,\beta)$ を指定した
+93本の初期区間が保存されている．各区間に対して次を確認する．
+\begin{enumerate}
+\item $J_{\alpha,\beta}(a,b)\subset K(a)+K(b)$．
+\item 許された全延長の非中心値が $\Theta(a,b;c)$ 以下であること．
+\item \eqref{eq:markov-interval} で得られる区間が，それまでの区間と重なり，右端を延ばすこと．
+\end{enumerate}
+(1)は，一般許容区間で直接覆うか，
+有限個の真の後続を取って一般許容区間に入れることで示す．
+後者を初期入口の被覆と呼ぶ．
+その後は補題\ref{lem:cover}による反復を使えるので，
+初期語そのものが一般条件を満たす必要はない．
+
+こうして，\eqref{eq:first-M} と93本の区間の和集合が
+\begin{equation}\label{eq:finite-ray}
+ [\CF,\ 6.524726426110279\ldots]
+\end{equation}
+を覆うことが確認される．
+区間の端点と非中心上界は $\mathbb Q(\sqrt{462})$ の元として保持し，
+隣り合う区間の接続もこの体の厳密比較で判定する．
+
+例えば，93本のうち最初の区間は，左右を交換した語の対 $(B,A)$ と中心4から得られる
+\[
+ [4.527840508758468\ldots,\ 4.527999176423506846\ldots]
+\]
+である．その左端は \eqref{eq:first-M} の右端より小さく，
+右端はそれより大きいので，二つをつなぐと覆う範囲が広がる．
+同じ確認を繰り返し，最後の区間
+\[
+ [6.485783684807509\ldots,\ 6.524726426110279\ldots]
+\]
+まで接続する．
+
+\subsection{無限大までの接続と主定理}
+有限個の計算で無限大まで覆うため，最後に中心の数字だけを変える．
+別に保存された43本の初期区間について，(1)と同じ充填を確認すると
+\[
+ [1/2,3/2]\subset\bigcup J_{\alpha,\beta}(a,b)
+              \subset\bigcup\bigl(K(a)+K(b)\bigr)
+\]
+が得られる．ここではすべての固定語の数字が4以下である．
+
+中心を整数 $n\ge6$ とし，$t\in[n+1/2,n+3/2]$ を取る．
+$t-n$ を含む初期区間から尾を選べば，中心値を $t$ にできる．
+それ以外の位置の数字は4以下であり，二つの連分数の尾はそれぞれ1未満だから，
+すべての非中心値は $4+1+1=6$ より小さい．従って
+\[
+ [n+1/2,n+3/2]\subset M\qquad(n=6,7,8,\ldots).
+\]
+これらの区間は端点で接続するので，その和集合は $[6.5,\infty)$ である．
+
+\begin{theorem}\label{thm:main}
+$[\CF,\infty)\subset M$ である．
+\end{theorem}
+\begin{proof}
+\eqref{eq:finite-ray} と $[6.5,\infty)$ が重なるので従う．
+ここまでで用いた後続被覆補題は第\ref{sec:cover-proof}節で証明し，
+初期区間の有限検証の内容は付録\ref{app:verification}にまとめる．
+\end{proof}
+
+\section{後続被覆補題の証明}\label{sec:cover-proof}
+
+ここでは，定義\ref{def:admissible}で選んだ区間に対して
+補題\ref{lem:cover}の被覆性を示す．
+Schecker の補題2に対応する部分は，後続の許容性と区間どうしの連結の確認である．
+親の両端まで覆うことも確認すれば，後続被覆が得られる．
+
+\subsection{被覆を示すための三つの確認}
+親の区間を $J=[L,U]$，選んだ真の後続を $J_\nu=[L_\nu,U_\nu]$ とする．
+次の三つを確認すれば十分である．
+\begin{enumerate}
+\item 各後続 $J_\nu$ が許容的である．
+\item 後続の和集合が連結である．
+\item $L,U$ がその和集合に含まれる．
+\end{enumerate}
+(2)と(3)より和集合は $[L,U]$ を含み，(1)よりその先でも同じ操作を繰り返せる．
+
+(2)を検査するときは，各後続を頂点とし，
+交わることを証明できた二区間の間に辺を置く．
+一つの連結成分に，親の左端を覆う後続と右端を覆う後続があればよい．
+交差の判定には
+\begin{equation}\label{eq:intersection}
+ L_\nu\le U_\mu\quad\text{かつ}\quad L_\mu\le U_\nu
+\end{equation}
+の両方を使う．区間の並び順を仮定して，片方の不等式だけで済ませることはしない．
+
+\begin{example}[数字を一つ追加する被覆]\label{ex:three-children}
+例\ref{ex:general-row}の条件を満たすすべての語の対について，
+次の被覆が成立する．
+\[
+\begin{split}
+ J_{1/16,1/8}(a,b)\subset{}&
+ J_{3/32,5/32}(a1,b)\ \cup\ J_{1/8,3/16}(a1,b)\\
+ &{}\cup\ J_{5/32,7/32}(a1,b).
+\end{split}
+\]
+右辺はいずれも，左の語に数字1を追加した真の後続である．
+子の切り取り位置は子自身の $H(a1,b)$ に対する割合なので，
+親の割合 $[1/16,1/8]$ と数値を直接比較することはできない．
+
+実際の初期語の対 $(A,B)$ について，すべてを親の $H(A,B)$ を $[0,1]$ にした座標で表すと，
+次のようになる．
+\begin{center}\small
+\begin{tabular}{cc}
+\toprule
+区間 & 親の全幅に対する位置（表示用の近似値）\\
+\midrule
+親 & $[.06250000,\ .12500000]$\\
+第1後続 & $[.05960549,\ .09934248]$\\
+第2後続 & $[.07947399,\ .11921098]$\\
+第3後続 & $[.09934248,\ .13907948]$\\
+\bottomrule
+\end{tabular}
+\end{center}
+三つの後続が重なり，親の両端まで覆っていることが分かる．
+これらの後続はすべて一般許容区間でもある．
+この具体的な値の比較を，例\ref{ex:general-row}の
+$r,s,S$ の全範囲に対する不等式として確認したものが，一行の被覆検証である．
+次に，その不等式をどのように計算するかを述べる．
+\end{example}
+
+\subsection{長い語の比較をパラメータの比較に直す}
+\eqref{eq:mobius} から
+\begin{equation}\label{eq:normalized-difference}
+ \frac{F_a(x)-F_a(y)}{|F_a'(\xi_a)|}
+ =(-1)^{|a|}\frac{(1+r\xi_a)^2(x-y)}{(1+rx)(1+ry)}
+\end{equation}
+を得る．左辺に現れる長い語 $a$ の情報は，
+右辺では偶奇，極値尾 $\xi_a$，$r$ だけになっている．
+右側の語 $b$ の差も同様に計算でき，両方を $|F_a'(\xi_a)|$ で割った尺度で比較すると，
+$b$ 側の項には比 $S$ が掛かる．
+$J$ の端点は最小値と最大値の凸結合なので，
+\eqref{eq:intersection} と親の両端の判定は，
+この式の線形結合で計算できる．
+
+後続がどの条件に入るかも同じ量で求められる．
+$F_u(x)=(A_ux+B_u)/(C_ux+D_u)$ とすると，
+\[
+ r_{au}=\frac{C_u+rA_u}{D_u+rB_u}.
+\]
+また，$g_a(u)=|F_{au}'(\xi_{au})|/|F_a'(\xi_a)|$ とおけば
+\[
+ g_a(u)=
+ \left(\frac{1+r\xi_a}
+ {(C_u+rA_u)\xi_{au}+D_u+rB_u}\right)^2,\qquad
+ S(au,bw)=S(a,b)\frac{g_b(w)}{g_a(u)}.
+\]
+従って親の $r,s,S$ の範囲から，子の $r,s,S$ の範囲を計算できる．
+語の具体的な長さを固定する必要はない．
+
+\subsection{一般条件の全行検証}
+一般条件の一行は，左右の状態を固定し，
+$r,s,S$ をそれぞれ指定区間内で動かす条件である．
+この三つの区間の直積を，以下ではパラメータ箱と呼ぶ．
+一行の検証では，その箱のすべての点で三つの確認を成立させる．
+実際の有限語から生じないパラメータまで含めて評価するため，
+条件を満たすどの語にも結果を適用できる．
+
+後続の候補 $(u,w)$ は，次の規則で用意する．
+\begin{enumerate}
+\item $0<|u|+|w|\le3$ のすべての対．
+\item 周期語 $131213$ の6個の巡回置換どうしのすべての対．
+\item 左右の下端極値尾の長さ1から6の接頭語を取り，
+最後の数字を $1,2,3$ に置き換えてできる語のうち，同じ長さどうしの対．
+\end{enumerate}
+禁止語を作るものは除く．(3)では，現在の状態の下端極値尾に対応する候補を使う．
+全状態についてまとめた入力には91語と1,824対の記録がある．
+
+各候補に対して，まず子の $r,s$ の像が子の指定区間に含まれることを確認する．
+子の $S$ の像が複数の分割区間にまたがる場合には，
+その像を覆うすべての分割区間で同じ基本区間が採用されていることを要求する．
+これで，親のパラメータを箱のどこに選んでも，子が一般条件に入ることが分かる．
+同じ子の語に対応する基本区間が重なる場合は，それらをつなげた区間を使える．
+
+次に \eqref{eq:normalized-difference} を用いて交差と両端の被覆を判定する．
+一般条件では，分母 $2^{48}$ の整数区間算術によって外向きの評価を行う．
+例えば，$U_\mu-L_\nu$ の下界が0以上であることを確認して
+$L_\nu\le U_\mu$ を採用する．
+浮動小数点は候補の順序付けなどに使うが，採用する比較には必ずこの厳密判定を通す．
+
+採用表 $\G$ の3,464,816行すべてにこの手続きを適用すると，
+全行で許容後続による被覆が確認される．
+最終検証では採用表を固定し，一行でも被覆が確認できなければ失敗として終了する．
+
+なお，採用表を発見する探索と，今述べた検証は区別する．
+探索では，狭い比の範囲の表を種として保持し，
+広い候補表から被覆を確認できない行を削る操作を用いた．
+証明に用いるのは，その探索が止まったという事実ではなく，
+得られた固定表について種の保護も外して行った全行検証である．
+
+\subsection{局所条件の被覆と，繰り返しの正当化}
+四つの局所条件では，固定した後続リストを使う．
+帰属，交差，両端の被覆という確認内容は一般条件と同じである．
+後続の内訳は表\ref{tab:local-menus}の通りである．
+
+\begin{table}[htbp]
+\centering\small
+\begin{tabular}{cccrr}
+\toprule
+親の条件 & 周期的に戻る後続 & 他の局所条件へ & 一般条件へ & 計\\
+\midrule
+1 & 条件2へ & 条件3へ1本 & 100本 & 102本\\
+2 & 条件2へ & 条件4へ1本 & 46本 & 48本\\
+3 & 条件3へ & なし & 16本 & 17本\\
+4 & 条件4へ & なし & 18本 & 19本\\
+\bottomrule
+\end{tabular}
+\caption{四局所条件の後続リスト．周期的に戻る後続は各行1本．}
+\label{tab:local-menus}
+\end{table}
+
+まず条件1，2で左端を保つ後続を説明する．
+\[
+ u=131213,\qquad w=313121
+\]
+を左右に追加する．第\ref{sec:ray}節の極値尾 $x,y$ について
+\[
+ F_u(x)=x,\quad F_w(y)=y,\quad
+ F_u'(x)=F_w'(y)=3697-172\sqrt{462}\in(0,1)
+\]
+が成立する．追加後も下端の尾は $x,y$ なので
+\[
+ \ell(au,bw)=\ell(a,b).
+\]
+また左右に同じ微分倍率が掛かるため，連鎖律から
+\[
+ S(au,bw)=S(a,b)
+\]
+である．$r,s$ の像を有理区間の両端で評価すると，
+条件1は条件2に入り，条件2は再び条件2に入る．
+
+例えば初期語の対 $(A,B)$ では
+\[
+ r_{Au}=\frac{1414}{5283},\qquad r_{Bw}=\frac{4289}{5826}
+\]
+となり，条件2を満たす．
+親の $H(A,B)$ の幅は約 $1.75\times10^{-4}$ だが，
+子の $H(Au,Bw)$ の幅は約 $2.27\times10^{-8}$ になる．
+この後続が受け持つのは，親と等しい左端とその近くの部分である．
+残りの部分は表\ref{tab:local-menus}の他の後続と重ねて覆う．
+
+条件3，4では，左右に $33$ を追加する後続を使う．
+すでに述べた $V_\zeta$ の保存性に加えて
+\[
+ r_{a33}=\frac{3+r_a}{10+3r_a},\qquad
+ r_{b33}=\frac{3+r_b}{10+3r_b}
+\]
+が成立する．この変換は，表\ref{tab:local-boxes}の条件3，4の
+$r,s$ の各区間をそれぞれ保つ．状態と偶奇も元に戻るので，
+子も同じ局所条件を満たす．
+このように，何回繰り返してもその都度同じ条件を適用できる．
+
+条件1，2から条件3，4への移行には
+\[
+ V_\zeta
+ =S\left(\frac{1+r\zeta}{1+r\xi_a}\right)^2
+    \left(\frac{1+s\xi_b}{1+s\zeta}\right)^2
+\]
+を用い，子の比の範囲を評価する．
+一般条件へ入る後続については，前節と同じ帰属検査を行う．
+さらに，186後続について，交差と親の両端の被覆を各局所条件の箱全体で確認する．
+条件3，4の被覆比較には，上の式から得られる $S$ の外側の範囲を使う．
+周期後続の下端の等号は，丸めた近似値ではなく，上記の固定点の恒等式で確認する．
+
+以上により，一般許容区間と局所許容区間の後続被覆が得られた．
+それらの有限和集合に含まれる部分区間については，
+その和集合を構成する各区間の後続リストを合わせればよい．
+これで定義\ref{def:admissible}のすべての許容区間が覆われ，
+補題\ref{lem:cover}の証明が完了する．
+
+\section{Lagrange スペクトルへの包含}\label{sec:L}
+ここまでは最大値 $m(C)$ を扱った．最後に，同じ値を無限遠で繰り返し実現して
+Lagrange 値も一致させる．
+\begin{corollary}\label{cor:L}
+$[\CF,\infty)\subset L$．従って定理\ref{thm:main}と合わせて
+$[\CF,\infty)\subset M\cap L$ である．
+\end{corollary}
+\begin{proof}
+$t\ge\CF$ を固定する．第\ref{sec:ray}節で作った列 $C$ は，
+$\lambda_0(C)=m(C)=t$ を満たす．
+また，中心を含むある有限部分の外側は，$31313$ を避ける $1,2,3$ の列である．
+この性質を使って，値 $t$ が無限に先でも現れる列を作る．
+
+$C$ の有限窓 $C[-m,m]$ を，$m$ を増やしながら右側へ順に並べ，
+隣り合う窓の間には長さが無限大に向かう $2$ の列を挟む．
+左側をすべて $2$ で埋めた両側列を $\widetilde C$ とする．
+各コピーの中心は，左右に少なくとも $m$ 桁だけ元の列 $C$ と一致するので，
+その中心値は $t$ に収束する．従って $l(\widetilde C)\ge t$ である．
+
+逆向きの不等式を示すため，半径 $R$ を固定する．
+十分後ろでは，コピーも隔離用の $2$ の列も十分長い．
+半径 $R$ の窓が一つのコピーの中にあれば，元の列 $C$ と一致する．
+接合部を含む場合には，コピーの端が元の固定部分から十分離れているため，
+その窓は $1,2,3$ だけからなり，禁止語を含まない．
+隔離用の $2$ の列の内部にある窓も，この後者の場合に含められる．
+接合に使った数字 $2$ も，禁止語 $31313$ を新しく作らない．
+このような有限窓の両端に $2$ を続ければ，禁止語を避ける両側列に延長できる．
+従って，その列に上界 $M_B$ を適用して，有限窓を共有する値と比較できる．
+
+前者では元の列の上界 $t$，後者では $M_B$ を使える．
+左右の尾の差を円筒評価で抑えると，十分後ろの位置で
+\[
+ \lambda_i(\widetilde C)
+ \le\max\{t,M_B\}+\frac{2}{F_{R+1}^2}
+ =t+\frac{2}{F_{R+1}^2}
+\]
+となる．$R\to\infty$ とすれば $l(\widetilde C)\le t$ である．
+従って $l(\widetilde C)=t$，すなわち $t\in L$ となり，
+系が示された．
+\end{proof}
+
+\appendix
+\section{有限検証の内容と再実行}\label{app:verification}
+数学的な論証と，固定証明書の検査との対応を表\ref{tab:verification}にまとめる．
+初期区間136本は，有限部分の93本と整数移動用の43本の合計であり，
+これとは別に第\ref{sec:ray}節の端点区間を用いる．
+
+\begin{table}[htbp]
+\centering\small
+\begin{tabular}{p{.26\textwidth}p{.64\textwidth}}
+\toprule
+対象 & 確認する内容\\
+\midrule
+一般許容区間 & 採用表3,464,816行の，箱全体での帰属・交差・両端の被覆．\\
+局所許容区間 & 四条件，計186後続の帰属と被覆．周期と33の戻りも確認する．\\
+初期入口 & 34件の親を計379後続で覆い，すべての子を一般条件へ入れる．\\
+初期区間136本 & 51本は一般条件から直接，85本は初期入口から充填を得る．\\
+非中心上界 & 有限部分の91組の固定語・中心と，端点の初期語について全延長を評価する．\\
+有限部分の接続 & 端点区間と93本の区間が $[\CF,6.524726426110279\ldots]$ を覆う．\\
+整数移動用の接続 & 43本の区間が $[1/2,3/2]$ を覆う．\\
+\bottomrule
+\end{tabular}
+\caption{固定証明書で再検証する項目．}\label{tab:verification}
+\end{table}
+
+主なファイルは，\file{Freiman/} を基準として次の通りである．
+\begin{center}\small
+\begin{tabular}{p{.53\textwidth}p{.37\textwidth}}
+\toprule
+ファイル & 内容\\
+\midrule
+\file{data/unified_proof_certificate.json} & 局所後続，初期入口，初期区間の固定証明書\\
+\file{data/graph_wide.json.alive.bin} & 一般条件の採用表\\
+\file{data/graph_wide.meta.json} & 各行の意味と後続候補\\
+\file{data/graph_wide.dat} & 一般条件の厳密算術用入力\\
+\file{src/verify_unified_proof.py} & 証明全体の有限検証\\
+\file{src/spectral_bounds.py} & 非中心上界の計算\\
+\file{doc/HALL_RAY_INITIAL_COVER.md} & 初期区間の全表\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+リポジトリの根から次を実行する．Python 3 の標準ライブラリと
+C++17 コンパイラを用いる．
+\begin{quote}\small
+\verb|python3 -B -S Freiman/src/verify_unified_proof.py --full|
+\end{quote}
+この実行では一般条件の入力を再生成して固定入力との一致を確認し，
+C++ 検証器を再ビルドして全採用行を検証する．
+その後，局所条件，入口，初期区間，非中心上界を再計算する．
+結果は \file{data/unified_proof_verified.json}，ログは \file{logs/} に保存される．
+\texttt{--full} を省くと，一般条件の全行検証はコードと入力のハッシュを照合して再利用する．
+
+本稿の証明は，この有限検証と，補題\ref{lem:filling}の極限の論証，
+命題\ref{prop:markov}の最大値の確認，および第\ref{sec:L}節の接合からなる．
+数値の標本点だけを調べた結果ではない．
+一方，$\CF$ より下まで半直線を延長できないという最適性は，本稿では扱っていない．
+
+\end{document}

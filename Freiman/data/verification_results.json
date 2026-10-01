@@ -1,0 +1,11 @@
+{
+  "independent_endpoint_enclosures": 680,
+  "exact_pointwise_local_covers": 511,
+  "uniform_local_rows": 425,
+  "all_position_spectral_bound_I7": true,
+  "conditional_root_spectral_bounds": 24,
+  "conditional_root_components": 3,
+  "replayed_intrinsic_gap_certificates": 11,
+  "corruption_controls": 2,
+  "freiman_ray_proved": false
+}

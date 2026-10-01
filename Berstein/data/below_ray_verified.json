@@ -1,0 +1,203 @@
+{
+  "passed": true,
+  "claim": "[4.52578,4.52754] subset M below c_F",
+  "markov_interior_below_hall_ray_proved": true,
+  "KF_131_sum_interior_proved": false,
+  "full_kernel_replayed_this_run": true,
+  "kernel_closed_rows": 3464816,
+  "root_bands_verified": 25,
+  "negative_controls": 3,
+  "exact_filled_interval": [
+    [
+      "929276028117845/206593352255776",
+      "798281673463/619780056767328"
+    ],
+    [
+      "474259852885763/103296676127888",
+      "-918289906943/309890028383664"
+    ]
+  ],
+  "filled_interval_decimal": [
+    4.525777278415714,
+    4.527546990114258
+  ],
+  "rational_interval": [
+    "226289/50000",
+    "226377/50000"
+  ],
+  "spectral": {
+    "a": "322",
+    "b": "431",
+    "center": 4,
+    "scope": "Spectral domination only; filling still requires a closed Lem2 certificate.",
+    "bulk_max": [
+      "0",
+      "4/19"
+    ],
+    "bulk_max_decimal": 4.525091633727301,
+    "bulk_window": [
+      3,
+      1,
+      3,
+      1,
+      2
+    ],
+    "radius": 9,
+    "enumerated_tail_prefixes": 57054,
+    "theta_upper": [
+      "1/3025",
+      "4/19"
+    ],
+    "theta_upper_decimal": 4.525422212239698,
+    "maximizing_bound": {
+      "type": "far_tail",
+      "radius": 9
+    },
+    "theta_le_cF": true,
+    "hull": [
+      [
+        "8512493/17339617",
+        "28004/17339617"
+      ],
+      [
+        "450943/744658",
+        "-8081/2233974"
+      ]
+    ],
+    "conditional_markov_interval": [
+      [
+        "77870961/17339617",
+        "28004/17339617"
+      ],
+      [
+        "3429575/744658",
+        "-8081/2233974"
+      ]
+    ],
+    "conditional_markov_interval_decimal": [
+      4.5256411467465965,
+      4.527819253452496
+    ],
+    "core_bounds": [
+      {
+        "position": -3,
+        "upper": [
+          "6028449/4206607",
+          "4206599/50479284"
+        ],
+        "decimal": 3.224269310582768
+      },
+      {
+        "position": -2,
+        "upper": [
+          "63785/19274",
+          "-115721/4452294"
+        ],
+        "decimal": 2.750718256140285
+      },
+      {
+        "position": -1,
+        "upper": [
+          "42909489/10395494",
+          "-226081/10395494"
+        ],
+        "decimal": 3.6602456893522968
+      },
+      {
+        "position": 1,
+        "upper": [
+          "4242651/926342",
+          "-8531/2779026"
+        ],
+        "decimal": 4.514022576811153
+      },
+      {
+        "position": 2,
+        "upper": [
+          "3771995/2140046",
+          "2477929/23540506"
+        ],
+        "decimal": 4.025105067309671
+      },
+      {
+        "position": 3,
+        "upper": [
+          "482139/1560271",
+          "1560263/18723252"
+        ],
+        "decimal": 2.1001827020563915
+      }
+    ]
+  },
+  "independent_rational_audit": {
+    "passed": true,
+    "arithmetic": "rational only, independent CF recurrence and word checks",
+    "theta_rational": "4525423/1000000",
+    "bulk_upper_rational": "6056110117544355899965867301/1338339774692244515540728380",
+    "bulk_window": [
+      3,
+      1,
+      3,
+      1,
+      2
+    ],
+    "legal_windows": 242,
+    "radius": 9,
+    "far_bound_rational": "3664214289069273768382457862781/809695563688807931902140669900",
+    "enumerated_near_prefixes": 57054,
+    "near_comparisons": 6174,
+    "near_upper_rational": "6592870083475393797482980841494/1456958442707715058244261491909",
+    "near_witness": [
+      "right",
+      9,
+      "213131213"
+    ],
+    "core_bounds": [
+      {
+        "position": -3,
+        "upper": "29114187330651718829909442507/9029700848838058503657034856"
+      },
+      {
+        "position": -2,
+        "upper": "81301335776014934050692431665/29556402439446568600163362441"
+      },
+      {
+        "position": -1,
+        "upper": "262027685975865469469184982563/71587458387863817824383644614"
+      },
+      {
+        "position": 1,
+        "upper": "294082700309613321514236793/65148699481552547952520726"
+      },
+      {
+        "position": 2,
+        "upper": "893421272263900374183433315/221962223923027125197801414"
+      },
+      {
+        "position": 3,
+        "upper": "29114187330651718829909442507/13862692661045441477540016104"
+      }
+    ]
+  },
+  "sha256": {
+    "Berstein/data/below_ray_certificate.json": "84cbf4e5006530b37311d5db4f432870ab6d25fb174c439b520ab3051cca82e0",
+    "Berstein/src/verify_below_ray.py": "7a914e5e23bd59c8b69d03359024b7f0d0454b3e4ba7fd215e5ac805fbc9ec4e",
+    "Freiman/data/graph_wide.dat": "f920da96f3fc28c6182f4dc9f0a3836dac059186a3f54e33b484198ed51a2234",
+    "Freiman/data/graph_wide.json.alive.bin": "a75629b1148bdbc6890d02eb85562b722e0209fb13a0dc5ac3f5fdfc60dc93a5",
+    "Freiman/data/graph_wide.meta.json": "487b048ddb9b6e706aa250909c76218049e00008c8c0cc4ab4ebf0714e73bb12",
+    "Freiman/src/anchor_boxes.py": "501c0f18c6cc0f8d187ee8462c0288cd12724bc782963d208ec61723a27fac2e",
+    "Freiman/src/box_certificates.py": "a1c9c4c84e8461fc5bd127abd87b2efecc670eb156b2a9192eaa6f9f03e7e68e",
+    "Freiman/src/certified_kernel_input.py": "47715fa6b3b2652a70efd422ddbb9ca81dac9d377b3af93929b8d46f0b5dbf6c",
+    "Freiman/src/endpoint_return.py": "f59e897cd67af881cec53a27263357c5dd361d4717eb36382036207cab45c01e",
+    "Freiman/src/exact_cf.py": "a8dad8aabf1b53eabdac8e8c6658f25d812427ef002c2c014a03f9b672356bfb",
+    "Freiman/src/graph_kernel.cpp": "8450b048939abbd5fc8a4beb5b184f829457701c516b619896400e1cf3f36456",
+    "Freiman/src/layout.py": "31a863b7f09460f4c831842f701296caba587a368c9c07d0855a16c2738ec16f",
+    "Freiman/src/obstruction_probe.py": "91c88758f0189ee140a6945a78bf11edc5ff53fa25c85b0224d8560e1ed10ed3",
+    "Freiman/src/spectral_bounds.py": "e656925632fe72f9a901329dff1148217b40bb8494c4e1f906adc06084f6642a",
+    "Freiman/src/typed_boxes.py": "12bb441cc874d542a3d178c168339c9cd7d8b586352ec0c734bc8b816a45c56c",
+    "Freiman/src/typed_catalog.py": "052e8854441e22c284a334200ff086fdf7b8b9790447dc86c6e2be6c340f29b5",
+    "Freiman/src/typed_intervals.py": "0c4863aea656f3cf7de508e1a51bc4d89ee99e31aa37eb58435f7b26cb2c731e",
+    "Freiman/src/verify_hall_ray.py": "c5634255ec657455473875b1080c81d8a680e544382465af39be074a64b9d0f3",
+    "Freiman/src/width_catalog.py": "8e15431a87bfb6ff14bc0259fb629cf6c7125335873c9c27ecb6c38dc816093c"
+  }
+}

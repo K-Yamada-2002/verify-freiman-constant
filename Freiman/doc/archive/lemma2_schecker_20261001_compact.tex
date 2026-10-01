@@ -1,0 +1,441 @@
+% Standalone: XeLaTeX / Codex built-in LaTeX editor.
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec,xeCJK}
+\setCJKmainfont{HaranoAjiMincho-Regular.otf}[BoldFont=HaranoAjiMincho-Bold.otf,ItalicFont=HaranoAjiMincho-Regular.otf]
+\setCJKsansfont{HaranoAjiGothic-Medium.otf}
+\setCJKmonofont{HaranoAjiGothic-Medium.otf}
+\usepackage{amsmath,amssymb,amsthm,booktabs,array}
+\usepackage[margin=25mm]{geometry}
+\usepackage{hyperref,xurl}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue}
+\setlength{\parindent}{1em}
+\setlength{\parskip}{3pt}
+\theoremstyle{definition}
+\newtheorem{definition}{定義}
+\newtheorem{theorem}{定理}
+\newtheorem{lemma}{補題}
+\newtheorem{proposition}{命題}
+\newtheorem{remark}{注意}
+\renewcommand{\proofname}{証明}
+\renewcommand{\abstractname}{概要}
+\newcommand{\CF}{c_{\mathrm F}}
+\newcommand{\conv}{\operatorname{conv}}
+\newcommand{\eps}{\varnothing}
+\newcommand{\file}[1]{{\small\nolinkurl{#1}}}
+\newcommand{\A}{\mathcal A}
+\newcommand{\G}{\mathcal G}
+\title{Freiman 半直線の Schecker 型証明\\
+\large 局所的な許容性と一つの後続被覆補題}
+\author{}
+\date{2026年10月1日}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+禁止語 $31313$ を使う計算機援用証明を，
+「許容性の定義，補題2型の後続被覆，反復による充填」の形に整理する．
+区間はすべて同じ $J_{p,q}(a,b)$ とし，許容性には現在の語の情報だけを使う．
+従来の補助族が保持していた祖先・反復回数は，保存される微分比を使って除去した．
+一般族も一つに統一した．
+ただし一般族の数百万個の検証箱は残っており，
+1000以下の明示的な許容条件への簡約は未達成である．
+\end{abstract}
+
+\section{主張と連分数の準備}
+\begin{definition}[有限語とスペクトル]
+有限語 $a=(a_1,\ldots,a_h)$ に対し
+\[
+ F_a(x)=[0;a_1,\ldots,a_h+x],\qquad F_\eps(x)=x
+\]
+とする．語の連結を $au$ と書く．左右の語はともに中心から外向きに読む．
+固定部分と中心値はそれぞれ
+\[
+ (a_h,\ldots,a_1,c,b_1,\ldots,b_k),\qquad c+F_a(x)+F_b(y)
+\]
+である．
+正整数の両側無限列 $C=(c_i)_{i\in\mathbb Z}$ に対して
+\[
+\begin{gathered}
+ \lambda_i(C)=c_i+[0;c_{i-1},c_{i-2},\ldots]+[0;c_{i+1},c_{i+2},\ldots],\\
+ m(C)=\sup_i\lambda_i(C),\qquad l(C)=\limsup_{i\to\infty}\lambda_i(C).
+\end{gathered}
+\]
+これらの有限値の集合をそれぞれ $M,L$ とする．
+\end{definition}
+
+\begin{theorem}\label{thm:main}
+\[
+ \CF=\frac{2221564096+283748\sqrt{462}}{491993569}
+     =4.527829566160879\ldots
+\]
+とおくと，$[\CF,\infty)\subset M\cap L$ である．
+\end{theorem}
+
+\begin{lemma}[連分数変換の大きさ]\label{lem:cf}
+$[0;a_1,\ldots,a_h]=p_h/q_h$，$r_a=q_{h-1}/q_h$ とおくと
+\[
+ F_a(x)=\frac{p_h+p_{h-1}x}{q_h+q_{h-1}x},
+ \qquad F_a'(x)=\frac{(-1)^h}{q_h^2(1+r_ax)^2}.
+\]
+$0\le x\le1$ では $1/(4q_h^2)\le |F_a'(x)|\le1/q_h^2$．
+従って $|a|\to\infty$ なら $\operatorname{diam}F_a([0,1])\to0$．
+\end{lemma}
+\begin{proof}
+収束分数の漸化式と行列式 $\pm1$ から従う．
+$0\le r_a\le1$ で，正整数の桁を追加し続ければ $q_h$ は発散する．
+\end{proof}
+
+\section{区間と現在の語から決まるパラメータ}
+\begin{definition}[一種類の区間]\label{def:J}
+固定語 $a,b$ は数字 $1,2,3,4$ からなり，$31313$ を含まないものとする．
+\[
+ K(a)=\{F_a([0;u_1,u_2,\ldots]):u_i\in\{1,2,3\},\
+                   au\text{ は }31313\text{ を含まない}\}.
+\]
+禁止条件は固定語と追加語の境界にも課す．
+\[
+ H(a,b)=\conv(K(a)+K(b))=[\ell(a,b),h(a,b)],
+ \quad W(a,b)=h(a,b)-\ell(a,b),
+\]
+\[
+ J_{p,q}(a,b)=[\ell(a,b)+pW(a,b),\ \ell(a,b)+qW(a,b)]
+ \quad(0\le p<q\le1).
+\]
+後続は $J_{p',q'}(au,bw)$ で，$u,w$ の数字は1,2,3，
+$|u|+|w|>0$，$au,bw$ は禁止語を含まないものとする．
+\end{definition}
+
+$H(a,b)$ がそのまま $K(a)+K(b)$ に入るとは限らない．
+例えば $H(3131,3131)$ には，どの最初の子凸包にも入らない点がある．
+従って今回，Schecker の T 区間に相当するのは部分区間 $J_{p,q}$ である．
+後続の部分区間が親の部分区間に含まれることは要求しない．
+常に成り立つのは $H(au,bw)\subset H(a,b)$ である．
+
+\begin{definition}[離散状態と分母比の範囲]
+$\sigma(a)$ を，語 $a$ の末尾で $31313$ の真の接頭語となる最長のものとする．
+状態は $\eps,3,31,313,3131$ の五つである．長さの偶奇と末尾2桁も記録する．
+一般族では $|a|,|b|\ge2$ とする．
+$v_a$ を末尾 $\max(2,|\sigma(a)|)$ 桁，$Q=[1/4,4/5]$ として
+\[
+ B_Q(a)=\{F_{\operatorname{rev}(v_a)}(t):t\in Q\}
+\]
+を $r_a$ の許容範囲とする．$\operatorname{rev}$ は語の逆順であり，
+$r_a=[0;a_h,\ldots,a_1]$ なのでこの向きになる．
+\end{definition}
+
+\begin{definition}[二つの微分比]\label{def:scales}
+$r=r_a$，$s=r_b$，$\rho=(q_a/q_b)^2$ とする．
+$F_a(\xi_a)=\min K(a)$，$F_b(\xi_b)=\min K(b)$ となる極値尾を用いて
+\[
+ S(a,b)=\frac{|F_b'(\xi_b)|}{|F_a'(\xi_a)|}
+       =\rho\frac{(1+r\xi_a)^2}{(1+s\xi_b)^2}.
+\]
+もう一つ，$\zeta=[0;\overline3]=(\sqrt{13}-3)/2$ として
+\[
+ V_\zeta(a,b)=\frac{|F_b'(\zeta)|}{|F_a'(\zeta)|}
+            =\rho\frac{(1+r\zeta)^2}{(1+s\zeta)^2}
+\]
+を用いる．どちらも現在の語から決まり，追加の履歴情報ではない．
+\end{definition}
+
+極値尾 $\xi_a,\xi_b$ は禁止語状態と偶奇だけから決まる最終的周期尾である．
+$S$ と $V_\zeta$ の変換は
+\[
+ V_\zeta
+ =S\left(\frac{1+r\zeta}{1+r\xi_a}\right)^2
+    \left(\frac{1+s\xi_b}{1+s\zeta}\right)^2.                 \tag{1}
+\]
+正の一次分数を変数ごとに評価することで，箱全体の厳密な上下界を得る．
+
+\section{統一した許容性}
+\begin{definition}[有限計算で与える一般条件]\label{def:general}
+$\beta=51/50$，
+\[
+ \mathcal T=\{(0,1)\}\cup
+       \{(j/32,(j+2)/32):0\le j\le30\}
+\]
+とする．左右それぞれ22個の離散状態，$-155\le i\le154$，
+基本区間 $(p,q)\in\mathcal T$ からなる有限集合 $\mathcal U$ を作る．
+各行には $r\in B_Q(a)$，$s\in B_Q(b)$，$S\in[\beta^i,\beta^{i+1}]$ を対応させる．
+
+後続で覆える行を残す探索を行い，得られた固定表の全採用行を別途再検証する．
+本稿の固定表は \file{data/graph_wide.json.alive.bin} である．
+行の解釈は \file{data/graph_wide.meta.json} に定める．
+パラメータの分割と有限個の後続候補もこのファイルに指定してある．
+現在のパラメータが採用行に入る基本区間を一般許容区間と呼ぶ．
+\end{definition}
+
+探索の本体は次の有限手続きである．被覆判定は箱全体を扱う．
+\begin{quote}\small\ttfamily
+A := U\\
+repeat:\\
+\quad B := empty\\
+\quad for each C in A:\\
+\qquad if a cover by successors admitted in A is certified:\\
+\qquad\quad add C to B\\
+\quad if B = A: return A\\
+\quad A := B
+\end{quote}
+探索の失敗は非存在の証明ではない．実装は後続候補と交差グラフの探索を制限している．
+証明に用いるのは，保存された固定表に対する全行再検証の成功である．
+$\mathcal U$ は4,801,280行，採用表は3,464,816行である．
+
+\begin{definition}[四つの局所条件]\label{def:local}
+以下の表の小数はすべて有限小数，すなわち正確な有理数を表す．
+各条件は現在の語の状態・偶奇・末尾と，現在の $r,s,S,V_\zeta$ だけを使う．
+\begin{center}\small
+\begin{tabular}{ccccc}
+\toprule
+条件 & 左の状態・偶奇・末尾 & 右の状態・偶奇・末尾 & 比 & 対象の $(p,q)$\\
+\midrule
+1 & $3$・奇・13 & $\eps$・偶・22 & $S$ & $(0,1/8)$\\
+2 & $3$・奇・13 & $\eps$・偶・21 & $S$ & $(0,1/8)$\\
+3 & $3$・奇・33 & $3$・偶・33 & $V_\zeta$ & $(17/100,19/100)$\\
+4 & $3$・奇・33 & $3$・偶・33 & $V_\zeta$ & $(17/100,19/100)$\\
+\bottomrule
+\end{tabular}
+
+\medskip\scriptsize
+\begin{tabular}{cccc}
+\toprule
+条件 & $r$ の範囲 & $s$ の範囲 & 指定した比の範囲\\
+\midrule
+1 & $[.278688,.278689]$ & $[.410958,.410959]$ & $[.845630,.845631]$\\
+2 & $[.267649,.267651]$ & $[.736182,.736231]$ & $[.845630,.845631]$\\
+3 & $[.3027756,.302776]$ & $[.3027756,.302776]$ & $[8.43192,8.43194]$\\
+4 & $[.3027756,.302780]$ & $[.3027756,.302806]$ & $[8.42593,8.42603]$\\
+\bottomrule
+\end{tabular}
+\end{center}
+条件3，4の末尾33は，表示した $r,s$ の範囲からも従う．
+これらの対象区間を局所許容区間と呼ぶ．
+\end{definition}
+
+\begin{definition}[許容性]\label{def:admissible}
+同じ語の対 $(a,b)$ に対して，一般許容区間と局所許容区間の有限個の和に
+含まれる $J_{p,q}(a,b)$ を許容的と呼ぶ．その族を $\A$ とする．
+\end{definition}
+
+これにより $(p,q)$ は32個の基本型に限定されず，連結した和の任意の部分区間を使える．
+また端点付近でも区間の定義は変わらない．
+従来の E，R0，R1 という別の族，祖先や反復回数，
+$S=S_*$ という等式条件は許容性の定義に使わない．
+ただし四つの局所条件は残る．それらの名前を省いたことだけを簡約の根拠にはしていない．
+
+\section{補題2型の後続被覆}
+\begin{lemma}[統一した後続被覆：有限検証]\label{lem:lem2}
+すべての許容的区間は，有限個の許容的な真の後続区間によって覆われる．
+この主張は各条件のパラメータ範囲全体で成立する．
+\end{lemma}
+
+\begin{proof}[証明（変換式，不変性，固定証明書の再検証）]
+追加語 $u$ の行列を
+$\left(\begin{smallmatrix}A_u&B_u\\C_u&D_u\end{smallmatrix}\right)$ と書く．
+子の分母比と下端微分の倍率は
+\[
+ r_{au}=\frac{C_u+rA_u}{D_u+rB_u},\qquad
+ g_a(u)=
+ \left(\frac{1+r\xi_a}{(C_u+rA_u)\xi_{au}+D_u+rB_u}\right)^2,
+\]
+\[
+ S(au,bw)=S(a,b)\frac{g_b(w)}{g_a(u)}.                    \tag{2}
+\]
+一般条件への帰属はこれらで確認する．
+子の $S$ が複数の箱にまたがる場合には，そのすべてで子の区間が採用されていることを確認する．
+
+被覆の端点差は
+\[
+ \frac{F_a(x)-F_a(y)}{|F_a'(\xi_a)|}
+ =(-1)^{|a|}\frac{(1+r\xi_a)^2(x-y)}
+                  {(1+rx)(1+ry)}
+\]
+で評価し，右側の差には $S$ を掛けて加える．
+部分区間の端点は凸結合なので，同じ式の線形結合でよい．
+区間 $[l_\nu,h_\nu]$ の交差は
+$l_\nu\le h_\mu$ と $l_\mu\le h_\nu$ の両方で確認する．
+連結したリストの最小下端・最大上端が親の両端を越えれば被覆となる．
+一般族の固定した3,464,816行は，厳密な入力を再生成したうえで全行検証に通った．
+
+局所条件1，2に用いる周期語を
+\[
+ u=131213,\qquad v=313121
+\]
+とする．該当状態の極値尾について
+\[
+ F_u(\xi_a)=\xi_a,\quad F_v(\xi_b)=\xi_b,\quad
+ F_u'(\xi_a)=F_v'(\xi_b)=\gamma=3697-172\sqrt{462},
+ \quad 0<\gamma<1.
+\]
+従ってこの後続は下端を保ち，$S$ を厳密に保存する．
+分母比の像を調べると，条件1から条件2へ，条件2から条件2へ入る．
+$S$ を一点に固定する必要はない．
+
+局所条件3，4では両側に33を追加する．
+\[
+ F_{33}(\zeta)=\zeta,\qquad
+ r\longmapsto T(r)=\frac{3+r}{10+3r}.
+\]
+連鎖律により左右の微分は同じ $|F_{33}'(\zeta)|$ 倍になり，
+\[
+ V_\zeta(a33,b33)=V_\zeta(a,b).                          \tag{3}
+\]
+$T$ は増加し，表の各 $r,s$ 区間を保つことは両端の有理数の評価で分かる．
+従って条件3，4はそれぞれ現在のパラメータだけで不変になる．
+
+条件1，2の他の局所後続は条件3，4に入る．これも (1)，(2) で直接検査する．
+残りは一般族に帰着する．固定リストの検証結果は次の通りである．
+\begin{center}\small
+\begin{tabular}{cccc}
+\toprule
+親の条件 & 後続の総数 & 局所条件に入る後続 & 一般族に入る後続\\
+\midrule
+1 & 102 & 2 & 100\\
+2 & 48 & 2 & 46\\
+3 & 17 & 1 & 16\\
+4 & 19 & 1 & 18\\
+\bottomrule
+\end{tabular}
+\end{center}
+すべての被覆比較と帰属判定が通った．
+固定表とこの186後続は \file{src/verify_unified_proof.py} で再検証できる．
+
+最後に，許容性を有限和の部分区間へ拡張しても，
+各支持区間の後続リストを合わせればその和を覆う．
+従って定義\ref{def:admissible}のすべての区間について主張が従う．
+\end{proof}
+
+式 (3) が今回の実質的な簡約である．
+従来，独立な $r,s,S$ の箱では反復時に失われた関係を，
+現在の保存量 $V_\zeta$ で保持できた．祖先や回数に対する帰納法は不要になった．
+
+\section{被覆の反復と Freiman 定数への到達}
+\begin{theorem}[許容区間の充填]\label{thm:filling}
+許容的なら $J_{p,q}(a,b)\subset K(a)+K(b)$ である．
+\end{theorem}
+\begin{proof}
+$t\in J_{p,q}(a,b)$ を固定し，補題\ref{lem:lem2}によって
+$t$ を含む許容的な後続を選び続ける．長さの和は毎回増える．
+一般族では $S\in[\beta^{-155},\beta^{155}]$，局所条件1，2でも正の有限範囲に入る．
+条件3，4の $S$ は (1) から正の上下界を持つ．
+従って族全体で $0<m\le S\le M_0<\infty$ となる．
+
+一方だけの分母が発散して他方が有界なら，
+補題\ref{lem:cf}により $S\to0$ または $S\to\infty$ となり矛盾する．
+よって両側の語が無限に伸びる．
+全凸包 $H(a_n,b_n)$ は入れ子で，直径は0に収束する．
+その共通点は伸び続けた二つの無限連分数の和に等しく，$t$ である．
+禁止語はどの有限接頭語にもないので，極限にもない．
+\end{proof}
+
+$A=32113$，$B=4322$ とする．
+$r_A=17/61$，$r_B=30/73$，$S(A,B)=.845630170066686\ldots$ なので条件1に入る．
+従って
+\[
+ J_{0,1/8}(A,B)\subset K(A)+K(B).
+\]
+極値尾は
+\[
+ x=[0;\overline{131213}]=\frac{-28+2\sqrt{462}}{19},
+ \qquad
+ y=[0;\overline{313121}]=\frac{-29+2\sqrt{462}}{53}
+\]
+で，$4+\ell(A,B)=4+F_A(x)+F_B(y)=\CF$ が厳密に成立する．
+これにより，許容性と補題2の反復から左端 $\CF$ に届く．
+
+\section{非中心値と半直線全体}
+\begin{lemma}[中心値の実現から Markov 区間へ]\label{lem:markov}
+許された全延長の非中心値に共通上界 $\Theta(a,b;c)$ があり，
+$J_{p,q}(a,b)$ が充填されていれば
+\[
+ [\max\{c+\ell+pW,\Theta(a,b;c)\},\ c+\ell+qW]\subset M
+\]
+が成立する（空の場合は除く）．
+\end{lemma}
+\begin{proof}
+任意の目標値を中心値として実現した延長では，他の局所値はそれを越えない．
+従ってその列の Markov 値は指定した中心値に等しい．
+\end{proof}
+
+\begin{proposition}[初期区間の有限検証]\label{prop:initial}
+以下が厳密に検証されている．
+\begin{enumerate}
+\item 根の非中心上界は
+\[
+ \Theta(A,B;4)=\frac{4\sqrt{462}}{19}+\frac1{441}<\CF.
+\]
+\item 根の端点区間と93本の充填済み区間から
+$[\CF,6.524726426110279\ldots]\subset M$ が得られる．
+\item 43本の充填済み区間は $[1/2,3/2]$ を覆い，固定語の数字はすべて4以下である．
+\end{enumerate}
+\end{proposition}
+\begin{proof}[証明（有限入口・接続・非中心値の検証）]
+短い初期語の一部は一般条件の $B_Q$ に直接入らない．
+34件の固定入口区間について，379本の真の後続区間による被覆を検証した．
+その全後続は一つの一般族に入るので，定理\ref{thm:filling}で充填される．
+これは初期区間の有限被覆であり，反復中に祖先や回数を保持する操作ではない．
+136本の初期帯のうち51本は一般族に直接入り，85本はこの入口被覆を使う．
+
+端点・帰属・帯同士の接続は $\mathbb Q(\sqrt{462})$ で再計算した．
+93帯で用いる91組の根の非中心上界も再計算した．
+固定部分の近い非中心位置を列挙し，遠い位置も次の上界で扱う．
+31313を避ける両側1,2,3列の局所値の最大値は
+$M_B=4\sqrt{462}/19<\CF$ である．
+禁止語を除いた242個の5桁窓の極値延長から厳密に求められる．
+遠い位置の尾はそのような列と7桁以上共有するので，
+円筒評価による誤差は $1/F_8^2=1/441$ 以下である．
+$F_j$ は Fibonacci 数とする．根の近い位置の上界も表示した値以下になる．
+全検証は \file{src/verify_unified_proof.py} に含まれる．
+\end{proof}
+
+\begin{proof}[主定理\ref{thm:main}の証明]
+命題\ref{prop:initial}(1)，(2) と補題\ref{lem:markov}から，
+$\CF$ から $13/2$ より大きい値までが $M$ に入る．
+整数 $n\ge6$ を中心に置いて (3) を使うと，
+すべての非中心の数字は4以下なので $\lambda_i<6\le n$ となる．
+従って $[n+1/2,n+3/2]\subset M$．隣の整数の区間とは端点で接するから
+$[13/2,\infty)\subset M$ も得られる．
+
+$L$ への包含も示す．得られた列 $C$ は $m(C)=\lambda_0(C)=t$ を満たし，
+有限中心部以外は1,2,3で，両尾は31313を避ける．
+窓 $C[-m,m]$ を $m\to\infty$ とともに並べ，間に長さが増加する2の列を挟む．
+これを右側の尾とする列 $\widetilde C$ を作る．左側は2で埋めてよい．
+半径 $R$ を固定すると，十分後ろの半径 $R$ の窓は $C$ の窓と一致するか，
+1,2,3だけからなり31313を含まない．接合部の2は禁止語を作らない．
+従って十分後ろでは
+\[
+ \lambda_i(\widetilde C)\le\max(t,M_B)+2/F_{R+1}^2
+                         =t+2/F_{R+1}^2.
+\]
+$R\to\infty$ とすると $l(\widetilde C)\le t$．
+各コピーの中心値は $t$ に収束するので，逆向きの不等式も成立する．
+よって $t\in L$ である．
+\end{proof}
+
+\section{Schecker との対応と再検証}
+Schecker の T 区間は今回の $J_{p,q}$ に，T 比は左右の大きさを測る $S,V_\zeta$ に対応する．
+Schecker の許容性に対して，今回は定義\ref{def:admissible}を用いる．
+同文書の補題2の後続リストに対応するのが補題\ref{lem:lem2}，
+補題1以降の反復に対応するのが定理\ref{thm:filling}である．
+禁止語と切り取った部分区間が加わるため，条件自体は元の Schecker より複雑である．
+
+リポジトリの根から次を実行すると，一般族の入力再生成・全行閉包，
+四つの局所条件，34入口，136帯の接続をまとめて再検証する．
+\begin{quote}\small\ttfamily
+python3 -B -S Freiman/lemma2\_search/src/verify\_unified\_proof.py --full
+\end{quote}
+固定証明書は \file{data/unified_proof_certificate.json}，
+結果は \file{data/unified_proof_verified.json}，ログは \file{logs/} にある．
+全行検証済みのハッシュを確認して再利用する通常実行では \texttt{--full} を省ける．
+コードや固定入力を変えた場合は全行検証をやり直す．
+
+\textbf{今回できた簡約}は，一般族を二つから一つに減らし，
+端点側の許容性を現在の情報に対する四つの有理条件に置き換え，
+祖先・反復回数・端点比の等式条件を除いたことである．
+\textbf{一般条件を1000以下にする簡約はまだできていない．}
+一般族の3,464,816行は計算機による有限検証の量として残る．
+短いアルゴリズムによる記述と，少数の明示的な不等式による記述は区別する必要がある．
+本稿は計算機援用証明であり，形式証明支援系による形式化や $\CF$ 以下での最適性は扱わない．
+
+旧解説と旧証明は保存してあるが，本稿の再検証には
+\file{graph_m2} や旧 R 族の祖先を使う検証は必要ない．
+\end{document}

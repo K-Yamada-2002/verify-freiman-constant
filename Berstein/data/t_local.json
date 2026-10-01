@@ -1,0 +1,507 @@
+{
+  "root": "112,122",
+  "maximum_total_extension": 3,
+  "candidates": 814,
+  "scope": "Exact local covers only. Child admissibility and infinite closure are NOT certified.",
+  "proof_complete": false,
+  "types": [
+    {
+      "type": "F",
+      "nonempty": true,
+      "covered": true,
+      "parent_endpoints": [
+        [
+          {
+            "prefix": "112",
+            "period": "1323"
+          },
+          {
+            "prefix": "122",
+            "period": "1323"
+          }
+        ],
+        [
+          {
+            "prefix": "11",
+            "period": "2313"
+          },
+          {
+            "prefix": "12",
+            "period": "2313"
+          }
+        ]
+      ],
+      "menu": [
+        {
+          "u": "",
+          "v": "1",
+          "type": "F",
+          "endpoints": [
+            [
+              {
+                "prefix": "112",
+                "period": "1323"
+              },
+              {
+                "prefix": "122",
+                "period": "1323"
+              }
+            ],
+            [
+              {
+                "prefix": "11",
+                "period": "2313"
+              },
+              {
+                "prefix": "1221",
+                "period": "1323"
+              }
+            ]
+          ]
+        },
+        {
+          "u": "",
+          "v": "3",
+          "type": "F",
+          "endpoints": [
+            [
+              {
+                "prefix": "112",
+                "period": "1323"
+              },
+              {
+                "prefix": "1223",
+                "period": "3132"
+              }
+            ],
+            [
+              {
+                "prefix": "11",
+                "period": "2313"
+              },
+              {
+                "prefix": "12",
+                "period": "2313"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "binary",
+      "nonempty": true,
+      "covered": true,
+      "parent_endpoints": [
+        [
+          {
+            "prefix": "112",
+            "period": "1323"
+          },
+          {
+            "prefix": "12",
+            "period": "21"
+          }
+        ],
+        [
+          {
+            "prefix": "11",
+            "period": "2313"
+          },
+          {
+            "prefix": "122",
+            "period": "21"
+          }
+        ]
+      ],
+      "menu": [
+        {
+          "u": "",
+          "v": "1",
+          "type": "F",
+          "endpoints": [
+            [
+              {
+                "prefix": "112",
+                "period": "1323"
+              },
+              {
+                "prefix": "122",
+                "period": "1323"
+              }
+            ],
+            [
+              {
+                "prefix": "11",
+                "period": "2313"
+              },
+              {
+                "prefix": "1221",
+                "period": "1323"
+              }
+            ]
+          ]
+        },
+        {
+          "u": "",
+          "v": "3",
+          "type": "F",
+          "endpoints": [
+            [
+              {
+                "prefix": "112",
+                "period": "1323"
+              },
+              {
+                "prefix": "1223",
+                "period": "3132"
+              }
+            ],
+            [
+              {
+                "prefix": "11",
+                "period": "2313"
+              },
+              {
+                "prefix": "12",
+                "period": "2313"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "no13",
+      "nonempty": true,
+      "covered": true,
+      "parent_endpoints": [
+        [
+          {
+            "prefix": "112",
+            "period": "1323"
+          },
+          {
+            "prefix": "12",
+            "period": "21"
+          }
+        ],
+        [
+          {
+            "prefix": "11",
+            "period": "2313"
+          },
+          {
+            "prefix": "1223",
+            "period": "12"
+          }
+        ]
+      ],
+      "menu": [
+        {
+          "u": "",
+          "v": "1",
+          "type": "F",
+          "endpoints": [
+            [
+              {
+                "prefix": "112",
+                "period": "1323"
+              },
+              {
+                "prefix": "122",
+                "period": "1323"
+              }
+            ],
+            [
+              {
+                "prefix": "11",
+                "period": "2313"
+              },
+              {
+                "prefix": "1221",
+                "period": "1323"
+              }
+            ]
+          ]
+        },
+        {
+          "u": "",
+          "v": "3",
+          "type": "F",
+          "endpoints": [
+            [
+              {
+                "prefix": "112",
+                "period": "1323"
+              },
+              {
+                "prefix": "1223",
+                "period": "3132"
+              }
+            ],
+            [
+              {
+                "prefix": "11",
+                "period": "2313"
+              },
+              {
+                "prefix": "12",
+                "period": "2313"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "no31",
+      "nonempty": true,
+      "covered": true,
+      "parent_endpoints": [
+        [
+          {
+            "prefix": "112",
+            "period": "1323"
+          },
+          {
+            "prefix": "1221",
+            "period": "32"
+          }
+        ],
+        [
+          {
+            "prefix": "11",
+            "period": "2313"
+          },
+          {
+            "prefix": "12",
+            "period": "23"
+          }
+        ]
+      ],
+      "menu": [
+        {
+          "u": "",
+          "v": "1",
+          "type": "F",
+          "endpoints": [
+            [
+              {
+                "prefix": "112",
+                "period": "1323"
+              },
+              {
+                "prefix": "122",
+                "period": "1323"
+              }
+            ],
+            [
+              {
+                "prefix": "11",
+                "period": "2313"
+              },
+              {
+                "prefix": "1221",
+                "period": "1323"
+              }
+            ]
+          ]
+        },
+        {
+          "u": "",
+          "v": "3",
+          "type": "F",
+          "endpoints": [
+            [
+              {
+                "prefix": "112",
+                "period": "1323"
+              },
+              {
+                "prefix": "1223",
+                "period": "3132"
+              }
+            ],
+            [
+              {
+                "prefix": "11",
+                "period": "2313"
+              },
+              {
+                "prefix": "12",
+                "period": "2313"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "no11",
+      "nonempty": true,
+      "covered": true,
+      "parent_endpoints": [
+        [
+          {
+            "prefix": "112",
+            "period": "1323"
+          },
+          {
+            "prefix": "122",
+            "period": "1323"
+          }
+        ],
+        [
+          {
+            "prefix": "11",
+            "period": "2313"
+          },
+          {
+            "prefix": "12",
+            "period": "2313"
+          }
+        ]
+      ],
+      "menu": [
+        {
+          "u": "",
+          "v": "1",
+          "type": "F",
+          "endpoints": [
+            [
+              {
+                "prefix": "112",
+                "period": "1323"
+              },
+              {
+                "prefix": "122",
+                "period": "1323"
+              }
+            ],
+            [
+              {
+                "prefix": "11",
+                "period": "2313"
+              },
+              {
+                "prefix": "1221",
+                "period": "1323"
+              }
+            ]
+          ]
+        },
+        {
+          "u": "",
+          "v": "3",
+          "type": "F",
+          "endpoints": [
+            [
+              {
+                "prefix": "112",
+                "period": "1323"
+              },
+              {
+                "prefix": "1223",
+                "period": "3132"
+              }
+            ],
+            [
+              {
+                "prefix": "11",
+                "period": "2313"
+              },
+              {
+                "prefix": "12",
+                "period": "2313"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "no33",
+      "nonempty": true,
+      "covered": true,
+      "parent_endpoints": [
+        [
+          {
+            "prefix": "112",
+            "period": "1323"
+          },
+          {
+            "prefix": "122",
+            "period": "1323"
+          }
+        ],
+        [
+          {
+            "prefix": "11",
+            "period": "2313"
+          },
+          {
+            "prefix": "12",
+            "period": "2313"
+          }
+        ]
+      ],
+      "menu": [
+        {
+          "u": "",
+          "v": "1",
+          "type": "F",
+          "endpoints": [
+            [
+              {
+                "prefix": "112",
+                "period": "1323"
+              },
+              {
+                "prefix": "122",
+                "period": "1323"
+              }
+            ],
+            [
+              {
+                "prefix": "11",
+                "period": "2313"
+              },
+              {
+                "prefix": "1221",
+                "period": "1323"
+              }
+            ]
+          ]
+        },
+        {
+          "u": "",
+          "v": "3",
+          "type": "F",
+          "endpoints": [
+            [
+              {
+                "prefix": "112",
+                "period": "1323"
+              },
+              {
+                "prefix": "1223",
+                "period": "3132"
+              }
+            ],
+            [
+              {
+                "prefix": "11",
+                "period": "2313"
+              },
+              {
+                "prefix": "12",
+                "period": "2313"
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

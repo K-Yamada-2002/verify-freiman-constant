@@ -1,0 +1,31 @@
+{
+  "proof_complete": false,
+  "settings": {
+    "left": "321133",
+    "right": "432212",
+    "length": 24,
+    "lookahead": 4,
+    "nodes": 100000,
+    "output": "adaptive_menu.json"
+  },
+  "status": "unresolved",
+  "menu": null,
+  "counts": {
+    "processed": 2562,
+    "tested": 300,
+    "intrinsic_screen_rejections": 286,
+    "banned_rejections": 0,
+    "covered_prunes": 1767,
+    "length_limit": 37,
+    "max_length_seen": 24
+  },
+  "pending": 0,
+  "accepted_count": 14,
+  "normalized_uncovered": [
+    [
+      0.4269273998880888,
+      0.4269275388990945
+    ]
+  ],
+  "seconds": 0.13244370800020988
+}

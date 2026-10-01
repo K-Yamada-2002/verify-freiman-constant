@@ -1,0 +1,476 @@
+{
+  "proof_complete": false,
+  "records": [
+    {
+      "a": "321133",
+      "b": "432212",
+      "status": "unresolved",
+      "menu": null,
+      "counts": {
+        "processed": 2562,
+        "tested": 300,
+        "intrinsic_screen_rejections": 286,
+        "banned_rejections": 0,
+        "covered_prunes": 1767,
+        "length_limit": 37,
+        "max_length_seen": 24
+      },
+      "pending": 0,
+      "accepted_count": 14,
+      "normalized_uncovered": [
+        [
+          0.4269273998880888,
+          0.4269275388990945
+        ]
+      ],
+      "seconds": 0.08996312499948544
+    },
+    {
+      "a": "32113123",
+      "b": "432232",
+      "status": "exact_local_cover",
+      "menu": [
+        [
+          [
+            3
+          ],
+          [
+            3
+          ]
+        ],
+        [
+          [
+            2,
+            1,
+            2,
+            1,
+            3
+          ],
+          [
+            3,
+            1,
+            2,
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            2,
+            1,
+            2,
+            1,
+            1
+          ],
+          [
+            3,
+            1,
+            2,
+            1,
+            2
+          ]
+        ],
+        [
+          [
+            2,
+            1,
+            2,
+            1
+          ],
+          [
+            3,
+            1,
+            2,
+            2
+          ]
+        ],
+        [
+          [
+            2,
+            1,
+            3
+          ],
+          [
+            3,
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            2,
+            1,
+            1
+          ],
+          [
+            3,
+            1,
+            2
+          ]
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        [
+          [],
+          [
+            2
+          ]
+        ],
+        [
+          [
+            1
+          ],
+          []
+        ]
+      ],
+      "counts": {
+        "processed": 809,
+        "tested": 151,
+        "intrinsic_screen_rejections": 139,
+        "banned_rejections": 0,
+        "covered_prunes": 510,
+        "length_limit": 0,
+        "max_length_seen": 10
+      },
+      "seconds": 0.046975625000413856,
+      "accepted_count": 12,
+      "pending": 233
+    },
+    {
+      "a": "3211312",
+      "b": "43222",
+      "status": "exact_local_cover",
+      "menu": [
+        [
+          [
+            1
+          ],
+          []
+        ],
+        [
+          [],
+          [
+            2
+          ]
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        [
+          [
+            2,
+            1,
+            1
+          ],
+          [
+            3,
+            1,
+            2
+          ]
+        ],
+        [
+          [
+            2,
+            1,
+            3
+          ],
+          [
+            3,
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            2,
+            1,
+            2,
+            1
+          ],
+          [
+            3,
+            1,
+            2,
+            2
+          ]
+        ],
+        [
+          [
+            2,
+            1,
+            2,
+            1,
+            1
+          ],
+          [
+            3,
+            1,
+            2,
+            1,
+            2
+          ]
+        ],
+        [
+          [
+            2,
+            1,
+            2,
+            1,
+            3
+          ],
+          [
+            3,
+            1,
+            2,
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            2,
+            1,
+            2,
+            2
+          ],
+          [
+            3,
+            1,
+            3
+          ]
+        ],
+        [
+          [
+            3
+          ],
+          [
+            3
+          ]
+        ]
+      ],
+      "counts": {
+        "processed": 809,
+        "tested": 154,
+        "intrinsic_screen_rejections": 140,
+        "banned_rejections": 0,
+        "covered_prunes": 508,
+        "length_limit": 0,
+        "max_length_seen": 10
+      },
+      "seconds": 0.04768349999994825,
+      "accepted_count": 14,
+      "pending": 236
+    },
+    {
+      "a": "3211311",
+      "b": "43222",
+      "status": "exact_local_cover",
+      "menu": [
+        [
+          [
+            1
+          ],
+          []
+        ],
+        [
+          [
+            2
+          ],
+          []
+        ],
+        [
+          [
+            3,
+            2
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        [
+          [
+            3,
+            1,
+            2
+          ],
+          [
+            2,
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            3,
+            1,
+            1
+          ],
+          [
+            2,
+            1,
+            3
+          ]
+        ],
+        [
+          [
+            3,
+            1,
+            2,
+            2
+          ],
+          [
+            2,
+            1,
+            2,
+            1
+          ]
+        ],
+        [
+          [
+            3,
+            1,
+            2,
+            1,
+            2
+          ],
+          [
+            2,
+            1,
+            2,
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            3,
+            1,
+            2,
+            1,
+            1
+          ],
+          [
+            2,
+            1,
+            2,
+            1,
+            3
+          ]
+        ],
+        [
+          [
+            3,
+            1,
+            3,
+            2,
+            1
+          ],
+          [
+            2,
+            1,
+            2,
+            3,
+            2
+          ]
+        ],
+        [
+          [
+            3,
+            1,
+            3
+          ],
+          [
+            2,
+            1,
+            2,
+            2
+          ]
+        ],
+        [
+          [
+            3
+          ],
+          [
+            3
+          ]
+        ]
+      ],
+      "counts": {
+        "processed": 864,
+        "tested": 161,
+        "intrinsic_screen_rejections": 145,
+        "banned_rejections": 0,
+        "covered_prunes": 544,
+        "length_limit": 0,
+        "max_length_seen": 10
+      },
+      "seconds": 0.04989291699985188,
+      "accepted_count": 16,
+      "pending": 244
+    },
+    {
+      "a": "3211311",
+      "b": "43221",
+      "status": "unresolved",
+      "menu": null,
+      "counts": {
+        "processed": 2570,
+        "tested": 307,
+        "intrinsic_screen_rejections": 292,
+        "banned_rejections": 0,
+        "covered_prunes": 1761,
+        "length_limit": 37,
+        "max_length_seen": 24
+      },
+      "pending": 0,
+      "accepted_count": 15,
+      "normalized_uncovered": [
+        [
+          -0.7354580492997309,
+          -0.735457398365492
+        ]
+      ],
+      "seconds": 0.08696708300067257
+    },
+    {
+      "a": "321132",
+      "b": "432211",
+      "status": "unresolved",
+      "menu": null,
+      "counts": {
+        "processed": 2601,
+        "tested": 338,
+        "intrinsic_screen_rejections": 313,
+        "banned_rejections": 0,
+        "covered_prunes": 1765,
+        "length_limit": 38,
+        "max_length_seen": 24
+      },
+      "pending": 0,
+      "accepted_count": 25,
+      "normalized_uncovered": [
+        [
+          0.44121494618933743,
+          0.4412153914616235
+        ]
+      ],
+      "seconds": 0.09548300000005838
+    }
+  ]
+}

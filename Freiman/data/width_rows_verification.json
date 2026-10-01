@@ -1,0 +1,9 @@
+{
+  "input": "width_oriented_cached.json",
+  "passed": true,
+  "independent_polynomial_local_rows": 518,
+  "unverified_row_ids": [],
+  "corruption_controls": 2,
+  "closure_checked": false,
+  "freiman_ray_proved": false
+}

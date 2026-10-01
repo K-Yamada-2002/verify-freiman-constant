@@ -1,0 +1,374 @@
+{
+  "passed": true,
+  "arithmetic": "Independent exact Q(sqrt(462)); stdlib only",
+  "repository_math_imports": false,
+  "finite_automaton_contexts": 341,
+  "side_states": 22,
+  "extension_words": 91,
+  "valid_side_transitions": 1808,
+  "raw_endpoint_references": 3616,
+  "raw_tail_ids": 2396,
+  "exact_alias_references": 1220,
+  "derivative_constant_references": 154,
+  "derivative_constant_groups": 32,
+  "derivative_constants": {
+    "1": [
+      "1",
+      "0"
+    ],
+    "2": [
+      "2689/2809",
+      "-116/2809"
+    ],
+    "3": [
+      "36232/2809",
+      "-1680/2809"
+    ],
+    "4": [
+      "58129/2809",
+      "-2704/2809"
+    ],
+    "5": [
+      "3697",
+      "-172"
+    ],
+    "6": [
+      "834409/2809",
+      "-38820/2809"
+    ],
+    "7": [
+      "1332984/2809",
+      "-62016/2809"
+    ],
+    "8": [
+      "101/24",
+      "-1/6"
+    ],
+    "9": [
+      "173/24",
+      "-1/3"
+    ],
+    "10": [
+      "301/3",
+      "-14/3"
+    ],
+    "11": [
+      "3869/24",
+      "-15/2"
+    ],
+    "12": [
+      "55541/24",
+      "-323/3"
+    ],
+    "13": [
+      "2632/361",
+      "-112/361"
+    ],
+    "14": [
+      "4057/361",
+      "-188/361"
+    ],
+    "15": [
+      "58129/361",
+      "-2704/361"
+    ],
+    "16": [
+      "92856/361",
+      "-4320/361"
+    ],
+    "17": [
+      "723409/361",
+      "-33656/361"
+    ],
+    "18": [
+      "47/56",
+      "-1/28"
+    ],
+    "19": [
+      "647/56",
+      "-15/28"
+    ],
+    "20": [
+      "129/7",
+      "-6/7"
+    ],
+    "21": [
+      "8039/56",
+      "-187/28"
+    ],
+    "22": [
+      "14831/56",
+      "-345/28"
+    ],
+    "23": [
+      "2689/361",
+      "-116/361"
+    ],
+    "24": [
+      "4152/361",
+      "-192/361"
+    ],
+    "25": [
+      "32257/361",
+      "-1500/361"
+    ],
+    "26": [
+      "59497/361",
+      "-2768/361"
+    ],
+    "27": [
+      "830536/361",
+      "-38640/361"
+    ],
+    "28": [
+      "2424/2809",
+      "-96/2809"
+    ],
+    "29": [
+      "17593/2809",
+      "-808/2809"
+    ],
+    "30": [
+      "32257/2809",
+      "-1500/2809"
+    ],
+    "31": [
+      "450184/2809",
+      "-20944/2809"
+    ],
+    "32": [
+      "723409/2809",
+      "-33656/2809"
+    ]
+  },
+  "constant_identity_method": "Exact symbolic Mobius determinant and global equality",
+  "uniform_suffix_shapes_and_all_child_inclusions": true,
+  "greedy_extremes": [
+    {
+      "state": 0,
+      "minimum": true,
+      "prefix": [],
+      "period": [
+        3,
+        1,
+        3,
+        1,
+        2,
+        1
+      ],
+      "exact": [
+        "-29/53",
+        "2/53"
+      ]
+    },
+    {
+      "state": 0,
+      "minimum": false,
+      "prefix": [],
+      "period": [
+        1,
+        3,
+        1,
+        3,
+        1,
+        2
+      ],
+      "exact": [
+        "-1",
+        "1/12"
+      ]
+    },
+    {
+      "state": 1,
+      "minimum": true,
+      "prefix": [
+        3
+      ],
+      "period": [
+        1,
+        3,
+        1,
+        2,
+        1,
+        3
+      ],
+      "exact": [
+        "-29/53",
+        "2/53"
+      ]
+    },
+    {
+      "state": 1,
+      "minimum": false,
+      "prefix": [],
+      "period": [
+        1,
+        3,
+        1,
+        2,
+        1,
+        3
+      ],
+      "exact": [
+        "-28/19",
+        "2/19"
+      ]
+    },
+    {
+      "state": 2,
+      "minimum": true,
+      "prefix": [],
+      "period": [
+        3,
+        1,
+        2,
+        1,
+        3,
+        1
+      ],
+      "exact": [
+        "-1/2",
+        "1/28"
+      ]
+    },
+    {
+      "state": 2,
+      "minimum": false,
+      "prefix": [
+        1
+      ],
+      "period": [
+        3,
+        1,
+        3,
+        1,
+        2,
+        1
+      ],
+      "exact": [
+        "-1",
+        "1/12"
+      ]
+    },
+    {
+      "state": 3,
+      "minimum": true,
+      "prefix": [
+        3
+      ],
+      "period": [
+        1,
+        3,
+        1,
+        2,
+        1,
+        3
+      ],
+      "exact": [
+        "-29/53",
+        "2/53"
+      ]
+    },
+    {
+      "state": 3,
+      "minimum": false,
+      "prefix": [],
+      "period": [
+        1,
+        2,
+        1,
+        3,
+        1,
+        3
+      ],
+      "exact": [
+        "-29/19",
+        "2/19"
+      ]
+    },
+    {
+      "state": 4,
+      "minimum": true,
+      "prefix": [],
+      "period": [
+        2,
+        1,
+        3,
+        1,
+        3,
+        1
+      ],
+      "exact": [
+        "-24/53",
+        "2/53"
+      ]
+    },
+    {
+      "state": 4,
+      "minimum": false,
+      "prefix": [
+        1
+      ],
+      "period": [
+        3,
+        1,
+        3,
+        1,
+        2,
+        1
+      ],
+      "exact": [
+        "-1",
+        "1/12"
+      ]
+    }
+  ],
+  "initial_root": {
+    "words": [
+      "322",
+      "431"
+    ],
+    "side_ids": [
+      8,
+      17
+    ],
+    "geometry": 193,
+    "bin": -20,
+    "r": "7/17",
+    "s": "13/17",
+    "scale": [
+      "55792801/159491641",
+      "2467176/159491641"
+    ],
+    "bands": 25,
+    "exact_interval": [
+      [
+        "929276028117845/206593352255776",
+        "798281673463/619780056767328"
+      ],
+      [
+        "474259852885763/103296676127888",
+        "-918289906943/309890028383664"
+      ]
+    ],
+    "approximate_interval": [
+      4.525777278415714,
+      4.527546990114258
+    ],
+    "alive_count": 3464816,
+    "scope": "Initial row membership only; closure is checked separately."
+  },
+  "negative_controls": {
+    "unequal_raw_endpoints_share_id": "Shared raw ID aliases unequal endpoints",
+    "nonconstant_derivative_tagged_constant": "Spurious/missing constant ID",
+    "unequal_constants_share_id": "Global constant ID aliases unequal derivative factors"
+  },
+  "unused_fields": "Width and eta mathematical values not audited; graph coverage does not read them.",
+  "does_not_certify": "Graph inequality/coverage closure or spectral domination.",
+  "sha256": {
+    "Freiman/data/graph_wide.dat": "f920da96f3fc28c6182f4dc9f0a3836dac059186a3f54e33b484198ed51a2234",
+    "Freiman/data/graph_wide.meta.json": "487b048ddb9b6e706aa250909c76218049e00008c8c0cc4ab4ebf0714e73bb12",
+    "Freiman/data/graph_wide.json.alive.bin": "a75629b1148bdbc6890d02eb85562b722e0209fb13a0dc5ac3f5fdfc60dc93a5",
+    "Berstein/audit/independent_input.py": "73351a0888873066a8950aa14e2ab66bec746706cd8640a807e96548ba1e178e"
+  }
+}

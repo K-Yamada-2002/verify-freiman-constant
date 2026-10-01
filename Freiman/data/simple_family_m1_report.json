@@ -1,0 +1,41 @@
+{
+  "scope": "Research experiment; not used by the verified Freiman proof.",
+  "objective": "Admissibility using forbidden-word state, parity and last digit, with at most 1000 S/type conditions.",
+  "proposal": {
+    "proposal_only": true,
+    "source": "graph_wide",
+    "coarse_geometry_pairs": 144,
+    "coarse_rows": 1013276,
+    "fine_rows": 3420530,
+    "individual_type_runs_after_swap": 4235,
+    "rectangle_lower_bound_after_swap": 529
+  },
+  "mathematical_domain": "For actual legal words satisfying the original tight prehistory bounds, membership ignores the penultimate digit. Exact validation still enumerates every possible fine suffix-2 geometry.",
+  "proposal_checks": {
+    "subset_of_original": true,
+    "all_fine_geometries_share_mask": true,
+    "reciprocal_symmetry": true
+  },
+  "greedy_overlapping_rectangle_cover": 3873,
+  "original_J_saturation_added_rows": 0,
+  "closure_status": "Completed. The group-uniform pruning returned the empty family.",
+  "proof_complete": false,
+  "target_1000_achieved": false,
+  "method_limitation": "Candidate extensions and overlap-graph frontier are restricted. Failure or an empty result is not a mathematical nonexistence proof.",
+  "reproduce": [
+    "python3 -B -S Freiman/lemma2_search/src/simple_family_m1.py",
+    "clang++ -O3 -std=c++17 Freiman/lemma2_search/src/simple_family_grouped_reduce.cpp -o Freiman/lemma2_search/bin/simple_family_grouped_reduce_bounded",
+    "Freiman/lemma2_search/bin/simple_family_grouped_reduce_bounded Freiman/lemma2_search/data/simple_family_m1.dat Freiman/lemma2_search/data/simple_family_m1_bounded.json Freiman/lemma2_search/data/simple_family_m1.seed.bin prune Freiman/lemma2_search/data/simple_family_m1.groups.txt 120"
+  ],
+  "closure_result": {
+    "fixed_point": true,
+    "surviving_states": 0,
+    "visits": 1913401,
+    "seconds": 399.419
+  },
+  "interpretation": "Forgetting the penultimate digit and taking the common original rows did not yield a nonempty closed family under this restricted cover selector. This is a failed simplification proposal, not a nonexistence theorem.",
+  "unconstrained_comparison": {
+    "status": "Stopped before convergence; no certificate produced",
+    "note": "Fine rows after pruning need not remain suffix1 uniform."
+  }
+}

@@ -1,0 +1,342 @@
+{
+  "proof_complete": false,
+  "records": [
+    {
+      "a": "32113",
+      "b": "4322",
+      "type": "F",
+      "status": "exact_local_cover",
+      "menu": [
+        [
+          [
+            1
+          ],
+          [],
+          "F"
+        ],
+        [
+          [],
+          [
+            1
+          ],
+          "F"
+        ]
+      ],
+      "counts": {
+        "processed": 5,
+        "screened": 4,
+        "accepted_F": 3,
+        "accepted_T2": 3,
+        "max_length_seen": 1,
+        "banned_rejections": 0,
+        "length_limit": 0
+      },
+      "seconds": 0.005858374999661464
+    },
+    {
+      "a": "32113",
+      "b": "4322",
+      "type": "T2",
+      "status": "exact_local_cover",
+      "menu": [
+        [
+          [
+            1
+          ],
+          [],
+          "F"
+        ],
+        [
+          [],
+          [
+            1
+          ],
+          "T2"
+        ]
+      ],
+      "counts": {
+        "processed": 5,
+        "screened": 4,
+        "accepted_F": 3,
+        "accepted_T2": 3,
+        "max_length_seen": 1,
+        "banned_rejections": 0,
+        "length_limit": 0
+      },
+      "seconds": 0.0026571669995973934
+    },
+    {
+      "a": "321133",
+      "b": "432212",
+      "type": "F",
+      "status": "exact_local_cover",
+      "menu": [
+        [
+          [
+            3
+          ],
+          [
+            3
+          ],
+          "F"
+        ],
+        [
+          [
+            3
+          ],
+          [
+            2
+          ],
+          "T2"
+        ],
+        [
+          [
+            2
+          ],
+          [],
+          "F"
+        ],
+        [
+          [
+            1
+          ],
+          [],
+          "F"
+        ]
+      ],
+      "counts": {
+        "processed": 13,
+        "screened": 10,
+        "accepted_F": 3,
+        "accepted_T2": 4,
+        "max_length_seen": 2,
+        "banned_rejections": 0,
+        "length_limit": 0
+      },
+      "seconds": 0.007955582999784383
+    },
+    {
+      "a": "321133",
+      "b": "432212",
+      "type": "T2",
+      "status": "exact_local_cover",
+      "menu": [
+        [
+          [
+            3
+          ],
+          [
+            2
+          ],
+          "T2"
+        ],
+        [
+          [
+            2
+          ],
+          [],
+          "F"
+        ],
+        [
+          [
+            1
+          ],
+          [],
+          "T2"
+        ]
+      ],
+      "counts": {
+        "processed": 12,
+        "screened": 9,
+        "accepted_F": 2,
+        "accepted_T2": 3,
+        "max_length_seen": 2,
+        "banned_rejections": 0,
+        "length_limit": 0
+      },
+      "seconds": 0.0043694999994841055
+    },
+    {
+      "a": "3211311",
+      "b": "43221",
+      "type": "F",
+      "status": "exact_local_cover",
+      "menu": [
+        [
+          [
+            1
+          ],
+          [],
+          "F"
+        ],
+        [
+          [],
+          [
+            2
+          ],
+          "F"
+        ],
+        [
+          [
+            2
+          ],
+          [
+            3
+          ],
+          "T2"
+        ],
+        [
+          [
+            3
+          ],
+          [
+            3
+          ],
+          "F"
+        ]
+      ],
+      "counts": {
+        "processed": 19,
+        "screened": 10,
+        "accepted_F": 3,
+        "accepted_T2": 4,
+        "max_length_seen": 2,
+        "banned_rejections": 0,
+        "length_limit": 0
+      },
+      "seconds": 0.007692000000133703
+    },
+    {
+      "a": "3211311",
+      "b": "43221",
+      "type": "T2",
+      "status": "exact_local_cover",
+      "menu": [
+        [
+          [
+            1
+          ],
+          [],
+          "F"
+        ],
+        [
+          [],
+          [
+            2
+          ],
+          "F"
+        ],
+        [
+          [
+            2
+          ],
+          [
+            3
+          ],
+          "T2"
+        ]
+      ],
+      "counts": {
+        "processed": 13,
+        "screened": 8,
+        "accepted_F": 2,
+        "accepted_T2": 3,
+        "max_length_seen": 2,
+        "banned_rejections": 0,
+        "length_limit": 0
+      },
+      "seconds": 0.004186499999377702
+    },
+    {
+      "a": "321132",
+      "b": "432211",
+      "type": "F",
+      "status": "exact_local_cover",
+      "menu": [
+        [
+          [
+            3
+          ],
+          [
+            3
+          ],
+          "F"
+        ],
+        [
+          [
+            3
+          ],
+          [
+            2
+          ],
+          "T2"
+        ],
+        [
+          [
+            2
+          ],
+          [],
+          "F"
+        ],
+        [
+          [
+            1
+          ],
+          [],
+          "F"
+        ]
+      ],
+      "counts": {
+        "processed": 13,
+        "screened": 10,
+        "accepted_F": 3,
+        "accepted_T2": 4,
+        "max_length_seen": 2,
+        "banned_rejections": 0,
+        "length_limit": 0
+      },
+      "seconds": 0.0075913749997198465
+    },
+    {
+      "a": "321132",
+      "b": "432211",
+      "type": "T2",
+      "status": "exact_local_cover",
+      "menu": [
+        [
+          [
+            3
+          ],
+          [
+            2
+          ],
+          "T2"
+        ],
+        [
+          [
+            2
+          ],
+          [],
+          "F"
+        ],
+        [
+          [
+            1
+          ],
+          [],
+          "T2"
+        ]
+      ],
+      "counts": {
+        "processed": 12,
+        "screened": 9,
+        "accepted_F": 2,
+        "accepted_T2": 3,
+        "max_length_seen": 2,
+        "banned_rejections": 0,
+        "length_limit": 0
+      },
+      "seconds": 0.004431375000422122
+    }
+  ]
+}

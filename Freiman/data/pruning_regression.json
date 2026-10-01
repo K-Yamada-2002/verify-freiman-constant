@@ -1,0 +1,222 @@
+{
+  "proof_complete": false,
+  "same_prior_rejections": true,
+  "records": [
+    {
+      "step": 22,
+      "key": [
+        0,
+        0,
+        1,
+        0,
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        30,
+        "F"
+      ],
+      "prior_pruning": {
+        "status": "unresolved",
+        "comparisons": 22
+      },
+      "corrected_pruning": {
+        "status": "unresolved",
+        "comparisons": 2140
+      }
+    },
+    {
+      "step": 36,
+      "key": [
+        3,
+        0,
+        1,
+        1,
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        18,
+        "F"
+      ],
+      "prior_pruning": {
+        "status": "unresolved",
+        "comparisons": 0
+      },
+      "corrected_pruning": {
+        "status": "unresolved",
+        "comparisons": 0
+      }
+    },
+    {
+      "step": 66,
+      "key": [
+        1,
+        1,
+        0,
+        0,
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        -5,
+        "F"
+      ],
+      "prior_pruning": {
+        "status": "unresolved",
+        "comparisons": 0
+      },
+      "corrected_pruning": {
+        "status": "unresolved",
+        "comparisons": 0
+      }
+    },
+    {
+      "step": 68,
+      "key": [
+        0,
+        1,
+        0,
+        1,
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        14,
+        "F"
+      ],
+      "prior_pruning": {
+        "status": "unresolved",
+        "comparisons": 0
+      },
+      "corrected_pruning": {
+        "status": "unresolved",
+        "comparisons": 0
+      }
+    },
+    {
+      "step": 74,
+      "key": [
+        3,
+        0,
+        1,
+        0,
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          2
+        ],
+        -29,
+        "F"
+      ],
+      "prior_pruning": {
+        "status": "unresolved",
+        "comparisons": 15
+      },
+      "corrected_pruning": {
+        "status": "unresolved",
+        "comparisons": 1368
+      }
+    },
+    {
+      "step": 76,
+      "key": [
+        4,
+        1,
+        0,
+        1,
+        [
+          3,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        30,
+        "F"
+      ],
+      "prior_pruning": {
+        "status": "unresolved",
+        "comparisons": 15
+      },
+      "corrected_pruning": {
+        "status": "unresolved",
+        "comparisons": 1656
+      }
+    },
+    {
+      "step": 93,
+      "key": [
+        1,
+        1,
+        0,
+        0,
+        [
+          3,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        -26,
+        "T2"
+      ],
+      "prior_pruning": {
+        "status": "unresolved",
+        "comparisons": 17
+      },
+      "corrected_pruning": {
+        "status": "exact_local_cover",
+        "comparisons": 154
+      }
+    },
+    {
+      "step": 94,
+      "key": [
+        1,
+        0,
+        0,
+        1,
+        [
+          3,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        21,
+        "T2"
+      ],
+      "prior_pruning": {
+        "status": "unresolved",
+        "comparisons": 26
+      },
+      "corrected_pruning": {
+        "status": "exact_local_cover",
+        "comparisons": 434
+      }
+    }
+  ]
+}

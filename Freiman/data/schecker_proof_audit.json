@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "appended_digits_for_rational_enclosures": 180,
+  "independent_band_rows": {
+    "finite_chain": 93,
+    "translation_chain": 43
+  },
+  "concrete_endpoint_menu_rows": {
+    "root": 102,
+    "E": 48,
+    "R0": 17,
+    "R1": 19
+  },
+  "strict_connections_verified": true,
+  "known_full_hull_gap_detected": true,
+  "scope": "Independent finite checks. Universal closure and exact endpoint inheritance require verify_hall_ray.py --full and the analytic proof.",
+  "sha256": {
+    "layout.py": "31a863b7f09460f4c831842f701296caba587a368c9c07d0855a16c2738ec16f",
+    "audit_schecker_proof.py": "918904ea74d03456773cc9c981e79340f5874000db161935e0ca63945445c0aa",
+    "hall_ray_certificate.json": "bd8feefe19ca1533d7e0e0be51604e9ed8bd4f8be5d32babef665b7133be30c7",
+    "root_endpoint_connected.json": "73886e60b7017d77b7b647819b6fbcd9f0a3456521a992bcb44bf932e0dd60f8",
+    "stable_endpoint_uniform.json": "e67d323e1c045e3b71dc3becb7046402a071be5d0229548816c3c40f832a9be1",
+    "root_thirdigit_replayed.json": "12ca4dfdca6eeac8b73786c940370c60fe76f28351c34187637c5da9221e763d",
+    "stable_thirdigit_replayed.json": "78682725deabde860eac8b04a7745ac0ca2a8fa90ed067ef5d6066da013bc450"
+  }
+}

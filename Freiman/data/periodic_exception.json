@@ -1,0 +1,76 @@
+{
+  "closed": false,
+  "kernel": "graph_m2",
+  "a0": [
+    3,
+    2,
+    1,
+    1,
+    3,
+    1,
+    3,
+    1,
+    2
+  ],
+  "b0": [
+    4,
+    3,
+    2,
+    2,
+    3,
+    1
+  ],
+  "even_min": 8,
+  "limiting_point_normalized_approximation": 0.17219126233950582,
+  "attempts": [
+    {
+      "band": [
+        "0",
+        "1"
+      ],
+      "closed": false,
+      "uniform_comparisons": 232
+    },
+    {
+      "band": [
+        "0",
+        "7/16"
+      ],
+      "closed": false,
+      "uniform_comparisons": 149
+    },
+    {
+      "band": [
+        "3/64",
+        "5/16"
+      ],
+      "closed": false,
+      "uniform_comparisons": 285
+    },
+    {
+      "band": [
+        "7/64",
+        "1/4"
+      ],
+      "closed": false,
+      "uniform_comparisons": 161
+    },
+    {
+      "band": [
+        "9/64",
+        "7/32"
+      ],
+      "closed": false,
+      "uniform_comparisons": 105
+    },
+    {
+      "band": [
+        "5/32",
+        "13/64"
+      ],
+      "closed": false,
+      "uniform_comparisons": 50
+    }
+  ],
+  "freiman_ray_proved": false
+}

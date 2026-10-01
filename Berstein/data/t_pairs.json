@@ -1,0 +1,384 @@
+{
+  "root": "112,122",
+  "maximum_total_extension": 3,
+  "candidates": 19,
+  "gap_audit_depth": 4,
+  "extra_forbidden_depth": 2,
+  "extra_pair_types": "binary+binary,binary+no23,no23+no23",
+  "excluded_by_true_gap": 1469,
+  "scope": "Exact local covers only. Child admissibility and infinite closure are NOT certified.",
+  "proof_complete": false,
+  "types": [
+    {
+      "type": "F",
+      "nonempty": true,
+      "covered": false,
+      "parent_endpoints": [
+        [
+          {
+            "prefix": "112",
+            "period": "1323"
+          },
+          {
+            "prefix": "122",
+            "period": "1323"
+          }
+        ],
+        [
+          {
+            "prefix": "11",
+            "period": "2313"
+          },
+          {
+            "prefix": "12",
+            "period": "2313"
+          }
+        ]
+      ],
+      "menu": []
+    },
+    {
+      "type": "binary",
+      "nonempty": true,
+      "covered": false,
+      "parent_endpoints": [
+        [
+          {
+            "prefix": "112",
+            "period": "1323"
+          },
+          {
+            "prefix": "12",
+            "period": "21"
+          }
+        ],
+        [
+          {
+            "prefix": "11",
+            "period": "2313"
+          },
+          {
+            "prefix": "122",
+            "period": "21"
+          }
+        ]
+      ],
+      "menu": []
+    },
+    {
+      "type": "no13",
+      "nonempty": true,
+      "covered": false,
+      "parent_endpoints": [
+        [
+          {
+            "prefix": "112",
+            "period": "1323"
+          },
+          {
+            "prefix": "12",
+            "period": "21"
+          }
+        ],
+        [
+          {
+            "prefix": "11",
+            "period": "2313"
+          },
+          {
+            "prefix": "1223",
+            "period": "12"
+          }
+        ]
+      ],
+      "menu": []
+    },
+    {
+      "type": "no31",
+      "nonempty": true,
+      "covered": false,
+      "parent_endpoints": [
+        [
+          {
+            "prefix": "112",
+            "period": "1323"
+          },
+          {
+            "prefix": "1221",
+            "period": "32"
+          }
+        ],
+        [
+          {
+            "prefix": "11",
+            "period": "2313"
+          },
+          {
+            "prefix": "12",
+            "period": "23"
+          }
+        ]
+      ],
+      "menu": []
+    },
+    {
+      "type": "no11",
+      "nonempty": true,
+      "covered": false,
+      "parent_endpoints": [
+        [
+          {
+            "prefix": "112",
+            "period": "1323"
+          },
+          {
+            "prefix": "122",
+            "period": "1323"
+          }
+        ],
+        [
+          {
+            "prefix": "11",
+            "period": "2313"
+          },
+          {
+            "prefix": "12",
+            "period": "2313"
+          }
+        ]
+      ],
+      "menu": []
+    },
+    {
+      "type": "no33",
+      "nonempty": true,
+      "covered": false,
+      "parent_endpoints": [
+        [
+          {
+            "prefix": "112",
+            "period": "1323"
+          },
+          {
+            "prefix": "122",
+            "period": "1323"
+          }
+        ],
+        [
+          {
+            "prefix": "11",
+            "period": "2313"
+          },
+          {
+            "prefix": "12",
+            "period": "2313"
+          }
+        ]
+      ],
+      "menu": []
+    },
+    {
+      "type": "no12",
+      "nonempty": false,
+      "covered": false,
+      "parent_endpoints": null,
+      "menu": []
+    },
+    {
+      "type": "no21",
+      "nonempty": true,
+      "covered": false,
+      "parent_endpoints": [
+        [
+          {
+            "prefix": "112",
+            "period": "1323"
+          },
+          {
+            "prefix": "122",
+            "period": "2313"
+          }
+        ],
+        [
+          {
+            "prefix": "11",
+            "period": "2313"
+          },
+          {
+            "prefix": "12",
+            "period": "2313"
+          }
+        ]
+      ],
+      "menu": []
+    },
+    {
+      "type": "no22",
+      "nonempty": true,
+      "covered": false,
+      "parent_endpoints": [
+        [
+          {
+            "prefix": "112",
+            "period": "1323"
+          },
+          {
+            "prefix": "122",
+            "period": "1323"
+          }
+        ],
+        [
+          {
+            "prefix": "11",
+            "period": "2313"
+          },
+          {
+            "prefix": "12",
+            "period": "2313"
+          }
+        ]
+      ],
+      "menu": []
+    },
+    {
+      "type": "no23",
+      "nonempty": true,
+      "covered": false,
+      "parent_endpoints": [
+        [
+          {
+            "prefix": "1",
+            "period": "2213"
+          },
+          {
+            "prefix": "112",
+            "period": "1323"
+          }
+        ],
+        [
+          {
+            "prefix": "11",
+            "period": "2313"
+          },
+          {
+            "prefix": "12",
+            "period": "2213"
+          }
+        ]
+      ],
+      "menu": []
+    },
+    {
+      "type": "no32",
+      "nonempty": true,
+      "covered": false,
+      "parent_endpoints": [
+        [
+          {
+            "prefix": "112",
+            "period": "1323"
+          },
+          {
+            "prefix": "122",
+            "period": "1333"
+          }
+        ],
+        [
+          {
+            "prefix": "11",
+            "period": "2313"
+          },
+          {
+            "prefix": "122",
+            "period": "3133"
+          }
+        ]
+      ],
+      "menu": []
+    },
+    {
+      "type": "binary+binary",
+      "nonempty": true,
+      "covered": false,
+      "parent_endpoints": [
+        [
+          {
+            "prefix": "1",
+            "period": "12"
+          },
+          {
+            "prefix": "12",
+            "period": "21"
+          }
+        ],
+        [
+          {
+            "prefix": "112",
+            "period": "21"
+          },
+          {
+            "prefix": "122",
+            "period": "21"
+          }
+        ]
+      ],
+      "menu": []
+    },
+    {
+      "type": "binary+no23",
+      "nonempty": true,
+      "covered": false,
+      "parent_endpoints": [
+        [
+          {
+            "prefix": "11",
+            "period": "2132"
+          },
+          {
+            "prefix": "12",
+            "period": "21"
+          }
+        ],
+        [
+          {
+            "prefix": "11",
+            "period": "2213"
+          },
+          {
+            "prefix": "122",
+            "period": "21"
+          }
+        ]
+      ],
+      "menu": []
+    },
+    {
+      "type": "no23+no23",
+      "nonempty": true,
+      "covered": false,
+      "parent_endpoints": [
+        [
+          {
+            "prefix": "1",
+            "period": "2213"
+          },
+          {
+            "prefix": "11",
+            "period": "2132"
+          }
+        ],
+        [
+          {
+            "prefix": "11",
+            "period": "2213"
+          },
+          {
+            "prefix": "12",
+            "period": "2213"
+          }
+        ]
+      ],
+      "menu": []
+    }
+  ]
+}

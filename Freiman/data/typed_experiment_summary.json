@@ -1,0 +1,101 @@
+{
+  "freiman_ray_proved": false,
+  "closed_root_lemma_proved": false,
+  "runs": [
+    {
+      "file": "typed_catalog_10k.json",
+      "proof_complete": false,
+      "root_state": "certified_local",
+      "local_rows": 8247,
+      "reachable_states": 25596,
+      "reachable_status_counts": {
+        "certified_local": 7981,
+        "pending": 16820,
+        "rejected": 795
+      },
+      "uniform_pruning_fix": false,
+      "independent_polynomial_replay": false
+    },
+    {
+      "file": "typed_catalog_urgent_m3.json",
+      "proof_complete": false,
+      "root_state": "rejected",
+      "local_rows": 1747,
+      "reachable_states": 1,
+      "reachable_status_counts": {
+        "certified_local": 0,
+        "pending": 0,
+        "rejected": 1
+      },
+      "uniform_pruning_fix": false,
+      "independent_polynomial_replay": false
+    },
+    {
+      "file": "typed_catalog_pureT2.json",
+      "proof_complete": false,
+      "root_state": "rejected",
+      "local_rows": 3346,
+      "reachable_states": 1,
+      "reachable_status_counts": {
+        "certified_local": 0,
+        "pending": 0,
+        "rejected": 1
+      },
+      "uniform_pruning_fix": false,
+      "independent_polynomial_replay": false
+    },
+    {
+      "file": "typed_catalog_fine.json",
+      "proof_complete": false,
+      "root_state": "certified_local",
+      "local_rows": 16331,
+      "reachable_states": 53650,
+      "reachable_status_counts": {
+        "certified_local": 16040,
+        "pending": 37604,
+        "rejected": 6
+      },
+      "uniform_pruning_fix": false,
+      "independent_polynomial_replay": false
+    },
+    {
+      "file": "width_catalog.json",
+      "proof_complete": false,
+      "root_state": "rejected",
+      "local_rows": 707,
+      "reachable_states": 1,
+      "reachable_status_counts": {
+        "certified_local": 0,
+        "pending": 0,
+        "rejected": 1
+      },
+      "uniform_pruning_fix": false,
+      "independent_polynomial_replay": false
+    },
+    {
+      "file": "width_oriented_cached.json",
+      "proof_complete": false,
+      "root_state": "certified_local",
+      "local_rows": 518,
+      "reachable_states": 2031,
+      "reachable_status_counts": {
+        "certified_local": 491,
+        "pending": 1540,
+        "rejected": 0
+      },
+      "uniform_pruning_fix": true,
+      "independent_polynomial_replay": true
+    }
+  ],
+  "stopped_runs": [
+    {
+      "log": "width_oriented.log",
+      "reason": "Superseded by cached bounded run; stopped after step 764; no final catalog was emitted."
+    }
+  ],
+  "notes": [
+    "Rejected is a bounded-search failure, not a mathematical counterexample.",
+    "Only the 518-row width_oriented_cached catalog was independently replayed with the Bernstein verifier.",
+    "The 3 human-readable typed local rows have a separate exact corner verifier."
+  ]
+}

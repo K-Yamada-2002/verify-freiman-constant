@@ -1,0 +1,18 @@
+[
+  {
+    "kernel": "graph_m2",
+    "original_universe_size": 3624192,
+    "original_adopted_rows": 2894882,
+    "conditions_after_merging_ratio_bins": 31390,
+    "compressed_conditions": 12685,
+    "exact_byte_reconstruction": true
+  },
+  {
+    "kernel": "graph_wide",
+    "original_universe_size": 4801280,
+    "original_adopted_rows": 3464816,
+    "conditions_after_merging_ratio_bins": 26689,
+    "compressed_conditions": 12113,
+    "exact_byte_reconstruction": true
+  }
+]

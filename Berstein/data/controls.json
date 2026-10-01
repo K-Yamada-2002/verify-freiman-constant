@@ -1,0 +1,51 @@
+[
+  {
+    "name": "graph_kernel_positive",
+    "expected_nonempty": true,
+    "passed": true
+  },
+  {
+    "name": "graph_kernel_gap",
+    "expected_nonempty": false,
+    "passed": true
+  },
+  {
+    "name": "graph_kernel_endpoint",
+    "expected_nonempty": false,
+    "passed": true
+  },
+  {
+    "name": "anchor_kernel_positive",
+    "expected_nonempty": true,
+    "passed": true
+  },
+  {
+    "name": "anchor_kernel_gap",
+    "expected_nonempty": false,
+    "passed": true
+  },
+  {
+    "name": "anchor_kernel_endpoint",
+    "expected_nonempty": false,
+    "passed": true
+  },
+  {
+    "name": "t_kernel_positive",
+    "expected_nonempty": true,
+    "passed": true
+  },
+  {
+    "name": "t_kernel_gap",
+    "expected_nonempty": false,
+    "passed": true
+  },
+  {
+    "name": "t_kernel_endpoint",
+    "expected_nonempty": false,
+    "passed": true
+  },
+  {
+    "name": "t_kernel_past_violation",
+    "passed": true
+  }
+]

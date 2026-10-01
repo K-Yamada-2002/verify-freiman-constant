@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "seed": 313134314,
+  "multiplication_exact_rounding_cases": 1000,
+  "division_exact_rounding_cases": 1000,
+  "endpoint_transport_enclosure_cases": 1000,
+  "mapped_bin_cases": 1000,
+  "mapped_bin_accepted_and_covered": 835,
+  "cpp_source_sha256": "afcfa622cde730ede065ac3db4d2c1a1625bc0f1c9e3a29ca97e7514873afbfb",
+  "limitation": "Finite randomized regression checks supplement the mathematical audit; they do not prove all inputs."
+}

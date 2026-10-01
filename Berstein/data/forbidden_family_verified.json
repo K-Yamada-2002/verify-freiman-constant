@@ -1,0 +1,229 @@
+{
+  "root": [
+    "112",
+    "122"
+  ],
+  "proved_gap": [
+    "647729/500000",
+    "1295459/1000000"
+  ],
+  "single_extra": [
+    {
+      "extra": "1",
+      "empty": true,
+      "contains_proved_gap": false
+    },
+    {
+      "extra": "2",
+      "empty": true,
+      "contains_proved_gap": false
+    },
+    {
+      "extra": "3",
+      "empty": false,
+      "contains_proved_gap": true
+    },
+    {
+      "extra": "11",
+      "empty": false,
+      "contains_proved_gap": true
+    },
+    {
+      "extra": "12",
+      "empty": true,
+      "contains_proved_gap": false
+    },
+    {
+      "extra": "13",
+      "empty": false,
+      "contains_proved_gap": true
+    },
+    {
+      "extra": "21",
+      "empty": false,
+      "contains_proved_gap": true
+    },
+    {
+      "extra": "22",
+      "empty": false,
+      "contains_proved_gap": true
+    },
+    {
+      "extra": "23",
+      "empty": false,
+      "contains_proved_gap": true
+    },
+    {
+      "extra": "31",
+      "empty": false,
+      "contains_proved_gap": true
+    },
+    {
+      "extra": "32",
+      "empty": false,
+      "contains_proved_gap": true
+    },
+    {
+      "extra": "33",
+      "empty": false,
+      "contains_proved_gap": true
+    },
+    {
+      "extra": "111",
+      "empty": false,
+      "contains_proved_gap": true
+    },
+    {
+      "extra": "112",
+      "empty": false,
+      "contains_proved_gap": true
+    },
+    {
+      "extra": "113",
+      "empty": false,
+      "contains_proved_gap": true
+    },
+    {
+      "extra": "121",
+      "empty": false,
+      "contains_proved_gap": true
+    },
+    {
+      "extra": "122",
+      "empty": false,
+      "contains_proved_gap": true
+    },
+    {
+      "extra": "123",
+      "empty": false,
+      "contains_proved_gap": true
+    },
+    {
+      "extra": "131",
+      "empty": false,
+      "contains_proved_gap": true
+    },
+    {
+      "extra": "132",
+      "empty": false,
+      "contains_proved_gap": true
+    },
+    {
+      "extra": "133",
+      "empty": false,
+      "contains_proved_gap": true
+    },
+    {
+      "extra": "211",
+      "empty": false,
+      "contains_proved_gap": true
+    },
+    {
+      "extra": "212",
+      "empty": false,
+      "contains_proved_gap": true
+    },
+    {
+      "extra": "213",
+      "empty": false,
+      "contains_proved_gap": true
+    },
+    {
+      "extra": "221",
+      "empty": false,
+      "contains_proved_gap": true
+    },
+    {
+      "extra": "222",
+      "empty": false,
+      "contains_proved_gap": true
+    },
+    {
+      "extra": "223",
+      "empty": false,
+      "contains_proved_gap": true
+    },
+    {
+      "extra": "231",
+      "empty": false,
+      "contains_proved_gap": true
+    },
+    {
+      "extra": "232",
+      "empty": false,
+      "contains_proved_gap": true
+    },
+    {
+      "extra": "233",
+      "empty": false,
+      "contains_proved_gap": true
+    },
+    {
+      "extra": "311",
+      "empty": false,
+      "contains_proved_gap": true
+    },
+    {
+      "extra": "312",
+      "empty": false,
+      "contains_proved_gap": true
+    },
+    {
+      "extra": "313",
+      "empty": false,
+      "contains_proved_gap": true
+    },
+    {
+      "extra": "321",
+      "empty": false,
+      "contains_proved_gap": true
+    },
+    {
+      "extra": "322",
+      "empty": false,
+      "contains_proved_gap": true
+    },
+    {
+      "extra": "323",
+      "empty": false,
+      "contains_proved_gap": true
+    },
+    {
+      "extra": "331",
+      "empty": false,
+      "contains_proved_gap": true
+    },
+    {
+      "extra": "332",
+      "empty": false,
+      "contains_proved_gap": true
+    },
+    {
+      "extra": "333",
+      "empty": false,
+      "contains_proved_gap": true
+    }
+  ],
+  "pairs_examined": 780,
+  "empty_pairs": 120,
+  "pairs_containing_proved_gap": 657,
+  "exceptions": [
+    {
+      "left": "3",
+      "right": "3",
+      "another_gap_at_depth4": false
+    },
+    {
+      "left": "3",
+      "right": "23",
+      "another_gap_at_depth4": true
+    },
+    {
+      "left": "23",
+      "right": "23",
+      "another_gap_at_depth4": true
+    }
+  ],
+  "scope": "Obstructions for these fixed root/type choices, not nonexistence of interior.",
+  "interior_proved": false
+}

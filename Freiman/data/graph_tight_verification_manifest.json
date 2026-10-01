@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "exact_input_reproduced": true,
+  "fixed_family_replayed": 2939218,
+  "root_surviving_bands": [
+    [
+      "1/16",
+      "31/32"
+    ]
+  ],
+  "includes_freiman_endpoint": false,
+  "freiman_ray_proved": false,
+  "sha256": {
+    "graph_tight.dat": "1f5fb173a09dcf92392d9fe53c930c5ed785edb3369cd19ab6a57670433982e4",
+    "graph_tight.meta.json": "0bfe797f2af480d03cfb1c24fa8c4bbf53e0e6e27ab4b0a9f02e4094a0a1eb96",
+    "graph_tight.json.alive.bin": "9a874f73ea6bfdd5dbcda3fc1bdce5d190faadbb93759e7e67f389e8ac16ddc0",
+    "graph_tight_replay.json": "9edc698e5d998565155b9c6d1d3eef82fbbb13e034c0f33c84650ec959be4112",
+    "graph_tight_algebraic_replay.json": "065bf042791b8588b187f9bd48657b81b99a6904931ee8438ce34dde39c0df32",
+    "graph_kernel.cpp": "8450b048939abbd5fc8a4beb5b184f829457701c516b619896400e1cf3f36456",
+    "certified_kernel_input.py": "47715fa6b3b2652a70efd422ddbb9ca81dac9d377b3af93929b8d46f0b5dbf6c",
+    "verify_closed_root.py": "8e93e08489b64b23e94ee77e6d801ff99ff38284f72843a23034db3217562a09",
+    "layout.py": "31a863b7f09460f4c831842f701296caba587a368c9c07d0855a16c2738ec16f"
+  }
+}

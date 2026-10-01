@@ -1,0 +1,144 @@
+{
+  "proof_complete": false,
+  "scope": "Typed auxiliary-interval covering lemma for the requested root only.",
+  "settings": {
+    "memory": 2,
+    "base": "21/20",
+    "length": 12,
+    "nodes": 3000,
+    "lookahead": 3,
+    "ratio_limit": 100,
+    "types": [
+      "F",
+      "T2",
+      "L2",
+      "R2",
+      "B2",
+      "band_0_31/32",
+      "band_1/64_61/64",
+      "band_1/32_15/16",
+      "band_3/64_59/64",
+      "band_1/16_29/32",
+      "band_5/64_57/64",
+      "band_3/32_7/8",
+      "band_7/64_55/64",
+      "band_1/8_27/32",
+      "band_9/64_53/64",
+      "band_5/32_13/16",
+      "band_11/64_51/64",
+      "band_3/16_25/32",
+      "band_13/64_49/64",
+      "band_7/32_3/4",
+      "band_15/64_47/64",
+      "band_1/4_23/32",
+      "band_17/64_45/64",
+      "band_9/32_11/16",
+      "band_19/64_43/64",
+      "band_5/16_21/32",
+      "band_21/64_41/64",
+      "band_11/32_5/8",
+      "band_23/64_39/64",
+      "band_3/8_19/32",
+      "band_25/64_37/64",
+      "band_13/32_9/16",
+      "band_27/64_35/64",
+      "band_7/16_17/32",
+      "band_29/64_33/64",
+      "band_15/32_1/2",
+      "band_31/64_31/64",
+      "band_1/2_15/32",
+      "band_33/64_29/64",
+      "band_17/32_7/16",
+      "band_35/64_27/64",
+      "band_9/16_13/32",
+      "band_37/64_25/64",
+      "band_19/32_3/8",
+      "band_39/64_23/64",
+      "band_5/8_11/32",
+      "band_41/64_21/64",
+      "band_21/32_5/16",
+      "band_43/64_19/64",
+      "band_11/16_9/32",
+      "band_45/64_17/64",
+      "band_23/32_1/4",
+      "band_47/64_15/64",
+      "band_3/4_7/32",
+      "band_49/64_13/64",
+      "band_25/32_3/16",
+      "band_51/64_11/64",
+      "band_13/16_5/32",
+      "band_53/64_9/64",
+      "band_27/32_1/8",
+      "band_55/64_7/64",
+      "band_7/8_3/32",
+      "band_57/64_5/64",
+      "band_29/32_1/16",
+      "band_59/64_3/64",
+      "band_15/16_1/32",
+      "band_61/64_1/64",
+      "band_31/32_0"
+    ],
+    "pure_t2": false,
+    "max_seconds": 180.0,
+    "coordinate": "lower_endpoint_derivative_ratio",
+    "group": 8
+  },
+  "root": [
+    [
+      3,
+      2,
+      1,
+      1,
+      3
+    ],
+    [
+      4,
+      3,
+      2,
+      2
+    ],
+    "T2"
+  ],
+  "root_cell": 0,
+  "root_state": "rejected",
+  "rows": [],
+  "states": {
+    "0": "rejected"
+  },
+  "cells": {
+    "0": [
+      1,
+      0,
+      1,
+      0,
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        2
+      ],
+      -6,
+      "T2"
+    ]
+  },
+  "reachable": [
+    0
+  ],
+  "events": [
+    {
+      "step": 0,
+      "cell": "(1, 0, 1, 0, (1, 3), (2, 2), -6, 'T2')",
+      "result": "no_exact_closed_menu",
+      "comparisons": 13871,
+      "states": {
+        "rejected": 1
+      },
+      "pending": 0,
+      "seconds": 7.251844666001489
+    }
+  ],
+  "source_kernel": "kernel_finebands",
+  "source_was_numerical_fixed_point": true
+}

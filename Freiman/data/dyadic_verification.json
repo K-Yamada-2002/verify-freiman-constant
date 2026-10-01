@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "rational_arithmetic_cases": 2000,
+  "closure_controls": [
+    {
+      "case": "invariant_control_cover",
+      "closed_family_found": true
+    },
+    {
+      "case": "invariant_control_gap",
+      "closed_family_found": false
+    }
+  ]
+}
