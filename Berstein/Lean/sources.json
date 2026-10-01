@@ -1,0 +1,28 @@
+{
+  "purpose": "Provenance only; these hashes do not establish any Lean proposition.",
+  "claimed_interval": [
+    "226289/50000",
+    "226377/50000"
+  ],
+  "kernel_rows": 3464816,
+  "source_sha256": {
+    "Berstein/doc/generalized_t.tex": "a5e6cf81b73a71f834c672a7285800465bba56cb5f60f3b19ad180512eb3ef13",
+    "Berstein/data/below_ray_certificate.json": "84cbf4e5006530b37311d5db4f432870ab6d25fb174c439b520ab3051cca82e0",
+    "Berstein/data/below_ray_verified.json": "a645e6d22b82ffa9fd8f17112a7299fe4b79085a29a73c399e281f1874e65f3d",
+    "Berstein/audit/REPORT.txt": "92b116efecd07d77c93dcddfe864dccb8a5bbc0b1e7e357730994ca9127cc2b0",
+    "Berstein/audit/independent_kernel.cpp": "afcfa622cde730ede065ac3db4d2c1a1625bc0f1c9e3a29ca97e7514873afbfb",
+    "Freiman/data/graph_wide.dat": "f920da96f3fc28c6182f4dc9f0a3836dac059186a3f54e33b484198ed51a2234",
+    "Freiman/data/graph_wide.json.alive.bin": "a75629b1148bdbc6890d02eb85562b722e0209fb13a0dc5ac3f5fdfc60dc93a5"
+  },
+  "vendored_source": {
+    "repository": "https://github.com/K-Yamada-2002/hall-ray",
+    "commit": "a584e5620124d23c709e3bbdc66db8b8b0586310",
+    "files": {
+      "HallRay/Basic.lean": "3bf04673a4d786041e9bbca255539d0632f6fa33040bf439448882ba11dadcd5",
+      "HallRay/ContinuedFraction/Mobius.lean": "124218051e235a638dc68c2b35018ef7ddf69d9888f9d171f5995943347d26c4",
+      "HallRay/ContinuedFraction/Basic.lean": "27b00c18181dbdc5971708941e9bf8425ca39ebdab0ef591026ec7b48a2b40ab"
+    }
+  },
+  "verification_report": "logs/verification.json",
+  "large_table_acceptance_method": "Compiled execution of the Lean checker; its mathematical soundness is kernel checked."
+}

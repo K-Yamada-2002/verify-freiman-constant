@@ -1,0 +1,21 @@
+name = "berstein"
+version = "0.1.0"
+defaultTargets = ["Berstein"]
+
+[leanOptions]
+autoImplicit = false
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.32.1"
+
+[[lean_lib]]
+name = "HallRay"
+
+[[lean_lib]]
+name = "Berstein"
+
+[[lean_exe]]
+name = "graphReplay"
+root = "Berstein.Replay"
