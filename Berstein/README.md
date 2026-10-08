@@ -1,125 +1,208 @@
-# Hall’s ray の外にも Markov スペクトルの内点が存在する
+# Interior points of the Markov spectrum outside Hall's ray
 
-**Markov スペクトル `M` は、Hall’s ray より下にも幅の正の区間を含む。**
-具体的には `[4.52578, 4.52754] ⊂ M ∩ (-∞, c_F)` を証明した。
-開区間 `(4.52578, 4.52754)` の全ての点が Hall’s ray の外にある `M` の内点であり、
-**`4.52666` はその明示的な一例**となる。
+**The Markov spectrum $M$ contains an interval of positive length strictly
+below Hall's ray.** This project establishes
 
-Freiman の31313禁止の閉じた後続被覆を固定語 `(322,431)`、中心4に適用し、
-全ての非中心値を一様に抑える。より大きい証明済み区間は
-`[4.525777278415714…, 4.527546990114258…]`。
+```math
+[4.52578,4.52754]\subset M\cap(-\infty,c_F),\qquad
+c_F=\frac{2221564096+283748\sqrt{462}}{491993569}.
+```
 
-この結果は31313禁止の尾と部分区間 `J_{p,q}` による。
-当初の **131禁止集合 `K_F+K_F` の内点構成は未完了**であり、両者を区別する。
-`stashed/` の証明書は使用しない。
+Every point of $(4.52578,4.52754)$ is an interior point of $M$ outside
+$[c_F,\infty)$. **The rational number $4.52666$ is one explicit example.**
+The displayed decimal endpoints are exact rationals, and the interval has
+width $11/6250=0.00176$.
 
-数学的説明は [generalized_t.tex](doc/generalized_t.tex) の冒頭。
-開いている文書に証明を追記し、内蔵 LaTeX エディタでコンパイル確認済み。
+The construction applies the closed successor cover for `31313`-avoiding tails
+to fixed outward prefixes `(322,431)` with central digit 4, and bounds every
+noncentral local value uniformly. The larger filled interval has endpoints
+approximately `4.525777278415714…` and `4.527546990114258…`.
 
-## Lean による検証
+The result is supported by exact-arithmetic verification, a separate
+implementation checking every adopted row, and a Lean proof connecting
+checker acceptance to the claimed interval inclusion. It is an exhaustive
+computer-assisted proof, rather than a numerical sample of spectral values.
+See the [Lean verification guide](Lean/README.md) and the
+[committed verification record](Lean/verification-baseline.json).
 
-[Lean/README.md](Lean/README.md) に証明の構成・信頼範囲・再現手順を記載した。
-有限検証器の受理から、実際の無限連分数による区間充填・全非中心値の上界を経て、
-`[4.52578,4.52754] ⊂ M ∩ (-∞,c_F)` を導く健全性定理を実装している。
-元の **3,464,816行すべて**を Lean で書いた検証器のコンパイル実行で受理した。
-非中心値の4,372件の有限検査は Lean カーネル内で計算する。
+This construction uses `31313`-avoiding tails and subintervals $J_{p,q}$.
+The original **interior-point construction for the `131`-forbidden set
+$K_F+K_F$ remains unfinished**. Certificates from `stashed/` are not used.
+The mathematical exposition is at the beginning of
+[generalized_t.tex](doc/generalized_t.tex) (in Japanese).
 
-巨大表の受理はコンパイル実行であり、その受理までカーネル内で還元した
-無条件の閉じた Lean 定理とは区別する。最終ビルド・公理監査・破損検査・
-全表実行の記録は `Lean/logs/verification.json` にまとめる。
-再現は `cd Berstein/Lean && python3 scripts/verify.py --prepare`。
+## Construction and proof
 
-## Hall’s ray より下の区間の再検証
+Fix central digit 4 and outward prefixes $a=322$ and $b=431$. Append digits
+from $\{1,2,3\}$, requiring each whole one-sided word to avoid `31313`.
+The digit 4 already present in the fixed prefix 431 is allowed.
+
+The convex hull of the corresponding sum of continued-fraction sets has
+endpoints
+
+```math
+L_0=\frac{8512493+28004\sqrt{462}}{17339617},\qquad
+H_0=\frac{1352829-8081\sqrt{462}}{2233974}.
+```
+
+The 25 verified root bands cover the subinterval with relative coordinates
+$[1/16,7/8]$. After adding the central digit, the filled interval is
+
+```math
+\left[4+L_0+\frac{H_0-L_0}{16},\;
+      4+L_0+\frac{7(H_0-L_0)}8\right]
+\approx[4.525777278415714\ldots,4.527546990114258\ldots].
+```
+
+For every target point, the closed successor cover provides an indefinitely
+extendible sequence of legal prefixes. Bounded derivative ratios force
+continued-fraction denominators on both sides to grow. The underlying
+compact cylinders are nested and shrink on both sides, realizing the
+point by actual infinite continued fractions. Thus the proof passes from
+finite parameter boxes to an entire real interval of realized values.
+
+Every noncentral position has local value below the target interval.
+The exact-arithmetic proof obtains
+
+```math
+\lambda_n\le\frac{4\sqrt{462}}{19}+\frac1{3025}
+<4.525423<4.52578\qquad(n\ne0).
+```
+
+The Lean development proves the sufficient rational bound
+$\lambda_n\le4525423/1000000$ uniformly over all legal tails and all nonzero
+integer positions. The central value therefore equals the supremum of
+all local values and belongs to $M$. Exact comparisons put the entire
+claimed interval strictly below $c_F$.
+
+## Lean verification
+
+[Lean/README.md](Lean/README.md) describes the proof architecture, trust
+boundary, and reproduction commands. The soundness theorem derives the
+claimed inclusion from finite-checker acceptance, through interval filling
+by actual infinite continued fractions and bounds on all noncentral values.
+Compiled execution of the checker written in Lean accepted **all 3,464,816
+original rows**. The 4,372 finite checks for the noncentral bound are computed
+inside the Lean kernel.
+
+Large-table acceptance is established by compiled execution. This is distinct
+from an unconditional closed Lean theorem reducing that acceptance inside
+the kernel. Final build, axiom audit, corruption tests, and exhaustive replay
+are recorded in `Lean/logs/verification.json`; the committed baseline is
+[verification-baseline.json](Lean/verification-baseline.json).
+
+```sh
+cd Berstein/Lean
+python3 scripts/verify.py --prepare
+```
+
+See the guide for initial dependency setup. The formal statement concerns
+$M$; no inclusion of this interval in $L$ or in $M\setminus L$ is claimed here.
+
+## Rechecking the interval below Hall's ray
+
+From the repository root:
 
 ```sh
 python3 -B -S Berstein/src/verify_below_ray.py --full
 ```
 
-Python 3 標準ライブラリと C++17 コンパイラで動く。
-Freiman のソースと保存表を読み取り専用で参照し、出力は全て Berstein 以下に保存する。
-`--full` は代数的入力を再生成して保存入力との完全一致を確認し、
-**3,464,816行を削除・修正せずに再検証**する。実行済みで、削除0行。
-通常は `--full` を省き、検証済み表とコードのハッシュを照合できる。
+This uses the Python 3 standard library and a C++17 compiler. It reads the
+Freiman sources and saved tables without modifying them, and writes all
+outputs under `Berstein/`. `--full` regenerates the algebraic input, requires
+byte-for-byte agreement with the saved input, and **rechecks all 3,464,816
+rows without deleting or modifying any row**. The recorded full run deleted
+zero rows. Omitting `--full` reuses the verified table after checking input
+and code hashes.
 
-- 根の微分比は `(51/50)^(-20) ≤ S ≤ (51/50)^(-19)`。
-  この状態対にある25個の許容帯の和が `J_[1/16,7/8](322,431)` になる。
-- 非中心値の上界は `4√462/19 + 1/3025 = 4.525422212239698…`。
-  固定部、追加語の最初の9桁、残りの無限部分を全て評価する。
-- 別実装では、40桁の極値接頭語と終端 `[0,1]` の有理外側評価により
-  `4.525423` 未満を確認。242個の合法な5桁窓、57,054個の近傍接頭語を扱う。
-- 端点の帯を除いた場合と微分比の箱を誤った場合の負例3件も確認する。
+- The root derivative ratio satisfies `(51/50)^(-20) ≤ S ≤ (51/50)^(-19)`. The 25 adopted bands at this state pair cover `J_[1/16,7/8](322,431)`.
+- The noncentral upper bound is `4√462/19 + 1/3025 = 4.525422212239698…`. It covers the fixed core, the first nine appended digits, and all remaining positions in the infinite tails.
+- A separate rational calculation uses 40-digit extremal prefixes and terminal enclosure `[0,1]` to prove a bound below `4.525423`. It handles 242 legal five-digit windows and 57,054 nearby prefixes.
+- Three negative controls remove endpoint bands or use an incorrect derivative-ratio box.
 
-結果：[below_ray_verified.json](data/below_ray_verified.json)。
-固定した根の証明書：[below_ray_certificate.json](data/below_ray_certificate.json)。
-全行の再検証：[below_ray_kernel_replay.json](data/below_ray_kernel_replay.json)。
-探索：[search_freiman_bridge.py](src/search_freiman_bridge.py)。
-探索時の浮動小数点による候補選別は証明の採否に使わない。
+Results: [below_ray_verified.json](data/below_ray_verified.json).
+Fixed root certificate: [below_ray_certificate.json](data/below_ray_certificate.json).
+Full replay: [below_ray_kernel_replay.json](data/below_ray_kernel_replay.json).
+Search: [search_freiman_bridge.py](src/search_freiman_bridge.py).
+Floating-point candidate filtering during search is not used for proof acceptance.
 
-以下は、別問題である131禁止集合についての結果と探索記録。
+## Verification by a separate implementation
 
-## 131禁止について証明できたこと
+The [independent audit record](audit/audit_verified.json) links the input,
+coverage, spectral, and arithmetic checks. Here “independent” means a separate
+implementation in this repository; it does not mean external peer review.
 
-1. 全接頭語版 `I(U,V;B1,B2)` の定義、空の項の扱い、極値の計算。
-   子の被覆・許容族への閉性・両側の成長が成立すれば内点を導ける。
-2. 両語が 13 で終わり偶奇が同じなら、3枝の幅比が `[5/6,6/5]` にあると
-   全凸包には必ず真の隙間がある。鍵となる一様評価は
-   `gap / width >= 16/9 - 8 sqrt(10)/45 > 6/5`。
-   特に `[1.5358,1.5360]` は `conv(K_F(13)+K_F(13))` 内にあるが真の和に属さない。
-3. `B1={4,131,3}, B2={4,131}` の全接頭語版で、
-   `I(112,122)` は `(1,空語),(2,空語),(3,2)` の三後続で厳密に覆える。
-   **しかし帰納法は閉じない。** `[1.295458,1.295459]` は第二の子に含まれるが
-   `K_F(1122)+K_F(122)`、さらに根の `K_F(112)+K_F(122)` からも排除される。
-   この根の T 区間全体を保持する方針は不可能。
-4. 同じ根で、片側に長さ3以下の禁止語を一つ加える39通りのうち、
-   3通りは空、残る36通りはすべて上記の隙間を含む。
-   両側へ一語ずつ追加する780組でも、120組は空、657組は同じ隙間を含む。
-   残る3組のうち2組も別の隙間を含み、両側二進型だけがこの有限検査では排除されなかった。
-   これはその型の包含証明ではない。
+- `audit/independent_input.py` reconstructs quadratic-field values, legal transitions, exact endpoint identities, and constant tags without importing the original Python modules.
+- `audit/independent_kernel.cpp` checks all 3,464,816 adopted rows using integer interval arithmetic and its own connectivity algorithm, without calling the original C++ checker. The recorded audit reports zero failed cells and no row deletion.
+- `audit/independent_spectral.py` uses rational outer enclosures to check the root and noncentral bounds without importing either the original modules or the independent input checker.
+- Negative controls test gaps, missing endpoints, missing child states and ratio boxes, and truncated input. A further 4,000 arithmetic comparisons check the C++ operations against Python `Fraction`.
 
-いずれも `K_F+K_F` 全体の内点不存在を意味しない。共有された議論の
-`[1.29288,1.292906]` は上記の根の隙間とは別の区間である。
+The full [audit report](audit/REPORT.txt) is preserved in Japanese, with
+reproduction commands at its end. These additional checks complement the
+Lean soundness proof and document different ways of detecting implementation
+errors; they do not eliminate the stated compiler/runtime trust boundary.
 
-## 131禁止の障害と探索結果を再検証する
+## Results for the separate `131`-forbidden problem
 
-リポジトリの根で、Python 3 標準ライブラリと C++17 コンパイラを使用する。
+The rest of this README records a different problem and its search history.
+
+1. The full-prefix version of `I(U,V;B1,B2)`, handling of empty terms, and calculation of extrema are defined. Child coverage, closure in an admissible family, and growth on both sides would imply interior points.
+2. If both words end in 13 and have the same parity, a three-branch width ratio in `[5/6,6/5]` forces a genuine gap in the full convex hull. The key uniform estimate is `gap / width ≥ 16/9 - 8 sqrt(10)/45 > 6/5`. In particular, `[1.5358,1.5360]` lies in `conv(K_F(13)+K_F(13))` but not in the actual sum.
+3. For the full-prefix convention with `B1={4,131,3}, B2={4,131}`, the three successors `(1,empty word),(2,empty word),(3,2)` exactly cover `I(112,122)`. **The induction does not close.** The interval `[1.295458,1.295459]` lies in the second child but is excluded from both `K_F(1122)+K_F(122)` and the root sum `K_F(112)+K_F(122)`. Retaining this root's entire T-interval is impossible.
+4. For the same root, adding one forbidden word of length at most three on one side gives 39 cases: three are empty and the remaining 36 all contain that gap. Adding one word on each side gives 780 pairs: 120 are empty and 657 contain the same gap. Of the remaining three, two contain other gaps; only the two-sided binary type survives this finite exclusion test. This is not a proof of inclusion for that type.
+
+None of these results implies that the entire set $K_F+K_F$ has empty
+interior. The interval `[1.29288,1.292906]` considered in the earlier discussion
+is different from the root gap above.
+
+## Rechecking the `131` obstructions and search results
+
+From the repository root, using the Python 3 standard library and a C++17 compiler:
 
 ```sh
 python3 -B -S Berstein/src/check_all.py
 ```
 
-これは小さい厳密検証と検証器の正例・負例を実行し、完了した探索結果を集約する。
-大規模な探索は自動で再実行しない。詳細は
-[verification_summary.json](data/verification_summary.json)、
-[obstructions.json](data/obstructions.json)、[local_verified.json](data/local_verified.json)、
-[forbidden_family_verified.json](data/forbidden_family_verified.json)。
-一般化 T の一様入力についても、別実装で1896個の端点と820個の空言語判定を照合した。
-三つの検証器の正例・負例と過去の違反フラグの検査は合計10件通過している。
+This runs the small exact checks and positive/negative checker controls, then
+collects completed search results. It does not automatically repeat the large
+searches. See [verification_summary.json](data/verification_summary.json),
+[obstructions.json](data/obstructions.json), [local_verified.json](data/local_verified.json),
+and [forbidden_family_verified.json](data/forbidden_family_verified.json).
+A separate implementation also cross-checked 1,896 endpoints and 820
+empty-language decisions for the uniform generalized-T input. Ten checks
+passed across the three checkers' controls and historical-violation flags.
 
-## ご提案の T 区間を直接探索する
+## Direct search for generalized T-intervals
 
 ```sh
 python3 -B -S Berstein/src/search_t.py --root 112,122 --length 3 --gap-depth 2 --output t_gap_filtered.json
 python3 -B -S Berstein/src/search_t.py --root 112,122 --length 3 --gap-depth 3 --output t_gap3_filtered.json
 ```
 
-`--length` は左右の総追加長。`--gap-depth` は候補の左右をそれぞれその桁数だけ
-分割し、真の基礎 Cantor 和の隙間を含む候補を除く検査である。
-禁止語の型は基礎 `{4,131}` と、追加の `3,13,31,11,33` を片側へ課す交換和。
-深さ2では814候補中33個が残り、二進型・13禁止型の局所被覆が得られる。
-深さ3では16個、深さ4では6個に減り、総追加長3以内のこの型の候補では被覆できなくなる。
-これは指定した有限候補の結果であり、他の禁止語集合や長い後続の不可能性ではない。
+`--length` is the total appended length on both sides. `--gap-depth` subdivides
+each side to the specified depth and rejects candidates containing gaps in
+the actual underlying Cantor sum. The forbidden-word types use the base
+`{4,131}` and exchanged sums imposing one of `3,13,31,11,33` on one side.
+At depth two, 33 of 814 candidates survive, giving local covers of binary and
+13-forbidden types. At depth three, 16 remain; at depth four, six remain,
+and these types with total appended length at most three can no longer cover
+the target. This concerns the specified finite candidate family, not all
+forbidden-word sets or longer successors.
 
-一般の禁止語にも使う API は [generalized_t.py](src/generalized_t.py)。
-`Language` は無限延長不能な状態を削除する。`generalized_t` の数値出力は
-**凸包端点の有理外側評価**であり、内点の証明ではない。
-[search_t.py](src/search_t.py) は周期尾の等式と有理挟み撃ちによる局所被覆判定を追加する。
+The general API is [generalized_t.py](src/generalized_t.py). `Language` removes
+states with no infinite extension. The numerical output of `generalized_t`
+consists of **rational outer bounds on convex-hull endpoints**, not a proof
+of interior points. [search_t.py](src/search_t.py) adds local-cover tests
+using periodic-tail equalities and rational enclosures.
 
-## 形状・比・区間位置を使った閉性探索
+## Closure searches using shape, ratio, and interval position
 
-Freiman の `graph_kernel.cpp` を移植し、131禁止用の入力を新しく生成した。
-固定語の形状・偶奇・禁止状態と比を有限に分割し、被覆できない行を削除する。
-二方向の交差不等式、親の両端、子の比の像が触れる全箱を確認する。
-複数の座標を試すため、ここでは禁止語版 T より広い補助区間も使う。
+Freiman's `graph_kernel.cpp` was adapted with newly generated input for
+`131`-avoidance. The search partitions prefix shape, parity, forbidden-word
+state, and ratio into finitely many boxes, then deletes rows that cannot be
+covered. It checks both overlap inequalities, both parent endpoints, and
+all boxes touched by the child's ratio image. Some coordinate systems use
+auxiliary intervals wider than the forbidden-word T-intervals.
 
 ```sh
 clang++ -O3 -std=c++17 Berstein/src/graph_kernel.cpp -o Berstein/bin/graph_kernel
@@ -127,58 +210,67 @@ python3 -B -S Berstein/src/prepare.py --name m2
 Berstein/bin/graph_kernel Berstein/data/m2.dat Berstein/data/m2.json
 ```
 
-保存した主な設定：
+Main saved configurations:
 
-| 名前 | 末尾桁数 | 比の公比 | 位置分割数 | 総追加長 | アンカー |
+| Name | Suffix length | Ratio-grid base | Position subdivisions | Total appended length | Anchor |
 |---|---:|---:|---:|---:|---|
-| m2 | 2 | 11/10 | 32 | 3 + 極値枝長4 | 下端 |
-| m3 | 3 | 11/10 | 64 | 3 | 下端 |
-| fine | 3 | 21/20 | 128 | 1 | 下端 |
-| golden | 3 | 21/20 | 128 | 2 | 黄金比 |
-| centered | 3 | 21/20 | 128 | 2 | 黄金比中心・微分で正規化 |
-| adaptive | 2〜5（形状幅 ≤ 1/100） | 11/10 | 32 | 2 | 黄金比 |
-| golden_fine | 3 | 101/100 | 128 | 2 | 黄金比 |
+| m2 | 2 | 11/10 | 32 | 3 + extremal branch length 4 | Lower endpoint |
+| m3 | 3 | 11/10 | 64 | 3 | Lower endpoint |
+| fine | 3 | 21/20 | 128 | 1 | Lower endpoint |
+| golden | 3 | 21/20 | 128 | 2 | Golden ratio |
+| centered | 3 | 21/20 | 128 | 2 | Golden-ratio center, derivative normalization |
+| adaptive | 2–5 (shape width ≤ 1/100) | 11/10 | 32 | 2 | Golden ratio |
+| golden_fine | 3 | 101/100 | 128 | 2 | Golden ratio |
 
-各設定の正確なパラメータは `data/<名前>.meta.json`、削除過程は
-`logs/<名前>.log`、完了結果は `data/<名前>.json` にある。
-最初の六設定は空で終了した。`golden_fine` の最終状態は検証集約を参照。
-探索で使う候補の保持には上限があるので、空になった結果は内点不存在の証明ではない。
+Exact parameters are in `data/<name>.meta.json`, deletion histories in
+`logs/<name>.log`, and completed results in `data/<name>.json`.
+All seven searches ended with an empty family. Candidate retention is
+bounded, so this does not prove the absence of interior points.
 
-最後の大規模設定の再実行：
+To repeat the final large configuration:
 
 ```sh
 python3 -B -S Berstein/src/prepare.py --name golden_fine --memory 3 --length 2 --grid 128 --spine 0 --base 101/100 --low -280 --high 280 --root 112222,122222 --anchor golden
 Berstein/bin/graph_kernel Berstein/data/golden_fine.dat Berstein/data/golden_fine.json
 ```
 
-`--centered` の入力だけは `src/anchor_kernel.cpp` をコンパイルした検証器に渡す。
-閉じた表が得られた場合は、同じ実行ファイルの第3引数に `.json.alive.bin` を渡し、
-削除保護なしで全行を再検証する。その後、具体的な根の所属と正長性を確認して初めて
-内点の証明になる。人工正例の成功を131禁止の成功と取り違えないこと。
+Only `--centered` input must be passed to a checker compiled from
+`src/anchor_kernel.cpp`. If a closed table is found, pass its `.json.alive.bin`
+as the third argument to the same executable and recheck every row without
+protected rows. Membership and positive length of a concrete root interval
+must then be established before concluding that interior points exist.
+Success on an artificial positive control is not success for `131`-avoidance.
 
-次に必要なのは、真の隙間を含む全 T 区間を許容にしない条件を設計し、
-残る区間について全後続が戻る族を得ること。証明済みの障害と、探索の不成功を区別して進める。
+The next task for this separate approach is to exclude T-intervals containing
+genuine gaps from the admissible family, and obtain a family to which every
+chosen successor returns. Proved obstructions and unsuccessful searches have
+different meanings.
 
-形状の粗さも独立の課題である。末尾111の3桁箱には幅 `11/322 ≈ 0.0342` が残る。
-`--shape-tolerance 1/100 --memory 2` は、この幅が大きい末尾だけを細分する。
-30種類の末尾・偶奇込み60状態となり、724件の子の形状包含を厳密に確認した。
-この分割を使った粗い比の探索も閉包は得られなかった。
+Coarse shape boxes are another issue. The three-digit box ending in 111 has
+width `11/322 ≈ 0.0342`. `--shape-tolerance 1/100 --memory 2` subdivides only
+suffixes with excessive width. This yields 30 suffixes and 60 states including
+parity; 724 child-shape inclusions were checked exactly. The coarse-ratio
+search with this subdivision still did not close.
 
-`golden_fine` も **194,168,832行から20回の削除反復で空になった**。
-これで上の七設定はいずれも終了している。
+`golden_fine` also **became empty after 20 deletion iterations, starting from
+194,168,832 rows**. Thus all seven configurations above are complete.
 
-全接頭語版の追加禁止条件を一様な表へ移す際は、過去の違反フラグも必要である。
-例えば11221と13221は偶奇・末尾3桁・131状態が同じだが、13禁止については前者だけが適格。
-`generalized_t.py` と `search_t.py` はこの違いを全語検査で保持している。
+Uniform tables for additional forbidden words under the full-prefix
+convention need historical-violation flags. For example, 11221 and 13221
+have the same parity, last three digits, and `131` state, but only the former
+is eligible when 13 is forbidden. `generalized_t.py` and `search_t.py`
+preserve this distinction by checking the entire word.
 
-## 禁止語版 T の端点を直接保持する一様探索
+## Uniform search retaining forbidden-word T-endpoints directly
 
-最後に `prepare_t.py` / `t_kernel.cpp` で、F・交換和 T・左二進・右二進・両側二進の
-五つの型をそのまま管理する検査も作成した。F・T・両側二進が対称な一般化 T 区間、
-左二進・右二進は片方の項だけの補助区間である。過去に3が出たかのフラグを持ち、
-全接頭語規約で空になる二進の項を正しく除外する。
-極値の体は `Q(sqrt(3),sqrt(10))`、比には二進集合の下端での微分を使う。
-両側の周期語12/21への帰還も候補に含む。
+`prepare_t.py` / `t_kernel.cpp` track five types directly: F, the exchanged
+sum T, left binary, right binary, and both binary. F, T, and both binary are
+symmetric generalized T-intervals; the one-sided binary types are auxiliary
+intervals with only one term. A flag records whether a 3 has occurred,
+correctly excluding binary terms that are empty under the full-prefix
+convention. Extrema lie in `Q(sqrt(3),sqrt(10))`; ratios use derivatives at the
+binary set's lower endpoint. Returns toward periodic words 12/21 on both
+sides are also candidates.
 
 ```sh
 clang++ -O3 -std=c++17 Berstein/src/t_kernel.cpp -o Berstein/bin/t_kernel
@@ -186,6 +278,8 @@ python3 -B -S Berstein/src/prepare_t.py --name t_fine --memory 3 --base 51/50 --
 Berstein/bin/t_kernel Berstein/data/t_fine.dat Berstein/data/t_fine.json
 ```
 
-粗い設定 `t_kernel` の206,180行、細かい設定 `t_fine` の6,496,720行はいずれも空になった。
-したがって今回、**反復に使える非空の閉じた許容族は得られていない**。
-この二つも有限候補と十分条件を使った探索であり、一般化 T の全方式を否定する結果ではない。
+Both the coarse `t_kernel` configuration (206,180 rows) and the fine `t_fine`
+configuration (6,496,720 rows) became empty. **No nonempty closed admissible
+family for iteration was obtained in these searches.** Both use finite
+candidate lists and sufficient conditions; they do not rule out every
+approach using generalized T-intervals.

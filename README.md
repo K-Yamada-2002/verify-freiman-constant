@@ -1,8 +1,94 @@
-# Verify Freiman Constant
+# Verified interior points below Hall's ray
 
-This repository aims to verify that Freiman's constant is the initial point of Hall's ray. The project is a work in progress.
+**This repository establishes an explicit interval of the Markov spectrum
+strictly below Hall's ray:**
 
-## Introduction
+```math
+\boxed{[4.52578,4.52754]\subset M\cap(-\infty,c_F)},\qquad
+c_F=\frac{2221564096+283748\sqrt{462}}{491993569}
+\approx4.527829566160879.
+```
+
+The decimal endpoints are exact: $4.52578=226289/50000$ and
+$4.52754=226377/50000$. Thus every point of $(4.52578,4.52754)$ is an interior
+point of $M$ outside $[c_F,\infty)$, in the ordinary topology of $\mathbb R$.
+**One explicit example is $4.52666$; the interval has width $11/6250=0.00176$.**
+
+This is a rigorous computer-assisted proof with a **Lean-checked soundness
+argument and exhaustive verification of the finite certificate**. The
+construction realizes every value in the interval by an actual bi-infinite
+continued fraction, and bounds all noncentral positions uniformly. Its
+conclusion is not based on sampling or floating-point agreement.
+
+| Verification layer | Evidence |
+|---|---|
+| Exact certificate verification | All **3,464,816** adopted rows checked without deletion; exact endpoint and ratio comparisons |
+| Separate implementation | An independent implementation of input semantics, full-table coverage, and spectral bounds, with negative controls |
+| Lean soundness proof | Checker acceptance implies the interval inclusion and nonempty interior; **4,372** finite spectral checks computed in the kernel |
+| Execution and axiom audit | All **484** state pairs accepted by the compiled Lean checker; six corrupted inputs rejected; only standard Lean/Mathlib axioms |
+
+**Trust boundary:** the mathematical soundness theorem is kernel-checked;
+acceptance of the concrete large table is established by compiled Lean
+execution, which also trusts the compiler, runtime, and input handling. This
+is not an unconditional closed theorem reducing all 3.46 million rows inside
+the kernel. The [verification guide](Berstein/Lean/README.md) and
+[committed baseline](Berstein/Lean/verification-baseline.json) make that
+boundary explicit. “Independent implementation” describes code in this
+repository, not external peer review.
+
+Start with the [result and construction](Berstein/README.md) and the
+[Lean verification guide](Berstein/Lean/README.md). The result concerns this
+explicit interval in **$M$**. Inclusion of this interval in $L$ or in
+$M\setminus L$ is not asserted.
+
+## Reproduce the main result
+
+From a fresh checkout, with the pinned Lean toolchain and a C++17 compiler:
+
+```sh
+cd Berstein/Lean
+lake update
+lake exe cache get
+python3 scripts/verify.py --prepare
+```
+
+This builds the proofs and checker, audits axioms, generates witnesses,
+replays all adopted rows, and checks rejection of corrupted inputs. See the
+[guide](Berstein/Lean/README.md) for verification using existing artifacts.
+`lake build` alone does not perform the exhaustive replay.
+
+The original exact-arithmetic route can be run from the repository root:
+
+```sh
+python3 -B -S Berstein/src/verify_below_ray.py --full
+```
+
+## Repository map
+
+| Directory | Result and status |
+|---|---|
+| [Berstein/](Berstein/README.md) | Explicit interior interval below Hall's ray; exact certificates, separate audit implementation, and Lean verification |
+| [Freiman/](Freiman/README.md) | Schecker-style computer-assisted proof of $[c_F,\infty)\subset M\cap L$; optimality of $c_F$ is not proved here |
+| [Schecker/](Schecker/README.md) | SageMath discovery notebooks and investigation of classical successor lists |
+| [misc/](misc/README.md) | Supporting numerical calculations for classical proofs |
+
+The English READMEs explain the results, evidence, and reproduction steps.
+Detailed historical Freiman notes and the original TeX/audit expositions
+remain in Japanese. The separate search for interior points of the
+`131`-forbidden set $K_F+K_F$ is unfinished; it is not the construction behind
+the verified `31313`-based result above.
+
+## Mathematical background
+
+For a bi-infinite sequence $a\in\mathbb Z_{>0}^{\mathbb Z}$, write
+
+```math
+\lambda_n(a)=[a_n;a_{n+1},a_{n+2},\ldots]+[0;a_{n-1},a_{n-2},\ldots],\qquad
+M=\left\{\sup_{n\in\mathbb Z}\lambda_n(a)<\infty:
+ a\in\mathbb Z_{>0}^{\mathbb Z}\right\}.
+```
+
+This is the continued-fraction definition used by the Lean development.
 
 For an irrational number $\alpha$, define
 
@@ -26,26 +112,13 @@ c_F = [4;4,3,2,2,\overline{3,1,3,1,2,1}] + [0;3,2,1,1,\overline{3,1,3,1,2,1}] = 
 
 now known as Freiman's constant.
 
-However, Freiman's original proof relies on over one hundred pages of intricate computation. The source is also difficult to access, and the argument has not been available in a form that can be checked independently and computationally.
+The repository began as a project to make the intricate computations behind
+Freiman's ray accessible to exact computational verification. It now also
+contains the separate interior-interval result stated above.
 
-The goal of this repository is to develop an automatic and rigorous algorithm for computing the initial point of Hall's ray.
+## Classical discovery notebooks
 
-## Current Contents
-
-All notebooks are written for [SageMath](https://www.sagemath.org/).
-
-```text
-.
-├── Schecker/
-│   ├── schecker_proof_1.ipynb
-│   ├── schecker_proof_2.ipynb
-│   └── schecker_proof_3.ipynb
-├── misc/
-│   ├── hall_proof.ipynb
-│   └── freiman_judin_proof.ipynb
-├── LICENSE
-└── README.md
-```
+The following notebooks use [SageMath](https://www.sagemath.org/).
 
 ### `Schecker/`
 

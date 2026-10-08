@@ -1,41 +1,45 @@
-# Hall’s ray の外にも Markov スペクトルの内点が存在する
+# Interior points of the Markov spectrum outside Hall's ray
 
-**Lean による健全性証明と全表検査。**
+**A Lean proof of checker soundness, with exhaustive certificate verification.**
 
-Markov スペクトル \(M\) は、Hall’s ray \([c_F,\infty)\) より下にも
-幅の正の区間を含みます。具体的に、次の包含を検証しました。
+The Markov spectrum $M$ contains an interval of positive length strictly below
+Hall's ray $[c_F,\infty)$. The verified inclusion is
 
-\[
+```math
 [4.52578,4.52754]\subset M\cap(-\infty,c_F),\qquad
-c_F=\frac{2221564096+283748\sqrt{462}}{491993569}
-\]
+c_F=\frac{2221564096+283748\sqrt{462}}{491993569}.
+```
 
-したがって、実数直線の通常の位相で
+Consequently, in the usual topology of the real line,
 
-\[
+```math
 (4.52578,4.52754)\subset
-\operatorname{int}\!\left(M\setminus[c_F,\infty)\right).
-\]
+\operatorname{int}_{\mathbb R}\!\left(M\setminus[c_F,\infty)\right).
+```
 
-**特に、\(4.52666\) は Hall’s ray の外にある \(M\) の内点です。**
-得られた区間の幅は \(0.00176=11/6250\) です。
+**In particular, $4.52666$ is an explicit interior point of $M$ outside Hall's ray.**
+The interval has exact width $0.00176=11/6250$.
 
-検証器の受理からこの内点の存在までを Lean で証明し、
-元の表の **3,464,816行すべて**をその検証器のコンパイル実行で受理しました。
-最終ビルド・公理監査・全表検査・6種の破損検査はすべて成功しました。
-今回の保存記録は [verification-baseline.json](verification-baseline.json)、
-再実行時の最新記録は `logs/verification.json` です。
+Lean proves the implication from certificate acceptance to this interior-point
+result. Compiled execution of the checker accepted **all 3,464,816 rows** of
+the original table. The recorded final build, axiom audit, exhaustive replay,
+and six corruption tests all succeeded. The committed record is
+[verification-baseline.json](verification-baseline.json); a new run writes
+`logs/verification.json`.
 
-## 検証方式
+## Verification method
 
-構成には、31313 を避ける尾と固定語 `(322,431)`、中心数字 4 を使います。
-固定語 `431` に含まれる 4 は許し、追加する尾の数字を 1,2,3 に制限します。
-131 禁止集合の内点構成という別の問題は対象に含めません。
+The construction uses tails avoiding `31313`, fixed outward prefixes `(322,431)`,
+and central digit 4. The 4 in the fixed prefix `431` is allowed; only appended
+digits are restricted to 1, 2, and 3. This is separate from the unfinished
+interior-point construction for the `131`-forbidden set.
 
-大規模表には、**Lean で健全性を証明した検証器をコンパイル実行する**方式を使います。
-`Main.lean` の主定理 `Berstein.target_interval_subset` の唯一の前提は
-`Certificate.check input data alive cells = true` です。
-和の充填、非中心値の上界、端点の意味、後続被覆を数学的な仮定として残す構成ではありません。
+For the large table, we **execute a checker whose mathematical soundness has
+been proved in Lean**. The sole premise of `Berstein.target_interval_subset`
+in [Berstein/Main.lean](Berstein/Main.lean) is
+`Certificate.check input data alive cells = true`. Interval filling,
+noncentral bounds, endpoint semantics, and successor coverage are proved
+rather than left as mathematical assumptions.
 
 ```lean
 theorem target_interval_subset
@@ -45,19 +49,24 @@ theorem target_interval_subset
     Set.Icc targetLower targetUpper ⊆ markovSpectrum ∩ Set.Iio freimanConstant
 ```
 
-同じ受理条件から `open_interval_subset_interior` と
-`interior_below_freiman_nonempty` を導きます。
-明示した内点は、区間の中点 `226333/50000 = 4.52666` です。
+The same acceptance condition yields `open_interval_subset_interior` and
+`interior_below_freiman_nonempty`. The explicit interior point is the midpoint,
+$226333/50000=4.52666$.
 
-**約346万行の受理そのものを Lean カーネル内で還元した、前提のない閉じた定理ではありません。**
-検証器の健全性はカーネルが検査し、具体的な表の受理はコンパイル実行で確認します。
-この最後の実行には Lean のコンパイラ・実行系とファイルの読み込みを信頼します。
-外部プログラムの成功フラグを公理として取り込むことはしません。
+**The concrete acceptance of the 3.46-million-row table is not reduced inside
+the Lean kernel to obtain an unconditional closed theorem.** The kernel checks
+the soundness proof; compiled execution establishes acceptance of the concrete
+certificate. This execution also trusts the Lean compiler, runtime, and file
+input. No external program's success flag is introduced as an axiom.
 
-## 再現
+This is a rigorous computer-assisted proof with a formally verified soundness
+argument and exhaustive execution evidence. Its strength is documented by
+checkable obligations, not by a numerical probability of correctness.
 
-Lean **4.32.1** と Mathlib **v4.32.1** を固定しています。
-初めて依存関係を取得する場合は次を実行します。
+## Reproduction
+
+Lean **4.32.1** and Mathlib **v4.32.1** are pinned. To obtain dependencies on a
+fresh checkout:
 
 ```sh
 cd Berstein/Lean
@@ -65,89 +74,105 @@ lake update
 lake exe cache get
 ```
 
-証明書の生成から、ビルド・公理監査・全表検査・破損入力の拒否確認まで実行するには：
+To generate the certificates, build the proofs and checker, audit axioms,
+replay the entire table, and confirm rejection of corrupted inputs:
 
 ```sh
 python3 scripts/verify.py --prepare
 ```
 
-生成済みの証明書を使って全表を再検査するには：
+To replay the entire table using already generated certificates:
 
 ```sh
 python3 scripts/verify.py
 ```
 
-既に成功した全表実行を、実行ファイル・元入力・採用ビット列・全484証明書・ログの
-ハッシュ照合を条件として再利用し、数学的証明と破損検査を再確認するには：
+To reuse a successful exhaustive replay only after checking the hashes of the
+executable, original input, adoption bitmap, all 484 certificates, and logs,
+while rerunning the proof build, axiom audit, and corruption tests:
 
 ```sh
 python3 scripts/verify.py --reuse-replay
 ```
 
-全表の実行は既定で4分割並列です。この環境で最終実行の各分割は約12分でした。
-証明だけをビルドする場合は `lake build`、公理を表示する場合は
-`lake env lean Audit.lean` を使います。`lake build` 単独は全表の再検査を意味しません。
-隣の `hall-ray` フォルダーへの実行時依存はありません。
+The full replay uses four parallel shards by default. In the recorded run,
+each shard took about 12 minutes; this is not a runtime guarantee for other
+machines. Use `lake build` to build only the proofs and `lake env lean Audit.lean`
+to print the axioms. **`lake build` alone does not replay the whole table.**
+There is no runtime dependency on a neighboring `hall-ray` checkout.
 
-## 証明の接続
+## How the proof fits together
 
-| 段階 | 主なファイルと役割 |
+| Stage | Main modules and obligations |
 |---|---|
-| 実数の意味 | `Markov`, `Forbidden31313`, `CFInvariant`：両側無限連分数、禁止語の5状態オートマトン、無限尾の厳密な上下界 |
-| 入力の検査 | `Quadratic462`, `QuadraticCF`, `SemanticCheck`, `SemanticSound`：二次体の演算、端点IDの厳密な等式、語・状態・偶奇・定数タグの検査 |
-| 箱全体の保証 | `Normalization`, `FractionalLinear`, `SemanticTransport`, `GraphNumericSound`：連分数の正規化差、形状比、微分倍率の実数区間全体での保証 |
-| 有限表の被覆 | `GraphCertificate`, `GraphCertificateFacts`：有理演算による比較、区間の連鎖、全採用行と全移動先、比の箱の被覆 |
-| 無限列への接続 | `ActualCylinders`, `CylinderCover`, `GraphState`, `GraphSuccessor`：実際の接頭語、非空コンパクト円筒、入れ子性、両側の縮小、被覆点の実現 |
-| 初期区間 | `RootFacts`, `RootCheck`, `RootState`：固定語322・431の端点和と比、初期25帯から所望の充填区間への接続 |
-| 中心の支配 | `SpectralVerified`：すべての合法な尾と全非中心位置について `localValue ≤ 4525423/1000000`。4,372件の有限検査を `decide +kernel` で証明 |
-| 主結果 | `CertificateCheck`, `Verified`, `Main`：有限検査の受理だけから区間のスペクトル所属と内点の存在を導く |
+| Real-number semantics | `Markov`, `Forbidden31313`, `CFInvariant`: bi-infinite continued fractions, the five-state forbidden-word automaton, and rigorous bounds on infinite tails |
+| Input validation | `Quadratic462`, `QuadraticCF`, `SemanticCheck`, `SemanticSound`: quadratic-field arithmetic, exact endpoint-ID equalities, words, states, parity, and constant tags |
+| Uniform bounds over boxes | `Normalization`, `FractionalLinear`, `SemanticTransport`, `GraphNumericSound`: normalized continued-fraction differences, shape ratios, and derivative multipliers over entire real intervals |
+| Finite-table coverage | `GraphCertificate`, `GraphCertificateFacts`: rational comparisons, interval chains, all adopted rows and destinations, and coverage by ratio boxes |
+| Passage to infinite sequences | `ActualCylinders`, `CylinderCover`, `GraphState`, `GraphSuccessor`: actual prefixes, nonempty compact cylinders, nesting, shrinking on both sides, and realization of every covered point |
+| Initial interval | `RootFacts`, `RootCheck`, `RootState`: endpoint sums and ratio for prefixes 322 and 431; the 25 initial bands fill the required interval |
+| Central dominance | `SpectralVerified`: `localValue ≤ 4525423/1000000` for every legal tail and every noncentral position; 4,372 finite checks proved using `decide +kernel` |
+| Main result | `CertificateCheck`, `Verified`, `Main`: certificate acceptance implies spectral membership of the interval and existence of interior points |
 
-非中心値の評価は、近傍の有限検査と、遠方の内向き6桁・外向きオートマトン上界を使います。
-元資料の遠方置換の議論を未証明のまま引用する構成にはしていません。
+The noncentral bound combines finite checks near the core with six inward
+digits and automaton bounds for distant positions. The original informal
+replacement argument is not imported as an unproved premise.
 
-定数タグの一致は近似区間の重なりでは代用せず、二次体内の厳密な恒等式を検査します。
-比の境界では検証済みの箱を選べることを証明し、境界に接する全ての箱が採用されているとは仮定しません。
-有限グラフの閉性だけで充填を結論せず、連分数の円筒が実際に縮むことまで証明します。
+Constant tags are checked by exact quadratic-field identities, not by overlap
+of approximate enclosures. At ratio boundaries, the proof establishes that a
+verified box can be chosen; it does not assume that every touching box is
+adopted. Finite graph closure is connected to actual shrinking
+continued-fraction cylinders before interval filling is concluded.
 
-## 元データと実行記録
+## Original data and execution records
 
-元の `Freiman/data/graph_wide.dat` と `graph_wide.json.alive.bin` を直接読みます。
-検証できない行を削除した表への置き換えは行いません。
+The checker reads `Freiman/data/graph_wide.dat` and
+`Freiman/data/graph_wide.json.alive.bin` directly. The fixed table is not
+replaced by a smaller table obtained by deleting rows that fail verification.
 
-| 項目 | 件数 |
+| Item | Count |
 |---|---:|
-| 側の状態 | 22 |
-| 状態の組 | 484 |
-| 採用セル | 150,040 |
-| 採用行 | 3,464,816 |
-| 選択した子頂点 | 799,932 |
-| 被覆経路の頂点総数 | 6,541,897 |
+| One-sided states | 22 |
+| State pairs | 484 |
+| Adopted cells | 150,040 |
+| Adopted rows | 3,464,816 |
+| Selected child vertices | 799,932 |
+| Total coverage-path vertices | 6,541,897 |
 
-初期行は状態の組193、比の箱135、帯3〜27の25本です。
-保存グラフのヘッダにある別の根番号を、今回の初期行の代用にはしません。
+The initial rows are the 25 bands numbered 3–27, at state pair 193 and ratio
+box 135. A different root index in the saved graph header is not substituted
+for these initial rows.
 
-- `scripts/export_graph.cpp`：探索結果から有限の被覆証拠を生成する、信頼不要のプログラム。
-- `scripts/export_semantics.py`：厳密な端点ラベル等を `Berstein/Data/Meaning.lean` に書き出す、信頼不要の生成器。
-- `graphReplay`：入力の意味・根・準備した区間演算・全幾何の被覆を検査する Lean 実行ファイル。
-- `generated/replay_report.json`：全分割の終了コード、範囲、件数、入力・実行ファイル・証明書・ログのハッシュ。
-- `logs/verification.json`：最終定理の公理、Lean ソースのハッシュ、全表実行、破損検査をまとめた記録。
+- `scripts/export_graph.cpp`: an untrusted exporter of finite coverage witnesses from the search output.
+- `scripts/export_semantics.py`: an untrusted generator of exact endpoint labels and related data in `Berstein/Data/Meaning.lean`.
+- `graphReplay`: the Lean executable checking input semantics, the root, prepared interval operations, and coverage for every geometry.
+- `generated/replay_report.json`: shard exit codes, ranges, counts, and hashes of inputs, the executable, certificates, and logs.
+- `logs/verification.json`: the combined record of final-theorem axioms, Lean source hashes, exhaustive replay, and corruption tests.
 
-`NegativeControls.lean` は元ファイルを変更せず、6種の破損をメモリ上で作って拒否を確認します。
-根の採用ビット、端点の厳密値、使われる定数、セル、採用行の被覆経路、選択した移動先マスクを対象とします。
+`NegativeControls.lean` creates six corruptions in memory without changing the
+original files. It tests the root adoption bit, an exact endpoint value, a
+used constant, a cell, an adopted row's coverage path, and a selected
+destination mask.
 
-## 証明と実行の信頼範囲
+## Trust boundary
 
-主要定理の依存公理を `Audit.lean` で列挙し、通常の Lean/Mathlib の
-`propext`、`Classical.choice`、`Quot.sound` 以外が現れたら検証スクリプトを失敗させます。
-`native_decide`、`sorry`、`admit`、新たな数学的公理は使用しません。
-ハッシュは入力と実行の同一性を記録するもので、数学的な健全性の代用ではありません。
+`Audit.lean` lists the axioms of the main theorems. The verification script
+fails if any axiom other than the standard Lean/Mathlib `propext`,
+`Classical.choice`, and `Quot.sound` occurs. The proof uses no `native_decide`,
+`sorry`, `admit`, or additional mathematical axioms. Hashes establish the
+identity of inputs and execution artifacts; they do not replace mathematical
+soundness.
 
-`markovSpectrum` は正整数の両側無限連分数と局所値の上限で定義します。
-除外する半直線は明示的に `Set.Ici freimanConstant` です。
-二次形式による別定義との同値性や、既知の Freiman 定数が半直線の最小端点であること自体は、
-この区間包含の形式化とは別の定理です。
+`markovSpectrum` is defined using bi-infinite sequences of positive integer
+partial quotients and the supremum of their local values. The excluded ray
+is explicitly `Set.Ici freimanConstant`. Equivalence with a definition using
+quadratic forms, and the classical theorem identifying this constant as the
+smallest possible ray endpoint, are separate from this formalization.
+This result asserts membership in $M$; it does not assert that the displayed
+interval lies in $L$ or in $M\setminus L$.
 
-`HallRay/Basic.lean` と `HallRay/ContinuedFraction/{Basic,Mobius}.lean` は
-[hall-ray](https://github.com/K-Yamada-2002/hall-ray) のコミット
-`a584e5620124d23c709e3bbdc66db8b8b0586310` から複製しました。
-MIT ライセンスは `HallRay/LICENSE`、元資料と複製ソースの SHA-256 は `sources.json` にあります。
+`HallRay/Basic.lean` and `HallRay/ContinuedFraction/{Basic,Mobius}.lean` were
+vendored from [hall-ray](https://github.com/K-Yamada-2002/hall-ray), commit
+`a584e5620124d23c709e3bbdc66db8b8b0586310`. The MIT license is in
+`HallRay/LICENSE`; hashes of source materials and vendored files are in
+`sources.json`.

@@ -1,135 +1,169 @@
-# Freiman 半直線の Schecker 型証明
+# A Schecker-style proof of the Freiman ray
 
-このフォルダーでは、禁止語 `31313` を使った後続被覆により
-**`[c_F, ∞) ⊂ M ∩ L`** を証明する。主張は厳密算術による有限検証と、無限連分数を構成する数学的論証からなる。
+This directory proves **`[c_F, ∞) ⊂ M ∩ L`** using successor covers with the
+forbidden word `31313`. The proof combines finite exact-arithmetic verification
+with a mathematical argument constructing infinite continued fractions.
 
-まず [解説（TeX）](doc/lemma2_schecker.tex) または [PDF](doc/lemma2_schecker.pdf) を参照。
-Schecker の解説に合わせて、準備、後続被覆から中心値を実現する原理、非中心上界による
-`M` への移行、許容条件、初期区間から半直線を作る手順、被覆補題の有限検証の順に説明する。
-実際の三つの後続による被覆例を示し、`L` への包含は最後に独立の系として述べる。
-Schecker の T 区間と、補題2から補題1の被覆に至る部分との対応も説明する。
+For the separate result on **interior points below Hall's ray**, see
+[Berstein](../Berstein/README.md) and its [Lean verification](../Berstein/Lean/README.md).
+The half-line proof documented here does not itself establish optimality of $c_F$.
 
-2026年10月1日の再設計では、区間をすべて同じ `J_{p,q}(a,b)` とし、
-祖先・反復回数を持つ特殊族を、現在のパラメータに対する四つの有理数の条件に置き換えた。
-両側への33の追加で不変になる微分比 `V_zeta` を使う。
-端点での `S=S_*` という等式条件も不要になった。
-一般族は `graph_wide` 一つに減らし、34件の初期入口被覆で短い語を扱う。
-一般族の3,464,816行は、同じ有限アルゴリズムで検証するパラメータ箱の件数である。
-左右の状態、比の範囲、部分区間の位置を分割した表であり、数百万個の証明を個別に記述する意味ではない。
-現在は件数を1000以下にすることを目標とせず、アルゴリズムの明確さと厳密な再検証を重視する。
+Start with the [TeX exposition](doc/lemma2_schecker.tex) or
+[PDF](doc/lemma2_schecker.pdf), both in Japanese. Following the Schecker
+exposition, it presents preliminaries, realization of central values by
+successor covers, passage to $M$ through noncentral bounds, admissibility,
+construction of the ray from initial intervals, and finite verification of
+the covering lemma. It includes an actual three-successor cover and states
+inclusion in $L$ as a separate final corollary. It also explains the
+correspondence with Schecker's T-intervals and the passage from Lemma 2 to
+the cover required by Lemma 1.
 
-一般表は狭い比範囲の検証済み表を種として保護し、広い範囲で削除探索して作った。
-最後には種も含めた全行を、保護なしで検証している。証明に使うのはこの最終検証の成功である。
+The redesign of October 1, 2026 uses the same intervals `J_{p,q}(a,b)`
+throughout. Special families carrying an ancestor and iteration count were
+replaced by conditions on four rational parameters of the current state.
+The derivative ratio `V_zeta` is invariant under appending 33 to both sides.
+The endpoint equality condition `S=S_*` is no longer needed. There is now
+only one general family, `graph_wide`, with 34 initial entry covers for
+short words. Its 3,464,816 rows are parameter boxes checked by one finite
+algorithm, partitioning left/right states, ratio ranges, and subinterval
+positions. They are not millions of separately written mathematical proofs.
+The current priority is a clear algorithm and rigorous replay, rather than
+reducing the number of conditions below 1,000.
 
-## ファイル構成
+The general table was found by deletion search over a wider ratio range,
+protecting a verified narrow-range table as a seed. The final verification
+checks every row, including the seed, without protection. The proof uses
+this final verification.
 
-| フォルダー | 内容 |
+## Layout
+
+| Directory | Contents |
 |---|---|
-| `doc/` | TeX・PDF、証明の詳細、全区間表、監査記録、探索経過 |
-| `src/` | Python と C++ のコード。検証・探索・表生成のプログラム |
-| `data/` | 固定証明書、入力、検証結果、過去の探索結果 |
-| `logs/` | 実行ログ |
-| `bin/` | C++ の実行ファイル。環境依存の生成物 |
+| `doc/` | TeX/PDF exposition, proof details, complete interval tables, audits, and search history; detailed documents are in Japanese |
+| `src/` | Python and C++ verification, search, and table-generation programs |
+| `data/` | Fixed certificates, inputs, verification results, and historical search results |
+| `logs/` | Execution logs |
+| `bin/` | Generated, platform-dependent C++ executables |
 
-`data/` は再現性のため過去の探索結果も保存している。
-全体の証明には、下記の固定証明書とそれらを再検証した結果を用いる。
-探索結果のファイル名や成功フラグだけから証明の完成を判断しない。
+Historical search results are retained in `data/` for reproducibility. The
+proof uses the fixed certificates and their verification results listed
+below. Filenames or search success flags alone do not establish completion.
 
-## 再検証
+## Reverification
 
-Python 3（標準ライブラリ）と C++17 コンパイラが必要。リポジトリの根から実行する。
+Python 3 with its standard library and a C++17 compiler are required. From
+the repository root:
 
 ```sh
 python3 -B -S Freiman/src/verify_unified_proof.py --full
 ```
 
-このコマンドは一般族の入力を再生成し、`bin/graph_kernel_verify` をコンパイルし、
-3,464,816行の閉包、四つの局所条件の186後続、34件の入口の379後続、
-初期被覆136帯、91組の非中心上界を再検証する。
-新しい証明は `graph_m2` のデータを読まない。
-結果は [unified_proof_verified.json](data/unified_proof_verified.json)、
-固定証明書は [unified_proof_certificate.json](data/unified_proof_certificate.json) に保存する。
+This regenerates the general-family input, compiles `bin/graph_kernel_verify`,
+and verifies closure of all 3,464,816 rows, 186 successors for four local
+conditions, 379 successors for 34 entries, 136 initial-cover bands, and
+91 noncentral-bound cases. The new proof does not read `graph_m2` data.
+Results are saved to [unified_proof_verified.json](data/unified_proof_verified.json);
+the fixed certificate is [unified_proof_certificate.json](data/unified_proof_certificate.json).
 
-全行検証済みの入力・コードのハッシュを照合して再利用する通常実行は `--full` を省く。
-コードや固定入力を変更した後は `--full` で再検証すること。
-スクリプトはカレントディレクトリに依存しない。`--output` 等の裸のファイル名は `data/` を基準とする。
-C++ を直接実行する場合は、入力・出力パスを引数で明示する。
-探索プログラムには別途 NumPy が必要なものがある。厳密な再検証には不要。
+Omit `--full` to reuse a full-table verification after matching input and
+code hashes. Run with `--full` after changing code or fixed input. Scripts
+are independent of the working directory; bare output filenames such as
+those passed to `--output` are resolved under `data/`. Direct C++ invocations
+require explicit input/output paths. Some search programs require NumPy;
+exact reverification does not.
 
-## 主な文書と証明書
+## Main documents and certificates
 
-- [数学的解説](doc/lemma2_schecker.tex)：定義・定理・証明と Schecker との対応。
-- [初期被覆の全表](doc/HALL_RAY_INITIAL_COVER.md)：根と帯の端点は新構成でも同じ。
-- [一般族の構成](doc/INVARIANT_SEARCH.md)。
-- 旧構成の詳細：[半直線証明](doc/HALL_RAY_PROOF.md)、[端点の補題](doc/ENDPOINT_LEMMA.md)、[端点の全後続](doc/ENDPOINT_MENUS.md)。
-- [監査記録](doc/PROOF_AUDIT.md)。
-- [探索開始時の設計](doc/SEARCH_DESIGN.md)、[探索経過](doc/RESULTS.md)。
+The detailed documents below are in Japanese; this README provides the English
+entry point and reproduction instructions.
 
-現在の固定証明書は `data/unified_proof_certificate.json` と、
-一般族 `graph_wide` の `.dat`・`.meta.json`・`.json.alive.bin`。
-新版の検証器は一つの補題2型の後続被覆として、同じ局所条件への戻りと一般族への帰属を検証する。
-検証結果のハッシュはソースとデータの双方を対象とし、`src/layout.py` で新しい配置を解決する。
+- [Mathematical exposition](doc/lemma2_schecker.tex): definitions, theorems, proofs, and correspondence with Schecker.
+- [Complete initial-cover table](doc/HALL_RAY_INITIAL_COVER.md): root and band endpoints are unchanged in the new construction.
+- [Construction of the general family](doc/INVARIANT_SEARCH.md).
+- Earlier construction: [ray proof](doc/HALL_RAY_PROOF.md), [endpoint lemma](doc/ENDPOINT_LEMMA.md), and [complete endpoint successor lists](doc/ENDPOINT_MENUS.md).
+- [Audit record](doc/PROOF_AUDIT.md).
+- [Original search design](doc/SEARCH_DESIGN.md) and [search history](doc/RESULTS.md).
 
-旧証明は削除せず保存してある。旧解説は `doc/archive/lemma2_schecker_20260929.tex`、
-2026年10月1日の改訂前の解説は `doc/archive/lemma2_schecker_20261001_compact.tex`。
-旧構成の全体検証は `src/verify_hall_ray.py --full`。
-`src/audit_schecker_proof.py` は旧固定区間表に対する別実装の補足照合であり、
-新しい局所条件の箱全体の閉包検証を代用するものではない。
+The current fixed inputs are `data/unified_proof_certificate.json` and the
+`.dat`, `.meta.json`, and `.json.alive.bin` files for `graph_wide`.
+The current verifier treats returns to the same local conditions and entry
+into the general family as a single Lemma-2-style successor cover.
+Verification hashes cover both sources and data; `src/layout.py` resolves
+the current layout.
 
-再設計の独立した検証部分は `src/local_invariant_returns.py` と
-`src/wide_bootstrap_verify.py`。前者は祖先を使わない33の不変条件、
-後者は一般族を一つにする有限入口を確認する。
-`src/make_unified_certificate.py` はこれらの固定メニューを現在の証明書へまとめる生成器であり、
-その出力は `src/verify_unified_proof.py` に通すまで証明済みとして扱わない。
+Earlier proofs are retained. The earlier exposition is
+`doc/archive/lemma2_schecker_20260929.tex`; the version preceding the October 1
+redesign is `doc/archive/lemma2_schecker_20261001_compact.tex`.
+The earlier construction is fully checked by `src/verify_hall_ray.py --full`.
+`src/audit_schecker_proof.py` is a separate supplementary check of its fixed
+interval tables; it does not replace uniform closure verification for the
+new local conditions.
 
-初期区間表の再生成は以下。
+The separate verification components of the redesign are
+`src/local_invariant_returns.py`, checking ancestor-free invariants under
+appending 33, and `src/wide_bootstrap_verify.py`, checking finite entries
+into the single general family. `src/make_unified_certificate.py` combines
+these fixed menus into the current certificate. Its output is not certified
+until accepted by `src/verify_unified_proof.py`.
+
+To regenerate the initial interval tables:
 
 ```sh
 python3 -B Freiman/src/write_hall_tables.py
 ```
 
-文書は `doc/lemma2_schecker.tex` を内蔵 LaTeX エディタまたは XeLaTeX でコンパイルできる。
-ここで証明するのは半直線包含であり、`c_F` の最適性は対象外。
+Compile `doc/lemma2_schecker.tex` with the built-in LaTeX editor or XeLaTeX.
+The result here is half-line inclusion; optimality of $c_F$ is outside its scope.
 
-## 過去の圧縮探索の記録（2026年10月1日）
+## Historical compression searches (October 1, 2026)
 
-以下は、以前の1000条件以下という目標に対する探索記録である。この目標は現在の方針から外した。
-既存の固定証明書とは別の探索であり、現在の証明や再検証に必要な手順ではない。
-元の数百万行は分割したパラメータ箱の数であり、数学的に独立した条件の最少数ではない。
+These searches addressed an earlier target of at most 1,000 conditions,
+which is no longer the project's objective. They are separate from the fixed
+certificates and are not required for the current proof or its verification.
+The original row counts measure parameter boxes, not the minimum number of
+mathematically independent conditions.
 
-既存表を完全に保ち、連続する比の箱・型をまとめ、左右交換を使うと、
-`graph_m2` は12,685項、`graph_wide` は12,113項になる。
-[圧縮結果](data/admissibility_compression_summary.json) は全バイトの復元一致を検査したもの。
-`graph_wide` で同じ比区間・型区間を持つ異なる状態対をさらに一括すると6,912項だが、
-これも少数の後続リストを与える証明にはなっていない。
+Preserving the tables exactly, merging consecutive ratio boxes and types,
+and using left/right symmetry gives 12,685 entries for `graph_m2` and 12,113
+for `graph_wide`. The [compression record](data/admissibility_compression_summary.json)
+checks byte-for-byte reconstruction. Further grouping distinct `graph_wide`
+state pairs with identical ratio and type intervals gives 6,912 entries.
+This still does not yield a proof with a small number of successor lists.
 
-限定した形式については下限も分かる。一条件が左右の状態を固定し、
-比 `S` を一本の区間に制限し、型の選択が `S` に依存しないものとする。
-ある型で採用範囲が `n` 個に途切れていれば、その状態対だけで少なくとも `n` 条件が必要である。
-各状態対について型ごとの最大値を取り、左右交換を除いて足すと、
-`graph_m2` は **2,880**、`graph_wide` は **1,779** になる。
-これは**現在の表を完全に保つ場合の下限**であり、別の許容族や、`S` と型を結び付ける不等式、
-複数の状態対をまとめる条件についての不可能性を意味しない。
-[下限と検算用の区間列](data/admissibility_rectangle_bound.json) は次で再生成できる。
+There is also a lower bound for a restricted representation: each condition
+fixes the left/right states, restricts `S` to a single interval, and selects
+types independently of `S`. If an adopted range for one type has `n`
+components, that state pair alone needs at least `n` conditions. Taking the
+maximum over types for each state pair and summing modulo left/right symmetry
+gives **2,880** for `graph_m2` and **1,779** for `graph_wide`.
+These are bounds **for exact preservation of the current tables**. They do
+not exclude other admissible families, inequalities coupling `S` and type,
+or conditions grouping multiple state pairs.
+The [bounds and interval lists](data/admissibility_rectangle_bound.json)
+can be regenerated with:
 
 ```sh
 python3 -B -S Freiman/src/admissibility_rectangle_bound.py
 ```
 
-少数の長方形を選んだ新しい候補族も試した。
-759条件、990条件、重なりを許して選んだ990条件の候補は、
-採用した後続で覆えない行を削る探索で空になった。
-`S` の刻みを4・8・16倍にした探索も空になった。
-これは採用した探索法の失敗であり、候補族に数学的な被覆が存在しないという証明ではない。
-探索法は後続候補や交差グラフの保持数を制限しているためである。
+New families selected from small numbers of rectangles were also tested.
+Candidates with 759 conditions, 990 conditions, and 990 overlapping
+conditions became empty when rows not covered by the chosen successors were
+deleted. Searches with ratio-grid steps enlarged by factors of 4, 8, and 16
+also became empty. These are failures of the selected searches, not proofs
+that mathematical covers do not exist: the searches bound the retained
+successor candidates and intersection-graph data.
 
-関連コードは `src/search_small_family.py`、`src/prepare_coarse_search.py`、
-`src/graph_kernel_reduce.cpp`。候補は `data/small*_proposal.json`、結果は
-`data/small*.json` と `data/coarse_s*.json`、実行記録は `logs/` に保存する。
-`proposal_only` の条件を証明済みの許容族と扱ってはならない。
-全6実験の集約は [small_family_search_summary.json](data/small_family_search_summary.json) を参照。
+Relevant programs are `src/search_small_family.py`, `src/prepare_coarse_search.py`,
+and `src/graph_kernel_reduce.cpp`. Proposals are `data/small*_proposal.json`,
+results are `data/small*.json` and `data/coarse_s*.json`, and logs are in
+`logs/`. Conditions marked `proposal_only` are not verified admissible
+families. See [small_family_search_summary.json](data/small_family_search_summary.json)
+for all six experiments.
 
-末尾2桁を末尾1桁へ粗くする探索も実施した。側状態は22から12に減り、
-初期共通部分には元の行の98.7%が残ったが、粗い状態を保った閉性探索は空になった。
-この方法による新しい許容族は得られていない。
-[検証法と失敗の範囲](data/simple_family_m1_report.json)を保存してある。
+A search coarsening two-digit suffixes to one digit reduced the one-sided
+states from 22 to 12. The initial common portion retained 98.7% of the
+original rows, but the closure search with the coarser states became empty.
+It produced no new admissible family. The
+[verification method and scope of failure](data/simple_family_m1_report.json)
+are recorded separately.

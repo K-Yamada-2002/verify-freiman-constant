@@ -1,58 +1,61 @@
-# 証明の全体設計
+# Proof architecture
 
-採用方式は、実行可能な有限検証器の健全性を Lean で証明し、元の固定表を
-その検証器でコンパイル実行する方式です。具体的な巨大表の受理までカーネル内で
-還元することは、この方式の完了条件に含めません。
+The chosen method proves the soundness of an executable finite checker in
+Lean and runs that checker on the original fixed table. Reducing acceptance
+of the concrete large table inside the kernel is not a completion criterion
+for this method.
 
-## 依存関係
+## Dependencies
 
 ```text
-有限語・31313禁止のオートマトン・無限連分数の上下界
+Finite words, the 31313-avoidance automaton, bounds on infinite continued fractions
   ↓
-二次体内の厳密な端点ID・状態遷移・定数タグ
+Exact quadratic-field endpoint IDs, state transitions, and constant tags
   ↓
-有理区間演算と形状比・微分比・端点差の健全性
+Sound rational interval arithmetic, shape/derivative ratios, endpoint differences
   ↓
-全採用行の区間被覆・全移動先・比の箱の被覆
+Coverage of all adopted rows, all destinations, and ratio boxes
   ↓
-実際の有限接頭語の延長と不変条件の保存
+Extensions of actual finite prefixes and preservation of invariants
   ↓
-非空コンパクト円筒の入れ子性・左右の縮小・実現点
+Nested nonempty compact cylinders, shrinking on both sides, realized points
   ↓
-根の25帯 → 実際の連分数の和の区間充填
+25 root bands → interval filling by sums of actual continued fractions
 
-近傍の有限検査 ＋ 遠方の6桁とオートマトン上下界
+Finite checks near the core + six-digit/automaton bounds for distant positions
   ↓
-4,372件をカーネル内で検査 → 全非中心位置の上界
+4,372 kernel checks → bound at every noncentral position
 
-区間充填 ＋ 全非中心値の上界 ＋ 根号の厳密比較
+Interval filling + uniform noncentral bound + exact radical comparisons
   ↓
-中心で最大値を達成 → Markov spectrum への所属
+Maximum attained at the center → membership in the Markov spectrum
   ↓
-[4.52578,4.52754] ⊂ M ∩ (-∞,c_F) → 実数位相での内点
+[4.52578,4.52754] ⊂ M ∩ (-∞,c_F) → interior in the real topology
 ```
 
-## 数学的な接続の条件
+## Conditions connecting the mathematics
 
-- 端点が同じ外側近似区間を持つだけでは同一視せず、二次体の厳密な等式を検査する。
-- 定数倍率タグは厳密な交差積の等式と値の一致を要求する。
-- 子の被覆経路は両端と各接続を検査し、全採用帯を取りこぼさない。
-- 子の比が検証済みの箱に入ることを、境界も含めて証明する。
-- 後続状態は行番号だけでなく、実際の左右接頭語と形状・比の不変条件を持つ。
-- 接頭語の総分母の成長と倍率比の有界性から、両側の円筒の縮小を導く。
-- 非中心値の上界は全合法尾・全非零整数位置を量化する。
+- Endpoint identity requires exact equality in the quadratic field; a shared outer enclosure is insufficient.
+- Constant multiplier tags require exact cross-product identities and equality of values.
+- Child coverage paths check both endpoints and every link, covering every adopted band.
+- A child's ratio must lie in a verified box, including boundary cases.
+- Successor states carry actual left/right prefixes and shape/ratio invariants, not just row numbers.
+- Growth of prefix continuants and bounded multiplier ratios imply shrinking cylinders on both sides.
+- The noncentral bound quantifies over every legal tail and every nonzero integer position.
 
-## 最終検証
+## Final verification
 
-`python3 scripts/verify.py --prepare` が以下を一括実行します。
+`python3 scripts/verify.py --prepare` performs the following checks:
 
-1. 元入力と引用ソースのハッシュ照合。
-2. `Main` までの数学的証明と実行検証器のビルド。
-3. 最終定理の型と依存公理の監査。
-4. 証拠生成と全484組・3,464,816行の受理確認。
-5. 6種類の破損入力の拒否確認。
-6. 入力・実行ファイル・ソース・証拠・実行ログを対応付けた記録の保存。
+1. Compare hashes of the original input and cited source files.
+2. Build the mathematical proofs through `Main` and the executable checker.
+3. Audit the final theorem statements and their axioms.
+4. Generate witnesses and confirm acceptance of all 484 state pairs and 3,464,816 rows.
+5. Confirm rejection of six kinds of corrupted input.
+6. Save a record linking inputs, executable, sources, witnesses, and execution logs.
 
-保存済みの全表受理を再利用する `--reuse-replay` は、全ての関連ハッシュと
-ログの範囲・件数を再確認します。数学的証明と破損検査は毎回実行します。
-最新の完了状態は `logs/verification.json` によって確認してください。
+`--reuse-replay` reuses a saved exhaustive acceptance run only after checking
+all relevant hashes and the ranges and counts in the logs. The mathematical
+proof build, axiom audit, and corruption tests run each time. Consult
+`logs/verification.json` for the latest completed run and
+[verification-baseline.json](verification-baseline.json) for the committed baseline.
