@@ -1,0 +1,650 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,booktabs,geometry,hyperref,xurl}
+\geometry{margin=27mm}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newcommand{\R}{\mathbb R}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\N}{\mathbb N}
+\newcommand{\conv}{\operatorname{conv}}
+\newcommand{\dd}{\sqrt{462}}
+\newcommand{\file}[1]{{\normalfont\small\nolinkurl{#1}}}
+\title{An explicit interval in the Markov spectrum below Hall's ray\\
+\large A computer-assisted proof with a formally verified certificate checker}
+\author{Koki Yamada}
+\date{October 9, 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We give a computer-assisted proof that the exact rational interval
+$[4.52578,4.52754]$ is contained in the Markov spectrum strictly below the classical endpoint of
+Hall's ray,
+$c_F=(2221564096+283748\sqrt{462})/491993569$. A closed successor cover for continued-fraction tails avoiding
+$31313$ is attached to the outward prefixes $(322,431)$, with central
+digit $4$. Its finite certificate has 3,464,816 adopted rows. We explain
+uniform verification over parameter boxes, passage from the finite cover
+to actual infinite tails, and a bound at every noncentral position.
+Lean verifies the implication from checker acceptance to the spectral
+inclusion; compiled execution, rather than kernel reduction of the large
+table, establishes concrete acceptance. Independent implementations and
+reproduction instructions document the remaining execution trust boundary.
+No assertion about the Lagrange spectrum or the unfinished $131$-forbidden
+construction is made.
+\end{abstract}
+
+\section{Statement and scope}
+For a sequence $\theta\in\N_{>0}^{\mathbb Z}$, put
+\[
+ \lambda_n(\theta)=\theta_n+[0;\theta_{n-1},\theta_{n-2},\ldots]
+                         +[0;\theta_{n+1},\theta_{n+2},\ldots],\qquad
+ m(\theta)=\sup_{n\in\mathbb Z}\lambda_n(\theta).
+\]
+We use the continued-fraction definition
+$M=\{m(\theta):\theta\in\N_{>0}^{\mathbb Z},\ m(\theta)<\infty\}$
+of the Markov spectrum. Its equivalence with the classical quadratic-form
+definition is background theory; see Cusick--Flahive \cite{CF}.
+Freiman's Hall-ray theorem \cite{Freiman} identifies
+\[
+ c_F=\frac{2221564096+283748\dd}{491993569}
+\]
+as the left endpoint of the maximal terminal ray. That classical
+identification is used to interpret ``below Hall's ray''; it is not
+reproved or included in the Lean development considered here.
+
+\begin{theorem}\label{thm:main}
+The computer-assisted verification described below establishes
+\[
+ \left[\frac{226289}{50000},\frac{226377}{50000}\right]
+ =[4.52578,4.52754]\subset M\cap(-\infty,c_F).
+\]
+Consequently $(4.52578,4.52754)\subset\operatorname{int}_{\R}
+(M\setminus[c_F,\infty))$. In particular $226333/50000=4.52666$ is an
+interior point outside Hall's ray. The interval has width $11/6250$.
+\end{theorem}
+All terminating decimals in exact statements denote rational numbers.
+The proof is supported by finite exact computations, not by sampling
+spectral values. We state the finite obligations explicitly in
+Sections~\ref{sec:graph} and \ref{sec:spectral}; the large obligation is
+accepted by a compiled checker whose soundness is kernel checked.
+The distinction is part of the statement of the verification method,
+not an assertion of an unconditional closed Lean theorem.
+The original release \cite{release} fixes the computational evidence.
+The source snapshot inspected for this exposition is commit
+\file{4b38497822c2088f9103a3c31aa4a1ac9a2a1462}.
+
+\section{Continued fractions and the forbidden-word language}
+For a finite word $U=(u_1,\ldots,u_h)$ of positive integers let
+$F_U(x)=[0;u_1,\ldots,u_h+x]$, with $F_{\varnothing}(x)=x$.
+Write $p_j/q_j=[0;u_1,\ldots,u_j]$, where
+$p_{-1}=1,p_0=0,q_{-1}=0,q_0=1$ and
+$p_j=u_jp_{j-1}+p_{j-2}$, $q_j=u_jq_{j-1}+q_{j-2}$.
+Then
+\begin{equation}\label{eq:mobius}
+ F_U(x)=\frac{p_h+p_{h-1}x}{q_h+q_{h-1}x},\quad
+ F_U(x)-F_U(y)=\frac{(-1)^h(x-y)}
+ {(q_h+q_{h-1}x)(q_h+q_{h-1}y)}.
+\end{equation}
+These follow by multiplying the matrices of $x\mapsto1/(u+x)$;
+the determinant identity is $p_{h-1}q_h-p_hq_{h-1}=(-1)^h$.
+For nonempty $U$ set $r_U=q_{h-1}/q_h\in[0,1]$.
+Equation~\eqref{eq:mobius} implies that the image of $[0,1]$ has width
+at most $q_h^{-2}$. Since $q_h\ge F_{h+1}$, with
+$F_1=F_2=1$, these widths tend to zero uniformly in words of length $h$.
+This also proves convergence of the infinite continued fractions used here.
+
+For a fixed word $U$ avoiding $31313$, define
+\[
+ K(U)=\{[0;U,w]: w\in\{1,2,3\}^{\N},\ Uw\text{ avoids }31313\}.
+\]
+The fixed word may contain $4$; only appended digits must be at most $3$.
+Thus $K(431)$ is nonempty. Infinite extensions form a closed subset of the
+compact product $\{1,2,3\}^{\N}$, and the uniform width estimate proves
+continuity of their continued-fraction values. Hence $K(U)$ is compact.
+Appending only $2$ always gives a legal extension.
+
+The automaton state is the longest suffix which is a proper prefix of
+$31313$. Label its five states $0,1,2,3,4$ by
+$\varnothing,3,31,313,3131$, respectively. Its transition table is
+\[
+\begin{array}{c|ccc}
+ s&1&2&3\\\hline
+ 0&0&0&1\\1&2&0&1\\2&0&0&3\\3&4&0&1\\4&0&0&\text{reject}
+\end{array}
+\]
+A fixed digit $4$ resets the state to $0$. Write $T_s$ for the possible
+values of legal infinite tails starting in state $s$.
+
+\begin{lemma}\label{lem:extrema}
+Writing $d=\sqrt{462}$, the endpoints $l_s=\min T_s$ and
+$u_s=\max T_s$ are
+\[
+\begin{array}{c|cc}
+ s&l_s&u_s\\\hline
+0&(-29+2d)/53&-1+d/12\\
+1&(-29+2d)/53&(-28+2d)/19\\
+2&-1/2+d/28&-1+d/12\\
+3&(-29+2d)/53&(-29+2d)/19\\
+4&(-24+2d)/53&-1+d/12
+\end{array}
+\]
+\end{lemma}
+\begin{proof}
+For every legal transition $s\xrightarrow{a}t$, direct substitution gives
+\[
+ l_s\le\frac1{a+u_t},\qquad \frac1{a+l_t}\le u_s.
+\]
+Denominators are positive; the inequalities can be checked by
+cross multiplication and $d^2=462$, $21<d<22$.
+These are exactly fourteen pairs of inequalities, one for every legal
+state/digit pair. Applying them backwards along a finite legal prefix,
+with any terminal point in $[l_t,u_t]$, gives a value in $[l_s,u_s]$.
+Replacing the terminal point by any point of $[0,1]$ changes the value
+by at most $q_h^{-2}$. Letting $h\to\infty$ proves $T_s\subset[l_s,u_s]$.
+For attainment, at every state choose a legal digit realizing each of
+\[
+ l_s=\min_{s\xrightarrow{a}t}\frac1{a+u_t},\qquad
+ u_s=\max_{s\xrightarrow{a}t}\frac1{a+l_t}.
+\]
+These equalities follow from the same finite substitutions.
+Alternate lower and upper choices as the reciprocal reverses order.
+The resulting infinite legal word has value the selected endpoint:
+after $h$ digits its endpoint value differs from that word's value by
+at most $q_h^{-2}$. This proves both attainment and the formulas.
+\end{proof}
+Let $L_U=\min K(U)$ and $H_U=\max K(U)$.
+By parity in \eqref{eq:mobius}, they are the minimum and maximum of
+$F_U(l_{\sigma(U)})$ and $F_U(u_{\sigma(U)})$.
+For $0\le p\le q\le1$ define
+\begin{equation}\label{eq:band}
+ J_{p,q}(U,V)=[L_U+L_V+pW,\ L_U+L_V+qW],\qquad
+ W=H_U+H_V-L_U-L_V.
+\end{equation}
+These are subintervals of a convex hull; membership in the actual Cantor
+sum requires a separate argument.
+
+\section{Closed covers and infinite realization}\label{sec:infinite}
+Let $\xi_U$ be the endpoint $l_{\sigma(U)}$ or $u_{\sigma(U)}$ for which
+$F_U(\xi_U)=L_U$. Define
+\[
+ D_U=\frac1{q_h^2(1+r_U\xi_U)^2},\qquad S(U,V)=D_V/D_U.
+\]
+In particular $1/4\le D_Uq_h^2\le1$.
+
+\begin{lemma}[Closed successor-cover principle]\label{lem:cover}
+Suppose a family of actual legal word pairs $(U,V)$ with assigned bands
+$J_{p,q}(U,V)$ satisfies the following conditions. Each band is covered
+by finitely many bands at extended word pairs $(Uu,Vv)$ in the same
+family, where the added digits lie in $\{1,2,3\}$ and
+$|u|+|v|>0$. Uniformly throughout the family,
+$0<c\le D_V/D_U\le C<\infty$.
+Then every assigned band is contained in $K(U)+K(V)$.
+\end{lemma}
+\begin{proof}
+Fix a point $z$ of an assigned band. Choose successively a child band
+containing $z$. This gives nested prefixes $U_n,V_n$, with total length
+increasing by at least one at each step. At least one length tends to
+infinity and its denominator tends to infinity. The scale of that side
+tends to zero. If the other length were bounded, its nested prefixes
+would eventually be constant, so its scale would be bounded below by
+$1/(4q^2)>0$, contradicting the ratio bounds. Hence both lengths tend
+to infinity. (Even if its anchors changed, the same lower bound applies.)
+The compact sets $K(U_n)$ and $K(V_n)$ are nested and nonempty;
+their diameters tend to zero by \eqref{eq:mobius}. Their intersections
+are singletons $x\in K(U)$ and $y\in K(V)$.
+Each band containing $z$ lies in
+$[L_{U_n}+L_{V_n},H_{U_n}+H_{V_n}]$, whose diameter tends to zero.
+Thus $z=x+y$. Every finite forbidden-word constraint persists in the
+limit since an occurrence would already appear in a finite prefix.
+This proves the claim. Notice that the auxiliary bands themselves need
+not be nested.
+\end{proof}
+
+\section{The finite successor certificate}\label{sec:graph}
+We reuse the saved \file{graph_wide} adoption table, rather than rerun
+an exploratory search to choose a new family. A one-sided finite state
+records the automaton state, prefix parity, and a shape box for $r_U$.
+There are 22 such states and 484 ordered state pairs.
+Shape boxes are obtained from reversed two-digit suffix maps applied to
+$[1/4,4/5]$. This history interval is invariant under $x\mapsto1/(a+x)$
+for $a=1,2,3$: the union of the three images lies in $[1/4,4/5]$.
+The root shapes are checked separately, including the fixed $4$.
+Ratios are partitioned by powers of $\kappa=51/50$.
+A row consists of a state pair, ratio box, and band type $(p,q)$.
+The fixed bitmap contains 3,464,816 adopted rows in 150,040 nonempty
+cells. A cell groups rows with the same state pair and ratio box.
+
+\subsection{Uniform endpoint comparisons}
+The comparisons must hold for all real shapes and ratios in a box.
+If $\xi$ is the anchor and $x,y$ are endpoint tails, then
+\begin{equation}\label{eq:normalized}
+ \frac{F_U(x)-F_U(y)}{D_U}
+ =(-1)^{|U|}(x-y)
+    \frac{1+r_U\xi}{1+r_Ux}\frac{1+r_U\xi}{1+r_Uy}.
+\end{equation}
+For fixed $\xi,x$, the ratio
+$R(r)=(1+r\xi)/(1+rx)$ is monotone, since
+$R'(r)=(\xi-x)/(1+rx)^2$.
+Consequently its values at the shape-box endpoints bound it throughout
+that box. Rational outward enclosures of the endpoint tails give bounds
+on \eqref{eq:normalized}. Left differences are normalized by $D_U$;
+right differences contribute with the factor $S=D_V/D_U$.
+
+Endpoint comparisons preserve cancellations between repeated endpoint
+labels. For example, the difference between two interpolated endpoints
+has coefficients $1-p,p,-(1-q),-q$, whose sum is zero.
+The checker verifies an exact identity
+\[
+ \sum_i c_i z_i=\sum_e w_e(z_{a_e}-z_{b_e}),\qquad w_e\ge0,
+\]
+by comparing the coefficient of every endpoint label. Each difference
+on the right has a prepared rational enclosure. Multiplication by
+$w_e$ and addition therefore enclose the left side. Two proposed
+transports may be intersected to sharpen the enclosure; both identities
+are checked. A nonnegative lower bound proves the requested endpoint
+inequality. Proposing a transport is not a trusted step.
+
+For extension $u$, the derivative multiplier is
+\[
+ \frac{D_{Uu}}{D_U}
+ =\frac{(q_U+q_{U^-}\xi_U)^2}
+        {(q_{Uu}+q_{(Uu)^-}\xi_{Uu})^2}.
+\]
+Its enclosure is validated by exact endpoint semantics and shape
+transport. Hence a child ratio belongs to an enclosure of
+$S(D_{Vv}/D_V)/(D_{Uu}/D_U)$. All selected band types must be adopted
+in every destination bin of a certified contiguous range enclosing
+that image. Exact equal nonzero multiplier tags allow the child ratio
+to remain in the parent bin. Tags are checked as quadratic-field
+identities, not inferred from overlapping numerical enclosures.
+At a bin boundary it suffices to choose one verified bin containing
+the actual ratio; no assumption that every touching bin is adopted
+is needed for that choice.
+
+\subsection{What is checked for each row}
+A child vertex records legal extensions, a destination-bin range,
+and selected band types. A merged child band is admitted only if its
+whole relative-coordinate interval is covered by the selected original
+bands; merging cannot enlarge the adopted union. For each parent row
+a finite path of child vertices is checked. Each child interval is
+nonempty; consecutive intervals intersect, either through both
+cross-endpoint inequalities or through a checked common parent knot.
+The first interval reaches the parent's lower endpoint and the last
+reaches its upper endpoint. The union of a chain of intersecting closed
+intervals is an interval, and these endpoint conditions imply that it
+contains the parent interval. A point in a merged child band is then
+assigned to a selected original band and a verified destination bin.
+All extensions make positive total progress. Semantic checks validate
+states, parity, endpoint identities, shape inclusions, and the ratio
+bounds, so that the finite path represents actual extended prefixes.
+Thus acceptance proves the successor property in Lemma~\ref{lem:cover}.
+
+The complete replay checks every original adopted row, without deleting
+rows that fail. Its recorded counts are
+\[
+\begin{array}{lr}
+\text{adopted rows}&3,464,816\\
+\text{adopted cells}&150,040\\
+\text{selected child vertices}&799,932\\
+\text{coverage-path vertices (with repetitions)}&6,541,897.
+\end{array}
+\]
+The generators and exporter merely propose witnesses. Their output
+must pass the semantic and coverage checks. The input algebraic endpoint
+enclosures use denominator $2^{48}$; the original verifier regenerates
+the input and checks byte-for-byte agreement with the saved file.
+The Lean checker uses exact rational arithmetic and separately validates
+the exact $\Q(\sqrt{462})$ labels underlying the enclosures.
+The family has uniform positive lower and upper ratio bounds
+(the formal real states use $1/10000\le S\le10000$), so
+Lemma~\ref{lem:cover} applies.
+
+\section{Attaching the root}
+Take $A=322$ and $B=431$. Direct matrix multiplication gives
+\[
+ F_A(x)=\frac{5+2x}{17+7x},\qquad F_B(x)=\frac{4+3x}{17+13x}.
+\]
+Both words have odd length; their states are $0$ and $2$.
+Lemma~\ref{lem:extrema} and substitution in these maps give
+\[
+ L=L_A+L_B=\frac{8512493+28004\dd}{17339617},\qquad
+ H=H_A+H_B=\frac{1352829-8081\dd}{2233974}.
+\]
+The root shapes and scale ratio satisfy
+\[
+ r_A=7/17\in[9/22,14/33],\quad
+ r_B=13/17\in[13/17,19/24],
+\]
+\[
+ S(A,B)=\frac{55792801+2467176\dd}{159491641}
+ \in[\kappa^{-20},\kappa^{-19}].
+\]
+The adopted root rows are the 25 bands
+$(p,q)=(j/32,(j+2)/32)$, $j=2,\ldots,26$.
+They are types numbered 3--27 at state pair 193 and ratio bin 135
+in the stored format. Their union is exactly $J_{1/16,7/8}(A,B)$:
+the first left coordinate is $2/32$, the last right coordinate is
+$28/32$, and successive bands overlap. The header's other root index
+is not used in place of these rows.
+Applying the closed-cover principle to each of them gives
+\begin{equation}\label{eq:sum}
+ J_{1/16,7/8}(322,431)\subset K(322)+K(431).
+\end{equation}
+Set
+\[
+ \alpha=4+L+(H-L)/16,\qquad \beta=4+L+7(H-L)/8.
+\]
+They are approximately $4.525777278415714\ldots$ and
+$4.527546990114258\ldots$. All comparisons used below are exact:
+\begin{equation}\label{eq:ordering}
+ \frac{4525423}{1000000}<\alpha<\frac{226289}{50000}
+ <\frac{226377}{50000}<\beta<c_F.
+\end{equation}
+For an explicit rational method to check these inequalities, use
+\[
+ \frac{214941852602}{10^{10}}<\sqrt{462}
+ <\frac{214941852603}{10^{10}}.
+\]
+Squaring the positive endpoints proves these bounds. Substitution into
+each affine expression in $\sqrt{462}$, choosing the endpoint according
+to the coefficient's sign, proves \eqref{eq:ordering} by integer
+arithmetic. The same bounds check $L<H$ and the root ratio box.
+
+\section{Uniform control at all noncentral positions}\label{sec:spectral}
+The sum realization alone does not prove membership in $M$.
+For $x\in K(322)$ and $y\in K(431)$ glue the corresponding digit
+streams around a central $4$. The fixed core is
+\[
+ \cdots\,2\,2\,3\,4^*\,4\,3\,1\,\cdots,
+\]
+where the star marks position zero; the streams are read outwards.
+We give the rational bound corresponding directly to the Lean proof.
+
+For a finite word $w$ and a rational interval $I$, let $E(w,I)=F_w(I)$
+with endpoints reordered, and write $E^+(w,I)$ for its upper endpoint.
+This is computed recursively by
+\[
+ E(\varnothing,I)=I,\qquad
+ E(a w,I)=\left[\frac1{a+E^+(w,I)},\frac1{a+E^-(w,I)}\right].
+\]
+All terminal intervals below are nonnegative, so no denominator vanishes.
+Define rational outer intervals $R_s$ by
+\[
+\begin{array}{c|cc}
+ s&\inf R_s&\sup R_s\\\hline
+0&263931509/10^9&197795529/250000000\\
+1&263931509/10^9&788861617/10^9\\
+2&267649463/10^9&197795529/250000000\\
+3&263931509/10^9&368115019/500000000\\
+4&358271131/10^9&197795529/250000000
+\end{array}
+\]
+The preceding rational square-root bounds show
+$[l_s,u_s]\subset R_s$. Hence actual outward tails in state $s$ lie in $R_s$.
+Put $b=4525423/1000000$.
+
+\begin{lemma}[Finite rational spectral checks]\label{lem:finite}
+The following finite inequalities hold.
+\begin{enumerate}
+\item For every $w\in\{1,2,3\}^6$ and $a\in\{1,2,3\}$ such that
+$wa$ is legal from state zero, ending in state $s$,
+\[
+ a+E^+(w^{\mathrm{rev}},[0,1])+\sup R_s\le b.
+\]
+\item For $(P,Q,s_Q)=(322,431,2)$ or $(431,322,0)$,
+for $0\le n<6$, $w\in\{1,2,3\}^n$, and $a\in\{1,2,3\}$,
+if $Pwa$ is legal and ends in state $s$,
+\[
+ a+E^+((Pw)^{\mathrm{rev}}\,4\,Q,R_{s_Q})+\sup R_s\le b.
+\]
+\item At the adjacent fixed $4$,
+\[
+ 4+E^+(4\,322,R_0)+E^+(31,R_2)\le b.
+\]
+\end{enumerate}
+These finite assertions are checked by rational reduction inside the
+Lean kernel in \file{SpectralVerified.lean}.
+\end{lemma}
+\begin{proof}
+The enumerations and the displayed recurrence completely specify the
+checks. There are $3^6\cdot3=2187$ cases in item 1,
+$2\cdot3\sum_{n=0}^5 3^n=2184$ in item 2, and one in item 3,
+for a total of 4372. Illegal cases are discarded by automaton traversal.
+For each retained case recursively compute the two endpoints of $E$,
+add the displayed rational upper bounds, and compare with $b$ by
+cross multiplication of positive denominators. The four Boolean
+acceptance lemmas are \file{far_checked}, \file{near322_checked},
+\file{near431_checked}, and \file{adjacent_four_checked}; each is proved
+with \file{decide +kernel}. This finite computation is the proof of
+these rational inequalities, rather than a numerical estimate or an
+unverified assertion about their maximum.
+\end{proof}
+
+\begin{proposition}\label{prop:noncentral}
+For every glued pair of legal infinite streams,
+$\lambda_n(\theta)\le b$ for every integer $n\ne0$.
+\end{proposition}
+\begin{proof}
+Index either outward stream by $u_0,u_1,\ldots$, so the fixed prefix
+occupies indices $0,1,2$, and the digit $u_k$ is at distance $k+1$
+from the central position. For $3\le k<9$, write the stream up to
+$u_k$ as $Pwa$, where $|w|=k-3<6$. Its inward continued fraction
+starts with $(Pw)^{\mathrm{rev}}4Q$ and then a tail in $R_{s_Q}$.
+Its outward tail lies in $R_s$, with $s$ the state after $Pwa$.
+Item 2 of Lemma~\ref{lem:finite} bounds their sum with the digit $a$.
+
+For $k\ge9$, retain the six digits $u_{k-6},\ldots,u_{k-1}=w$
+and put $a=u_k$. They all lie in $\{1,2,3\}$. The inward fraction
+begins with $w^{\mathrm{rev}}$; its remaining value lies in $[0,1]$,
+even though it eventually crosses the fixed core. The outward fraction
+lies in $R_s$. The actual state after $wa$ equals the state of the
+original stream at $k+1$: the forbidden-word automaton depends only on
+the last four digits. Thus item 1 bounds the actual local value.
+This treats infinitely many positions with one finite list of checks,
+without replacing the original tail by another sequence.
+
+In the fixed core, the three noncentral digits at positions $-3,-2,3$ have local value at most $4$, because
+both fractional tails lie in $[0,1]$. Positions $-1$ and $2$ have digit
+$3$ and an adjacent digit at least $2$; the corresponding fractional
+tail is at most $1/2$, the other at most $1$, so their values are at
+most $9/2$. The remaining position $1$, with digit $4$, is covered
+by item 3. Since $4\le9/2<b$, all positions are covered.
+\end{proof}
+
+The original exact-algebraic verifier also proves the sharper bound
+$4\sqrt{462}/19+1/3025=4.525422212239698\ldots$, using legal five-digit
+windows, nearby-prefix enumeration, and a nine-digit cylinder replacement.
+That argument is additional evidence; the present proof needs only
+Proposition~\ref{prop:noncentral}. The separate rational implementation
+uses 40-digit extremal prefixes with terminal $[0,1]$; its enumeration
+includes 242 legal five-digit windows and 57,054 nearby prefixes.
+These counts differ from the 4372 checks above because the algorithms
+differ, not because they verify different families of infinite tails.
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+Fix $t\in[\alpha,\beta]$. By \eqref{eq:sum}, choose $x\in K(322)$,
+$y\in K(431)$ with $t=4+x+y$, and glue their digit streams.
+Then $\lambda_0(\theta)=t$, whereas
+$\lambda_n(\theta)\le b<\alpha\le t$ for $n\ne0$ by
+Proposition~\ref{prop:noncentral} and \eqref{eq:ordering}.
+Therefore $m(\theta)=t$ and $[\alpha,\beta]\subset M$.
+Equation~\eqref{eq:ordering} gives the asserted rational subinterval
+and its separation from $c_F$.
+Every point of its open interior has a sufficiently small open
+neighborhood contained in that interval and below $c_F$, proving the
+interior statement. Subtraction and averaging of the exact rational
+endpoints give the width and midpoint.
+\end{proof}
+
+\section{Formal verification and execution trust boundary}
+The public theorem \file{Berstein.target_interval_subset} in
+\file{Berstein/Lean/Berstein/Main.lean} has the following mathematical form:
+\begin{gather*}
+ \operatorname{Certificate.check}(\mathrm{input},\mathrm{data},
+ \mathrm{alive},\mathrm{cells})=\mathrm{true}
+ \\ \Longrightarrow \\
+ [\mathrm{targetLower},\mathrm{targetUpper}]
+ \subset \mathrm{markovSpectrum}\cap(-\infty,\mathrm{freimanConstant}).
+\end{gather*}
+Its arguments are \file{GraphCertificate.Input}, \file{GraphMeaning.Data},
+a \file{ByteArray}, and a function assigning each geometry its list of
+\file{GraphCertificate.Cell} witnesses. Its sole premise is finite-checker
+acceptance; there are no separate assumed Cantor-sum, infinite-realization,
+or noncentral-bound hypotheses.
+The Boolean predicate is the conjunction of semantic input checking,
+root checking, preparation checking on each side, and geometry checking
+for all state pairs. The module correspondence is
+\begin{center}\small
+\begin{tabular}{p{.33\linewidth}p{.59\linewidth}}\toprule
+Argument & Modules under \file{Berstein/Lean/Berstein/}\\\midrule
+Infinite values and language & \file{Markov}, \file{Forbidden31313}, \file{CFInvariant}\\
+Exact algebraic meanings & \file{Quadratic462}, \file{QuadraticCF}, \file{SemanticCheck}, \file{SemanticSound}\\
+Box comparisons & \file{Normalization}, \file{SemanticTransport}, \file{GraphNumericSound}\\
+Finite paths and closure & \file{GraphCertificate}, \file{GraphCertificateFacts}, \file{GraphSuccessor}\\
+Infinite realization & \file{ActualCylinders}, \file{CylinderCover}, \file{GraphState}\\
+Root and dominance & \file{RootFacts}, \file{RootCheck}, \file{RootState}, \file{SpectralVerified}\\
+Final implication & \file{CertificateCheck}, \file{Verified}, \file{Main}\\\bottomrule
+\end{tabular}
+\end{center}
+The formalization retains actual prefixes in addition to finite indices;
+a verified graph cycle is not itself mistaken for an infinite
+continued-fraction realization.
+
+The Lean kernel checks this implication and the small spectral
+computations. The concrete 3,464,816-row acceptance is established by
+compiled execution of \file{graphReplay}, with four shards covering
+all 484 geometries. The executable validates input semantics and roots,
+prepared comparisons and every geometry. It is not a kernel reduction
+producing a closed theorem for this concrete byte array. No external
+success flag is postulated as an axiom. Applying the soundness theorem
+to this concrete execution therefore trusts the compiler, runtime,
+arbitrary-precision arithmetic implementation, file parsing and input
+identity, and execution environment in addition to the kernel and
+standard foundational axioms.
+
+\file{Audit.lean} prints the axioms of the final theorems. The verification
+script accepts only \file{propext}, \file{Classical.choice}, and
+\file{Quot.sound}, the standard Lean/Mathlib axioms. The development
+uses no \file{sorry}, \file{admit}, or \file{native_decide} to establish
+these results. Hashes identify data, executable, witnesses, and logs;
+they are evidence of identity, not substitutes for the soundness proof.
+Exporters and search heuristics are untrusted: malformed proposals must
+be rejected by the proved checker. Floating-point candidate selection
+is not used for final acceptance.
+
+The independent audit is a separate implementation in the same
+repository, not external peer review. Its input checker reconstructs
+quadratic values and transitions without importing the original Python
+modules. Its C++ checker uses its own interval and connectivity
+implementation to check every adopted row, with zero failed cells and
+no row deletion in the recorded run. Its spectral checker uses rational
+outer enclosures. Negative controls exercise gaps, missing endpoints,
+missing child states or ratio boxes, and truncated data. There are also
+4000 arithmetic comparisons against Python's \file{Fraction}.
+The Lean corruption tests cover a root adoption bit, exact endpoint,
+used constant, cell, coverage path, and destination mask. These checks
+help detect execution or implementation errors; they do not remove the
+compiler/runtime boundary.
+
+\section{Reproduction and provenance}
+The immutable release dated October 8, 2026 is cited in \cite{release}.
+The paper is a subsequent exposition of that construction, not a
+replacement of its immutable artifacts. To inspect the released source,
+check out the release tag; to inspect the source used for the module
+mapping in this paper, check out the snapshot commit stated above.
+Run commands from the repository root unless specified otherwise.
+A Python 3 interpreter and a C++17 compiler suffice for the original
+and independent checkers. Do not run the audit with Python's \file{-O}
+option, which disables assertions.
+\begin{verbatim}
+git clone https://github.com/K-Yamada-2002/verify-freiman-constant.git
+cd verify-freiman-constant
+git checkout markov-interior-2026-10-08
+python3 -B -S Berstein/src/verify_below_ray.py --full
+\end{verbatim}
+This regenerates the algebraic input, requires byte-for-byte agreement,
+and rechecks every adopted row without changing the original input or
+adoption bitmap. Outputs include
+\file{Berstein/data/below_ray_verified.json},
+\file{below_ray_certificate.json}, and
+\file{below_ray_kernel_replay.json}. Omitting \file{--full} reuses recorded
+verification after hash checks; it is not a fresh exhaustive replay.
+The independent audit commands are
+\begin{verbatim}
+python3 -I -B -S Berstein/audit/independent_input.py
+python3 -I -B -S Berstein/audit/independent_spectral.py
+c++ -std=c++17 -O2 -fsanitize=undefined -fno-sanitize-recover=all \
+  Berstein/audit/independent_kernel.cpp -o /tmp/berstein-independent-kernel
+/tmp/berstein-independent-kernel Freiman/data/graph_wide.dat \
+  Freiman/data/graph_wide.json.alive.bin
+python3 -I -B -S Berstein/audit/check_independent_kernel.py \
+  /tmp/berstein-independent-kernel
+python3 -I -B -S Berstein/audit/check_independent_arithmetic.py
+\end{verbatim}
+For the formal proof and exhaustive compiled replay, Lean 4.32.1 and
+Mathlib v4.32.1 are pinned:
+\begin{verbatim}
+cd Berstein/Lean
+lake update
+lake exe cache get
+python3 scripts/verify.py --prepare
+\end{verbatim}
+The final command generates witnesses, builds the proof and executable,
+audits axioms, replays the entire table, and runs corruption tests.
+With generated witnesses, \file{python3 scripts/verify.py} performs
+verification without regeneration. The \file{--reuse-replay} option
+reuses a successful replay only after checking hashes of all 484
+certificates, original data, executable and logs; it reruns the build,
+axiom audit and corruption tests. \file{lake build} alone does not replay
+the table. \file{lake env lean Audit.lean} prints the axiom audit.
+The committed historical record is
+\file{Berstein/Lean/verification-baseline.json}; fresh combined results
+are written to \file{Berstein/Lean/logs/verification.json}.
+The recorded shard row totals are 869449, 868886, 871412 and 855069,
+whose sum is 3464816. All recorded shard exit codes are zero.
+The baseline records evidence from prior runs; it is not a claim that
+preparing this manuscript reran the entire large computation.
+
+Some continued-fraction modules were vendored from the author's
+\file{hall-ray} repository at commit
+\file{a584e5620124d23c709e3bbdc66db8b8b0586310}.
+Their source identities and license are recorded in
+\file{Berstein/Lean/sources.json} and \file{HallRay/LICENSE}.
+No adjacent checkout is required at runtime.
+The original Japanese exposition is
+\file{Berstein/doc/generalized_t.tex}; the present article isolates its
+completed Markov-interval construction and supplies a proof matching
+the formal spectral bound.
+
+\section{What is and is not concluded}
+The completed claim is the displayed interval inclusion in $M$ and
+its consequence for interior in the real line below $c_F$.
+This proof does not establish inclusion in the Lagrange spectrum,
+nor in $M\setminus L$. The $131$-forbidden problem discussed elsewhere
+in the repository is different: $31313$-avoidance allows occurrences
+of $131$. Its unfinished searches and certificates under
+\file{stashed/} are not premises of this proof. Neither a local
+one-step cover nor unsuccessful finite searches settle that separate
+interior problem. Likewise, the classical identification of the
+continued-fraction spectrum with the quadratic-form spectrum and
+Freiman's maximal-ray theorem are cited background results, distinct
+from the formally checked theorem about the explicitly defined
+continued-fraction spectrum and constant.
+
+\begin{thebibliography}{9}
+\bibitem{CF} T. W. Cusick and M. E. Flahive,
+\emph{The Markoff and Lagrange Spectra}, Mathematical Surveys and
+Monographs 30, American Mathematical Society, 1989.
+\url{https://doi.org/10.1090/surv/030}.
+\bibitem{Freiman} G. A. Freiman,
+\emph{Diophantine Approximations and the Geometry of Numbers
+(Markov's Problem)}, Kalinin State University, Kalinin, 1975
+(in Russian).
+\bibitem{release} K. Yamada,
+\emph{Interior points of the Markov spectrum outside Hall's ray},
+immutable source release, October 8, 2026.
+\url{https://github.com/K-Yamada-2002/verify-freiman-constant/releases/tag/markov-interior-2026-10-08}.
+\end{thebibliography}
+\end{document}
