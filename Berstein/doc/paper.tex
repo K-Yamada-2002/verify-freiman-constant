@@ -1,0 +1,336 @@
+\documentclass[10pt,a4paper]{ujarticle}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{bm}
+\usepackage{booktabs}
+\usepackage{url}
+\usepackage{comment}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+\usepackage[top=30truemm,bottom=30truemm,left=25truemm,right=25truemm]{geometry}
+
+\theoremstyle{definition}
+
+\newtheorem{theorem}{定理}
+\newtheorem{lemma}{補題}
+\newtheorem{definition}{定義}
+\newtheorem{remark}{注意}
+\renewcommand{\proofname}{証明}
+
+\usepackage{listings}
+
+\lstset{basicstyle=\small\ttfamily}
+
+\newcommand{\Npos}{\mathbb{N}_{\ge 1}}
+\newcommand{\Mink}{\mathbin{+_{\mathrm M}}}
+\newcommand{\length}[1]{\lvert #1\rvert}
+\newcommand{\eps}{\varepsilon}
+\let\lean\path
+
+\renewcommand{\labelenumi}{(\arabic{enumi})}
+
+\author{山田 航輝}
+\title{Markov スペクトラムに含まれる区間について}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+本稿では，Freimanの定数$c_F$以上の領域がMarkov スペクトラム$M$に含まれることの計算機援用証明，および，それを活用した
+$[4.52578,4.52754]\subset M$が成り立つことの計算機援用証明について解説する．Hall's rayの左端のFreimanの定数は，
+$c_F = 4.5278\dots$であることが知られているから，$[4.52578,4.52754]$はHall's ray 以外でMarkov スペクトラムに含まれる区間である．
+\end{abstract}
+
+\section{イントロダクション}
+本稿では，$[4.52578,4.52754]\subset M$が成り立つことの計算機援用証明について解説する．
+\cite{matheus-moreira}のCorollary 1.5により，$\mathrm{int} (M) =\mathrm{int} (L)$であるから，$(4.52578,4.52754) \subset L$でもあり，
+この区間に含まれる点は，$L$のHall's ray以外の内点の例を与えることが分かる．
+\section{準備}
+\begin{definition}
+    $a = (a_i)_{i = 1}^n$を数字$1,2,3,4$からなる有限語とする．
+    \[
+    F_a(x) = [0; a_1, a_2, \cdots, a_n + x]
+    \]
+    とする．
+    さらに$a$が語$31313$を含まないとき，$K(a)$を
+    \[
+    K(a) = \{[0; a_1,\cdots, a_n, u_1, u_2,\cdots] \mid u_i \in \{1,2,3\}, a u_1u_2\cdots \text{ は } 31313 \text{ を含まない}\}
+    \]
+    で定義する．
+\end{definition}
+また，Schecker \cite{schecker}におけるT区間の対応物を以下のように定義する．
+\begin{definition}
+$a, b$を$31313$を含まない有限語ととする．$\ell(a, b)$・$h(a,b)$をそれぞれ$K(a) + K(b)$の最小値・最大値とする．つまり
+\[
+\ell(a, b) = \min K(a) + \min K(b), \quad h(a, b) = \max K(a) + \max K(b)
+\]
+とする．そして，
+\[
+H(a,b) = [\ell(a, b), h(a, b)], \quad W(a,b) = h(a, b) - \ell(a, b)
+\]
+とおく．そして$0 \le \alpha < \beta \le 1$に対して，
+\[
+J_{\alpha, \beta}(a, b) = [\ell(a, b) + \alpha W(a, b), \ell(a, b) + \beta W(a, b)]
+\]
+と定義する．
+
+また，$u,w$を$1,2,3$からなる有限語として，$au, bw$が語$31313$を含まず，$|u| + |w| > 0$のとき，$J_{\alpha', \beta'}(au, bw)$
+を$J_{\alpha, \beta}(a, b)$の真の後続と呼ぶ．
+\end{definition}
+
+\section{$M$に含まれる区間の構成}
+\begin{lemma}
+\label{lem1}
+    区間$J_{\alpha, \beta}(a, b)$からなる族$\mathcal{A}$が，次の条件を満たすとする．
+    \begin{enumerate}
+        \item $\mathcal{A}$は，$\mathcal{A}$に含まれる有限個の真の後続によって覆われる
+        \item 定数$0 < d < D$が存在して，各区間$J_{\alpha, \beta}(a, b) \in \mathcal{A}$について，$[0; a_1, a_2, \cdots, a_h], [0; b_1, b_2, \cdots, b_k]$
+        の分母をそれぞれ$q_a, q_b$としたとき，$d \le q_a / q_b \le D$となる．
+    \end{enumerate}
+    このとき，$\mathcal{A}$に含まれる全ての区間について$J_{\alpha, \beta}(a, b) \subset K(a) + K(b)$となる．
+\end{lemma}
+\begin{proof}
+$J_{\alpha, \beta}(a, b) \in \mathcal{A}$とし，$z\in J_{\alpha, \beta}(a, b)$とする．（1）の条件から，
+$\mathcal{A}$に含まれる$J_{\alpha, \beta}(a, b)$の後続で，$z$を含むものが存在する．
+それを$J_{\alpha^{(1)}, \beta^{(1)}}(a^{(1)}, b^{(1)})$とする．するとこれも$\mathcal{A}$に含まれるので，
+（1）の条件から，$\mathcal{A}$に含まれる$J_{\alpha^{(1)}, \beta^{(1)}}(a^{(1)}, b^{(1)})$の後続で，$z$を含むものが存在する．
+それを$J_{\alpha^{(2)}, \beta^{(2)}}(a^{(2)}, b^{(2)})$とする．この操作を繰り返すことで，
+$J_{\alpha^{(n)}, \beta^{(n)}}(a^{(n)}, b^{(n)})$の列を得る．
+
+左右の少なくとも一方に数字が追加されるのだから，少なくとも一方の語の長さは無限大に向かう．したがってそちら側の連分数の分母は発散するが，
+（2）の条件からもう一方の方の連分数の分母も発散する．よって，どちらの語の長さも無限大に向かう．
+
+$J_{\alpha^{(n)}, \beta^{(n)}}(a^{(n)}, b^{(n)})\subset H(a^{(n)}, b^{(n)})$なので，$z\in H(a^{(n)}, b^{(n)})$であり，
+長さ$h$の接頭語を共有する連分数の差は高々$1/q_h^2$であるから，
+\[
+\left| H(a^{(n)}, b^{(n)}) \right| \le \frac{1}{q_{a^{(n)}}^2} + \frac{1}{q_{b^{(n)}}^2}\to 0
+\]
+となるので，$z = [0; a_1, a_2, \cdots, a_h,\dots] + [0; b_1, b_2, \cdots, b_k,\dots]$となる．各段階で禁止語$31313$を避けるように
+文字を追加しているのだから，無限の語も禁止語を含まない．よって，$z\in K(a) + K(b)$である．
+\end{proof}
+\begin{lemma}
+\label{lem2}
+    $J = [L_0, U_0] \subset K(a) + K(b)$とする．$(a, b; c)$を語$a, b$と数字$c$からなる
+    列$(a_h,\cdots, a_1, c, b_1,\cdots, b_k)$とする．$(a, b; c)$を延長した任意の両側無限列$C$と$i\neq 0$に対して
+    \[
+    \lambda_i(C) \le \Theta
+    \]
+    が成り立つなら，$[\max\{c + L_0, \Theta\}, c + U_0]\subset M$である．
+    ただし，$\max\{c + L_0, \Theta\} \ge c + U_0$の時の左辺は空集合とする．
+\end{lemma}
+\begin{proof}
+    $t \in [\max\{c + L_0, \Theta\}, c + U_0]$を取ると，$t - c \in J \subset K(a) + K(b)$なので，$ax, by$が禁止語$31313$を含まないような
+    ある無限語$x,y$によって
+    \[
+    t = c + [0; a_1, a_2, \cdots, a_h, x_1, x_2,\dots] + [0; b_1, b_2, \cdots, b_k, y_1, y_2, \dots]
+    \]
+    と書ける．すると，$C = (\dots, x_2, x_1, a_h,\cdots, a_1, c, b_1,\cdots, b_k, y_1, y_2,\dots)$としたとき$\lambda_0(C) = t$となる．
+    そして仮定から$i\neq 0$に対して$\lambda_i(C) \le \Theta \le t$が成り立つので，$\sup_i \lambda_i(C) = t$となる．よって$t \in M$である．
+\end{proof}
+以上の補題から，$\mathcal{A}$を適切に定め，$J_{\alpha, \beta}(a,b)\in \mathcal{A}$となる語$a, b$と文字$c$に対して$\Theta$を
+補題\ref{lem2}の仮定が満たされるように算出することで，$M$に含まれる区間が構成できる．
+
+\section{許容区間}
+\subsection{準備}
+$\mathcal{A}$を定義する前に，準備として以下の定義を行う．
+\begin{definition}
+    禁止語$31313$を含まない語$a$の末尾のうち，$31313$の接頭語でもある最長の語を$\sigma(a)$と書く．たとえば$\sigma(1221313) = 313$であり，
+    取り得る値は$\emptyset, 3, 31, 313, 3131$のいずれかである．
+
+    また，有限語$a = (a_1, \cdots , a_h)$に対して
+    \[
+    r_a = [0;a_h, \cdots, a_1] = \frac{q_{h-1}}{q_h}
+    \]
+    とする．すると，
+    \[
+    F_a(x) = \frac{p_h + p_{h-1}x}{q_h + q_{h-1}x}, \quad F_a'(x) = \frac{(-1)^h}{(q_h + q_{h-1}x)^2} 
+    = \frac{(-1)^h}{q_h^2 (1 + r_ax)^2}
+    \]
+    である．そして，語$a$について，
+    $F(\xi_a) = \min K(a)$, となる$\xi_a$をとる．
+    $\xi_a$は，$\sigma(a)$と$|a|$にのみ依存する．同様に語$b = (b_1, \cdots, b_k)$に対して$F(\xi_b) = \min K(b)$となる$\xi_b$もとる．
+    そして，$[0; a_1, a_2, \cdots, a_h], [0; b_1, b_2, \cdots, b_k]$の分母をそれぞれ$q_a, q_b$とし，
+    \[
+    \rho = (q_a / q_b)^2, \quad S(a,b) = \frac{|F_b'(\xi_b)|}{|F_a'(\xi_a)|} = \rho \frac{(1 + r_a\xi_a)^2}{(1 + r_b\xi_b)^2}
+    \]
+    と定める．
+\end{definition}
+\begin{remark}
+    上で定めた$S$はSchecker\cite{schecker}のにおけるT比に対応する役割を持つ．
+    \[
+    \frac{S(a,b)}{\rho} = \frac{(1 + r_a\xi_a)^2}{(1 + r_b\xi_b)^2} \in [1/4, 4]
+    \]
+    なので，$\mathcal{A}$全体で$S$がある有界な範囲にあることが分かれば，$\rho$も，そして$q_a/ q_b$もまたある有界な範囲に含まれることが分かり，
+    補題\ref{lem1}の（2）の条件を満たすことが分かる．
+\end{remark}
+\subsection{一般許容区間と局所許容区間}
+\begin{definition}
+    語$a$について，
+    $v_a$を$a$の末尾$\max\{2, |\sigma(a)|\}$桁とし，$\mathrm{rev}(v_a)$をその逆順とする．
+    \[
+    B(a) = \left\{F_{\mathrm{rev}(v_a)}(z) \mid z \in [1/4,4]\right\}
+    \]
+    とする．
+
+    そして，語の組$(a,b)$の長さの偶奇，$\sigma(a), \sigma(b)$，$a,b$の末尾2桁，さらに$S(a,b)$の範囲，および$(\alpha, \beta)$が採用表$\mathcal{G}$のある行で指定された条件を満たし，
+    さらに$r_a \in B(a), r_b \in B(b)$を満たすとき，
+    $J_{\alpha, \beta}(a, b)$を一般許容区間と呼ぶ．
+
+    ここで，採用表の一行は以下のような形式である．
+    \[
+    \begin{aligned}
+      &\sigma(a)=3,\quad |a|\text{ は奇数},\quad a\text{ の末尾は }13,\\
+      &\sigma(b)=\emptyset,\quad |b|\text{ は偶数},\quad b\text{ の末尾は }22,\\
+      &S(a,b) \in[\kappa^{-9},\kappa^{-8}],\\
+      &(\alpha,\beta)=(1/16,1/8).
+    \end{aligned}
+    \]
+    ここで$\kappa = 51/ 50$である．
+\end{definition}
+\begin{remark}
+    $\sigma(a) = \emptyset$のとき，$a$の末尾2桁は$11, 12, 21, 22, 32$の可能性があり，
+    $\sigma(a) = 3$のときは末尾2桁$13,23,33$の可能性があり，
+    $\sigma(a) = 31, 313, 3131$のときは記録する末尾は$\sigma(a)$と同じになるから，結局$\sigma(a)$及び記録する末尾のありうる組合せは11通り．
+    それに加えて$|a|$の偶奇を記録するから， 語$a, b$に関する条件はそれぞれ22通りある．
+
+    そして，Freimanの定数を検証するのに使用し，最初に内点を構成した時に使った例では，
+    $S$の範囲は$[\kappa^i, \kappa^{i+1}]\quad (-155 \le i \le 154)$の310通りに分け，
+    $(\alpha, \beta)$は$\{(0,1)\}\cup \{(j/32, (j + 2) / 32) \mid j = 0,\cdots , 30\}$の32通りの中から選ぶ．
+    
+    したがって，採用表の行としてありうる組合せは$22^2\cdot 310 \cdot 32 = 4801280$行あり，実際の採用表はその中の全3464816行からなる．
+\end{remark}
+\begin{definition}
+    \[
+    \zeta = [0; \overline{3}] = \frac{\sqrt{13} - 3}{2}, \quad 
+    V_\zeta(a,b) = \frac{|F_b'(\zeta)|}{|F_a'(\zeta)|} = \rho \frac{(1 + r_a\zeta)^2}{(1 + r_b\zeta)^2}
+    \]
+    とする．すると，$F_{33}(\zeta) = \zeta$であり，
+    \[
+    F_{a33}(x) = F_a(F_{33}(x)), \quad F_{a33}'(x) = F_a'(F_{33}(x)) F_{33}'(x)
+    \]
+    なので，
+    $V_\zeta(a33, b33) = V_\zeta(a, b)$となる．
+
+    そして，以下の表のいづれかの行の条件を満たす語の対，$(\alpha,\beta)$について，$J_{\alpha, \beta}(a,b)$を局所許容区間と呼ぶ．
+    \begin{table}[htbp]
+        \centering\footnotesize
+        \begin{tabular}{cccccc}
+        \toprule
+        $a$の状態 & $b$の状態 & $(\alpha,\beta)$ & $r$ の範囲 & $s$ の範囲 & 比の範囲\\
+        $3$・奇・13 & $\emptyset$・偶・22 & $(0,1/8)$ & $[.278688,.278689]$ & $[.410958,.410959]$ & $S \in [.845630,.845631]$\\
+        $3$・奇・13 & $\emptyset$・偶・21 & $(0,1/8)$ & $[.267649,.267651]$ & $[.736182,.736231]$ & $S \in [.845630,.845631]$\\
+        $3$・奇・33 & $3$・偶・33 & $(17/100,19/100)$ & $[.3027756,.302776]$ & $[.3027756,.302776]$ & $V_\zeta \in [8.43192,8.43194]$\\
+        $3$・奇・33 & $3$・偶・33 & $(17/100,19/100)$ & $[.3027756,.302780]$ & $[.3027756,.302806]$ & $V_\zeta \in [8.42593,8.42603]$\\
+        \bottomrule
+        \end{tabular}
+        \caption{局所許容区間の条件}
+    \end{table}
+    ここで，$a$の状態とは，左から順に$\sigma(a)$・$|a|$の偶奇・末尾を意味している
+\end{definition}
+\begin{definition}
+    $J_{\alpha, \beta}(a, b)$が同じ$(a,b)$の一般許容区間と局所許容区間の有限個の和集合に含まれるとき，$J_{\alpha, \beta}(a, b)$を許容的と呼ぶ．
+    この族を$\mathcal{A}$とする．
+\end{definition}
+このように許容的な区間の族$\mathcal{A}$を定義することで，以下が成立する．
+\begin{lemma}
+    \label{lem3}
+    許容的な区間は，有限個の許容的な真の後続によって覆われる．さらに，$\mathcal{A}$全体で$q_a/q_b$は共有の正の上下界を保つ．
+\end{lemma}
+
+\section{Freimanの定数の検証}
+\subsection{左端を含む区間}
+$J_{0, 1/8}(32113,4322)$について考える．
+$\xi_{32113} = [0; \overline{1, 3, 1, 2, 1, 3}], \quad \xi_{4322} = [0; \overline{3, 1, 3, 1, 2, 1}]$であり，
+Freimanの定数$c_F$は
+\[
+c_F = 4 + F_{32113}(\xi_{32113}) + F_{4322}(\xi_{4322})
+\]
+と表せる．そして
+\[
+r_{32113} = \frac{17}{61}, \quad r_{4322} = \frac{30}{73}, \quad S(32113, 4322) = 0.845630170066686\cdots
+\]
+であり，これは局所許容区間の条件の1行目の条件を満たすので，$J_{0, 1/8}(32113,4322)$は局所許容区間である．
+したがって，補題\ref{lem1}から$J_{0, 1/8}(32113,4322) \subset K(32113) + K(4322)$が従う．
+
+ここで，中心の語$(32113, 4322; 4)$を延長した任意の列$C$と$i \neq 0$に関する$\lambda_i(C)$の上界を求める．
+$i$について，次の二つの可能性が考えられる．
+\begin{enumerate}
+    \item $i$が中心の語の中，または左右に追加した最初の7桁までの位置にある場合．この場合，ありうる有限個の場合を全て列挙し，
+    残る追加部分を$\lambda_i$が最大になるように定め，その時の値を評価する．例えば，$i$が右側の$5$番目に相当する位置にある場合，
+    \[
+    w_5 + [0; w_4, w_3, w_2, w_1, 2, 2, 3, 4, 4, 3, 1, 1, 2, 3\cdots] + [0; \cdots]
+    \]
+    の$w_1,\cdots w_5$のあり得る組合せを全て列挙し，
+    それぞれ場合について$\cdots$の部分を，値が最大になり，かつ禁止語$31313$を含まないように延長した時の値を記録し，その最大値を求める．
+    計算により，これは$c_F$未満であることが分かる．
+    \item それより遠い位置．この場合，単に禁止語$31313$を含まない$1,2,3$からなる両側無限列における$\lambda$の最大値$M_B$と，
+    中心の語$(32113, 4322; 4)$が指定されているときの$\lambda$の最大値の差が小さくなる．
+
+    実際，7桁を共有する連分数の差は高々$1/F_8^2 = 1 / 441$だから，中心の語が指定されているときの$\lambda$の値は$M_B + 1 / 441$以下となる．
+    
+    そして，$M_B = 4\sqrt{462} / 19$であることが，中心の5文字（禁止語$31313$を除く$3^5 - 1 = 242$通り）を指定して，
+    それぞれについての$\lambda$の最大値を求めることによって分かる．
+
+    そして
+    \[
+    4\sqrt{462} / 19 + \frac{1}{441} = 4.5273\cdots < c_F
+    \]
+    であることが分かる．
+\end{enumerate}
+
+
+そして$4 + J_{0, 1/8}(32113,4322) =[c_F, E_0]\quad E_0 = 4.52785145\cdots$であり，
+補題\ref{lem2}を用いることで$[c_F, E_0]\subset M$となることが分かる．
+
+\subsection{その他の区間}
+左端の区間と同様に行う．追記予定．
+
+\section{補題\ref{lem3}の証明}
+一般許容区間の条件と，局所許容区間のうち1行目と2行目で記述される場合については，$S$が有界であるから$\rho$，そして$q_a/ q_b$が有界になる．
+局所許容区間のうち3行目と4行目で記述される場合についても，$1/4 \le V_\zeta / \rho \le 4$が分かるので同様である．
+よって，許容的な区間が有限個の真の後続によって覆われることを示せば良い．
+
+\subsection{一般許容区間の被覆}
+親の区間を$J = [L, U]$，選んだ真の後続たちを$J_\nu = [L_\nu, U_\nu]$とする．以下の三つを確認すれば充分である．
+\begin{enumerate}
+    \item 各後続$J_\nu$が許容的であること
+    \item 後続の和集合が連結であること
+    \item $L, U$がその和集合に含まれること
+\end{enumerate}
+
+これらは以下のような計算によって確かめることができる．
+
+\[
+\frac{F_a(x) - F_a(y)}{|F_a'(\xi_a)|} = (-1)^{|a|}\frac{(1 + r_a\xi_a)^2(x-y)}{(1 + r_ax)(1 + r_ay)}
+\]
+であるが，右辺の$a$の情報は$\xi_a$と$r_a$，偶奇のみになっている．
+
+\subsection{局所許容区間の被覆}
+追記予定
+
+\section{Hall's ray以外の$M$の内点}
+
+
+\begin{thebibliography}{99}
+    \raggedright
+    \bibitem{matheus-moreira}
+    C. Matheus, C. G. Moreira,
+    {\it Fractal geometry of the complement of Lagrange spectrum in Markov spectrum},
+    Comment. Math. Helv. {\bf 95} (2020), no.~3, 593--633.
+
+    \bibitem{schecker} 
+    H. Schecker, 
+    {\it \"Uber die Menge der Zahlen, die als Minima quadratischer Formen auftreten}, 
+    J. Number Theory {\bf 9} (1977), no.~1, 121--141;
+    
+    \bibitem{hall}
+    M.~Hall, Jr.,
+    \textit{On the sum and product of continued fractions},
+    Annals of Mathematics \textbf{48} (1947), no.~4, 966--993.
+    \end{thebibliography}
+    
+    \end{document}
+    
