@@ -1,0 +1,202 @@
+{
+  "passed": true,
+  "claim": "[4.52509164,4.52762938] subset L and M below c_F",
+  "full_kernel_replayed_this_run": false,
+  "closed_rows": 3464816,
+  "candidate_rows": 87,
+  "certificate_rows": 36,
+  "all_noncentral_positions_bounded": true,
+  "backward_window_for_independent_control": 10,
+  "compatible_past_replacement": true,
+  "exact_bulk_endpoint_in_L_and_M": true,
+  "lagrange_inclusion_by_analytic_gluing": true,
+  "bulk_upper": [
+    "0",
+    "4/19"
+  ],
+  "gluing_margin": [
+    "113127291/25000000",
+    "-4/19"
+  ],
+  "gluing_radius": 22,
+  "noncentral_bound_ancestors": [
+    {
+      "a": "323",
+      "b": "431",
+      "theta_upper": [
+        "0",
+        "4/19"
+      ],
+      "core_strictly_below_bulk": true
+    },
+    {
+      "a": "322",
+      "b": "431",
+      "theta_upper": [
+        "0",
+        "4/19"
+      ],
+      "core_strictly_below_bulk": true
+    },
+    {
+      "a": "3211323",
+      "b": "4321131",
+      "theta_upper": [
+        "260209310012867375459307514811861015509217291/57469483618548732183472125496382778648313620",
+        "0"
+      ],
+      "core_strictly_below_bulk": false
+    },
+    {
+      "a": "3211321",
+      "b": "4321131",
+      "theta_upper": [
+        "416342072100991284951505788763235510568143867/91952770762890438644401155173785162500510990",
+        "0"
+      ],
+      "core_strictly_below_bulk": false
+    },
+    {
+      "a": "32113211112",
+      "b": "4321132112",
+      "theta_upper": [
+        "12171998927545878147659610613510772226605004763/2688270498741121382256878760073680146959116384",
+        "0"
+      ],
+      "core_strictly_below_bulk": false
+    }
+  ],
+  "sharper_far_upper": "157334111624115/34769264687066",
+  "sharper_far_upper_decimal": 4.525091716496453,
+  "components": [
+    [
+      [
+        "0",
+        "4/19"
+      ],
+      [
+        "14190187126802704309135412300111/3134095387896303567647901572576",
+        "-6707150316770458169886109/2742333464409265621691913876004"
+      ]
+    ],
+    [
+      [
+        "67707585504331558479667237183/14954330727218801992708141088",
+        "53306714872303829307571/209360630181063227897913975232"
+      ],
+      [
+        "148037689933451344497421117908385983356825/32696510868568621014569117940010505722352",
+        "-10079698031545157911507969627579/4087063858571077626821139742501313215294"
+      ]
+    ],
+    [
+      [
+        "143135800990430016922853557461/31613886595498536880557356384",
+        "127825991443721986836917/521629128825725858529196380336"
+      ],
+      [
+        "9213863132939911127536854226836455/2035014969274680930133107942352736",
+        "-12291087793554475309939557083/8140059877098723720532431769410944"
+      ]
+    ],
+    [
+      [
+        "10261193911194319805093157/2266651483295405814860464",
+        "2800556992115832515051/99732665264997855853860416"
+      ],
+      [
+        "10663804687579360119554632461357903/2355174784429452776299382274128296",
+        "-6162065608886874211723543469/725393833604271455100209740431515168"
+      ]
+    ],
+    [
+      [
+        "77935429360268523605/16957787924084764312",
+        "-161016627750028765/50873363772254292936"
+      ],
+      [
+        "99808847668944327003829/22038883857133089551408",
+        "-5742805527292353625/132233303142798537308448"
+      ]
+    ]
+  ],
+  "components_decimal": [
+    [
+      4.525091633727301,
+      4.527629382918797
+    ],
+    [
+      4.527629392523607,
+      4.527629531948677
+    ],
+    [
+      4.527629561589697,
+      4.527631110986062
+    ],
+    [
+      4.5276312087274295,
+      4.52781862647822
+    ],
+    [
+      4.527818681012804,
+      4.527827974176685
+    ]
+  ],
+  "rational_interval": [
+    "113127291/25000000",
+    "226381469/50000000"
+  ],
+  "rational_components": [
+    [
+      "113127291/25000000",
+      "226381469/50000000"
+    ],
+    [
+      "22638147/5000000",
+      "452762953/100000000"
+    ],
+    [
+      "452762957/100000000",
+      "452763111/100000000"
+    ],
+    [
+      "452763121/100000000",
+      "226390931/50000000"
+    ],
+    [
+      "452781869/100000000",
+      "452782797/100000000"
+    ]
+  ],
+  "rational_width": "126887/50000000",
+  "width_ratio_to_old_rational": "126887/88000",
+  "negative_controls": 4,
+  "global_maximality_proved": false,
+  "lean_proof_of_extended_endpoints": false,
+  "sha256": {
+    "Berstein/data/interval_extensions_candidates.json": "4b84d2944e6c48877cdf76da7d4e7bdb45b9d98f567d775083476c7b4be5f17f",
+    "Berstein/data/interval_extensions_certificate.json": "16e679670b359a674389d127e33326a9e48f46f8f377e2884a8aebb43df06675",
+    "Berstein/data/interval_extensions_kernel_replay.json": "82c94394fc5ccb376fb7696fee42fc5c6549c0269d29127458d02be17fb75d63",
+    "Berstein/doc/INTERVAL_EXPLORATION.md": "a6b1c0f01d6a4a1289845c2e8eac4168c120a1cbd83797a55993ea56c56e1d6e",
+    "Berstein/src/spectral_rational.py": "d26cb7b02cb74d283d2c942e40d9de91eb4a988736cae8a1c82190118325ef65",
+    "Berstein/src/tail_replacement.py": "dbc36b5423f1834fffe676cf67b9f44ab35d6b5413bad180b7a1c468afab772e",
+    "Berstein/src/verify_below_ray.py": "7a914e5e23bd59c8b69d03359024b7f0d0454b3e4ba7fd215e5ac805fbc9ec4e",
+    "Berstein/src/verify_interval_extensions.py": "ce1ac24206788f9c8af5f36a2c5b31b7c8210727f3f32fc0880f7fb626e648f3",
+    "Freiman/data/graph_wide.dat": "f920da96f3fc28c6182f4dc9f0a3836dac059186a3f54e33b484198ed51a2234",
+    "Freiman/data/graph_wide.json.alive.bin": "a75629b1148bdbc6890d02eb85562b722e0209fb13a0dc5ac3f5fdfc60dc93a5",
+    "Freiman/data/graph_wide.meta.json": "487b048ddb9b6e706aa250909c76218049e00008c8c0cc4ab4ebf0714e73bb12",
+    "Freiman/src/anchor_boxes.py": "501c0f18c6cc0f8d187ee8462c0288cd12724bc782963d208ec61723a27fac2e",
+    "Freiman/src/box_certificates.py": "a1c9c4c84e8461fc5bd127abd87b2efecc670eb156b2a9192eaa6f9f03e7e68e",
+    "Freiman/src/endpoint_return.py": "f59e897cd67af881cec53a27263357c5dd361d4717eb36382036207cab45c01e",
+    "Freiman/src/exact_cf.py": "a8dad8aabf1b53eabdac8e8c6658f25d812427ef002c2c014a03f9b672356bfb",
+    "Freiman/src/graph_kernel.cpp": "8450b048939abbd5fc8a4beb5b184f829457701c516b619896400e1cf3f36456",
+    "Freiman/src/layout.py": "31a863b7f09460f4c831842f701296caba587a368c9c07d0855a16c2738ec16f",
+    "Freiman/src/obstruction_probe.py": "91c88758f0189ee140a6945a78bf11edc5ff53fa25c85b0224d8560e1ed10ed3",
+    "Freiman/src/spectral_bounds.py": "e656925632fe72f9a901329dff1148217b40bb8494c4e1f906adc06084f6642a",
+    "Freiman/src/typed_boxes.py": "12bb441cc874d542a3d178c168339c9cd7d8b586352ec0c734bc8b816a45c56c",
+    "Freiman/src/typed_catalog.py": "052e8854441e22c284a334200ff086fdf7b8b9790447dc86c6e2be6c340f29b5",
+    "Freiman/src/typed_intervals.py": "0c4863aea656f3cf7de508e1a51bc4d89ee99e31aa37eb58435f7b26cb2c731e",
+    "Freiman/src/verify_hall_ray.py": "c5634255ec657455473875b1080c81d8a680e544382465af39be074a64b9d0f3",
+    "Freiman/src/width_catalog.py": "8e15431a87bfb6ff14bc0259fb629cf6c7125335873c9c27ecb6c38dc816093c"
+  }
+}

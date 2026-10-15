@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "transitions": 2940,
+  "endpoint_alias_checks": 2084,
+  "constant_groups": 62,
+  "language": "31313,13131",
+  "radicand": 41667,
+  "negative_controls": [
+    "alias",
+    "constant",
+    "endpoint"
+  ],
+  "sha256": {
+    "Berstein/data/avoid_alt5_return10.dat": "2fa7ea8bcd534b302bb6786118c44c1230f57e0865e6fb1de26e613c811eab89",
+    "Berstein/data/avoid_alt5_return10.meta.json": "12ced2fe87e9146d1cdb9925687475018e3e075e65843eff8e6edb6a4a676b42",
+    "Berstein/audit/exploration_input.py": "6851139b7c9e2569044cafad5fe5aaefea7b5e2a984fecfc301e16a6437437cb"
+  }
+}

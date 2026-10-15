@@ -1,5 +1,12 @@
 # Interior points of the Markov spectrum outside Hall's ray
 
+**2026-10-15: the original interval now extends to
+`[4.52173315,4.52762938]` in both `L` and `M`, and
+`[4.51104888,4.52]` is verified inside Berstein's conjectured region.**
+See the [new exact-arithmetic results](data/interval_exploration_summary.json)
+and [Japanese proof and exploration report](doc/INTERVAL_EXPLORATION.md).
+The Lean development below concerns the original starting interval.
+
 **The Markov spectrum $M$ contains an interval of positive length strictly
 below Hall's ray.** This project establishes
 
@@ -28,10 +35,53 @@ See the [Lean verification guide](Lean/README.md) and the
 This construction uses `31313`-avoiding tails and subintervals $J_{p,q}$.
 The original **interior-point construction for the `131`-forbidden set
 $K_F+K_F$ remains unfinished**. Certificates from `stashed/` are not used.
-The mathematical exposition is at the beginning of
-[generalized_t.tex](doc/generalized_t.tex) (in Japanese).
+The mathematical exposition is at the beginning of the
+[Japanese PDF](doc/generalized_t.pdf)
+([TeX source](doc/generalized_t.tex)).
 
-## Construction and proof
+## Extended intervals (2026-10-15)
+
+The two verified closed families together extend the original interval to
+
+```math
+[4.52173315,4.52762938]\subset L\cap M\cap(-\infty,c_F).
+```
+
+Its rational width is `0.00589623`, about **3.35 times** the original
+rational width (a **235.01% increase**). The new `31313,13131` family also proves
+
+```math
+[4.51104888,4.52]\subset L\cap M.
+```
+
+This is a subinterval of Berstein's conjectured `[4.1,4.52]` region, not a
+proof of the whole conjecture. The actual lower component starts at
+`4√41667/181 = 4.511048877942088…` and reaches `4.520738535913505…`.
+Further components and exact coefficients are in the
+[combined result](data/interval_exploration_summary.json).
+
+The new table has **4,260,954 closed rows**, rechecked without deletion by
+the original verifier and by the separate implementation. All 5,152 side
+transitions also passed the separate input-semantics audit.
+The original `31313` table's 3,464,816 rows are reused unchanged.
+More initial roots are searched, and appended positions are bounded by replacing the finite core's past with
+a compatible legal past. This removes the previous tail-error term.
+A periodic-block gluing argument gives inclusion in `L` above the bulk bound;
+the bulk endpoints themselves are realized by periodic words.
+The new endpoints have an exact-arithmetic certificate and an analytic gluing
+proof, but are not covered by
+the existing Lean theorem. **Global maximality of the extended component has
+not been proved.** The separate search in Berstein's `[4.1,4.52]` region and
+reproduction commands are documented in the
+[Japanese exploration report](doc/INTERVAL_EXPLORATION.md).
+
+```sh
+python3 -B -S Berstein/src/verify_interval_extensions.py --full
+python3 -B -S Berstein/src/verify_lower_intervals.py
+python3 -B -S Berstein/src/collect_exploration_results.py
+```
+
+## Construction and proof of the original interval
 
 Fix central digit 4 and outward prefixes $a=322$ and $b=431$. Append digits
 from $\{1,2,3\}$, requiring each whole one-sided word to avoid `31313`.
@@ -96,8 +146,10 @@ cd Berstein/Lean
 python3 scripts/verify.py --prepare
 ```
 
-See the guide for initial dependency setup. The formal statement concerns
-$M$; no inclusion of this interval in $L$ or in $M\setminus L$ is claimed here.
+See the guide for initial dependency setup. The formal statement concerns $M$.
+Inclusion in $L$ follows separately from the analytic gluing argument in the
+exploration report; that argument has not been added to the Lean development.
+No inclusion in $M\setminus L$ is claimed.
 
 ## Rechecking the interval below Hall's ray
 

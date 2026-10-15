@@ -1,0 +1,147 @@
+{
+  "passed": true,
+  "scope": "Uniform tail bounds only; no interval filling claim.",
+  "results": [
+    {
+      "language": "313",
+      "radicand": 5,
+      "basis": [
+        1,
+        2,
+        5,
+        10
+      ],
+      "bulk_upper": [
+        "0",
+        "0",
+        "2",
+        "0"
+      ],
+      "decimal": 4.47213595499958,
+      "maximizing_window": [
+        1,
+        3,
+        1
+      ],
+      "legal_windows": 26,
+      "rational_far_upper": "5590246452369665/1250016435975241"
+    },
+    {
+      "language": "31313,13131",
+      "radicand": 41667,
+      "basis": [
+        1,
+        2,
+        41667,
+        83334
+      ],
+      "bulk_upper": [
+        "0",
+        "0",
+        "4/181",
+        "0"
+      ],
+      "decimal": 4.511048877942088,
+      "maximizing_window": [
+        3,
+        1,
+        3,
+        1,
+        2
+      ],
+      "legal_windows": 241,
+      "rational_far_upper": "393336220616602369/87193952977310932",
+      "period10_return": {
+        "state_parity_cases": 18,
+        "factor": [
+          "5333377",
+          "0",
+          "-26128",
+          "0"
+        ],
+        "factor_decimal": 9.374923242816031e-08,
+        "same_factor_in_every_case": true
+      },
+      "conditional_root": {
+        "a": "3113",
+        "b": "4313",
+        "center": 4,
+        "hull": [
+          [
+            "1980139099/439156372",
+            "0",
+            "643751/22396974972",
+            "0"
+          ],
+          [
+            "8015394/1687249",
+            "0",
+            "-5828/5061747",
+            "0"
+          ]
+        ],
+        "hull_decimal": [
+          4.514828445522301,
+          4.515544084494098
+        ],
+        "spectral": {
+          "theta": "393336220616602369/87193952977310932",
+          "theta_decimal": 4.511049300849496,
+          "witness": {
+            "type": "far",
+            "past": [
+              2,
+              1,
+              3,
+              1,
+              3,
+              2,
+              3,
+              1
+            ]
+          },
+          "forbidden": [
+            [
+              3,
+              1,
+              3,
+              1,
+              3
+            ],
+            [
+              1,
+              3,
+              1,
+              3,
+              1
+            ]
+          ],
+          "backward": 8,
+          "tail_precision": 40,
+          "far_upper": "393336220616602369/87193952977310932",
+          "far_witness": [
+            2,
+            1,
+            3,
+            1,
+            3,
+            2,
+            3,
+            1
+          ],
+          "far_windows": 6345,
+          "near_prefixes": 17880,
+          "scope": "Uniform over all infinite legal tails and all noncentral positions."
+        },
+        "interval_filling_proved": false,
+        "scope": "All-position domination holds over the whole hull; no filling or interval inclusion is claimed."
+      }
+    }
+  ],
+  "sha256": {
+    "Berstein/src/verify_exploration_bulk.py": "a1bc62137f6eff2834d1b74378c952770f7e44b352b517b67976bd119a082bd1",
+    "Berstein/src/prepare_313.py": "6c32d9ae7a386381e2656d0323c89cf6d32cb976547e4390cc21ec701c30849f",
+    "Berstein/src/field.py": "a85c956da505ef459d618733289b3cc89b8939ff71d0f2235706e55c6d5c5e49",
+    "Berstein/src/spectral_rational.py": "d26cb7b02cb74d283d2c942e40d9de91eb4a988736cae8a1c82190118325ef65"
+  }
+}

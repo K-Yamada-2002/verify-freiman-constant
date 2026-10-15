@@ -1,0 +1,49 @@
+{
+  "status": "superseded_before_closure",
+  "closed_family_proved": false,
+  "empty_family_proved": false,
+  "last_completed_round": {
+    "round": 40,
+    "alive": 4390776,
+    "removed": 4486,
+    "root_types": [
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "seconds": 962.051
+  },
+  "reason": "The extremal period is 10; rerun with exact simultaneous period-10 returns added to the successor menu.",
+  "sha256": {
+    "Berstein/logs/avoid_alt5_m2.log": "eaa7c0345d53da1db8142c10bdedf68b56148fbbd341cea3b34993b431fcaf06"
+  }
+}

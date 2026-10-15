@@ -1,0 +1,445 @@
+{
+  "passed": true,
+  "extended_interval": "[4.52173315,4.52762938] subset L and M below c_F",
+  "rational_components": [
+    [
+      "113127291/25000000",
+      "226381469/50000000"
+    ],
+    [
+      "22638147/5000000",
+      "452762953/100000000"
+    ],
+    [
+      "452762957/100000000",
+      "452763111/100000000"
+    ],
+    [
+      "452763121/100000000",
+      "226390931/50000000"
+    ],
+    [
+      "452781869/100000000",
+      "452782797/100000000"
+    ]
+  ],
+  "global_maximality_proved": false,
+  "experimental_languages": [
+    {
+      "language": "313",
+      "status": "specified_finite_family_empty",
+      "initial_rows": 2913408,
+      "completed_rounds": 37
+    },
+    {
+      "language": "31313,13131",
+      "spine_depth": 10,
+      "initial_rows": 6078592,
+      "round_limit": 80,
+      "status": "closed_family_found",
+      "remaining_rows": 4260954,
+      "completed_rounds": 73
+    }
+  ],
+  "interval_in_berstein_region_proved": true,
+  "conditional_root": {
+    "a": "3113",
+    "b": "4313",
+    "center": 4,
+    "hull": [
+      [
+        "1980139099/439156372",
+        "0",
+        "643751/22396974972",
+        "0"
+      ],
+      [
+        "8015394/1687249",
+        "0",
+        "-5828/5061747",
+        "0"
+      ]
+    ],
+    "hull_decimal": [
+      4.514828445522301,
+      4.515544084494098
+    ],
+    "spectral": {
+      "theta": "393336220616602369/87193952977310932",
+      "theta_decimal": 4.511049300849496,
+      "witness": {
+        "type": "far",
+        "past": [
+          2,
+          1,
+          3,
+          1,
+          3,
+          2,
+          3,
+          1
+        ]
+      },
+      "forbidden": [
+        [
+          3,
+          1,
+          3,
+          1,
+          3
+        ],
+        [
+          1,
+          3,
+          1,
+          3,
+          1
+        ]
+      ],
+      "backward": 8,
+      "tail_precision": 40,
+      "far_upper": "393336220616602369/87193952977310932",
+      "far_witness": [
+        2,
+        1,
+        3,
+        1,
+        3,
+        2,
+        3,
+        1
+      ],
+      "far_windows": 6345,
+      "near_prefixes": 17880,
+      "scope": "Uniform over all infinite legal tails and all noncentral positions."
+    },
+    "interval_filling_proved": false,
+    "scope": "All-position domination holds over the whole hull; no filling or interval inclusion is claimed."
+  },
+  "input_audits_passed": [
+    "avoid313_m2",
+    "avoid_alt5_m2",
+    "avoid_alt5_return10",
+    "avoid_alt5_return10_unrestricted",
+    "avoid_alt5_spine10"
+  ],
+  "bounded_status_controls": 3,
+  "interpretation": "An empty finite sufficient family or a budget stop is not a nonexistence theorem.",
+  "lower_interval": {
+    "passed": true,
+    "interval_in_berstein_region_proved": true,
+    "claim": "[4.51104888,4.52] subset L and M",
+    "exact_first_lower": [
+      "0",
+      "0",
+      "4/181",
+      "0"
+    ],
+    "exact_first_lower_decimal": 4.511048877942088,
+    "periodic_bulk_endpoint_in_L_and_M": true,
+    "lagrange_inclusion_basis": "Periodic endpoint plus gluing with 2 separators; all other points exceed the bulk bound.",
+    "adopted_rows": 4260954,
+    "independent_failed_cells": 0,
+    "input_side_transitions": 5152,
+    "certificate_rows": 28,
+    "components": [
+      [
+        [
+          "0",
+          "0",
+          "4/181",
+          "0"
+        ],
+        [
+          "2489026372404406173/994858477252505648",
+          "0",
+          "11684296430326107/1181394441737350457",
+          "0"
+        ]
+      ],
+      [
+        [
+          "187190902035109693626569/41436116323758155600792",
+          "0",
+          "9242657821417524739/590464657613553717311286",
+          "0"
+        ],
+        [
+          "28049268034949908331/6045546251862881888",
+          "0",
+          "-401325020817847753/689192272712368535232",
+          "0"
+        ]
+      ],
+      [
+        [
+          "1405601740233039962189/311019690154921979744",
+          "0",
+          "84831373980951061/11818748225887035230272",
+          "0"
+        ],
+        [
+          "3337988772909971/683351816981992",
+          "0",
+          "-277720310076911/155804214271894176",
+          "0"
+        ]
+      ],
+      [
+        [
+          "257158556627814494441/56585197221436843984",
+          "0",
+          "-26331700922021541/226340788885747375936",
+          "0"
+        ],
+        [
+          "295857372863509633573/56585197221436843984",
+          "0",
+          "-784596498421416881/226340788885747375936",
+          "0"
+        ]
+      ],
+      [
+        [
+          "410568790057899971400/91614384166483279757",
+          "0",
+          "214823065587313337/1099372609997799357084",
+          "0"
+        ],
+        [
+          "11998123115283314280550/2656817140828015112953",
+          "0",
+          "70408456574076879/2656817140828015112953",
+          "0"
+        ]
+      ],
+      [
+        [
+          "48291150842329974003061/10760231390389739093816",
+          "0",
+          "7055456050923623763/43040925561558956375264",
+          "0"
+        ],
+        [
+          "1488567198139163701729137097/329056783023318632127165536",
+          "0",
+          "-1243779970491886736435/123396293633744487047687076",
+          "0"
+        ]
+      ],
+      [
+        [
+          "237276820803598405250731647/52478527588392442980691816",
+          "0",
+          "853333824555597763295/629742331060709315768301792",
+          "0"
+        ],
+        [
+          "118645380013121136163734297/26239263794196221490345908",
+          "0",
+          "6844930210673473019/104957055176784885961383632",
+          "0"
+        ]
+      ],
+      [
+        [
+          "1944565080214074478039557/430047371640264790023616",
+          "0",
+          "-372787443244859801/1290142114920794370070848",
+          "0"
+        ],
+        [
+          "1288185319304827052394019/284711919400106035441832",
+          "0",
+          "-7833324881457339343/569423838800212070883664",
+          "0"
+        ]
+      ],
+      [
+        [
+          "11616613825845852730155/2588241065415304548152",
+          "0",
+          "5098147029683058493/31058892784983654577824",
+          "0"
+        ],
+        [
+          "11313/2500",
+          "0",
+          "0",
+          "0"
+        ]
+      ]
+    ],
+    "components_decimal": [
+      [
+        4.511048877942088,
+        4.520738535913505
+      ],
+      [
+        4.520773558171878,
+        4.520793724525884
+      ],
+      [
+        4.5207987604636966,
+        4.520877665921453
+      ],
+      [
+        4.520878777995551,
+        4.52094280611195
+      ],
+      [
+        4.521375360393789,
+        4.521385779317492
+      ],
+      [
+        4.521389712852441,
+        4.521682105131974
+      ],
+      [
+        4.521684339658835,
+        4.521686669602496
+      ],
+      [
+        4.521687245112359,
+        4.521713855347416
+      ],
+      [
+        4.521733145792055,
+        4.5252
+      ]
+    ],
+    "rational_components": [
+      [
+        "56388111/12500000",
+        "452073853/100000000"
+      ],
+      [
+        "113019339/25000000",
+        "113019843/25000000"
+      ],
+      [
+        "452079877/100000000",
+        "226043883/50000000"
+      ],
+      [
+        "226043939/50000000",
+        "11302357/2500000"
+      ],
+      [
+        "452137537/100000000",
+        "452138577/100000000"
+      ],
+      [
+        "113034743/25000000",
+        "45216821/10000000"
+      ],
+      [
+        "226084217/50000000",
+        "226084333/50000000"
+      ],
+      [
+        "18086749/4000000",
+        "90434277/20000000"
+      ],
+      [
+        "90434663/20000000",
+        "11313/2500"
+      ]
+    ],
+    "negative_controls": 2,
+    "whole_berstein_conjecture_proved": false,
+    "lean_formalized": false,
+    "sha256": {
+      "Berstein/src/verify_lower_intervals.py": "e45397879ee89378d2388a3021c7a2971d58a03492b38e6efc584d76d695a4fd",
+      "Berstein/src/compatible_past.py": "d00a2d29484c77bc79d45bdbedcf21ed3224292bac7699ab7df20c39da4eb22c",
+      "Berstein/src/search_313_intervals.py": "99927779bd16ee738b88b6dbacfd402e4444ad2f093ac0026fa3443eb860471e",
+      "Berstein/src/prepare_313.py": "6c32d9ae7a386381e2656d0323c89cf6d32cb976547e4390cc21ec701c30849f",
+      "Berstein/src/spectral_rational.py": "d26cb7b02cb74d283d2c942e40d9de91eb4a988736cae8a1c82190118325ef65",
+      "Berstein/src/field.py": "a85c956da505ef459d618733289b3cc89b8939ff71d0f2235706e55c6d5c5e49",
+      "Berstein/data/avoid_alt5_spine10.dat": "fa15c5419869b3c2410034f8d82a8c3a8dde93fb7f3c7513b56fdf77276b3d7b",
+      "Berstein/data/avoid_alt5_spine10.meta.json": "088daf1419959cdbdbe65022134ffd951658317d0ec16167fc37506d99de440a",
+      "Berstein/data/avoid_alt5_spine10.json.alive.bin": "99a9cc4b10f8b0876a2918b1f082cf58efccd3c75cba0597314a6ea94db64ba1",
+      "Berstein/data/avoid_alt5_spine10_replay.json": "703e00f6d83b448abe906775d6b69acb9287ab190ed81ca6469600b8af237824",
+      "Berstein/data/avoid_alt5_spine10_input_audit.json": "69b27480ab0c125a81e9b4ea1ee85e32de3f8b87d60b9736655bb340c070b764",
+      "Berstein/data/lower_interval_certificate.json": "c734a95b313d6e53e888c6f0bf49e0f7e8bc639b10d1e042ff61ee2f3201c67e",
+      "Berstein/data/avoid_alt5_spine10_candidates.json": "939db7834f8fbba52946670d53faf972907a577cb2c6cd604060ff0c7bd661f4",
+      "Berstein/audit/independent_kernel.cpp": "afcfa622cde730ede065ac3db4d2c1a1625bc0f1c9e3a29ca97e7514873afbfb",
+      "Berstein/src/graph_kernel.cpp": "64598d669cb880c82cd95dbd9bc2bfd3574618ec386f599f6b13d9e8a5707e7a",
+      "Berstein/logs/avoid_alt5_spine10_independent.log": "a55003e8b3cb36b6972a668ebb0c09dc50fa2bdd00e30442c8bf2864f108cf85"
+    }
+  },
+  "combined_rational_components": [
+    [
+      "56388111/12500000",
+      "452073853/100000000"
+    ],
+    [
+      "113019339/25000000",
+      "113019843/25000000"
+    ],
+    [
+      "452079877/100000000",
+      "226043883/50000000"
+    ],
+    [
+      "226043939/50000000",
+      "11302357/2500000"
+    ],
+    [
+      "452137537/100000000",
+      "452138577/100000000"
+    ],
+    [
+      "113034743/25000000",
+      "45216821/10000000"
+    ],
+    [
+      "226084217/50000000",
+      "226084333/50000000"
+    ],
+    [
+      "18086749/4000000",
+      "90434277/20000000"
+    ],
+    [
+      "90434663/20000000",
+      "226381469/50000000"
+    ],
+    [
+      "22638147/5000000",
+      "452762953/100000000"
+    ],
+    [
+      "452762957/100000000",
+      "452763111/100000000"
+    ],
+    [
+      "452763121/100000000",
+      "226390931/50000000"
+    ],
+    [
+      "452781869/100000000",
+      "452782797/100000000"
+    ]
+  ],
+  "original_interval_extended_to": [
+    "90434663/20000000",
+    "226381469/50000000"
+  ],
+  "original_interval_extended_to_decimal": [
+    4.52173315,
+    4.52762938
+  ],
+  "original_31313_result": "[4.52509164,4.52762938] subset L and M below c_F",
+  "original_interval_width_ratio": "589623/176000",
+  "original_interval_width_increase_percent": 235.01306818181817,
+  "sha256": {
+    "Berstein/data/interval_extensions_verified.json": "b44df4e3d3d248d92c1bbeee0e9a08a64f0dbcb738552c6238874207db9d85ca",
+    "Berstein/data/exploration_bulk_bounds.json": "7e7fce1c366bf2cc863768c0a9f40ed1a42628eed5548d8c48fc8c1195c0c514",
+    "Berstein/data/avoid313_m2.json": "40183967451d4c874e669bee2e9b9c8eefecb1da9d56197599d7cf0c65b61acf",
+    "Berstein/data/avoid_alt5_spine10.json": "25e9c74f729ffa8bdf4c7186fd17784f3dff04689d331c14550619958db82057",
+    "Berstein/src/exploration_kernel.cpp": "9ac19b8ec7ee237ab02a153b4d6c2c9ae1a0c63275198b8dfc6ca58a79f2852d",
+    "Berstein/src/collect_exploration_results.py": "ac812463ead57862ac72073eccf29c67c291e4499b1c3e5e2fbe3704e75fc3d0",
+    "Berstein/data/lower_interval_verified.json": "dd7e3479da29dbd6df496752b68eba3832e4e9ef39e5df7c3f81b2ac80edf2b6"
+  }
+}
