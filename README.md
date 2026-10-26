@@ -14,6 +14,31 @@ and Lean-proved checker soundness with exhaustive compiled certificate
 verification. See [Berstein/README.md](Berstein/README.md) for the result,
 construction, verification evidence, and trust boundary.
 
+## Code: start here
+
+The computational sources are separated by role in both projects:
+**`verify/`**, **`search/`**, **`common/`**, and **`history/`**.
+See the [code guide](CODE.md) for entry points and the
+[table format](TABLE_FORMAT.md) for `.dat` and `.alive.bin`.
+
+| Purpose | Main source |
+|---|---|
+| Check or search the original finite table | [Freiman/verify/graph_kernel.cpp](Freiman/verify/graph_kernel.cpp) |
+| Generate its exact numeric input | [Freiman/search/certified_kernel_input.py](Freiman/search/certified_kernel_input.py) |
+| Verify the current Freiman ray proof | [Freiman/verify/verify_unified_proof.py](Freiman/verify/verify_unified_proof.py) |
+| Search the extended forbidden-word table | [Berstein/search/exploration_kernel.cpp](Berstein/search/exploration_kernel.cpp) |
+| Check the extended table | [Berstein/verify/graph_kernel.cpp](Berstein/verify/graph_kernel.cpp) |
+
+From the repository root, replay the current Freiman proof with:
+
+```sh
+python3 -B -S run.py Freiman/verify/verify_unified_proof.py --full
+```
+
+`src/` contains compatibility paths for previous commands and verification
+records. Browse the role directories for the actual sources; retained research
+variants are in `history/`.
+
 ## Introduction
 
 For an irrational number $\alpha$, define

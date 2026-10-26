@@ -35,12 +35,26 @@ protecting a verified narrow-range table as a seed. The final verification
 checks every row, including the seed, without protection. The proof uses
 this final verification.
 
+## Code entry points
+
+The actual sources are now split into [verify/](verify/README.md),
+[search/](search/README.md), [common/](common/README.md), and
+[history/](history/README.md). Start with [graph_kernel.cpp](verify/graph_kernel.cpp)
+for the finite-table algorithm and
+[certified_kernel_input.py](search/certified_kernel_input.py) for exact inputs.
+The [repository code guide](../CODE.md) distinguishes table closure from the
+whole-ray proof; [TABLE_FORMAT.md](../TABLE_FORMAT.md) describes the data.
+
 ## Layout
 
 | Directory | Contents |
 |---|---|
 | `doc/` | TeX/PDF exposition, proof details, complete interval tables, audits, and search history; detailed documents are in Japanese |
-| `src/` | Python and C++ verification, search, and table-generation programs |
+| `verify/` | Fixed-table and current proof verification |
+| `search/` | Input generation, table search, and successor/root discovery |
+| `common/` | Arithmetic, bounds, and shared helpers |
+| `history/` | Earlier constructions and retained experiments |
+| `src/` | Compatibility links and the original path resolver |
 | `data/` | Fixed certificates, inputs, verification results, and historical search results |
 | `logs/` | Execution logs |
 | `bin/` | Generated, platform-dependent C++ executables |
@@ -55,7 +69,7 @@ Python 3 with its standard library and a C++17 compiler are required. From
 the repository root:
 
 ```sh
-python3 -B -S Freiman/src/verify_unified_proof.py --full
+python3 -B -S run.py Freiman/verify/verify_unified_proof.py --full
 ```
 
 This regenerates the general-family input, compiles `bin/graph_kernel_verify`,
@@ -109,7 +123,7 @@ until accepted by `src/verify_unified_proof.py`.
 To regenerate the initial interval tables:
 
 ```sh
-python3 -B Freiman/src/write_hall_tables.py
+python3 -B run.py Freiman/common/write_hall_tables.py
 ```
 
 Compile `doc/lemma2_schecker.tex` with the built-in LaTeX editor or XeLaTeX.
@@ -143,7 +157,7 @@ The [bounds and interval lists](data/admissibility_rectangle_bound.json)
 can be regenerated with:
 
 ```sh
-python3 -B -S Freiman/src/admissibility_rectangle_bound.py
+python3 -B -S run.py Freiman/history/admissibility_rectangle_bound.py
 ```
 
 New families selected from small numbers of rectangles were also tested.
