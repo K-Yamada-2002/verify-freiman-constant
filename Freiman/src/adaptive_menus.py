@@ -1,1 +1,0 @@
-../common/adaptive_menus.py

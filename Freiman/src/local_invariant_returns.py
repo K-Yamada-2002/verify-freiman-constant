@@ -1,1 +1,0 @@
-../verify/local_invariant_returns.py

@@ -1,1 +1,0 @@
-../common/typed_catalog.py

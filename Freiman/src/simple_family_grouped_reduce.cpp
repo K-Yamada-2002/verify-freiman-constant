@@ -1,1 +1,0 @@
-../history/simple_family_grouped_reduce.cpp

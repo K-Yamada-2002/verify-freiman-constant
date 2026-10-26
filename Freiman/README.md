@@ -1,183 +1,97 @@
-# A Schecker-style proof of the Freiman ray
+# Freiman の半直線
 
-This directory proves **`[c_F, ∞) ⊂ M ∩ L`** using successor covers with the
-forbidden word `31313`. The proof combines finite exact-arithmetic verification
-with a mathematical argument constructing infinite continued fractions.
-
-For the separate result on **interior points below Hall's ray**, see
-[Berstein](../Berstein/README.md) and its [Lean verification](../Berstein/Lean/README.md).
-The half-line proof documented here does not itself establish optimality of $c_F$.
-
-Start with the [TeX exposition](doc/lemma2_schecker.tex) or
-[PDF](doc/lemma2_schecker.pdf), both in Japanese. Following the Schecker
-exposition, it presents preliminaries, realization of central values by
-successor covers, passage to $M$ through noncentral bounds, admissibility,
-construction of the ray from initial intervals, and finite verification of
-the covering lemma. It includes an actual three-successor cover and states
-inclusion in $L$ as a separate final corollary. It also explains the
-correspondence with Schecker's T-intervals and the passage from Lemma 2 to
-the cover required by Lemma 1.
-
-The redesign of October 1, 2026 uses the same intervals `J_{p,q}(a,b)`
-throughout. Special families carrying an ancestor and iteration count were
-replaced by conditions on four rational parameters of the current state.
-The derivative ratio `V_zeta` is invariant under appending 33 to both sides.
-The endpoint equality condition `S=S_*` is no longer needed. There is now
-only one general family, `graph_wide`, with 34 initial entry covers for
-short words. Its 3,464,816 rows are parameter boxes checked by one finite
-algorithm, partitioning left/right states, ratio ranges, and subinterval
-positions. They are not millions of separately written mathematical proofs.
-The current priority is a clear algorithm and rigorous replay, rather than
-reducing the number of conditions below 1,000.
-
-The general table was found by deletion search over a wider ratio range,
-protecting a verified narrow-range table as a seed. The final verification
-checks every row, including the seed, without protection. The proof uses
-this final verification.
-
-## Code entry points
-
-The actual sources are now split into [verify/](verify/README.md),
-[search/](search/README.md), [common/](common/README.md), and
-[history/](history/README.md). Start with [graph_kernel.cpp](verify/graph_kernel.cpp)
-for the finite-table algorithm and
-[certified_kernel_input.py](search/certified_kernel_input.py) for exact inputs.
-The [repository code guide](../CODE.md) distinguishes table closure from the
-whole-ray proof; [TABLE_FORMAT.md](../TABLE_FORMAT.md) describes the data.
-
-## Layout
-
-| Directory | Contents |
-|---|---|
-| `doc/` | TeX/PDF exposition, proof details, complete interval tables, audits, and search history; detailed documents are in Japanese |
-| `verify/` | Fixed-table and current proof verification |
-| `search/` | Input generation, table search, and successor/root discovery |
-| `common/` | Arithmetic, bounds, and shared helpers |
-| `history/` | Earlier constructions and retained experiments |
-| `src/` | Compatibility links and the original path resolver |
-| `data/` | Fixed certificates, inputs, verification results, and historical search results |
-| `logs/` | Execution logs |
-| `bin/` | Generated, platform-dependent C++ executables |
-
-Historical search results are retained in `data/` for reproducibility. The
-proof uses the fixed certificates and their verification results listed
-below. Filenames or search success flags alone do not establish completion.
-
-## Reverification
-
-Python 3 with its standard library and a C++17 compiler are required. From
-the repository root:
+このディレクトリには、禁制語31313を用いる後続被覆による
+**$[c_F,\infty)\subset M\cap L$** の実装と固定証明書を置く。
+数学的な証明はルートの [doc/](../doc/README.md) にある。
+$c_F=(2221564096+283748\sqrt{462})/491993569$。
+下端の最適性は対象外。
 
 ```sh
-python3 -B -S run.py Freiman/verify/verify_unified_proof.py --full
+python3 -B -S Freiman/verify.py
 ```
 
-This regenerates the general-family input, compiles `bin/graph_kernel_verify`,
-and verifies closure of all 3,464,816 rows, 186 successors for four local
-conditions, 379 successors for 34 entries, 136 initial-cover bands, and
-91 noncentral-bound cases. The new proof does not read `graph_m2` data.
-Results are saved to [unified_proof_verified.json](data/unified_proof_verified.json);
-the fixed certificate is [unified_proof_certificate.json](data/unified_proof_certificate.json).
+Python 3.9以降の標準ライブラリと C++17 コンパイラを使う。
+別の場所で実行する場合は、`Freiman/` とルートの `doc/` を同じ親の下へコピーする。
+`Freiman/` 内で `python3 -B -S verify.py` と実行してもよい。
+検証レポートには論文の TeX のハッシュも記録する。
+`markov_interior/`、`Lean/`、`archive/` には依存しない。
 
-Omit `--full` to reuse a full-table verification after matching input and
-code hashes. Run with `--full` after changing code or fixed input. Scripts
-are independent of the working directory; bare output filenames such as
-those passed to `--output` are resolved under `data/`. Direct C++ invocations
-require explicit input/output paths. Some search programs require NumPy;
-exact reverification does not.
+## 構成
 
-## Main documents and certificates
+```text
+Freiman/
+├── verify.py          証明全体の実行入口
+├── proof.py           局所条件・入口・非中心上界・半直線の接続
+├── prepare.py         正確な連分数算術と入力生成
+├── kernel.cpp         一般表の探索と固定表の全行検証
+├── audit.py           独立した算術による入力の意味の検査
+├── audit.cpp          別実装による全行検証（追加オプション）
+├── README.md
+├── TABLE_FORMAT.md    数値入力と採用表の形式
+└── certificates/      必要な固定データ4ファイル
+```
 
-The detailed documents below are in Japanese; this README provides the English
-entry point and reproduction instructions.
+数学的な証明は [論文 PDF](../doc/out/lemma2_schecker.pdf)（[TeX](../doc/lemma2_schecker.tex)）を読み、
+コードでは [verify.py](verify.py) から [proof.py](proof.py) をたどる。
+[prepare.py](prepare.py) は算術と一般表の入力生成、[kernel.cpp](kernel.cpp) は重い有限計算を担当する。
+[audit.py](audit.py) はこれらの算術や状態計算を import せずに検査する。
 
-- [Mathematical exposition](doc/lemma2_schecker.tex): definitions, theorems, proofs, and correspondence with Schecker.
-- [Complete initial-cover table](doc/HALL_RAY_INITIAL_COVER.md): root and band endpoints are unchanged in the new construction.
-- [Construction of the general family](doc/INVARIANT_SEARCH.md).
-- Earlier construction: [ray proof](doc/HALL_RAY_PROOF.md), [endpoint lemma](doc/ENDPOINT_LEMMA.md), and [complete endpoint successor lists](doc/ENDPOINT_MENUS.md).
-- [Audit record](doc/PROOF_AUDIT.md).
-- [Original search design](doc/SEARCH_DESIGN.md) and [search history](doc/RESULTS.md).
+## 何を検証するか
 
-The current fixed inputs are `data/unified_proof_certificate.json` and the
-`.dat`, `.meta.json`, and `.json.alive.bin` files for `graph_wide`.
-The current verifier treats returns to the same local conditions and entry
-into the general family as a single Lemma-2-style successor cover.
-Verification hashes cover both sources and data; `src/layout.py` resolves
-the current layout.
+既定の実行で、次を毎回再計算する。以前の成功フラグや保存済み検証結果の再利用は行わない。
 
-Earlier proofs are retained. The earlier exposition is
-`doc/archive/lemma2_schecker_20260929.tex`; the version preceding the October 1
-redesign is `doc/archive/lemma2_schecker_20261001_compact.tex`.
-The earlier construction is fully checked by `src/verify_hall_ray.py --full`.
-`src/audit_schecker_proof.py` is a separate supplementary check of its fixed
-interval tables; it does not replace uniform closure verification for the
-new local conditions.
+- 数値入力とメタデータの再生成、一致の確認、独立した入力の意味の検査。
+- 一般表の全3,464,816採用行の帰属と被覆。失敗行を削除して修復することはない。
+- 端点付近の4局所条件と186後続、34件の初期入口と379後続。
+- 93本の有限初期区間、43本の整数移動用区間。
+- 91組の根と端点の根について、すべての非中心位置・無限延長に対する上界。
+- $c_F$ での端点一致、$13/2$ までの接続、整数移動による無限大までの被覆、接合に使う余裕。
 
-The separate verification components of the redesign are
-`src/local_invariant_returns.py`, checking ancestor-free invariants under
-appending 33, and `src/wide_bootstrap_verify.py`, checking finite entries
-into the single general family. `src/make_unified_certificate.py` combines
-these fixed menus into the current certificate. Its output is not certified
-until accepted by `src/verify_unified_proof.py`.
-
-To regenerate the initial interval tables:
+表から任意の実数を無限連分数として実現する極限の論証、中心値が最大値であること、
+Lagrange スペクトルへの接合は論文の第2節・第4節・第6節にある。
+コードとの対応は論文末尾の付録Aと、上の検証項目を参照。
+この解析的な論証と有限検証を組み合わせた証明であり、半直線全体の Lean 形式証明ではない。
 
 ```sh
-python3 -B run.py Freiman/common/write_hall_tables.py
+# 別実装でも全採用行を検査し、レポートを保存する。
+python3 -B -S Freiman/verify.py --independent --output /tmp/freiman-proof.json
+
+# 一般表だけを検査する。このモードは半直線包含を主張しない。
+python3 -B -S Freiman/verify.py --table-only
 ```
 
-Compile `doc/lemma2_schecker.tex` with the built-in LaTeX editor or XeLaTeX.
-The result here is half-line inclusion; optimality of $c_F$ is outside its scope.
+ビルド生成物と中間結果は一時ディレクトリに置く。固定データは変更しない。
+`--data` で入力ディレクトリを指定できる。`-O` は検証の assert を消すため受け付けない。
 
-## Historical compression searches (October 1, 2026)
+## 入力と探索
 
-These searches addressed an earlier target of at most 1,000 conditions,
-which is no longer the project's objective. They are separate from the fixed
-certificates and are not required for the current proof or its verification.
-The original row counts measure parameter boxes, not the minimum number of
-mathematically independent conditions.
-
-Preserving the tables exactly, merging consecutive ratio boxes and types,
-and using left/right symmetry gives 12,685 entries for `graph_m2` and 12,113
-for `graph_wide`. The [compression record](data/admissibility_compression_summary.json)
-checks byte-for-byte reconstruction. Further grouping distinct `graph_wide`
-state pairs with identical ratio and type intervals gives 6,912 entries.
-This still does not yield a proof with a small number of successor lists.
-
-There is also a lower bound for a restricted representation: each condition
-fixes the left/right states, restricts `S` to a single interval, and selects
-types independently of `S`. If an adopted range for one type has `n`
-components, that state pair alone needs at least `n` conditions. Taking the
-maximum over types for each state pair and summing modulo left/right symmetry
-gives **2,880** for `graph_m2` and **1,779** for `graph_wide`.
-These are bounds **for exact preservation of the current tables**. They do
-not exclude other admissible families, inequalities coupling `S` and type,
-or conditions grouping multiple state pairs.
-The [bounds and interval lists](data/admissibility_rectangle_bound.json)
-can be regenerated with:
+必要な固定データは [certificates/](certificates/README.md) の4ファイルだけ。
+`.dat` は数値入力、`.meta.json` は状態・候補語などの意味、`.alive.bin` は採用する行、
+`ray.json` は局所条件・入口・初期区間を指定する証明書である。
+`.alive.bin` は1候補につき1バイトで、後続経路の記録ではない。
+形式と添字は [TABLE_FORMAT.md](TABLE_FORMAT.md) を参照。
 
 ```sh
-python3 -B -S run.py Freiman/history/admissibility_rectangle_bound.py
+# 固定メタデータが指定する有限候補から、正確な数値入力を作る。
+python3 -B -S Freiman/prepare.py --output /tmp/freiman-input
+c++ -O3 -std=c++17 Freiman/kernel.cpp -o /tmp/freiman-kernel
+
+# 採用表を与えると固定表の検証。
+/tmp/freiman-kernel /tmp/freiman-input.dat /tmp/replay.json Freiman/certificates/graph_wide.alive.bin
+
+# 採用表を省くと、全候補から被覆できない行を削除する探索。
+/tmp/freiman-kernel /tmp/freiman-input.dat /tmp/search.json
 ```
 
-New families selected from small numbers of rectangles were also tested.
-Candidates with 759 conditions, 990 conditions, and 990 overlapping
-conditions became empty when rows not covered by the chosen successors were
-deleted. Searches with ratio-grid steps enlarged by factors of 4, 8, and 16
-also became empty. These are failures of the selected searches, not proofs
-that mathematical covers do not exist: the searches bound the retained
-successor candidates and intersection-graph data.
+探索が扱うのはメタデータに指定した有限状態・後続候補・比の箱・区間型の積である。
+すべての連分数やすべての可能な証明を列挙しているわけではない。
+探索結果は半直線全体の証明にならず、空になっても数学的な非存在は従わない。
+元の `graph_wide` を発見した保護種付き拡張探索や、局所メニュー・初期根の探索は
+[旧実装](../archive/2026-10-27/Freiman/README.md) に保存してある。
+その発見履歴の再現と、固定証明書の再検証は区別する。
 
-Relevant programs are `src/search_small_family.py`, `src/prepare_coarse_search.py`,
-and `src/graph_kernel_reduce.cpp`. Proposals are `data/small*_proposal.json`,
-results are `data/small*.json` and `data/coarse_s*.json`, and logs are in
-`logs/`. Conditions marked `proposal_only` are not verified admissible
-families. See [small_family_search_summary.json](data/small_family_search_summary.json)
-for all six experiments.
+## 関連する証明
 
-A search coarsening two-digit suffixes to one digit reduced the one-sided
-states from 22 to 12. The initial common portion retained 98.7% of the
-original rows, but the closure search with the coarser states became empty.
-It produced no new admissible family. The
-[verification method and scope of failure](data/simple_family_m1_report.json)
-are recorded separately.
+半直線より下の内点の証明は [markov_interior/](../markov_interior/README.md)、
+共有する形式検証プロジェクトは [Lean/](../Lean/README.md) にある。
+実験・過去の探索・旧文書・生成済みバイナリは [archive/](../archive/README.md) に保存した。

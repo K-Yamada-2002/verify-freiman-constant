@@ -1,1 +1,0 @@
-../verify/verify_invariant_certificate.py

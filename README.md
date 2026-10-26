@@ -11,33 +11,104 @@ A related result establishes **$[4.52578,4.52754]\subset M\cap(-\infty,c_F)$**,
 giving explicit interior points of the Markov spectrum outside Hall's ray.
 It is supported by exact-arithmetic checks, a separate verifier implementation,
 and Lean-proved checker soundness with exhaustive compiled certificate
-verification. See [Berstein/README.md](Berstein/README.md) for the result,
+verification. See [markov_interior/README.md](markov_interior/README.md) for the result,
 construction, verification evidence, and trust boundary.
 
 ## Code: start here
 
-The computational sources are separated by role in both projects:
-**`verify/`**, **`search/`**, **`common/`**, and **`history/`**.
-See the [code guide](CODE.md) for entry points and the
-[table format](TABLE_FORMAT.md) for `.dat` and `.alive.bin`.
-
-| Purpose | Main source |
-|---|---|
-| Check or search the original finite table | [Freiman/verify/graph_kernel.cpp](Freiman/verify/graph_kernel.cpp) |
-| Generate its exact numeric input | [Freiman/search/certified_kernel_input.py](Freiman/search/certified_kernel_input.py) |
-| Verify the current Freiman ray proof | [Freiman/verify/verify_unified_proof.py](Freiman/verify/verify_unified_proof.py) |
-| Search the extended forbidden-word table | [Berstein/search/exploration_kernel.cpp](Berstein/search/exploration_kernel.cpp) |
-| Check the extended table | [Berstein/verify/graph_kernel.cpp](Berstein/verify/graph_kernel.cpp) |
-
-From the repository root, replay the current Freiman proof with:
+From the repository root:
 
 ```sh
-python3 -B -S run.py Freiman/verify/verify_unified_proof.py --full
+# Complete Freiman-ray verification, including the full finite table.
+python3 -B -S Freiman/verify.py
+
+# Complete interior-interval verification.
+python3 -B -S markov_interior/verify.py
 ```
 
-`src/` contains compatibility paths for previous commands and verification
-records. Browse the role directories for the actual sources; retained research
-variants are in `history/`.
+### The complete interior-interval proof
+
+[markov_interior/](markov_interior/README.md) is self-contained: copy that whole
+directory elsewhere and run `python3 -B -S verify.py`. It needs only the Python
+standard library and a C++17 compiler.
+
+| Source | Responsibility |
+|---|---|
+| [verify.py](markov_interior/verify.py) | Default end-to-end verification of the three interval claims |
+| [proof.py](markov_interior/proof.py) | Actual root coverage, all-position bounds, periodic endpoints and finite gluing obligations |
+| [prepare.py](markov_interior/prepare.py) | Exact numeric input generation for both languages |
+| [kernel.cpp](markov_interior/kernel.cpp) | Deletion search and fixed-table replay |
+| [audit.py](markov_interior/audit.py) | Independent input semantics, checked every run |
+| [audit.cpp](markov_interior/audit.cpp) | Optional separate exhaustive coverage implementation |
+
+The infinite arguments are in [PROOF.md](markov_interior/PROOF.md), and all
+required inputs are in [certificates/](markov_interior/certificates/README.md).
+The default verifier checks both full tables and the original paper's 25 bands,
+then root coverage, uniform noncentral bounds and all three interval inclusions.
+`--tables-only` is the explicit narrower mode and emits no interval claim.
+The [format guide](markov_interior/FORMAT.md) includes the complete record layout.
+
+Archived implementations and experiment logs are not dependencies of this proof.
+The shared [Lean project](Lean/README.md) separately handles the existing formal
+original-interval result.
+
+### The complete Freiman-ray proof
+
+[Freiman/](Freiman/README.md) contains the compact implementation and fixed
+certificates; its mathematical proof is in the root [doc/](doc/README.md).
+To run elsewhere, copy both `Freiman/` and `doc/` under one parent, then run
+`python3 -B -S verify.py` inside `Freiman/`. The verifier also hashes the TeX paper.
+
+| Source | Responsibility |
+|---|---|
+| [verify.py](Freiman/verify.py) | Default end-to-end verification of the ray |
+| [proof.py](Freiman/proof.py) | Four local endpoint conditions, entry covers, all-position bounds, and the ray chains |
+| [prepare.py](Freiman/prepare.py) | Exact continued-fraction arithmetic and numeric input generation |
+| [kernel.cpp](Freiman/kernel.cpp) | Deletion search and fixed-table replay |
+| [audit.py](Freiman/audit.py) | Independent input semantics, checked every run |
+| [audit.cpp](Freiman/audit.cpp) | Optional separate exhaustive coverage implementation |
+
+The fixed inputs are the four files in
+[certificates/](Freiman/certificates/README.md). The original general table and
+ray certificate bytes are preserved. The finite row universe is 4,801,280
+parameter-box conditions, of which 3,464,816 are adopted.
+[TABLE_FORMAT.md](Freiman/TABLE_FORMAT.md) explains the input and adoption array.
+
+```sh
+# Full ray proof, additionally checking every row with the separate C++ implementation.
+python3 -B -S Freiman/verify.py --independent --output /tmp/freiman-proof.json
+
+# Only the general table, including exact input regeneration; no ray claim.
+python3 -B -S Freiman/verify.py --table-only
+```
+
+The whole-ray proof also checks 186 local successors, 379 successors for
+34 entry covers, 136 initial bands and 91 noncentral-bound cases.
+The infinite iteration, Markov realization and Lagrange gluing are in
+the [paper](doc/out/lemma2_schecker.pdf), with the code correspondence in Appendix A.
+Builds and intermediate reports use a temporary directory; cached success flags
+are not proof inputs. The current directory has no `src/`, role subpackages,
+launcher, historical experiments, or generated executables.
+
+To search the finite universe, compile [kernel.cpp](Freiman/kernel.cpp) and omit
+the adoption array. See the [commands and scope](Freiman/README.md#入力と探索).
+Historical root/menu discovery and protected-seed expansion are preserved in
+[the archive](archive/README.md), with all earlier files. They are not dependencies
+of either current analytic proof.
+
+### Interval proof versus table closure
+
+The current [interval proof](markov_interior/PROOF.md) contains both parts.
+Closed covers realize every point of admitted initial bands by actual infinite
+continued fractions. The root and noncentral checks make the central value the
+supremum at all positions, proving Markov membership. Periodic-block gluing and
+the checked positive margins give Lagrange membership. All are part of the
+default `markov_interior/verify.py` result.
+
+The [Lean development](Lean/Berstein/README.md) concerns the original
+3,464,816-row table and original interval. The extended table and endpoints have
+not been added to that formalization. A failed bounded search does not establish
+nonexistence.
 
 ## Introduction
 
@@ -75,8 +146,11 @@ M=\left\{\sup_{n\in\mathbb Z}\lambda_n(a)<\infty:
 
 | Directory | Contents |
 |---|---|
+| [doc/](doc/README.md) | Shared mathematical papers: the Freiman ray and interior Markov intervals |
 | [Freiman/](Freiman/README.md) | Schecker-style computer-assisted proof of $[c_F,\infty)\subset M\cap L$, with exact certificates and reproduction instructions |
-| [Berstein/](Berstein/README.md) | A related interior-interval result below Hall's ray, with a separate audit implementation and Lean verification |
+| [markov_interior/](markov_interior/README.md) | Complete interval proof, including both tables, root coverage and noncentral bounds |
+| [Lean/](Lean/README.md) | Shared formal-verification workspace, currently including the original interior-interval checker and proof |
+| [archive/2026-10-26/](archive/2026-10-26/README.md) | Preserved interval-proof programs, research, and independent audits |
 | [Schecker/](Schecker/README.md) | SageMath discovery notebooks and investigation of classical successor lists |
 | [misc/](misc/README.md) | Supporting numerical calculations for classical proofs |
 

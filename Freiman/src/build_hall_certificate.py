@@ -1,1 +1,0 @@
-../search/build_hall_certificate.py

@@ -338,3 +338,5 @@ Freiman/Freiman_Hall_ray_verification
 # option is specified. Footnotes are the stored in a file with suffix Notes.bib.
 # Uncomment the next line to have this generated file ignored.
 #*Notes.bib
+# Generated input for the compact interior-interval tools.
+out/markov_interior/

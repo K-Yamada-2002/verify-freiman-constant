@@ -1,1 +1,0 @@
-../verify/verify_dyadic.py

@@ -1,1 +1,0 @@
-../common/endpoint_certificate.py

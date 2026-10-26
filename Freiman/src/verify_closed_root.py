@@ -1,1 +1,0 @@
-../verify/verify_closed_root.py
