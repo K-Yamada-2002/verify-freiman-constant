@@ -147,6 +147,7 @@ for these initial rows.
 
 - `scripts/export_graph.cpp`: an untrusted exporter of finite coverage witnesses from the search output.
 - `scripts/export_semantics.py`: an untrusted generator of exact endpoint labels and related data in `Berstein/Data/Meaning.lean`.
+- `scripts/input_semantics.py`: independent exact arithmetic and input/root audits used by the semantic-label exporter; includes three corruption controls.
 - `graphReplay`: the Lean executable checking input semantics, the root, prepared interval operations, and coverage for every geometry.
 - `generated/replay_report.json`: shard exit codes, ranges, counts, and hashes of inputs, the executable, certificates, and logs.
 - `logs/verification.json`: the combined record of final-theorem axioms, Lean source hashes, exhaustive replay, and corruption tests.
@@ -176,5 +177,7 @@ interval lies in $L$ or in $M\setminus L$.
 `HallRay/Basic.lean` and `HallRay/ContinuedFraction/{Basic,Mobius}.lean` were
 vendored from [hall-ray](https://github.com/K-Yamada-2002/hall-ray), commit
 `a584e5620124d23c709e3bbdc66db8b8b0586310`. The MIT license is in
-`HallRay/LICENSE`; hashes of source materials and vendored files are in
-`sources.json`.
+`HallRay/LICENSE`; hashes of current input files and vendored files are in
+`sources.json`. Historical source hashes are pinned there to Git commit
+`2ac2b5e20dedd8255954c5a32f5694649defd771`, without requiring those old files
+in the current checkout.

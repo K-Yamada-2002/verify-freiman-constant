@@ -34,8 +34,7 @@ def run_logged(command, name):
 
 def check_provenance():
     sources = json.loads((HERE / "sources.json").read_text())
-    snapshot = REPO / "archive/2026-10-26"
-    groups = [(snapshot, sources["source_sha256"]), (HERE, sources["vendored_source"]["files"])]
+    groups = [(REPO, sources["source_sha256"]), (HERE, sources["vendored_source"]["files"])]
     count = 0
     for base, records in groups:
         for name, expected in records.items():

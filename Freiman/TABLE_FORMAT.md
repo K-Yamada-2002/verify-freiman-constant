@@ -91,8 +91,10 @@ adopted and repeatedly deletes rows that cannot be covered using remaining
 rows. With an adoption file, it fixes the supplied rows and rejects a failed
 cover instead of repairing the table through deletion.
 
-The historical seed-expansion search is preserved at
-`../archive/2026-10-27/Freiman/search/graph_kernel_expand.cpp`. Protected seed rows must still pass
+The historical seed-expansion search is retained in Git commit
+`2ac2b5e20dedd8255954c5a32f5694649defd771`, under the former
+`archive/2026-10-27/Freiman/search/graph_kernel_expand.cpp` path. It is not
+needed by the current verification. Protected seed rows must still pass
 the ordinary fixed-table checker afterward. Search bounds and selected
 candidates limit what the search can discover; empty output does not prove
 that no mathematical successor cover exists.

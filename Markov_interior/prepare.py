@@ -345,7 +345,7 @@ def main():
         raise RuntimeError('Verification requires Python assertions; do not use -O')
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path,
-                        default=Path(__file__).resolve().parents[1] / 'out/markov_interior/table',
+                        default=Path(__file__).resolve().parents[1] / 'out/Markov_interior/table',
                         help='Output prefix for .dat and .meta.json files')
     parser.add_argument('--memory', type=int, default=2)
     parser.add_argument('--length', type=int, default=3)

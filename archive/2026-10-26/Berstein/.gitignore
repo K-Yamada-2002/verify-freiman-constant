@@ -1,6 +1,0 @@
-bin/
-data/*.alive.bin
-__pycache__/
-
-# Keep the reference to the adopted table in the preserved snapshot.
-!data/avoid_alt5_spine10.json.alive.bin

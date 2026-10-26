@@ -14,7 +14,7 @@ Python 3.9以降の標準ライブラリと C++17 コンパイラを使う。
 別の場所で実行する場合は、`Freiman/` とルートの `doc/` を同じ親の下へコピーする。
 `Freiman/` 内で `python3 -B -S verify.py` と実行してもよい。
 検証レポートには論文の TeX のハッシュも記録する。
-`markov_interior/`、`Lean/`、`archive/` には依存しない。
+`Markov_interior/`、`Lean/` には依存しない。
 
 ## 構成
 
@@ -87,11 +87,11 @@ c++ -O3 -std=c++17 Freiman/kernel.cpp -o /tmp/freiman-kernel
 すべての連分数やすべての可能な証明を列挙しているわけではない。
 探索結果は半直線全体の証明にならず、空になっても数学的な非存在は従わない。
 元の `graph_wide` を発見した保護種付き拡張探索や、局所メニュー・初期根の探索は
-[旧実装](../archive/2026-10-27/Freiman/README.md) に保存してある。
+Git の履歴にある。整理前のコミットは `2ac2b5e20dedd8255954c5a32f5694649defd771`。
 その発見履歴の再現と、固定証明書の再検証は区別する。
 
 ## 関連する証明
 
-半直線より下の内点の証明は [markov_interior/](../markov_interior/README.md)、
+半直線より下の内点の証明は [Markov_interior/](../Markov_interior/README.md)、
 共有する形式検証プロジェクトは [Lean/](../Lean/README.md) にある。
-実験・過去の探索・旧文書・生成済みバイナリは [archive/](../archive/README.md) に保存した。
+実験・過去の探索・旧文書・生成済みバイナリは現行ツリーから除き、必要な場合は Git の履歴を参照する。

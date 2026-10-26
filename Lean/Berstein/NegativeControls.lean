@@ -16,12 +16,12 @@ private def requireRejected (name : String) (accepted : Bool) : IO Unit := do
   IO.println s!"PASS rejected corruption: {name}"
 
 def run : IO Unit := do
-  let inputText ← IO.FS.readFile "../../Freiman/data/graph_wide.dat"
+  let inputText ← IO.FS.readFile "../Freiman/certificates/graph_wide.dat"
   let inputWords := (inputText.splitToList Char.isWhitespace).filter (· != "")
   let input ← match (parseInput.run ⟨inputWords.toArray, 0⟩) with
     | .error e => throw <| IO.userError s!"input parse failed: {e}"
     | .ok (input, _) => pure input
-  let alive ← IO.FS.readBinFile "../../Freiman/data/graph_wide.json.alive.bin"
+  let alive ← IO.FS.readBinFile "../Freiman/certificates/graph_wide.alive.bin"
   let geometryBytes ← IO.FS.readBinFile "generated/witnesses/geometry_0.bin"
   let cells ← match (parseGeometry 0).run ⟨geometryBytes, 0⟩ with
     | .error e => throw <| IO.userError s!"geometry 0 parse failed: {e}"

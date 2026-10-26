@@ -1,1 +1,0 @@
-../common/spectral_rational.py

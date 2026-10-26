@@ -1,20 +1,15 @@
 """Propose exact labels for the graph. This exporter is NOT trusted.
 
-All labels must pass the Lean mathematical input checker. The old independent
-audit is used solely to produce candidates and catch exporter mistakes early.
+All labels must pass the Lean mathematical input checker. The independent
+input_semantics module proposes candidates and catches exporter mistakes early.
 """
 from pathlib import Path
 from fractions import Fraction as Q
-import importlib.util
 import json
-import sys
 
 HERE = Path(__file__).resolve().parents[1]
 ROOT = HERE.parent
-SPEC = importlib.util.spec_from_file_location("proposal_arithmetic", ROOT / "archive/2026-10-26/Berstein/audit/independent_input.py")
-P = importlib.util.module_from_spec(SPEC)
-sys.modules[SPEC.name] = P
-SPEC.loader.exec_module(P)
+import input_semantics as P
 
 
 def rat(q):

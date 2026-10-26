@@ -1,1 +1,0 @@
-../verify/verify_below_ray.py

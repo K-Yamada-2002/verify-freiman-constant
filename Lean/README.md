@@ -11,7 +11,7 @@ interior-interval construction.
 | `Berstein` | The existing checker-soundness proof and original Markov interior-interval construction |
 
 The `Berstein` namespace is retained to preserve existing theorem names and
-imports. The computational project is now [markov_interior/](../markov_interior/README.md).
+imports. The computational project is now [Markov_interior/](../Markov_interior/README.md).
 New results can add their own libraries to `lakefile.toml` and imports to
 `SpectrumVerification.lean`; reusable lemmas can be shared across those targets.
 No new verification target is claimed merely from reorganizing these files.
@@ -58,9 +58,23 @@ verification must not be presented as additional Lean theorems.
 
 ## Data and provenance
 
-The concrete Lean checker reads `../Freiman/certificates/graph_wide.dat` and its adopted
-array. The provenance records in `sources.json` refer to the original source
-snapshot under `../archive/2026-10-26/`; the verification script resolves those
-historical paths there. Vendored Hall-ray source hashes remain relative to this
-project. The theorem sources, pinned dependency revisions, and saved table bytes
-were preserved when this project moved to the repository root.
+The concrete Lean checker reads `../Freiman/certificates/graph_wide.dat` and its
+adoption array. `scripts/input_semantics.py` contains the independent exact
+arithmetic, input audit, root checks, and three corruption controls used by the
+untrusted semantic-label exporter. Run it separately with:
+
+```sh
+python3 -B scripts/input_semantics.py
+python3 -B scripts/export_semantics.py
+```
+
+The exporter regenerates `Berstein/Data/Meaning.lean`; the mathematical labels
+must still pass Lean's checker. The relocation preserves the generated labels.
+
+`sources.json` checks the current table, metadata, adoption array, and relocated
+input-audit module using repository-relative paths. Vendored Hall-ray hashes
+remain relative to this project. Historical source hashes and their origin are
+recorded under `historical_provenance`, pinned to Git commit
+`2ac2b5e20dedd8255954c5a32f5694649defd771`. They document provenance and are not
+read during verification. Previous implementations and audit records can be
+retrieved from that commit; no historical directory is needed at runtime.

@@ -6,13 +6,10 @@
   ],
   "kernel_rows": 3464816,
   "source_sha256": {
-    "Berstein/doc/generalized_t.tex": "a5e6cf81b73a71f834c672a7285800465bba56cb5f60f3b19ad180512eb3ef13",
-    "Berstein/data/below_ray_certificate.json": "84cbf4e5006530b37311d5db4f432870ab6d25fb174c439b520ab3051cca82e0",
-    "Berstein/data/below_ray_verified.json": "a645e6d22b82ffa9fd8f17112a7299fe4b79085a29a73c399e281f1874e65f3d",
-    "Berstein/audit/REPORT.txt": "92b116efecd07d77c93dcddfe864dccb8a5bbc0b1e7e357730994ca9127cc2b0",
-    "Berstein/audit/independent_kernel.cpp": "afcfa622cde730ede065ac3db4d2c1a1625bc0f1c9e3a29ca97e7514873afbfb",
-    "Freiman/data/graph_wide.dat": "f920da96f3fc28c6182f4dc9f0a3836dac059186a3f54e33b484198ed51a2234",
-    "Freiman/data/graph_wide.json.alive.bin": "a75629b1148bdbc6890d02eb85562b722e0209fb13a0dc5ac3f5fdfc60dc93a5"
+    "Freiman/certificates/graph_wide.dat": "f920da96f3fc28c6182f4dc9f0a3836dac059186a3f54e33b484198ed51a2234",
+    "Freiman/certificates/graph_wide.meta.json": "487b048ddb9b6e706aa250909c76218049e00008c8c0cc4ab4ebf0714e73bb12",
+    "Freiman/certificates/graph_wide.alive.bin": "a75629b1148bdbc6890d02eb85562b722e0209fb13a0dc5ac3f5fdfc60dc93a5",
+    "Lean/scripts/input_semantics.py": "34190acd99bdc788cc97364ec6623d17c50ab206c323ccda7e1eb9931b3d9760"
   },
   "vendored_source": {
     "repository": "https://github.com/K-Yamada-2002/hall-ray",
@@ -24,5 +21,25 @@
     }
   },
   "verification_report": "logs/verification.json",
-  "large_table_acceptance_method": "Compiled execution of the Lean checker; its mathematical soundness is kernel checked."
+  "large_table_acceptance_method": "Compiled execution of the Lean checker; its mathematical soundness is kernel checked.",
+  "historical_provenance": {
+    "commit": "2ac2b5e20dedd8255954c5a32f5694649defd771",
+    "path_prefix": "archive/2026-10-26",
+    "purpose": "Historical source record only; these files are recoverable from Git and are not runtime dependencies.",
+    "files": {
+      "Berstein/doc/generalized_t.tex": "a5e6cf81b73a71f834c672a7285800465bba56cb5f60f3b19ad180512eb3ef13",
+      "Berstein/data/below_ray_certificate.json": "84cbf4e5006530b37311d5db4f432870ab6d25fb174c439b520ab3051cca82e0",
+      "Berstein/data/below_ray_verified.json": "a645e6d22b82ffa9fd8f17112a7299fe4b79085a29a73c399e281f1874e65f3d",
+      "Berstein/audit/REPORT.txt": "92b116efecd07d77c93dcddfe864dccb8a5bbc0b1e7e357730994ca9127cc2b0",
+      "Berstein/audit/independent_kernel.cpp": "afcfa622cde730ede065ac3db4d2c1a1625bc0f1c9e3a29ca97e7514873afbfb",
+      "Freiman/data/graph_wide.dat": "f920da96f3fc28c6182f4dc9f0a3836dac059186a3f54e33b484198ed51a2234",
+      "Freiman/data/graph_wide.json.alive.bin": "a75629b1148bdbc6890d02eb85562b722e0209fb13a0dc5ac3f5fdfc60dc93a5"
+    },
+    "input_semantics_origin": {
+      "path": "archive/2026-10-26/Berstein/audit/independent_input.py",
+      "sha256": "73351a0888873066a8950aa14e2ab66bec746706cd8640a807e96548ba1e178e",
+      "current_path": "Lean/scripts/input_semantics.py",
+      "changes": "CLI input/output paths only; mathematical audit and corruption controls preserved."
+    }
+  }
 }

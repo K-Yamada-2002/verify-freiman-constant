@@ -464,10 +464,10 @@ def negative_controls(data, meta):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--input', type=Path, default=ROOT / 'Freiman/data/graph_wide.dat')
-    parser.add_argument('--meta', type=Path, default=ROOT / 'Freiman/data/graph_wide.meta.json')
-    parser.add_argument('--alive', type=Path, default=ROOT / 'Freiman/data/graph_wide.json.alive.bin')
-    parser.add_argument('--output', type=Path, default=Path(__file__).with_suffix('.json'))
+    parser.add_argument('--input', type=Path, default=ROOT / 'Freiman/certificates/graph_wide.dat')
+    parser.add_argument('--meta', type=Path, default=ROOT / 'Freiman/certificates/graph_wide.meta.json')
+    parser.add_argument('--alive', type=Path, default=ROOT / 'Freiman/certificates/graph_wide.alive.bin')
+    parser.add_argument('--output', type=Path, default=ROOT / 'Lean/logs/input_semantics.json')
     args = parser.parse_args()
     contexts = audit_automaton()
     data, meta = parse_input(args.input), json.loads(args.meta.read_text())
@@ -497,6 +497,7 @@ def main():
                   sha256={str(path.relative_to(ROOT)) if path.is_relative_to(ROOT) else str(path):
                           hashlib.sha256(path.read_bytes()).hexdigest()
                           for path in (args.input, args.meta, args.alive, Path(__file__).resolve())})
+    args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(report, indent=2) + '\n')
     print(json.dumps({k: v for k, v in report.items()
                       if k not in ('greedy_extremes', 'sha256', 'derivative_constants')}, indent=2))

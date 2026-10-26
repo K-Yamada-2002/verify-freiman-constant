@@ -21,7 +21,7 @@ maximality or the whole conjectured `[4.1,4.52]` interval.
 From the repository root:
 
 ```sh
-python3 -B -S markov_interior/verify.py --output /tmp/markov-interior-verified.json
+python3 -B -S Markov_interior/verify.py --output /tmp/markov-interior-verified.json
 ```
 
 Or copy this entire directory elsewhere and run `python3 -B -S verify.py` there.
@@ -43,7 +43,7 @@ claim that new Lean theorems have been produced.
 To repeat the entire table check with a separate C++ implementation too:
 
 ```sh
-python3 -B -S markov_interior/verify.py --independent
+python3 -B -S Markov_interior/verify.py --independent
 ```
 
 `--tables-only` deliberately stops before interval verification and emits no
@@ -70,8 +70,8 @@ for row indexing and the two input universes.
 ## Search
 
 ```sh
-python3 -B -S markov_interior/prepare.py --output /tmp/markov-input
-c++ -O3 -std=c++17 -pthread markov_interior/kernel.cpp -o /tmp/markov-kernel
+python3 -B -S Markov_interior/prepare.py --output /tmp/markov-input
+c++ -O3 -std=c++17 -pthread Markov_interior/kernel.cpp -o /tmp/markov-kernel
 /tmp/markov-kernel /tmp/markov-input.dat /tmp/markov-search.json
 ```
 
@@ -96,6 +96,6 @@ historical Freiman input, while this directory regenerates that membership
 array's numeric geometry in the common format used by the current verifier.
 The extended language and endpoints have not been added to that formalization.
 
-Earlier experiments and superseded implementations remain in
-[archive/2026-10-26/](../archive/2026-10-26/README.md) for research history. They
-are not prerequisites for this proof.
+Earlier experiments and superseded implementations are retained in Git history,
+at commit `2ac2b5e20dedd8255954c5a32f5694649defd771`. They are not prerequisites
+for this proof and are omitted from the current tree.

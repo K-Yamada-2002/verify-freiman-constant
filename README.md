@@ -11,7 +11,7 @@ A related result establishes **$[4.52578,4.52754]\subset M\cap(-\infty,c_F)$**,
 giving explicit interior points of the Markov spectrum outside Hall's ray.
 It is supported by exact-arithmetic checks, a separate verifier implementation,
 and Lean-proved checker soundness with exhaustive compiled certificate
-verification. See [markov_interior/README.md](markov_interior/README.md) for the result,
+verification. See [Markov_interior/README.md](Markov_interior/README.md) for the result,
 construction, verification evidence, and trust boundary.
 
 ## Code: start here
@@ -23,30 +23,30 @@ From the repository root:
 python3 -B -S Freiman/verify.py
 
 # Complete interior-interval verification.
-python3 -B -S markov_interior/verify.py
+python3 -B -S Markov_interior/verify.py
 ```
 
 ### The complete interior-interval proof
 
-[markov_interior/](markov_interior/README.md) is self-contained: copy that whole
+[Markov_interior/](Markov_interior/README.md) is self-contained: copy that whole
 directory elsewhere and run `python3 -B -S verify.py`. It needs only the Python
 standard library and a C++17 compiler.
 
 | Source | Responsibility |
 |---|---|
-| [verify.py](markov_interior/verify.py) | Default end-to-end verification of the three interval claims |
-| [proof.py](markov_interior/proof.py) | Actual root coverage, all-position bounds, periodic endpoints and finite gluing obligations |
-| [prepare.py](markov_interior/prepare.py) | Exact numeric input generation for both languages |
-| [kernel.cpp](markov_interior/kernel.cpp) | Deletion search and fixed-table replay |
-| [audit.py](markov_interior/audit.py) | Independent input semantics, checked every run |
-| [audit.cpp](markov_interior/audit.cpp) | Optional separate exhaustive coverage implementation |
+| [verify.py](Markov_interior/verify.py) | Default end-to-end verification of the three interval claims |
+| [proof.py](Markov_interior/proof.py) | Actual root coverage, all-position bounds, periodic endpoints and finite gluing obligations |
+| [prepare.py](Markov_interior/prepare.py) | Exact numeric input generation for both languages |
+| [kernel.cpp](Markov_interior/kernel.cpp) | Deletion search and fixed-table replay |
+| [audit.py](Markov_interior/audit.py) | Independent input semantics, checked every run |
+| [audit.cpp](Markov_interior/audit.cpp) | Optional separate exhaustive coverage implementation |
 
-The infinite arguments are in [PROOF.md](markov_interior/PROOF.md), and all
-required inputs are in [certificates/](markov_interior/certificates/README.md).
+The infinite arguments are in [PROOF.md](Markov_interior/PROOF.md), and all
+required inputs are in [certificates/](Markov_interior/certificates/README.md).
 The default verifier checks both full tables and the original paper's 25 bands,
 then root coverage, uniform noncentral bounds and all three interval inclusions.
 `--tables-only` is the explicit narrower mode and emits no interval claim.
-The [format guide](markov_interior/FORMAT.md) includes the complete record layout.
+The [format guide](Markov_interior/FORMAT.md) includes the complete record layout.
 
 Archived implementations and experiment logs are not dependencies of this proof.
 The shared [Lean project](Lean/README.md) separately handles the existing formal
@@ -92,18 +92,18 @@ launcher, historical experiments, or generated executables.
 
 To search the finite universe, compile [kernel.cpp](Freiman/kernel.cpp) and omit
 the adoption array. See the [commands and scope](Freiman/README.md#入力と探索).
-Historical root/menu discovery and protected-seed expansion are preserved in
-[the archive](archive/README.md), with all earlier files. They are not dependencies
-of either current analytic proof.
+Historical root/menu discovery, protected-seed expansion, and earlier files are
+retained in Git commit `2ac2b5e20dedd8255954c5a32f5694649defd771`. They are not
+dependencies of either current analytic proof and are omitted from the current tree.
 
 ### Interval proof versus table closure
 
-The current [interval proof](markov_interior/PROOF.md) contains both parts.
+The current [interval proof](Markov_interior/PROOF.md) contains both parts.
 Closed covers realize every point of admitted initial bands by actual infinite
 continued fractions. The root and noncentral checks make the central value the
 supremum at all positions, proving Markov membership. Periodic-block gluing and
 the checked positive margins give Lagrange membership. All are part of the
-default `markov_interior/verify.py` result.
+default `Markov_interior/verify.py` result.
 
 The [Lean development](Lean/Berstein/README.md) concerns the original
 3,464,816-row table and original interval. The extended table and endpoints have
@@ -148,9 +148,8 @@ M=\left\{\sup_{n\in\mathbb Z}\lambda_n(a)<\infty:
 |---|---|
 | [doc/](doc/README.md) | Shared mathematical papers: the Freiman ray and interior Markov intervals |
 | [Freiman/](Freiman/README.md) | Schecker-style computer-assisted proof of $[c_F,\infty)\subset M\cap L$, with exact certificates and reproduction instructions |
-| [markov_interior/](markov_interior/README.md) | Complete interval proof, including both tables, root coverage and noncentral bounds |
+| [Markov_interior/](Markov_interior/README.md) | Complete interval proof, including both tables, root coverage and noncentral bounds |
 | [Lean/](Lean/README.md) | Shared formal-verification workspace, currently including the original interior-interval checker and proof |
-| [archive/2026-10-26/](archive/2026-10-26/README.md) | Preserved interval-proof programs, research, and independent audits |
 | [Schecker/](Schecker/README.md) | SageMath discovery notebooks and investigation of classical successor lists |
 | [misc/](misc/README.md) | Supporting numerical calculations for classical proofs |
 
