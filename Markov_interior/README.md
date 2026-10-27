@@ -27,12 +27,12 @@ python3 -B -S Markov_interior/verify.py --output /tmp/markov-interior-verified.j
 Or copy this entire directory elsewhere and run `python3 -B -S verify.py` there.
 The default command:
 
-1. Regenerates the exact numeric input and metadata for **both** tables.
-2. Independently checks input semantics and corruption controls.
-3. Replays all **3,464,816 + 4,260,954 adopted rows**, holding membership fixed.
-4. Checks all declared root bands, including the original paper's 25 bands.
-5. Recomputes uniform bounds at every noncentral position and the bulk endpoints.
-6. Checks exact interval coverage, rational inward rounding, gluing margins, and
+1. Checks adoption-array dimensions and values, then regenerates the exact
+   numeric input and proof-relevant metadata for **both** tables.
+2. Replays all **3,464,816 + 4,260,954 adopted rows**, holding membership fixed.
+3. Checks all declared root bands, including the original paper's 25 bands.
+4. Recomputes uniform bounds at every noncentral position and the bulk endpoints.
+5. Checks exact interval coverage, rational inward rounding, gluing margins, and
    strict comparison with Freiman's constant for all three displayed claims.
 
 The result includes `claims` and `interval_proof`, not just a table success flag.
@@ -40,7 +40,9 @@ The infinite arguments behind the finite obligations are proved in
 **[PROOF.md](PROOF.md)**. This is a computer-assisted analytic proof; it does not
 claim that new Lean theorems have been produced.
 
-To repeat the entire table check with a separate C++ implementation too:
+The default path relies on the exact generator and the main coverage verifier.
+To also audit input semantics with a separate Python implementation and repeat
+the entire coverage check with a separate C++ implementation:
 
 ```sh
 python3 -B -S Markov_interior/verify.py --independent
@@ -48,8 +50,15 @@ python3 -B -S Markov_interior/verify.py --independent
 
 `--tables-only` deliberately stops before interval verification and emits no
 interval claim. Builds and intermediate results use temporary directories.
-Sources and certificates are hashed before and after the run. Python `-O` is
-rejected because verification uses assertions.
+Metadata comparison ignores JSON formatting and the descriptive `scope` and
+`transition_checks` fields. Python `-O` is rejected because verification uses
+assertions.
+
+Corruption checks belong to the regression suite, not the normal proof run:
+
+```sh
+python3 -B -S -m unittest discover -s Markov_interior -p 'test_*.py' -v
+```
 
 ## Read the implementation
 
@@ -59,8 +68,9 @@ rejected because verification uses assertions.
 | [proof.py](proof.py) | Concrete root membership, interval coverage, uniform noncentral bounds, periodic endpoints and the finite gluing obligations |
 | [prepare.py](prepare.py) | Exact quadratic arithmetic, legal tails and finite geometry generation |
 | [kernel.cpp](kernel.cpp) | Uniform successor covers: deletion search or fixed-table replay |
-| [audit.py](audit.py) | Separately implemented input parser, algebra and input-semantics audit; used on every verification run |
+| [audit.py](audit.py) | Separate input parser, algebra and input-semantics audit; enabled by `--independent` |
 | [audit.cpp](audit.cpp) | Optional separate all-row coverage verifier |
+| [test_verification.py](test_verification.py) | Regression checks for corrupted inputs, root conditions and verifier failure handling |
 
 The dependency chain is `verify.py` → current code and
 [certificates/](certificates/README.md). There are no local compatibility imports

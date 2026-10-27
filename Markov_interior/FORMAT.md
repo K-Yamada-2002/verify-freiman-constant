@@ -30,6 +30,75 @@ generator parameters. Neither file enumerates all continued-fraction prefixes.
 Each abstract row covers a whole parameter box and infinitely many prefixes.
 Successor candidates are finite and bounded by the generator settings.
 
+## Metadata: `*.meta.json`
+
+Both `original.meta.json` and `table.meta.json` use the following fields.
+Metadata records the generation settings and the meaning of the numeric input;
+adopted-row membership is stored separately in `.alive.bin`. Array indices are
+zero-based. Rational values are strings such as `"51/50"`, not floating-point
+approximations.
+
+### Generation settings
+
+| Field | Meaning |
+|---|---|
+| `language` | Comma-separated forbidden-word setting: `31313` or `31313,13131` for the saved tables. |
+| `forbidden` | The same forbidden words as arrays of digits. Appended tails use digits 1, 2, 3. |
+| `memory` | Number of trailing digits retained in each state, currently 2. Forbidden-word matching information is retained separately. |
+| `length` | Maximum total number of digits appended on the two sides by ordinary successor pairs, currently 3. |
+| `spine` | Maximum length of extra candidates following an extremal tail up to their last digit, which may branch. It is 6 for `original` and 10 for `table`. |
+| `return_length` | Length of optional extra candidates following an extremal tail exactly. Zero disables this addition. |
+| `macro` | Optional Boolean, absent when disabled. For `original`, `true` adds pairs of rotations of the six-digit word `131213`. |
+| `base` | Ratio-grid base, currently `51/50`. |
+| `low`, `high` | Inclusive exponent range. Bin `k` represents `[base^k, base^(k+1)]`, giving `high-low+1` bins. |
+| `grid` | Subdivision count for relative interval types, currently 32. |
+
+`length` does not bound every word in `extensions`: `spine`, `return_length`,
+and `macro` can add longer candidates. The finite candidate list is a search
+choice, not a claim that all possible extensions have been enumerated.
+
+### State and successor descriptions
+
+| Field | Meaning |
+|---|---|
+| `keys` | One-sided state keys `[q, parity, suffix]`, in state-ID order. `q` is the length of the longest suffix matching a proper prefix of a forbidden word; `parity` is word length modulo 2; `suffix` contains the last `memory` digits. |
+| `prototypes` | One concrete legal word for each key, in the same order. These represent states, not all concrete prefixes. |
+| `extensions` | Candidate appended words, in extension-ID order. Entry 0 is `[]`, the empty word. Illegal extensions are rejected separately for each state. |
+| `pairs` | Triples `[left_extension_id, right_extension_id, restricted]`. Flag 0 imposes no extremal-branch restriction; flag 1 requires both transitions to have `on_extremal_branch = 1` in the numeric input. |
+| `bands` | Relative interval types, in type-ID order: `[0,1]`, followed by `[i/grid, (i+2)/grid]` for `i=0,...,grid-2`. |
+| `radicand` | Square-root radicand used in exact endpoint arithmetic: 462 for `original`, 41667 for `table`. |
+| `prehistory_interval` | Common enclosure `[1/4,4/5]` used beyond the retained reversed suffix when bounding continuant ratios. |
+
+For example, key `[0,0,[1,2]]` represents an even-length word ending in `12`,
+with no nonempty suffix matching a proper forbidden-word prefix. Storing only
+two trailing digits therefore does not limit forbidden-word matching to two
+digits.
+
+For a restricted transition of length at most `spine`, all digits except the
+last must follow the extremal tail attaining the parent's lower endpoint.
+A transition of length `return_length`, when enabled, must follow that tail
+exactly. Both sides must also be legal. Longer candidates do not automatically
+preserve the ratio bin; this requires an exact derivative identity.
+
+### Initial geometry and generation records
+
+| Field | Meaning |
+|---|---|
+| `root_words` | Concrete left and right words used for the generator's initial geometry. |
+| `root_scale` | Exact derivative ratio `abs(F_b'(xi_b))/abs(F_a'(xi_a))` for `root_words = [a,b]`, where `F_w` is the continued-fraction map and `xi_w` is the tail attaining its lower endpoint. Stored as four rational coefficients `[c0,0,c2,0]`, meaning `c0 + c2*sqrt(radicand)`. |
+| `root_bin` | Exponent of the ratio bin containing `root_scale`. |
+| `root` | Flattened initial geometry index, excluding interval type: `(left_state*S + right_state)*B + root_bin-low`, where `S=len(keys)` and `B=high-low+1`. |
+| `transition_checks` | Number of legal one-sided state/extension transitions checked during generation. |
+| `scope` | Description of the artifact's limits: exact geometry still requires closed-family and root checks. |
+
+The metadata's `root_words` describes one generator root. The complete interval
+verification uses the additional roots in `roots.json`, described below.
+`verify.py` regenerates both `.dat` and `.meta.json` from the settings. It compares
+numeric input byte for byte and metadata as JSON values, ignoring `scope` and
+`transition_checks`. Extra metadata fields unused by the generator are ignored.
+With `--independent`, `audit.py` also checks input semantics using the state and
+word descriptions. Metadata alone does not certify closure or interval inclusion.
+
 ## Adoption array: `table.alive.bin`
 
 C++ expands the candidate row product:

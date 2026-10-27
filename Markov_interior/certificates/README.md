@@ -19,7 +19,8 @@ indices and type IDs. Its endpoints and noncentral bounds are recomputed; it
 contains no historical `passed` flag to trust. The supplied root list is a proof
 certificate, not a claim that every possible root has been explored.
 
-Run [verify.py](../verify.py) to reproduce both numeric inputs, audit their
-semantics, replay both tables, and check the complete interval claims using
-[PROOF.md](../PROOF.md). Every file here is a regular file, so copying the parent
-directory also copies the complete proof data.
+Run [verify.py](../verify.py) to reproduce both numeric inputs, replay both tables,
+and check the complete interval claims using the analytic argument in
+[PROOF.md](../PROOF.md). Add `--independent` to also audit input semantics and
+coverage with separate implementations. Every file here is a regular file, so
+copying the parent directory also copies the complete proof data.

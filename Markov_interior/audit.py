@@ -5,8 +5,6 @@ their arithmetic/automata are not imported. Checks include raw endpoint aliases,
 constant derivative identities, and every child shape inclusion.
 """
 import argparse
-import copy
-import hashlib
 import json
 from dataclasses import dataclass
 from fractions import Fraction as Q
@@ -251,24 +249,6 @@ def main():
     RAD = meta['radicand']
     data = parse_input(args.input)
     report = audit(data, meta)
-    controls = []
-    for name in ('alias', 'constant', 'endpoint'):
-        damaged = copy.deepcopy(data)
-        record = damaged['sides'][0]['extensions'][0]
-        if name == 'alias':
-            record['endpoints'][1] = record['endpoints'][0]
-        elif name == 'constant':
-            record = next(r for s in damaged['sides'] for r in s['extensions'] if r and not r['constant'])
-            record['constant'] = 1
-        else:
-            damaged['sides'][0]['tails'][0] = (Q(0), Q(0))
-        try:
-            audit(damaged, meta)
-        except AssertionError:
-            controls.append(name)
-        else:
-            raise AssertionError('Corruption accepted: ' + name)
-    report['negative_controls'] = controls
     print(json.dumps(report, indent=2))
 
 if __name__ == '__main__':

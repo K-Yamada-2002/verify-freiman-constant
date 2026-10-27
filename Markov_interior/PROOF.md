@@ -194,8 +194,10 @@ $\sqrt{462}$ proves that all reported components lie strictly below
 
 $$c_F=(2221564096+283748\sqrt{462})/491993569.$$
 
-Changing a root ratio box or supplying an incompatible replacement past is
-rejected by controls using the actual verification functions. The optional
-second C++ checker repeats every adopted row independently. These checks detect
-implementation errors; the proof also relies on the analytic arguments above
-and the stated compiler/runtime execution boundary.
+The separate regression suite checks rejection of corrupted inputs, wrong root
+ratio boxes and incompatible replacement pasts using the verification functions.
+With `--independent`, the verifier also audits input semantics with a separate
+Python implementation and repeats every adopted row with a second C++ checker.
+These additional checks help detect implementation errors; the proof also
+relies on the analytic arguments above and the stated compiler/runtime execution
+boundary.

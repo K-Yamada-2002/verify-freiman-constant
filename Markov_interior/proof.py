@@ -117,7 +117,7 @@ class RationalBounds:
                     scope='Uniform over all infinite legal tails and all noncentral positions.')
 
 
-def compatible_past(a,b,center,forbidden,damage=False):
+def compatible_past(a,b,center,forbidden):
     bad=tuple(tuple(w) for w in forbidden)
     assert all(w==w[::-1] and 2 not in w for w in bad)
     memory=max(map(len,bad))-1
@@ -128,7 +128,6 @@ def compatible_past(a,b,center,forbidden,damage=False):
         prefix=near[::-1]+(center,)+other
         terminal=bounds.tail(other[-memory:],True)[0],bounds.tail(other[-memory:],False)[1]
         past=tuple(sorted(bounds.cf(prefix,t) for t in terminal))
-        if damage:past=Q(2),Q(3)
         checks=[]
         for first in product((1,2,3),repeat=memory):
             if not bounds.legal(near+first):continue
@@ -312,28 +311,11 @@ def verify_group(table, rows, bulk, cap):
     assert margin > 0
     radius = next(r for r in range(2, 101)
                   if E.cast(Q(2, fibonacci(r + 1) ** 2)) < margin / 2)
-    # Negative controls check the actual root and interface verification paths.
-    damaged = dict(rows[0], bin=rows[0]['bin'] + 1)
-    try:
-        table.check_row(damaged)
-    except AssertionError:
-        pass
-    else:
-        raise AssertionError('Incorrect root ratio box accepted')
-    key = next(key for key in candidates
-               if cache.get(key, (None, {}))[1].get('method') == 'compatible_past')
-    try:
-        compatible_past(tuple(map(int, key[0])), tuple(map(int, key[1])), key[2], forbidden, damage=True)
-    except AssertionError:
-        pass
-    else:
-        raise AssertionError('Incompatible replacement past accepted')
     return {'root_bands': len(rows), 'components': [[x.data() for x in pair] for pair in components],
             'rational_components': [[str(x) for x in pair] for pair in rational_components],
             'noncentral_bounds': [dict(a=k[0], b=k[1], center=k[2], theta=v[0].data(), **v[1])
                                   for k, v in cache.items()],
-            'gluing_margin': margin.data(), 'gluing_radius': radius,
-            'negative_controls': ['wrong_ratio_box', 'incompatible_past']}
+            'gluing_margin': margin.data(), 'gluing_radius': radius}
 
 
 def verify_intervals(data):
