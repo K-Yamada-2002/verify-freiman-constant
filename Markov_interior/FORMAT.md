@@ -162,7 +162,12 @@ After the header `FREIMAN_DYADIC_GRAPH_V1 S E L H T P root`, let
      eta0_lower, eta0_upper, eta1_lower, eta1_upper, endpoint0_id, endpoint1_id)`.
 
 All interval bounds are integer numerators over `2^48`. IDs, counts, and flags
-are ordinary integers. `audit.py` parses this format and independently checks
+are ordinary integers. SageMath computes the quadratic endpoints exactly. To
+preserve output bytes, the encoder retains the original rational enclosure of
+the square root at denominator `10^60`, then rounds outward with `floor`/`ceil`
+to denominator `2^48`. No floating-point conversion is used. The numeric and
+metadata formats are unchanged by the choice of arithmetic library.
+`audit.py` parses this format and independently checks
 its exact meanings against the words in the metadata. Shared tail IDs support
 exact cancellation in endpoint comparisons; equal constant tags are checked
 by exact derivative identities.

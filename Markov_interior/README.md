@@ -2,8 +2,7 @@
 
 This directory contains the complete computer-assisted interval proof: finite
 inputs, both closed tables, root coverage, all-position bounds, and the analytic
-passage to infinite continued fractions. It runs on its own with Python's
-standard library and a C++17 compiler. No archive or Freiman source tree is needed.
+passage to infinite continued fractions. It runs with SageMath and a C++17 compiler. No archive or Freiman source tree is needed.
 
 The verified rational intervals, strictly below Freiman's constant, are:
 
@@ -21,10 +20,10 @@ maximality or the whole conjectured `[4.1,4.52]` interval.
 From the repository root:
 
 ```sh
-python3 -B -S Markov_interior/verify.py --output /tmp/markov-interior-verified.json
+sage -python -B Markov_interior/verify.py --output /tmp/markov-interior-verified.json
 ```
 
-Or copy this entire directory elsewhere and run `python3 -B -S verify.py` there.
+Or copy this entire directory elsewhere and run `sage -python -B verify.py` there.
 The default command:
 
 1. Checks adoption-array dimensions and values, then regenerates the exact
@@ -45,7 +44,7 @@ To also audit input semantics with a separate Python implementation and repeat
 the entire coverage check with a separate C++ implementation:
 
 ```sh
-python3 -B -S Markov_interior/verify.py --independent
+sage -python -B Markov_interior/verify.py --independent
 ```
 
 `--tables-only` deliberately stops before interval verification and emits no
@@ -57,7 +56,7 @@ assertions.
 Corruption checks belong to the regression suite, not the normal proof run:
 
 ```sh
-python3 -B -S -m unittest discover -s Markov_interior -p 'test_*.py' -v
+sage -python -B -m unittest discover -s Markov_interior -p 'test_*.py' -v
 ```
 
 ## Read the implementation
@@ -72,6 +71,16 @@ python3 -B -S -m unittest discover -s Markov_interior -p 'test_*.py' -v
 | [audit.cpp](audit.cpp) | Optional separate all-row coverage verifier |
 | [test_verification.py](test_verification.py) | Regression checks for corrupted inputs, root conditions and verifier failure handling |
 
+In `prepare.py`, start with `generate_input` for the construction's flow. The
+geometric formulas are `normalized_width_bounds` (cylinder width relative to
+the anchor derivative), `derivative_scale_bounds` (child-to-parent derivative
+scale), and `root_derivative_ratio` (the root's ratio-grid coordinate).
+`extremal_tail_value` computes exact legal tail extrema; `continuant_bounds`
+bounds the reversed continuant ratio. `candidate_extensions` makes finite
+candidate choices, while `encode_state_records` and `write_input_files` pack
+the results for C++. Sage's `QQ` and `QuadraticField` supply exact arithmetic,
+comparisons and integer rounding; no custom number class is used.
+
 The dependency chain is `verify.py` → current code and
 [certificates/](certificates/README.md). There are no local compatibility imports
 or runtime references to historical implementations. See [FORMAT.md](FORMAT.md)
@@ -80,7 +89,7 @@ for row indexing and the two input universes.
 ## Search
 
 ```sh
-python3 -B -S Markov_interior/prepare.py --output /tmp/markov-input
+sage -python -B Markov_interior/prepare.py --output /tmp/markov-input
 c++ -O3 -std=c++17 -pthread Markov_interior/kernel.cpp -o /tmp/markov-kernel
 /tmp/markov-kernel /tmp/markov-input.dat /tmp/markov-search.json
 ```

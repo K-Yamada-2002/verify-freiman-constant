@@ -3,7 +3,7 @@
 Default: regenerate both inputs, replay every adopted row, check
 root coverage and all-position bounds, and certify the rational intervals
 using the analytic lemmas. No archive or Freiman imports are used.
-Only the standard library and a C++17 compiler are required.
+Run with SageMath's Python; a C++17 compiler is also required.
 """
 import argparse
 import json
@@ -41,7 +41,7 @@ def verify_table(data, name, binary, independent_binary, work):
 
     # 2. Reproduce numeric input and metadata used by the proof.
     generated = work / (name + '-input')
-    command = [sys.executable, '-B', '-S', HERE / 'prepare.py', '--output', generated]
+    command = [sys.executable, '-B', HERE / 'prepare.py', '--output', generated]
     for key in ('memory', 'length', 'spine', 'grid', 'base', 'low', 'high', 'return_length'):
         command.extend(['--' + key.replace('_', '-'), str(meta[key])])
     command.extend(['--forbidden', meta['language'], '--root',

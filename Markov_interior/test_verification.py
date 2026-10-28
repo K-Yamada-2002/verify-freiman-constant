@@ -1,5 +1,8 @@
 """Regression checks kept separate from normal certificate verification."""
+import argparse
+import contextlib
 import copy
+import io
 import json
 import subprocess
 import tempfile
@@ -9,11 +12,32 @@ from pathlib import Path
 from unittest.mock import patch
 
 import audit
+import prepare
 import proof
 import verify
 
 HERE = Path(__file__).resolve().parent
 DATA = HERE / 'certificates'
+
+
+class GeneratorTests(unittest.TestCase):
+    def test_saved_inputs_are_reproduced(self):
+        with tempfile.TemporaryDirectory() as directory:
+            for name in ('original', 'table'):
+                with self.subTest(table=name):
+                    meta = json.loads((DATA / (name + '.meta.json')).read_text())
+                    settings = {key: meta[key] for key in
+                                ('memory', 'length', 'spine', 'grid', 'base', 'low', 'high', 'return_length')}
+                    output = Path(directory) / name
+                    args = argparse.Namespace(
+                        **settings, output=output, forbidden=meta['language'],
+                        macro=meta.get('macro', False),
+                        root=','.join(''.join(map(str, word)) for word in meta['root_words']))
+                    with contextlib.redirect_stdout(io.StringIO()):
+                        prepare.generate_input(args)
+                    for suffix in ('.dat', '.meta.json'):
+                        self.assertEqual(output.with_suffix(suffix).read_bytes(),
+                                         (DATA / (name + suffix)).read_bytes())
 
 
 class InputAuditTests(unittest.TestCase):
@@ -77,7 +101,7 @@ class IntervalTests(unittest.TestCase):
                 prefix = a[::-1] + (row['center'],) + b
 
                 def damaged_cf(bounds, word, tail):
-                    return Q(2) if word == prefix else original_cf(bounds, word, tail)
+                    return proof.QQ(2) if word == prefix else original_cf(bounds, word, tail)
 
                 with self.subTest(table=name), \
                      patch.object(proof.RationalBounds, 'cf', damaged_cf), \
@@ -86,6 +110,27 @@ class IntervalTests(unittest.TestCase):
                 break
             else:
                 self.fail('No compatible-past example: ' + name)
+
+
+class SageArithmeticTests(unittest.TestCase):
+    def test_exact_rounding_near_integer_boundaries(self):
+        field = prepare.select_language('31313')
+        scale = 10**100
+        floor = proof.ZZ(462 * scale**2).isqrt()
+        epsilon = field.gen() - proof.QQ((floor, scale))
+        self.assertTrue(0 < epsilon < proof.QQ((1, scale)))
+        unit = prepare.DENOMINATOR
+        self.assertEqual(prepare.outward_numerators(field(1)), (unit, unit))
+        tiny = proof.QQ((1, scale))
+        self.assertEqual(prepare.outward_numerators(1 + tiny), (unit, unit + 1))
+        self.assertEqual(prepare.outward_numerators(1 - tiny), (unit - 1, unit))
+        # Preserve the original conservative enclosure for severe cancellation.
+        self.assertEqual(prepare.outward_numerators(1 + epsilon), (unit - 1, unit + 1))
+        self.assertEqual(prepare.outward_numerators(1 - epsilon), (unit - 1, unit + 1))
+        self.assertEqual(proof.inward(1 + epsilon, True), proof.QQ((100000001, 10**8)))
+        self.assertEqual(proof.inward(1 + epsilon, False), 1)
+        self.assertEqual(proof.inward(1 - epsilon, True), 1)
+        self.assertEqual(proof.inward(1 - epsilon, False), proof.QQ((99999999, 10**8)))
 
 
 class KernelTests(unittest.TestCase):

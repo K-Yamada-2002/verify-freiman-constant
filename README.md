@@ -23,14 +23,14 @@ From the repository root:
 python3 -B -S Freiman/verify.py
 
 # Complete interior-interval verification.
-python3 -B -S Markov_interior/verify.py
+sage -python -B Markov_interior/verify.py
 ```
 
 ### The complete interior-interval proof
 
 [Markov_interior/](Markov_interior/README.md) is self-contained: copy that whole
-directory elsewhere and run `python3 -B -S verify.py`. It needs only the Python
-standard library and a C++17 compiler.
+directory elsewhere and run `sage -python -B verify.py`. It needs SageMath and
+a C++17 compiler.
 
 | Source | Responsibility |
 |---|---|
@@ -38,7 +38,7 @@ standard library and a C++17 compiler.
 | [proof.py](Markov_interior/proof.py) | Actual root coverage, all-position bounds, periodic endpoints and finite gluing obligations |
 | [prepare.py](Markov_interior/prepare.py) | Exact numeric input generation for both languages |
 | [kernel.cpp](Markov_interior/kernel.cpp) | Deletion search and fixed-table replay |
-| [audit.py](Markov_interior/audit.py) | Independent input semantics, checked every run |
+| [audit.py](Markov_interior/audit.py) | Independent input semantics, enabled by `--independent` |
 | [audit.cpp](Markov_interior/audit.cpp) | Optional separate exhaustive coverage implementation |
 
 The infinite arguments are in [PROOF.md](Markov_interior/PROOF.md), and all
