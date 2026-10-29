@@ -1,5 +1,6 @@
 import HallRay
 import Berstein
+import Freiman
 
 /-! Entry point for the repository's shared formal-verification workspace.
 

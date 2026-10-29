@@ -9,6 +9,7 @@ interior-interval construction.
 | `SpectrumVerification` | Project-wide entry point importing the available libraries |
 | `HallRay` | Definitions and continued-fraction lemmas shared with the original Hall-ray project |
 | `Berstein` | The existing checker-soundness proof and original Markov interior-interval construction |
+| `Freiman` | Checker soundness for the complete half-line `[c_F,∞) ⊆ M`; [verification guide](Freiman/README.md) |
 
 The `Berstein` namespace is retained to preserve existing theorem names and
 imports. The computational project is now [Markov_interior/](../Markov_interior/README.md).
@@ -52,9 +53,18 @@ The large-table acceptance is established by compiled checker execution;
 the soundness implication is kernel-checked. The original
 [verification baseline](verification-baseline.json) remains a historical record.
 
-The extended `31313,13131` table, its extended interval endpoints, and the whole
-Freiman-ray construction have not been formalized here. Their Python/C++
-verification must not be presented as additional Lean theorems.
+The [Freiman verification](Freiman/README.md) now connects the exact endpoint
+`c_F`, all four local successor systems, the finite chain, and the upper ray:
+
+```sh
+python3 -B scripts/verify_freiman.py --reuse-replay
+```
+
+`Freiman.ray_subset_markov_of_check` is the kernel-checked soundness theorem;
+the pipeline establishes concrete finite acceptance by Lean checker execution.
+The extended `31313,13131` table and its extended interior endpoints remain
+outside these verification targets. The Freiman result here concerns the Markov
+spectrum; Lagrange-spectrum inclusion and optimality below `c_F` are not claimed.
 
 ## Data and provenance
 

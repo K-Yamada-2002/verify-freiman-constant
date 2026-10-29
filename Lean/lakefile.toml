@@ -17,6 +17,9 @@ name = "HallRay"
 name = "Berstein"
 
 [[lean_lib]]
+name = "Freiman"
+
+[[lean_lib]]
 name = "SpectrumVerification"
 
 [[lean_exe]]
