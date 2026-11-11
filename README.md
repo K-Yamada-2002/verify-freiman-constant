@@ -23,32 +23,34 @@ From the repository root:
 python3 -B -S Freiman/verify.py
 
 # Complete interior-interval verification.
-sage -python -B Markov_interior/verify.py
+sage -python -B Markov_interior/old/verify.py
 ```
 
 ### The complete interior-interval proof
 
-[Markov_interior/](Markov_interior/README.md) is self-contained: copy that whole
-directory elsewhere and run `sage -python -B verify.py`. It needs SageMath and
-a C++17 compiler.
+[Markov_interior/old/](Markov_interior/old/README.md) preserves the complete
+original verifier, documentation, and proof certificates. Copy that directory
+elsewhere and run `sage -python -B verify.py`. It needs SageMath and a C++17 compiler.
+The new [prepare.py](Markov_interior/prepare.py) generates V2 numeric input and
+metadata. Connecting the verifier to V2 remains to be implemented.
 
 | Source | Responsibility |
 |---|---|
-| [verify.py](Markov_interior/verify.py) | Default end-to-end verification of the three interval claims |
-| [proof.py](Markov_interior/proof.py) | Actual root coverage, all-position bounds, periodic endpoints and finite gluing obligations |
-| [prepare.py](Markov_interior/prepare.py) | Exact numeric input generation for both languages |
-| [kernel.cpp](Markov_interior/kernel.cpp) | Deletion search and fixed-table replay |
-| [audit.py](Markov_interior/audit.py) | Independent input semantics, enabled by `--independent` |
-| [audit.cpp](Markov_interior/audit.cpp) | Optional separate exhaustive coverage implementation |
+| [prepare.py](Markov_interior/prepare.py) | V2 numeric input and metadata generation |
+| [old/verify.py](Markov_interior/old/verify.py) | Original end-to-end verification of the three interval claims |
+| [old/proof.py](Markov_interior/old/proof.py) | Actual root coverage, all-position bounds, periodic endpoints and finite gluing obligations |
+| [old/prepare.py](Markov_interior/old/prepare.py) | Original V1 numeric input generation and exact arithmetic |
+| [old/kernel.cpp](Markov_interior/old/kernel.cpp) | Deletion search and fixed-table replay |
+| [old/audit.py](Markov_interior/old/audit.py) | Independent input semantics, enabled by `--independent` |
+| [old/audit.cpp](Markov_interior/old/audit.cpp) | Optional separate exhaustive coverage implementation |
 
-The infinite arguments are in [PROOF.md](Markov_interior/PROOF.md), and all
-required inputs are in [certificates/](Markov_interior/certificates/README.md).
+The infinite arguments are in [PROOF.md](Markov_interior/old/PROOF.md), and all
+required inputs are in [certificates/](Markov_interior/old/certificates/README.md).
 The default verifier checks both full tables and the original paper's 25 bands,
 then root coverage, uniform noncentral bounds and all three interval inclusions.
 `--tables-only` is the explicit narrower mode and emits no interval claim.
-The [format guide](Markov_interior/FORMAT.md) includes the complete record layout.
+The [format guide](Markov_interior/old/FORMAT.md) includes the V1 record layout.
 
-Archived implementations and experiment logs are not dependencies of this proof.
 The shared [Lean project](Lean/README.md) separately handles the existing formal
 original-interval result.
 
@@ -98,12 +100,12 @@ dependencies of either current analytic proof and are omitted from the current t
 
 ### Interval proof versus table closure
 
-The current [interval proof](Markov_interior/PROOF.md) contains both parts.
+The original [interval proof](Markov_interior/old/PROOF.md) contains both parts.
 Closed covers realize every point of admitted initial bands by actual infinite
 continued fractions. The root and noncentral checks make the central value the
 supremum at all positions, proving Markov membership. Periodic-block gluing and
 the checked positive margins give Lagrange membership. All are part of the
-default `Markov_interior/verify.py` result.
+original `Markov_interior/old/verify.py` result.
 
 The [Lean development](Lean/Berstein/README.md) concerns the original
 3,464,816-row table and original interval. The extended table and endpoints have

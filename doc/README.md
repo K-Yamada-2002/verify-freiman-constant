@@ -13,4 +13,4 @@
 
 実装・証明書・実行方法は [Freiman/](../Freiman/README.md) と
 [Markov_interior/](../Markov_interior/README.md)、形式検証は [Lean/](../Lean/README.md) を参照。
-現在の拡張された内点区間の論証は [Markov_interior/PROOF.md](../Markov_interior/PROOF.md) にある。
+拡張された内点区間の論証は [Markov_interior/old/PROOF.md](../Markov_interior/old/PROOF.md) にある。
